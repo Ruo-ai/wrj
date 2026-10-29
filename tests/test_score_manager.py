@@ -101,3 +101,57 @@ def test_time_best_ratio_configurable():
     _, _, score_timestep = manager.compute_score(5, 0.0, 0.0, 1000)
     # best = 0.25 * 2000 = 500; at elapsed 1000 -> (2000-1000)/(2000-500) = 2/3
     assert score_timestep == pytest.approx(100.0 * 2 / 3)
+
+
+def test_time_best_ratio_zero_has_no_full_marks():
+    """ratio 0 removes the plateau, so a completed round never scores 100.
+
+    Every step of elapsed time costs score and only an instant finish would be
+    full; a real round needs at least the warm-up step, so the time term is
+    always strictly below full marks.
+    """
+    manager = _manager(time_best_ratio=0.0)
+    # limit 2000, no plateau: 1500 steps -> (2000-1500)/2000 = 0.25
+    _, _, score_timestep = manager.compute_score(5, 0.0, 0.0, 1500)
+    assert score_timestep == pytest.approx(25.0)
+    for elapsed in (1, 500, 1999):
+        _, _, score = manager.compute_score(5, 0.0, 0.0, elapsed)
+        assert 0.0 <= score < 100.0
+    _, _, at_limit = manager.compute_score(5, 0.0, 0.0, 2000)
+    assert at_limit == 0.0
+
+
+def test_time_best_ratio_one_is_full_until_the_limit():
+    manager = _manager(time_best_ratio=1.0)
+    _, _, score_timestep = manager.compute_score(5, 0.0, 0.0, 1999)
+    assert score_timestep == pytest.approx(100.0)
+    _, _, at_limit = manager.compute_score(5, 0.0, 0.0, 2000)
+    assert at_limit == pytest.approx(100.0)
+
+
+def test_time_best_ratio_out_of_range_is_rejected():
+    for bad in (-0.1, 1.5):
+        with pytest.raises(ValueError):
+            _manager(time_best_ratio=bad)
+
+
+def test_blue_and_red_use_the_same_curve():
+    """Both teams read one curve, so the same inputs give the same fraction."""
+    from swarm_rescue.simulation.reporting.place_score_manager import (
+        PlaceScoreConfig,
+        PlaceScoreManager,
+    )
+    from swarm_rescue.simulation.reporting.time_score import time_score_fraction
+
+    for ratio in (0.0, 0.25, 0.5, 1.0):
+        blue = _manager(time_best_ratio=ratio)
+        red = PlaceScoreManager(
+            PlaceScoreConfig(time_best_ratio=ratio, blast_radius=0.12)
+        )
+        for elapsed in (0, 200, 800, 1500, 2000, 3000):
+            _, _, blue_score = blue.compute_score(5, 0.0, 0.0, elapsed)
+            red_score = 100.0 * red.compute_time_score(elapsed, 2000.0).score
+            assert blue_score == pytest.approx(red_score)
+            assert blue_score == pytest.approx(
+                100.0 * time_score_fraction(elapsed, 2000.0, ratio)
+            )

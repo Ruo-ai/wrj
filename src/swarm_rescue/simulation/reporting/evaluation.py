@@ -91,6 +91,9 @@ class EvalPlan:
         self.state_recording_enabled = True  # Default: use npz state recording
         self.team_mode: Optional[TeamMode] = None
         self.exploration_threshold_for_time_bonus: float = 97.0
+        # Fraction of the timestep limit at or before which the blue-team time
+        # score is full. 0 removes the plateau, so every step costs score.
+        self.time_best_ratio: float = 0.5
 
     def add(self, eval_config: EvalConfig) -> None:
         """
@@ -144,6 +147,8 @@ class EvalPlan:
             print(f"Default team mode: {self.team_mode.value}")
         else:
             print("Default team mode: <not set>")
+        print(f"Time score: full marks at or before {self.time_best_ratio:.0%} "
+              f"of the timestep limit")
 
     def from_yaml(self, config_path: Optional[str] = None) -> bool:
         """
@@ -176,6 +181,17 @@ class EvalPlan:
             self.exploration_threshold_for_time_bonus = float(
                 config['exploration_threshold_for_time_bonus']
             )
+        if 'time_best_ratio' in config:
+            # ``0`` is a meaningful setting (no full-mark plateau), so this must
+            # not fall back to the default on a falsy value.
+            ratio = float(config['time_best_ratio'])
+            if not 0.0 <= ratio <= 1.0:
+                print(
+                    f"Invalid YAML: time_best_ratio must be within [0, 1], "
+                    f"got {ratio}."
+                )
+                return False
+            self.time_best_ratio = ratio
         default_bombs_file = config.get('bombs_file')
         default_initial_bombs = config.get('initial_bombs_per_drone', 1)
         default_number_drones = config.get('number_drones')

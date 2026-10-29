@@ -1,3 +1,6 @@
+from swarm_rescue.simulation.reporting.time_score import time_score_fraction
+
+
 class ScoreManager:
     """
     Tool to compute the final score in a drone rescue simulation.
@@ -17,7 +20,8 @@ class ScoreManager:
         w_score_health_returned (float): Weight for health return score.
         w_time (float): Weight for time score.
         time_best_ratio (float): Fraction of ``max_timestep_limit`` at (or
-            before) which the time score is full (default 0.5).
+            before) which the time score is full (default 0.5). ``0`` removes
+            the full-mark plateau, so every elapsed step costs score.
     """
 
     def __init__(self,
@@ -35,7 +39,21 @@ class ScoreManager:
             max_timestep_limit (int): Max timesteps.
             max_walltime_limit (int): Max wall time in seconds.
             total_number_bombs (int): Number of bombs.
+            exploration_threshold_for_time_bonus (float): Exploration rate the
+                (informational) trajectory figure is measured against.
+            time_best_ratio (float): Fraction of the timestep limit at or
+                before which the time score is full, within [0, 1]. ``0``
+                means no round can earn full marks and every step costs score.
+
+        Raises:
+            ValueError: If ``time_best_ratio`` is outside [0, 1].
         """
+
+        ratio = float(time_best_ratio)
+        if not 0.0 <= ratio <= 1.0:
+            raise ValueError(
+                f"time_best_ratio must be within [0, 1], got {time_best_ratio}"
+            )
 
         # 'number_drones' is the number of drones that will be generated in the
         # map
@@ -50,9 +68,10 @@ class ScoreManager:
         self.max_walltime_limit = max_walltime_limit
 
         # 'time_best_ratio' is the fraction of 'max_timestep_limit' at (or
-        # before) which the time score is full (same convention as the red
-        # team's place_scoring.time_best_ratio).
-        self.time_best_ratio = float(time_best_ratio)
+        # before) which the time score is full. Both teams read it from their
+        # own YAML section and share the curve with the red team
+        # (``place_scoring.time_best_ratio``).
+        self.time_best_ratio = ratio
 
         # 'number_bombs' is the number of bombs that should
         # be retrieved by the drones.
@@ -82,9 +101,10 @@ class ScoreManager:
         rewards an incomplete round and never depends on host speed.
 
         A completed round uses the same curve as the red team
-        (``PlaceScoreManager.compute_time_score``): at or before half the
-        timestep limit the score is full (out of 100), it drops to 0 at the
-        limit and is linear in between; a crashed round earns 0 on time.
+        (``time_score.time_score_fraction``): at or before
+        ``time_best_ratio`` of the timestep limit the score is full (out of
+        100), it drops to 0 at the limit and is linear in between; a crashed
+        round earns 0 on time.
 
         Args:
             number_disposed_bombs (int): Number of disposed bombs.
@@ -126,25 +146,17 @@ class ScoreManager:
         Time score out of 100 for a round that disposed every bomb, mirroring
         the red team's time score.
 
-        ``score_timestep = clamp((limit - elapsed) / (limit - best), 0, 1) * 100``
-        where ``limit = max_timestep_limit`` and ``best = time_best_ratio *
-        limit`` (default half the limit). A crashed round earns 0, same as the
-        red team. The completion gate lives in ``compute_score``, which is the
-        only caller and applies this curve only to a round with no bomb left.
+        ``score_timestep = time_score_fraction(elapsed, max_timestep_limit,
+        time_best_ratio) * 100``. A crashed round earns 0, same as the red
+        team. The completion gate lives in ``compute_score``, which is the only
+        caller and applies this curve only to a round with no bomb left.
         """
         if has_crashed:
             return 0.0
 
-        limit = float(self.max_timestep_limit)
-        elapsed = float(elapsed_timestep)
-
-        if limit <= 0:
-            return 0.0
-
-        best = self.time_best_ratio * limit
-        if limit == best:
-            return 100.0 if elapsed <= best else 0.0
-
-        fraction = (limit - elapsed) / (limit - best)
-        fraction = max(0.0, min(1.0, fraction))
+        fraction = time_score_fraction(
+            float(elapsed_timestep),
+            float(self.max_timestep_limit),
+            self.time_best_ratio,
+        )
         return 100.0 * fraction

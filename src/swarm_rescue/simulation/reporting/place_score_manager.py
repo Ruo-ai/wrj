@@ -9,8 +9,8 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 import cv2
 import numpy as np
 
+from swarm_rescue.simulation.reporting.time_score import time_score_fraction
 from swarm_rescue.simulation.utils.definitions import CollisionTypes
-from swarm_rescue.simulation.utils.utils import clamp
 
 from swarm_rescue.tools.map_exploration_scoring import (
     MapExplorationScorer,
@@ -258,7 +258,9 @@ class PlaceScoreConfig:
     #: the blue-team time score) or ``"walltime"`` (wall-clock seconds).
     time_metric: str = "timestep"
     #: Fraction of the time limit at which the time score saturates to 1.0
-    #: (e.g. 0.5 -> finishing within half the limit earns full marks).
+    #: (e.g. 0.5 -> finishing within half the limit earns full marks).  ``0``
+    #: removes the plateau, so every step of elapsed time costs score; see
+    #: :mod:`swarm_rescue.simulation.reporting.time_score`.
     time_best_ratio: float = 0.5
 
     def validate(self) -> None:
@@ -288,9 +290,9 @@ class PlaceScoreConfig:
                 f"time_metric must be one of {_TIME_METRICS}, got "
                 f"{self.time_metric!r}"
             )
-        if not (0.0 < self.time_best_ratio <= 1.0):
+        if not (0.0 <= self.time_best_ratio <= 1.0):
             raise ValueError(
-                f"time_best_ratio must be within (0, 1], got "
+                f"time_best_ratio must be within [0, 1], got "
                 f"{self.time_best_ratio}"
             )
 
@@ -910,7 +912,8 @@ class PlaceScoreManager:
         ``s_time = clamp((time_limit - elapsed) / (time_limit - time_best),
         0, 1)`` where ``time_best = time_best_ratio * time_limit``; i.e.
         finishing within half the limit (default) earns full marks, reaching
-        the limit earns zero.
+        the limit earns zero.  ``time_best_ratio: 0`` removes the plateau, so
+        every unit of elapsed time costs score.
 
         Args:
             elapsed: Elapsed time (in the configured ``time_metric`` units).
@@ -921,15 +924,10 @@ class PlaceScoreManager:
         """
         time_limit = float(time_limit)
         elapsed = float(elapsed)
-        best = float(self.config.time_best_ratio) * time_limit
+        best_ratio = float(self.config.time_best_ratio)
+        best = best_ratio * time_limit
 
-        if time_limit <= 0:
-            score = 0.0
-        elif time_limit == best:
-            score = 1.0 if elapsed <= best else 0.0
-        else:
-            score = (time_limit - elapsed) / (time_limit - best)
-            score = float(clamp(score, 0.0, 1.0))
+        score = time_score_fraction(elapsed, time_limit, best_ratio)
 
         return TimeScoreResult(
             score=score,
@@ -938,7 +936,7 @@ class PlaceScoreManager:
                 "time_metric": self.config.time_metric,
                 "time_limit": time_limit,
                 "time_best": best,
-                "time_best_ratio": self.config.time_best_ratio,
+                "time_best_ratio": best_ratio,
                 "elapsed": elapsed,
             },
         )

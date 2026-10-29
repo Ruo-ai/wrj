@@ -429,9 +429,13 @@ def test_place_score_config_validation() -> None:
     with pytest.raises(ValueError):
         PlaceScoreConfig(time_metric="seconds").validate()
     with pytest.raises(ValueError):
-        PlaceScoreConfig(time_best_ratio=0.0).validate()
+        PlaceScoreConfig(time_best_ratio=1.5).validate()
+    with pytest.raises(ValueError):
+        PlaceScoreConfig(time_best_ratio=-0.1).validate()
     with pytest.raises(ValueError):
         PlaceScoreConfig(w_exploration=-0.1).validate()
+    # 0 is a meaningful setting: no full-mark plateau, instead of being rejected.
+    PlaceScoreConfig(time_best_ratio=0.0).validate()
 
 
 # ---------------------------------------------------------------------------
@@ -609,6 +613,31 @@ def test_compute_time_score_at_limit_is_zero() -> None:
     manager = _scorer_manager()
     assert manager.compute_time_score(1000.0, 1000.0).score == pytest.approx(0.0)
     assert manager.compute_time_score(1500.0, 1000.0).score == pytest.approx(0.0)
+
+
+def test_compute_time_score_zero_ratio_has_no_plateau() -> None:
+    """time_best_ratio 0 removes the plateau: every unit of time costs score."""
+    manager = PlaceScoreManager(
+        PlaceScoreConfig(time_best_ratio=0.0, blast_radius=0.12)
+    )
+    # Only an instant finish would be full, so real rounds are strictly below 1.
+    assert manager.compute_time_score(0.0, 1000.0).score == pytest.approx(1.0)
+    assert manager.compute_time_score(1.0, 1000.0).score == pytest.approx(0.999)
+    assert manager.compute_time_score(250.0, 1000.0).score == pytest.approx(0.75)
+    assert manager.compute_time_score(500.0, 1000.0).score == pytest.approx(0.5)
+    assert manager.compute_time_score(1000.0, 1000.0).score == pytest.approx(0.0)
+    result = manager.compute_time_score(250.0, 1000.0)
+    assert result.breakdown["time_best"] == pytest.approx(0.0)
+    assert result.breakdown["time_best_ratio"] == pytest.approx(0.0)
+
+
+def test_compute_time_score_full_ratio_saturates_to_the_limit() -> None:
+    manager = PlaceScoreManager(
+        PlaceScoreConfig(time_best_ratio=1.0, blast_radius=0.12)
+    )
+    assert manager.compute_time_score(999.0, 1000.0).score == pytest.approx(1.0)
+    assert manager.compute_time_score(1000.0, 1000.0).score == pytest.approx(1.0)
+    assert manager.compute_time_score(1001.0, 1000.0).score == pytest.approx(0.0)
 
 
 def test_phase1_includes_time_score_from_timesteps() -> None:

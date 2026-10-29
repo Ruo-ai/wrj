@@ -315,6 +315,9 @@ class Launcher:
                                           total_number_bombs=self.number_bombs,
                                           exploration_threshold_for_time_bonus=(
                                               self.eval_plan.exploration_threshold_for_time_bonus
+                                          ),
+                                          time_best_ratio=(
+                                              self.eval_plan.time_best_ratio
                                           ))
 
         num_round_str = str(num_round)
