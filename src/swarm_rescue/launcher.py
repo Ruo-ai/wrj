@@ -44,7 +44,7 @@ from swarm_rescue.maps.map_04 import Map04
 from swarm_rescue.maps.map_05 import Map05
 from swarm_rescue.maps.map_07 import Map07
 
-from swarm_rescue.solutions.my_drone_eval import drone_class_for_mode
+from swarm_rescue import entry_point as drone_entry
 
 
 class Launcher:
@@ -293,7 +293,7 @@ class Launcher:
             return None
 
         round_team_mode = self._resolve_team_mode(eval_config)
-        drone_type = drone_class_for_mode(round_team_mode.value)
+        drone_type = drone_entry.drone_class_for_mode(round_team_mode.value)
         map_kwargs = {
             "drone_type": drone_type,
             "zones_config": eval_config.zones_config,

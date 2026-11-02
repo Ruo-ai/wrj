@@ -25,6 +25,17 @@ REQUIRED_ZIP_ENTRIES = (
     "req.txt",
 )
 
+# The one entry the installer copies out of the zip root whose absence changes
+# *which strategy runs* rather than merely failing the run: without it the
+# engine's own example entry point keeps resolving, and the team would be
+# scored on the bundled example strategy.
+ENTRY_MODULE = "my_drone_eval.py"
+
+# Error prefix for a submission the evaluator refuses to run because installing
+# it would not evaluate the submitted code. smoke.py maps this to
+# ``invalid_input``; a simulation that crashed stays ``fail``.
+INVALID_SUBMISSION_PREFIX = "invalid_submission:"
+
 # Optional image pointer. Lives in solutions/ (so it ends up at the zip root).
 # Empty or comment-only content means "evaluate the code shipped in this zip".
 # A non-empty value means "evaluate the solutions directory inside this image".
@@ -212,24 +223,167 @@ def zip_stem(zip_path: Path) -> str:
     return zip_path.stem
 
 
+def _zip_members_by_basename(names: Iterable[str]) -> Dict[str, List[str]]:
+    """Group archive member names by their file name, keeping every occurrence."""
+    by_base: Dict[str, List[str]] = {}
+    for name in names:
+        norm = name.replace("\\", "/")
+        if norm.endswith("/"):
+            continue
+        base = norm.rsplit("/", 1)[-1]
+        if base:
+            by_base.setdefault(base, []).append(norm)
+    return by_base
+
+
+def _check_required_entries_at_root(names: set) -> Optional[str]:
+    """Return an error when a required file is missing or nested, else None.
+
+    Root level matters: the installer copies ``my_drone_eval.py`` (and the two
+    other required files) out of the zip root, so a submission whose entry file
+    sits inside a folder installs *no* entry point at all. The engine's own
+    example entry point then stays in place and the team would be scored on
+    example code, which is why a nested required file is rejected here rather
+    than tolerated.
+    """
+    by_base = _zip_members_by_basename(names)
+    problems: List[str] = []
+    for required in REQUIRED_ZIP_ENTRIES:
+        found = by_base.get(required, [])
+        if required in found:
+            continue
+        if found:
+            problems.append(
+                f"{required} must be at the zip root, not inside a folder "
+                f"(found: {sorted(found)[0]}). Zip the contents of your "
+                "solutions folder, not the folder itself."
+            )
+        else:
+            problems.append(f"{required} is missing")
+    if not problems:
+        return None
+    return "; ".join(problems)
+
+
+def _check_entry_module_source(names: set, sources: List[Tuple[str, str]]) -> Optional[str]:
+    """Check the zip-root entry module defines one of the two accepted entries.
+
+    Mirrors ``validate_my_drone_eval_source`` for an archive, without writing the
+    member to disk.
+    """
+    if ENTRY_MODULE not in names:
+        # Missing or nested: already reported by the root-level check.
+        return None
+
+    source = next(
+        (text for name, text in sources if name.replace("\\", "/") == ENTRY_MODULE),
+        None,
+    )
+    if source is None:
+        return None
+    try:
+        tree = ast.parse(source, filename=ENTRY_MODULE)
+    except SyntaxError as exc:
+        return f"{ENTRY_MODULE} syntax error: {exc}"
+    return _entry_point_error(tree, ENTRY_MODULE)
+
+
 def validate_zip_contents(zip_path: Path) -> Tuple[bool, Optional[str]]:
-    """Check that zip contains required submission files."""
+    """Decide whether a submission zip may be evaluated at all.
+
+    This is the only gate every batch command consults (place / rescue /
+    competition / re-eval / reference-blue selection / smoke), so it runs the
+    checks that stop a submission from being *silently* evaluated as somebody
+    else's code: the required files must sit at the zip root, the entry module
+    must define an entry point, the project tree must not be smuggled in, and
+    the team identity must be usable. Anything it lets through is what the
+    evaluator runs, and the team's score is attributed to the code in the zip.
+
+    The optional ``image_ref.txt`` pointer is deliberately *not* fatal here: a
+    malformed pointer is caught by ``validate_zip_archive`` and by the image
+    preflight, while refusing the zip outright would also hide the rest of the
+    submission.
+    """
     try:
         with zipfile.ZipFile(zip_path, "r") as zf:
             names = set(zf.namelist())
     except zipfile.BadZipFile:
         return False, f"Invalid zip file: {zip_path}"
+    except OSError as exc:
+        return False, f"Unreadable zip file: {zip_path} ({exc})"
 
-    normalized = set()
-    for name in names:
-        base = name.split("/")[-1] if "/" in name else name
-        if base:
-            normalized.add(base)
+    root_error = _check_required_entries_at_root(names)
+    if root_error:
+        return False, f"{zip_path.name}: {root_error}"
 
-    missing = [req for req in REQUIRED_ZIP_ENTRIES if req not in normalized]
-    if missing:
-        return False, f"Missing required files in {zip_path.name}: {', '.join(missing)}"
+    result = SubmissionCheckResult()
+    _check_zip_entries(names, result, zip_path)
+    if result.errors:
+        return False, result.errors[0]
+
+    try:
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            sources = _python_sources_from_zip(zf)
+    except (zipfile.BadZipFile, KeyError, OSError):
+        sources = []
+
+    entry_error = _check_entry_module_source(names, sources)
+    if entry_error:
+        return False, f"{zip_path.name}: {entry_error}"
+
+    team_error = _check_team_info_member(zip_path, names)
+    if team_error:
+        return False, f"{zip_path.name}: {team_error}"
+
     return True, None
+
+
+def _check_team_info_member(zip_path: Path, names: set) -> Optional[str]:
+    """Validate the zip-root team_info.yml identity that would change the result.
+
+    Only disagreements the run cannot repair are refused. ``run_job`` pins
+    ``team_number`` to the zip file name before the simulation starts, so a
+    missing or non-numeric number is rewritten rather than fatal; what it cannot
+    repair is the archive being mislabelled altogether -- a number that parses
+    and contradicts the file name means the participant packaged the wrong tree
+    (or renamed the zip), and the result would be filed under a team whose code
+    it is not.
+
+    Display fields (name, members) and YAML shape are left to
+    ``check_submission.sh``: they change how a result is labelled, not which code
+    runs, and ``TeamInfo`` tolerates them being absent.
+    """
+    member = "team_info.yml"
+    if member not in _zip_members_by_basename(names).get(member, []):
+        return None
+    try:
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            raw = zf.read(member).decode("utf-8", errors="replace")
+    except (zipfile.BadZipFile, KeyError, OSError) as exc:
+        return f"team_info.yml unreadable: {exc}"
+
+    try:
+        config = yaml.safe_load(raw)
+    except yaml.YAMLError as exc:
+        return f"Invalid YAML in team_info.yml: {exc}"
+
+    declared: Optional[int] = None
+    if isinstance(config, dict):
+        try:
+            declared = int(config.get("team_number"))
+        except (TypeError, ValueError):
+            declared = None
+    if declared is None:
+        # run_job rewrites the number from the file name; nothing to compare.
+        return None
+
+    expected = parse_submission_team_number(zip_path.name)
+    if expected is not None and declared != expected:
+        return (
+            f"team_info.yml team_number ({declared}) does not match "
+            f"zip file team number ({expected:03d})"
+        )
+    return None
 
 
 def validate_image_ref(ref: str) -> Optional[str]:
@@ -394,6 +548,24 @@ def validate_team_info_yaml(
     }, None
 
 
+def _entry_point_error(tree: ast.AST, label: str) -> Optional[str]:
+    """Return an error when *tree* defines neither accepted entry point."""
+    has_drone_class_for_mode = False
+    has_my_drone_eval_class = False
+    for node in ast.walk(tree):
+        if isinstance(node, ast.FunctionDef) and node.name == "drone_class_for_mode":
+            has_drone_class_for_mode = True
+        if isinstance(node, ast.ClassDef) and node.name == "MyDroneEval":
+            has_my_drone_eval_class = True
+
+    if not has_drone_class_for_mode and not has_my_drone_eval_class:
+        return (
+            f"{label} must define drone_class_for_mode(mode) "
+            "or class MyDroneEval"
+        )
+    return None
+
+
 def validate_my_drone_eval_source(source_path: Path) -> Optional[str]:
     """Syntax-check my_drone_eval.py and verify an entry point is defined."""
     if not source_path.is_file():
@@ -405,20 +577,7 @@ def validate_my_drone_eval_source(source_path: Path) -> Optional[str]:
     except SyntaxError as exc:
         return f"my_drone_eval.py syntax error: {exc}"
 
-    has_drone_class_for_mode = False
-    has_my_drone_eval_class = False
-    for node in ast.walk(tree):
-        if isinstance(node, ast.FunctionDef) and node.name == "drone_class_for_mode":
-            has_drone_class_for_mode = True
-        if isinstance(node, ast.ClassDef) and node.name == "MyDroneEval":
-            has_my_drone_eval_class = True
-
-    if not has_drone_class_for_mode and not has_my_drone_eval_class:
-        return (
-            "my_drone_eval.py must define drone_class_for_mode(mode) "
-            "or class MyDroneEval"
-        )
-    return None
+    return _entry_point_error(tree, "my_drone_eval.py")
 
 
 def validate_req_txt(req_path: Path) -> Optional[str]:
