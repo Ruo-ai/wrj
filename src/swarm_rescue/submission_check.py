@@ -296,8 +296,8 @@ def validate_zip_contents(zip_path: Path) -> Tuple[bool, Optional[str]]:
     checks that stop a submission from being *silently* evaluated as somebody
     else's code: the required files must sit at the zip root, the entry module
     must define an entry point, the project tree must not be smuggled in, and
-    the team identity must be usable. Anything it lets through is what the
-    evaluator runs, and the team's score is attributed to the code in the zip.
+    ``team_info.yml`` must load. Anything it lets through is what the evaluator
+    runs, and the team's score is attributed to the code in the zip.
 
     The optional ``image_ref.txt`` pointer is deliberately *not* fatal here: a
     malformed pointer is caught by ``validate_zip_archive`` and by the image
@@ -339,19 +339,18 @@ def validate_zip_contents(zip_path: Path) -> Tuple[bool, Optional[str]]:
 
 
 def _check_team_info_member(zip_path: Path, names: set) -> Optional[str]:
-    """Validate the zip-root team_info.yml identity that would change the result.
+    """Check that the zip-root team_info.yml can be loaded by the run.
 
-    Only disagreements the run cannot repair are refused. ``run_job`` pins
-    ``team_number`` to the zip file name before the simulation starts, so a
-    missing or non-numeric number is rewritten rather than fatal; what it cannot
-    repair is the archive being mislabelled altogether -- a number that parses
-    and contradicts the file name means the participant packaged the wrong tree
-    (or renamed the zip), and the result would be filed under a team whose code
-    it is not.
+    The zip file name is the identity of record: ``run_job`` pins
+    ``team_number`` to it before the simulation starts, so a stale, missing or
+    non-numeric number in the YAML is rewritten and cannot mislabel the result.
+    Refusing a mismatch here would contradict that rule and reject an archive
+    renamed after the fact, which the pipeline allows.
 
-    Display fields (name, members) and YAML shape are left to
-    ``check_submission.sh``: they change how a result is labelled, not which code
-    runs, and ``TeamInfo`` tolerates them being absent.
+    What the run cannot repair is a file it cannot load at all, so only that is
+    fatal here. Field completeness and the team-number agreement are the
+    participant's own pre-flight (``check_submission.sh`` →
+    ``validate_team_info_yaml``), where a mismatch is still actionable.
     """
     member = "team_info.yml"
     if member not in _zip_members_by_basename(names).get(member, []):
@@ -367,22 +366,8 @@ def _check_team_info_member(zip_path: Path, names: set) -> Optional[str]:
     except yaml.YAMLError as exc:
         return f"Invalid YAML in team_info.yml: {exc}"
 
-    declared: Optional[int] = None
-    if isinstance(config, dict):
-        try:
-            declared = int(config.get("team_number"))
-        except (TypeError, ValueError):
-            declared = None
-    if declared is None:
-        # run_job rewrites the number from the file name; nothing to compare.
-        return None
-
-    expected = parse_submission_team_number(zip_path.name)
-    if expected is not None and declared != expected:
-        return (
-            f"team_info.yml team_number ({declared}) does not match "
-            f"zip file team number ({expected:03d})"
-        )
+    if not isinstance(config, dict):
+        return "team_info.yml must contain a YAML mapping"
     return None
 
 
