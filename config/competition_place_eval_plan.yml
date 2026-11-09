@@ -6,10 +6,10 @@ state_recording_enabled: true
 video_capture_enabled: false
 
 evaluation_plan:
-  - map_name: Map01
+  - map_name: Map06
     team_mode: place
     nb_rounds: 2
     config_weight: 1
     number_drones: 5
     initial_bombs_per_drone: 2
-    zones_config: []
+    zones_config: [NO_COM_ZONE, NO_GPS_ZONE]

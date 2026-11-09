@@ -93,7 +93,7 @@ class EvalPlan:
         self.exploration_threshold_for_time_bonus: float = 97.0
         # Fraction of the timestep limit at or before which the blue-team time
         # score is full. 0 removes the plateau, so every step costs score.
-        self.time_best_ratio: float = 0.5
+        self.time_best_ratio: float = 0.3
 
     def add(self, eval_config: EvalConfig) -> None:
         """

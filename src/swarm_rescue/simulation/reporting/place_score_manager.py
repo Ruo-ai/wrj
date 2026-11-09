@@ -261,7 +261,7 @@ class PlaceScoreConfig:
     #: (e.g. 0.5 -> finishing within half the limit earns full marks).  ``0``
     #: removes the plateau, so every step of elapsed time costs score; see
     #: :mod:`swarm_rescue.simulation.reporting.time_score`.
-    time_best_ratio: float = 0.5
+    time_best_ratio: float = 0.3
 
     def validate(self) -> None:
         for name, value in (

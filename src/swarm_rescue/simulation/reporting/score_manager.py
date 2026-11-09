@@ -30,7 +30,7 @@ class ScoreManager:
                  max_walltime_limit: int,
                  total_number_bombs: int,
                  exploration_threshold_for_time_bonus: float = 97.0,
-                 time_best_ratio: float = 0.5):
+                 time_best_ratio: float = 0.3):
         """
         Initialize the ScoreManager.
 

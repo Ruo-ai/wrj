@@ -23,8 +23,8 @@ from swarm_rescue.simulation.reporting.place_score_manager import (
 from swarm_rescue.simulation.utils.definitions import CollisionTypes
 
 
-def _scorer_manager() -> PlaceScoreManager:
-    return PlaceScoreManager(PlaceScoreConfig())
+def _scorer_manager(**config_kwargs) -> PlaceScoreManager:
+    return PlaceScoreManager(PlaceScoreConfig(**config_kwargs))
 
 
 def test_no_submission_gives_zero_map_score() -> None:
@@ -410,7 +410,7 @@ def test_load_place_score_config_legacy_and_new() -> None:
     assert defaults.blast_radius == pytest.approx(0.12)
     assert defaults.boundary_wall_weight == pytest.approx(0.5)
     assert defaults.time_metric == "timestep"
-    assert defaults.time_best_ratio == pytest.approx(0.5)
+    assert defaults.time_best_ratio == pytest.approx(0.3)
 
 
 def test_place_score_config_validation() -> None:
@@ -595,14 +595,14 @@ def test_boundary_excludes_partition_abutting_the_frame() -> None:
 
 
 def test_compute_time_score_half_limit_is_full_marks() -> None:
-    manager = _scorer_manager()  # time_best_ratio = 0.5
+    manager = _scorer_manager(time_best_ratio=0.5)  # explicit: not the default
     # elapsed <= half of limit -> 1.0
     assert manager.compute_time_score(0.0, 1000.0).score == pytest.approx(1.0)
     assert manager.compute_time_score(500.0, 1000.0).score == pytest.approx(1.0)
 
 
 def test_compute_time_score_linear_between_half_and_limit() -> None:
-    manager = _scorer_manager()
+    manager = _scorer_manager(time_best_ratio=0.5)
     result = manager.compute_time_score(750.0, 1000.0)
     assert result.score == pytest.approx(0.5)  # (1000-750)/(1000-500)
     assert result.breakdown["time_best"] == pytest.approx(500.0)
@@ -641,7 +641,7 @@ def test_compute_time_score_full_ratio_saturates_to_the_limit() -> None:
 
 
 def test_phase1_includes_time_score_from_timesteps() -> None:
-    manager = _scorer_manager()
+    manager = _scorer_manager(time_best_ratio=0.5)
     truth = _wall_test_grid()
     phase1 = manager.compute_phase1_score(
         truth,
@@ -689,7 +689,7 @@ def test_phase1_time_score_zero_on_crash_and_missing_inputs() -> None:
 
 
 def test_phase1_time_score_walltime_metric() -> None:
-    manager = PlaceScoreManager(PlaceScoreConfig(time_metric="walltime"))
+    manager = PlaceScoreManager(PlaceScoreConfig(time_metric="walltime", time_best_ratio=0.5))
     truth = _wall_test_grid()
     phase1 = manager.compute_phase1_score(
         truth,

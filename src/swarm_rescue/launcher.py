@@ -43,6 +43,11 @@ from swarm_rescue.maps.map_03 import Map03
 from swarm_rescue.maps.map_04 import Map04
 from swarm_rescue.maps.map_05 import Map05
 from swarm_rescue.maps.map_07 import Map07
+from swarm_rescue.maps.map_07t4 import Map07t4
+
+from swarm_rescue.maps.map_06 import Map06
+from swarm_rescue.maps.map_08 import Map08
+from swarm_rescue.maps.map_09 import Map09
 
 from swarm_rescue import entry_point as drone_entry
 
