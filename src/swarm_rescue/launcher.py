@@ -375,6 +375,9 @@ class Launcher:
         my_gui.set_state_recording_metadata({
             "team_mode": round_team_mode.value,
             "number_drones": self.number_drones,
+            # The map module owns zone geometry; the recording only carries which
+            # zone types this round enabled, so replay can rebuild the same set.
+            "zones_config": [zone.name for zone in eval_config.zones_config],
         })
 
         the_map.explored_map.reset()
@@ -910,11 +913,22 @@ if __name__ == "__main__":
             print(f"Error: unknown map type '{map_name}'. Ensure it is imported in launcher.py.")
             exit(1)
 
+        # Recordings written by this launcher carry the round's zone types; the
+        # map module rebuilds their geometry. Older recordings have no such key
+        # and replay without special zones.
+        zone_names = metadata.get("zones_config") or []
+        try:
+            zones_config = tuple(ZoneType[name] for name in zone_names)
+        except KeyError as error:
+            print(f"Error: unknown zone type {error.args[0]!r} in recording metadata")
+            exit(1)
+        map_kwargs_extra = {"zones_config": zones_config} if zones_config else None
+
         if args.headless:
             print("Replay in headless mode is not supported. Use --headless only for simulation.")
             exit(1)
 
-        run_replay(npz_path, map_class)
+        run_replay(npz_path, map_class, map_kwargs_extra)
         exit(0)
 
     launcher = Launcher(

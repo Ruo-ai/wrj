@@ -22,8 +22,8 @@ from swarm_rescue.simulation.gui_map.map_abstract import MapAbstract
 from swarm_rescue.simulation.reporting.evaluation import EvalConfig, EvalPlan, ZonesConfig
 from swarm_rescue.simulation.utils.misc_data import MiscData
 from swarm_rescue.simulation.utils.pose import Pose
-from swarm_rescue.simulation.elements.sensor_disablers import NoComZone, NoGpsZone, KillZone, ZoneType
-from swarm_rescue.maps.walls_09 import add_walls, add_boxes
+from swarm_rescue.simulation.elements.sensor_disablers import ZoneType
+from swarm_rescue.maps.walls_09 import add_walls, add_boxes, add_zones
 
 
 class Map09(MapAbstract):
@@ -72,15 +72,7 @@ class Map09(MapAbstract):
 
         self._playground.add(self._disposal_center, self._disposal_center_pos)
 
-        if ZoneType.NO_COM_ZONE in self._zones_config:
-            self._no_com_zone = NoComZone(size=(789, 559))
-            self._no_com_zone_pos = ((-282, 260), 0)
-            self._playground.add(self._no_com_zone, self._no_com_zone_pos)
-
-        if ZoneType.NO_GPS_ZONE in self._zones_config:
-            self._no_gps_zone = NoGpsZone(size=(856, 555))
-            self._no_gps_zone_pos = ((200, 264), 0)
-            self._playground.add(self._no_gps_zone, self._no_gps_zone_pos)
+        add_zones(self._playground, self._zones_config)
 
         add_walls(self._playground)
         add_boxes(self._playground)

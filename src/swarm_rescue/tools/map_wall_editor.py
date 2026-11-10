@@ -13,17 +13,37 @@ LINE_WALL = "line_wall"
 RECT_WALL = "rect_wall"
 START_AREA = "start_area"
 DISPOSAL_CENTER = "disposal_center"
+NO_COM_ZONE = "no_com_zone"
+NO_GPS_ZONE = "no_gps_zone"
 HIT_TOLERANCE = 8  # 线段墙点击命中容差（像素）
 DEFAULT_COLOR = "#000000"
 DEFAULT_START_AREA_COLOR = "#1E90FF"
 DEFAULT_DISPOSAL_CENTER_COLOR = "#228B22"
+DEFAULT_NO_COM_ZONE_COLOR = "#FFFF00"
+DEFAULT_NO_GPS_ZONE_COLOR = "#808080"
 DEFAULT_LINE_THICKNESS = 6
 DEFAULT_CANVAS_WIDTH = 1113
 DEFAULT_CANVAS_HEIGHT = 750
 
+ZONE_TOOLS = (NO_COM_ZONE, NO_GPS_ZONE)
+
 
 def _is_rect_like_tool(tool: str) -> bool:
-    return tool in (RECT_WALL, START_AREA, DISPOSAL_CENTER)
+    return tool in (RECT_WALL, START_AREA, DISPOSAL_CENTER, NO_COM_ZONE, NO_GPS_ZONE)
+
+
+def _zone_label(element_type: str) -> str:
+    return {
+        NO_COM_ZONE: "NoComZone",
+        NO_GPS_ZONE: "NoGpsZone",
+    }.get(element_type, element_type)
+
+
+def _paint_order(elements: List["WallElement"]) -> List["WallElement"]:
+    """特殊区域先画：它们是大面积半透明矩形，压在最上层会盖住墙体。"""
+    zones = [e for e in elements if e.element_type in ZONE_TOOLS]
+    others = [e for e in elements if e.element_type not in ZONE_TOOLS]
+    return zones + others
 
 
 @dataclass
@@ -140,6 +160,16 @@ def serialize_elements(width: int, height: int, elements: List[WallElement]) -> 
                     "color": element.color,
                 }
             )
+        elif element.element_type in ZONE_TOOLS and element.top_left and element.bottom_right:
+            serialized_elements.append(
+                {
+                    "id": element.element_id,
+                    "type": element.element_type,
+                    "top_left": [element.top_left[0], element.top_left[1]],
+                    "bottom_right": [element.bottom_right[0], element.bottom_right[1]],
+                    "color": element.color,
+                }
+            )
 
     return {
         "version": 1,
@@ -244,6 +274,33 @@ def load_elements(json_data: Dict, width: int, height: int) -> List[WallElement]
                     bottom_right=normalized_bottom_right,
                 )
             )
+        elif element_type in ZONE_TOOLS:
+            top_left = raw.get("top_left")
+            bottom_right = raw.get("bottom_right")
+            if not top_left or not bottom_right:
+                continue
+
+            x0 = _clamp(int(top_left[0]), 0, width - 1)
+            y0 = _clamp(int(top_left[1]), 0, height - 1)
+            x1 = _clamp(int(bottom_right[0]), 0, width - 1)
+            y1 = _clamp(int(bottom_right[1]), 0, height - 1)
+            normalized_top_left, normalized_bottom_right = _normalize_rect(x0, y0, x1, y1)
+
+            default_color = (
+                DEFAULT_NO_COM_ZONE_COLOR
+                if element_type == NO_COM_ZONE
+                else DEFAULT_NO_GPS_ZONE_COLOR
+            )
+            # 同类型区域允许多个（如 Map08 有两个 NoGpsZone），不做单例替换。
+            elements.append(
+                WallElement(
+                    element_id=element_id,
+                    element_type=element_type,
+                    color=raw.get("color", default_color),
+                    top_left=normalized_top_left,
+                    bottom_right=normalized_bottom_right,
+                )
+            )
 
     return elements
 
@@ -252,7 +309,7 @@ def render_elements_to_image(width: int, height: int, elements: List[WallElement
     """将墙体元素渲染为 PNG 图片（白色背景 + 黑色墙体 + 彩色标记）。"""
     image = np.full((height, width, 3), 255, dtype=np.uint8)
 
-    for element in elements:
+    for element in _paint_order(elements):
         color = _parse_hex_color(element.color)
         if element.element_type == LINE_WALL and element.points:
             cv2.line(
@@ -291,6 +348,26 @@ def render_elements_to_image(width: int, height: int, elements: List[WallElement
                 (0, 0, 255),  # BGR 红色
                 thickness=-1,
                 lineType=cv2.LINE_8,
+            )
+        elif element.element_type in ZONE_TOOLS and element.top_left and element.bottom_right:
+            # 特殊区域：半透明填充 + 边框，保持下方墙体可见
+            overlay = image.copy()
+            cv2.rectangle(
+                overlay,
+                element.top_left,
+                element.bottom_right,
+                color,
+                thickness=-1,
+                lineType=cv2.LINE_8,
+            )
+            cv2.addWeighted(overlay, 0.3, image, 0.7, 0, dst=image)
+            cv2.rectangle(
+                image,
+                element.top_left,
+                element.bottom_right,
+                color,
+                thickness=2,
+                lineType=cv2.LINE_AA,
             )
 
     return image
@@ -392,6 +469,23 @@ class EditorState:
             element = WallElement(
                 element_id=self.next_id,
                 element_type=RECT_WALL,
+                top_left=top_left,
+                bottom_right=bottom_right,
+            )
+            self.elements.append(element)
+            self.next_id += 1
+            return element
+
+        if self.current_tool in ZONE_TOOLS:
+            # 同类型区域允许叠加多个：评测只按类型开关，不按实例开关。
+            element = WallElement(
+                element_id=self.next_id,
+                element_type=self.current_tool,
+                color=(
+                    DEFAULT_NO_COM_ZONE_COLOR
+                    if self.current_tool == NO_COM_ZONE
+                    else DEFAULT_NO_GPS_ZONE_COLOR
+                ),
                 top_left=top_left,
                 bottom_right=bottom_right,
             )
@@ -505,7 +599,7 @@ def run_pyside6_app() -> bool:
             painter = QPainter(self)
             painter.fillRect(self.rect(), QBrush(QColor("white")))
 
-            for element in self.state.elements:
+            for element in _paint_order(self.state.elements):
                 self._paint_element(painter, element)
 
             if self.state.first_point is not None and self.preview_point is not None:
@@ -530,9 +624,18 @@ def run_pyside6_app() -> bool:
                     painter.drawRect(rect)
 
         def _find_element_at(self, x: int, y: int) -> Optional[WallElement]:
-            """从后往前（上层优先）查找点击位置的元素。"""
+            """从后往前（上层优先）查找点击位置的元素。
+
+            区域是覆盖全图的大矩形，先跳过它们，避免区域内的墙体无法点选；
+            没有其他元素命中时才回落到区域本身。
+            """
             for element in reversed(self.state.elements):
+                if element.element_type in ZONE_TOOLS:
+                    continue
                 if _hit_test(element, x, y):
+                    return element
+            for element in reversed(self.state.elements):
+                if element.element_type in ZONE_TOOLS and _hit_test(element, x, y):
                     return element
             return None
 
@@ -587,6 +690,11 @@ def run_pyside6_app() -> bool:
                 self.set_status(f"已设置起点区域（元素 #{element.element_id}），当前总数 {len(self.state.elements)}")
             elif element.element_type == DISPOSAL_CENTER:
                 self.set_status(f"已设置 DisposalCenter（元素 #{element.element_id}），当前总数 {len(self.state.elements)}")
+            elif element.element_type in ZONE_TOOLS:
+                self.set_status(
+                    f"已添加 {_zone_label(element.element_type)}（元素 #{element.element_id}），"
+                    f"当前总数 {len(self.state.elements)}"
+                )
             else:
                 self.set_status(f"已添加元素 #{element.element_id}，当前总数 {len(self.state.elements)}")
             self.update()
@@ -649,6 +757,24 @@ def run_pyside6_app() -> bool:
                     element.bottom_right[1] - element.top_left[1],
                 )
                 painter.drawRect(rect)
+            elif element.element_type in ZONE_TOOLS and element.top_left and element.bottom_right:
+                c = QColor("#FF4500") if is_selected else QColor(element.color)
+                fill = QColor(c)
+                fill.setAlpha(55)
+                painter.setPen(QPen(c, 3 if is_selected else 2, Qt.SolidLine if is_selected else Qt.DashLine))
+                painter.setBrush(QBrush(fill))
+                rect = QRect(
+                    element.top_left[0],
+                    element.top_left[1],
+                    element.bottom_right[0] - element.top_left[0],
+                    element.bottom_right[1] - element.top_left[1],
+                )
+                painter.drawRect(rect)
+                painter.setPen(QPen(QColor("#333333"), 1, Qt.SolidLine))
+                painter.drawText(
+                    QPoint(element.top_left[0] + 8, element.top_left[1] + 20),
+                    _zone_label(element.element_type),
+                )
 
     class MapWallEditorWindow(QMainWindow):
         def __init__(self) -> None:
@@ -666,12 +792,16 @@ def run_pyside6_app() -> bool:
             self.rect_button = QRadioButton("矩形墙")
             self.start_area_button = QRadioButton("起点区域")
             self.disposal_center_button = QRadioButton("DisposalCenter")
+            self.no_com_zone_button = QRadioButton("NoComZone")
+            self.no_gps_zone_button = QRadioButton("NoGpsZone")
             self.select_button.setChecked(True)
             self.select_button.toggled.connect(self._select_select_tool)
             self.line_button.toggled.connect(self._select_line_tool)
             self.rect_button.toggled.connect(self._select_rect_tool)
             self.start_area_button.toggled.connect(self._select_start_area_tool)
             self.disposal_center_button.toggled.connect(self._select_disposal_center_tool)
+            self.no_com_zone_button.toggled.connect(self._select_no_com_zone_tool)
+            self.no_gps_zone_button.toggled.connect(self._select_no_gps_zone_tool)
 
             save_button = QPushButton("保存 JSON")
             load_button = QPushButton("加载 JSON")
@@ -685,6 +815,8 @@ def run_pyside6_app() -> bool:
             toolbar.addWidget(self.rect_button)
             toolbar.addWidget(self.start_area_button)
             toolbar.addWidget(self.disposal_center_button)
+            toolbar.addWidget(self.no_com_zone_button)
+            toolbar.addWidget(self.no_gps_zone_button)
             toolbar.addSpacing(20)
             toolbar.addWidget(save_button)
             toolbar.addWidget(load_button)
@@ -812,6 +944,22 @@ def run_pyside6_app() -> bool:
                 self.canvas.update()
                 self.set_status("当前工具：DisposalCenter（两次点击确定矩形，会替换已有 DisposalCenter）")
 
+        def _select_no_com_zone_tool(self, checked: bool) -> None:
+            if checked:
+                self.state.current_tool = NO_COM_ZONE
+                self.state.reset_first_point()
+                self.canvas.preview_point = None
+                self.canvas.update()
+                self.set_status("当前工具：NoComZone（两次点击确定矩形，可添加多个）")
+
+        def _select_no_gps_zone_tool(self, checked: bool) -> None:
+            if checked:
+                self.state.current_tool = NO_GPS_ZONE
+                self.state.reset_first_point()
+                self.canvas.preview_point = None
+                self.canvas.update()
+                self.set_status("当前工具：NoGpsZone（两次点击确定矩形，可添加多个）")
+
         def set_status(self, text: str) -> None:
             self.status_label.setText(text)
 
@@ -870,6 +1018,8 @@ def run_pyside6_app() -> bool:
                 RECT_WALL: "矩形墙",
                 START_AREA: "起点区域",
                 DISPOSAL_CENTER: "DisposalCenter",
+                NO_COM_ZONE: "NoComZone",
+                NO_GPS_ZONE: "NoGpsZone",
             }
             self.props_label.setText(f"{type_names.get(element.element_type, '元素')} #{element.element_id}")
             for spin in [self.props_rect_x1_spin, self.props_rect_y1_spin,
@@ -1022,6 +1172,8 @@ def run_tkinter_fallback_app() -> None:
         "rect_wall": "矩形墙" if use_chinese_text else "Rect Wall",
         "start_area": "起点区域" if use_chinese_text else "Start area",
         "disposal_center": "DisposalCenter" if use_chinese_text else "Disposal center",
+        "no_com_zone": "NoComZone" if use_chinese_text else "NoComZone",
+        "no_gps_zone": "NoGpsZone" if use_chinese_text else "NoGpsZone",
         "delete_selected": "删除选中" if use_chinese_text else "Delete selected",
         "no_selection": "未选中元素" if use_chinese_text else "No selection",
         "deleted": "已删除元素" if use_chinese_text else "Deleted element",
@@ -1118,6 +1270,24 @@ def run_tkinter_fallback_app() -> None:
                 indicatoron=False,
                 width=12,
             ).pack(side=tk.LEFT, padx=2)
+            tk.Radiobutton(
+                toolbar,
+                text=labels["no_com_zone"],
+                variable=self.tool_var,
+                value=NO_COM_ZONE,
+                command=self._set_tool,
+                indicatoron=False,
+                width=12,
+            ).pack(side=tk.LEFT, padx=2)
+            tk.Radiobutton(
+                toolbar,
+                text=labels["no_gps_zone"],
+                variable=self.tool_var,
+                value=NO_GPS_ZONE,
+                command=self._set_tool,
+                indicatoron=False,
+                width=12,
+            ).pack(side=tk.LEFT, padx=2)
             tk.Button(toolbar, text=labels["save_json"], command=self.save_json).pack(side=tk.LEFT, padx=6)
             tk.Button(toolbar, text=labels["load_json"], command=self.load_json_file).pack(side=tk.LEFT, padx=6)
             tk.Button(toolbar, text=labels["export_png"], command=self.export_png).pack(side=tk.LEFT, padx=6)
@@ -1186,8 +1356,14 @@ def run_tkinter_fallback_app() -> None:
             self.canvas.bind("<Motion>", self.on_mouse_move)
 
         def _find_element_at(self, x: int, y: int) -> Optional[WallElement]:
+            # 区域放最后命中：区域内的墙体/箱体优先。
             for element in reversed(self.state.elements):
+                if element.element_type in ZONE_TOOLS:
+                    continue
                 if _hit_test(element, x, y):
+                    return element
+            for element in reversed(self.state.elements):
+                if element.element_type in ZONE_TOOLS and _hit_test(element, x, y):
                     return element
             return None
 
@@ -1196,16 +1372,16 @@ def run_tkinter_fallback_app() -> None:
             self.state.reset_first_point()
             self._clear_preview()
             tool = self.state.current_tool
-            if tool == SELECT:
-                tool_name = labels["select"]
-            elif tool == LINE_WALL:
-                tool_name = labels["line_wall"]
-            elif tool == RECT_WALL:
-                tool_name = labels["rect_wall"]
-            elif tool == START_AREA:
-                tool_name = labels["start_area"]
-            else:
-                tool_name = labels["disposal_center"]
+            tool_names = {
+                SELECT: labels["select"],
+                LINE_WALL: labels["line_wall"],
+                RECT_WALL: labels["rect_wall"],
+                START_AREA: labels["start_area"],
+                DISPOSAL_CENTER: labels["disposal_center"],
+                NO_COM_ZONE: labels["no_com_zone"],
+                NO_GPS_ZONE: labels["no_gps_zone"],
+            }
+            tool_name = tool_names.get(tool, tool)
             self.status_var.set(f"{labels['current_tool']}: {tool_name}")
             self._redraw_all()
 
@@ -1262,10 +1438,30 @@ def run_tkinter_fallback_app() -> None:
                     outline=color,
                     width=w,
                 )
+            elif element.element_type in ZONE_TOOLS and element.top_left and element.bottom_right:
+                color = sel_color if is_selected else element.color
+                w = 3 if is_selected else 2
+                self.canvas.create_rectangle(
+                    element.top_left[0],
+                    element.top_left[1],
+                    element.bottom_right[0],
+                    element.bottom_right[1],
+                    outline=color,
+                    width=w,
+                    fill=color,
+                    stipple="gray25",
+                )
+                self.canvas.create_text(
+                    element.top_left[0] + 8,
+                    element.top_left[1] + 8,
+                    text=_zone_label(element.element_type),
+                    anchor="nw",
+                    fill="#333333",
+                )
 
         def _redraw_all(self) -> None:
             self.canvas.delete("all")
-            for element in self.state.elements:
+            for element in _paint_order(self.state.elements):
                 self._draw_element(element)
             self._clear_preview()
 
@@ -1380,6 +1576,8 @@ def run_tkinter_fallback_app() -> None:
                     RECT_WALL: labels["rect_wall"],
                     START_AREA: labels["start_area"],
                     DISPOSAL_CENTER: labels["disposal_center"],
+                    NO_COM_ZONE: labels["no_com_zone"],
+                    NO_GPS_ZONE: labels["no_gps_zone"],
                 }
                 self.props_label_var.set(f"{type_names.get(elem.element_type, '')} #{elem.element_id}")
                 x1 = elem.top_left[0]

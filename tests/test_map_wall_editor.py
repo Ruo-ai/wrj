@@ -221,3 +221,84 @@ def test_editor_state_resize_clamps_and_trims() -> None:
     # 缩到 1x1 时所有元素退化为点/线，全部被丢弃
     state.resize_canvas(1, 1)
     assert state.elements == []
+
+
+def test_load_elements_keeps_multiple_zones_of_same_type() -> None:
+    data = {
+        "version": 1,
+        "canvas": {"width": 200, "height": 100, "background": "white"},
+        "elements": [
+            {
+                "id": 1,
+                "type": "no_com_zone",
+                "top_left": [10, 10],
+                "bottom_right": [60, 40],
+                "color": "#FFFF00",
+            },
+            {
+                "id": 2,
+                "type": "no_gps_zone",
+                "top_left": [70, 10],
+                "bottom_right": [120, 50],
+                "color": "#808080",
+            },
+            {
+                "id": 3,
+                "type": "no_gps_zone",
+                "top_left": [130, 10],
+                "bottom_right": [190, 80],
+                "color": "#808080",
+            },
+        ],
+    }
+    elements = mwe.load_elements(data, width=200, height=100)
+    assert [e.element_type for e in elements] == [
+        mwe.NO_COM_ZONE,
+        mwe.NO_GPS_ZONE,
+        mwe.NO_GPS_ZONE,
+    ]
+    assert elements[2].top_left == (130, 10)
+    assert elements[2].bottom_right == (190, 80)
+
+    out = mwe.serialize_elements(200, 100, elements)
+    assert out["elements"] == data["elements"]
+
+
+def test_add_zone_tool_adds_without_replacing_and_uses_default_color() -> None:
+    state = mwe.EditorState()
+    state.current_tool = mwe.NO_GPS_ZONE
+    first = state.add_element(0, 0, 20, 20)
+    second = state.add_element(30, 30, 50, 50)
+    assert first is not None and second is not None
+    assert len(state.elements) == 2
+    assert first.color == mwe.DEFAULT_NO_GPS_ZONE_COLOR
+    assert second.element_type == mwe.NO_GPS_ZONE
+
+
+def test_render_elements_to_image_draws_zone_translucently() -> None:
+    elements = [
+        mwe.WallElement(1, mwe.LINE_WALL, points=[(0, 40), (99, 40)]),
+        mwe.WallElement(
+            2,
+            mwe.NO_COM_ZONE,
+            color=mwe.DEFAULT_NO_COM_ZONE_COLOR,
+            top_left=(10, 10),
+            bottom_right=(90, 70),
+        ),
+    ]
+    img = mwe.render_elements_to_image(100, 80, elements)
+    # 黄色区域按 30% 叠加：内部仍是浅黄（B 通道被压低），不是纯白
+    assert 150 < img[20, 50, 0] < 220
+    assert img[20, 50, 1] > 240
+    assert img[20, 50, 2] > 240
+    # 区域先画、墙体后画，所以墙体像素仍然清晰可见
+    assert img[40, 50, 0] < 120
+
+
+def test_paint_order_draws_zones_first() -> None:
+    elements = [
+        mwe.WallElement(1, mwe.RECT_WALL, top_left=(0, 0), bottom_right=(10, 10)),
+        mwe.WallElement(2, mwe.NO_COM_ZONE, top_left=(0, 0), bottom_right=(20, 20)),
+    ]
+    ordered = mwe._paint_order(elements)
+    assert [e.element_id for e in ordered] == [2, 1]

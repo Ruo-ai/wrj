@@ -158,3 +158,25 @@ def test_dtype_definitions():
     assert DRONE_DTYPE.names == ("x", "y", "angle", "active", "health")
     assert len(BOMB_DTYPE) == 4
     assert BOMB_DTYPE.names == ("x", "y", "angle", "active")
+
+
+def test_state_recorder_keeps_zones_config_in_metadata():
+    recorder = StateRecorder()
+    recorder.capture_state(MockPlayground([], []), 0.0)
+
+    with tempfile.NamedTemporaryFile(suffix=".npz", delete=False) as f:
+        filepath = f.name
+
+    try:
+        recorder.save(filepath, {
+            "map_name": "Map09",
+            "team_mode": "rescue",
+            "number_drones": 10,
+            "zones_config": ["NO_COM_ZONE", "NO_GPS_ZONE"],
+        })
+        metadata = StateReplayer(filepath).metadata
+        assert metadata["zones_config"] == ["NO_COM_ZONE", "NO_GPS_ZONE"]
+        assert metadata["map_name"] == "Map09"
+    finally:
+        import os
+        os.unlink(filepath)

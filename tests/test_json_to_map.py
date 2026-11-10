@@ -121,3 +121,74 @@ def test_generate_map_from_json_defaults_when_no_zones(tmp_path) -> None:
     assert "self._start_area_drones = " in map_text
     assert "self._disposal_center = DisposalCenter(size=" in map_text
     assert "add_walls(self._playground)" in map_text
+
+
+def test_generate_map_from_json_emits_special_zones(tmp_path) -> None:
+    input_json = tmp_path / "with_zones.json"
+    payload = {
+        "version": 1,
+        "canvas": {"width": 200, "height": 100, "background": "white"},
+        "elements": [
+            {
+                "id": 1,
+                "type": "no_com_zone",
+                "top_left": [10, 10],
+                "bottom_right": [60, 40],
+                "color": "#FFFF00",
+            },
+            {
+                "id": 2,
+                "type": "no_gps_zone",
+                "top_left": [70, 10],
+                "bottom_right": [120, 50],
+                "color": "#808080",
+            },
+            {
+                "id": 3,
+                "type": "no_gps_zone",
+                "top_left": [130, 10],
+                "bottom_right": [190, 80],
+                "color": "#808080",
+            },
+        ],
+    }
+    input_json.write_text(json.dumps(payload), encoding="utf-8")
+
+    result = generate_map_from_json(
+        input_json_path=input_json,
+        name="zone_map",
+        maps_dir=tmp_path / "maps",
+    )
+
+    walls_text = pathlib.Path(result["walls_py"]).read_text(encoding="utf-8")
+    assert "from swarm_rescue.simulation.elements.sensor_disablers import NoComZone, NoGpsZone" in walls_text
+    assert "ZONE_SPECS = [" in walls_text
+    # 画布 200x100：(10,10)-(60,40) -> (50,30) @ (-65,25)
+    assert '    ("NO_COM_ZONE", (50, 30), (-65, 25)),' in walls_text
+    # 同类型多个区域按 JSON 顺序全部保留
+    assert '    ("NO_GPS_ZONE", (50, 40), (-5, 20)),' in walls_text
+    assert '    ("NO_GPS_ZONE", (60, 70), (60, 5)),' in walls_text
+    assert "def add_zones(playground, zones_config=()):" in walls_text
+    assert "enabled = {zone.name for zone in zones_config}" in walls_text
+
+    map_text = pathlib.Path(result["map_py"]).read_text(encoding="utf-8")
+    assert "from swarm_rescue.maps.walls_zone_map import add_walls, add_boxes, add_zones" in map_text
+    assert "add_zones(self._playground, self._zones_config)" in map_text
+
+
+def test_generate_map_from_json_without_zones_emits_noop(tmp_path) -> None:
+    input_json = tmp_path / "no_zones.json"
+    _sample_editor_json(input_json)
+
+    result = generate_map_from_json(
+        input_json_path=input_json,
+        name="plain_map",
+        maps_dir=tmp_path / "maps",
+    )
+
+    walls_text = pathlib.Path(result["walls_py"]).read_text(encoding="utf-8")
+    assert "ZONE_SPECS" not in walls_text
+    assert "def add_zones(playground, zones_config=()):\n    return" in walls_text
+
+    map_text = pathlib.Path(result["map_py"]).read_text(encoding="utf-8")
+    assert "add_zones(self._playground, self._zones_config)" in map_text
