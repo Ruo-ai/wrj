@@ -5,6 +5,7 @@ observer joins exact renderer entity IDs and physics events OFFLINE. No commands
 sensor values, physics or scoring are modified. JSON is written once after play.
 """
 import math
+import base64
 import time
 from collections import Counter
 import numpy as np
@@ -52,6 +53,8 @@ def instrument(base):
             source=getattr(self,'_command_source',None)
             if source is None:
                 source='navigation' if nav==command else 'post_navigation_override' if nav else 'early_return'
+            elif nav is not None and any(command.get(k)!=nav.get(k) for k in ('forward','lateral','rotation')):
+                source='post_navigation_override:'+source
             route=self._route;end=route[-1] if route else None
             remaining=float(np.linalg.norm(end-self._target)) if end is not None and self._target is not None else None
             self._probe_frame=dict(step=int(self.elapsed_timestep),drone=int(self.identifier),
@@ -63,6 +66,12 @@ def instrument(base):
                 delivery_ticks=int(self._delivery_ticks),gps_missing=self.measured_gps_position() is None,
                 compass_missing=self.measured_compass_angle() is None,health=int(self.drone_health),
                 peer_count=len(self._peers),terminal_state=getattr(self,'_contact_state',None))
+            gate=getattr(self,'_narrow',None)
+            self._probe_frame['narrow']=None if gate is None else dict(state=gate.state,reason=gate.reason,
+                geometry=gate.last_geometry,stats=dict(gate.stats))
+            grid=getattr(self,'_grid',None)
+            self._probe_frame['frontier']=dict(state=getattr(grid,'task_state',None),
+                task=point(getattr(grid,'task',None)),gain=getattr(grid,'last_gain',None))
             return command
     # Preserve base identity/source hashes; receipt explicitly records observer.
     Probe.__name__=base.__name__;Probe.__module__=base.__module__
@@ -73,6 +82,7 @@ class LifecycleObserver:
     def __init__(self):
         self.bombs=[];self.rows=[];self.before={};self.last={};self.frames=[]
         self.seconds=0.;self.ticks=0
+        self.coverage_maps={}
 
     def begin(self,gui):
         start=time.perf_counter()
@@ -138,6 +148,14 @@ class LifecycleObserver:
                 r['phase_steps'][phase]=r['phase_steps'].get(phase,0)+1
             frame=dict(frame,bomb=None if associated is None else associated+1,
                        truth=point(d.true_position()))
+            # Bounded snapshots of the existing controller map, distinct from
+            # physical truth. Reuse this observer; never send maps back online.
+            if step%300==0 and hasattr(d,'_grid'):
+                grid=d._grid
+                layers=dict(body=grid.visits>0,lidar=grid.free,walls=grid.evidence>=2)
+                if hasattr(grid,'searched'):layers['semantic_opportunity']=grid.searched
+                self.coverage_maps[str(ident)]=dict(step=step,shape=list(grid.shape),cell=grid.CELL,
+                    size=[grid.width,grid.height],layers={k:base64.b64encode(np.packbits(v.ravel()).tobytes()).decode('ascii') for k,v in layers.items()})
             prev=self.last.get(ident,{})
             changed=any(frame.get(k)!=prev.get(k) for k in ('mode','carrying','source','terminal_state','bomb'))
             release=frame['command'].get('grasper')==0 and bool(old)
@@ -150,7 +168,7 @@ class LifecycleObserver:
         self.seconds+=time.perf_counter()-start
 
     def export(self,gui):
-        return dict(scope='OFFLINE ONLY; no true state fed to controllers',bombs=self.rows,frames=self.frames,
+        return dict(scope='OFFLINE ONLY; no true state fed to controllers',bombs=self.rows,frames=self.frames,coverage_maps=self.coverage_maps,
             observer_seconds=self.seconds,observer_ticks=self.ticks,
             function_seconds={str(d.identifier):dict(getattr(d,'_probe_times',{})) for d in gui._drones},
             discovered=sum(r['first_seen'] is not None for r in self.rows),

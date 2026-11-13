@@ -22,6 +22,8 @@ BLUE_CONTROLLERS = MappingProxyType({
     'boundary': ('my_drone_blue_recovery', 'MyDroneBlueBoundary'),
     'contact': ('my_drone_blue_contact', 'MyDroneBlueContact'),
     'semantic_search': ('my_drone_blue_search', 'MyDroneBlueSemanticSearch'),
+    'narrow_empty': ('my_drone_blue_narrow', 'MyDroneBlueNarrow'),
+    'frontier_tasks': ('my_drone_blue_frontier', 'MyDroneBlueFrontier'),
 })
 
 
@@ -61,4 +63,6 @@ def catalog():
         B4_search=dict(selector='semantic_search', state='candidate_health_only_no_disposal_gain', parent='B3'),
         B4_boundary=dict(selector='boundary', state='rejected_regression', parent='B3'),
         B4_contact=dict(selector='contact', state='rejected_health_regression', parent='B3'),
+        B5_narrow=dict(selector='narrow_empty',state='micro_pass_full_regression_not_adopted',parent='B3'),
+        B5_frontier=dict(selector='frontier_tasks',state='first_full_regression_not_adopted',parent='B4_search'),
     )
