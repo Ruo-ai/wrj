@@ -1,0 +1,1 @@
+"""Generated offline map package."""

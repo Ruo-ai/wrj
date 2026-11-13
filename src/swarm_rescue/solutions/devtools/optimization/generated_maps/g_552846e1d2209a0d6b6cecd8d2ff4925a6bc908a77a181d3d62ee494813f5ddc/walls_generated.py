@@ -1,0 +1,41 @@
+"""Generated offline, official NormalWall/NormalBox interfaces."""
+from swarm_rescue.simulation.elements.normal_wall import NormalWall, NormalBox
+
+def add_walls(playground):
+    wall = NormalWall(pos_start=(-770.0, -135.0), pos_end=(-16.0, -135.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(-67.0, 136.0), pos_end=(-67.0, 40.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(77.0, 240.0), pos_end=(77.0, 58.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(77.0, -58.0), pos_end=(77.0, -544.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(169.0, 129.0), pos_end=(765.0, 129.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(172.0, 126.0), pos_end=(172.0, -99.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(169.0, -102.0), pos_end=(409.0, -102.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(169.0, -223.0), pos_end=(765.0, -223.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(172.0, -226.0), pos_end=(172.0, -451.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(169.0, -454.0), pos_end=(409.0, -454.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(525.0, -102.0), pos_end=(765.0, -102.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(525.0, -454.0), pos_end=(765.0, -454.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(762.0, 126.0), pos_end=(762.0, -99.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalWall(pos_start=(762.0, -226.0), pos_end=(762.0, -451.0), wall_thickness=6)
+    playground.add(wall, wall.wall_coordinates)
+
+def add_boxes(playground):
+    wall = NormalBox(up_left_point=(-670.0, -270.0), width=155, height=200)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalBox(up_left_point=(-668.0, 184.0), width=150, height=210)
+    playground.add(wall, wall.wall_coordinates)
+    wall = NormalBox(up_left_point=(-440.0, -270.0), width=155, height=200)
+    playground.add(wall, wall.wall_coordinates)
+

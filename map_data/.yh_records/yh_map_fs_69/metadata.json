@@ -1,0 +1,103 @@
+{
+  "attempt": 1,
+  "blue_drones": 10,
+  "bombs_per_drone": 2,
+  "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+  "calibration_sources": {
+    "map_01.json": "fa25f7b64debe84fbc42e5e080021267326b65feccf032734843f30f743daf6c",
+    "map_02.json": "9e2ab54fcbeecd5b2cbb486ffe7f619454de0a43b2e0e6ca25cad0f5169062d9",
+    "map_03.json": "71c02a4c75379a1167d76303e80364af9061d8ff6b62810ad6b24fc1f0917e05",
+    "map_04.json": "51b7ed4f8b349320668c2823f91a88a98fbe3496eb4cb4ed450582bc3c91862f",
+    "map_05.json": "4378cd16d92abb5d7b6570eb542dc892f2dbd21396e0633b4cc7f77de6ebd3a3",
+    "map_06.json": "b3df65e1a6607c223882a43097db98bce8e95062b2738d187a72c122a059c034",
+    "map_07.json": "5ca8fa2cb5955991a63ec0c76b4eb17500d91037c797a6a8c9fb5be5b33572c9",
+    "map_07t4.json": "8edc056579c0a2c8ed71454cbd4db273e67daee77e82ffa75ba51e651bcf01f3",
+    "map_08.json": "0bf80de367eaed5b855c56e8720c4d477e3cf42ebbadd681d2c5ee623b41957f",
+    "map_09.json": "93a77c57a410d12cd35468b8fadf87df526efb71a802a82134ad5e27bc59b60b"
+  },
+  "clearance_px": 18,
+  "connected_components": 1,
+  "content_sha256": "bf2ed57ed69daa59401bf6583ac9e6c7f9af2be0ef7a9aa942b0863c31e5b555",
+  "count_drones": 5,
+  "detour_p90": 3.1311456708641794,
+  "difficulty": "hard",
+  "door_count": 0,
+  "export_format": "official-editor-native-v1",
+  "family": "semifinal",
+  "generator_version": 2,
+  "geometry_sha256": "d1b5435ea41cff8003be39cddbb8fb2061c551e8265094291a3e8c15d3d84191",
+  "layout_algorithm": "semifinal-partition-mix-v5",
+  "layout_family": "random_partition_mix",
+  "local_modules": {
+    "box": 10,
+    "partition": 10
+  },
+  "narrow_door_count": 0,
+  "native_class": "Generatedd1b5435ea41cff8003be39cddbb8fb2061c551e8265094291a3e8c15d3d84191",
+  "native_load_verified": true,
+  "native_source_directory": "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_d1b5435ea41cff8003be39cddbb8fb2061c551e8265094291a3e8c15d3d84191",
+  "official_editor_sha256": "8558e1c64ba994a3adf50031c6a39f23a8dbfbf18a09bb8f5e07c97f69733a9b",
+  "parameters": {
+    "difficulty": "hard",
+    "height": 1100,
+    "passage": null,
+    "seed": 1068,
+    "thickness": null,
+    "type": "semifinal",
+    "width": 1700
+  },
+  "partition_leaf_count": 28,
+  "passage_width": 56,
+  "removed_separators": 8,
+  "room_count": null,
+  "route_p90_px": 2768.0,
+  "route_reachable_fraction": 1.0,
+  "rules_profile": {
+    "blue_drones": 10,
+    "bombs_per_drone": 2,
+    "communication_range": 180,
+    "initial_health": 25,
+    "lidar_range": 230,
+    "red_drones": 5,
+    "semantic_range": 130,
+    "stage": "semifinal",
+    "time_best_ratio": 0.3,
+    "timestep_limit": 5400,
+    "version": 1,
+    "walltime_limit": 180
+  },
+  "seed": 1068,
+  "size": [
+    1700,
+    1100
+  ],
+  "structure_sha256": "573bd8645185aaa807afc1b03837b0819050147632241bb05d00cbf11f3eb6a1",
+  "timestep_limit": 5400,
+  "topology_dead_ends": null,
+  "wall_area_px": 129748,
+  "wall_count": 58,
+  "wall_fraction": 0.06938395721925134,
+  "wall_thickness": 6,
+  "walltime_limit": 180,
+  "zone_mode": "both",
+  "zones": [
+    {
+      "rect": [
+        78,
+        482,
+        1184,
+        1016
+      ],
+      "type": "NO_COM_ZONE"
+    },
+    {
+      "rect": [
+        377,
+        162,
+        1003,
+        835
+      ],
+      "type": "NO_GPS_ZONE"
+    }
+  ]
+}

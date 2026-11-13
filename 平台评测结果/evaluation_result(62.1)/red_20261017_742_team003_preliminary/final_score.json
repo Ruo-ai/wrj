@@ -1,0 +1,18 @@
+{
+  "team": "20261017_742_team003_preliminary",
+  "score": 62.1,
+  "score_status": "final",
+  "rank": 36,
+  "per_round": [
+    {
+      "round": 1,
+      "bomb_score": 9.567999999999993,
+      "round_score": 62.10123210583621
+    },
+    {
+      "round": 2,
+      "bomb_score": 12.759999999999991,
+      "round_score": 60.76602155994927
+    }
+  ]
+}
