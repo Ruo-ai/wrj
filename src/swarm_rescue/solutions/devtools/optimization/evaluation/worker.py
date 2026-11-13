@@ -125,7 +125,14 @@ def run(request_path):
     cls.__init__=checked_init
     telemetry = install_telemetry(run_dir/'telemetry.json')
     try:
-        code = ev.worker(request_path,phase)
+        if request.get('diagnostic_profile'):
+            if not request.get('smoke'):raise ValueError('Profiling is diagnostic-only')
+            import cProfile
+            profiler=cProfile.Profile()
+            try:code=profiler.runcall(ev.worker,request_path,phase)
+            finally:profiler.dump_stats(str(run_dir/'profile.pstats'))
+        else:
+            code = ev.worker(request_path,phase)
         result = ev.read(run_dir/'result.json')
         result.update(ev.controller_identity(request['controller_selector']))
         recordings=list((Path(request['engine_dir'])/'recordings').glob('*.npz'))

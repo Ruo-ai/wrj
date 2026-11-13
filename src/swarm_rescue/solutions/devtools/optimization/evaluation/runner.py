@@ -183,6 +183,7 @@ def execute_phase(output,plan,item,phase,red_attempt=None,retry_failed=False):
         seed=item['seed'],phase=phase,run_dir=str(attempt),drones=count,bombs=2,recording=True,
         ray_backend='cpu',visual=False,smoke=plan['configuration']['smoke'],
         diagnostic_steps=plan['configuration'].get('diagnostic_steps',8),
+        diagnostic_profile=plan['configuration'].get('diagnostic_profile',False),
         plan_sha256=plan_sha,**ev.controller_identity(item['controller']))
     if phase=='blue':
         from .identities import blue_identity

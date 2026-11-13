@@ -4,7 +4,8 @@ from types import SimpleNamespace
 import math
 import numpy as np
 import pytest
-from swarm_rescue.solutions.my_drone_blue_transport import TransportGrid, terminal_command
+from swarm_rescue.solutions.my_drone_blue_transport import TransportGrid, terminal_command,trace_waypoint,SteeringTable,MyDroneBlueTransport
+from swarm_rescue.solutions.my_drone_eval_blue import RescueGrid,steering_choice,MyDroneBlueAdapted
 
 
 @pytest.mark.parametrize('seed', [11, 28, 742])
@@ -75,3 +76,62 @@ def test_partial_endpoint_avoidance_selects_a_different_reachable_approach():
     path=grid.route(p,t)
     assert np.linalg.norm(grid.last_endpoint-old)>=48
     assert all(grid.cell(q)[1]<20 for q in path)
+
+
+@pytest.mark.parametrize('targeted', [False,True])
+def test_native_bfs_preserves_B0_search_and_connected_route_tie_breaks(targeted):
+    old=RescueGrid((640,480));new=TransportGrid((640,480))
+    for g in (old,new):
+        g.free[:]=True;g.evidence[:20,20]=8;g.visits[4:9,3:6]=2
+    start=old.point((10,4));target=old.point((10,35)) if targeted else None
+    np.testing.assert_array_equal(old.route(start,target,2,10),new.route(start,target,2,10))
+
+
+def test_obstructed_disposal_center_keeps_checked_navigation_action():
+    hit=SimpleNamespace(distance=60.,angle=0.)
+    fallback=dict(forward=0.,lateral=.2,rotation=.3,grasper=1)
+    cmd=terminal_command(hit,np.array([20.,60.]),np.array([0.,.1]),0.,1,fallback)
+    assert cmd==fallback
+
+
+def test_return_trace_requires_current_clearance_and_never_uses_future_nodes():
+    trail=[np.array([0.,0.]),np.array([40.,0.]),np.array([80.,0.]),np.array([120.,0.])]
+    pos=np.array([120.,0.]);angles=np.linspace(-math.pi,math.pi,180,endpoint=False)
+    clear=np.full(180,230.)
+    i,p=trace_waypoint(trail,2,pos,0.,clear,angles)
+    assert i==0 and np.array_equal(p,trail[0])
+    blocked=clear.copy();blocked[np.abs(angles)>2.5]=25.
+    assert trace_waypoint(trail,2,pos,0.,blocked,angles) is None
+
+
+@pytest.mark.parametrize('carrying',[False,True])
+def test_cached_steering_matches_B0_including_invalid_rays_and_shape_changes(carrying):
+    table=SteeringTable();rng=np.random.default_rng(742)
+    for length in (180,180,90,180):
+        angles=np.linspace(-math.pi,math.pi,length,endpoint=False)
+        for _ in range(10):
+            d=rng.uniform(4,240,length);d[rng.integers(length)]=np.nan
+            desired=rng.uniform(-math.pi,math.pi)
+            assert table.choose(d,angles,desired,carrying)==steering_choice(d,angles,desired,carrying)
+    assert table.choose(np.array([np.nan]),np.array([0.]),0.,carrying) is None
+
+
+def test_semantic_optimization_keeps_B0_obstacle_exclusion_and_landmark_updates():
+    from swarm_rescue.simulation.ray_sensors.drone_semantic_sensor import DroneSemanticSensor
+    enum=DroneSemanticSensor.TypeEntity;Data=DroneSemanticSensor.Data
+    objects=[Data(90.,.2,enum.WALL,False),Data(80.,.4,enum.DRONE,False),
+             Data(55.,-.3,enum.BOMB,False),Data(60.,.1,enum.BOMB,True),
+             Data(90.,1.,enum.DISPOSAL_CENTER,False),Data(82.,.9,enum.DISPOSAL_CENTER,False)]
+    angles=np.linspace(-math.pi,math.pi,180,endpoint=False);distances=np.full(180,80.)
+    def stub():
+        events=[];observed=[]
+        g=SimpleNamespace(observe=lambda *args:observed.append(args[-1].copy()),snapshot=lambda:('snapshot',))
+        return SimpleNamespace(_center_hit=None,_center=np.array([1.,2.]),_center_step=1,_snapshot=None,
+            _position=np.array([30.,40.]),_heading=.3,_tick=18,_grid=g,identifier=0,
+            semantic_values=lambda:objects,_record_bomb=lambda *a,**k:events.append((a,k))),events,observed
+    a,ea,oa=stub();b,eb,ob=stub()
+    ha=MyDroneBlueAdapted._sense(a,distances,angles);hb=MyDroneBlueTransport._sense(b,distances,angles)
+    np.testing.assert_array_equal(a._center,b._center);np.testing.assert_array_equal(oa,ob)
+    assert a._center_hit==b._center_hit and a._snapshot==b._snapshot and len(ha)==len(hb)
+    for x,y in zip(ea,eb):
+        np.testing.assert_array_equal(x[0][0],y[0][0]);assert x[0][1:]==y[0][1:] and x[1]==y[1]

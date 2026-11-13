@@ -18,6 +18,7 @@ BLUE_CONTROLLERS = MappingProxyType({
     'semifinal': ('my_drone_blue_semifinal', 'MyDroneBlueSemifinal'),
     'semifinal_pose': ('my_drone_blue_semifinal', 'MyDroneBlueSemifinalPose'),
     'transport': ('my_drone_blue_transport', 'MyDroneBlueTransport'),
+    'transport_compute': ('my_drone_blue_transport', 'MyDroneBlueTransportCompute'),
 })
 
 

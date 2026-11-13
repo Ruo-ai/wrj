@@ -15,7 +15,7 @@ from ..map_generator.append_maps import append_lock
 LAYOUTS=REPO/'output/semifinal_joint_20261113/oracle_layouts_v2'
 
 
-def prepare(output,layouts,maps,variant,rounds):
+def prepare(output,layouts,maps,variant,rounds,diagnostic=False):
     manifest=read(layouts/'manifest.json')
     records={r['name']:r for r in manifest['maps']}
     rows=training_rows(maps,DATASET);sources=runner.source_receipt(rows)
@@ -32,7 +32,8 @@ def prepare(output,layouts,maps,variant,rounds):
                 seed=(742+int(row['content_sha256'][:8],16)+(number-1)*1000003)%(2**32),
                 controller='advanced2',blue_variant=variant,oracle_layout=record['layout']))
     config=dict(**blue_identity(variant),memory_bytes=4_000_000_000,timeout=240,
-        smoke=False,cpu_affinity_count=1,scope='offline fixed strong layout, blue only; red scores N/A',
+        smoke=diagnostic,diagnostic_steps=128 if diagnostic else None,diagnostic_profile=diagnostic,
+        cpu_affinity_count=1,scope='128-step profiling, NOT a score' if diagnostic else 'offline fixed strong layout, blue only; red scores N/A',
         environment={**runner.environment(),'scipy':importlib.metadata.version('scipy')},
         rounds=rounds,seed=742,engine_profile=engine_profile())
     draft=dict(configuration=config,source_sha256=sources,schedule=schedule)
@@ -101,7 +102,9 @@ def report(folder,results,layouts):
             f"触限：{r.get('walltime_limited')}；控制器异常：{r.get('controller_crashed')}；回调异常：{r.get('engine_callback_errors')}。",
             f"抓取事件：{t.get('pickups')}；确认处置：{t.get('verified_disposals')}；未确认脱手：{t.get('unconfirmed_losses')}；成功运输步数：{t.get('disposed_transport_steps')}。发现数未记录，不推测。",
             f"峰值Job字节：{resource.get('peak_job_commit_bytes')}；进程秒：{resource.get('process_seconds')}；CPU：{resource.get('cpu_count')}。",'']
-        if (attempt/'telemetry.json').exists():
+        if r.get('smoke'):
+            lines+=['128步剖析诊断，出生点一弹。不是强布局正式结果，所有有效成绩与三类正式图不适用。','']
+        elif (attempt/'telemetry.json').exists():
             for title,p in zip(('蓝队稀疏轨迹对比（不是红提交地图）','离线墙覆盖（历史固定布局）','实际初始弹位（未运行红队）'),figures(folder,item,attempt,layouts)):
                 lines += [title,'',f'![{title}](<{p.resolve().as_posix()}>)','']
         lines += ['红回放：不适用，没有红队运行；蓝回放：','```powershell',
@@ -117,9 +120,11 @@ def main():
     p.add_argument('--variants',nargs='+',choices=BLUE_CONTROLLERS,default=['adapted','transport'])
     p.add_argument('--rounds',type=int,default=1)
     p.add_argument('--prepare-only',action='store_true')
+    p.add_argument('--profile-smoke',action='store_true',help='128-step unscored profiler; one map/variant only')
     args=p.parse_args()
     if args.rounds<1:p.error('rounds must be positive')
-    prepared=[(v,args.output.resolve()/v,prepare(args.output.resolve()/v,args.layouts.resolve(),args.maps,v,args.rounds)) for v in args.variants]
+    if args.profile_smoke and (len(args.maps)!=1 or len(args.variants)!=1 or args.rounds!=1):p.error('Profiler must select one map and one variant')
+    prepared=[(v,args.output.resolve()/v,prepare(args.output.resolve()/v,args.layouts.resolve(),args.maps,v,args.rounds,args.profile_smoke)) for v in args.variants]
     for variant,folder,plan in prepared:
         if args.prepare_only:continue
         with append_lock(folder):
@@ -129,9 +134,10 @@ def main():
                 print(f"Blue only: {item['name']} / {variant} / r{item['round']}",flush=True)
                 write(folder/'progress.json',dict(completed=len(results),expected=len(plan['schedule']),active=item))
                 r,attempt=runner.execute_phase(folder,plan,item,'blue')
-                results.append(dict(item=item,result=r,run=str(attempt),valid_blue=oracle_valid(r)))
+                valid=oracle_valid(r) and not r.get('smoke')
+                results.append(dict(item=item,result=r,run=str(attempt),valid_blue=valid))
                 write(folder/'results.json',results)
-                print(f"score={r.get('blue_score')} disposed={r.get('disposed_count')} valid={oracle_valid(r)}",flush=True)
+                print(f"score={r.get('blue_score')} disposed={r.get('disposed_count')} valid={valid}",flush=True)
             write(folder/'progress.json',dict(completed=len(results),expected=len(plan['schedule']),active=None,complete=True))
         report(folder,results,args.layouts.resolve())
     print('Prepared' if args.prepare_only else 'Complete',args.output,flush=True)
