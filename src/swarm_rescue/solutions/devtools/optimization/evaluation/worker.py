@@ -6,12 +6,16 @@ from pathlib import Path
 import sys
 
 
-def install_telemetry(destination):
+def install_telemetry(destination,lifecycle=False):
     from swarm_rescue.simulation.gui_map.gui_sr import GuiSR
     original = GuiSR.on_update
     state = dict(submission_step=None,submission_walltime=None,last_bomb_step=None,
                  last_bomb_walltime=None,per_drone=[])
     previous = {}
+    observer=None
+    if lifecycle:
+        from ...blue_lifecycle import LifecycleObserver
+        observer=LifecycleObserver()
     carried={};pending={};bomb_ids={}
     state.update(transport=dict(discovered=None,semantic_sightings=0,pickups=0,verified_disposals=0,unconfirmed_losses=0,
                                 disposed_transport_steps=[],events=[]),pose_samples=[],mapping_samples=[])
@@ -27,7 +31,11 @@ def install_telemetry(destination):
                 previous[key] = (position,drone.carried_bombs_count())
                 state['per_drone'].append(dict(id=key,distance_px=0.,placed_count=0,
                     initial_inventory=drone.carried_bombs_count(),remaining_inventory=drone.carried_bombs_count()))
+        if observer:observer.begin(gui)
         result = original(gui,delta)
+        if observer:
+            observer.end(gui)
+            state['lifecycle']=observer.export(gui)
         step=int(gui._elapsed_timestep)
         for drone in gui._drones:
             key = int(drone.identifier)
@@ -123,7 +131,7 @@ def run(request_path):
         if not request.get('smoke') and conditions['stage']=='semifinal' and request.get('official_map') in (None,'Map06','Map07t4','Map08','Map09'):
             if (actual['max_steps'],actual['max_walltime'])!=(5400,180):raise ValueError('Unexpected semifinal map limits')
     cls.__init__=checked_init
-    telemetry = install_telemetry(run_dir/'telemetry.json')
+    telemetry = install_telemetry(run_dir/'telemetry.json',request.get('lifecycle_diagnostics',False))
     try:
         if request.get('diagnostic_profile'):
             if not request.get('smoke'):raise ValueError('Profiling is diagnostic-only')

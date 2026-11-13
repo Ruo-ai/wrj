@@ -15,7 +15,7 @@ from ..map_generator.append_maps import append_lock
 LAYOUTS=REPO/'output/semifinal_joint_20261113/oracle_layouts_v2'
 
 
-def prepare(output,layouts,maps,variant,rounds,diagnostic=False):
+def prepare(output,layouts,maps,variant,rounds,diagnostic=False,lifecycle=False):
     manifest=read(layouts/'manifest.json')
     records={r['name']:r for r in manifest['maps']}
     rows=training_rows(maps,DATASET);sources=runner.source_receipt(rows)
@@ -33,7 +33,7 @@ def prepare(output,layouts,maps,variant,rounds,diagnostic=False):
                 controller='advanced2',blue_variant=variant,oracle_layout=record['layout']))
     config=dict(**blue_identity(variant),memory_bytes=4_000_000_000,timeout=240,
         smoke=diagnostic,diagnostic_steps=128 if diagnostic else None,diagnostic_profile=diagnostic,
-        cpu_affinity_count=1,scope='128-step profiling, NOT a score' if diagnostic else 'offline fixed strong layout, blue only; red scores N/A',
+        cpu_affinity_count=1,lifecycle_diagnostics=lifecycle,scope='128-step profiling, NOT a score' if diagnostic else 'offline fixed strong layout, blue only; red scores N/A',
         environment={**runner.environment(),'scipy':importlib.metadata.version('scipy')},
         rounds=rounds,seed=742,engine_profile=engine_profile())
     draft=dict(configuration=config,source_sha256=sources,schedule=schedule)
@@ -117,14 +117,15 @@ def main():
     p.add_argument('--output',type=Path,default=REPO/'output/sf13/bt_p1')
     p.add_argument('--layouts',type=Path,default=LAYOUTS)
     p.add_argument('--maps',nargs='+',choices=MAPS,default=MAPS)
-    p.add_argument('--variants',nargs='+',choices=BLUE_CONTROLLERS,default=['adapted','transport'])
+    p.add_argument('--variants',nargs='+',choices=BLUE_CONTROLLERS,default=['adapted','transport_compute'])
     p.add_argument('--rounds',type=int,default=1)
     p.add_argument('--prepare-only',action='store_true')
+    p.add_argument('--lifecycle',action='store_true',help='Passive per-bomb and final-command diagnostics; no per-step printing')
     p.add_argument('--profile-smoke',action='store_true',help='128-step unscored profiler; one map/variant only')
     args=p.parse_args()
     if args.rounds<1:p.error('rounds must be positive')
     if args.profile_smoke and (len(args.maps)!=1 or len(args.variants)!=1 or args.rounds!=1):p.error('Profiler must select one map and one variant')
-    prepared=[(v,args.output.resolve()/v,prepare(args.output.resolve()/v,args.layouts.resolve(),args.maps,v,args.rounds,args.profile_smoke)) for v in args.variants]
+    prepared=[(v,args.output.resolve()/v,prepare(args.output.resolve()/v,args.layouts.resolve(),args.maps,v,args.rounds,args.profile_smoke,args.lifecycle)) for v in args.variants]
     for variant,folder,plan in prepared:
         if args.prepare_only:continue
         with append_lock(folder):

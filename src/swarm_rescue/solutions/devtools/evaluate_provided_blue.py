@@ -43,6 +43,9 @@ def worker(path):
         import swarm_rescue.launcher as launcher_module
         variant = request.get('blue_variant', 'baseline')
         MyDroneBlue = reference_blue_class(variant)
+        if request.get('lifecycle_diagnostics'):
+            from swarm_rescue.solutions.devtools.blue_lifecycle import instrument
+            MyDroneBlue=instrument(MyDroneBlue)
         entry = getattr(launcher_module, 'drone_entry', launcher_module)
         entry.drone_class_for_mode=lambda mode: MyDroneBlue
         red.configure_ray_backend('cpu')

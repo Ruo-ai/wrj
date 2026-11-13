@@ -19,6 +19,9 @@ BLUE_CONTROLLERS = MappingProxyType({
     'semifinal_pose': ('my_drone_blue_semifinal', 'MyDroneBlueSemifinalPose'),
     'transport': ('my_drone_blue_transport', 'MyDroneBlueTransport'),
     'transport_compute': ('my_drone_blue_transport', 'MyDroneBlueTransportCompute'),
+    'boundary': ('my_drone_blue_recovery', 'MyDroneBlueBoundary'),
+    'contact': ('my_drone_blue_contact', 'MyDroneBlueContact'),
+    'semantic_search': ('my_drone_blue_search', 'MyDroneBlueSemanticSearch'),
 })
 
 
@@ -53,5 +56,9 @@ def catalog():
         A2=dict(selector='advanced2_semifinal', state='candidate_not_adopted', parent='A0'),
         A3=dict(selector='advanced2_mapping', state='mapping_candidate_not_adopted', parent='A0'),
         B2=dict(selector='semifinal', state='candidate_not_adopted', parent='B0'),
-        B3=dict(selector='transport', state='transport_candidate_not_adopted', parent='B0'),
+        B3=dict(selector='transport_compute', state='compute_candidate_not_strength_accepted', parent='B0'),
+        B3_terminal=dict(selector='transport', state='rejected_terminal_experiment', parent='B0'),
+        B4_search=dict(selector='semantic_search', state='candidate_health_only_no_disposal_gain', parent='B3'),
+        B4_boundary=dict(selector='boundary', state='rejected_regression', parent='B3'),
+        B4_contact=dict(selector='contact', state='rejected_health_regression', parent='B3'),
     )

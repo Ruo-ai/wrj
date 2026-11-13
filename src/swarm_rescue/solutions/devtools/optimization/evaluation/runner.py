@@ -184,6 +184,7 @@ def execute_phase(output,plan,item,phase,red_attempt=None,retry_failed=False):
         ray_backend='cpu',visual=False,smoke=plan['configuration']['smoke'],
         diagnostic_steps=plan['configuration'].get('diagnostic_steps',8),
         diagnostic_profile=plan['configuration'].get('diagnostic_profile',False),
+        lifecycle_diagnostics=plan['configuration'].get('lifecycle_diagnostics',False),
         plan_sha256=plan_sha,**ev.controller_identity(item['controller']))
     if phase=='blue':
         from .identities import blue_identity
