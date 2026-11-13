@@ -73,11 +73,20 @@ def instrument(base):
 
 
 class Observer(OriginalObserver):
+    def __init__(self):
+        super().__init__();self._b6_drones={}
+
+    def begin(self,gui):
+        # Keep a passive reference to destroyed drones so their last raw
+        # snapshots are not lost when the engine removes them from its list.
+        self._b6_drones.update({str(d.identifier):d for d in gui._drones})
+        return super().begin(gui)
+
     def export(self,gui):
         data=super().export(gui)
         data['b6_diagnostics']=dict(version='blue-only-20261113',
             semantics='collision callback counts are not distinct contact episodes; snapshot component uses current merged allowed grid',
             drones={str(d.identifier):dict(snapshots=getattr(d,'_b6_observations',[]),
                 collision_callbacks=dict(getattr(d,'_b6_collisions',{})),
-                extra_seconds=getattr(d,'_b6_diagnostic_seconds',0.)) for d in gui._drones})
+                extra_seconds=getattr(d,'_b6_diagnostic_seconds',0.)) for d in self._b6_drones.values()})
         return data

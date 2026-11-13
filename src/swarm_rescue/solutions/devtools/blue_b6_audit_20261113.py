@@ -33,11 +33,16 @@ def analyze(root,out):
         timeline.append(dict(f,error=float(np.linalg.norm(np.asarray(f['position'])-f['truth'])),
                              nearest_other=float(nearest[1]) if len(nearest)>1 and nearest[0]<20 else None))
     carry=[f for f in timeline if f['carrying']]
+    late=[f for f in carry if f['step']>=4680]
+    endpoint=[f['endpoint_remaining'] for f in carry if f.get('endpoint_remaining') is not None]
     counts=dict(Counter(f['source'] for f in carry))
     summary=dict(source=str(attempt),bomb=bomb,destruction_log='Drone 7 destroyed, too much collision !' in (attempt/'run.log').read_text(encoding='utf-8'),
         carry_samples=len(carry),sources=counts,empty_route_samples=sum(f['route_points']==0 for f in carry),
         one_point_route_samples=sum(f['route_points']==1 for f in carry),gps_missing_samples=sum(f['gps_missing'] for f in carry),
         max_error=max(f['error'] for f in carry),median_error=float(np.median([f['error'] for f in carry])),
+        nearest_other_carry_min=min(f['nearest_other'] for f in carry if f['nearest_other'] is not None),
+        late_carry_error_max=max(f['error'] for f in late),late_carry_health=[late[0]['health'],late[-1]['health']],
+        sampled_endpoint_distance_min=min(endpoint),sampled_endpoint_distance_max=max(endpoint),
         snapshots={k:dict(step=v['step'],layers=list(v['layers'])) for k,v in t['lifecycle'].get('coverage_maps',{}).items()},
         gaps=['no historical raw lidar/odometer/estimated heading','only last own-grid snapshot, no raw evidence or remote merged map at pickup',
               'peer proximity is not proof of blockage','NPZ columns compact after removal; do not use them as persistent IDs'])

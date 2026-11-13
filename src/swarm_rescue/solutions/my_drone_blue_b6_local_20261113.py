@@ -33,7 +33,31 @@ class PrincipalMatcher(LocalMatcher):
         h=np.array([[(costs[1]+costs[2]-2*costs[0])/64,cross],
                     [cross,(costs[3]+costs[4]-2*costs[0])/64]])
         eigen,vectors=np.linalg.eigh(h)
-        observable=eigen>max(.004,float(eigen.max())*.25)
+        # Gate raster curvature with normals of locally straight scan segments.
+        # Parallel walls cannot constrain motion along their tangent, regardless
+        # of stair-stepping artifacts in the distance image.
+        segments=points[2:]-points[:-2];length=np.linalg.norm(segments,axis=1)
+        midpoint=points[1:-1]-points[:-2]
+        deviation=np.abs(segments[:,0]*midpoint[:,1]-segments[:,1]*midpoint[:,0])/np.maximum(length,1e-6)
+        straight=(length>12)&(length<80)&(deviation<4)
+        geometric_rank=0
+        if straight.sum()>=6:
+            tangents=segments[straight]/length[straight,None]
+            normals=np.column_stack((-tangents[:,1],tangents[:,0]))
+            c,s=math.cos(heading+best[2]),math.sin(heading+best[2])
+            normals=normals@np.array([[c,s],[-s,c]])
+            ge,gv=np.linalg.eigh(normals.T@normals/len(normals))
+            geometric_rank=int((ge>.15*ge.max()).sum())
+            if geometric_rank==1:
+                vectors=gv;eigen=np.array([0.,max(float(eigen.max()),.005)])
+        # The raster distance field is piecewise linear, so a Cartesian
+        # Hessian alone can falsely give a diagonal corridor rank two.
+        # Check both signs along its principal directions against the prior.
+        principal=np.zeros((4,3))
+        for k in range(2):
+            principal[2*k,:2]=8*vectors[:,k];principal[2*k+1,:2]=-8*vectors[:,k]
+        principal_cost,_=self.costs(points,position,heading,best+principal)
+        observable=(eigen>max(.004,float(eigen.max())*.25)) & (principal_cost.reshape(2,2).min(axis=1)-costs[0]>.3)
         projection=(vectors*observable)@vectors.T
         best[:2]=projection@best[:2]
         yaw_observable=bool(min(costs[9:])-costs[0]>.18)
@@ -49,8 +73,8 @@ class PrincipalMatcher(LocalMatcher):
                     and np.linalg.norm(best[:2])<=10 and abs(best[2])<=.071 and not ambiguous
                     and (observable.any() or yaw_observable))
         return (best if accept else None),dict(reason='matched' if accept else 'rejected',rank=int(observable.sum()),
-            eigenvalues=eigen.tolist(),projection=projection.tolist(),yaw_observable=yaw_observable,
-            residual=float(cost[0]),prior_residual=prior,support=float(support[0]),candidates=86)
+            eigenvalues=eigen.tolist(),geometric_rank=geometric_rank,projection=projection.tolist(),yaw_observable=yaw_observable,
+            residual=float(cost[0]),prior_residual=prior,support=float(support[0]),candidates=89)
 
 
 class BlueLocalWindow:
@@ -67,21 +91,26 @@ class BlueLocalWindow:
         good_gps=gps is not None and np.shape(gps)==(2,) and np.isfinite(gps).all()
         good_compass=compass is not None and np.ndim(compass)==0 and np.isfinite(compass)
         absolute=bool(good_gps and good_compass)
+        was_missing=self.missing
         self.missing=0 if absolute else self.missing+1
         self.good=self.good+1 if absolute else 0
         self.ready=bool(absolute and self.good>=8 and np.linalg.norm(np.asarray(gps)-position)<15
                         and abs(wrap(float(compass)-heading))<.12)
         self.info=dict(reason='period_wait',rank=self.local_rank,absolute_ready=self.ready,missing=self.missing)
         if not self.matching:return position,heading
+        if absolute and was_missing:
+            self.matcher.frames.clear();self.matcher.distance=None;self.origin=None;self.local_rank=0
+            self.stats['absolute_recovery_reset']+=1
         if tick%self.PERIOD:return position,heading
         reset=(self.origin is None or tick-self.started>=self.MAX_STEPS
                or np.linalg.norm(position-self.origin)>self.MAX_TRAVEL or self.failures>=5)
         if reset:
-            self.origin=position.copy();self.started=tick;self.failures=0
+            self.origin=position.copy();self.started=tick;self.failures=0;self.local_rank=0
             self.matcher.frames.clear();self.matcher.distance=None;self.stats['window_reset']+=1
         local=position-self.origin
         if absolute:
-            self.matcher.add(points,local,heading);self.info=dict(reason='absolute_reference',rank=2,absolute_ready=self.ready)
+            if self.ready:self.matcher.add(points,local,heading)
+            self.info=dict(reason='absolute_reference' if self.ready else 'absolute_recovery_wait',rank=2 if self.ready else 0,absolute_ready=self.ready)
             return position,heading
         # Match existing history first. A new local frame is allowed to warm up
         # without claiming any global trust; this avoids B2's permanent freeze.
@@ -172,8 +201,9 @@ class PortalObservation:
         for r,c in np.argwhere(allowed):
             q=grid.point((r,c));delta=q-position;forward=float(delta@direction)
             if not 4<forward<max(5,geo['start']-22) or np.linalg.norm(delta)>85:continue
-            if abs(np.cross(direction,delta))>20:continue
+            if abs(direction[0]*delta[1]-direction[1]*delta[0])>20:continue
             ring=q+18*np.column_stack((np.cos(np.arange(8)*math.pi/4),np.sin(np.arange(8)*math.pi/4)))
+            if np.any(np.abs(ring[:,0])>=grid.width/2) or np.any(np.abs(ring[:,1])>=grid.height/2):continue
             if not all(grid.free[grid.cell(v)] and grid.evidence[grid.cell(v)]<2 for v in ring):continue
             line=np.linspace(position,q,max(2,int(np.linalg.norm(delta)/6)+1))
             if not all(allowed[grid.cell(v)] for v in line):continue
@@ -188,23 +218,31 @@ class MyDroneBlueB6Portal(MyDroneBlueNarrow):
     PORTAL_LINK=True
     def __init__(self,**kwargs):
         super().__init__(**kwargs);self._b6_portal=PortalObservation()
-        self._b6_portal_point=None;self._b6_portal_until=0
+        self._b6_portal_point=None;self._b6_portal_until=0;self._b6_portal_cooldown=0
 
     def _navigate(self,goal,distances,angles,carrying=False):
-        normal=super()._navigate(goal,distances,angles,carrying)
-        if not self.PORTAL_LINK or carrying or self._narrow_action is not None:return normal
-        if self._tick>=self._b6_portal_until:self._b6_portal_point=None
-        if self._b6_portal_point is None and self._tick%12==0:
-            self._b6_portal_point=self._b6_portal.propose(self._grid,self._position,self._heading,distances,angles)
-            if self._b6_portal_point is not None:self._b6_portal_until=self._tick+90
+        if not self.PORTAL_LINK or carrying or self._mode!='search':
+            if self._b6_portal_point is not None:self._route_step=-100
+            self._b6_portal_point=None
+            return super()._navigate(goal,distances,angles,carrying)
         q=self._b6_portal_point
-        if q is None:return normal
-        if np.linalg.norm(q-self._position)<14:
-            self._b6_portal.reason='observation_reached';self._b6_portal_point=None
-            # B5 will independently confirm local geometry on subsequent scans.
-            return normal
-        from swarm_rescue.solutions.my_drone_blue_transport import MyDroneBlueTransportCompute
-        self._route_step=-100
-        action=MyDroneBlueTransportCompute._navigate(self,q,distances,angles,False)
-        self._command_source='portal_observation'
+        if q is not None:
+            allowed,_=self._grid.layers()
+            line=np.linspace(self._position,q,max(2,int(np.linalg.norm(q-self._position)/6)+1))
+            blocked=not all(allowed[self._grid.cell(v)] for v in line)
+            reached=np.linalg.norm(q-self._position)<14
+            expired=self._tick>=self._b6_portal_until
+            if blocked or reached or expired:
+                self._b6_portal.reason='approach_blocked' if blocked else 'observation_reached' if reached else 'observation_timeout'
+                self._b6_portal_point=None;self._b6_portal_cooldown=self._tick+90;self._route_step=-100
+        if self._b6_portal_point is None and self._tick%12==0 and self._tick>=self._b6_portal_cooldown:
+            self._b6_portal_point=self._b6_portal.propose(self._grid,self._position,self._heading,distances,angles)
+            if self._b6_portal_point is not None:
+                self._b6_portal_until=self._tick+90;self._route_step=-100
+        q=self._b6_portal_point
+        # Pass the observation goal BEFORE ordinary route recomputation. A
+        # second navigation call would either reuse the wrong route or double
+        # the planning work. B5 still independently owns local confirmation.
+        action=super()._navigate(q if q is not None else goal,distances,angles,False)
+        if q is not None and self._narrow_action is None:self._command_source='portal_observation'
         return action
