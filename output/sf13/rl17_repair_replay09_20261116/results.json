@@ -1,0 +1,536 @@
+{
+  "records": [
+    {
+      "mapper": "rl11_lines",
+      "wall_seconds": 11.54173670000091,
+      "cpu_seconds": 11.109375,
+      "peak_rss_bytes": 297869312,
+      "cpu_affinity": [
+        0
+      ],
+      "max_pending": 276,
+      "max_pending_arrays_bytes_sampled": 2915336,
+      "update_seconds": {
+        "count": 22250,
+        "mean": 0.0005067278606837727,
+        "p95": 0.0035031800005526736,
+        "maximum": 0.021529800000280375
+      },
+      "local_exact": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "received_exact": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "final_exact": true,
+      "offline_map_score": 73.36757515783762,
+      "credit": 0.8391132395275633,
+      "penalty": 0.10543748794918704,
+      "wall_hits": 93567,
+      "charged_pixels": 118522,
+      "outage_position_sampled": {
+        "count": 523,
+        "mean": 29.997991074441888,
+        "p95": 72.00692982566261,
+        "maximum": 102.99260498869515
+      },
+      "outage_heading_sampled_deg": {
+        "count": 523,
+        "mean": 7.8045026194497655,
+        "p95": 18.338271882943285,
+        "maximum": 22.406102553787203
+      },
+      "stats": {
+        "0": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 326,
+            "anchored": 326,
+            "relocks": 3,
+            "matched": 144,
+            "rejected": 19,
+            "reference_resets": 4,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 163,
+            "line_accepted": 135,
+            "line_rank_2": 103,
+            "line_fallback_angle_bound": 9,
+            "line_rank_1": 32,
+            "line_fallback_few_matches": 7,
+            "line_fallback_angular_disagreement": 6,
+            "line_fallback_translation_or_residual_bound": 4,
+            "line_fallback_few_lines": 2
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 163,
+            "accepted": 135,
+            "rank_2": 103,
+            "fallback_angle_bound": 9,
+            "rank_1": 32,
+            "fallback_few_matches": 7,
+            "fallback_angular_disagreement": 6,
+            "fallback_translation_or_residual_bound": 4,
+            "fallback_few_lines": 2
+          },
+          "p2l": {},
+          "p2l_seconds": 0.0
+        },
+        "1": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 413,
+            "anchored": 413,
+            "relocks": 5,
+            "matched": 201,
+            "rejected": 5,
+            "reference_resets": 1,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 206,
+            "line_accepted": 189,
+            "line_rank_1": 50,
+            "line_rank_2": 139,
+            "line_fallback_angle_bound": 4,
+            "line_fallback_angular_disagreement": 9,
+            "line_fallback_translation_or_residual_bound": 2,
+            "line_fallback_few_lines": 1,
+            "line_fallback_few_matches": 1
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 206,
+            "accepted": 189,
+            "rank_1": 50,
+            "rank_2": 139,
+            "fallback_angle_bound": 4,
+            "fallback_angular_disagreement": 9,
+            "fallback_translation_or_residual_bound": 2,
+            "fallback_few_lines": 1,
+            "fallback_few_matches": 1
+          },
+          "p2l": {},
+          "p2l_seconds": 0.0
+        },
+        "2": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 184,
+            "anchored": 184,
+            "relocks": 1,
+            "matched": 86,
+            "rejected": 6,
+            "reference_resets": 0,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 92,
+            "line_fallback_angular_disagreement": 6,
+            "line_accepted": 76,
+            "line_rank_1": 33,
+            "line_rank_2": 43,
+            "line_fallback_angle_bound": 4,
+            "line_fallback_translation_or_residual_bound": 2,
+            "line_fallback_few_lines": 3,
+            "line_fallback_few_matches": 1
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 92,
+            "fallback_angular_disagreement": 6,
+            "accepted": 76,
+            "rank_1": 33,
+            "rank_2": 43,
+            "fallback_angle_bound": 4,
+            "fallback_translation_or_residual_bound": 2,
+            "fallback_few_lines": 3,
+            "fallback_few_matches": 1
+          },
+          "p2l": {},
+          "p2l_seconds": 0.0
+        },
+        "3": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 433,
+            "anchored": 433,
+            "relocks": 3,
+            "matched": 201,
+            "rejected": 15,
+            "reference_resets": 1,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 216,
+            "line_accepted": 179,
+            "line_rank_1": 26,
+            "line_rank_2": 153,
+            "line_fallback_angle_bound": 8,
+            "line_fallback_translation_or_residual_bound": 7,
+            "line_fallback_angular_disagreement": 20,
+            "line_fallback_few_matches": 1,
+            "line_fallback_few_lines": 1
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 216,
+            "accepted": 179,
+            "rank_1": 26,
+            "rank_2": 153,
+            "fallback_angle_bound": 8,
+            "fallback_translation_or_residual_bound": 7,
+            "fallback_angular_disagreement": 20,
+            "fallback_few_matches": 1,
+            "fallback_few_lines": 1
+          },
+          "p2l": {},
+          "p2l_seconds": 0.0
+        },
+        "4": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 211,
+            "anchored": 211,
+            "relocks": 2,
+            "matched": 95,
+            "rejected": 11,
+            "reference_resets": 1,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 106,
+            "line_accepted": 88,
+            "line_rank_1": 12,
+            "line_rank_2": 76,
+            "line_fallback_few_lines": 1,
+            "line_fallback_angular_disagreement": 7,
+            "line_fallback_translation_or_residual_bound": 3,
+            "line_fallback_few_matches": 2,
+            "line_fallback_angle_bound": 5
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 106,
+            "accepted": 88,
+            "rank_1": 12,
+            "rank_2": 76,
+            "fallback_few_lines": 1,
+            "fallback_angular_disagreement": 7,
+            "fallback_translation_or_residual_bound": 3,
+            "fallback_few_matches": 2,
+            "fallback_angle_bound": 5
+          },
+          "p2l": {},
+          "p2l_seconds": 0.0
+        }
+      },
+      "match_reason_counts": {
+        "rl11_line_line_registered": 667,
+        "rl11_line_angle_bound": 30,
+        "rl11_line_few_matches": 12,
+        "rl11_line_angular_disagreement": 48,
+        "rl11_line_translation_or_residual_bound": 18,
+        "rl11_line_few_lines": 8
+      }
+    },
+    {
+      "mapper": "rl17_repair",
+      "wall_seconds": 11.756605299997318,
+      "cpu_seconds": 10.890625,
+      "peak_rss_bytes": 313184256,
+      "cpu_affinity": [
+        0
+      ],
+      "max_pending": 276,
+      "max_pending_arrays_bytes_sampled": 2915336,
+      "update_seconds": {
+        "count": 22250,
+        "mean": 0.0005167275999994488,
+        "p95": 0.0035209699997722044,
+        "maximum": 0.03191810000134865
+      },
+      "local_exact": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false
+      },
+      "received_exact": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false
+      },
+      "final_exact": false,
+      "offline_map_score": 74.42201778812093,
+      "credit": 0.8489870591083968,
+      "penalty": 0.10476688122718754,
+      "wall_hits": 94668,
+      "charged_pixels": 117454,
+      "outage_position_sampled": {
+        "count": 523,
+        "mean": 32.05658808182377,
+        "p95": 75.2946031749034,
+        "maximum": 102.99260498869515
+      },
+      "outage_heading_sampled_deg": {
+        "count": 523,
+        "mean": 8.086698864823479,
+        "p95": 17.937351764376892,
+        "maximum": 22.406102553787203
+      },
+      "stats": {
+        "0": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 326,
+            "anchored": 326,
+            "relocks": 3,
+            "matched": 144,
+            "rejected": 19,
+            "reference_resets": 4,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 182,
+            "line_accepted": 135,
+            "line_rank_2": 103,
+            "line_fallback_angle_bound": 16,
+            "line_rank_1": 32,
+            "line_fallback_few_matches": 13,
+            "line_fallback_angular_disagreement": 8,
+            "line_fallback_translation_or_residual_bound": 6,
+            "line_fallback_few_lines": 4
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 182,
+            "accepted": 135,
+            "rank_2": 103,
+            "fallback_angle_bound": 16,
+            "rank_1": 32,
+            "fallback_few_matches": 13,
+            "fallback_angular_disagreement": 8,
+            "fallback_translation_or_residual_bound": 6,
+            "fallback_few_lines": 4
+          },
+          "p2l": {
+            "kept_rl11": 144,
+            "support_or_ambiguity": 11,
+            "attempts": 19,
+            "fallback_rl11": 19,
+            "prior_bound": 5,
+            "observability_changed": 1,
+            "insufficient_support": 2
+          },
+          "p2l_seconds": 0.003926699995645322
+        },
+        "1": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 413,
+            "anchored": 413,
+            "relocks": 5,
+            "matched": 201,
+            "rejected": 5,
+            "reference_resets": 1,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 211,
+            "line_accepted": 189,
+            "line_rank_1": 50,
+            "line_rank_2": 139,
+            "line_fallback_angle_bound": 7,
+            "line_fallback_angular_disagreement": 10,
+            "line_fallback_translation_or_residual_bound": 3,
+            "line_fallback_few_lines": 1,
+            "line_fallback_few_matches": 1
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 211,
+            "accepted": 189,
+            "rank_1": 50,
+            "rank_2": 139,
+            "fallback_angle_bound": 7,
+            "fallback_angular_disagreement": 10,
+            "fallback_translation_or_residual_bound": 3,
+            "fallback_few_lines": 1,
+            "fallback_few_matches": 1
+          },
+          "p2l": {
+            "kept_rl11": 201,
+            "support_or_ambiguity": 5,
+            "attempts": 5,
+            "fallback_rl11": 5
+          },
+          "p2l_seconds": 0.0010475999952177517
+        },
+        "2": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 184,
+            "anchored": 184,
+            "relocks": 1,
+            "matched": 86,
+            "rejected": 6,
+            "reference_resets": 0,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 98,
+            "line_fallback_angular_disagreement": 7,
+            "line_accepted": 76,
+            "line_rank_1": 33,
+            "line_rank_2": 43,
+            "line_fallback_angle_bound": 6,
+            "line_fallback_translation_or_residual_bound": 4,
+            "line_fallback_few_lines": 3,
+            "line_fallback_few_matches": 2
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 98,
+            "fallback_angular_disagreement": 7,
+            "accepted": 76,
+            "rank_1": 33,
+            "rank_2": 43,
+            "fallback_angle_bound": 6,
+            "fallback_translation_or_residual_bound": 4,
+            "fallback_few_lines": 3,
+            "fallback_few_matches": 2
+          },
+          "p2l": {
+            "support_or_ambiguity": 4,
+            "attempts": 6,
+            "fallback_rl11": 6,
+            "kept_rl11": 86,
+            "prior_bound": 2
+          },
+          "p2l_seconds": 0.0021471000000019558
+        },
+        "3": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 433,
+            "anchored": 433,
+            "relocks": 3,
+            "matched": 207,
+            "rejected": 9,
+            "reference_resets": 1,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 225,
+            "line_accepted": 194,
+            "line_rank_1": 39,
+            "line_rank_2": 155,
+            "line_fallback_angle_bound": 13,
+            "line_fallback_few_matches": 2,
+            "line_fallback_angular_disagreement": 11,
+            "line_fallback_translation_or_residual_bound": 4,
+            "line_fallback_few_lines": 1
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 225,
+            "accepted": 194,
+            "rank_1": 39,
+            "rank_2": 155,
+            "fallback_angle_bound": 13,
+            "fallback_few_matches": 2,
+            "fallback_angular_disagreement": 11,
+            "fallback_translation_or_residual_bound": 4,
+            "fallback_few_lines": 1
+          },
+          "p2l": {
+            "kept_rl11": 204,
+            "p2l_registered": 3,
+            "attempts": 12,
+            "accepted": 3,
+            "rank_2": 2,
+            "support_or_ambiguity": 9,
+            "fallback_rl11": 9,
+            "rank_1": 1
+          },
+          "p2l_seconds": 0.004556300009426195
+        },
+        "4": {
+          "mapper": {
+            "scans": 1112,
+            "buffered": 211,
+            "anchored": 211,
+            "relocks": 2,
+            "matched": 98,
+            "rejected": 8,
+            "reference_resets": 1,
+            "dropped": 0,
+            "line_max_references": 64,
+            "line_attempts": 114,
+            "line_accepted": 89,
+            "line_rank_1": 16,
+            "line_rank_2": 73,
+            "line_fallback_few_lines": 2,
+            "line_fallback_angular_disagreement": 10,
+            "line_fallback_translation_or_residual_bound": 8,
+            "line_fallback_few_matches": 2,
+            "line_fallback_angle_bound": 3
+          },
+          "line": {
+            "max_references": 64,
+            "attempts": 114,
+            "accepted": 89,
+            "rank_1": 16,
+            "rank_2": 73,
+            "fallback_few_lines": 2,
+            "fallback_angular_disagreement": 10,
+            "fallback_translation_or_residual_bound": 8,
+            "fallback_few_matches": 2,
+            "fallback_angle_bound": 3
+          },
+          "p2l": {
+            "kept_rl11": 97,
+            "insufficient_support": 1,
+            "attempts": 9,
+            "fallback_rl11": 8,
+            "support_or_ambiguity": 6,
+            "prior_bound": 1,
+            "p2l_registered": 1,
+            "accepted": 1,
+            "rank_2": 1
+          },
+          "p2l_seconds": 0.002496800007065758
+        }
+      },
+      "match_reason_counts": {
+        "rl11_line_line_registered": 683,
+        "rl11_line_angle_bound": 26,
+        "rl11_line_few_matches": 11,
+        "rl11_line_angular_disagreement": 36,
+        "rl11_line_translation_or_residual_bound": 15,
+        "rl11_line_few_lines": 8,
+        "rl11_line_p2l_registered": 4
+      }
+    }
+  ],
+  "exact_rl11_reproduction": true,
+  "input_sha256": "840addf271ae23f9b568d4d2dde132a07fb6b1465ce3d2fb97b425dd8c596f3a",
+  "source": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl11_m89_once_20261114\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001",
+  "source_sequences": {
+    "0": 4450,
+    "1": 4440,
+    "2": 4380,
+    "3": 4380,
+    "4": 4410
+  },
+  "candidate_sha256": {
+    "my_drone_red_p2l17.py": "d4e7c107de6277cb8bc0b1c2bf7d59118fea6420091441597900fd9792ba4c70",
+    "my_drone_red_repair17.py": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+  },
+  "limitation": "Same legal tape and actual received source versions. Offline formula only, no flight/radio execution. Pose errors: aligned every-12-step samples, not every step. RSS includes tape, scorer and diagnostic arrays."
+}
