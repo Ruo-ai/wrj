@@ -1,0 +1,441 @@
+{
+  "schema": "rn7-events-v1",
+  "drones": {
+    "0": {
+      "stats": {
+        "probes": 25,
+        "reject_no_observed_narrow_route": 6,
+        "entered": 8,
+        "active_ticks": 285,
+        "completed": 7,
+        "reject_no_two_sided_passage": 10,
+        "reject_start_clearance": 1,
+        "fresh_scan_obstructed": 1
+      },
+      "events": [
+        {
+          "tick": 115,
+          "reason": "entered"
+        },
+        {
+          "tick": 152,
+          "reason": "completed"
+        },
+        {
+          "tick": 322,
+          "reason": "entered"
+        },
+        {
+          "tick": 370,
+          "reason": "completed"
+        },
+        {
+          "tick": 500,
+          "reason": "entered"
+        },
+        {
+          "tick": 529,
+          "reason": "completed"
+        },
+        {
+          "tick": 659,
+          "reason": "entered"
+        },
+        {
+          "tick": 681,
+          "reason": "completed"
+        },
+        {
+          "tick": 1051,
+          "reason": "entered"
+        },
+        {
+          "tick": 1112,
+          "reason": "fresh_scan_obstructed"
+        },
+        {
+          "tick": 1362,
+          "reason": "entered"
+        },
+        {
+          "tick": 1381,
+          "reason": "completed"
+        },
+        {
+          "tick": 1471,
+          "reason": "entered"
+        },
+        {
+          "tick": 1550,
+          "reason": "completed"
+        },
+        {
+          "tick": 1680,
+          "reason": "entered"
+        },
+        {
+          "tick": 1713,
+          "reason": "completed"
+        }
+      ],
+      "episodes": 8
+    },
+    "1": {
+      "stats": {
+        "probes": 14,
+        "reject_no_two_sided_passage": 3,
+        "reject_no_observed_narrow_route": 3,
+        "entered": 8,
+        "active_ticks": 202,
+        "completed": 7,
+        "peer_brake_ticks": 20,
+        "peer_wait_budget": 1,
+        "local_replan": 2
+      },
+      "events": [
+        {
+          "tick": 215,
+          "reason": "entered"
+        },
+        {
+          "tick": 251,
+          "reason": "completed"
+        },
+        {
+          "tick": 391,
+          "reason": "entered"
+        },
+        {
+          "tick": 414,
+          "reason": "completed"
+        },
+        {
+          "tick": 554,
+          "reason": "entered"
+        },
+        {
+          "tick": 581,
+          "reason": "completed"
+        },
+        {
+          "tick": 721,
+          "reason": "entered"
+        },
+        {
+          "tick": 761,
+          "reason": "peer_wait_budget"
+        },
+        {
+          "tick": 858,
+          "reason": "entered"
+        },
+        {
+          "tick": 890,
+          "reason": "completed"
+        },
+        {
+          "tick": 987,
+          "reason": "entered"
+        },
+        {
+          "tick": 988,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 989,
+          "reason": "completed"
+        },
+        {
+          "tick": 1086,
+          "reason": "entered"
+        },
+        {
+          "tick": 1125,
+          "reason": "completed"
+        },
+        {
+          "tick": 1222,
+          "reason": "entered"
+        },
+        {
+          "tick": 1245,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 1246,
+          "reason": "completed"
+        }
+      ],
+      "episodes": 8
+    },
+    "2": {
+      "stats": {
+        "probes": 36,
+        "reject_no_two_sided_passage": 6,
+        "reject_no_observed_narrow_route": 22,
+        "entered": 8,
+        "active_ticks": 208,
+        "peer_brake_ticks": 14,
+        "peer_wait_budget": 1,
+        "local_replan": 2,
+        "completed": 6,
+        "mission_preempted": 1
+      },
+      "events": [
+        {
+          "tick": 189,
+          "reason": "entered"
+        },
+        {
+          "tick": 252,
+          "reason": "peer_wait_budget"
+        },
+        {
+          "tick": 448,
+          "reason": "entered"
+        },
+        {
+          "tick": 449,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 450,
+          "reason": "completed"
+        },
+        {
+          "tick": 554,
+          "reason": "entered"
+        },
+        {
+          "tick": 560,
+          "reason": "mission_preempted"
+        },
+        {
+          "tick": 802,
+          "reason": "entered"
+        },
+        {
+          "tick": 804,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 805,
+          "reason": "completed"
+        },
+        {
+          "tick": 1231,
+          "reason": "entered"
+        },
+        {
+          "tick": 1284,
+          "reason": "completed"
+        },
+        {
+          "tick": 1664,
+          "reason": "entered"
+        },
+        {
+          "tick": 1699,
+          "reason": "completed"
+        },
+        {
+          "tick": 1803,
+          "reason": "entered"
+        },
+        {
+          "tick": 1838,
+          "reason": "completed"
+        },
+        {
+          "tick": 2310,
+          "reason": "entered"
+        },
+        {
+          "tick": 2336,
+          "reason": "completed"
+        }
+      ],
+      "episodes": 8
+    },
+    "3": {
+      "stats": {
+        "probes": 22,
+        "reject_no_two_sided_passage": 6,
+        "entered": 8,
+        "active_ticks": 185,
+        "completed": 7,
+        "reject_no_observed_narrow_route": 8,
+        "local_replan": 4,
+        "mission_preempted": 1
+      },
+      "events": [
+        {
+          "tick": 157,
+          "reason": "entered"
+        },
+        {
+          "tick": 215,
+          "reason": "completed"
+        },
+        {
+          "tick": 522,
+          "reason": "entered"
+        },
+        {
+          "tick": 526,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 527,
+          "reason": "completed"
+        },
+        {
+          "tick": 736,
+          "reason": "entered"
+        },
+        {
+          "tick": 758,
+          "reason": "completed"
+        },
+        {
+          "tick": 1212,
+          "reason": "entered"
+        },
+        {
+          "tick": 1216,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 1217,
+          "reason": "completed"
+        },
+        {
+          "tick": 1328,
+          "reason": "entered"
+        },
+        {
+          "tick": 1349,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 1350,
+          "reason": "completed"
+        },
+        {
+          "tick": 1461,
+          "reason": "entered"
+        },
+        {
+          "tick": 1498,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 1499,
+          "reason": "completed"
+        },
+        {
+          "tick": 1610,
+          "reason": "entered"
+        },
+        {
+          "tick": 1611,
+          "reason": "mission_preempted"
+        },
+        {
+          "tick": 1722,
+          "reason": "entered"
+        },
+        {
+          "tick": 1765,
+          "reason": "completed"
+        }
+      ],
+      "episodes": 8
+    },
+    "4": {
+      "stats": {
+        "probes": 44,
+        "reject_no_observed_narrow_route": 19,
+        "entered": 8,
+        "active_ticks": 243,
+        "mission_preempted": 3,
+        "reject_no_two_sided_passage": 15,
+        "completed": 4,
+        "reject_start_clearance": 2,
+        "local_replan": 1,
+        "fresh_scan_obstructed": 1
+      },
+      "events": [
+        {
+          "tick": 223,
+          "reason": "entered"
+        },
+        {
+          "tick": 240,
+          "reason": "mission_preempted"
+        },
+        {
+          "tick": 625,
+          "reason": "entered"
+        },
+        {
+          "tick": 688,
+          "reason": "completed"
+        },
+        {
+          "tick": 1118,
+          "reason": "entered"
+        },
+        {
+          "tick": 1119,
+          "reason": "mission_preempted"
+        },
+        {
+          "tick": 2418,
+          "reason": "entered"
+        },
+        {
+          "tick": 2431,
+          "reason": "mission_preempted"
+        },
+        {
+          "tick": 2601,
+          "reason": "entered"
+        },
+        {
+          "tick": 2632,
+          "reason": "completed"
+        },
+        {
+          "tick": 2750,
+          "reason": "entered"
+        },
+        {
+          "tick": 2760,
+          "reason": "local_replan"
+        },
+        {
+          "tick": 2761,
+          "reason": "completed"
+        },
+        {
+          "tick": 2879,
+          "reason": "entered"
+        },
+        {
+          "tick": 2990,
+          "reason": "completed"
+        },
+        {
+          "tick": 3108,
+          "reason": "entered"
+        },
+        {
+          "tick": 3157,
+          "reason": "fresh_scan_obstructed"
+        }
+      ],
+      "episodes": 8
+    }
+  }
+}

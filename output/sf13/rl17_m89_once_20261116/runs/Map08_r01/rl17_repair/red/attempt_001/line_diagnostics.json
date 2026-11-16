@@ -1,0 +1,202 @@
+{
+  "schema": "rl11-legal-mapper-tape-v1",
+  "drones": {
+    "0": {
+      "speed_sum": 4100.909373526677,
+      "outage_steps": 1829,
+      "line_stats": {
+        "max_references": 64,
+        "attempts": 252,
+        "accepted": 145,
+        "rank_2": 82,
+        "fallback_translation_or_residual_bound": 5,
+        "rank_1": 63,
+        "fallback_angular_disagreement": 18,
+        "fallback_few_lines": 48,
+        "fallback_few_matches": 20,
+        "fallback_angle_bound": 16
+      },
+      "motion_guard": {},
+      "outage_heading_summary": {
+        "count": 1829,
+        "mean": 5.732962342165272,
+        "p95": 14.67156532484903,
+        "maximum": 22.437977671256366
+      },
+      "normal_heading_summary": {
+        "count": 2706,
+        "mean": 3.0329954101139673,
+        "p95": 7.494785965182478,
+        "maximum": 11.676290754351948
+      },
+      "outage_position_summary": {
+        "count": 1829,
+        "mean": 24.738472419368307,
+        "p95": 67.29201052071386,
+        "maximum": 81.19990735067283
+      }
+    },
+    "1": {
+      "speed_sum": 4889.550580946604,
+      "outage_steps": 2074,
+      "line_stats": {
+        "max_references": 64,
+        "attempts": 269,
+        "accepted": 211,
+        "rank_2": 144,
+        "fallback_translation_or_residual_bound": 8,
+        "rank_1": 67,
+        "fallback_angular_disagreement": 9,
+        "fallback_few_matches": 10,
+        "fallback_few_lines": 20,
+        "fallback_angle_bound": 11
+      },
+      "motion_guard": {},
+      "outage_heading_summary": {
+        "count": 2074,
+        "mean": 4.10070689613987,
+        "p95": 10.887782658289419,
+        "maximum": 17.420169477342448
+      },
+      "normal_heading_summary": {
+        "count": 2461,
+        "mean": 3.6196154515502066,
+        "p95": 9.128034857035628,
+        "maximum": 13.822476046269335
+      },
+      "outage_position_summary": {
+        "count": 2074,
+        "mean": 11.402282522788543,
+        "p95": 29.001260051965083,
+        "maximum": 74.49614687946104
+      }
+    },
+    "2": {
+      "speed_sum": 6089.28570358675,
+      "outage_steps": 2050,
+      "line_stats": {
+        "max_references": 51,
+        "attempts": 291,
+        "accepted": 176,
+        "rank_2": 113,
+        "fallback_angle_bound": 24,
+        "fallback_angular_disagreement": 17,
+        "rank_1": 63,
+        "fallback_few_lines": 35,
+        "fallback_few_matches": 32,
+        "fallback_translation_or_residual_bound": 7
+      },
+      "motion_guard": {},
+      "outage_heading_summary": {
+        "count": 2050,
+        "mean": 3.883501817045277,
+        "p95": 10.903647200900991,
+        "maximum": 18.372167704651936
+      },
+      "normal_heading_summary": {
+        "count": 2485,
+        "mean": 3.536281644452418,
+        "p95": 8.339132423236078,
+        "maximum": 12.648074105295132
+      },
+      "outage_position_summary": {
+        "count": 2050,
+        "mean": 12.094084685851415,
+        "p95": 30.31822037132703,
+        "maximum": 50.293503394976604
+      }
+    },
+    "3": {
+      "speed_sum": 6393.087368911865,
+      "outage_steps": 1743,
+      "line_stats": {
+        "max_references": 64,
+        "attempts": 244,
+        "accepted": 152,
+        "rank_2": 90,
+        "rank_1": 62,
+        "fallback_angular_disagreement": 10,
+        "fallback_few_lines": 33,
+        "fallback_few_matches": 36,
+        "fallback_angle_bound": 10,
+        "fallback_translation_or_residual_bound": 3
+      },
+      "motion_guard": {},
+      "outage_heading_summary": {
+        "count": 1743,
+        "mean": 4.333433283064462,
+        "p95": 14.554723816827497,
+        "maximum": 19.55573777150452
+      },
+      "normal_heading_summary": {
+        "count": 2792,
+        "mean": 3.3725272933008807,
+        "p95": 8.887442110977464,
+        "maximum": 11.979206639612176
+      },
+      "outage_position_summary": {
+        "count": 1743,
+        "mean": 12.429527557823057,
+        "p95": 43.78539636559723,
+        "maximum": 62.8884321464693
+      }
+    },
+    "4": {
+      "speed_sum": 7678.406913818602,
+      "outage_steps": 2496,
+      "line_stats": {
+        "max_references": 64,
+        "attempts": 334,
+        "accepted": 265,
+        "rank_2": 168,
+        "rank_1": 97,
+        "fallback_translation_or_residual_bound": 3,
+        "fallback_angular_disagreement": 23,
+        "fallback_angle_bound": 19,
+        "fallback_few_lines": 5,
+        "fallback_few_matches": 19
+      },
+      "motion_guard": {},
+      "outage_heading_summary": {
+        "count": 2496,
+        "mean": 7.649470064693891,
+        "p95": 17.98488514738608,
+        "maximum": 23.22601978642081
+      },
+      "normal_heading_summary": {
+        "count": 2039,
+        "mean": 3.035447325625599,
+        "p95": 7.787876850301116,
+        "maximum": 13.069580727000547
+      },
+      "outage_position_summary": {
+        "count": 2496,
+        "mean": 21.2793322506441,
+        "p95": 50.22944990127195,
+        "maximum": 105.40971515894331
+      }
+    }
+  },
+  "diagnostic_seconds": 1.4010386002337327,
+  "errors": [],
+  "kinds": {
+    "DRONE": 0,
+    "DISPOSAL_CENTER": 1,
+    "BOMB": 2
+  },
+  "mapper_inputs_complete": true,
+  "columns": [
+    "step",
+    "gps_present",
+    "compass_present",
+    "odom_present",
+    "lidar_present",
+    "gps_x",
+    "gps_y",
+    "compass",
+    "odom_distance",
+    "odom_alpha",
+    "odom_theta",
+    "lidar_ranges..."
+  ]
+}

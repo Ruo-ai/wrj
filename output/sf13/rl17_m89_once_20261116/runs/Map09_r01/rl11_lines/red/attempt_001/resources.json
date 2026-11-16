@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "status": "exited",
+  "process_seconds": 141.40699999999924,
+  "peak_job_commit_bytes": 740306944,
+  "memory_limit_bytes": 4000000000,
+  "memory_limit_kind": "Windows job commit",
+  "cpu_count": 1
+}

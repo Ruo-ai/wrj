@@ -1,0 +1,462 @@
+The team '玩阴的' n°742, with Ruoai,Srendy,asdf__
+Default team mode: <not set>
+Evaluation Plan (from file: eval.yml):
+==================================================
+Config ID: 1
+  Map: Map08
+  Zones: no_gps_zone
+  Number of Rounds: 1
+  Weight: 1
+  Team mode (scenario): place
+  Number of drones (scenario): 5
+--------------------------------------------------
+Default team mode: <not set>
+Time score: full marks at or before 30% of the timestep limit
+V3_EVENT {"destination": [640.0, 531.0], "drone": 1, "event": "route_released", "position": [585.8645391610105, 404.59342126569254], "reason": "new_wall", "step": 7, "waypoint": [620.0, 511.0]}
+V3_EVENT {"destination": [560.0, 531.0], "drone": 2, "event": "route_released", "position": [626.2267610994896, 411.81722229310463], "reason": "new_wall", "step": 7, "waypoint": [600.0, 531.0]}
+V3_EVENT {"destination": [400.0, 331.0], "drone": 3, "event": "route_released", "position": [540.4138474519646, 445.2849609379139], "reason": "new_wall", "step": 7, "waypoint": [500.0, 331.0]}
+V3_EVENT {"destination": [640.0, 371.0], "drone": 0, "event": "route_released", "position": [544.5194833296144, 398.8861565159106], "reason": "new_wall", "step": 19, "waypoint": [640.0, 371.0]}
+V3_EVENT {"destination": [660.0, 511.0], "drone": 0, "event": "route_released", "position": [558.0924987077681, 387.57941082055385], "reason": "new_wall", "step": 25, "waypoint": [600.0, 511.0]}
+V3_EVENT {"destination": [340.0, 311.0], "drone": 2, "event": "route_released", "position": [478.58909693476016, 426.3532604148501], "reason": "new_wall", "step": 55, "waypoint": [400.0, 331.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [599.2154097471338, 353.44900645299117], "reason": "disconnected", "step": 66}
+V3_EVENT {"destination": [60.0, 531.0], "drone": 1, "event": "route_released", "position": [224.43450628445362, 510.86392377252935], "reason": "new_wall", "step": 109, "waypoint": [120.0, 511.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [619.989977221546, 507.1307199891967], "reason": "disconnected", "step": 111}
+V3_EVENT {"destination": [120.0, 351.0], "drone": 2, "event": "route_released", "position": [183.2757586287711, 362.88192572211534], "reason": "new_wall", "step": 121, "waypoint": [120.0, 351.0]}
+V3_EVENT {"destination": [20.0, 331.0], "drone": 2, "event": "route_released", "position": [144.46342411348218, 362.40362024497506], "reason": "new_wall", "step": 127, "waypoint": [40.0, 371.0]}
+V3_EVENT {"destination": [-200.0, 531.0], "drone": 3, "event": "route_released", "position": [-40.391246062352636, 509.05093984600893], "reason": "new_wall", "step": 145, "waypoint": [-160.0, 511.0]}
+V3_EVENT {"destination": [280.0, 311.0], "drone": 4, "event": "route_released", "position": [355.1639734486638, 355.0740841817096], "reason": "new_wall", "step": 169, "waypoint": [320.0, 351.0]}
+V3_EVENT {"destination": [180.0, 291.0], "drone": 4, "event": "route_released", "position": [320.74783760581704, 349.3515823520877], "reason": "new_wall", "step": 175, "waypoint": [260.0, 331.0]}
+V3_EVENT {"destination": [60.0, 551.0], "drone": 2, "event": "route_released", "position": [-114.55383358211688, 497.19206071918745], "reason": "new_wall", "step": 205, "waypoint": [0.0, 551.0]}
+V3_EVENT {"destination": [-360.0, 351.0], "drone": 3, "event": "route_released", "position": [-183.71441011626894, 418.26166028497744], "reason": "new_wall", "step": 211, "waypoint": [-240.0, 371.0]}
+V3_EVENT {"destination": [-40.0, 331.0], "drone": 4, "event": "route_released", "position": [-15.644787955796232, 353.22892138152326], "reason": "new_wall", "step": 235, "waypoint": [-40.0, 331.0]}
+V3_EVENT {"destination": [200.0, 551.0], "drone": 0, "event": "route_released", "position": [236.37336185025623, 514.013795912703], "reason": "new_wall", "step": 241, "waypoint": [200.0, 551.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [40.0, 551.0], "inventory": 2, "position": [236.37336185025623, 514.013795912703], "scans": 60, "sources": [0, 1, 2, 3, 4], "speed": 6.595347347302206, "step": 241}
+V3_EVENT {"drone": 1, "event": "status", "goal": [20.0, 431.0], "inventory": 2, "position": [610.2506310510585, 383.07448311307274], "scans": 60, "sources": [0, 1, 2, 3, 4], "speed": 3.4328376572064054, "step": 241}
+V3_EVENT {"drone": 2, "event": "status", "goal": [80.0, 471.0], "inventory": 2, "position": [-65.33253405022148, 409.78382600694016], "scans": 60, "sources": [0, 1, 2, 3, 4], "speed": 2.7114541983012104, "step": 241}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-380.0, 451.0], "inventory": 2, "position": [-244.8299804755039, 402.3295735930911], "scans": 60, "sources": [0, 1, 2, 3, 4], "speed": 0.009639839105608592, "step": 241}
+V3_EVENT {"destination": [-100.0, 531.0], "drone": 4, "event": "route_released", "position": [-35.80024255789482, 350.9912749515232], "reason": "new_wall", "step": 241, "waypoint": [-20.0, 471.0]}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-80.0, 411.0], "inventory": 2, "position": [-35.80024255789482, 350.9912749515232], "scans": 60, "sources": [0, 1, 2, 3, 4], "speed": 3.4133458136779318, "step": 241}
+V3_EVENT {"destination": [40.0, 551.0], "drone": 0, "event": "route_released", "position": [87.79027128436674, 519.9518831647074], "reason": "new_wall", "step": 265, "waypoint": [40.0, 551.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [-252.26791392766253, 404.6778837711983], "reason": "no_progress", "step": 301}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [-8.83943902328653, 490.130387315064], "reason": "no_progress", "step": 303}
+V3_EVENT {"destination": [-100.0, 551.0], "drone": 0, "event": "route_released", "position": [-78.39302026398555, 522.1892189016505], "reason": "new_wall", "step": 337, "waypoint": [-100.0, 551.0]}
+V3_EVENT {"destination": [-660.0, 411.0], "drone": 3, "event": "route_released", "position": [-504.7112917904441, 411.5607354981196], "reason": "new_wall", "step": 343, "waypoint": [-620.0, 431.0]}
+V3_EVENT {"destination": [-240.0, 411.0], "drone": 0, "event": "route_released", "position": [-110.70702323510493, 507.2208309657217], "reason": "new_wall", "step": 349, "waypoint": [-160.0, 511.0]}
+V3_EVENT {"destination": [-100.0, 331.0], "drone": 1, "event": "route_released", "position": [23.83166133404815, 424.2022111098604], "reason": "new_wall", "step": 361, "waypoint": [-60.0, 351.0]}
+V3_EVENT {"destination": [-240.0, 351.0], "drone": 2, "event": "route_released", "position": [-13.219101105269877, 480.77153171045944], "reason": "new_wall", "step": 409, "waypoint": [-120.0, 491.0]}
+V3_EVENT {"destination": [-460.0, 371.0], "drone": 0, "event": "route_released", "position": [-322.75117436297717, 400.74919403345916], "reason": "new_wall", "step": 415, "waypoint": [-440.0, 391.0]}
+V3_EVENT {"destination": [140.0, 511.0], "drone": 1, "event": "route_released", "position": [-33.50065057773962, 517.4778797228599], "reason": "new_wall", "step": 451, "waypoint": [80.0, 511.0]}
+V3_EVENT {"destination": [-820.0, 131.0], "drone": 3, "event": "route_released", "position": [-776.6012519851262, 196.8211740699892], "reason": "new_wall", "step": 451, "waypoint": [-820.0, 131.0]}
+V3_EVENT {"drone": 0, "event": "recovery", "position": [-348.44382894058003, 401.0590609705234], "reason": "no_progress", "step": 481}
+V3_EVENT {"drone": 0, "event": "status", "goal": null, "inventory": 2, "position": [-348.44382894058003, 401.0590609705234], "scans": 120, "sources": [0, 1, 2, 3, 4], "speed": 0.5938084818812591, "step": 481}
+V3_EVENT {"drone": 1, "event": "status", "goal": [220.0, 431.0], "inventory": 2, "position": [144.22905521375668, 449.95696623257925], "scans": 120, "sources": [0, 1, 2, 3, 4], "speed": 6.289375963271174, "step": 481}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-320.0, 491.0], "inventory": 2, "position": [-213.9308624021113, 365.33571173689694], "scans": 120, "sources": [0, 1, 2, 3, 4], "speed": 4.059474552463389, "step": 481}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-660.0, -169.0], "inventory": 2, "position": [-711.9575989573601, 25.5202040845104], "scans": 120, "sources": [0, 1, 2, 3, 4], "speed": 4.479265673468605, "step": 481}
+V3_EVENT {"drone": 4, "event": "status", "goal": [360.0, 351.0], "inventory": 2, "position": [414.98192274721674, 363.5654222826246], "scans": 120, "sources": [0, 1, 2, 3, 4], "speed": 6.569818936796821, "step": 481}
+V3_EVENT {"destination": [-260.0, 391.0], "drone": 1, "event": "route_released", "position": [599.2733619610992, 516.450941650664], "reason": "new_wall", "step": 577, "waypoint": [420.0, 491.0]}
+V3_EVENT {"destination": [-380.0, -549.0], "drone": 3, "event": "route_released", "position": [-555.1787886323837, -501.6630144178756], "reason": "new_wall", "step": 589, "waypoint": [-460.0, -509.0]}
+V3_EVENT {"destination": [-320.0, -289.0], "drone": 3, "event": "route_released", "position": [-369.7636046401269, -418.526554560113], "reason": "new_wall", "step": 637, "waypoint": [-380.0, -309.0]}
+V3_EVENT {"destination": [-340.0, 331.0], "drone": 4, "event": "route_released", "position": [-181.3083089068431, 429.077144251872], "reason": "new_wall", "step": 673, "waypoint": [-280.0, 351.0]}
+V3_EVENT {"destination": [-180.0, 351.0], "drone": 1, "event": "route_released", "position": [81.63475809981888, 509.5423355872502], "reason": "new_wall", "step": 679, "waypoint": [-40.0, 511.0]}
+V3_EVENT {"destination": [-520.0, 91.0], "drone": 3, "event": "route_released", "position": [-476.26481953867324, -238.39180252982595], "reason": "new_wall", "step": 685, "waypoint": [-580.0, -249.0]}
+V3_EVENT {"destination": [-260.0, 411.0], "drone": 1, "event": "route_released", "position": [12.155824715823861, 507.5274463232061], "reason": "new_wall", "step": 691, "waypoint": [-80.0, 491.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-520.0, 551.0], "inventory": 2, "position": [-490.5130646685606, 552.0608676224678], "scans": 180, "sources": [0, 1, 2, 3, 4], "speed": 5.163489563468744, "step": 721}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-180.0, 491.0], "inventory": 2, "position": [-144.1183690745968, 507.9930328341558], "scans": 180, "sources": [0, 1, 2, 3, 4], "speed": 2.3985557395004378, "step": 721}
+V3_EVENT {"destination": [-800.0, 211.0], "drone": 2, "event": "route_released", "position": [-775.8275834411616, 376.35874655756567], "reason": "new_wall", "step": 721, "waypoint": [-760.0, 271.0]}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-720.0, 191.0], "inventory": 2, "position": [-775.8275834411616, 376.35874655756567], "scans": 180, "sources": [0, 1, 2, 3, 4], "speed": 3.6350529661651256, "step": 721}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-520.0, -9.0], "inventory": 2, "position": [-655.010636136527, -201.46050936936118], "scans": 180, "sources": [0, 1, 2, 3, 4], "speed": 5.914039998242827, "step": 721}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-320.0, 411.0], "inventory": 2, "position": [-243.13756732859906, 383.3041472811633], "scans": 180, "sources": [0, 1, 2, 3, 4], "speed": 0.12663747006128, "step": 721}
+V3_EVENT {"destination": [-520.0, -9.0], "drone": 3, "event": "route_released", "position": [-660.9388704497767, -160.3638493656929], "reason": "new_wall", "step": 727, "waypoint": [-660.0, -49.0]}
+V3_EVENT {"destination": [-620.0, 51.0], "drone": 2, "event": "route_released", "position": [-731.4976088817613, 185.29477007765675], "reason": "new_wall", "step": 757, "waypoint": [-740.0, 71.0]}
+V3_EVENT {"destination": [-360.0, 331.0], "drone": 1, "event": "route_released", "position": [-176.46099928311165, 427.20815148779445], "reason": "new_wall", "step": 853, "waypoint": [-180.0, 351.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [-597.7018298134712, 183.2143952267859], "reason": "no_progress", "step": 901}
+V3_EVENT {"destination": [-340.0, 331.0], "drone": 1, "event": "route_released", "position": [-186.2190537775615, 343.49791218567924], "reason": "new_wall", "step": 907, "waypoint": [-300.0, 351.0]}
+V3_EVENT {"destination": [-800.0, 151.0], "drone": 0, "event": "route_released", "position": [-740.8514488573907, 275.9992031609845], "reason": "new_wall", "step": 913, "waypoint": [-740.0, 171.0]}
+V3_EVENT {"destination": [-800.0, -349.0], "drone": 2, "event": "route_released", "position": [-661.3443003759799, -456.7465380177286], "reason": "new_wall", "step": 937, "waypoint": [-720.0, -349.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-540.0, 11.0], "inventory": 2, "position": [-605.7750690049495, 83.77083916645256], "scans": 240, "sources": [0, 1, 2, 3, 4], "speed": 0.22175525433546128, "step": 961}
+V3_EVENT {"drone": 1, "event": "status", "goal": [60.0, 351.0], "inventory": 2, "position": [-190.98545355425017, 389.3779890797968], "scans": 240, "sources": [0, 1, 2, 3, 4], "speed": 0.012102967599840246, "step": 961}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-780.0, -269.0], "inventory": 2, "position": [-695.6354063105041, -330.8629037606307], "scans": 240, "sources": [0, 1, 2, 3, 4], "speed": 6.455512664855851, "step": 961}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-780.0, -509.0], "inventory": 2, "position": [-764.2221898148803, -23.597043038995324], "scans": 240, "sources": [0, 1, 2, 3, 4], "speed": 6.740719394228847, "step": 961}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-640.0, 531.0], "inventory": 2, "position": [-460.86217862678177, 485.7441056074222], "scans": 240, "sources": [0, 1, 2, 3, 4], "speed": 0.32847894100888825, "step": 961}
+V3_EVENT {"destination": [60.0, 351.0], "drone": 1, "event": "route_released", "position": [-147.92197707160744, 446.59655643315307], "reason": "new_wall", "step": 1009, "waypoint": [-100.0, 491.0]}
+V3_EVENT {"destination": [-780.0, -509.0], "drone": 3, "event": "route_released", "position": [-763.8621999212268, -385.2046030996268], "reason": "new_wall", "step": 1021, "waypoint": [-760.0, -489.0]}
+V3_EVENT {"budget": 90, "drone": 4, "event": "survey_started", "goal": [-680.0, 351.0], "step": 1033}
+V3_EVENT {"drone": 4, "duration": 7, "event": "survey_finished", "newly_resolved": 19, "reason": "observed", "step": 1040}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [-654.2503405795409, 444.89893819800994], "reason": "disconnected", "step": 1040}
+V3_EVENT {"budget": 90, "drone": 0, "event": "survey_started", "goal": [-400.0, -49.0], "step": 1057}
+V3_EVENT {"drone": 0, "duration": 13, "event": "survey_finished", "newly_resolved": 3, "reason": "observed", "step": 1070}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [-471.62584757435934, 328.21257933397976], "reason": "disconnected", "step": 1080}
+V3_EVENT {"destination": [-200.0, -249.0], "drone": 3, "event": "route_released", "position": [-470.67810736318387, -253.81792367611257], "reason": "new_wall", "step": 1093, "waypoint": [-360.0, -229.0]}
+V3_EVENT {"budget": 90, "drone": 3, "event": "survey_started", "goal": [-40.0, -129.0], "step": 1138}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [-601.6020155151941, 206.42149577805733], "reason": "no_progress", "step": 1141}
+V3_EVENT {"destination": [-40.0, -129.0], "drone": 3, "event": "route_released", "position": [-205.23286609444477, -151.29420896624887], "reason": "new_wall", "step": 1141, "waypoint": [-100.0, -149.0]}
+V3_EVENT {"drone": 3, "duration": 4, "event": "survey_finished", "newly_resolved": 6, "reason": "observed", "step": 1142}
+V3_EVENT {"budget": 90, "drone": 1, "event": "survey_started", "goal": [-560.0, 331.0], "step": 1147}
+V3_EVENT {"destination": [-20.0, -229.0], "drone": 3, "event": "route_released", "position": [-171.26717618282905, -160.1715170405124], "reason": "new_wall", "step": 1147, "waypoint": [-60.0, -209.0]}
+V3_EVENT {"drone": 1, "duration": 7, "event": "survey_finished", "newly_resolved": 3, "reason": "observed", "step": 1154}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [-402.77225621648256, 403.401951217881], "reason": "disconnected", "step": 1154}
+V3_EVENT {"destination": [20.0, -229.0], "drone": 3, "event": "route_released", "position": [-96.53149603340484, -190.3820279650478], "reason": "new_wall", "step": 1159, "waypoint": [-20.0, -209.0]}
+V3_EVENT {"destination": [220.0, -209.0], "drone": 3, "event": "route_released", "position": [84.61157955619872, -218.94236301641345], "reason": "new_wall", "step": 1189, "waypoint": [160.0, -229.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-200.0, 31.0], "inventory": 2, "position": [-227.68731457958447, 27.221396169751884], "scans": 300, "sources": [0, 1, 2, 3, 4], "speed": 0.14041347727033174, "step": 1201}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-640.0, 291.0], "inventory": 2, "position": [-648.8279149033161, 494.7653503399483], "scans": 300, "sources": [0, 1, 2, 3, 4], "speed": 3.099766034176389, "step": 1201}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-780.0, 511.0], "inventory": 2, "position": [-775.639144876941, 486.10048344003036], "scans": 300, "sources": [0, 1, 2, 3, 4], "speed": 5.245611486803565, "step": 1201}
+V3_EVENT {"drone": 3, "event": "status", "goal": [220.0, -369.0], "inventory": 2, "position": [121.22531921382274, -256.80056197706523], "scans": 300, "sources": [0, 1, 2, 3, 4], "speed": 5.898794068356151, "step": 1201}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-780.0, 231.0], "inventory": 2, "position": [-531.8919548140118, 459.6785928842211], "scans": 300, "sources": [0, 1, 2, 3, 4], "speed": 0.3593092561614426, "step": 1201}
+V3_EVENT {"destination": [-640.0, 291.0], "drone": 1, "event": "route_released", "position": [-659.7262831504261, 486.26312308809986], "reason": "new_wall", "step": 1207, "waypoint": [-600.0, 371.0]}
+V3_EVENT {"destination": [220.0, -369.0], "drone": 3, "event": "route_released", "position": [156.82318803376793, -324.43062943281654], "reason": "new_wall", "step": 1231, "waypoint": [220.0, -369.0]}
+V3_EVENT {"destination": [300.0, -469.0], "drone": 3, "event": "route_released", "position": [179.46563201278957, -352.7995243777213], "reason": "new_wall", "step": 1237, "waypoint": [260.0, -429.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [-759.5359265714708, 489.96838518645575], "reason": "disconnected", "step": 1239}
+V3_EVENT {"destination": [480.0, -489.0], "drone": 3, "event": "route_released", "position": [357.4308554212251, -411.9882045909995], "reason": "new_wall", "step": 1273, "waypoint": [440.0, -449.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 551.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 551.0, "step": 1302}
+V3_EVENT {"drone": 2, "estimated_gain": 551.0, "event": "bomb_target", "step": 1302, "target": [-552.0, 351.0]}
+V3_EVENT {"destination": [-560.0, 351.0], "drone": 2, "event": "route_released", "position": [-768.1361889860235, 458.49019280834807], "reason": "new_wall", "step": 1303, "waypoint": [-720.0, 351.0]}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [-768.2869961626865, 422.4360537537491], "reason": "local_loop", "step": 1309}
+V3_EVENT {"drone": 2, "event": "local_loop", "position": [-768.2869961626865, 422.4360537537491], "step": 1309}
+V3_EVENT {"destination": [220.0, -69.0], "drone": 3, "event": "route_released", "position": [435.8396419011535, -410.43640865092914], "reason": "new_wall", "step": 1339, "waypoint": [320.0, -429.0]}
+V3_EVENT {"budget": 90, "drone": 0, "event": "survey_started", "goal": [80.0, -49.0], "step": 1363}
+V3_EVENT {"baseline_difficulty": 0.8009492472823191, "baseline_gain": 635.0, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 0.8009492472823191, "selected_gain": 635.0, "step": 1379}
+V3_EVENT {"drone": 1, "estimated_gain": 635.0, "event": "bomb_target", "step": 1379, "target": [-460.0, 343.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [440.48743103809045, -420.87697190634503], "reason": "no_progress", "step": 1381}
+V3_EVENT {"budget": 90, "drone": 4, "event": "survey_started", "goal": [-660.0, -49.0], "step": 1390}
+V3_EVENT {"drone": 4, "duration": 4, "event": "survey_finished", "newly_resolved": 11, "reason": "observed", "step": 1394}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 644.0, "changed": false, "drone": 4, "event": "opponent_placement", "observed_center": [666.6820811662126, 420.5225513687717], "selected_difficulty": 0.0, "selected_gain": 644.0, "step": 1394}
+V3_EVENT {"drone": 4, "estimated_gain": 644.0, "event": "bomb_target", "step": 1394, "target": [-452.0, 323.0]}
+V3_EVENT {"drone": 0, "duration": 49, "event": "survey_finished", "newly_resolved": 3, "reason": "observed", "step": 1412}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 404.0, "changed": false, "drone": 0, "event": "opponent_placement", "observed_center": [666.2464764281042, 430.62462394133075], "selected_difficulty": 0.0, "selected_gain": 404.0, "step": 1412}
+V3_EVENT {"drone": 0, "estimated_gain": 404.0, "event": "bomb_target", "step": 1412, "target": [108.0, 251.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [100.0, 251.0], "inventory": 2, "position": [80.69172274481366, 189.61744895724613], "scans": 360, "sources": [0, 1, 2, 3, 4], "speed": 6.517270870304461, "step": 1441}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-460.0, 351.0], "inventory": 2, "position": [-459.3644851418886, 478.3829971443264], "scans": 360, "sources": [0, 1, 2, 3, 4], "speed": 3.6742213476871233, "step": 1441}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-480.0, 11.0], "inventory": 2, "position": [-573.4622626420507, 64.48092424407922], "scans": 360, "sources": [0, 1, 2, 3, 4], "speed": 0.1558263130964764, "step": 1441}
+V3_EVENT {"drone": 3, "event": "status", "goal": [380.0, -449.0], "inventory": 2, "position": [257.4117874503101, -469.6513714390464], "scans": 360, "sources": [0, 1, 2, 3, 4], "speed": 0.03857807089690666, "step": 1441}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-460.0, 331.0], "inventory": 2, "position": [-779.1106669722902, 143.76654743018747], "scans": 360, "sources": [0, 1, 2, 3, 4], "speed": 6.425329426695368, "step": 1441}
+V3_EVENT {"actual_gain": 422.0, "drone": 0, "error": 4.6909370308581435, "event": "placement_checked", "step": 1455, "target_gain": 424.0}
+V3_EVENT {"attempt": 1, "drone": 0, "event": "placement_requested", "inventory": 2, "step": 1455}
+V3_EVENT {"attempted": true, "drone": 0, "event": "placement_confirmed", "inventory": 1, "step": 1456}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 612.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 612.0, "step": 1464}
+V3_EVENT {"drone": 2, "estimated_gain": 612.0, "event": "bomb_target", "step": 1464, "target": [-452.0, 279.0]}
+V3_EVENT {"destination": [-460.0, 271.0], "drone": 2, "event": "route_released", "position": [-558.2196240559273, 56.88739975997152], "reason": "new_wall", "step": 1465, "waypoint": [-560.0, 171.0]}
+V3_EVENT {"destination": [-140.0, 251.0], "drone": 0, "event": "route_released", "position": [35.82767713437462, 246.46965949909924], "reason": "new_wall", "step": 1477, "waypoint": [-80.0, 251.0]}
+V3_EVENT {"drone": 4, "event": "placement_reconsidered", "reason": "marginal_gain_lost", "step": 1484}
+V3_EVENT {"actual_gain": 655.0, "drone": 1, "error": 7.051397509688515, "event": "placement_checked", "step": 1508, "target_gain": 663.0}
+V3_EVENT {"attempt": 1, "drone": 1, "event": "placement_requested", "inventory": 2, "step": 1508}
+V3_EVENT {"attempted": true, "drone": 1, "event": "placement_confirmed", "inventory": 1, "step": 1509}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 467.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 467.0, "step": 1565}
+V3_EVENT {"drone": 2, "estimated_gain": 467.0, "event": "bomb_target", "step": 1565, "target": [-512.0, 239.0]}
+V3_EVENT {"destination": [-520.0, 231.0], "drone": 2, "event": "route_released", "position": [-426.73533278652843, 83.1580194151214], "reason": "new_wall", "step": 1573, "waypoint": [-440.0, 211.0]}
+V3_EVENT {"budget": 90, "drone": 1, "event": "survey_started", "goal": [-780.0, 151.0], "step": 1576}
+V3_EVENT {"drone": 1, "duration": 4, "event": "survey_finished", "newly_resolved": 8, "reason": "observed", "step": 1580}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [-733.9749832661832, 262.3929157828903], "reason": "disconnected", "step": 1580}
+V3_EVENT {"drone": 3, "estimated_gain": 513.0, "event": "bomb_target", "step": 1582, "target": [308.0, -449.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 609.0, "changed": false, "drone": 4, "event": "opponent_placement", "observed_center": [666.6820811662126, 420.5225513687717], "selected_difficulty": 0.0, "selected_gain": 609.0, "step": 1584}
+V3_EVENT {"drone": 4, "estimated_gain": 609.0, "event": "bomb_target", "step": 1584, "target": [-200.0, 339.0]}
+V3_EVENT {"actual_gain": 684.0, "drone": 4, "error": 7.3641599812099985, "event": "placement_checked", "step": 1619, "target_gain": 692.0}
+V3_EVENT {"attempt": 1, "drone": 4, "event": "placement_requested", "inventory": 2, "step": 1619}
+V3_EVENT {"attempted": true, "drone": 4, "event": "placement_confirmed", "inventory": 1, "step": 1620}
+V3_EVENT {"destination": [-340.0, -169.0], "drone": 2, "event": "route_released", "position": [-424.5010606637282, 78.45558731639812], "reason": "new_wall", "step": 1621, "waypoint": [-420.0, -49.0]}
+V3_EVENT {"budget": 90, "drone": 2, "event": "survey_started", "goal": [-340.0, -89.0], "step": 1621}
+V3_EVENT {"destination": [-180.0, -69.0], "drone": 0, "event": "route_released", "position": [-87.90826471460933, 88.8002221094094], "reason": "new_wall", "step": 1627, "waypoint": [-80.0, -29.0]}
+V3_EVENT {"drone": 2, "duration": 7, "event": "survey_finished", "newly_resolved": 4, "reason": "observed", "step": 1628}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [-425.0028896854902, 54.598928690872896], "reason": "disconnected", "step": 1628}
+V3_EVENT {"actual_gain": 558.0, "drone": 3, "error": 6.43177186888149, "event": "placement_checked", "step": 1629, "target_gain": 566.0}
+V3_EVENT {"attempt": 1, "drone": 3, "event": "placement_requested", "inventory": 2, "step": 1629}
+V3_EVENT {"attempted": true, "drone": 3, "event": "placement_confirmed", "inventory": 1, "step": 1630}
+V3_EVENT {"destination": [40.0, -29.0], "drone": 3, "event": "route_released", "position": [251.07109426464285, -448.360628169689], "reason": "new_wall", "step": 1645, "waypoint": [220.0, -449.0]}
+V3_EVENT {"destination": [-500.0, 191.0], "drone": 4, "event": "route_released", "position": [-386.4562994882256, 340.0734051548308], "reason": "new_wall", "step": 1663, "waypoint": [-500.0, 351.0]}
+V3_EVENT {"destination": [80.0, -109.0], "drone": 0, "event": "route_released", "position": [-0.16146113782131472, -50.46733030064618], "reason": "new_wall", "step": 1669, "waypoint": [60.0, -49.0]}
+V3_EVENT {"destination": [-420.0, 11.0], "drone": 3, "event": "route_released", "position": [174.44005584587353, -333.2703335886389], "reason": "new_wall", "step": 1675, "waypoint": [180.0, -249.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [80.0, 51.0], "inventory": 1, "position": [53.21655435944501, -4.979176901689334], "scans": 418, "sources": [0, 1, 2, 3, 4], "speed": 6.181903518899702, "step": 1681}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-500.0, 191.0], "inventory": 1, "position": [-638.8299663877943, 324.74974038380856], "scans": 418, "sources": [0, 1, 2, 3, 4], "speed": 2.6338145894494382, "step": 1681}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-780.0, -429.0], "inventory": 2, "position": [-650.155049756119, -74.15829833899537], "scans": 420, "sources": [0, 1, 2, 3, 4], "speed": 3.3242719876900493, "step": 1681}
+V3_EVENT {"destination": [140.0, -129.0], "drone": 3, "event": "route_released", "position": [166.91999836081627, -301.99480588623135], "reason": "new_wall", "step": 1681, "waypoint": [160.0, -189.0]}
+V3_EVENT {"drone": 3, "event": "status", "goal": [80.0, -309.0], "inventory": 1, "position": [166.91999836081627, -301.99480588623135], "scans": 419, "sources": [0, 1, 2, 3, 4], "speed": 5.282441022951082, "step": 1681}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-760.0, -209.0], "inventory": 1, "position": [-497.90910880802255, 334.8957675224565], "scans": 418, "sources": [0, 1, 2, 3, 4], "speed": 4.215918488007271, "step": 1681}
+V3_EVENT {"destination": [-760.0, -209.0], "drone": 4, "event": "route_released", "position": [-507.7763333411253, 335.0050312955553], "reason": "new_wall", "step": 1687, "waypoint": [-620.0, 331.0]}
+V3_EVENT {"destination": [-780.0, -429.0], "drone": 2, "event": "route_released", "position": [-713.9140688424837, -69.05838152816702], "reason": "new_wall", "step": 1705, "waypoint": [-540.0, -9.0]}
+V3_EVENT {"budget": 90, "drone": 3, "event": "survey_started", "goal": [-60.0, -349.0], "step": 1747}
+V3_EVENT {"destination": [-60.0, -349.0], "drone": 3, "event": "route_released", "position": [81.20001656013207, -307.428012855055], "reason": "new_wall", "step": 1753, "waypoint": [-20.0, -289.0]}
+V3_EVENT {"drone": 3, "duration": 7, "event": "survey_finished", "newly_resolved": 1, "reason": "preempted", "step": 1754}
+V3_EVENT {"destination": [-140.0, -369.0], "drone": 3, "event": "route_released", "position": [63.23415107448608, -237.89999700979945], "reason": "new_wall", "step": 1771, "waypoint": [-20.0, -289.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [63.23415107448608, -237.89999700979945], "reason": "disconnected", "step": 1771}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [-609.8303176584848, -60.35477270377997], "reason": "local_loop", "step": 1783}
+V3_EVENT {"drone": 2, "event": "local_loop", "position": [-609.8303176584848, -60.35477270377997], "step": 1783}
+V3_EVENT {"destination": [-420.0, 111.0], "drone": 3, "event": "route_released", "position": [-492.787854643635, -234.78908811575712], "reason": "new_wall", "step": 1861, "waypoint": [-600.0, -249.0]}
+V3_EVENT {"destination": [-360.0, 91.0], "drone": 1, "event": "route_released", "position": [-493.72161089192895, 150.1274532713376], "reason": "new_wall", "step": 1885, "waypoint": [-380.0, 91.0]}
+V3_EVENT {"destination": [-400.0, -29.0], "drone": 1, "event": "route_released", "position": [-493.90306154213914, 150.00727608392114], "reason": "new_wall", "step": 1909, "waypoint": [-500.0, 31.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [360.0, -389.0], "inventory": 1, "position": [160.2912588739874, -367.1552222553367], "scans": 478, "sources": [0, 1, 2, 3, 4], "speed": 4.883282718701608, "step": 1921}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [-494.0056866898429, 146.64759828306225], "reason": "no_progress", "step": 1921}
+V3_EVENT {"drone": 1, "event": "status", "goal": null, "inventory": 1, "position": [-494.0056866898429, 146.64759828306225], "scans": 478, "sources": [0, 1, 2, 3, 4], "speed": 1.3191837504596555, "step": 1921}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-580.0, 451.0], "inventory": 2, "position": [-673.0368955557501, 310.7471234914972], "scans": 480, "sources": [0, 1, 2, 3, 4], "speed": 5.868506376717811, "step": 1921}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-760.0, -429.0], "inventory": 1, "position": [-723.4873654912316, -414.0669272490998], "scans": 479, "sources": [0, 1, 2, 3, 4], "speed": 6.154757634993385, "step": 1921}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-680.0, -189.0], "inventory": 1, "position": [-732.5344966021283, 107.32441133452569], "scans": 478, "sources": [0, 1, 2, 3, 4], "speed": 5.476691430176908, "step": 1921}
+V3_EVENT {"destination": [360.0, -389.0], "drone": 0, "event": "route_released", "position": [169.63754464440402, -385.5796219586293], "reason": "new_wall", "step": 1927, "waypoint": [260.0, -389.0]}
+V3_EVENT {"destination": [280.0, -349.0], "drone": 0, "event": "route_released", "position": [191.56244144709046, -393.1188795722871], "reason": "new_wall", "step": 1933, "waypoint": [260.0, -389.0]}
+V3_EVENT {"destination": [200.0, -49.0], "drone": 0, "event": "route_released", "position": [210.22426058416846, -383.4853788535781], "reason": "new_wall", "step": 1939, "waypoint": [200.0, -269.0]}
+V3_EVENT {"destination": [-260.0, 511.0], "drone": 1, "event": "route_released", "position": [-424.3344184724379, 218.54191866854177], "reason": "new_wall", "step": 2017, "waypoint": [-540.0, 251.0]}
+V3_EVENT {"destination": [-320.0, -529.0], "drone": 4, "event": "route_released", "position": [-443.80149540220583, -408.55796087853935], "reason": "new_wall", "step": 2029, "waypoint": [-380.0, -509.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 431.0, "changed": false, "drone": 0, "event": "opponent_placement", "observed_center": [666.2464764281042, 430.62462394133075], "selected_difficulty": 0.0, "selected_gain": 431.0, "step": 2039}
+V3_EVENT {"drone": 0, "estimated_gain": 431.0, "event": "bomb_target", "step": 2039, "target": [-128.0, 259.0]}
+V3_EVENT {"destination": [-120.0, 251.0], "drone": 0, "event": "route_released", "position": [99.29301176235869, -223.5826788121325], "reason": "new_wall", "step": 2053, "waypoint": [60.0, -189.0]}
+V3_EVENT {"destination": [-100.0, -249.0], "drone": 0, "event": "route_released", "position": [76.26028594547348, -212.25476651790382], "reason": "new_wall", "step": 2059, "waypoint": [-40.0, -209.0]}
+V3_EVENT {"destination": [-760.0, 551.0], "drone": 3, "event": "route_released", "position": [-743.3747962535064, 379.86447323673605], "reason": "new_wall", "step": 2065, "waypoint": [-740.0, 491.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [-762.5373418320956, 439.98313559797396], "reason": "disconnected", "step": 2076}
+V3_EVENT {"destination": [-260.0, -229.0], "drone": 0, "event": "route_released", "position": [-106.1090531841193, -169.99027951365574], "reason": "new_wall", "step": 2089, "waypoint": [-220.0, -209.0]}
+V3_EVENT {"baseline_difficulty": 1.0, "baseline_gain": 402.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 1.0, "selected_gain": 402.0, "step": 2101}
+V3_EVENT {"drone": 2, "estimated_gain": 402.0, "event": "bomb_target", "step": 2101, "target": [-392.0, 151.0]}
+V3_EVENT {"baseline_difficulty": 1.0, "baseline_gain": 311.0, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 1.0, "selected_gain": 311.0, "step": 2117}
+V3_EVENT {"drone": 1, "estimated_gain": 311.0, "event": "bomb_target", "step": 2117, "target": [-352.0, 131.0]}
+V3_EVENT {"destination": [-500.0, -9.0], "drone": 4, "event": "route_released", "position": [-659.9621258484301, -179.5094330788401], "reason": "new_wall", "step": 2155, "waypoint": [-660.0, -69.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-600.0, -329.0], "inventory": 1, "position": [-472.78963510628483, -251.55149520424487], "scans": 538, "sources": [0, 1, 2, 3, 4], "speed": 5.592856027649987, "step": 2161}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-360.0, 131.0], "inventory": 1, "position": [-487.34693982000556, 146.45625524731238], "scans": 538, "sources": [0, 1, 2, 3, 4], "speed": 0.08996639555934424, "step": 2161}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [-470.75166043500366, 507.8563184760541], "reason": "no_progress", "step": 2161}
+V3_EVENT {"drone": 2, "event": "status", "goal": null, "inventory": 2, "position": [-470.75166043500366, 507.8563184760541], "scans": 540, "sources": [0, 1, 2, 3, 4], "speed": 0.2971878375137673, "step": 2161}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-680.0, -509.0], "inventory": 1, "position": [-786.8555422636612, -32.97555221727633], "scans": 539, "sources": [0, 1, 2, 3, 4], "speed": 6.574817073933568, "step": 2161}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-760.0, -449.0], "inventory": 1, "position": [-663.3328519063634, -158.8600612702658], "scans": 538, "sources": [0, 1, 2, 3, 4], "speed": 2.4098762623957564, "step": 2161}
+V3_EVENT {"drone": 3, "estimated_gain": 417.0, "event": "bomb_target", "step": 2216, "target": [-512.0, -141.0]}
+V3_EVENT {"destination": [-360.0, -509.0], "drone": 0, "event": "route_released", "position": [-519.9804905474101, -501.92588713740327], "reason": "new_wall", "step": 2227, "waypoint": [-420.0, -489.0]}
+V3_EVENT {"destination": [-220.0, 51.0], "drone": 1, "event": "route_released", "position": [-361.82034558124207, 129.38528027072266], "reason": "new_wall", "step": 2239, "waypoint": [-320.0, 31.0]}
+V3_EVENT {"destination": [-340.0, -429.0], "drone": 0, "event": "route_released", "position": [-425.88868090558617, -467.1327912301107], "reason": "new_wall", "step": 2245, "waypoint": [-340.0, -429.0]}
+V3_EVENT {"destination": [-240.0, -29.0], "drone": 1, "event": "route_released", "position": [-352.72727093686285, 119.16074402986412], "reason": "new_wall", "step": 2245, "waypoint": [-360.0, 11.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 402.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 402.0, "step": 2301}
+V3_EVENT {"drone": 2, "estimated_gain": 402.0, "event": "bomb_target", "step": 2301, "target": [-392.0, 151.0]}
+V3_EVENT {"actual_gain": 439.0, "drone": 3, "error": 10.1002130717844, "event": "placement_checked", "step": 2304, "target_gain": 438.0}
+V3_EVENT {"attempt": 1, "drone": 3, "event": "placement_requested", "inventory": 1, "step": 2304}
+V3_EVENT {"attempted": true, "drone": 3, "event": "placement_confirmed", "inventory": 0, "step": 2305}
+V3_EVENT {"destination": [-180.0, -289.0], "drone": 4, "event": "route_released", "position": [-346.90863415717985, -226.65039199996752], "reason": "new_wall", "step": 2329, "waypoint": [-280.0, -229.0]}
+V3_EVENT {"destination": [180.0, -149.0], "drone": 0, "event": "route_released", "position": [-80.81594830340087, -194.960170872573], "reason": "new_wall", "step": 2335, "waypoint": [40.0, -189.0]}
+V3_EVENT {"destination": [20.0, -129.0], "drone": 4, "event": "route_released", "position": [-152.19986324597943, -154.24252557979662], "reason": "new_wall", "step": 2365, "waypoint": [-40.0, -149.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [200.0, -269.0], "inventory": 1, "position": [159.05090589871998, -258.61322041993185], "scans": 598, "sources": [0, 1, 2, 3, 4], "speed": 0.08219521395279981, "step": 2401}
+V3_EVENT {"drone": 1, "event": "status", "goal": [160.0, 191.0], "inventory": 1, "position": [19.12401745634941, 92.29712941993961], "scans": 598, "sources": [0, 1, 2, 3, 4], "speed": 5.2871289658676695, "step": 2401}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-400.0, 151.0], "inventory": 2, "position": [-460.9442606952789, 128.42561929387676], "scans": 600, "sources": [0, 1, 2, 3, 4], "speed": 6.1130547013671475, "step": 2401}
+V3_EVENT {"drone": 3, "event": "status", "goal": [60.0, -389.0], "inventory": 0, "position": [-1.8210019139472675, -194.06743319251657], "scans": 597, "sources": [0, 1, 2, 3, 4], "speed": 5.020325019912166, "step": 2401}
+V3_EVENT {"destination": [100.0, -49.0], "drone": 4, "event": "route_released", "position": [45.34230290424136, -194.0286139198189], "reason": "new_wall", "step": 2401, "waypoint": [80.0, -89.0]}
+V3_EVENT {"drone": 4, "event": "status", "goal": [-820.0, -509.0], "inventory": 1, "position": [45.34230290424136, -194.0286139198189], "scans": 598, "sources": [0, 1, 2, 3, 4], "speed": 3.1374429991156965, "step": 2401}
+V3_EVENT {"destination": [160.0, 191.0], "drone": 1, "event": "route_released", "position": [43.23749025662883, 119.94124585551539], "reason": "new_wall", "step": 2407, "waypoint": [120.0, 191.0]}
+V3_EVENT {"destination": [60.0, -389.0], "drone": 3, "event": "route_released", "position": [18.791461250089323, -189.60052455683152], "reason": "new_wall", "step": 2407, "waypoint": [120.0, -249.0]}
+V3_EVENT {"destination": [160.0, -489.0], "drone": 3, "event": "route_released", "position": [36.06115987481739, -203.73814772709474], "reason": "new_wall", "step": 2413, "waypoint": [80.0, -249.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 420.0, "changed": false, "drone": 0, "event": "opponent_placement", "observed_center": [666.2464764281042, 430.62462394133075], "selected_difficulty": 0.0, "selected_gain": 420.0, "step": 2435}
+V3_EVENT {"drone": 0, "estimated_gain": 420.0, "event": "bomb_target", "step": 2435, "target": [160.0, -221.0]}
+V3_EVENT {"actual_gain": 420.0, "drone": 0, "error": 7.397293605180927, "event": "placement_checked", "step": 2451, "target_gain": 432.0}
+V3_EVENT {"attempt": 1, "drone": 0, "event": "placement_requested", "inventory": 1, "step": 2451}
+V3_EVENT {"attempted": true, "drone": 0, "event": "placement_confirmed", "inventory": 0, "step": 2452}
+V3_EVENT {"drone": 0, "event": "recovery", "position": [165.94413716127352, -244.9640678755852], "reason": "no_progress", "step": 2461}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [-438.2899645506296, 135.69704949870115], "reason": "no_progress", "step": 2461}
+V3_EVENT {"destination": [640.0, 331.0], "drone": 3, "event": "route_released", "position": [-292.560263264247, -156.57032932254208], "reason": "new_wall", "step": 2479, "waypoint": [-400.0, -149.0]}
+V3_EVENT {"destination": [-160.0, -69.0], "drone": 1, "event": "route_released", "position": [-83.52454424358598, 78.34122185066516], "reason": "new_wall", "step": 2485, "waypoint": [-60.0, -29.0]}
+V3_EVENT {"destination": [0.0, -69.0], "drone": 1, "event": "route_released", "position": [-55.048980666521125, 5.880698301781516], "reason": "new_wall", "step": 2497, "waypoint": [0.0, -69.0]}
+V3_EVENT {"drone": 0, "event": "recovery", "position": [257.77728300539684, -441.556733547321], "reason": "disconnected", "step": 2501}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 404.0, "changed": false, "drone": 4, "event": "opponent_placement", "observed_center": [666.6820811662126, 420.5225513687717], "selected_difficulty": 0.0, "selected_gain": 404.0, "step": 2501}
+V3_EVENT {"drone": 4, "estimated_gain": 404.0, "event": "bomb_target", "step": 2501, "target": [-272.0, -141.0]}
+V3_EVENT {"destination": [140.0, -209.0], "drone": 1, "event": "route_released", "position": [78.25352394819659, -109.76349766382774], "reason": "new_wall", "step": 2533, "waypoint": [80.0, -209.0]}
+V3_EVENT {"actual_gain": 374.0, "drone": 4, "error": 8.6814613938238, "event": "placement_checked", "step": 2539, "target_gain": 390.0}
+V3_EVENT {"attempt": 1, "drone": 4, "event": "placement_requested", "inventory": 1, "step": 2539}
+V3_EVENT {"attempted": true, "drone": 4, "event": "placement_confirmed", "inventory": 0, "step": 2540}
+V3_EVENT {"destination": [60.0, -309.0], "drone": 1, "event": "route_released", "position": [72.33567241554152, -184.62447065682736], "reason": "new_wall", "step": 2545, "waypoint": [80.0, -289.0]}
+V3_EVENT {"destination": [-660.0, -509.0], "drone": 3, "event": "route_released", "position": [-425.9085239015686, -450.87864910319655], "reason": "new_wall", "step": 2545, "waypoint": [-520.0, -509.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [-448.7854370733217, -493.07995890831256], "reason": "disconnected", "step": 2554}
+V3_EVENT {"destination": [120.0, -369.0], "drone": 1, "event": "route_released", "position": [80.32923907355897, -295.8089828356513], "reason": "new_wall", "step": 2563, "waypoint": [120.0, -369.0]}
+V3_EVENT {"destination": [-280.0, 31.0], "drone": 2, "event": "route_released", "position": [-765.9032299433351, 156.6213576231485], "reason": "new_wall", "step": 2563, "waypoint": [-700.0, 51.0]}
+V3_EVENT {"destination": [-520.0, 71.0], "drone": 4, "event": "route_released", "position": [-518.7514172033358, -197.80465680006986], "reason": "new_wall", "step": 2587, "waypoint": [-540.0, -169.0]}
+V3_EVENT {"destination": [-780.0, -329.0], "drone": 3, "event": "route_released", "position": [-719.8060215538244, -494.6833314645036], "reason": "new_wall", "step": 2605, "waypoint": [-680.0, -389.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-780.0, -489.0], "inventory": 0, "position": [122.10987016805542, -266.9149601834135], "scans": 656, "sources": [0, 1, 2, 3, 4], "speed": 0.13861911087295503, "step": 2641}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-120.0, -269.0], "inventory": 1, "position": [98.3134691048339, -305.6506194096608], "scans": 658, "sources": [0, 1, 2, 3, 4], "speed": 1.7797553066940837, "step": 2641}
+V3_EVENT {"drone": 2, "event": "status", "goal": [-760.0, -509.0], "inventory": 2, "position": [-753.4320906540274, -363.94500269180486], "scans": 660, "sources": [0, 1, 2, 3, 4], "speed": 6.507671716971711, "step": 2641}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-760.0, -249.0], "inventory": 0, "position": [-777.2142267381147, -425.7128951678282], "scans": 657, "sources": [0, 1, 2, 3, 4], "speed": 6.132427970668431, "step": 2641}
+V3_EVENT {"drone": 4, "event": "status", "goal": [60.0, -389.0], "inventory": 0, "position": [-560.6768037745167, -158.1753141715545], "scans": 656, "sources": [0, 1, 2, 3, 4], "speed": 1.9247967248581475, "step": 2641}
+V3_EVENT {"destination": [-120.0, -269.0], "drone": 1, "event": "route_released", "position": [186.72656475366057, -238.33641098523884], "reason": "new_wall", "step": 2665, "waypoint": [40.0, -209.0]}
+V3_EVENT {"destination": [240.0, -49.0], "drone": 1, "event": "route_released", "position": [194.9935313271915, -215.24953354767004], "reason": "new_wall", "step": 2671, "waypoint": [180.0, -89.0]}
+V3_EVENT {"destination": [-320.0, -529.0], "drone": 2, "event": "route_released", "position": [-508.60305897046265, -496.08176990829287], "reason": "new_wall", "step": 2707, "waypoint": [-400.0, -509.0]}
+V3_EVENT {"destination": [60.0, -389.0], "drone": 4, "event": "route_released", "position": [-154.1788825176083, -179.70348413098446], "reason": "new_wall", "step": 2713, "waypoint": [-40.0, -189.0]}
+V3_EVENT {"destination": [300.0, -369.0], "drone": 1, "event": "route_released", "position": [257.4370562870498, -386.8254318520455], "reason": "new_wall", "step": 2719, "waypoint": [300.0, -369.0]}
+V3_EVENT {"destination": [440.0, -349.0], "drone": 1, "event": "route_released", "position": [291.98901624073454, -384.3785052544362], "reason": "new_wall", "step": 2725, "waypoint": [340.0, -389.0]}
+V3_EVENT {"destination": [480.0, -329.0], "drone": 1, "event": "route_released", "position": [330.68058391424984, -381.4584722014828], "reason": "new_wall", "step": 2731, "waypoint": [380.0, -389.0]}
+V3_EVENT {"destination": [520.0, -409.0], "drone": 1, "event": "route_released", "position": [368.36692125245605, -388.65681447556454], "reason": "new_wall", "step": 2737, "waypoint": [480.0, -409.0]}
+V3_EVENT {"destination": [520.0, -429.0], "drone": 1, "event": "route_released", "position": [401.85724260192654, -389.3428800764142], "reason": "new_wall", "step": 2743, "waypoint": [520.0, -429.0]}
+V3_EVENT {"destination": [220.0, -129.0], "drone": 1, "event": "route_released", "position": [412.51660901358315, -388.82225803193296], "reason": "new_wall", "step": 2749, "waypoint": [280.0, -389.0]}
+V3_EVENT {"destination": [-320.0, -249.0], "drone": 2, "event": "route_released", "position": [-394.8377165849721, -286.99356947357234], "reason": "new_wall", "step": 2761, "waypoint": [-320.0, -249.0]}
+V3_EVENT {"budget": 90, "drone": 2, "event": "survey_started", "goal": [-240.0, -209.0], "step": 2761}
+V3_EVENT {"destination": [200.0, -29.0], "drone": 1, "event": "route_released", "position": [412.9936895097175, -388.13891653357115], "reason": "new_wall", "step": 2767, "waypoint": [300.0, -409.0]}
+V3_EVENT {"drone": 2, "duration": 43, "event": "survey_finished", "newly_resolved": 19, "reason": "observed", "step": 2804}
+V3_EVENT {"destination": [-180.0, -129.0], "drone": 2, "event": "route_released", "position": [-304.42446334288775, -199.63913920634084], "reason": "new_wall", "step": 2815, "waypoint": [-240.0, -169.0]}
+V3_EVENT {"destination": [-120.0, -169.0], "drone": 1, "event": "route_released", "position": [398.6281244187998, -390.1128102942929], "reason": "new_wall", "step": 2821, "waypoint": [280.0, -429.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [398.6281244187998, -390.1128102942929], "reason": "no_progress", "step": 2821}
+V3_EVENT {"destination": [-120.0, -249.0], "drone": 2, "event": "route_released", "position": [-273.6321619379204, -193.88801082847715], "reason": "new_wall", "step": 2821, "waypoint": [-180.0, -249.0]}
+V3_EVENT {"destination": [60.0, -129.0], "drone": 2, "event": "route_released", "position": [-93.88883663321054, -154.12879253476382], "reason": "new_wall", "step": 2851, "waypoint": [-20.0, -149.0]}
+V3_EVENT {"destination": [100.0, -209.0], "drone": 2, "event": "route_released", "position": [-61.773299763624365, -158.91027096347597], "reason": "new_wall", "step": 2857, "waypoint": [40.0, -209.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [510.90403150537065, -418.82197113582004], "reason": "disconnected", "step": 2861}
+V3_EVENT {"destination": [60.0, -309.0], "drone": 2, "event": "route_released", "position": [2.891130086671919, -194.94030165228054], "reason": "new_wall", "step": 2869, "waypoint": [60.0, -269.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-420.0, 231.0], "inventory": 0, "position": [-781.0868017940755, -220.94573269631923], "scans": 716, "sources": [0, 1, 2, 3, 4], "speed": 6.025873875011812, "step": 2881}
+V3_EVENT {"drone": 1, "event": "status", "goal": null, "inventory": 1, "position": [470.31964745650623, -397.4227234962801], "scans": 718, "sources": [0, 1, 2, 3, 4], "speed": 5.825431329809008, "step": 2881}
+V3_EVENT {"drone": 2, "event": "status", "goal": [200.0, -229.0], "inventory": 2, "position": [67.72551020180838, -227.62990881621474], "scans": 720, "sources": [0, 1, 2, 3, 4], "speed": 6.654990371819661, "step": 2881}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-60.0, 351.0], "inventory": 0, "position": [-499.6611137735913, 209.377815841051], "scans": 717, "sources": [0, 1, 2, 3, 4], "speed": 0.6603275190299372, "step": 2881}
+V3_EVENT {"drone": 4, "event": "status", "goal": [280.0, -389.0], "inventory": 0, "position": [183.24194845819903, -301.7267965669088], "scans": 716, "sources": [0, 1, 2, 3, 4], "speed": 0.2741508887188278, "step": 2881}
+V3_EVENT {"destination": [280.0, -389.0], "drone": 4, "event": "route_released", "position": [195.804433665885, -334.67635880508993], "reason": "new_wall", "step": 2899, "waypoint": [220.0, -409.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [350.9959896452003, -377.0045243590772], "reason": "disconnected", "step": 2901}
+V3_EVENT {"destination": [-60.0, 351.0], "drone": 3, "event": "route_released", "position": [-498.7090187416226, 209.61838346732162], "reason": "new_wall", "step": 2905, "waypoint": [-620.0, 271.0]}
+V3_EVENT {"destination": [-320.0, 211.0], "drone": 3, "event": "route_released", "position": [-498.64512649894755, 209.8335156853457], "reason": "new_wall", "step": 2911, "waypoint": [-380.0, 211.0]}
+V3_EVENT {"destination": [60.0, 351.0], "drone": 3, "event": "route_released", "position": [-498.68493115439327, 209.83021239863902], "reason": "new_wall", "step": 2929, "waypoint": [-620.0, 251.0]}
+V3_EVENT {"destination": [-420.0, 231.0], "drone": 0, "event": "route_released", "position": [-633.7031195167582, 124.14742278619613], "reason": "new_wall", "step": 2941, "waypoint": [-580.0, 171.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [-501.17184205430146, 210.7422755454842], "reason": "no_progress", "step": 2941}
+V3_EVENT {"destination": [200.0, 71.0], "drone": 2, "event": "route_released", "position": [216.91815579015972, -82.9313870287981], "reason": "new_wall", "step": 2947, "waypoint": [220.0, 31.0]}
+V3_EVENT {"destination": [-120.0, -269.0], "drone": 1, "event": "route_released", "position": [494.6975854544434, -376.98505674106303], "reason": "new_wall", "step": 2953, "waypoint": [360.0, -389.0]}
+V3_EVENT {"destination": [300.0, 91.0], "drone": 2, "event": "route_released", "position": [223.86476181483866, -14.79286836867766], "reason": "new_wall", "step": 2959, "waypoint": [280.0, 91.0]}
+V3_EVENT {"destination": [380.0, 71.0], "drone": 2, "event": "route_released", "position": [244.56448337089557, 15.400210903056362], "reason": "new_wall", "step": 2965, "waypoint": [300.0, 71.0]}
+V3_EVENT {"destination": [440.0, 11.0], "drone": 2, "event": "route_released", "position": [268.7935984761445, 67.62256195972802], "reason": "new_wall", "step": 2983, "waypoint": [380.0, 11.0]}
+V3_EVENT {"destination": [460.0, 111.0], "drone": 2, "event": "route_released", "position": [300.30760918923863, 67.52536938616018], "reason": "new_wall", "step": 2989, "waypoint": [360.0, 71.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [446.2263063671182, -382.2876329499612], "reason": "local_loop", "step": 2995}
+V3_EVENT {"drone": 1, "event": "local_loop", "position": [446.2263063671182, -382.2876329499612], "step": 2995}
+V3_EVENT {"destination": [400.0, -469.0], "drone": 4, "event": "route_released", "position": [317.6299322200346, -448.5992200356205], "reason": "new_wall", "step": 3013, "waypoint": [360.0, -429.0]}
+V3_EVENT {"destination": [480.0, -389.0], "drone": 4, "event": "route_released", "position": [344.5297212672926, -445.94074586519514], "reason": "new_wall", "step": 3019, "waypoint": [360.0, -429.0]}
+V3_EVENT {"destination": [200.0, -89.0], "drone": 4, "event": "route_released", "position": [445.9454005337907, -407.34463880071195], "reason": "new_wall", "step": 3049, "waypoint": [240.0, -409.0]}
+V3_EVENT {"destination": [-340.0, 211.0], "drone": 0, "event": "route_released", "position": [-536.666966195555, 197.15151852315827], "reason": "new_wall", "step": 3055, "waypoint": [-420.0, 211.0]}
+V3_EVENT {"destination": [-40.0, -229.0], "drone": 1, "event": "route_released", "position": [136.70674035866745, -381.0852001319982], "reason": "new_wall", "step": 3055, "waypoint": [180.0, -389.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [136.70674035866745, -381.0852001319982], "reason": "disconnected", "step": 3055}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 380.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 380.0, "step": 3064}
+V3_EVENT {"drone": 2, "estimated_gain": 380.0, "event": "bomb_target", "step": 3064, "target": [220.0, 43.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 493.5, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 0.0, "selected_gain": 493.5, "step": 3100}
+V3_EVENT {"drone": 1, "estimated_gain": 493.5, "event": "bomb_target", "step": 3100, "target": [88.0, -417.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-280.0, -9.0], "inventory": 0, "position": [-537.7310890531955, 148.1230614939823], "scans": 776, "sources": [0, 1, 2, 3, 4], "speed": 0.23850573181867346, "step": 3121}
+V3_EVENT {"drone": 1, "event": "status", "goal": [80.0, -409.0], "inventory": 1, "position": [13.826578015733789, -181.6123332324644], "scans": 778, "sources": [0, 1, 2, 3, 4], "speed": 6.5755232263742265, "step": 3121}
+V3_EVENT {"drone": 2, "event": "status", "goal": [220.0, 51.0], "inventory": 2, "position": [331.2592844058825, -26.394685611214204], "scans": 780, "sources": [0, 1, 2, 3, 4], "speed": 0.2758127610737033, "step": 3121}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-340.0, -369.0], "inventory": 0, "position": [-393.30118977488223, -374.1156654518429], "scans": 777, "sources": [0, 1, 2, 3, 4], "speed": 6.568321468231391, "step": 3121}
+V3_EVENT {"drone": 4, "event": "status", "goal": [400.0, -449.0], "inventory": 0, "position": [423.20912125238914, -426.4904190160185], "scans": 776, "sources": [0, 1, 2, 3, 4], "speed": 3.3072686509352374, "step": 3121}
+V3_EVENT {"destination": [80.0, -409.0], "drone": 1, "event": "route_released", "position": [90.97148034754215, -259.93427327817375], "reason": "new_wall", "step": 3139, "waypoint": [80.0, -369.0]}
+V3_EVENT {"destination": [200.0, -489.0], "drone": 1, "event": "route_released", "position": [138.17768541750974, -298.6301006186847], "reason": "new_wall", "step": 3151, "waypoint": [180.0, -349.0]}
+V3_EVENT {"destination": [220.0, -409.0], "drone": 1, "event": "route_released", "position": [159.84933581391704, -303.4531687989909], "reason": "new_wall", "step": 3157, "waypoint": [180.0, -329.0]}
+V3_EVENT {"destination": [-280.0, -9.0], "drone": 0, "event": "route_released", "position": [-539.8210996844157, 94.31932593131822], "reason": "new_wall", "step": 3169, "waypoint": [-480.0, -9.0]}
+V3_EVENT {"destination": [-120.0, -229.0], "drone": 3, "event": "route_released", "position": [-220.3890717554367, -200.3571406229826], "reason": "new_wall", "step": 3181, "waypoint": [-120.0, -209.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [434.2736810586242, -426.0952291469064], "reason": "no_progress", "step": 3181}
+V3_EVENT {"destination": [220.0, 51.0], "drone": 2, "event": "route_released", "position": [263.52514786947495, 70.21687339790121], "reason": "new_wall", "step": 3187, "waypoint": [220.0, 71.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 492.0, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 0.0, "selected_gain": 492.0, "step": 3232}
+V3_EVENT {"drone": 1, "estimated_gain": 492.0, "event": "bomb_target", "step": 3232, "target": [92.0, -357.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [179.28970359260668, -296.99186445934293], "reason": "no_progress", "step": 3241}
+V3_EVENT {"destination": [-260.0, 551.0], "drone": 2, "event": "route_released", "position": [201.63143640169045, -4.711366099416812], "reason": "new_wall", "step": 3247, "waypoint": [200.0, -129.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 527.0, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 0.0, "selected_gain": 527.0, "step": 3286}
+V3_EVENT {"drone": 1, "estimated_gain": 527.0, "event": "bomb_target", "step": 3286, "target": [108.0, -397.0]}
+V3_EVENT {"destination": [100.0, -389.0], "drone": 1, "event": "route_released", "position": [-14.292160198599122, -153.6157581065651], "reason": "new_wall", "step": 3289, "waypoint": [20.0, -229.0]}
+V3_EVENT {"destination": [-140.0, 251.0], "drone": 3, "event": "route_released", "position": [-21.990781355363342, 160.33009229305398], "reason": "new_wall", "step": 3289, "waypoint": [-100.0, 251.0]}
+V3_EVENT {"destination": [0.0, -529.0], "drone": 4, "event": "route_released", "position": [83.47292427225825, -380.0734342752989], "reason": "waypoint_stall", "step": 3312, "waypoint": [0.0, -529.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [83.47292427225825, -380.0734342752989], "reason": "waypoint_stall", "step": 3312}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 481.0, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 481.0, "step": 3322}
+V3_EVENT {"drone": 2, "estimated_gain": 481.0, "event": "bomb_target", "step": 3322, "target": [132.0, -417.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [200.0, -309.0], "inventory": 0, "position": [-360.96763658378416, -303.53835313631873], "scans": 836, "sources": [0, 1, 2, 3, 4], "speed": 4.8061452599392185, "step": 3361}
+V3_EVENT {"drone": 1, "event": "status", "goal": [-580.0, -149.0], "inventory": 1, "position": [-428.72698710351887, -177.04260854765076], "scans": 838, "sources": [0, 1, 2, 3, 4], "speed": 5.507240158291875, "step": 3361}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [308.8918554931004, 7.881706479657744], "reason": "no_progress", "step": 3361}
+V3_EVENT {"drone": 2, "event": "status", "goal": null, "inventory": 2, "position": [308.8918554931004, 7.881706479657744], "scans": 840, "sources": [0, 1, 2, 3, 4], "speed": 6.326031938280515, "step": 3361}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-340.0, -9.0], "inventory": 0, "position": [-141.46425722792685, -2.719943177645281], "scans": 837, "sources": [0, 1, 2, 3, 4], "speed": 4.1811777389926075, "step": 3361}
+V3_EVENT {"drone": 4, "event": "status", "goal": [200.0, -209.0], "inventory": 0, "position": [96.30261417779612, -213.47972020944155], "scans": 836, "sources": [0, 1, 2, 3, 4], "speed": 2.445424544860462, "step": 3361}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 527.0, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 0.0, "selected_gain": 527.0, "step": 3364}
+V3_EVENT {"drone": 1, "estimated_gain": 527.0, "event": "bomb_target", "step": 3364, "target": [108.0, -397.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 492.5, "changed": false, "drone": 2, "event": "opponent_placement", "observed_center": [670.5510525629509, 507.43046116346613], "selected_difficulty": 0.0, "selected_gain": 492.5, "step": 3406}
+V3_EVENT {"drone": 2, "estimated_gain": 492.5, "event": "bomb_target", "step": 3406, "target": [132.0, -417.0]}
+V3_EVENT {"destination": [-600.0, 51.0], "drone": 3, "event": "route_released", "position": [-442.68728826302026, 29.72212998491367], "reason": "new_wall", "step": 3415, "waypoint": [-560.0, 51.0]}
+V3_EVENT {"destination": [100.0, -389.0], "drone": 1, "event": "route_released", "position": [89.05307476788431, -246.97284210948538], "reason": "new_wall", "step": 3469, "waypoint": [100.0, -369.0]}
+V3_EVENT {"destination": [140.0, -409.0], "drone": 2, "event": "route_released", "position": [196.2507059643679, 36.580713559058324], "reason": "new_wall", "step": 3511, "waypoint": [200.0, -69.0]}
+V3_EVENT {"destination": [-300.0, -409.0], "drone": 1, "event": "route_released", "position": [-71.70405034084574, -198.226914552245], "reason": "new_wall", "step": 3523, "waypoint": [-180.0, -189.0]}
+V3_EVENT {"destination": [440.0, -269.0], "drone": 2, "event": "route_released", "position": [285.52727652742624, 75.87884255225761], "reason": "new_wall", "step": 3553, "waypoint": [300.0, 31.0]}
+V3_EVENT {"destination": [-780.0, 511.0], "drone": 0, "event": "route_released", "position": [-9.122167592881707, -206.82490873437874], "reason": "new_wall", "step": 3559, "waypoint": [-80.0, -189.0]}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [302.39757428018225, 19.765263724255068], "reason": "local_loop", "step": 3565}
+V3_EVENT {"drone": 2, "event": "local_loop", "position": [302.39757428018225, 19.765263724255068], "step": 3565}
+V3_EVENT {"destination": [-240.0, -49.0], "drone": 3, "event": "route_released", "position": [-295.94944222075935, -36.36490334285364], "reason": "new_wall", "step": 3571, "waypoint": [-240.0, -49.0]}
+V3_EVENT {"destination": [-80.0, -49.0], "drone": 3, "event": "route_released", "position": [-256.80031393430863, -34.14118670050259], "reason": "new_wall", "step": 3577, "waypoint": [-140.0, -29.0]}
+V3_EVENT {"baseline_difficulty": 0.0, "baseline_gain": 423.0, "changed": false, "drone": 1, "event": "opponent_placement", "observed_center": [656.9752598587338, 505.0723108025679], "selected_difficulty": 0.0, "selected_gain": 423.0, "step": 3598}
+V3_EVENT {"drone": 1, "estimated_gain": 423.0, "event": "bomb_target", "step": 3598, "target": [92.0, -317.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-420.0, -129.0], "inventory": 0, "position": [-265.1031499814314, -196.01500245550372], "scans": 896, "sources": [0, 1, 2, 3, 4], "speed": 5.874480673330347, "step": 3601}
+V3_EVENT {"drone": 1, "event": "status", "goal": [100.0, -309.0], "inventory": 1, "position": [-572.1470615592798, -156.92589801693853], "scans": 898, "sources": [0, 1, 2, 3, 4], "speed": 4.539317603307172, "step": 3601}
+V3_EVENT {"drone": 2, "event": "status", "goal": null, "inventory": 2, "position": [468.3858876233793, 18.470266904849254], "scans": 900, "sources": [0, 1, 2, 3, 4], "speed": 5.1844173424120115, "step": 3601}
+V3_EVENT {"drone": 3, "event": "status", "goal": [60.0, 71.0], "inventory": 0, "position": [-131.7248374466516, 19.13048797970442], "scans": 897, "sources": [0, 1, 2, 3, 4], "speed": 4.468727223420578, "step": 3601}
+V3_EVENT {"drone": 4, "event": "status", "goal": [580.0, 31.0], "inventory": 0, "position": [409.23431097375203, 97.92629771810887], "scans": 896, "sources": [0, 1, 2, 3, 4], "speed": 3.892454879857723, "step": 3601}
+V3_EVENT {"destination": [580.0, 31.0], "drone": 4, "event": "route_released", "position": [438.42633892072143, 95.84076778269754], "reason": "new_wall", "step": 3607, "waypoint": [520.0, 71.0]}
+V3_EVENT {"destination": [620.0, 171.0], "drone": 4, "event": "route_released", "position": [471.4898459948327, 97.43165820169237], "reason": "new_wall", "step": 3613, "waypoint": [540.0, 111.0]}
+V3_EVENT {"destination": [-580.0, -149.0], "drone": 0, "event": "route_released", "position": [-439.8667183596156, -141.63216670259925], "reason": "new_wall", "step": 3637, "waypoint": [-520.0, -189.0]}
+V3_EVENT {"destination": [140.0, 211.0], "drone": 3, "event": "route_released", "position": [60.6836523806445, 107.91011053344127], "reason": "new_wall", "step": 3643, "waypoint": [80.0, 191.0]}
+V3_EVENT {"destination": [800.0, 31.0], "drone": 4, "event": "route_released", "position": [655.9981838131565, 85.88388829970161], "reason": "new_wall", "step": 3643, "waypoint": [740.0, 71.0]}
+V3_EVENT {"destination": [280.0, -289.0], "drone": 2, "event": "route_released", "position": [348.61965511265834, -123.71749629868484], "reason": "new_wall", "step": 3667, "waypoint": [320.0, -229.0]}
+V3_EVENT {"attempt": 1, "drone": 1, "event": "placement_requested", "inventory": 1, "step": 3672}
+V3_EVENT {"attempt": 1, "drone": 2, "event": "placement_requested", "inventory": 2, "step": 3672}
+V3_EVENT {"attempted": true, "drone": 1, "event": "placement_confirmed", "inventory": 0, "step": 3673}
+V3_EVENT {"attempted": true, "drone": 2, "event": "placement_confirmed", "inventory": 1, "step": 3673}
+V3_EVENT {"attempt": 1, "drone": 2, "event": "placement_requested", "inventory": 1, "step": 3708}
+V3_EVENT {"attempted": true, "drone": 2, "event": "placement_confirmed", "inventory": 0, "step": 3709}
+V3_EVENT {"destination": [540.0, -309.0], "drone": 2, "event": "route_released", "position": [452.79893376483545, -296.73377434886964], "reason": "new_wall", "step": 3715, "waypoint": [540.0, -289.0]}
+V3_EVENT {"destination": [620.0, -329.0], "drone": 2, "event": "route_released", "position": [490.6634865698842, -295.03671696672865], "reason": "new_wall", "step": 3721, "waypoint": [580.0, -289.0]}
+V3_EVENT {"destination": [680.0, -229.0], "drone": 2, "event": "route_released", "position": [524.9934920659572, -280.99617044983034], "reason": "new_wall", "step": 3727, "waypoint": [620.0, -229.0]}
+V3_EVENT {"destination": [620.0, -109.0], "drone": 4, "event": "route_released", "position": [593.0104173212904, -50.44223069192225], "reason": "new_wall", "step": 3745, "waypoint": [600.0, -89.0]}
+V3_EVENT {"destination": [720.0, -329.0], "drone": 2, "event": "route_released", "position": [692.5538583275479, -321.03963732267135], "reason": "new_wall", "step": 3763, "waypoint": [720.0, -329.0]}
+V3_EVENT {"destination": [560.0, -249.0], "drone": 4, "event": "route_released", "position": [591.3584496396505, -165.31893186747007], "reason": "new_wall", "step": 3763, "waypoint": [560.0, -249.0]}
+V3_EVENT {"destination": [820.0, -229.0], "drone": 2, "event": "route_released", "position": [724.692324523605, -308.3692545551312], "reason": "new_wall", "step": 3769, "waypoint": [820.0, -249.0]}
+V3_EVENT {"destination": [600.0, -349.0], "drone": 4, "event": "route_released", "position": [595.5273935488083, -203.87961879840853], "reason": "new_wall", "step": 3769, "waypoint": [600.0, -309.0]}
+V3_EVENT {"destination": [-120.0, 131.0], "drone": 1, "event": "route_released", "position": [92.47042593352737, -211.83866164854552], "reason": "new_wall", "step": 3787, "waypoint": [80.0, -189.0]}
+V3_EVENT {"destination": [-100.0, -129.0], "drone": 1, "event": "route_released", "position": [-12.223891674383545, -153.70491216193378], "reason": "new_wall", "step": 3829, "waypoint": [-40.0, -149.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [-420.0, 531.0], "inventory": 0, "position": [-542.2194991413703, 500.66575542004875], "scans": 956, "sources": [0, 1, 2, 3, 4], "speed": 6.462580274105894, "step": 3841}
+V3_EVENT {"drone": 1, "event": "status", "goal": [180.0, -109.0], "inventory": 0, "position": [-13.906372214365616, -175.0147283818337], "scans": 957, "sources": [0, 1, 2, 3, 4], "speed": 2.8691735533506875, "step": 3841}
+V3_EVENT {"drone": 2, "event": "status", "goal": [440.0, -169.0], "inventory": 0, "position": [587.0372820245587, -422.2317675998989], "scans": 958, "sources": [0, 1, 2, 3, 4], "speed": 2.897986431258189, "step": 3841}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-280.0, 551.0], "inventory": 0, "position": [-665.6327593462341, 202.45731365113528], "scans": 957, "sources": [0, 1, 2, 3, 4], "speed": 4.594365410414822, "step": 3841}
+V3_EVENT {"drone": 4, "event": "status", "goal": [820.0, -349.0], "inventory": 0, "position": [657.8798275808183, -388.69498401996043], "scans": 956, "sources": [0, 1, 2, 3, 4], "speed": 2.1877119827545557, "step": 3841}
+V3_EVENT {"destination": [-420.0, 531.0], "drone": 0, "event": "route_released", "position": [-504.1530204164308, 505.83581699641087], "reason": "new_wall", "step": 3847, "waypoint": [-460.0, 511.0]}
+V3_EVENT {"destination": [180.0, -109.0], "drone": 1, "event": "route_released", "position": [9.951359841744791, -187.64041298636783], "reason": "new_wall", "step": 3847, "waypoint": [100.0, -249.0]}
+V3_EVENT {"destination": [560.0, -89.0], "drone": 2, "event": "route_released", "position": [514.6956603092993, -247.39022224128126], "reason": "new_wall", "step": 3895, "waypoint": [560.0, -229.0]}
+V3_EVENT {"destination": [580.0, 251.0], "drone": 4, "event": "route_released", "position": [682.8533969666411, -356.49786731003167], "reason": "new_wall", "step": 3907, "waypoint": [640.0, -309.0]}
+V3_EVENT {"destination": [220.0, -129.0], "drone": 1, "event": "route_released", "position": [51.881124460565005, -202.25618957103543], "reason": "new_wall", "step": 3937, "waypoint": [80.0, -249.0]}
+V3_EVENT {"destination": [500.0, -169.0], "drone": 4, "event": "route_released", "position": [523.7757381565626, -270.9368848207181], "reason": "new_wall", "step": 3937, "waypoint": [500.0, -189.0]}
+V3_EVENT {"destination": [620.0, 51.0], "drone": 2, "event": "route_released", "position": [578.2071638309242, -109.58006363715388], "reason": "new_wall", "step": 3943, "waypoint": [580.0, 11.0]}
+V3_EVENT {"destination": [500.0, -129.0], "drone": 4, "event": "route_released", "position": [497.0469193163823, -212.182870478631], "reason": "new_wall", "step": 3949, "waypoint": [480.0, -169.0]}
+V3_EVENT {"destination": [540.0, 451.0], "drone": 3, "event": "route_released", "position": [-399.68831933361423, 386.11305464468603], "reason": "new_wall", "step": 3955, "waypoint": [-280.0, 391.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [483.5656877270561, -167.9011076508902], "reason": "disconnected", "step": 3958}
+V3_EVENT {"destination": [620.0, 251.0], "drone": 2, "event": "route_released", "position": [604.889671250416, 127.77081605652614], "reason": "new_wall", "step": 3985, "waypoint": [580.0, 191.0]}
+V3_EVENT {"destination": [140.0, 211.0], "drone": 3, "event": "route_released", "position": [-469.0997858073447, 397.55043895393186], "reason": "new_wall", "step": 3985, "waypoint": [-580.0, 371.0]}
+V3_EVENT {"destination": [140.0, 191.0], "drone": 3, "event": "route_released", "position": [-508.80948944591535, 394.16684924636644], "reason": "new_wall", "step": 3991, "waypoint": [-620.0, 391.0]}
+V3_EVENT {"destination": [600.0, 251.0], "drone": 2, "event": "route_released", "position": [584.3160274658082, 176.6685756317343], "reason": "new_wall", "step": 3997, "waypoint": [600.0, 251.0]}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [582.6553666115042, 229.48323217965472], "reason": "disconnected", "step": 4007}
+V3_EVENT {"destination": [100.0, 251.0], "drone": 3, "event": "route_released", "position": [-672.1318084178487, 180.92226926725615], "reason": "new_wall", "step": 4045, "waypoint": [-620.0, 71.0]}
+V3_EVENT {"destination": [120.0, 191.0], "drone": 3, "event": "route_released", "position": [-663.1804719860118, 151.08136223750765], "reason": "new_wall", "step": 4051, "waypoint": [-580.0, 71.0]}
+V3_EVENT {"drone": 0, "event": "status", "goal": [180.0, -9.0], "inventory": 0, "position": [-312.8791358701168, -203.04993503714405], "scans": 1016, "sources": [0, 1, 2, 3, 4], "speed": 5.8396702748436145, "step": 4081}
+V3_EVENT {"drone": 1, "event": "status", "goal": [140.0, 251.0], "inventory": 0, "position": [95.80334410672883, 248.5660298569853], "scans": 1017, "sources": [0, 1, 2, 3, 4], "speed": 2.7072569023645365, "step": 4081}
+V3_EVENT {"drone": 2, "event": "status", "goal": [580.0, 251.0], "inventory": 0, "position": [563.2395897872066, 157.874537634081], "scans": 1018, "sources": [0, 1, 2, 3, 4], "speed": 6.3946748979916075, "step": 4081}
+V3_EVENT {"drone": 3, "event": "status", "goal": [100.0, 211.0], "inventory": 0, "position": [-538.5808971085161, 27.519441360311642], "scans": 1017, "sources": [0, 1, 2, 3, 4], "speed": 4.901395417597878, "step": 4081}
+V3_EVENT {"drone": 4, "event": "status", "goal": [440.0, -169.0], "inventory": 0, "position": [479.46979935375543, -179.79297868327217], "scans": 1016, "sources": [0, 1, 2, 3, 4], "speed": 3.0318126868025925, "step": 4081}
+V3_EVENT {"destination": [180.0, -9.0], "drone": 0, "event": "route_released", "position": [-281.32484885907303, -187.99397284757399], "reason": "new_wall", "step": 4087, "waypoint": [-160.0, -189.0]}
+V3_EVENT {"destination": [100.0, 211.0], "drone": 3, "event": "route_released", "position": [-472.4256979400321, 6.334095896558775], "reason": "new_wall", "step": 4093, "waypoint": [-360.0, -9.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [142.8742951393535, 231.92422338580434], "reason": "disconnected", "step": 4097}
+V3_EVENT {"destination": [200.0, -29.0], "drone": 0, "event": "route_released", "position": [-209.37081667376412, -169.57941713496643], "reason": "new_wall", "step": 4099, "waypoint": [-100.0, -189.0]}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [559.5239149386671, 248.91602625867537], "reason": "disconnected", "step": 4102}
+V3_EVENT {"destination": [80.0, 251.0], "drone": 3, "event": "route_released", "position": [-360.193872466576, -24.41347481677072], "reason": "new_wall", "step": 4111, "waypoint": [-300.0, -29.0]}
+V3_EVENT {"destination": [180.0, -29.0], "drone": 0, "event": "route_released", "position": [-55.276671864682385, -197.25672490106209], "reason": "new_wall", "step": 4123, "waypoint": [60.0, -209.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [156.71276945039781, 196.78807885616993], "reason": "no_progress", "step": 4134}
+V3_EVENT {"destination": [200.0, -49.0], "drone": 0, "event": "route_released", "position": [16.9795535383095, -196.51366470161364], "reason": "new_wall", "step": 4135, "waypoint": [40.0, -189.0]}
+V3_EVENT {"destination": [140.0, 211.0], "drone": 0, "event": "route_released", "position": [39.09453432427694, -192.72268540672758], "reason": "new_wall", "step": 4141, "waypoint": [80.0, -89.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [485.3319172438224, -182.73240863111974], "reason": "no_progress", "step": 4141}
+V3_EVENT {"destination": [80.0, 231.0], "drone": 3, "event": "route_released", "position": [-475.4294505011975, -44.862817943446565], "reason": "new_wall", "step": 4147, "waypoint": [-580.0, -49.0]}
+V3_EVENT {"destination": [100.0, 191.0], "drone": 3, "event": "route_released", "position": [-513.3544626951566, -41.539922492320926], "reason": "new_wall", "step": 4153, "waypoint": [-620.0, -29.0]}
+V3_EVENT {"destination": [580.0, 251.0], "drone": 2, "event": "route_released", "position": [564.3949720693248, 112.1492225181463], "reason": "new_wall", "step": 4171, "waypoint": [560.0, 231.0]}
+V3_EVENT {"destination": [140.0, 251.0], "drone": 1, "event": "route_released", "position": [-87.95474055902955, 226.71672609998137], "reason": "new_wall", "step": 4183, "waypoint": [60.0, 251.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [482.21913707736337, -154.10695319841327], "reason": "disconnected", "step": 4199}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [537.778311924269, 253.24040964128295], "reason": "disconnected", "step": 4202}
+V3_EVENT {"drone": 0, "event": "recovery", "position": [98.96905670047182, 246.21162272933313], "reason": "disconnected", "step": 4233}
+V3_EVENT {"destination": [80.0, 211.0], "drone": 3, "event": "route_released", "position": [-351.8801666400663, -191.15785204193878], "reason": "new_wall", "step": 4261, "waypoint": [-240.0, -189.0]}
+V3_EVENT {"destination": [500.0, -149.0], "drone": 4, "event": "route_released", "position": [446.46244377016575, -242.80997241045637], "reason": "new_wall", "step": 4267, "waypoint": [500.0, -149.0]}
+V3_EVENT {"destination": [420.0, 251.0], "drone": 2, "event": "route_released", "position": [394.1964227186367, 235.18268064949078], "reason": "new_wall", "step": 4273, "waypoint": [420.0, 251.0]}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [460.68451144826014, -147.7073680419699], "reason": "disconnected", "step": 4288}
+V3_EVENT {"destination": [140.0, 271.0], "drone": 1, "event": "route_released", "position": [141.99784959477205, 233.2103120007134], "reason": "new_wall", "step": 4297, "waypoint": [140.0, 271.0]}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [120.06816564208462, 249.47156159398114], "reason": "disconnected", "step": 4307}
+V3_EVENT {"drone": 0, "event": "status", "goal": [120.0, 191.0], "inventory": 0, "position": [81.93954313636863, 217.865981443282], "scans": 1075, "sources": [0, 1, 2, 3, 4], "speed": 4.771409302600522, "step": 4321}
+V3_EVENT {"drone": 1, "event": "status", "goal": null, "inventory": 0, "position": [96.37701584730297, 263.43509564641374], "scans": 1074, "sources": [0, 1, 2, 3, 4], "speed": 0.8837502166320874, "step": 4321}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [346.8458397751113, 244.40496280908124], "reason": "no_progress", "step": 4321}
+V3_EVENT {"drone": 2, "event": "status", "goal": null, "inventory": 0, "position": [346.8458397751113, 244.40496280908124], "scans": 1078, "sources": [0, 1, 2, 3, 4], "speed": 3.1795668745867713, "step": 4321}
+V3_EVENT {"drone": 3, "event": "status", "goal": [-260.0, 451.0], "inventory": 0, "position": [-612.3953391351824, -248.2560309484612], "scans": 1077, "sources": [0, 1, 2, 3, 4], "speed": 5.355370166709755, "step": 4321}
+V3_EVENT {"drone": 4, "event": "status", "goal": null, "inventory": 0, "position": [517.2863776070961, -284.46527502574037], "scans": 1076, "sources": [0, 1, 2, 3, 4], "speed": 6.458708143794482, "step": 4321}
+V3_EVENT {"drone": 0, "event": "recovery", "position": [147.25368584055514, 208.79025743124592], "reason": "disconnected", "step": 4373}
+V3_EVENT {"drone": 4, "event": "recovery", "position": [458.7548558281064, -147.52573891553646], "reason": "disconnected", "step": 4380}
+V3_EVENT {"drone": 0, "event": "recovery", "position": [130.06159967655685, 174.0007489443895], "reason": "no_progress", "step": 4410}
+V3_EVENT {"destination": [-260.0, 451.0], "drone": 3, "event": "route_released", "position": [-439.8527280359897, 441.648757022356], "reason": "new_wall", "step": 4465, "waypoint": [-320.0, 451.0]}
+V3_EVENT {"destination": [-260.0, 471.0], "drone": 3, "event": "route_released", "position": [-402.3616398574768, 448.4961889448842], "reason": "new_wall", "step": 4471, "waypoint": [-300.0, 471.0]}
+V3_EVENT {"drone": 3, "event": "recovery", "position": [-283.76165454262747, 429.76208890572065], "reason": "disconnected", "step": 4495}
+V3_EVENT {"drone": 2, "event": "recovery", "position": [349.45671784893403, 234.51525535179627], "reason": "disconnected", "step": 4500}
+V3_EVENT {"drone": 1, "event": "recovery", "position": [94.51624349636243, 256.49663363457927], "reason": "no_progress", "step": 4501}
+V3_EVENT {"cells": 40697, "drone": 0, "event": "submitted", "mapping_stats": {"anchored": 457, "buffered": 457, "dropped": 0, "line_accepted": 145, "line_attempts": 252, "line_fallback_angle_bound": 16, "line_fallback_angular_disagreement": 18, "line_fallback_few_lines": 48, "line_fallback_few_matches": 20, "line_fallback_translation_or_residual_bound": 5, "line_max_references": 64, "line_rank_1": 63, "line_rank_2": 82, "matched": 206, "reference_resets": 2, "rejected": 23, "relocks": 7, "scans": 1133}, "pending_scans": 0, "placements": 2, "replans": 88, "sources": {"0": 17318, "1": 18773, "2": 18817, "3": 16598, "4": 18785}, "stalled_steps": 120, "step": 4536, "visited_cells": 456, "yield_steps": 0}
+
+State recording: 4535 frames, 5 drones, 10 bombs -> C:\Users\fzhuj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\Temp\g3-engine-nj8lmftc\artifacts/recordings/team742_Map08_no_gps_zone_rd1.npz
+count_reachable v3 = 1624792
+		bombs file written: C:\Users\fzhuj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\Temp\g3-engine-nj8lmftc\artifacts\team742_Map08_no_gps_zone_rd1_bombs.json
+		exploration map file written: C:\Users\fzhuj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\Temp\g3-engine-nj8lmftc\artifacts\team742_Map08_no_gps_zone_rd1_exploration.json
+		exploration diff image written: C:\Users\fzhuj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\Temp\g3-engine-nj8lmftc\artifacts\team742_Map08_no_gps_zone_rd1_exploration_diff.png
+		wall destruction image written: C:\Users\fzhuj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\Temp\g3-engine-nj8lmftc\artifacts\team742_Map08_no_gps_zone_rd1_wall_destruction.png

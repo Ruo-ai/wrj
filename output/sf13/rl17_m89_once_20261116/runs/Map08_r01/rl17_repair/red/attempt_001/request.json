@@ -1,0 +1,27 @@
+{
+  "official_map": "Map08",
+  "stage": "semifinal",
+  "zones": [
+    "NO_GPS_ZONE"
+  ],
+  "map": "Map08",
+  "map_file": "E:\\桌面\\gitee\\swarm-eod\\map_data\\map_08.json",
+  "round": 1,
+  "seed": 200806601,
+  "phase": "red",
+  "run_dir": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001",
+  "drones": 5,
+  "bombs": 2,
+  "recording": true,
+  "ray_backend": "cpu",
+  "visual": false,
+  "smoke": false,
+  "diagnostic_steps": null,
+  "diagnostic_profile": false,
+  "lifecycle_diagnostics": false,
+  "plan_sha256": "fe8c4f4ff871910503146105f939880ce86d2457204260794e2c06f935376b92",
+  "controller_selector": "rl17_repair",
+  "controller_class": "MyDroneRedRepair17",
+  "controller_module": "swarm_rescue.solutions.my_drone_red_repair17",
+  "engine_dir": "C:\\Users\\fzhuj\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\\Temp\\g3-engine-nj8lmftc\\artifacts"
+}

@@ -1,0 +1,139 @@
+{
+  "map": "Map09",
+  "round": 1,
+  "seed": 2477227837,
+  "status": "ok",
+  "phase1": {
+    "score_map": 74.42201778812093,
+    "score_bomb": 0.0,
+    "round_score": 53.67613885435978,
+    "score_status": "partial",
+    "map_breakdown": {
+      "s_time": 0.24860174655914308,
+      "s_map": 0.7442201778812092,
+      "credit": 0.8489870591083968,
+      "penalty": 0.10476688122718754,
+      "wall_pixels": 111507,
+      "wall_hits": 94668,
+      "wall_hit_rate": 0.8489870591083968,
+      "wall_available": true,
+      "interior_pixels": 22843,
+      "interior_hits": 20264,
+      "interior_hit_rate": 0.8870988924396971,
+      "interior_available": true,
+      "predicted_pixels": 417528,
+      "exact_pixels": 114932,
+      "dead_zone_pixels": 185142,
+      "charged_pixels": 117454,
+      "capped_pixels": 28573,
+      "total_charge": 58411.203125,
+      "truth_pixels": 134350,
+      "surface_pixels": 111507
+    },
+    "bomb_breakdown": {
+      "placement_completion": 1.0,
+      "placed_count": 10,
+      "expected_count": 10,
+      "reference_blues": [],
+      "pending": true
+    },
+    "score_exploration_trajectory": 96.74518020516152,
+    "score_wall": 69.77273974858649,
+    "wall_breakdown": {
+      "score_fraction": 0.6977273974858649,
+      "coverage_fraction": 0.328056644111688,
+      "blast_radius": 132,
+      "blast_radius_ratio": 0.12,
+      "boundary_wall_weight": 0.5,
+      "n_bombs": 10,
+      "reference_n_bombs": 10,
+      "blast_pixels": 505600,
+      "destroyed_wall_pixels": 39320,
+      "destroyed_boundary_pixels": 2377,
+      "destroyed_interior_pixels": 36943,
+      "total_boundary_pixels": 36231,
+      "total_interior_pixels": 98119,
+      "total_wall_pixels": 134350,
+      "covered_wall_pixels": 39320,
+      "weighted_destroyed": 38131.5,
+      "weighted_total": 116234.5,
+      "theoretical_optimum": 54651.0,
+      "theoretical_optimum_fraction": 0.4701788195415303
+    },
+    "score_time": 25.105820105820104,
+    "time_breakdown": {
+      "score_fraction": 0.25105820105820104,
+      "time_metric": "timestep",
+      "time_limit": 5400.0,
+      "time_best": 1620.0,
+      "time_best_ratio": 0.3,
+      "elapsed": 4451.0
+    }
+  },
+  "elapsed_steps": 4451,
+  "elapsed_walltime": 135.25168561935425,
+  "walltime_limited": false,
+  "controller_crashed": false,
+  "max_steps": 5400,
+  "max_walltime": 180.0,
+  "placed_count": 10,
+  "expected_count": 10,
+  "remaining_inventory": 0,
+  "percent_destroyed": 0.0,
+  "mean_health": 23.6,
+  "trajectory_exploration": 96.74518020516152,
+  "submitted": true,
+  "submission_shape": [
+    1100,
+    1700
+  ],
+  "expected_shape": [
+    1100,
+    1700
+  ],
+  "valid_shape": true,
+  "comparison_images": 1,
+  "wall_images": 1,
+  "process_seconds": 138.15600000000268,
+  "controller_selector": "rl17_repair",
+  "controller_class": "MyDroneRedRepair17",
+  "controller_module": "swarm_rescue.solutions.my_drone_red_repair17",
+  "actual_conditions": {
+    "drones": 5,
+    "zones": [
+      "NO_COM_ZONE",
+      "NO_GPS_ZONE"
+    ],
+    "max_steps": 5400,
+    "max_walltime": 180,
+    "instantiated_zone_types": [
+      "NO_COM_ZONE",
+      "NO_GPS_ZONE"
+    ]
+  },
+  "engine_profile": {
+    "lidar": 230,
+    "semantic": 130,
+    "communication": 180,
+    "health": 25,
+    "red_time_ratio": 0.3,
+    "blue_time_ratio": 0.3
+  },
+  "phase": "red",
+  "smoke": false,
+  "score_configuration": {
+    "w_exploration": 0.5,
+    "w_bomb": 0.2,
+    "w_wall": 0.2,
+    "w_time": 0.1,
+    "crash_difficulty": 100.0,
+    "use_median_for_bomb": false,
+    "min_successful_references": null,
+    "blast_radius": 0.12,
+    "boundary_wall_weight": 0.5,
+    "time_metric": "timestep",
+    "time_best_ratio": 0.3
+  },
+  "exit_code": 0,
+  "engine_callback_errors": 0
+}

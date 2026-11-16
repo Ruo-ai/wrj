@@ -1,0 +1,27 @@
+{
+  "plan_sha256": "fe8c4f4ff871910503146105f939880ce86d2457204260794e2c06f935376b92",
+  "files": {
+    "artifacts/recordings/team742_Map08_no_gps_zone_rd1.npz": "5b7296708584d864207ec18ca1d808fd10f2fac6efbdfcc0db2179fd82ff9a46",
+    "artifacts/team742_Map08_no_gps_zone_rd1_bombs.json": "dd6ee342ad4e0ee6f346d420c0d3a0f351185dc12905837586fca802ffdad2c0",
+    "artifacts/team742_Map08_no_gps_zone_rd1_exploration.json": "10b4979d55825e2ac6b82191c00f59f8bf4f54f7d8420a155ece08d7073a3299",
+    "artifacts/team742_Map08_no_gps_zone_rd1_exploration_diff.png": "4b189517a063d22d2a6b3af764a00ecf47a35852867c27aa7b28343e29a836b7",
+    "artifacts/team742_Map08_no_gps_zone_rd1_wall_destruction.png": "57f29f8e5137d0d814d3dd10e048f5f8be1db337f22bcd561158a02a0c4923b0",
+    "conditions.json": "658cc5fe49aab275655f96b2da559d6548c59c544460e02e5f8417b51c20adb8",
+    "engine_request.json": "d3a5dc127ecd44be8b3dd21fe0d80642cf6b21a1b60e786558618722a1b3f940",
+    "exploration_diagnostics.json": "f785cae35bc9455ec2efecd9d00e7999a8349a5ac1ddfb8a2a53e6a61737c6b3",
+    "exploration_stages.npz": "33d00fb098fd62ccd57f4269600ba2204fc25d2f2708a27cf155161d53c32e51",
+    "line_diagnostics.json": "91665e1a4b0505f78b5ca43cc62e83ece664b4671ee4040275b83be6d8a3bbc9",
+    "local13_diagnostics.json": "369316463600833876d3d26f8b49086b7deb5fedff8735c4ec69ae308d574703",
+    "local13_diagnostics.npz": "a2b7bf98ee97a4c6a83b0b03d877f67a950087c6ec551a991b92786deee9c29b",
+    "mapper_legal_inputs.npz": "440c6886a4452cb93b3fe4e971a6439ba0df7dfa32092b8ef68b29bf287887fa",
+    "motion_diagnostics.json": "2519881bbbd6791a14bbb703c21a8b9094f8977b9bff63aa13ddf6e73d341297",
+    "narrow_diagnostics.json": "1d220cab4c91f3e38d37c481044fa493b3bcdf11a2dc65845be80cfaaedc2c33",
+    "p2l17_diagnostics.json": "22ea61e31f6cce5143eb2e3df6e19bd26adde8968c8576d26ed1ec81f49232ad",
+    "p2l17_diagnostics.npz": "17478b69dd7036e7f0c0a6bf9a20efd257fe4add05dc57640edde4116087a61d",
+    "request.json": "4e6da8e50c4afdaafff98b2a436b24368e93fb80d1322954c543c2eed9c55d7f",
+    "resources.json": "5a45804a3d58a2f4706b456e97d9f95e1c54d06872e67920160d105631c3e644",
+    "result.json": "8df8c2f752f21995e7e225ee687560e357567d72aa4d95ca158f6767bb79477a",
+    "run.log": "a9ce4b71b0bea3c73d736c4d2488b7eb5a2417ce9a6625af33f2e34f30780e35",
+    "telemetry.json": "81a5b7a25f19f2d30d86042c746f036fdbc515da7b24acc146a8320e8d21c617"
+  }
+}
