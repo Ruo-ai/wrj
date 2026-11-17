@@ -1,0 +1,2334 @@
+{
+  "scope": "red stage only; sampled physical lidar visibility is approximate; no blue/full score",
+  "rows": [
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_72_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 110.09784626960754,
+      "process_seconds": 118.71899999999914,
+      "bombs": 10,
+      "map_score": 9.683584535115083,
+      "wall_score": 29.988587801087803,
+      "time_score": 22.857142857142858,
+      "wall_hits": 13016,
+      "wall_missed": 77700,
+      "charged_pixels": 35326,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 118.71899999999914,
+        "peak_job_commit_bytes": 788606976,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 553,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 240,
+      "yield_steps": 2142,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07218150015251013,
+      "sampled_lidar_free_pixels": 483473,
+      "sampled_lidar_free_percent": 27.377269651437032,
+      "collision_contacts": {
+        "drone": 28
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_72_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 104.52828073501587,
+      "process_seconds": 113.14099999999962,
+      "bombs": 10,
+      "map_score": 9.683584535115083,
+      "wall_score": 29.988587801087803,
+      "time_score": 22.857142857142858,
+      "wall_hits": 13016,
+      "wall_missed": 77700,
+      "charged_pixels": 35326,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 113.14099999999962,
+        "peak_job_commit_bytes": 790867968,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 553,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 240,
+      "yield_steps": 2142,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.06850819996725477,
+      "sampled_lidar_free_pixels": 483473,
+      "sampled_lidar_free_percent": 27.377269651437032,
+      "collision_contacts": {
+        "drone": 28
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "r20_budget",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_72_r01\\r20_budget\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3888,
+      "wall_seconds": 107.7527825832367,
+      "process_seconds": 116.0619999999999,
+      "bombs": 10,
+      "map_score": 11.18814745331584,
+      "wall_score": 24.711052836052836,
+      "time_score": 40.0,
+      "wall_hits": 13457,
+      "wall_missed": 77259,
+      "charged_pixels": 30501,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 116.0619999999999,
+        "peak_job_commit_bytes": 764882944,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 463,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 180,
+      "yield_steps": 2358,
+      "lifetime_passage_episodes": 89,
+      "diagnostic_seconds": 0.0663728000199626,
+      "sampled_lidar_free_pixels": 298108,
+      "sampled_lidar_free_percent": 16.88074225706625,
+      "collision_contacts": {
+        "drone": 20
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "r20_budget",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_72_r02\\r20_budget\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3891,
+      "wall_seconds": 103.27748775482178,
+      "process_seconds": 111.36000000000058,
+      "bombs": 10,
+      "map_score": 10.964107764892633,
+      "wall_score": 25.325369075369075,
+      "time_score": 39.920634920634924,
+      "wall_hits": 13082,
+      "wall_missed": 77634,
+      "charged_pixels": 29449,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 111.36000000000058,
+        "peak_job_commit_bytes": 762126336,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 410,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 780,
+      "yield_steps": 2431,
+      "lifetime_passage_episodes": 87,
+      "diagnostic_seconds": 0.06171709985756024,
+      "sampled_lidar_free_pixels": 257077,
+      "sampled_lidar_free_percent": 14.557310025963142,
+      "collision_contacts": {
+        "drone": 21,
+        "wall": 17
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_72_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3888,
+      "wall_seconds": 94.41073703765869,
+      "process_seconds": 102.20300000000134,
+      "bombs": 10,
+      "map_score": 10.66402848243419,
+      "wall_score": 24.814248251748253,
+      "time_score": 40.0,
+      "wall_hits": 13049,
+      "wall_missed": 77667,
+      "charged_pixels": 31527,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 102.20300000000134,
+        "peak_job_commit_bytes": 767107072,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 466,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 180,
+      "yield_steps": 2970,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.06225370000174735,
+      "sampled_lidar_free_pixels": 254773,
+      "sampled_lidar_free_percent": 14.426843114104752,
+      "collision_contacts": {
+        "drone": 28
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_72_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3888,
+      "wall_seconds": 97.5903172492981,
+      "process_seconds": 105.42199999999866,
+      "bombs": 10,
+      "map_score": 10.66402848243419,
+      "wall_score": 24.814248251748253,
+      "time_score": 40.0,
+      "wall_hits": 13049,
+      "wall_missed": 77667,
+      "charged_pixels": 31527,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 105.42199999999866,
+        "peak_job_commit_bytes": 768667648,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 466,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 180,
+      "yield_steps": 2970,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.06600320008874405,
+      "sampled_lidar_free_pixels": 254773,
+      "sampled_lidar_free_percent": 14.426843114104752,
+      "collision_contacts": {
+        "drone": 28
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_55_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 111.35474562644958,
+      "process_seconds": 119.67200000000048,
+      "bombs": 10,
+      "map_score": 15.924838073016872,
+      "wall_score": 31.323326432022085,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24935,
+      "wall_missed": 83177,
+      "charged_pixels": 67246,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 119.67200000000048,
+        "peak_job_commit_bytes": 802582528,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 551,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 1440,
+      "yield_steps": 1494,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.06941509986791061,
+      "sampled_lidar_free_pixels": 457687,
+      "sampled_lidar_free_percent": 26.28054547030995,
+      "collision_contacts": {
+        "drone": 13
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_55_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 116.79855394363403,
+      "process_seconds": 125.23400000000038,
+      "bombs": 10,
+      "map_score": 16.42137754134601,
+      "wall_score": 31.323326432022085,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24777,
+      "wall_missed": 83335,
+      "charged_pixels": 62979,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.23400000000038,
+        "peak_job_commit_bytes": 805601280,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 551,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 1440,
+      "yield_steps": 1494,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.0712205000963877,
+      "sampled_lidar_free_pixels": 457687,
+      "sampled_lidar_free_percent": 26.28054547030995,
+      "collision_contacts": {
+        "drone": 13
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "r20_budget",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_55_r01\\r20_budget\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 119.01350903511047,
+      "process_seconds": 127.32799999999952,
+      "bombs": 10,
+      "map_score": 13.650510437093017,
+      "wall_score": 38.10472739820566,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24068,
+      "wall_missed": 84044,
+      "charged_pixels": 76226,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 127.32799999999952,
+        "peak_job_commit_bytes": 801062912,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 509,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 1020,
+      "yield_steps": 1656,
+      "lifetime_passage_episodes": 112,
+      "diagnostic_seconds": 0.07194530000742816,
+      "sampled_lidar_free_pixels": 490258,
+      "sampled_lidar_free_percent": 28.15078352931854,
+      "collision_contacts": {
+        "drone": 8
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "r20_budget",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_55_r02\\r20_budget\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3979,
+      "wall_seconds": 105.84804344177246,
+      "process_seconds": 113.70300000000134,
+      "bombs": 10,
+      "map_score": 17.891797286899237,
+      "wall_score": 37.507763975155285,
+      "time_score": 37.592592592592595,
+      "wall_hits": 22557,
+      "wall_missed": 85555,
+      "charged_pixels": 34113,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 113.70300000000134,
+        "peak_job_commit_bytes": 760668160,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 446,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 840,
+      "yield_steps": 1663,
+      "lifetime_passage_episodes": 110,
+      "diagnostic_seconds": 0.06368450025183847,
+      "sampled_lidar_free_pixels": 364626,
+      "sampled_lidar_free_percent": 20.93695073851177,
+      "collision_contacts": {
+        "drone": 12
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_55_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 104.8749144077301,
+      "process_seconds": 113.09400000000096,
+      "bombs": 10,
+      "map_score": 16.8154137173718,
+      "wall_score": 39.84989648033127,
+      "time_score": 22.857142857142858,
+      "wall_hits": 22572,
+      "wall_missed": 85540,
+      "charged_pixels": 42598,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 113.09400000000096,
+        "peak_job_commit_bytes": 788447232,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 563,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 720,
+      "yield_steps": 1620,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.06913179996809049,
+      "sampled_lidar_free_pixels": 565237,
+      "sampled_lidar_free_percent": 32.45610358170887,
+      "collision_contacts": {
+        "drone": 15
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_55_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 107.76987528800964,
+      "process_seconds": 116.0619999999999,
+      "bombs": 10,
+      "map_score": 16.8154137173718,
+      "wall_score": 39.84989648033127,
+      "time_score": 22.857142857142858,
+      "wall_hits": 22572,
+      "wall_missed": 85540,
+      "charged_pixels": 42598,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 116.0619999999999,
+        "peak_job_commit_bytes": 789356544,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 563,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 720,
+      "yield_steps": 1620,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07157169968559174,
+      "sampled_lidar_free_pixels": 565237,
+      "sampled_lidar_free_percent": 32.45610358170887,
+      "collision_contacts": {
+        "drone": 15
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_37_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 117.16295385360718,
+      "process_seconds": 125.42199999999866,
+      "bombs": 10,
+      "map_score": 57.36004525638716,
+      "wall_score": 51.25770171149144,
+      "time_score": 22.857142857142858,
+      "wall_hits": 62928,
+      "wall_missed": 25844,
+      "charged_pixels": 111240,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.42199999999866,
+        "peak_job_commit_bytes": 782962688,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 447,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 660,
+      "yield_steps": 378,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07460330010508187,
+      "sampled_lidar_free_pixels": 1640500,
+      "sampled_lidar_free_percent": 92.94327938789444,
+      "collision_contacts": {
+        "drone": 5
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_37_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 117.63824677467346,
+      "process_seconds": 125.75,
+      "bombs": 10,
+      "map_score": 57.17526007637544,
+      "wall_score": 51.25770171149144,
+      "time_score": 22.857142857142858,
+      "wall_hits": 62014,
+      "wall_missed": 26758,
+      "charged_pixels": 109159,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.75,
+        "peak_job_commit_bytes": 782508032,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 447,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 660,
+      "yield_steps": 378,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07252680000419787,
+      "sampled_lidar_free_pixels": 1640500,
+      "sampled_lidar_free_percent": 92.94327938789444,
+      "collision_contacts": {
+        "drone": 5
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "r20_budget",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_37_r01\\r20_budget\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4155,
+      "wall_seconds": 117.69999098777771,
+      "process_seconds": 125.5630000000001,
+      "bombs": 10,
+      "map_score": 50.597533217118006,
+      "wall_score": 50.736430317848416,
+      "time_score": 32.93650793650794,
+      "wall_hits": 58513,
+      "wall_missed": 30259,
+      "charged_pixels": 119812,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.5630000000001,
+        "peak_job_commit_bytes": 768323584,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 385,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 840,
+      "yield_steps": 471,
+      "lifetime_passage_episodes": 89,
+      "diagnostic_seconds": 0.07008570015568694,
+      "sampled_lidar_free_pixels": 1191902,
+      "sampled_lidar_free_percent": 67.52775409264868,
+      "collision_contacts": {
+        "drone": 5
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "r20_budget",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_37_r02\\r20_budget\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 124.19104623794556,
+      "process_seconds": 132.4369999999999,
+      "bombs": 10,
+      "map_score": 49.222164646510166,
+      "wall_score": 63.30073349633252,
+      "time_score": 22.857142857142858,
+      "wall_hits": 54715,
+      "wall_missed": 34057,
+      "charged_pixels": 107077,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 132.4369999999999,
+        "peak_job_commit_bytes": 780582912,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 411,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 300,
+      "yield_steps": 834,
+      "lifetime_passage_episodes": 90,
+      "diagnostic_seconds": 0.07359929995254788,
+      "sampled_lidar_free_pixels": 1427782,
+      "sampled_lidar_free_percent": 80.89164360317383,
+      "collision_contacts": {
+        "drone": 4
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_37_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 122.58497166633606,
+      "process_seconds": 131.125,
+      "bombs": 10,
+      "map_score": 59.83623425742351,
+      "wall_score": 59.20880195599022,
+      "time_score": 22.857142857142858,
+      "wall_hits": 65841,
+      "wall_missed": 22931,
+      "charged_pixels": 115739,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 131.125,
+        "peak_job_commit_bytes": 779522048,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 471,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 240,
+      "yield_steps": 521,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07860999993499718,
+      "sampled_lidar_free_pixels": 1661733,
+      "sampled_lidar_free_percent": 94.14624473458335,
+      "collision_contacts": {
+        "drone": 2
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_37_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 121.39907765388489,
+      "process_seconds": 130.01599999999962,
+      "bombs": 10,
+      "map_score": 59.71941550404407,
+      "wall_score": 59.20880195599022,
+      "time_score": 22.857142857142858,
+      "wall_hits": 65389,
+      "wall_missed": 23383,
+      "charged_pixels": 113762,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 130.01599999999962,
+        "peak_job_commit_bytes": 781381632,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 471,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 240,
+      "yield_steps": 521,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.0787008997376688,
+      "sampled_lidar_free_pixels": 1661733,
+      "sampled_lidar_free_percent": 94.14624473458335,
+      "collision_contacts": {
+        "drone": 2
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_24_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4265,
+      "wall_seconds": 110.7388973236084,
+      "process_seconds": 118.98500000000058,
+      "bombs": 10,
+      "map_score": 77.06896692024404,
+      "wall_score": 53.605849119308736,
+      "time_score": 30.02645502645503,
+      "wall_hits": 75508,
+      "wall_missed": 5138,
+      "charged_pixels": 120472,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 118.98500000000058,
+        "peak_job_commit_bytes": 769683456,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 392,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 480,
+      "yield_steps": 270,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07326530003956577,
+      "sampled_lidar_free_pixels": 1665314,
+      "sampled_lidar_free_percent": 93.95495525992123,
+      "collision_contacts": {
+        "drone": 2
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_24_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4265,
+      "wall_seconds": 111.4333188533783,
+      "process_seconds": 119.54700000000048,
+      "bombs": 10,
+      "map_score": 78.76556668185651,
+      "wall_score": 53.605849119308736,
+      "time_score": 30.02645502645503,
+      "wall_hits": 75411,
+      "wall_missed": 5235,
+      "charged_pixels": 113247,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 119.54700000000048,
+        "peak_job_commit_bytes": 769028096,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 392,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 480,
+      "yield_steps": 270,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07209169979978469,
+      "sampled_lidar_free_pixels": 1665314,
+      "sampled_lidar_free_percent": 93.95495525992123,
+      "collision_contacts": {
+        "drone": 2
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "r20_budget",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_24_r01\\r20_budget\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 123.59240317344666,
+      "process_seconds": 131.89099999999962,
+      "bombs": 10,
+      "map_score": 88.06532174565385,
+      "wall_score": 54.70378986497298,
+      "time_score": 22.857142857142858,
+      "wall_hits": 79124,
+      "wall_missed": 1522,
+      "charged_pixels": 90055,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 131.89099999999962,
+        "peak_job_commit_bytes": 776523776,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 382,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 600,
+      "yield_steps": 234,
+      "lifetime_passage_episodes": 95,
+      "diagnostic_seconds": 0.07344159997228417,
+      "sampled_lidar_free_pixels": 1757734,
+      "sampled_lidar_free_percent": 99.16917730160343,
+      "collision_contacts": {
+        "drone": 2
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "r20_budget",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_24_r02\\r20_budget\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4171,
+      "wall_seconds": 118.68833184242249,
+      "process_seconds": 126.95299999999952,
+      "bombs": 10,
+      "map_score": 79.39406770794584,
+      "wall_score": 49.7199758748446,
+      "time_score": 32.51322751322751,
+      "wall_hits": 71879,
+      "wall_missed": 8767,
+      "charged_pixels": 81335,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 126.95299999999952,
+        "peak_job_commit_bytes": 768610304,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_budget20.MyDroneRedBudget20",
+      "controller_source_sha256": "58b025bbab9a018056bc1f5dbac52f4ae12b25765ab41f1c83da4ad4c1b0d05b",
+      "planning_replay": {
+        "plans": 410,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 540,
+      "yield_steps": 556,
+      "lifetime_passage_episodes": 92,
+      "diagnostic_seconds": 0.07157550003830693,
+      "sampled_lidar_free_pixels": 1688602,
+      "sampled_lidar_free_percent": 95.26883540390192,
+      "collision_contacts": {
+        "drone": 3
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_24_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 118.48321628570557,
+      "process_seconds": 126.84400000000096,
+      "bombs": 10,
+      "map_score": 83.66951999324208,
+      "wall_score": 57.19754317295028,
+      "time_score": 22.857142857142858,
+      "wall_hits": 74911,
+      "wall_missed": 5735,
+      "charged_pixels": 78473,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 126.84400000000096,
+        "peak_job_commit_bytes": 780922880,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+      "planning_replay": {
+        "plans": 400,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 600,
+      "yield_steps": 234,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07509020013094414,
+      "sampled_lidar_free_pixels": 1757190,
+      "sampled_lidar_free_percent": 99.13848549473613,
+      "collision_contacts": {}
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615\\runs\\yh_map_fs_24_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 115.24115896224976,
+      "process_seconds": 123.3130000000001,
+      "bombs": 10,
+      "map_score": 83.43516049308087,
+      "wall_score": 57.19754317295028,
+      "time_score": 22.857142857142858,
+      "wall_hits": 74958,
+      "wall_missed": 5688,
+      "charged_pixels": 80273,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 123.3130000000001,
+        "peak_job_commit_bytes": 779440128,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+      "planning_replay": {
+        "plans": 400,
+        "mismatches": [],
+        "errors": [],
+        "truncated": 0
+      },
+      "stalled_steps": 600,
+      "yield_steps": 234,
+      "lifetime_passage_episodes": 40,
+      "diagnostic_seconds": 0.07373090016517381,
+      "sampled_lidar_free_pixels": 1757190,
+      "sampled_lidar_free_percent": 99.13848549473613,
+      "collision_contacts": {}
+    }
+  ],
+  "pairs": [
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": 9.299755063797335,
+        "wall_hits": 3713,
+        "wall_missed": -3713,
+        "charged_pixels": -23192,
+        "wall_score": 1.0979407456642463,
+        "time_score": -7.169312169312171,
+        "bombs": 0,
+        "wall_seconds": 12.15908432006836,
+        "sampled_lidar_free_percent": 5.214222041682191,
+        "stalled_steps": 120,
+        "yield_steps": -36,
+        "lifetime_passage_episodes": 55
+      },
+      "raw_delta": {
+        "map_score": 9.299755063797335,
+        "wall_hits": 3713,
+        "wall_missed": -3713,
+        "charged_pixels": -23192,
+        "wall_score": 1.0979407456642463,
+        "time_score": -7.169312169312171,
+        "bombs": 0,
+        "wall_seconds": 12.15908432006836,
+        "sampled_lidar_free_percent": 5.214222041682191,
+        "stalled_steps": 120,
+        "yield_steps": -36,
+        "lifetime_passage_episodes": 55
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 1.6965997616124753,
+        "wall_hits": -97,
+        "wall_missed": 97,
+        "charged_pixels": -7225,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.6944215297698975,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 1.6965997616124753,
+        "wall_hits": -97,
+        "wall_missed": 97,
+        "charged_pixels": -7225,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.6944215297698975,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": -4.2754522852962396,
+        "wall_hits": -3032,
+        "wall_missed": 3032,
+        "charged_pixels": 2862,
+        "wall_score": -7.477567298105683,
+        "time_score": 9.656084656084655,
+        "bombs": 0,
+        "wall_seconds": 0.20511555671691895,
+        "sampled_lidar_free_percent": -3.869650090834213,
+        "stalled_steps": -60,
+        "yield_steps": 322,
+        "lifetime_passage_episodes": 52
+      },
+      "raw_delta": {
+        "map_score": -4.2754522852962396,
+        "wall_hits": -3032,
+        "wall_missed": 3032,
+        "charged_pixels": 2862,
+        "wall_score": -7.477567298105683,
+        "time_score": 9.656084656084655,
+        "bombs": 0,
+        "wall_seconds": 0.20511555671691895,
+        "sampled_lidar_free_percent": -3.869650090834213,
+        "stalled_steps": -60,
+        "yield_steps": 322,
+        "lifetime_passage_episodes": 52
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 0.23435950016120444,
+        "wall_hits": -47,
+        "wall_missed": 47,
+        "charged_pixels": -1800,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 3.2420573234558105,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 0.23435950016120444,
+        "wall_hits": -47,
+        "wall_missed": 47,
+        "charged_pixels": -1800,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 3.2420573234558105,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": -6.577726859257432,
+        "wall_hits": -3501,
+        "wall_missed": 3501,
+        "charged_pixels": 10653,
+        "wall_score": -0.5212713936430262,
+        "time_score": 10.079365079365079,
+        "bombs": 0,
+        "wall_seconds": 0.06174421310424805,
+        "sampled_lidar_free_percent": -25.415525295245757,
+        "stalled_steps": 180,
+        "yield_steps": 93,
+        "lifetime_passage_episodes": 49
+      },
+      "raw_delta": {
+        "map_score": -6.577726859257432,
+        "wall_hits": -3501,
+        "wall_missed": 3501,
+        "charged_pixels": 10653,
+        "wall_score": -0.5212713936430262,
+        "time_score": 10.079365079365079,
+        "bombs": 0,
+        "wall_seconds": 0.06174421310424805,
+        "sampled_lidar_free_percent": -25.415525295245757,
+        "stalled_steps": 180,
+        "yield_steps": 93,
+        "lifetime_passage_episodes": 49
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": -0.18478518001172262,
+        "wall_hits": -914,
+        "wall_missed": 914,
+        "charged_pixels": -2081,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.4752929210662842,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": -0.18478518001172262,
+        "wall_hits": -914,
+        "wall_missed": 914,
+        "charged_pixels": -2081,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.4752929210662842,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": -10.614069610913347,
+        "wall_hits": -11126,
+        "wall_missed": 11126,
+        "charged_pixels": -8662,
+        "wall_score": 4.091931540342301,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.606074571609497,
+        "sampled_lidar_free_percent": -13.254601131409515,
+        "stalled_steps": 60,
+        "yield_steps": 313,
+        "lifetime_passage_episodes": 50
+      },
+      "raw_delta": {
+        "map_score": -10.614069610913347,
+        "wall_hits": -11126,
+        "wall_missed": 11126,
+        "charged_pixels": -8662,
+        "wall_score": 4.091931540342301,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.606074571609497,
+        "sampled_lidar_free_percent": -13.254601131409515,
+        "stalled_steps": 60,
+        "yield_steps": 313,
+        "lifetime_passage_episodes": 50
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 0.11681875337944092,
+        "wall_hits": 452,
+        "wall_missed": -452,
+        "charged_pixels": 1977,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.1858940124511719,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 0.11681875337944092,
+        "wall_hits": 452,
+        "wall_missed": -452,
+        "charged_pixels": 1977,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.1858940124511719,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": -2.7708671042529947,
+        "wall_hits": -709,
+        "wall_missed": 709,
+        "charged_pixels": 13247,
+        "wall_score": 6.7814009661835755,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 2.2149550914764404,
+        "sampled_lidar_free_percent": 1.8702380590085923,
+        "stalled_steps": -420,
+        "yield_steps": 162,
+        "lifetime_passage_episodes": 72
+      },
+      "raw_delta": {
+        "map_score": -2.7708671042529947,
+        "wall_hits": -709,
+        "wall_missed": 709,
+        "charged_pixels": 13247,
+        "wall_score": 6.7814009661835755,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 2.2149550914764404,
+        "sampled_lidar_free_percent": 1.8702380590085923,
+        "stalled_steps": -420,
+        "yield_steps": 162,
+        "lifetime_passage_episodes": 72
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 0.4965394683291393,
+        "wall_hits": -158,
+        "wall_missed": 158,
+        "charged_pixels": -4267,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 5.443808317184448,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 0.4965394683291393,
+        "wall_hits": -158,
+        "wall_missed": 158,
+        "charged_pixels": -4267,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 5.443808317184448,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": 1.0763835695274366,
+        "wall_hits": -15,
+        "wall_missed": 15,
+        "charged_pixels": -8485,
+        "wall_score": -2.3421325051759823,
+        "time_score": 14.735449735449738,
+        "bombs": 0,
+        "wall_seconds": 0.9731290340423584,
+        "sampled_lidar_free_percent": -11.519152843197098,
+        "stalled_steps": 120,
+        "yield_steps": 43,
+        "lifetime_passage_episodes": 70
+      },
+      "raw_delta": {
+        "map_score": 1.0763835695274366,
+        "wall_hits": -15,
+        "wall_missed": 15,
+        "charged_pixels": -8485,
+        "wall_score": -2.3421325051759823,
+        "time_score": 14.735449735449738,
+        "bombs": 0,
+        "wall_seconds": 0.9731290340423584,
+        "sampled_lidar_free_percent": -11.519152843197098,
+        "stalled_steps": 120,
+        "yield_steps": 43,
+        "lifetime_passage_episodes": 70
+      }
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -2.894960880279541,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -2.894960880279541,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": 1.504562918200758,
+        "wall_hits": 441,
+        "wall_missed": -441,
+        "charged_pixels": -4825,
+        "wall_score": -5.277534965034967,
+        "time_score": 17.142857142857142,
+        "bombs": 0,
+        "wall_seconds": 3.224501848220825,
+        "sampled_lidar_free_percent": -10.496527394370784,
+        "stalled_steps": -60,
+        "yield_steps": 216,
+        "lifetime_passage_episodes": 49
+      },
+      "raw_delta": {
+        "map_score": 1.504562918200758,
+        "wall_hits": 441,
+        "wall_missed": -441,
+        "charged_pixels": -4825,
+        "wall_score": -5.277534965034967,
+        "time_score": 17.142857142857142,
+        "bombs": 0,
+        "wall_seconds": 3.224501848220825,
+        "sampled_lidar_free_percent": -10.496527394370784,
+        "stalled_steps": -60,
+        "yield_steps": 216,
+        "lifetime_passage_episodes": 49
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 1,
+      "seed": 2026111701,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -5.569565534591675,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -5.569565534591675,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl17_repair",
+      "candidate": "r20_budget",
+      "valid": true,
+      "delta": {
+        "map_score": 0.3000792824584426,
+        "wall_hits": 33,
+        "wall_missed": -33,
+        "charged_pixels": -2078,
+        "wall_score": 0.5111208236208213,
+        "time_score": -0.07936507936507553,
+        "bombs": 0,
+        "wall_seconds": 8.866750717163086,
+        "sampled_lidar_free_percent": 0.13046691185838988,
+        "stalled_steps": 600,
+        "yield_steps": -539,
+        "lifetime_passage_episodes": 47
+      },
+      "raw_delta": {
+        "map_score": 0.3000792824584426,
+        "wall_hits": 33,
+        "wall_missed": -33,
+        "charged_pixels": -2078,
+        "wall_score": 0.5111208236208213,
+        "time_score": -0.07936507936507553,
+        "bombs": 0,
+        "wall_seconds": 8.866750717163086,
+        "sampled_lidar_free_percent": 0.13046691185838988,
+        "stalled_steps": 600,
+        "yield_steps": -539,
+        "lifetime_passage_episodes": 47
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 2,
+      "seed": 2026111702,
+      "baseline": "rl11_lines",
+      "candidate": "rl17_repair",
+      "valid": true,
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -3.1795802116394043,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      },
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -3.1795802116394043,
+        "sampled_lidar_free_percent": 0.0,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "lifetime_passage_episodes": 0
+      }
+    }
+  ],
+  "expected_count": 24,
+  "valid_count": 24,
+  "invalid_count": 0,
+  "all_execution_checks_pass": true,
+  "aggregate_by_contrast": {
+    "r20_budget": {
+      "map_score": {
+        "n": 8,
+        "mean": -1.5071668782170051,
+        "median": -1.235393910897276,
+        "min": -10.614069610913347,
+        "max": 9.299755063797335
+      },
+      "wall_hits": {
+        "n": 8,
+        "mean": -1774.5,
+        "median": -362.0,
+        "min": -11126,
+        "max": 3713
+      },
+      "wall_missed": {
+        "n": 8,
+        "mean": 1774.5,
+        "median": 362.0,
+        "min": -3713,
+        "max": 11126
+      },
+      "charged_pixels": {
+        "n": 8,
+        "mean": -2560,
+        "median": -3451.5,
+        "min": -23192,
+        "max": 13247
+      },
+      "wall_score": {
+        "n": 8,
+        "mean": -0.3920140107685892,
+        "median": -0.005075285011102437,
+        "min": -7.477567298105683,
+        "max": 6.7814009661835755
+      },
+      "time_score": {
+        "n": 8,
+        "mean": 5.545634920634921,
+        "median": 4.8280423280423275,
+        "min": -7.169312169312171,
+        "max": 17.142857142857142
+      },
+      "bombs": {
+        "n": 8,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 8,
+        "mean": 3.6639194190502167,
+        "median": 1.9105148315429688,
+        "min": 0.06174421310424805,
+        "max": 12.15908432006836
+      }
+    },
+    "rl17_repair": {
+      "map_score": {
+        "n": 8,
+        "mean": 0.29494153793381717,
+        "median": 0.05840937668972046,
+        "min": -0.18478518001172262,
+        "max": 1.6965997616124753
+      },
+      "wall_hits": {
+        "n": 8,
+        "mean": -95.5,
+        "median": -23.5,
+        "min": -914,
+        "max": 452
+      },
+      "wall_missed": {
+        "n": 8,
+        "mean": 95.5,
+        "median": 23.5,
+        "min": -452,
+        "max": 914
+      },
+      "charged_pixels": {
+        "n": 8,
+        "mean": -1674.5,
+        "median": -900.0,
+        "min": -7225,
+        "max": 1977
+      },
+      "wall_score": {
+        "n": 8,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 8,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 8,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 8,
+        "mean": -0.07532906532287598,
+        "median": 0.5848572254180908,
+        "min": -5.569565534591675,
+        "max": 5.443808317184448
+      }
+    }
+  }
+}

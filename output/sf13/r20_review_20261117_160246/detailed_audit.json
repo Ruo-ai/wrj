@@ -1,0 +1,270 @@
+{
+  "valid": true,
+  "failures": [],
+  "log_warnings": [],
+  "checked_npz_crc": 144,
+  "checked_png": 48,
+  "pair_checks": [
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 1,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 2,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 1,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 2,
+      "rl11_rl17_recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "rl11_rl17_coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "all_conditions_same": true
+    }
+  ],
+  "observed_serial": true,
+  "intervals": [
+    {
+      "index": 1,
+      "start": 1794899177.937623,
+      "end": 1794899296.9606757
+    },
+    {
+      "index": 2,
+      "start": 1794899297.410872,
+      "end": 1794899410.835133
+    },
+    {
+      "index": 3,
+      "start": 1794899411.2973404,
+      "end": 1794899527.6773012
+    },
+    {
+      "index": 4,
+      "start": 1794899528.1511931,
+      "end": 1794899639.7512534
+    },
+    {
+      "index": 5,
+      "start": 1794899640.1818757,
+      "end": 1794899742.6165862
+    },
+    {
+      "index": 6,
+      "start": 1794899743.0675447,
+      "end": 1794899848.7162936
+    },
+    {
+      "index": 7,
+      "start": 1794899849.178146,
+      "end": 1794899969.1217382
+    },
+    {
+      "index": 8,
+      "start": 1794899969.5527554,
+      "end": 1794900095.026636
+    },
+    {
+      "index": 9,
+      "start": 1794900095.4686637,
+      "end": 1794900223.1194334
+    },
+    {
+      "index": 10,
+      "start": 1794900223.551192,
+      "end": 1794900337.5088167
+    },
+    {
+      "index": 11,
+      "start": 1794900337.9071598,
+      "end": 1794900451.2567468
+    },
+    {
+      "index": 12,
+      "start": 1794900451.6825535,
+      "end": 1794900568.0109065
+    },
+    {
+      "index": 13,
+      "start": 1794900568.4494236,
+      "end": 1794900694.1419816
+    },
+    {
+      "index": 14,
+      "start": 1794900694.5580041,
+      "end": 1794900820.5942621
+    },
+    {
+      "index": 15,
+      "start": 1794900820.9895372,
+      "end": 1794900946.8033233
+    },
+    {
+      "index": 16,
+      "start": 1794900947.2206717,
+      "end": 1794901079.9840982
+    },
+    {
+      "index": 17,
+      "start": 1794901080.4154372,
+      "end": 1794901211.8402712
+    },
+    {
+      "index": 18,
+      "start": 1794901212.2701197,
+      "end": 1794901342.579538
+    },
+    {
+      "index": 19,
+      "start": 1794901343.016117,
+      "end": 1794901462.281608
+    },
+    {
+      "index": 20,
+      "start": 1794901462.7131193,
+      "end": 1794901582.5603974
+    },
+    {
+      "index": 21,
+      "start": 1794901582.9621549,
+      "end": 1794901715.1790257
+    },
+    {
+      "index": 22,
+      "start": 1794901715.606819,
+      "end": 1794901842.8430815
+    },
+    {
+      "index": 23,
+      "start": 1794901843.2842517,
+      "end": 1794901970.452698
+    },
+    {
+      "index": 24,
+      "start": 1794901970.8591816,
+      "end": 1794902094.4506855
+    }
+  ],
+  "external_cpu_contention": "Cannot establish retrospectively from local receipts; no CPU-utilization history.",
+  "limitation": "Wall score independently checked from saved breakdown formula; wall geometry scoring engine unchanged. No blue/full score."
+}

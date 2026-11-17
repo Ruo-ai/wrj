@@ -1,0 +1,21 @@
+{
+  "head": "949f3b9afb04aaf29a6f4009bcdfed176cc38138",
+  "git_status": "",
+  "batch": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20a_20261117_150615",
+  "review": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r20_review_20261117_160246",
+  "frozen_copy_matches": {
+    "plan.json": true,
+    "prepared.json": true,
+    "source_bytes.json": true
+  },
+  "live_sources_and_environment_match": true,
+  "progress": {
+    "completed": 24,
+    "expected": 24,
+    "active": null,
+    "complete": true,
+    "valid": 24,
+    "invalid": 0,
+    "smoke": false
+  }
+}

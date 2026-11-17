@@ -1,0 +1,416 @@
+[
+  {
+    "map": "yh_map_fs_72",
+    "round": 1,
+    "controller": "rl11_lines",
+    "gate": {
+      "axis": "h",
+      "center_px": [
+        299.0,
+        423
+      ],
+      "nominal_gap": 56,
+      "endpoint_thickness": 6,
+      "home_distance": 221.77916944564473,
+      "id": "G01"
+    },
+    "source": "actual saved pre-plan grid snapshots; counts are planning instants, not all control steps",
+    "drones": [
+      {
+        "owner": 0,
+        "plans": 116,
+        "free": 116,
+        "raw_obstacle": 41,
+        "inflated": 112,
+        "reachable": 1,
+        "near_gate_goal": 7,
+        "route_empty": 0
+      },
+      {
+        "owner": 1,
+        "plans": 98,
+        "free": 98,
+        "raw_obstacle": 14,
+        "inflated": 82,
+        "reachable": 1,
+        "near_gate_goal": 8,
+        "route_empty": 0
+      },
+      {
+        "owner": 2,
+        "plans": 108,
+        "free": 108,
+        "raw_obstacle": 2,
+        "inflated": 106,
+        "reachable": 2,
+        "near_gate_goal": 8,
+        "route_empty": 0
+      },
+      {
+        "owner": 3,
+        "plans": 99,
+        "free": 96,
+        "raw_obstacle": 33,
+        "inflated": 95,
+        "reachable": 0,
+        "near_gate_goal": 6,
+        "route_empty": 0
+      },
+      {
+        "owner": 4,
+        "plans": 132,
+        "free": 131,
+        "raw_obstacle": 0,
+        "inflated": 126,
+        "reachable": 2,
+        "near_gate_goal": 7,
+        "route_empty": 1
+      }
+    ]
+  },
+  {
+    "map": "yh_map_fs_72",
+    "round": 1,
+    "controller": "rl17_repair",
+    "gate": {
+      "axis": "h",
+      "center_px": [
+        299.0,
+        423
+      ],
+      "nominal_gap": 56,
+      "endpoint_thickness": 6,
+      "home_distance": 221.77916944564473,
+      "id": "G01"
+    },
+    "source": "actual saved pre-plan grid snapshots; counts are planning instants, not all control steps",
+    "drones": [
+      {
+        "owner": 0,
+        "plans": 116,
+        "free": 116,
+        "raw_obstacle": 41,
+        "inflated": 112,
+        "reachable": 1,
+        "near_gate_goal": 7,
+        "route_empty": 0
+      },
+      {
+        "owner": 1,
+        "plans": 98,
+        "free": 98,
+        "raw_obstacle": 14,
+        "inflated": 82,
+        "reachable": 1,
+        "near_gate_goal": 8,
+        "route_empty": 0
+      },
+      {
+        "owner": 2,
+        "plans": 108,
+        "free": 108,
+        "raw_obstacle": 2,
+        "inflated": 106,
+        "reachable": 2,
+        "near_gate_goal": 8,
+        "route_empty": 0
+      },
+      {
+        "owner": 3,
+        "plans": 99,
+        "free": 96,
+        "raw_obstacle": 33,
+        "inflated": 95,
+        "reachable": 0,
+        "near_gate_goal": 6,
+        "route_empty": 0
+      },
+      {
+        "owner": 4,
+        "plans": 132,
+        "free": 131,
+        "raw_obstacle": 0,
+        "inflated": 126,
+        "reachable": 2,
+        "near_gate_goal": 7,
+        "route_empty": 1
+      }
+    ]
+  },
+  {
+    "map": "yh_map_fs_72",
+    "round": 1,
+    "controller": "r20_budget",
+    "gate": {
+      "axis": "h",
+      "center_px": [
+        299.0,
+        423
+      ],
+      "nominal_gap": 56,
+      "endpoint_thickness": 6,
+      "home_distance": 221.77916944564473,
+      "id": "G01"
+    },
+    "source": "actual saved pre-plan grid snapshots; counts are planning instants, not all control steps",
+    "drones": [
+      {
+        "owner": 0,
+        "plans": 99,
+        "free": 99,
+        "raw_obstacle": 35,
+        "inflated": 95,
+        "reachable": 1,
+        "near_gate_goal": 6,
+        "route_empty": 1
+      },
+      {
+        "owner": 1,
+        "plans": 89,
+        "free": 89,
+        "raw_obstacle": 11,
+        "inflated": 73,
+        "reachable": 1,
+        "near_gate_goal": 7,
+        "route_empty": 1
+      },
+      {
+        "owner": 2,
+        "plans": 103,
+        "free": 103,
+        "raw_obstacle": 11,
+        "inflated": 97,
+        "reachable": 2,
+        "near_gate_goal": 7,
+        "route_empty": 1
+      },
+      {
+        "owner": 3,
+        "plans": 87,
+        "free": 84,
+        "raw_obstacle": 23,
+        "inflated": 83,
+        "reachable": 0,
+        "near_gate_goal": 5,
+        "route_empty": 1
+      },
+      {
+        "owner": 4,
+        "plans": 85,
+        "free": 84,
+        "raw_obstacle": 0,
+        "inflated": 79,
+        "reachable": 2,
+        "near_gate_goal": 11,
+        "route_empty": 0
+      }
+    ]
+  },
+  {
+    "map": "yh_map_fs_55",
+    "round": 1,
+    "controller": "rl11_lines",
+    "gate": {
+      "axis": "v",
+      "center_px": [
+        303,
+        490.0
+      ],
+      "nominal_gap": 56,
+      "endpoint_thickness": 6,
+      "home_distance": 163.47782724271815,
+      "id": "G01"
+    },
+    "source": "actual saved pre-plan grid snapshots; counts are planning instants, not all control steps",
+    "drones": [
+      {
+        "owner": 0,
+        "plans": 109,
+        "free": 108,
+        "raw_obstacle": 0,
+        "inflated": 83,
+        "reachable": 1,
+        "near_gate_goal": 6,
+        "route_empty": 8
+      },
+      {
+        "owner": 1,
+        "plans": 102,
+        "free": 102,
+        "raw_obstacle": 11,
+        "inflated": 87,
+        "reachable": 4,
+        "near_gate_goal": 7,
+        "route_empty": 3
+      },
+      {
+        "owner": 2,
+        "plans": 106,
+        "free": 106,
+        "raw_obstacle": 0,
+        "inflated": 54,
+        "reachable": 8,
+        "near_gate_goal": 12,
+        "route_empty": 2
+      },
+      {
+        "owner": 3,
+        "plans": 115,
+        "free": 109,
+        "raw_obstacle": 80,
+        "inflated": 107,
+        "reachable": 0,
+        "near_gate_goal": 1,
+        "route_empty": 5
+      },
+      {
+        "owner": 4,
+        "plans": 119,
+        "free": 119,
+        "raw_obstacle": 0,
+        "inflated": 108,
+        "reachable": 5,
+        "near_gate_goal": 8,
+        "route_empty": 2
+      }
+    ]
+  },
+  {
+    "map": "yh_map_fs_55",
+    "round": 1,
+    "controller": "rl17_repair",
+    "gate": {
+      "axis": "v",
+      "center_px": [
+        303,
+        490.0
+      ],
+      "nominal_gap": 56,
+      "endpoint_thickness": 6,
+      "home_distance": 163.47782724271815,
+      "id": "G01"
+    },
+    "source": "actual saved pre-plan grid snapshots; counts are planning instants, not all control steps",
+    "drones": [
+      {
+        "owner": 0,
+        "plans": 109,
+        "free": 108,
+        "raw_obstacle": 0,
+        "inflated": 83,
+        "reachable": 1,
+        "near_gate_goal": 6,
+        "route_empty": 8
+      },
+      {
+        "owner": 1,
+        "plans": 102,
+        "free": 102,
+        "raw_obstacle": 11,
+        "inflated": 87,
+        "reachable": 4,
+        "near_gate_goal": 7,
+        "route_empty": 3
+      },
+      {
+        "owner": 2,
+        "plans": 106,
+        "free": 106,
+        "raw_obstacle": 0,
+        "inflated": 54,
+        "reachable": 8,
+        "near_gate_goal": 12,
+        "route_empty": 2
+      },
+      {
+        "owner": 3,
+        "plans": 115,
+        "free": 109,
+        "raw_obstacle": 80,
+        "inflated": 107,
+        "reachable": 0,
+        "near_gate_goal": 1,
+        "route_empty": 5
+      },
+      {
+        "owner": 4,
+        "plans": 119,
+        "free": 119,
+        "raw_obstacle": 0,
+        "inflated": 108,
+        "reachable": 5,
+        "near_gate_goal": 8,
+        "route_empty": 2
+      }
+    ]
+  },
+  {
+    "map": "yh_map_fs_55",
+    "round": 1,
+    "controller": "r20_budget",
+    "gate": {
+      "axis": "v",
+      "center_px": [
+        303,
+        490.0
+      ],
+      "nominal_gap": 56,
+      "endpoint_thickness": 6,
+      "home_distance": 163.47782724271815,
+      "id": "G01"
+    },
+    "source": "actual saved pre-plan grid snapshots; counts are planning instants, not all control steps",
+    "drones": [
+      {
+        "owner": 0,
+        "plans": 101,
+        "free": 100,
+        "raw_obstacle": 4,
+        "inflated": 78,
+        "reachable": 3,
+        "near_gate_goal": 6,
+        "route_empty": 4
+      },
+      {
+        "owner": 1,
+        "plans": 94,
+        "free": 94,
+        "raw_obstacle": 22,
+        "inflated": 68,
+        "reachable": 1,
+        "near_gate_goal": 6,
+        "route_empty": 7
+      },
+      {
+        "owner": 2,
+        "plans": 90,
+        "free": 90,
+        "raw_obstacle": 2,
+        "inflated": 62,
+        "reachable": 8,
+        "near_gate_goal": 7,
+        "route_empty": 2
+      },
+      {
+        "owner": 3,
+        "plans": 110,
+        "free": 104,
+        "raw_obstacle": 68,
+        "inflated": 102,
+        "reachable": 0,
+        "near_gate_goal": 1,
+        "route_empty": 11
+      },
+      {
+        "owner": 4,
+        "plans": 114,
+        "free": 114,
+        "raw_obstacle": 0,
+        "inflated": 54,
+        "reachable": 6,
+        "near_gate_goal": 6,
+        "route_empty": 6
+      }
+    ]
+  }
+]
