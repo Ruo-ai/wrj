@@ -30,6 +30,24 @@ def panel(ax,kind,row,data):
         img[data['truth'].astype(bool)]=[.12,.12,.12];ax.imshow(img);base.areas(ax,data['spec'])
 
 
+def observation_audit(row,data):
+    """Audit any map without inventing the older reports' hand-picked ROIs."""
+    name=row['map'];temporary=name not in evidence.REGIONS
+    if temporary:evidence.REGIONS[name]={}
+    try:evidence.audit(row,data)
+    finally:
+        if temporary:del evidence.REGIONS[name]
+
+
+def outage_description(row):
+    position=row['full_outage_position'];heading=row['full_outage_heading_degrees']
+    if not position['count'] and not heading['count']:
+        return '无缺测样本；位置/角误差不适用。'
+    p='不适用' if position['mean'] is None else f"{position['mean']:.4f}px"
+    h='不适用' if heading['mean'] is None else f"{heading['mean']:.4f}°"
+    return f'缺测位置均值 {p}；角误差均值 {h}。'
+
+
 def audit(row,data):
     run=Path(row['attempt']);doc=base.read(run/'p2l17_diagnostics.json')
     row['p2l_diagnostic_errors']=doc['errors'];row['p2l_diagnostic_seconds']=doc['seconds']
@@ -108,7 +126,7 @@ def review(batch,out=None):
     for source in base.read(batch/'results.json'):
         try:
             row,data=base.review_row(source,planhash)
-            evidence.audit(row,data);lines.accuracy(row,data);audit(row,data)
+            observation_audit(row,data);lines.accuracy(row,data);audit(row,data)
             rows.append(row);assets[row['map'],row['controller'],row['round']]=data
         except Exception as exc:
             failures.append(dict(source=source,error=repr(exc)))
@@ -137,7 +155,7 @@ def review(batch,out=None):
         doc+=['',f"## {r['map']} / {NAMES[r['controller']]} / r{r['round']} / seed {r['red_seed']}",'',
             f"红有效={r['red_valid']}；诊断有效={r['diagnostic_valid']}；峰值Job内存={r['resources'].get('peak_job_commit_bytes')}字节；单CPU/4GB。",
             f"地图更新累计 {r['mapper_seconds']:.4f}s；新增点线匹配 {r['incremental_p2l_seconds']:.4f}s；匹配决策 {r['match_decisions']}。",
-            f"缺测位置均值 {r['full_outage_position']['mean']:.4f}px；角误差均值 {r['full_outage_heading_degrees']['mean']:.4f}°。",
+            outage_description(r),
             f"实际提交回执 {r['submission_receipts']}。广播尝试不能当成已送达。"]
         for kind in list(KINDS)+['layers','local_maps']:
             doc+=['',f'![{kind}]({(out/f"{prefix}_{kind}.png").as_posix()})']

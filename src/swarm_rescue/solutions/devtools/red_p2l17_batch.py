@@ -19,7 +19,7 @@ def main():
             sys.argv+=['--output',str(Path('output/sf13')/('rl17_manual_'+datetime.now().strftime('%Y%m%d_%H%M%S')))]
         output=Path(sys.argv[sys.argv.index('--output')+1])
         if output.exists():raise SystemExit('Use a new output directory; RL17 does not resume old batches')
-        if '--maps' not in sys.argv:sys.argv+=['--maps','Map08','Map09']
+        if '--maps' not in sys.argv:sys.argv+=['--maps','Map06','Map08','Map09']
         if '--controllers' not in sys.argv:sys.argv+=['--controllers','rl11_lines','rl17_repair']
     saved=driver.MODULE,driver.EXTRA,driver.narrow_recording
     @contextmanager
