@@ -1,0 +1,405 @@
+{
+  "rows": [
+    {
+      "case": "corridor",
+      "accepted": true,
+      "info": {
+        "reason": "matched",
+        "rank": 1,
+        "support": 0.9888888888888889,
+        "rms": 1.7491897616184453,
+        "cost": 1.4209748866543483,
+        "eigenvalues": [
+          3.0616190302913074e-07,
+          0.9999996938380991
+        ],
+        "observable_projector": [
+          [
+            2.208988506033029e-08,
+            -0.00014862666171440192
+          ],
+          [
+            -0.00014862666171440192,
+            0.9999999779101149
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.6519655165250696,
+          1.0027777958370643
+        ],
+        "reverse_support": 0.7444444444444445
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        7.999719182759058,
+        -2.110586408264199,
+        0.05782472819541695
+      ],
+      "position_error": 2.002774616272968,
+      "angle_error_deg": 0.12463389369641806,
+      "seconds": 0.00825309999709134,
+      "limitation": null
+    },
+    {
+      "case": "corner",
+      "accepted": true,
+      "info": {
+        "reason": "matched",
+        "rank": 2,
+        "support": 0.9111111111111111,
+        "rms": 1.9878621248353165,
+        "cost": 1.6824686320767954,
+        "eigenvalues": [
+          0.377924936932759,
+          0.6220750630672405
+        ],
+        "observable_projector": [
+          [
+            1.0,
+            1.6327865055173008e-19
+          ],
+          [
+            1.6327865055173008e-19,
+            0.9999999999999999
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.34419776753319276,
+          0.47777650742011807,
+          0.6529694456992186
+        ],
+        "reverse_support": 0.6444444444444445
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        5.8170500816265305,
+        -2.495392542712622,
+        0.06407906946599962
+      ],
+      "position_error": 0.5280951088659466,
+      "angle_error_deg": 0.2337134647424574,
+      "seconds": 0.014739099999133032,
+      "limitation": null
+    },
+    {
+      "case": "repeated_rooms_alias",
+      "accepted": true,
+      "info": {
+        "reason": "matched",
+        "rank": 2,
+        "support": 0.9888888888888889,
+        "rms": 0.16580393766639911,
+        "cost": 0.10423568833482022,
+        "eigenvalues": [
+          0.38202792671997404,
+          0.6179720732800263
+        ],
+        "observable_projector": [
+          [
+            0.9999999999999999,
+            6.111281164885854e-19
+          ],
+          [
+            6.111281164885854e-19,
+            0.9999999999999999
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.3706533480101413,
+          0.53510056633862,
+          0.6341897734413546
+        ],
+        "reverse_support": 0.9888888888888889
+      },
+      "truth_relative": [
+        400.0,
+        0.0,
+        0.0
+      ],
+      "prior": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "used": [
+        0.013287795727855366,
+        -0.013555345974865334,
+        0.0011332562431332072
+      ],
+      "position_error": 399.986712433964,
+      "angle_error_deg": 0.06493079983838425,
+      "seconds": 0.009979099999327445,
+      "limitation": "Deliberate wrong-alias prior outside normal motion basin; local acceptance is not global correctness."
+    },
+    {
+      "case": "single_wall",
+      "accepted": true,
+      "info": {
+        "reason": "matched",
+        "rank": 1,
+        "support": 0.9861111111111112,
+        "rms": 1.637205954441075,
+        "cost": 1.2964913332957548,
+        "eigenvalues": [
+          -3.441071348220595e-22,
+          1.000000000000001
+        ],
+        "observable_projector": [
+          [
+            1.5801717794024576e-07,
+            0.00039751371419212346
+          ],
+          [
+            0.00039751371419212346,
+            0.999999841982822
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.6321469730605485,
+          1.0008840225011482
+        ],
+        "reverse_support": 0.9859154929577465
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        8.000796794524602,
+        -1.9955549450338588,
+        0.056772447023397454
+      ],
+      "position_error": 2.0008017321797715,
+      "angle_error_deg": 0.18492516371421505,
+      "seconds": 0.005453699999634409,
+      "limitation": null
+    },
+    {
+      "case": "open",
+      "accepted": false,
+      "info": {
+        "reason": "few_features"
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "position_error": 2.8284271247461903,
+      "angle_error_deg": 2.0053522829578894,
+      "seconds": 0.00013299999773153104,
+      "limitation": null
+    },
+    {
+      "case": "invalid",
+      "accepted": false,
+      "info": {
+        "reason": "few_features"
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "position_error": 2.8284271247461903,
+      "angle_error_deg": 2.0053522829578894,
+      "seconds": 0.00013359999866224825,
+      "limitation": null
+    },
+    {
+      "case": "dynamic_known",
+      "accepted": true,
+      "info": {
+        "reason": "matched",
+        "rank": 2,
+        "support": 0.8888888888888888,
+        "rms": 2.151142734679164,
+        "cost": 1.8883937348327131,
+        "eigenvalues": [
+          0.2707903621500499,
+          0.7292096378499502
+        ],
+        "observable_projector": [
+          [
+            1.0000000000000002,
+            8.133707117719606e-19
+          ],
+          [
+            8.133707117719606e-19,
+            1.0
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.24964568008690524,
+          0.5799145502383755,
+          0.740151371021145
+        ],
+        "reverse_support": 0.6444444444444445
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        6.25569629681179,
+        -2.441446797066446,
+        0.05734408001912783
+      ],
+      "position_error": 0.5101527916648962,
+      "angle_error_deg": 0.15217300562844474,
+      "seconds": 0.008897199997591088,
+      "limitation": "Only current semantic exclusion is available; old unlabelled foreground remains possible."
+    },
+    {
+      "case": "dynamic_unknown",
+      "accepted": true,
+      "info": {
+        "reason": "matched",
+        "rank": 2,
+        "support": 0.8333333333333334,
+        "rms": 1.9379963386565011,
+        "cost": 1.6237582671623962,
+        "eigenvalues": [
+          0.27462343629351643,
+          0.7253765637064833
+        ],
+        "observable_projector": [
+          [
+            0.9999999999999998,
+            -3.631645335403428e-19
+          ],
+          [
+            -3.631645335403428e-19,
+            0.9999999999999998
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.2550525613581836,
+          0.5538654051267512,
+          0.7402870352887923
+        ],
+        "reverse_support": 0.6444444444444445
+      },
+      "truth_relative": [
+        6.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        8.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        5.271454410932468,
+        -2.4644533000297586,
+        0.059439068753123436
+      ],
+      "position_error": 0.8639997356818405,
+      "angle_error_deg": 0.03213899304304099,
+      "seconds": 0.00854059999983292,
+      "limitation": "Only current semantic exclusion is available; old unlabelled foreground remains possible."
+    },
+    {
+      "case": "noisy_oblique_rejected",
+      "accepted": false,
+      "info": {
+        "reason": "reverse_support",
+        "rank": 2,
+        "support": 0.8777777777777778,
+        "rms": 2.0061503178491757,
+        "cost": 1.7184310393308004,
+        "eigenvalues": [
+          0.34116261524553126,
+          0.6588373847544686
+        ],
+        "observable_projector": [
+          [
+            1.0,
+            -3.846224014661594e-18
+          ],
+          [
+            -3.846224014661594e-18,
+            1.0000000000000002
+          ]
+        ],
+        "hessian_eigenvalues": [
+          0.32293638668087227,
+          0.4920239590784989,
+          0.6728373178114048
+        ]
+      },
+      "truth_relative": [
+        3.0,
+        -2.0,
+        0.06
+      ],
+      "prior": [
+        5.0,
+        -4.0,
+        0.095
+      ],
+      "used": [
+        5.0,
+        -4.0,
+        0.095
+      ],
+      "position_error": 2.8284271247461903,
+      "angle_error_deg": 2.0053522829578894,
+      "seconds": 0.0105199999998149,
+      "limitation": null
+    }
+  ],
+  "source_sha256": "f349d64aabcd512443bf129b6076b2f754f0e9567be1d6c609f843a97053c291",
+  "scope": "Synthetic pair fixtures, no flight and no competition scores. Failures intentionally retained."
+}

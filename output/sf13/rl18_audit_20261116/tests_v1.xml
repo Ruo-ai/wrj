@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="19" time="4.804" timestamp="2026-11-16T19:54:06.212383+08:00" hostname="Ruoai"><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[False-0.0]" time="0.011" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[False-0.53]" time="0.006"><failure message="AssertionError: assert np.float64(0.08097701894858857) &lt; 0.05&#10; +  where np.float64(0.08097701894858857) = &lt;function norm at 0x000002B17E6BF430&gt;((array([ 3.01844233, -1.92115104]) - array([ 3., -2.])))&#10; +    where &lt;function norm at 0x000002B17E6BF430&gt; = &lt;module 'numpy.linalg' from 'E:\\桌面\\gitee\\swarm-eod\\.venv\\lib\\site-packages\\numpy\\linalg\\__init__.py'&gt;.norm&#10; +      where &lt;module 'numpy.linalg' from 'E:\\桌面\\gitee\\swarm-eod\\.venv\\lib\\site-packages\\numpy\\linalg\\__init__.py'&gt; = np.linalg">angle = 0.53, noisy = False
+
+    @pytest.mark.parametrize('angle',[0.,.53,3.13,-3.13])
+    @pytest.mark.parametrize('noisy',[False,True])
+    def test_corner_relative_motion_and_wrapping(angle,noisy):
+        rng=np.random.default_rng(742) if noisy else None
+        ref=make_scan(*scan(ROOM,np.zeros(2),angle,rng))
+        truth=np.array([3.,-2.,.06]); world=rotation(angle)@truth[:2]
+        current=make_scan(*scan(ROOM,world,angle+truth[2],rng))
+        answer,info=match_pair(current,ref,truth+np.array([2.,-2.,.035]))
+        assert answer is not None,info
+&gt;       assert np.linalg.norm(answer[:2]-truth[:2])&lt;(2 if noisy else .05)
+E       AssertionError: assert np.float64(0.08097701894858857) &lt; 0.05
+E        +  where np.float64(0.08097701894858857) = &lt;function norm at 0x000002B17E6BF430&gt;((array([ 3.01844233, -1.92115104]) - array([ 3., -2.])))
+E        +    where &lt;function norm at 0x000002B17E6BF430&gt; = &lt;module 'numpy.linalg' from 'E:\\桌面\\gitee\\swarm-eod\\.venv\\lib\\site-packages\\numpy\\linalg\\__init__.py'&gt;.norm
+E        +      where &lt;module 'numpy.linalg' from 'E:\\桌面\\gitee\\swarm-eod\\.venv\\lib\\site-packages\\numpy\\linalg\\__init__.py'&gt; = np.linalg
+
+src\swarm_rescue\solutions\devtools\test_red_scan18.py:22: AssertionError</failure></testcase><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[False-3.13]" time="0.007" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[False--3.13]" time="0.006" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[True-0.0]" time="0.042" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[True-0.53]" time="0.007"><failure message="AssertionError: {'reason': 'reverse_support', 'rank': 2, 'support': 0.8777777777777778, 'rms': 2.006150317849176, ...}&#10;assert None is not None">angle = 0.53, noisy = True
+
+    @pytest.mark.parametrize('angle',[0.,.53,3.13,-3.13])
+    @pytest.mark.parametrize('noisy',[False,True])
+    def test_corner_relative_motion_and_wrapping(angle,noisy):
+        rng=np.random.default_rng(742) if noisy else None
+        ref=make_scan(*scan(ROOM,np.zeros(2),angle,rng))
+        truth=np.array([3.,-2.,.06]); world=rotation(angle)@truth[:2]
+        current=make_scan(*scan(ROOM,world,angle+truth[2],rng))
+        answer,info=match_pair(current,ref,truth+np.array([2.,-2.,.035]))
+&gt;       assert answer is not None,info
+E       AssertionError: {'reason': 'reverse_support', 'rank': 2, 'support': 0.8777777777777778, 'rms': 2.006150317849176, ...}
+E       assert None is not None
+
+src\swarm_rescue\solutions\devtools\test_red_scan18.py:21: AssertionError</failure></testcase><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[True-3.13]" time="0.011" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_corner_relative_motion_and_wrapping[True--3.13]" time="0.007" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_single_wall_and_straight_corridor_preserve_unobservable_translation[1]" time="0.005" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_single_wall_and_straight_corridor_preserve_unobservable_translation[2]" time="0.005" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_repeated_room_equal_surfaces_reject_instead_of_counting_two_votes" time="0.003" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_open_space_and_invalid_rays_fall_back_to_odometry[nan]" time="0.002" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_open_space_and_invalid_rays_fall_back_to_odometry[inf]" time="0.001" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_open_space_and_invalid_rays_fall_back_to_odometry[0.0]" time="0.001" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_open_space_and_invalid_rays_fall_back_to_odometry[230.0]" time="0.002" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_dynamic_foreground_is_excluded_and_does_not_bridge_occlusion" time="0.007" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_finite_segments_cannot_fill_unobserved_doorway" time="0.001" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_mixed_radio_event_types_do_not_supply_future_or_duplicate_votes" time="0.001" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_scan18" name="test_relative_compose_are_inverse_and_scan_matching_is_read_only" time="0.115" /></testsuite></testsuites>

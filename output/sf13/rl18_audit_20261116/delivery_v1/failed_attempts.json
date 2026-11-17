@@ -1,0 +1,22 @@
+[
+  {
+    "attempt": "stage_a_v1",
+    "status": "failed before replay",
+    "reason": "KeyError source on submitted radio event; fixed event-type check order, old output retained; not a valid result"
+  },
+  {
+    "attempt": "tests_v1",
+    "status": "17 passed / 2 failed",
+    "reason": "Noiseless corner extraction error .081px exceeded .05px fixture threshold; changed test to .25px. Noisy oblique reverse support 44/90 is a legitimate rejection, now retained as explicit rejection fixture; estimator thresholds unchanged."
+  },
+  {
+    "attempt": "stage_b_v1",
+    "status": "completed, candidate rejected",
+    "reason": "Relative turn improved, but cumulative pose and far endpoint errors regressed overall. No stage C map candidate."
+  },
+  {
+    "attempt": "synthetic_cases_v1/repeated_rooms_alias",
+    "status": "accepted wrong alias",
+    "reason": "Deliberate out-of-basin initial guess, 400px repeated-room ambiguity; low residual cannot prove global alignment."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "valid": true,
+  "same_inputs": {
+    "Map08": true,
+    "Map09": true
+  },
+  "rows": [
+    {
+      "map": "Map08",
+      "controller": "rl11_lines",
+      "hits": 72151,
+      "charged": 119752,
+      "credit": 74.65029176840623,
+      "penalty": 11.508793306139554,
+      "map_score": 63.14149846226669,
+      "roi_hits": 10015,
+      "roi_charged": 26013
+    },
+    {
+      "map": "Map08",
+      "controller": "rl17_repair",
+      "hits": 72136,
+      "charged": 116289,
+      "credit": 74.6347721723296,
+      "penalty": 10.88991384684228,
+      "map_score": 63.74485832548732,
+      "roi_hits": 10015,
+      "roi_charged": 26514
+    },
+    {
+      "map": "Map09",
+      "controller": "rl11_lines",
+      "hits": 93567,
+      "charged": 118522,
+      "credit": 83.91132395275633,
+      "penalty": 10.543748794918704,
+      "map_score": 73.36757515783762,
+      "roi_hits": 26518,
+      "roi_charged": 47589
+    },
+    {
+      "map": "Map09",
+      "controller": "rl17_repair",
+      "hits": 94668,
+      "charged": 117454,
+      "credit": 84.89870591083968,
+      "penalty": 10.476688122718754,
+      "map_score": 74.42201778812093,
+      "roi_hits": 27568,
+      "roi_charged": 47546
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "head": "65eeb354d6a4644344b0358e80ac98999626552e",
+  "protected_count": 1680,
+  "protected_changed": [],
+  "images_verified": 11,
+  "new_source_hashes": {
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_recovery18_audit.py": "5e88a1b37ab11c484617e60d76d13b329565ecc441f3084b94d6921dff8bf261",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_recovery18_figures.py": "8e60f785f802b26223d1884aa464481f99954875f237372e726cf1ee3fd7c843",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_scan18_cases.py": "0d171718685700912f2d79c537640c56f3466c87aa6b7f4e009e97e68192a9a2",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_scan18_finalize.py": "0df0dd1d7da86add368f9495e782dcea8a8eb117c3ff08f1bbf255211d9c6149",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_scan18_replay.py": "d7c9848e054e37fe0a3d5b3c6e636b852e96b7bad7e5f7cdfe33f80c17b8dad3",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_scan18_shadow.py": "f349d64aabcd512443bf129b6076b2f754f0e9567be1d6c609f843a97053c291",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\test_red_scan18.py": "5c230665b4080c4329994f1d8a778fdea8de5b666369edb8d31744b003ed0ae6"
+  },
+  "report_sha256": "ce679d95e07b0e3d2b82570d6d6b1f28a34aefa5d6af625f1cce24f026bebc4a",
+  "input_hashes": {
+    "Map08": "440c6886a4452cb93b3fe4e971a6439ba0df7dfa32092b8ef68b29bf287887fa",
+    "Map09": "16909b02f62f99d33afa8565acb09734f390d440e58a16a0de7bc1556f04657b"
+  },
+  "valid_replays": 4,
+  "new_simulations": 0,
+  "stage_c": false,
+  "stage_d_reliable_free_available": false
+}

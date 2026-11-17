@@ -1,0 +1,102 @@
+[
+  {
+    "map": "Map08",
+    "owner": 0,
+    "step": 3264,
+    "shadow_position": 68.79964902988638,
+    "rl11_position": 7.2416959182883405,
+    "shadow_heading": 23.053166308156097,
+    "rl11_heading": 1.153337079412592,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map08",
+    "owner": 1,
+    "step": 3066,
+    "shadow_position": 56.094827806265016,
+    "rl11_position": 5.865875201420041,
+    "shadow_heading": 9.063304701571365,
+    "rl11_heading": 1.052907388477635,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map08",
+    "owner": 2,
+    "step": 3775,
+    "shadow_position": 116.8433627621406,
+    "rl11_position": 48.84846996627826,
+    "shadow_heading": 12.199043373683484,
+    "rl11_heading": 6.038902084283799,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map08",
+    "owner": 3,
+    "step": 3832,
+    "shadow_position": 46.24354277209221,
+    "rl11_position": 50.23373393624121,
+    "shadow_heading": 14.938033838418713,
+    "rl11_heading": 13.204465047810467,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map08",
+    "owner": 4,
+    "step": 3073,
+    "shadow_position": 127.213370259898,
+    "rl11_position": 13.999340158077935,
+    "shadow_heading": 14.765946703917129,
+    "rl11_heading": 0.8995139354544665,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map09",
+    "owner": 0,
+    "step": 1301,
+    "shadow_position": 51.06844981980594,
+    "rl11_position": 14.595510835392583,
+    "shadow_heading": 10.219521459117841,
+    "rl11_heading": 14.872924932389783,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map09",
+    "owner": 1,
+    "step": 947,
+    "shadow_position": 161.82821557507066,
+    "rl11_position": 100.95010154118796,
+    "shadow_heading": 22.409007182162984,
+    "rl11_heading": 8.845719575335146,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map09",
+    "owner": 2,
+    "step": 821,
+    "shadow_position": 174.87905121306352,
+    "rl11_position": 82.00033353807541,
+    "shadow_heading": 12.665660191902267,
+    "rl11_heading": 12.873977020187096,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map09",
+    "owner": 3,
+    "step": 911,
+    "shadow_position": 79.81252829626983,
+    "rl11_position": 21.468693026256773,
+    "shadow_heading": 23.579186321376472,
+    "rl11_heading": 4.840301292557188,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  },
+  {
+    "map": "Map09",
+    "owner": 4,
+    "step": 3815,
+    "shadow_position": 110.8113147655419,
+    "rl11_position": 45.29286790176152,
+    "shadow_heading": 9.589539557561514,
+    "rl11_heading": 4.537278889741188,
+    "note": "Maximum cumulative shadow position error in this aircraft, not a local mismatch probability."
+  }
+]

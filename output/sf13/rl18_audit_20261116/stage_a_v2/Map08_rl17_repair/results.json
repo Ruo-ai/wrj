@@ -1,0 +1,1596 @@
+{
+  "schema": "rl18-recovery-audit-v1",
+  "source": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001",
+  "request": {
+    "official_map": "Map08",
+    "stage": "semifinal",
+    "zones": [
+      "NO_GPS_ZONE"
+    ],
+    "map": "Map08",
+    "map_file": "E:\\桌面\\gitee\\swarm-eod\\map_data\\map_08.json",
+    "round": 1,
+    "seed": 200806601,
+    "phase": "red",
+    "run_dir": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001",
+    "drones": 5,
+    "bombs": 2,
+    "recording": true,
+    "ray_backend": "cpu",
+    "visual": false,
+    "smoke": false,
+    "diagnostic_steps": null,
+    "diagnostic_profile": false,
+    "lifecycle_diagnostics": false,
+    "plan_sha256": "fe8c4f4ff871910503146105f939880ce86d2457204260794e2c06f935376b92",
+    "controller_selector": "rl17_repair",
+    "controller_class": "MyDroneRedRepair17",
+    "controller_module": "swarm_rescue.solutions.my_drone_red_repair17",
+    "engine_dir": "C:\\Users\\fzhuj\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\#!sandbox.{283b9223-6c3a-421f-8c1f-19ea55d692f3}\\Temp\\g3-engine-nj8lmftc\\artifacts"
+  },
+  "source_hashes": {
+    "mapper_legal_inputs.npz": "440c6886a4452cb93b3fe4e971a6439ba0df7dfa32092b8ef68b29bf287887fa",
+    "p2l17_diagnostics.npz": "17478b69dd7036e7f0c0a6bf9a20efd257fe4add05dc57640edde4116087a61d",
+    "p2l17_diagnostics.json": "22ea61e31f6cce5143eb2e3df6e19bd26adde8968c8576d26ed1ec81f49232ad",
+    "exploration_stages.npz": "33d00fb098fd62ccd57f4269600ba2204fc25d2f2708a27cf155161d53c32e51",
+    "result.json": "8df8c2f752f21995e7e225ee687560e357567d72aa4d95ca158f6767bb79477a"
+  },
+  "source_code": {
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\devtools\\red_recovery18_audit.py": "5e88a1b37ab11c484617e60d76d13b329565ecc441f3084b94d6921dff8bf261",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\my_drone_red_lines11.py": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\my_drone_red_repair17.py": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\my_drone_red_p2l17.py": "d4e7c107de6277cb8bc0b1c2bf7d59118fea6420091441597900fd9792ba4c70",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\my_drone_red_mapping.py": "fb9cd301dd10105189eef626a2a91cd66a5de73b8ed792d77800a989deead965",
+    "E:\\桌面\\gitee\\swarm-eod\\src\\swarm_rescue\\solutions\\semifinal_localization.py": "f6b7f733a4121fc457e831c5c494bd13dd81c4884425fc81f82733d7aa21fe19"
+  },
+  "exact": {
+    "0": {
+      "pose_max_abs": 0.0,
+      "pose_exact": true,
+      "final_local": true,
+      "published": {
+        "300": true,
+        "600": true,
+        "900": true,
+        "1200": true,
+        "1500": true,
+        "1800": true,
+        "2100": true,
+        "2400": true,
+        "2700": true,
+        "3000": true,
+        "3300": true,
+        "3600": true,
+        "3900": true,
+        "4200": true,
+        "4500": true
+      },
+      "received": true
+    },
+    "1": {
+      "pose_max_abs": 0.0,
+      "pose_exact": true,
+      "final_local": true,
+      "published": {
+        "300": true,
+        "600": true,
+        "900": true,
+        "1200": true,
+        "1500": true,
+        "1800": true,
+        "2100": true,
+        "2400": true,
+        "2700": true,
+        "3000": true,
+        "3300": true,
+        "3600": true,
+        "3900": true,
+        "4200": true,
+        "4500": true
+      },
+      "received": true
+    },
+    "2": {
+      "pose_max_abs": 0.0,
+      "pose_exact": true,
+      "final_local": true,
+      "published": {
+        "300": true,
+        "600": true,
+        "900": true,
+        "1200": true,
+        "1500": true,
+        "1800": true,
+        "2100": true,
+        "2400": true,
+        "2700": true,
+        "3000": true,
+        "3300": true,
+        "3600": true,
+        "3900": true,
+        "4200": true,
+        "4500": true
+      },
+      "received": true
+    },
+    "3": {
+      "pose_max_abs": 0.0,
+      "pose_exact": true,
+      "final_local": true,
+      "published": {
+        "300": true,
+        "600": true,
+        "900": true,
+        "1200": true,
+        "1500": true,
+        "1800": true,
+        "2100": true,
+        "2400": true,
+        "2700": true,
+        "3000": true,
+        "3300": true,
+        "3600": true,
+        "3900": true,
+        "4200": true,
+        "4500": true
+      },
+      "received": true
+    },
+    "4": {
+      "pose_max_abs": 0.0,
+      "pose_exact": true,
+      "final_local": true,
+      "published": {
+        "300": true,
+        "600": true,
+        "900": true,
+        "1200": true,
+        "1500": true,
+        "1800": true,
+        "2100": true,
+        "2400": true,
+        "2700": true,
+        "3000": true,
+        "3300": true,
+        "3600": true,
+        "3900": true,
+        "4200": true,
+        "4500": true
+      },
+      "received": true
+    }
+  },
+  "final_exact": true,
+  "score_exact": true,
+  "valid": true,
+  "final": {
+    "hits": 72136,
+    "charged": 116289,
+    "credit": 74.6347721723296,
+    "penalty": 10.88991384684228,
+    "map_score": 63.74485832548732,
+    "roi_hits": 10015,
+    "roi_charged": 26514
+  },
+  "source_contributions": [
+    {
+      "owner": 0,
+      "version": 4535,
+      "standalone": {
+        "hits": 36911,
+        "charged": 36223,
+        "credit": 38.18958738567231,
+        "penalty": 2.912738605706556,
+        "map_score": 35.27684877996575,
+        "roi_hits": 3414,
+        "roi_charged": 2763
+      },
+      "marginal_after_postprocessing": {
+        "added_hits": 180,
+        "removed_hits": 0,
+        "added_charged": 17490,
+        "removed_charged": 0
+      }
+    },
+    {
+      "owner": 1,
+      "version": 4530,
+      "standalone": {
+        "hits": 41683,
+        "charged": 39583,
+        "credit": 43.126888217522655,
+        "penalty": 3.5946694552363114,
+        "map_score": 39.53221876228635,
+        "roi_hits": 7991,
+        "roi_charged": 4348
+      },
+      "marginal_after_postprocessing": {
+        "added_hits": 2775,
+        "removed_hits": 0,
+        "added_charged": 17861,
+        "removed_charged": 0
+      }
+    },
+    {
+      "owner": 2,
+      "version": 4360,
+      "standalone": {
+        "hits": 50222,
+        "charged": 25383,
+        "credit": 51.96167694408806,
+        "penalty": 1.9290443663219592,
+        "map_score": 50.0326325777661,
+        "roi_hits": 4862,
+        "roi_charged": 3620
+      },
+      "marginal_after_postprocessing": {
+        "added_hits": 6693,
+        "removed_hits": 0,
+        "added_charged": 17261,
+        "removed_charged": 0
+      }
+    },
+    {
+      "owner": 3,
+      "version": 3900,
+      "standalone": {
+        "hits": 38648,
+        "charged": 30014,
+        "credit": 39.98675661134793,
+        "penalty": 2.6018707903095644,
+        "map_score": 37.38488582103837,
+        "roi_hits": 3150,
+        "roi_charged": 13619
+      },
+      "marginal_after_postprocessing": {
+        "added_hits": 717,
+        "removed_hits": 0,
+        "added_charged": 16038,
+        "removed_charged": 0
+      }
+    },
+    {
+      "owner": 4,
+      "version": 3930,
+      "standalone": {
+        "hits": 48678,
+        "charged": 30124,
+        "credit": 50.36419318793196,
+        "penalty": 2.8073914662914374,
+        "map_score": 47.556801721640525,
+        "roi_hits": 3663,
+        "roi_charged": 11220
+      },
+      "marginal_after_postprocessing": {
+        "added_hits": 3743,
+        "removed_hits": 0,
+        "added_charged": 14013,
+        "removed_charged": 0
+      }
+    }
+  ],
+  "recovery": [
+    {
+      "owner": 3,
+      "step": 1755,
+      "start": 1199,
+      "pending_before": 139,
+      "pending_after": 0,
+      "state_exact": true,
+      "stages": {
+        "before": {
+          "hits": 22802,
+          "charged": 12324,
+          "credit": 23.591855315978975,
+          "penalty": 1.020775565947937,
+          "map_score": 22.57107975003104,
+          "roi_hits": 3060,
+          "roi_charged": 3771
+        },
+        "unanchored_commit": {
+          "hits": 24349,
+          "charged": 15757,
+          "credit": 25.19244299135041,
+          "penalty": 1.491536646939536,
+          "map_score": 23.700906344410875,
+          "roi_hits": 4166,
+          "roi_charged": 6265
+        },
+        "anchored_commit": {
+          "hits": 23586,
+          "charged": 21839,
+          "credit": 24.403012870918346,
+          "penalty": 2.18466241968609,
+          "map_score": 22.218350451232258,
+          "roi_hits": 3048,
+          "roi_charged": 13455
+        },
+        "after": {
+          "hits": 23586,
+          "charged": 21839,
+          "credit": 24.403012870918346,
+          "penalty": 2.18466241968609,
+          "map_score": 22.218350451232258,
+          "roi_hits": 3048,
+          "roi_charged": 13455
+        }
+      },
+      "deltas": {
+        "before_to_unanchored_commit": {
+          "added_hits": 1592,
+          "removed_hits": 45,
+          "added_charged": 3433,
+          "removed_charged": 0
+        },
+        "unanchored_commit_to_anchored_commit": {
+          "added_hits": 1000,
+          "removed_hits": 1763,
+          "added_charged": 12611,
+          "removed_charged": 6529
+        },
+        "anchored_commit_to_after": {
+          "added_hits": 0,
+          "removed_hits": 0,
+          "added_charged": 0,
+          "removed_charged": 0
+        },
+        "before_to_after": {
+          "added_hits": 1941,
+          "removed_hits": 1157,
+          "added_charged": 13253,
+          "removed_charged": 3738
+        }
+      },
+      "caveat": "Promotion is a counterfactual .8 commit without pose correction; deltas are ordered, not independent causal shares."
+    },
+    {
+      "owner": 4,
+      "step": 3276,
+      "start": 2774,
+      "pending_before": 125,
+      "pending_after": 0,
+      "state_exact": true,
+      "stages": {
+        "before": {
+          "hits": 37436,
+          "charged": 21598,
+          "credit": 38.732773248354924,
+          "penalty": 2.3607374912055628,
+          "map_score": 36.37203575714936,
+          "roi_hits": 2799,
+          "roi_charged": 4292
+        },
+        "unanchored_commit": {
+          "hits": 38867,
+          "charged": 24526,
+          "credit": 40.21334271406696,
+          "penalty": 2.704713778232732,
+          "map_score": 37.50862893583423,
+          "roi_hits": 3789,
+          "roi_charged": 6808
+        },
+        "anchored_commit": {
+          "hits": 37851,
+          "charged": 27448,
+          "credit": 39.1621487398088,
+          "penalty": 2.6417662561302406,
+          "map_score": 36.52038248367856,
+          "roi_hits": 3057,
+          "roi_charged": 9083
+        },
+        "after": {
+          "hits": 37938,
+          "charged": 27421,
+          "credit": 39.25216239705335,
+          "penalty": 2.635538007814117,
+          "map_score": 36.616624389239234,
+          "roi_hits": 3144,
+          "roi_charged": 9083
+        }
+      },
+      "deltas": {
+        "before_to_unanchored_commit": {
+          "added_hits": 1431,
+          "removed_hits": 0,
+          "added_charged": 3066,
+          "removed_charged": 138
+        },
+        "unanchored_commit_to_anchored_commit": {
+          "added_hits": 2078,
+          "removed_hits": 3094,
+          "added_charged": 8389,
+          "removed_charged": 5467
+        },
+        "anchored_commit_to_after": {
+          "added_hits": 87,
+          "removed_hits": 0,
+          "added_charged": 9,
+          "removed_charged": 36
+        },
+        "before_to_after": {
+          "added_hits": 2678,
+          "removed_hits": 2176,
+          "added_charged": 9216,
+          "removed_charged": 3393
+        }
+      },
+      "caveat": "Promotion is a counterfactual .8 commit without pose correction; deltas are ordered, not independent causal shares."
+    }
+  ],
+  "local_growth": [
+    {
+      "owner": 0,
+      "rows": []
+    },
+    {
+      "owner": 1,
+      "rows": []
+    },
+    {
+      "owner": 2,
+      "rows": []
+    },
+    {
+      "owner": 3,
+      "rows": [
+        {
+          "step": 1200,
+          "missing": 1,
+          "pending": 1,
+          "hits_cells": 6775,
+          "pending_cells": 0,
+          "hits": 19889,
+          "charged": 7740,
+          "credit": 20.577949757894302,
+          "penalty": 0.4828456529288065,
+          "map_score": 20.095104104965493,
+          "roi_hits": 207,
+          "roi_charged": 0
+        },
+        {
+          "step": 1240,
+          "missing": 41,
+          "pending": 11,
+          "hits_cells": 6775,
+          "pending_cells": 87,
+          "hits": 20106,
+          "charged": 7740,
+          "credit": 20.802466581136446,
+          "penalty": 0.4828456529288065,
+          "map_score": 20.31962092820764,
+          "roi_hits": 388,
+          "roi_charged": 0
+        },
+        {
+          "step": 1280,
+          "missing": 81,
+          "pending": 21,
+          "hits_cells": 6775,
+          "pending_cells": 210,
+          "hits": 20769,
+          "charged": 7740,
+          "credit": 21.48843272772421,
+          "penalty": 0.4828456529288065,
+          "map_score": 21.0055870747954,
+          "roi_hits": 1051,
+          "roi_charged": 0
+        },
+        {
+          "step": 1320,
+          "missing": 121,
+          "pending": 31,
+          "hits_cells": 6775,
+          "pending_cells": 405,
+          "hits": 20964,
+          "charged": 7863,
+          "credit": 21.690187476720606,
+          "penalty": 0.4861358376087665,
+          "map_score": 21.20405163911184,
+          "roi_hits": 1246,
+          "roi_charged": 123
+        },
+        {
+          "step": 1360,
+          "missing": 161,
+          "pending": 41,
+          "hits_cells": 6775,
+          "pending_cells": 575,
+          "hits": 21063,
+          "charged": 8121,
+          "credit": 21.79261681082647,
+          "penalty": 0.49598557760703355,
+          "map_score": 21.296631233219436,
+          "roi_hits": 1324,
+          "roi_charged": 381
+        },
+        {
+          "step": 1400,
+          "missing": 201,
+          "pending": 51,
+          "hits_cells": 6775,
+          "pending_cells": 656,
+          "hits": 21180,
+          "charged": 8238,
+          "credit": 21.91366966022431,
+          "penalty": 0.5007035449182377,
+          "map_score": 21.412966115306073,
+          "roi_hits": 1438,
+          "roi_charged": 498
+        },
+        {
+          "step": 1440,
+          "missing": 241,
+          "pending": 61,
+          "hits_cells": 6775,
+          "pending_cells": 804,
+          "hits": 21794,
+          "charged": 8403,
+          "credit": 22.548938459628356,
+          "penalty": 0.5078426096330133,
+          "map_score": 22.041095849995344,
+          "roi_hits": 2052,
+          "roi_charged": 663
+        },
+        {
+          "step": 1480,
+          "missing": 281,
+          "pending": 71,
+          "hits_cells": 6775,
+          "pending_cells": 960,
+          "hits": 22136,
+          "charged": 8682,
+          "credit": 22.90278525017589,
+          "penalty": 0.5207548933609755,
+          "map_score": 22.382030356814912,
+          "roi_hits": 2394,
+          "roi_charged": 942
+        },
+        {
+          "step": 1520,
+          "missing": 321,
+          "pending": 81,
+          "hits_cells": 6775,
+          "pending_cells": 1091,
+          "hits": 22310,
+          "charged": 9285,
+          "credit": 23.082812564664984,
+          "penalty": 0.5581260504018282,
+          "map_score": 22.524686514263156,
+          "roi_hits": 2568,
+          "roi_charged": 1545
+        },
+        {
+          "step": 1560,
+          "missing": 361,
+          "pending": 91,
+          "hits_cells": 6775,
+          "pending_cells": 1154,
+          "hits": 22434,
+          "charged": 9387,
+          "credit": 23.211107892231926,
+          "penalty": 0.5631544601540838,
+          "map_score": 22.64795343207784,
+          "roi_hits": 2692,
+          "roi_charged": 1647
+        },
+        {
+          "step": 1600,
+          "missing": 401,
+          "pending": 101,
+          "hits_cells": 6775,
+          "pending_cells": 1225,
+          "hits": 22641,
+          "charged": 9387,
+          "credit": 23.42527831808964,
+          "penalty": 0.5631544601540838,
+          "map_score": 22.862123857935558,
+          "roi_hits": 2899,
+          "roi_charged": 1647
+        },
+        {
+          "step": 1640,
+          "missing": 441,
+          "pending": 111,
+          "hits_cells": 6775,
+          "pending_cells": 1344,
+          "hits": 22796,
+          "charged": 9732,
+          "credit": 23.585647477548317,
+          "penalty": 0.5904896117320386,
+          "map_score": 22.995157865816278,
+          "roi_hits": 3054,
+          "roi_charged": 1983
+        },
+        {
+          "step": 1680,
+          "missing": 481,
+          "pending": 121,
+          "hits_cells": 6775,
+          "pending_cells": 1465,
+          "hits": 22805,
+          "charged": 10509,
+          "credit": 23.594959235194306,
+          "penalty": 0.6653561027901648,
+          "map_score": 22.92960313240414,
+          "roi_hits": 3063,
+          "roi_charged": 2697
+        },
+        {
+          "step": 1720,
+          "missing": 521,
+          "pending": 131,
+          "hits_cells": 6775,
+          "pending_cells": 1626,
+          "hits": 22790,
+          "charged": 11565,
+          "credit": 23.57943963911766,
+          "penalty": 0.874932687793579,
+          "map_score": 22.70450695132408,
+          "roi_hits": 3048,
+          "roi_charged": 3477
+        },
+        {
+          "step": 1723,
+          "missing": 524,
+          "pending": 131,
+          "hits_cells": 6775,
+          "pending_cells": 1626,
+          "hits": 22790,
+          "charged": 11565,
+          "credit": 23.57943963911766,
+          "penalty": 0.874932687793579,
+          "map_score": 22.70450695132408,
+          "roi_hits": 3048,
+          "roi_charged": 3477
+        },
+        {
+          "step": 1727,
+          "missing": 528,
+          "pending": 132,
+          "hits_cells": 6775,
+          "pending_cells": 1639,
+          "hits": 22808,
+          "charged": 11637,
+          "credit": 23.598063154409633,
+          "penalty": 0.8898316010661963,
+          "map_score": 22.70823155334344,
+          "roi_hits": 3066,
+          "roi_charged": 3522
+        },
+        {
+          "step": 1731,
+          "missing": 532,
+          "pending": 133,
+          "hits_cells": 6775,
+          "pending_cells": 1661,
+          "hits": 22808,
+          "charged": 11790,
+          "credit": 23.598063154409633,
+          "penalty": 0.9188841636748334,
+          "map_score": 22.6791789907348,
+          "roi_hits": 3066,
+          "roi_charged": 3585
+        },
+        {
+          "step": 1735,
+          "missing": 536,
+          "pending": 134,
+          "hits_cells": 6775,
+          "pending_cells": 1684,
+          "hits": 22808,
+          "charged": 12006,
+          "credit": 23.598063154409633,
+          "penalty": 0.9599593612910234,
+          "map_score": 22.63810379311861,
+          "roi_hits": 3066,
+          "roi_charged": 3666
+        },
+        {
+          "step": 1739,
+          "missing": 540,
+          "pending": 135,
+          "hits_cells": 6775,
+          "pending_cells": 1691,
+          "hits": 22802,
+          "charged": 12069,
+          "credit": 23.591855315978975,
+          "penalty": 0.9711956094739375,
+          "map_score": 22.620659706505037,
+          "roi_hits": 3060,
+          "roi_charged": 3684
+        },
+        {
+          "step": 1743,
+          "missing": 544,
+          "pending": 136,
+          "hits_cells": 6775,
+          "pending_cells": 1698,
+          "hits": 22802,
+          "charged": 12105,
+          "credit": 23.591855315978975,
+          "penalty": 0.9786449145516907,
+          "map_score": 22.613210401427285,
+          "roi_hits": 3060,
+          "roi_charged": 3693
+        },
+        {
+          "step": 1747,
+          "missing": 548,
+          "pending": 137,
+          "hits_cells": 6775,
+          "pending_cells": 1708,
+          "hits": 22802,
+          "charged": 12192,
+          "credit": 23.591855315978975,
+          "penalty": 0.9948474334791313,
+          "map_score": 22.597007882499845,
+          "roi_hits": 3060,
+          "roi_charged": 3711
+        },
+        {
+          "step": 1751,
+          "missing": 552,
+          "pending": 138,
+          "hits_cells": 6775,
+          "pending_cells": 1716,
+          "hits": 22802,
+          "charged": 12237,
+          "credit": 23.591855315978975,
+          "penalty": 1.0041384781225426,
+          "map_score": 22.587716837856433,
+          "roi_hits": 3060,
+          "roi_charged": 3738
+        },
+        {
+          "step": 1754,
+          "missing": 555,
+          "pending": 139,
+          "hits_cells": 6775,
+          "pending_cells": 1727,
+          "hits": 22802,
+          "charged": 12324,
+          "credit": 23.591855315978975,
+          "penalty": 1.020775565947937,
+          "map_score": 22.57107975003104,
+          "roi_hits": 3060,
+          "roi_charged": 3771
+        },
+        {
+          "step": 1755,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10088,
+          "pending_cells": 0,
+          "hits": 23586,
+          "charged": 21839,
+          "credit": 24.403012870918346,
+          "penalty": 2.18466241968609,
+          "map_score": 22.218350451232258,
+          "roi_hits": 3048,
+          "roi_charged": 13455
+        },
+        {
+          "step": 1759,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10110,
+          "pending_cells": 0,
+          "hits": 23703,
+          "charged": 21839,
+          "credit": 24.524065720316184,
+          "penalty": 2.18466241968609,
+          "map_score": 22.339403300630096,
+          "roi_hits": 3048,
+          "roi_charged": 13455
+        },
+        {
+          "step": 1763,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10144,
+          "pending_cells": 0,
+          "hits": 23715,
+          "charged": 21845,
+          "credit": 24.536481397177504,
+          "penalty": 2.184910975717005,
+          "map_score": 22.351570421460497,
+          "roi_hits": 3042,
+          "roi_charged": 13455
+        },
+        {
+          "step": 1767,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10180,
+          "pending_cells": 0,
+          "hits": 23925,
+          "charged": 21878,
+          "credit": 24.75375574225055,
+          "penalty": 2.188180194796797,
+          "map_score": 22.565575547453754,
+          "roi_hits": 3054,
+          "roi_charged": 13491
+        },
+        {
+          "step": 1771,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10205,
+          "pending_cells": 0,
+          "hits": 24051,
+          "charged": 21878,
+          "credit": 24.884120349294374,
+          "penalty": 2.1882216208019494,
+          "map_score": 22.695898728492423,
+          "roi_hits": 3060,
+          "roi_charged": 13482
+        },
+        {
+          "step": 1775,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10235,
+          "pending_cells": 0,
+          "hits": 24183,
+          "charged": 21878,
+          "credit": 25.020692794768863,
+          "penalty": 2.1882216208019494,
+          "map_score": 22.832471173966912,
+          "roi_hits": 3070,
+          "roi_charged": 13482
+        },
+        {
+          "step": 1779,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10261,
+          "pending_cells": 0,
+          "hits": 24296,
+          "charged": 21878,
+          "credit": 25.137607085212927,
+          "penalty": 2.1882216208019494,
+          "map_score": 22.949385464410977,
+          "roi_hits": 3084,
+          "roi_charged": 13482
+        },
+        {
+          "step": 1783,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10296,
+          "pending_cells": 0,
+          "hits": 24458,
+          "charged": 21878,
+          "credit": 25.305218722840706,
+          "penalty": 2.188221822880023,
+          "map_score": 23.116996899960682,
+          "roi_hits": 3102,
+          "roi_charged": 13482
+        },
+        {
+          "step": 1787,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 10314,
+          "pending_cells": 0,
+          "hits": 24494,
+          "charged": 21878,
+          "credit": 25.34246575342466,
+          "penalty": 2.188221822880023,
+          "map_score": 23.154243930544634,
+          "roi_hits": 3102,
+          "roi_charged": 13482
+        }
+      ]
+    },
+    {
+      "owner": 4,
+      "rows": [
+        {
+          "step": 2776,
+          "missing": 2,
+          "pending": 1,
+          "hits_cells": 12410,
+          "pending_cells": 0,
+          "hits": 34444,
+          "charged": 17132,
+          "credit": 35.63713115093324,
+          "penalty": 1.8259322104043372,
+          "map_score": 33.81119894052891,
+          "roi_hits": 124,
+          "roi_charged": 198
+        },
+        {
+          "step": 2816,
+          "missing": 42,
+          "pending": 11,
+          "hits_cells": 12410,
+          "pending_cells": 49,
+          "hits": 34522,
+          "charged": 17132,
+          "credit": 35.71783305053181,
+          "penalty": 1.8259322104043372,
+          "map_score": 33.89190084012747,
+          "roi_hits": 202,
+          "roi_charged": 198
+        },
+        {
+          "step": 2856,
+          "missing": 82,
+          "pending": 21,
+          "hits_cells": 12410,
+          "pending_cells": 352,
+          "hits": 34879,
+          "charged": 17249,
+          "credit": 36.08719943715598,
+          "penalty": 1.8290981675883584,
+          "map_score": 34.25810126956762,
+          "roi_hits": 484,
+          "roi_charged": 306
+        },
+        {
+          "step": 2896,
+          "missing": 122,
+          "pending": 31,
+          "hits_cells": 12410,
+          "pending_cells": 488,
+          "hits": 35236,
+          "charged": 17484,
+          "credit": 36.45656582378016,
+          "penalty": 1.8373132475272114,
+          "map_score": 34.61925257625295,
+          "roi_hits": 800,
+          "roi_charged": 450
+        },
+        {
+          "step": 2936,
+          "missing": 162,
+          "pending": 41,
+          "hits_cells": 12410,
+          "pending_cells": 602,
+          "hits": 35467,
+          "charged": 17696,
+          "credit": 36.69556760336051,
+          "penalty": 1.8497081103469148,
+          "map_score": 34.84585949301359,
+          "roi_hits": 1031,
+          "roi_charged": 515
+        },
+        {
+          "step": 2976,
+          "missing": 202,
+          "pending": 51,
+          "hits_cells": 12410,
+          "pending_cells": 682,
+          "hits": 35659,
+          "charged": 17828,
+          "credit": 36.89421843314158,
+          "penalty": 1.856288580745872,
+          "map_score": 35.037929852395706,
+          "roi_hits": 1223,
+          "roi_charged": 542
+        },
+        {
+          "step": 3016,
+          "missing": 242,
+          "pending": 61,
+          "hits_cells": 12410,
+          "pending_cells": 746,
+          "hits": 35914,
+          "charged": 17867,
+          "credit": 37.15805156644457,
+          "penalty": 1.8633033169256716,
+          "map_score": 35.29474824951889,
+          "roi_hits": 1478,
+          "roi_charged": 569
+        },
+        {
+          "step": 3056,
+          "missing": 282,
+          "pending": 71,
+          "hits_cells": 12410,
+          "pending_cells": 941,
+          "hits": 36394,
+          "charged": 18329,
+          "credit": 37.65467864089724,
+          "penalty": 1.8860239651662665,
+          "map_score": 35.76865467573097,
+          "roi_hits": 1958,
+          "roi_charged": 1031
+        },
+        {
+          "step": 3096,
+          "missing": 322,
+          "pending": 81,
+          "hits_cells": 12410,
+          "pending_cells": 1066,
+          "hits": 36853,
+          "charged": 18557,
+          "credit": 38.129578280842615,
+          "penalty": 1.9026402389500479,
+          "map_score": 36.226938041892566,
+          "roi_hits": 2219,
+          "roi_charged": 1259
+        },
+        {
+          "step": 3136,
+          "missing": 362,
+          "pending": 91,
+          "hits_cells": 12410,
+          "pending_cells": 1149,
+          "hits": 36991,
+          "charged": 18692,
+          "credit": 38.272358564747755,
+          "penalty": 1.913131728391549,
+          "map_score": 36.35922683635621,
+          "roi_hits": 2354,
+          "roi_charged": 1394
+        },
+        {
+          "step": 3176,
+          "missing": 402,
+          "pending": 101,
+          "hits_cells": 12410,
+          "pending_cells": 1370,
+          "hits": 37187,
+          "charged": 20150,
+          "credit": 38.4751479534826,
+          "penalty": 2.1467737912174605,
+          "map_score": 36.328374162265135,
+          "roi_hits": 2550,
+          "roi_charged": 2852
+        },
+        {
+          "step": 3216,
+          "missing": 442,
+          "pending": 111,
+          "hits_cells": 12410,
+          "pending_cells": 1500,
+          "hits": 37331,
+          "charged": 20792,
+          "credit": 38.6241360758184,
+          "penalty": 2.238587762022514,
+          "map_score": 36.38554831379589,
+          "roi_hits": 2694,
+          "roi_charged": 3494
+        },
+        {
+          "step": 3244,
+          "missing": 470,
+          "pending": 118,
+          "hits_cells": 12410,
+          "pending_cells": 1565,
+          "hits": 37412,
+          "charged": 21239,
+          "credit": 38.70794189463229,
+          "penalty": 2.3170134541964984,
+          "map_score": 36.39092844043579,
+          "roi_hits": 2775,
+          "roi_charged": 3941
+        },
+        {
+          "step": 3248,
+          "missing": 474,
+          "pending": 119,
+          "hits_cells": 12410,
+          "pending_cells": 1571,
+          "hits": 37412,
+          "charged": 21284,
+          "credit": 38.70794189463229,
+          "penalty": 2.3227868247682406,
+          "map_score": 36.38515506986405,
+          "roi_hits": 2775,
+          "roi_charged": 3986
+        },
+        {
+          "step": 3252,
+          "missing": 478,
+          "pending": 120,
+          "hits_cells": 12410,
+          "pending_cells": 1593,
+          "hits": 37424,
+          "charged": 21431,
+          "credit": 38.72035757149361,
+          "penalty": 2.344576499322311,
+          "map_score": 36.3757810721713,
+          "roi_hits": 2787,
+          "roi_charged": 4127
+        },
+        {
+          "step": 3256,
+          "missing": 482,
+          "pending": 121,
+          "hits_cells": 12410,
+          "pending_cells": 1597,
+          "hits": 37418,
+          "charged": 21463,
+          "credit": 38.714149733062946,
+          "penalty": 2.345962754909366,
+          "map_score": 36.36818697815358,
+          "roi_hits": 2781,
+          "roi_charged": 4166
+        },
+        {
+          "step": 3260,
+          "missing": 486,
+          "pending": 122,
+          "hits_cells": 12410,
+          "pending_cells": 1608,
+          "hits": 37427,
+          "charged": 21514,
+          "credit": 38.723461490708935,
+          "penalty": 2.35279137718309,
+          "map_score": 36.37067011352585,
+          "roi_hits": 2790,
+          "roi_charged": 4217
+        },
+        {
+          "step": 3264,
+          "missing": 490,
+          "pending": 123,
+          "hits_cells": 12410,
+          "pending_cells": 1617,
+          "hits": 37436,
+          "charged": 21544,
+          "credit": 38.732773248354924,
+          "penalty": 2.355895296398419,
+          "map_score": 36.3768779519565,
+          "roi_hits": 2799,
+          "roi_charged": 4247
+        },
+        {
+          "step": 3268,
+          "missing": 494,
+          "pending": 124,
+          "hits_cells": 12410,
+          "pending_cells": 1624,
+          "hits": 37436,
+          "charged": 21562,
+          "credit": 38.732773248354924,
+          "penalty": 2.3572611421000085,
+          "map_score": 36.37551210625492,
+          "roi_hits": 2799,
+          "roi_charged": 4256
+        },
+        {
+          "step": 3272,
+          "missing": 498,
+          "pending": 125,
+          "hits_cells": 12410,
+          "pending_cells": 1628,
+          "hits": 37436,
+          "charged": 21598,
+          "credit": 38.732773248354924,
+          "penalty": 2.3607374912055628,
+          "map_score": 36.37203575714936,
+          "roi_hits": 2799,
+          "roi_charged": 4292
+        },
+        {
+          "step": 3275,
+          "missing": 501,
+          "pending": 125,
+          "hits_cells": 12410,
+          "pending_cells": 1628,
+          "hits": 37436,
+          "charged": 21598,
+          "credit": 38.732773248354924,
+          "penalty": 2.3607374912055628,
+          "map_score": 36.37203575714936,
+          "roi_hits": 2799,
+          "roi_charged": 4292
+        },
+        {
+          "step": 3276,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15346,
+          "pending_cells": 0,
+          "hits": 37938,
+          "charged": 27421,
+          "credit": 39.25216239705335,
+          "penalty": 2.635538007814117,
+          "map_score": 36.616624389239234,
+          "roi_hits": 3144,
+          "roi_charged": 9083
+        },
+        {
+          "step": 3280,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15352,
+          "pending_cells": 0,
+          "hits": 38010,
+          "charged": 27382,
+          "credit": 39.32665645822125,
+          "penalty": 2.62995075114845,
+          "map_score": 36.696705707072795,
+          "roi_hits": 3168,
+          "roi_charged": 9089
+        },
+        {
+          "step": 3284,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15357,
+          "pending_cells": 0,
+          "hits": 38034,
+          "charged": 27379,
+          "credit": 39.35148781194388,
+          "penalty": 2.6293299673053845,
+          "map_score": 36.722157844638495,
+          "roi_hits": 3168,
+          "roi_charged": 9089
+        },
+        {
+          "step": 3288,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15363,
+          "pending_cells": 0,
+          "hits": 38067,
+          "charged": 27343,
+          "credit": 39.385630923312505,
+          "penalty": 2.627302315911725,
+          "map_score": 36.758328607400784,
+          "roi_hits": 3186,
+          "roi_charged": 9089
+        },
+        {
+          "step": 3292,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15381,
+          "pending_cells": 0,
+          "hits": 38175,
+          "charged": 27289,
+          "credit": 39.49737201506435,
+          "penalty": 2.6173075343759056,
+          "map_score": 36.880064480688446,
+          "roi_hits": 3195,
+          "roi_charged": 9080
+        },
+        {
+          "step": 3296,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15382,
+          "pending_cells": 0,
+          "hits": 38172,
+          "charged": 27277,
+          "credit": 39.49426809584903,
+          "penalty": 2.61650043454869,
+          "map_score": 36.87776766130034,
+          "roi_hits": 3183,
+          "roi_charged": 9080
+        },
+        {
+          "step": 3300,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15384,
+          "pending_cells": 0,
+          "hits": 38178,
+          "charged": 27214,
+          "credit": 39.500475934279685,
+          "penalty": 2.6105411521489468,
+          "map_score": 36.88993478213074,
+          "roi_hits": 3189,
+          "roi_charged": 9077
+        },
+        {
+          "step": 3304,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15402,
+          "pending_cells": 0,
+          "hits": 38316,
+          "charged": 27196,
+          "credit": 39.64325621818483,
+          "penalty": 2.607437030855544,
+          "map_score": 37.03581918732929,
+          "roi_hits": 3285,
+          "roi_charged": 9068
+        },
+        {
+          "step": 3308,
+          "missing": 0,
+          "pending": 0,
+          "hits_cells": 15427,
+          "pending_cells": 0,
+          "hits": 38421,
+          "charged": 27241,
+          "credit": 39.75189339072135,
+          "penalty": 2.6167489905796053,
+          "map_score": 37.13514440014175,
+          "roi_hits": 3366,
+          "roi_charged": 9113
+        }
+      ]
+    }
+  ],
+  "holder_actual_versions": [
+    {
+      "step": 1723,
+      "sources": {
+        "0": 1720,
+        "1": 520,
+        "2": 780,
+        "3": 990,
+        "4": 660
+      },
+      "hits": 33885,
+      "charged": 37133,
+      "credit": 35.05876753714357,
+      "penalty": 3.19863037947999,
+      "map_score": 31.860137157663576,
+      "roi_hits": 0,
+      "roi_charged": 0
+    },
+    {
+      "step": 1754,
+      "sources": {
+        "0": 1740,
+        "1": 520,
+        "2": 780,
+        "3": 990,
+        "4": 660
+      },
+      "hits": 34107,
+      "charged": 37556,
+      "credit": 35.288457559077926,
+      "penalty": 3.219240524316621,
+      "map_score": 32.06921703476131,
+      "roi_hits": 0,
+      "roi_charged": 0
+    },
+    {
+      "step": 1755,
+      "sources": {
+        "0": 1740,
+        "1": 520,
+        "2": 780,
+        "3": 990,
+        "4": 660
+      },
+      "hits": 34107,
+      "charged": 37556,
+      "credit": 35.288457559077926,
+      "penalty": 3.219240524316621,
+      "map_score": 32.06921703476131,
+      "roi_hits": 0,
+      "roi_charged": 0
+    },
+    {
+      "step": 1756,
+      "sources": {
+        "0": 1740,
+        "1": 520,
+        "2": 780,
+        "3": 990,
+        "4": 660
+      },
+      "hits": 34107,
+      "charged": 37556,
+      "credit": 35.288457559077926,
+      "penalty": 3.219240524316621,
+      "map_score": 32.06921703476131,
+      "roi_hits": 0,
+      "roi_charged": 0
+    },
+    {
+      "step": 1763,
+      "sources": {
+        "0": 1760,
+        "1": 520,
+        "2": 780,
+        "3": 990,
+        "4": 660
+      },
+      "hits": 34257,
+      "charged": 37547,
+      "credit": 35.44365351984439,
+      "penalty": 3.217377566553201,
+      "map_score": 32.226275953291186,
+      "roi_hits": 0,
+      "roi_charged": 0
+    },
+    {
+      "step": 1787,
+      "sources": {
+        "0": 1770,
+        "1": 520,
+        "2": 780,
+        "3": 990,
+        "4": 660
+      },
+      "hits": 34329,
+      "charged": 37661,
+      "credit": 35.51814758101229,
+      "penalty": 3.233145920738836,
+      "map_score": 32.28500166027346,
+      "roi_hits": 0,
+      "roi_charged": 0
+    },
+    {
+      "step": 2188,
+      "sources": {
+        "0": 2160,
+        "1": 1890,
+        "2": 1890,
+        "3": 2160,
+        "4": 660
+      },
+      "hits": 48680,
+      "charged": 64497,
+      "credit": 50.36626246740885,
+      "penalty": 6.312006444512272,
+      "map_score": 44.054256022896574,
+      "roi_hits": 3771,
+      "roi_charged": 14029
+    },
+    {
+      "step": 3244,
+      "sources": {
+        "0": 3240,
+        "1": 2640,
+        "2": 2760,
+        "3": 2970,
+        "4": 2700
+      },
+      "hits": 52097,
+      "charged": 86995,
+      "credit": 53.901626453668825,
+      "penalty": 8.690850131140586,
+      "map_score": 45.21077632252824,
+      "roi_hits": 4097,
+      "roi_charged": 14708
+    },
+    {
+      "step": 3275,
+      "sources": {
+        "0": 3270,
+        "1": 2640,
+        "2": 2760,
+        "3": 2970,
+        "4": 2700
+      },
+      "hits": 52097,
+      "charged": 86845,
+      "credit": 53.901626453668825,
+      "penalty": 8.65364351617142,
+      "map_score": 45.24798293749741,
+      "roi_hits": 4097,
+      "roi_charged": 14708
+    },
+    {
+      "step": 3276,
+      "sources": {
+        "0": 3270,
+        "1": 2640,
+        "2": 2760,
+        "3": 2970,
+        "4": 2700
+      },
+      "hits": 52097,
+      "charged": 86845,
+      "credit": 53.901626453668825,
+      "penalty": 8.65364351617142,
+      "map_score": 45.24798293749741,
+      "roi_hits": 4097,
+      "roi_charged": 14708
+    },
+    {
+      "step": 3277,
+      "sources": {
+        "0": 3270,
+        "1": 2640,
+        "2": 2760,
+        "3": 2970,
+        "4": 2700
+      },
+      "hits": 52097,
+      "charged": 86845,
+      "credit": 53.901626453668825,
+      "penalty": 8.65364351617142,
+      "map_score": 45.24798293749741,
+      "roi_hits": 4097,
+      "roi_charged": 14708
+    },
+    {
+      "step": 3284,
+      "sources": {
+        "0": 3280,
+        "1": 2640,
+        "2": 2760,
+        "3": 2970,
+        "4": 2700
+      },
+      "hits": 52097,
+      "charged": 86834,
+      "credit": 53.901626453668825,
+      "penalty": 8.653167420229277,
+      "map_score": 45.248459033439545,
+      "roi_hits": 4097,
+      "roi_charged": 14708
+    },
+    {
+      "step": 3308,
+      "sources": {
+        "0": 3300,
+        "1": 2640,
+        "2": 2760,
+        "3": 2970,
+        "4": 2700
+      },
+      "hits": 52097,
+      "charged": 86960,
+      "credit": 53.901626453668825,
+      "penalty": 8.671335855698796,
+      "map_score": 45.23029059797003,
+      "roi_hits": 4097,
+      "roi_charged": 14708
+    },
+    {
+      "step": 3514,
+      "sources": {
+        "0": 3510,
+        "1": 3480,
+        "2": 3480,
+        "3": 3240,
+        "4": 3510
+      },
+      "hits": 62109,
+      "charged": 102807,
+      "credit": 64.2604395149609,
+      "penalty": 9.884163189846047,
+      "map_score": 54.37627632511484,
+      "roi_hits": 8402,
+      "roi_charged": 21866
+    },
+    {
+      "step": 4535,
+      "sources": {
+        "0": 4535,
+        "1": 4530,
+        "2": 4360,
+        "3": 3900,
+        "4": 3930
+      },
+      "hits": 72136,
+      "charged": 116289,
+      "credit": 74.6347721723296,
+      "penalty": 10.88991384684228,
+      "map_score": 63.74485832548732,
+      "roi_hits": 10015,
+      "roi_charged": 26514
+    }
+  ],
+  "roi": [
+    950,
+    730,
+    1655,
+    1117
+  ],
+  "resources": {
+    "wall_seconds": 19.817922300000646,
+    "cpu_seconds": 16.78125,
+    "update_seconds": {
+      "count": 22675,
+      "mean": 0.0006403811686796323,
+      "p95": 0.003983789999983855,
+      "maximum": 0.08316840000043157
+    },
+    "mapper_seconds": 14.520642999810661,
+    "peak_rss_bytes": 418365440,
+    "affinity": [
+      0
+    ]
+  },
+  "limitations": [
+    "Intermediate regenerated masks are supported by every-step pose and all saved mask checks; original packet contains nav+mapping bytes but full packet bytes were not saved.",
+    "Holder states follow accepted version log, no future/final-local oracle merge.",
+    "Reliable free-space evidence, uncertainty and per-ray provenance were not transmitted. Stage D cross-agent free contradiction is unavailable; unknown is not free.",
+    "Local scoring and counterfactual promotion are diagnostics, not additional official matches."
+  ]
+}

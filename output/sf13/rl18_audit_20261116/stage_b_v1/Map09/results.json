@@ -1,0 +1,576 @@
+{
+  "map": "Map09",
+  "source": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001",
+  "seed": 2477227837,
+  "round": 1,
+  "input_sha256": "16909b02f62f99d33afa8565acb09734f390d440e58a16a0de7bc1556f04657b",
+  "source_sha256": "f349d64aabcd512443bf129b6076b2f754f0e9567be1d6c609f843a97053c291",
+  "runner_sha256": "d7c9848e054e37fe0a3d5b3c6e636b852e96b7bad7e5f7cdfe33f80c17b8dad3",
+  "metrics": {
+    "rl11_lines": {
+      "position": {
+        "count": 6260,
+        "mean": 30.12976716481458,
+        "p95": 72.75443792249224,
+        "maximum": 104.18153722416592
+      },
+      "heading": {
+        "count": 6260,
+        "mean": 7.881356647679242,
+        "p95": 18.20627334882911,
+        "maximum": 23.826937766547513
+      },
+      "relative_turn": {
+        "count": 6204,
+        "mean": 1.7398527405768627,
+        "p95": 4.330686463577743,
+        "maximum": 8.97583425233749
+      },
+      "relative_translation": {
+        "count": 6204,
+        "mean": 1.6882765744308477,
+        "p95": 5.350940582794654,
+        "maximum": 11.550722650601466
+      },
+      "accumulated_heading": {
+        "count": 6260,
+        "mean": 7.714995541999573,
+        "p95": 19.959149401534756,
+        "maximum": 27.87928040165497
+      },
+      "far_endpoint": {
+        "count": 207222,
+        "mean": 34.006083810993964,
+        "p95": 80.59003914727761,
+        "maximum": 144.6753565469213
+      }
+    },
+    "rl17_repair": {
+      "position": {
+        "count": 6260,
+        "mean": 32.296232493273266,
+        "p95": 75.63619956379095,
+        "maximum": 106.62886390474404
+      },
+      "heading": {
+        "count": 6260,
+        "mean": 8.143530403684395,
+        "p95": 18.246077672861194,
+        "maximum": 23.826937766547513
+      },
+      "relative_turn": {
+        "count": 6204,
+        "mean": 1.7263287782090926,
+        "p95": 4.268616565328565,
+        "maximum": 8.60987530522571
+      },
+      "relative_translation": {
+        "count": 6204,
+        "mean": 1.6845332647923332,
+        "p95": 5.413520581550928,
+        "maximum": 10.93698672333846
+      },
+      "accumulated_heading": {
+        "count": 6260,
+        "mean": 7.682884172392266,
+        "p95": 20.962795851075377,
+        "maximum": 27.794037248954492
+      },
+      "far_endpoint": {
+        "count": 207222,
+        "mean": 35.497129367786,
+        "p95": 82.60259673516612,
+        "maximum": 151.46614684790836
+      }
+    },
+    "odometry": {
+      "position": {
+        "count": 6260,
+        "mean": 49.960695659488266,
+        "p95": 144.4499421665655,
+        "maximum": 248.70165615519593
+      },
+      "heading": {
+        "count": 6260,
+        "mean": 16.43308203224906,
+        "p95": 43.28061911802989,
+        "maximum": 58.62963391095004
+      },
+      "relative_turn": {
+        "count": 6204,
+        "mean": 1.5682030936172906,
+        "p95": 3.82450606492949,
+        "maximum": 7.186236750165004
+      },
+      "relative_translation": {
+        "count": 6204,
+        "mean": 0.7553795669208843,
+        "p95": 2.1833181386028935,
+        "maximum": 6.170647753646008
+      },
+      "accumulated_heading": {
+        "count": 6260,
+        "mean": 16.136618767296802,
+        "p95": 42.096161503456976,
+        "maximum": 56.23196882433172
+      },
+      "far_endpoint": {
+        "count": 207222,
+        "mean": 62.3958107287591,
+        "p95": 186.9998853045335,
+        "maximum": 336.79141707221567
+      }
+    },
+    "shadow": {
+      "position": {
+        "count": 6260,
+        "mean": 34.0598975773659,
+        "p95": 107.60703156302874,
+        "maximum": 174.87905121306352
+      },
+      "heading": {
+        "count": 6260,
+        "mean": 9.084726917572548,
+        "p95": 25.096843553903668,
+        "maximum": 33.663661450797306
+      },
+      "relative_turn": {
+        "count": 6204,
+        "mean": 1.445905161082037,
+        "p95": 3.803577441231782,
+        "maximum": 9.006046296190645
+      },
+      "relative_translation": {
+        "count": 6204,
+        "mean": 0.9368189116131158,
+        "p95": 2.4013648429156986,
+        "maximum": 6.384181887325599
+      },
+      "accumulated_heading": {
+        "count": 6260,
+        "mean": 8.408022586700378,
+        "p95": 22.93312988224629,
+        "maximum": 31.26599636417899
+      },
+      "far_endpoint": {
+        "count": 207222,
+        "mean": 39.17936259065663,
+        "p95": 115.77077420713393,
+        "maximum": 250.27913628896897
+      }
+    }
+  },
+  "event_windows": [
+    {
+      "owner": 0,
+      "start": 814,
+      "end": 1376,
+      "metrics": {
+        "shadow": {
+          "position": {
+            "count": 563,
+            "mean": 21.31636377276899,
+            "p95": 48.26920804032828,
+            "maximum": 51.06844981980594
+          },
+          "heading": {
+            "count": 563,
+            "mean": 6.441987556785815,
+            "p95": 11.971560510723178,
+            "maximum": 14.06304870668992
+          },
+          "relative_turn": {
+            "count": 559,
+            "mean": 1.42939764023046,
+            "p95": 3.7520347801296596,
+            "maximum": 6.6241788982047245
+          },
+          "relative_translation": {
+            "count": 559,
+            "mean": 0.9661782803234111,
+            "p95": 2.37751359982364,
+            "maximum": 5.579139534174942
+          },
+          "accumulated_heading": {
+            "count": 563,
+            "mean": 6.809161514260102,
+            "p95": 12.846166253986048,
+            "maximum": 14.93765444995279
+          },
+          "far_endpoint": {
+            "count": 18544,
+            "mean": 26.347555699364413,
+            "p95": 64.22406306124236,
+            "maximum": 98.6491637461075
+          }
+        },
+        "odometry": {
+          "position": {
+            "count": 563,
+            "mean": 44.19004545894163,
+            "p95": 88.19729132860792,
+            "maximum": 107.94620622404126
+          },
+          "heading": {
+            "count": 563,
+            "mean": 17.49733760494456,
+            "p95": 30.087837751101475,
+            "maximum": 33.241664717532764
+          },
+          "relative_turn": {
+            "count": 559,
+            "mean": 1.5703756924954662,
+            "p95": 3.7520347801296596,
+            "maximum": 7.075052863929153
+          },
+          "relative_translation": {
+            "count": 559,
+            "mean": 0.8381292738458014,
+            "p95": 2.2198645817338853,
+            "maximum": 4.7465522995251
+          },
+          "accumulated_heading": {
+            "count": 563,
+            "mean": 17.965518037452,
+            "p95": 30.962443494364344,
+            "maximum": 34.11627046079563
+          },
+          "far_endpoint": {
+            "count": 18544,
+            "mean": 55.888043942831175,
+            "p95": 118.02735451439491,
+            "maximum": 181.39597436471587
+          }
+        },
+        "rl11_lines": {
+          "position": {
+            "count": 563,
+            "mean": 44.82128239460719,
+            "p95": 93.5078674100089,
+            "maximum": 104.18153722416592
+          },
+          "heading": {
+            "count": 563,
+            "mean": 12.743795627253341,
+            "p95": 20.456704772150882,
+            "maximum": 23.49324633144179
+          },
+          "relative_turn": {
+            "count": 559,
+            "mean": 1.6961315944769098,
+            "p95": 4.233156116893557,
+            "maximum": 7.075052863929153
+          },
+          "relative_translation": {
+            "count": 559,
+            "mean": 1.893672900651124,
+            "p95": 6.409317658103894,
+            "maximum": 9.715115012891868
+          },
+          "accumulated_heading": {
+            "count": 563,
+            "mean": 13.269023779656665,
+            "p95": 21.331310515413755,
+            "maximum": 24.367852074704658
+          },
+          "far_endpoint": {
+            "count": 18544,
+            "mean": 50.243463404014655,
+            "p95": 100.5172690589629,
+            "maximum": 144.6753565469213
+          }
+        },
+        "rl17_repair": {
+          "position": {
+            "count": 563,
+            "mean": 44.82128239460719,
+            "p95": 93.5078674100089,
+            "maximum": 104.18153722416592
+          },
+          "heading": {
+            "count": 563,
+            "mean": 12.743795627253341,
+            "p95": 20.456704772150882,
+            "maximum": 23.49324633144179
+          },
+          "relative_turn": {
+            "count": 559,
+            "mean": 1.6961315944769098,
+            "p95": 4.233156116893557,
+            "maximum": 7.075052863929153
+          },
+          "relative_translation": {
+            "count": 559,
+            "mean": 1.893672900651124,
+            "p95": 6.409317658103894,
+            "maximum": 9.715115012891868
+          },
+          "accumulated_heading": {
+            "count": 563,
+            "mean": 13.269023779656665,
+            "p95": 21.331310515413755,
+            "maximum": 24.367852074704658
+          },
+          "far_endpoint": {
+            "count": 18544,
+            "mean": 50.243463404014655,
+            "p95": 100.5172690589629,
+            "maximum": 144.6753565469213
+          }
+        }
+      }
+    },
+    {
+      "owner": 3,
+      "start": 1807,
+      "end": 2792,
+      "metrics": {
+        "shadow": {
+          "position": {
+            "count": 986,
+            "mean": 20.51440837179385,
+            "p95": 34.69593069615985,
+            "maximum": 53.10287000649814
+          },
+          "heading": {
+            "count": 986,
+            "mean": 5.570444909587966,
+            "p95": 10.973664599066197,
+            "maximum": 16.29502991239505
+          },
+          "relative_turn": {
+            "count": 982,
+            "mean": 1.4275981180143924,
+            "p95": 3.7302228327178524,
+            "maximum": 7.943290522784461
+          },
+          "relative_translation": {
+            "count": 982,
+            "mean": 0.7866005325190942,
+            "p95": 1.9238830717535973,
+            "maximum": 4.780242877354307
+          },
+          "accumulated_heading": {
+            "count": 986,
+            "mean": 7.128637175353308,
+            "p95": 17.200959973138403,
+            "maximum": 22.56991246883155
+          },
+          "far_endpoint": {
+            "count": 29845,
+            "mean": 27.351691255192918,
+            "p95": 57.288484624397505,
+            "maximum": 107.81132461789569
+          }
+        },
+        "odometry": {
+          "position": {
+            "count": 986,
+            "mean": 31.26757557936562,
+            "p95": 64.67477314816999,
+            "maximum": 120.42647263055748
+          },
+          "heading": {
+            "count": 986,
+            "mean": 11.5664705094304,
+            "p95": 27.72511412885902,
+            "maximum": 38.19731738804919
+          },
+          "relative_turn": {
+            "count": 982,
+            "mean": 1.5330810702453703,
+            "p95": 3.831635437430454,
+            "maximum": 7.1156757359545395
+          },
+          "relative_translation": {
+            "count": 982,
+            "mean": 0.5989229644412953,
+            "p95": 1.7212040732916252,
+            "maximum": 4.875412632585124
+          },
+          "accumulated_heading": {
+            "count": 986,
+            "mean": 15.351514446139786,
+            "p95": 33.9999966852955,
+            "maximum": 44.47219994448566
+          },
+          "far_endpoint": {
+            "count": 29845,
+            "mean": 40.59059658826485,
+            "p95": 82.93704549860641,
+            "maximum": 238.01271857943462
+          }
+        },
+        "rl11_lines": {
+          "position": {
+            "count": 986,
+            "mean": 26.5766658903494,
+            "p95": 46.92800270281112,
+            "maximum": 86.61238720298178
+          },
+          "heading": {
+            "count": 986,
+            "mean": 8.631806692364552,
+            "p95": 16.83384733479603,
+            "maximum": 21.6043978452185
+          },
+          "relative_turn": {
+            "count": 982,
+            "mean": 1.7390655236362174,
+            "p95": 4.202980069315909,
+            "maximum": 8.60987530522571
+          },
+          "relative_translation": {
+            "count": 982,
+            "mean": 1.5305923867047757,
+            "p95": 5.4515884836524195,
+            "maximum": 10.542778343747665
+          },
+          "accumulated_heading": {
+            "count": 986,
+            "mean": 12.897221386721979,
+            "p95": 23.108729891232503,
+            "maximum": 27.87928040165497
+          },
+          "far_endpoint": {
+            "count": 29845,
+            "mean": 29.51823382845327,
+            "p95": 61.168621632865744,
+            "maximum": 144.5094092567712
+          }
+        },
+        "rl17_repair": {
+          "position": {
+            "count": 986,
+            "mean": 34.174419211986354,
+            "p95": 80.84407912850806,
+            "maximum": 106.62886390474404
+          },
+          "heading": {
+            "count": 986,
+            "mean": 10.029030504458426,
+            "p95": 17.457072059746714,
+            "maximum": 21.519154692518022
+          },
+          "relative_turn": {
+            "count": 982,
+            "mean": 1.7642060371233887,
+            "p95": 4.33849281551894,
+            "maximum": 8.60987530522571
+          },
+          "relative_translation": {
+            "count": 982,
+            "mean": 1.459487869231345,
+            "p95": 5.060996349607186,
+            "maximum": 8.586034324698934
+          },
+          "accumulated_heading": {
+            "count": 986,
+            "mean": 14.297144995380565,
+            "p95": 23.731954616183213,
+            "maximum": 27.794037248954492
+          },
+          "far_endpoint": {
+            "count": 29845,
+            "mean": 35.185987249310195,
+            "p95": 89.94436819108266,
+            "maximum": 151.46614684790836
+          }
+        }
+      }
+    }
+  ],
+  "stats": {
+    "0": {
+      "attempts": 326,
+      "all_seeds_rejected": 106,
+      "accepted": 171,
+      "rank_2": 142,
+      "matched": 171,
+      "reverse_support": 40,
+      "rank_1": 29,
+      "key_disagreement": 3,
+      "few_features": 6
+    },
+    "1": {
+      "attempts": 413,
+      "all_seeds_rejected": 136,
+      "accepted": 228,
+      "rank_2": 225,
+      "matched": 228,
+      "reverse_support": 38,
+      "key_disagreement": 11,
+      "rank_1": 3
+    },
+    "2": {
+      "attempts": 184,
+      "accepted": 90,
+      "rank_2": 61,
+      "matched": 90,
+      "all_seeds_rejected": 57,
+      "reverse_support": 22,
+      "key_disagreement": 15,
+      "rank_1": 29
+    },
+    "3": {
+      "attempts": 433,
+      "reverse_support": 50,
+      "all_seeds_rejected": 149,
+      "accepted": 215,
+      "rank_2": 213,
+      "matched": 215,
+      "key_disagreement": 17,
+      "rank_1": 2,
+      "few_features": 2
+    },
+    "4": {
+      "attempts": 211,
+      "reverse_support": 35,
+      "all_seeds_rejected": 71,
+      "accepted": 94,
+      "rank_2": 94,
+      "matched": 94,
+      "few_features": 3,
+      "key_disagreement": 8
+    }
+  },
+  "total": {
+    "attempts": 1567,
+    "all_seeds_rejected": 519,
+    "accepted": 798,
+    "rank_2": 735,
+    "matched": 798,
+    "reverse_support": 185,
+    "rank_1": 63,
+    "key_disagreement": 54,
+    "few_features": 11
+  },
+  "accepted_four_step_failure_thresholds": {
+    "turn_deg": 3,
+    "translation_px": 6
+  },
+  "failure_count": 0,
+  "accepted_count": 798,
+  "resources": {
+    "wall_seconds": 8.40359510000053,
+    "cpu_seconds": 7.546875,
+    "update_seconds": {
+      "count": 22250,
+      "mean": 0.0003146298561803408,
+      "p95": 0.00150039500040293,
+      "maximum": 0.028059500000381377
+    },
+    "update_total_seconds": 7.000514300012583,
+    "peak_rss_bytes": 325537792,
+    "affinity": [
+      0
+    ]
+  },
+  "limitations": [
+    "Shadow poses are never written to mapper/navigation/radio/placement.",
+    "Four-step relative errors exclude all intervals crossing an absolute recovery.",
+    "Far endpoint error uses same measured 150..218 px ray at true and estimated pose: pose-induced projection error, not range-to-wall accuracy.",
+    "Local success, heuristic ranks and forward/reverse consistency do not prove global correctness. Entry anchors remain noisy.",
+    "Fixed two development seeds only; no tuning on holdout; no new official score."
+  ]
+}

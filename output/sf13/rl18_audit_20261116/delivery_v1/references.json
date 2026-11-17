@@ -1,0 +1,58 @@
+[
+  {
+    "name": "RF2O",
+    "version": "ros2 branch read 2026-11-16; immutable remote commit unavailable",
+    "files": [
+      "README.md",
+      "LICENSE",
+      "src/CLaserOdometry2D.cpp"
+    ],
+    "license": "Repository and LICENSE GPL-3.0",
+    "url": "https://github.com/MAPIRlab/rf2o_laser_odometry",
+    "use": "Consecutive scans, robust bounded optimization principle only; no source copied."
+  },
+  {
+    "name": "SRF",
+    "version": "master branch read 2026-11-16; immutable remote commit unavailable",
+    "files": [
+      "README.md",
+      "LICENSE",
+      "src/laser_odometry_refscans.cpp"
+    ],
+    "license": "Repository/LICENSE LGPL-3.0, but actual cpp file header says GPLv3. Do not infer file reuse permission from repository badge.",
+    "url": "https://github.com/MAPIRlab/srf_laser_odometry",
+    "use": "Previous + key scan consistency principle only. No code port, ROS or MRPT dependency."
+  },
+  {
+    "name": "Polar scan matching",
+    "version": "Diosi and Kleeman IROS 2005, pp1439-1444",
+    "files": [
+      "Original provided PDF URL failed (parked domain); Monash publication record read"
+    ],
+    "license": "Paper not a code license; implementation permission unverified; no code copied",
+    "url": "https://research.monash.edu/en/publications/laser-scan-matching-in-polar-coordinates-with-application-to-slam/",
+    "use": "Bibliographic verification only; do not claim the original full PDF was read."
+  },
+  {
+    "name": "Cartographer",
+    "version": "ICRA 2016 paper publication abstract; cartographer_ros master docs and LICENSE",
+    "files": [
+      "docs/source/algo_walkthrough.rst",
+      "LICENSE",
+      "Google Research publication record"
+    ],
+    "license": "cartographer_ros LICENSE Apache-2.0; paper copyright separate",
+    "url": "https://github.com/cartographer-project/cartographer_ros/blob/master/docs/source/algo_walkthrough.rst",
+    "use": "Local matching can drift; global loop closure is separate. Original PDF redirect inaccessible; no C++/ROS implementation copied."
+  },
+  {
+    "name": "Feature-Based Occupancy Map-Merging for Collaborative SLAM",
+    "version": "Sensors 2023,23(6),3114,14 March 2023",
+    "files": [
+      "publisher article"
+    ],
+    "license": "Article does not establish license for an unspecified source implementation",
+    "url": "https://www.mdpi.com/1424-8220/23/6/3114",
+    "use": "Ambiguous registration must be validated; unknown/free/occupied semantics matter. No fusion code or efficacy transferred."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "map": "Map08",
+    "controller": "rl11_lines",
+    "old_replay_pixels_exact": true,
+    "old_results_sha256": "13d20ccce5328b7c65f31fdd879ddd13054c918cf9aae97ed3217826bea6bee5"
+  },
+  {
+    "map": "Map08",
+    "controller": "rl17_repair",
+    "old_replay_pixels_exact": true,
+    "old_results_sha256": "13d20ccce5328b7c65f31fdd879ddd13054c918cf9aae97ed3217826bea6bee5"
+  },
+  {
+    "map": "Map09",
+    "controller": "rl11_lines",
+    "old_replay_pixels_exact": true,
+    "old_results_sha256": "b5f435eb0356dd66fb1191fc55b6b21396b0d5028fb3b98f3d4ac6c306b69a97"
+  },
+  {
+    "map": "Map09",
+    "controller": "rl17_repair",
+    "old_replay_pixels_exact": true,
+    "old_results_sha256": "b5f435eb0356dd66fb1191fc55b6b21396b0d5028fb3b98f3d4ac6c306b69a97"
+  }
+]
