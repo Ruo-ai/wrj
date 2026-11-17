@@ -1,0 +1,33 @@
+{
+  "head": "fa28f914286d2549a780a8490d1ce03ddf7b7fca",
+  "protected_count": 1787,
+  "protected_changed": [],
+  "new_source_sha256": {
+    "red_pair19_batch.py": "289f04f90ecbac4359416510b336d3f608c3da823a81a6242609eac3537897dc",
+    "red_pair19_report.py": "6b111a51a6e5dab87eb0b8813e2980097c10a1d8f71d2cc3635f6b5adacdfd5f",
+    "red_recovery19_weights.py": "a01b48a40d545e53abe67b669957111a4580938db2535b7e3373e7da89fd1de7",
+    "test_red_pair19.py": "3a94f45e5b3628af6830c5bf7eb0ecb3ae9c51fb395185ff44a5289f8ef9c7bf"
+  },
+  "flight_plan_sha256": "70be24d2f5c0cefed342582f10c54c9a147a5a20601a0af94a220bd8a5888857",
+  "offline_plan_sha256": "4049afac065f4c5e9e3d54a01368cff3fb32e7523aa82575af9dbbe3c22aae68",
+  "planned_full_red_runs": 24,
+  "executed_full_red_runs": 0,
+  "blue_runs": 0,
+  "planned_recovery_events": 64,
+  "full_recovery_experiment_executed": false,
+  "native_short_runs": {
+    "attempted": 6,
+    "steps_each": 16,
+    "failed_export": 2,
+    "passed": 4
+  },
+  "real_offline_smokes": {
+    "count": 2,
+    "steps_each": 854,
+    "events_each": 1
+  },
+  "tests_passed": 14,
+  "images_verified": 12,
+  "frozen_sources_verified": true,
+  "report_sha256": "8ffe25a7e3ad539a857f0445136d53f4e05d4e8b5f92e377a235b34769638ce7"
+}

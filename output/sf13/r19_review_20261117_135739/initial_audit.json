@@ -1,0 +1,18 @@
+{
+  "head": "fa28f914286d2549a780a8490d1ce03ddf7b7fca",
+  "git_status": "?? src/swarm_rescue/solutions/devtools/red_pair19_batch.py\n?? src/swarm_rescue/solutions/devtools/red_pair19_report.py\n?? src/swarm_rescue/solutions/devtools/red_recovery19_weights.py\n?? src/swarm_rescue/solutions/devtools/test_red_pair19.py\n?? \"\\345\\244\\215\\350\\265\\233\\351\\230\\266\\346\\256\\265_RL11_RL17R_\\351\\205\\215\\345\\257\\271\\346\\211\\271\\346\\265\\213\\344\\270\\216\\346\\201\\242\\345\\244\\215\\346\\235\\203\\351\\207\\215\\345\\256\\236\\351\\252\\214\\345\\207\\206\\345\\244\\207_20261117.md\"\n",
+  "frozen_sources": 439,
+  "offline_frozen_sources": 397,
+  "input_files": 644,
+  "protected_files": 1792,
+  "a_plan_sha256": "70be24d2f5c0cefed342582f10c54c9a147a5a20601a0af94a220bd8a5888857",
+  "b_plan_sha256": "4049afac065f4c5e9e3d54a01368cff3fb32e7523aa82575af9dbbe3c22aae68",
+  "source_payload_decoded": true,
+  "live_sources_and_dependencies_match": true,
+  "all_attempt_receipts_match": true,
+  "summary_recomputed_equal": true,
+  "extra_attempts": 0,
+  "valid": 24,
+  "invalid": 0,
+  "b_has_creation_time_result_receipt": false
+}

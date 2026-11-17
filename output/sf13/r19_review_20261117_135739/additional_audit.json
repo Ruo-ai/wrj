@@ -1,0 +1,521 @@
+{
+  "dataset_split_counts": {
+    "train": 70,
+    "validation": 15,
+    "test": 15,
+    "extrapolation": 0,
+    "hard": 15
+  },
+  "dataset_maps": 100,
+  "selection_all_in_train": true,
+  "recordings": [
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r01\\rl11_lines\\red\\attempt_001",
+      "frames": 4264,
+      "metadata": {
+        "map_name": "R1952143ec7cae8",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4264,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r01\\rl17_repair\\red\\attempt_001",
+      "frames": 4264,
+      "metadata": {
+        "map_name": "R1952143ec7cae8",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4264,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r02\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1952143ec7cae8",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r02\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1952143ec7cae8",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r01\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1984feb11bb2ff",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r01\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1984feb11bb2ff",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r02\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1984feb11bb2ff",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r02\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1984feb11bb2ff",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r01\\rl11_lines\\red\\attempt_001",
+      "frames": 3970,
+      "metadata": {
+        "map_name": "R1965c9d4fff29c",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 3970,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r01\\rl17_repair\\red\\attempt_001",
+      "frames": 3970,
+      "metadata": {
+        "map_name": "R1965c9d4fff29c",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 3970,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r02\\rl17_repair\\red\\attempt_001",
+      "frames": 3898,
+      "metadata": {
+        "map_name": "R1965c9d4fff29c",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 3898,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r02\\rl11_lines\\red\\attempt_001",
+      "frames": 3898,
+      "metadata": {
+        "map_name": "R1965c9d4fff29c",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 3898,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r01\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R19f3afb15afb2f",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r01\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R19f3afb15afb2f",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r02\\rl17_repair\\red\\attempt_001",
+      "frames": 3887,
+      "metadata": {
+        "map_name": "R19f3afb15afb2f",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 3887,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r02\\rl11_lines\\red\\attempt_001",
+      "frames": 3887,
+      "metadata": {
+        "map_name": "R19f3afb15afb2f",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 3887,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r01\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1978f498ef36d5",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r01\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1978f498ef36d5",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r02\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1978f498ef36d5",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r02\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1978f498ef36d5",
+        "map_size": [
+          1700,
+          1100
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r01\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1967271ecd89e0",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r01\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1967271ecd89e0",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r02\\rl17_repair\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1967271ecd89e0",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    },
+    {
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r02\\rl11_lines\\red\\attempt_001",
+      "frames": 4535,
+      "metadata": {
+        "map_name": "R1967271ecd89e0",
+        "map_size": [
+          1660,
+          1122
+        ],
+        "frame_rate": 30.0,
+        "team_mode": "place",
+        "number_drones": 5,
+        "zones_config": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "n_timesteps": 4535,
+        "max_drones": 5,
+        "max_bombs": 10
+      }
+    }
+  ],
+  "recording_timestamp_semantics": "elapsed walltime (state_recorder.py:56), differs across arms; physical states and bomb states match exactly",
+  "recorder_frames_equal_elapsed_steps_minus_one": true,
+  "replay_entry_sha256": "7de95e87239d2e0a1fd2f844f8923ce293015f9fa0df6707a7af37de0589aa4f",
+  "formal_entry_sha256": "041930618d4ad2b08751e33c541d3e67588e383f47e5d5f58dc61372530d7e77"
+}

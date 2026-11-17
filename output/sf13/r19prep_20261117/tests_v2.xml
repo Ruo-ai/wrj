@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="14" time="2.096" timestamp="2026-11-17T12:16:27.362231+08:00" hostname="Ruoai"><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_no_future_or_unreceived_final_source" time="0.002" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_bad_radio_is_rejected[future]" time="0.001" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_bad_radio_is_rejected[missing_origin]" time="0.000" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_bad_radio_is_rejected[payload]" time="0.000" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_bad_radio_is_rejected[wrong_final]" time="0.000" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_recovery_discovery_includes_short_and_empty_scan_intervals" time="0.000" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_recovery_preserves_arbitrary_frame_weight_and_geometry" time="0.001" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_weight_applies_to_free_erasure_too" time="0.000" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_original_entry_and_explicit_identities" time="0.004" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_no_data_means_no_score" time="0.018" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_missing_diagnostics_not_zero_exit_success" time="0.007" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_empty_and_negative_delta_aggregation" time="0.000" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_frozen_receipt_rejects_edit" time="0.013" /><testcase classname="src.swarm_rescue.solutions.devtools.test_red_pair19" name="test_full_offline_pipeline_with_delayed_receipts" time="0.064"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'E:\\WpSystem\\S-1-5-21-1435116044-437790948-1096694801-1001\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\AC\\#!sandbox.{4f850524-b6b9-4283-a382-4d0dbbc68b7d}\\Temp\\pytest-of-fzhuj\\pytest-0\\test_full_offline_pipeline_wit0\\synthetic_only\\artifacts\\synthetic_exploration_diff.png'">tmp_path = WindowsPath('E:/WpSystem/S-1-5-21-1435116044-437790948-1096694801-1001/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/AC/#!sandbox.{4f850524-b6b9-4283-a382-4d0dbbc68b7d}/Temp/pytest-of-fzhuj/pytest-0/test_full_offline_pipeline_wit0')
+
+    def test_full_offline_pipeline_with_delayed_receipts(tmp_path):
+        """Synthetic fixture, NOT a flight: full final-merge branch and stale source."""
+        from PIL import Image
+        from swarm_rescue.solutions.devtools import red_recovery19_weights as weights
+        from swarm_rescue.solutions.my_drone_red_repair17 import RepairMapper17
+        from swarm_rescue.solutions.devtools.red_recovery18_audit import Metrics,legal_arguments
+        run=tmp_path/'synthetic_only';run.mkdir();art=run/'artifacts';art.mkdir()
+        inputs={'semantic':np.empty((0,5))};poses={};stages={};diag={'drones':{},'submissions':[]}
+        events=[];matches=[];snapshots={};mappers={}
+        for owner in (0,1):
+            mapper=RepairMapper17((120,120));mappers[owner]=mapper
+            data=np.zeros((48,192));data[:,0]=np.arange(1,49);data[:,1:5]=1
+            data[8:32,1:3]=0;data[:,11:]=45.;angles=np.linspace(-np.pi,np.pi,181)
+            mapper.matcher.match=lambda *a: (None,{'reason':'synthetic_fixed_rejection'})
+            trace=[]
+            for record in data:
+                tick=int(record[0]);mapper.update(*legal_arguments(record,angles,[]))
+                trace.append([tick,0,0,0,*mapper.position,mapper.heading,not bool(record[1])])
+                if tick%8==0 and not record[1]:
+                    matches.append(dict(drone=owner,step=tick,decision=dict(accepted=False,offset=None,info={'reason':'synthetic_fixed_rejection'})))
+                if tick==1 or tick%4==0:
+                    snapshots[owner,tick]=mapper.mask().copy()
+                    events.append(dict(event='local_publish',holder=owner,source=owner,step=tick,version=tick,sha256=f'{owner}:{tick}'))
+            inputs[f'drone_{owner}']=data;inputs[f'angles_{owner}']=angles;poses[f'pose_{owner}']=np.array(trace)
+            diag['drones'][str(owner)]={'history':[dict(step=12,published_sequence=12),dict(step=40,published_sequence=40)]}
+            for tick in (12,40):stages[f'published_{owner}_{tick}']=snapshots[owner,tick]
+            stages[f'local_final_{owner}']=mapper.mask()
+        events.extend([dict(event='received',holder=0,source=1,step=22,version=20,sha256='1:20'),
+                       dict(event='received',holder=0,source=1,step=44,version=40,sha256='1:40')])
+        events.sort(key=lambda e:e['step'])
+        submission=dict(drone=0,step=48,sources={'0':48,'1':40});diag['submissions']=[submission]
+        for owner,version in ((0,48),(1,40)):stages[f'submitter_0_source_{owner}']=snapshots[owner,version]
+        pred=mapper.to_pixels(snapshots[0,48]|snapshots[1,40]);truth=pred.copy()
+        png=np.full((weights.COMPARISON_HEADER_HEIGHT+120,120,3),255,np.uint8)
+        png[weights.COMPARISON_HEADER_HEIGHT:][truth.astype(bool)]=40
+&gt;       Image.fromarray(png).save(art/'synthetic_exploration_diff.png')
+
+src\swarm_rescue\solutions\devtools\test_red_pair19.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;PIL.Image.Image image mode=RGB size=120x144 at 0x1AE7E4F9420&gt;
+fp = WindowsPath('E:/WpSystem/S-1-5-21-1435116044-437790948-1096694801-1001/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76...Temp/pytest-of-fzhuj/pytest-0/test_full_offline_pipeline_wit0/synthetic_only/artifacts/synthetic_exploration_diff.png')
+format = 'PNG', params = {}
+
+    def save(self, fp, format=None, **params):
+        """
+        Saves this image under the given filename.  If no format is
+        specified, the format to use is determined from the filename
+        extension, if possible.
+    
+        Keyword options can be used to provide additional instructions
+        to the writer. If a writer doesn't recognise an option, it is
+        silently ignored. The available options are described in the
+        :doc:`image format documentation
+        &lt;../handbook/image-file-formats&gt;` for each writer.
+    
+        You can use a file object instead of a filename. In this case,
+        you must always specify the format. The file object must
+        implement the ``seek``, ``tell``, and ``write``
+        methods, and be opened in binary mode.
+    
+        :param fp: A filename (string), pathlib.Path object or file object.
+        :param format: Optional format override.  If omitted, the
+           format to use is determined from the filename extension.
+           If a file object was used instead of a filename, this
+           parameter should always be used.
+        :param params: Extra parameters to the image writer.
+        :returns: None
+        :exception ValueError: If the output format could not be determined
+           from the file name.  Use the format option to solve this.
+        :exception OSError: If the file could not be written.  The file
+           may have been created, and may contain partial data.
+        """
+    
+        filename = ""
+        open_fp = False
+        if isinstance(fp, Path):
+            filename = str(fp)
+            open_fp = True
+        elif is_path(fp):
+            filename = fp
+            open_fp = True
+        elif fp == sys.stdout:
+            try:
+                fp = sys.stdout.buffer
+            except AttributeError:
+                pass
+        if not filename and hasattr(fp, "name") and is_path(fp.name):
+            # only set the name for metadata purposes
+            filename = fp.name
+    
+        # may mutate self!
+        self._ensure_mutable()
+    
+        save_all = params.pop("save_all", False)
+        self.encoderinfo = params
+        self.encoderconfig = ()
+    
+        preinit()
+    
+        ext = os.path.splitext(filename)[1].lower()
+    
+        if not format:
+            if ext not in EXTENSION:
+                init()
+            try:
+                format = EXTENSION[ext]
+            except KeyError as e:
+                raise ValueError(f"unknown file extension: {ext}") from e
+    
+        if format.upper() not in SAVE:
+            init()
+        if save_all:
+            save_handler = SAVE_ALL[format.upper()]
+        else:
+            save_handler = SAVE[format.upper()]
+    
+        created = False
+        if open_fp:
+            created = not os.path.exists(filename)
+            if params.get("append", False):
+                # Open also for reading ("+"), because TIFF save_all
+                # writer needs to go back and edit the written data.
+                fp = builtins.open(filename, "r+b")
+            else:
+&gt;               fp = builtins.open(filename, "w+b")
+E               FileNotFoundError: [Errno 2] No such file or directory: 'E:\\WpSystem\\S-1-5-21-1435116044-437790948-1096694801-1001\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\AC\\#!sandbox.{4f850524-b6b9-4283-a382-4d0dbbc68b7d}\\Temp\\pytest-of-fzhuj\\pytest-0\\test_full_offline_pipeline_wit0\\synthetic_only\\artifacts\\synthetic_exploration_diff.png'
+
+.venv\lib\site-packages\PIL\Image.py:2350: FileNotFoundError</failure></testcase></testsuite></testsuites>

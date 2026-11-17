@@ -1,0 +1,433 @@
+{
+  "source": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19prep_20261117\\testtmp_v3\\test_full_offline_pipeline_wit0\\synthetic_only",
+  "map": "SYNTHETIC_TEST_ONLY",
+  "round": 1,
+  "seed": 0,
+  "scope": "offline_conditional_submission_counterfactual",
+  "valid_full_replay": true,
+  "checks": [
+    {
+      "owner": 0,
+      "steps": 48,
+      "pose_max_abs": 0.0,
+      "saved_publications_matched": 2
+    },
+    {
+      "owner": 1,
+      "steps": 48,
+      "pose_max_abs": 0.0,
+      "saved_publications_matched": 2
+    }
+  ],
+  "event_count": 2,
+  "expected_events": 2,
+  "events": [
+    {
+      "owner": 0,
+      "step": 33,
+      "frame_weights": {
+        "0.2": 6
+      },
+      "pending_count": 6,
+      "scores": {
+        "baseline_before": {
+          "hits": 0,
+          "charged": 0,
+          "credit": 0.0,
+          "penalty": 0.0,
+          "map_score": 0.0,
+          "roi_hits": 0,
+          "roi_charged": 0,
+          "missed": 936
+        },
+        "candidate_before": {
+          "hits": 0,
+          "charged": 0,
+          "credit": 0.0,
+          "penalty": 0.0,
+          "map_score": 0.0,
+          "roi_hits": 0,
+          "roi_charged": 0,
+          "missed": 936
+        },
+        "baseline_after": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        },
+        "candidate_after": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        },
+        "baseline_unanchored_promoted": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        },
+        "baseline_anchored": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        }
+      },
+      "weight_delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      },
+      "baseline_projection_delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      },
+      "first_holder_receipt": 36
+    },
+    {
+      "owner": 1,
+      "step": 33,
+      "frame_weights": {
+        "0.2": 6
+      },
+      "pending_count": 6,
+      "scores": {
+        "baseline_before": {
+          "hits": 0,
+          "charged": 0,
+          "credit": 0.0,
+          "penalty": 0.0,
+          "map_score": 0.0,
+          "roi_hits": 0,
+          "roi_charged": 0,
+          "missed": 936
+        },
+        "candidate_before": {
+          "hits": 0,
+          "charged": 0,
+          "credit": 0.0,
+          "penalty": 0.0,
+          "map_score": 0.0,
+          "roi_hits": 0,
+          "roi_charged": 0,
+          "missed": 936
+        },
+        "baseline_after": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        },
+        "candidate_after": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        },
+        "baseline_unanchored_promoted": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        },
+        "baseline_anchored": {
+          "hits": 936,
+          "charged": 0,
+          "credit": 100.0,
+          "penalty": 0.0,
+          "map_score": 100.0,
+          "roi_hits": 936,
+          "roi_charged": 0,
+          "missed": 0
+        }
+      },
+      "weight_delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      },
+      "baseline_projection_delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      },
+      "first_holder_receipt": 44
+    }
+  ],
+  "per_drone_final": [
+    {
+      "owner": 0,
+      "baseline": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "candidate": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      },
+      "end_step": 48,
+      "pending_count": 0
+    },
+    {
+      "owner": 1,
+      "baseline": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "candidate": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      },
+      "end_step": 48,
+      "pending_count": 0
+    }
+  ],
+  "holder_timeline": [
+    {
+      "step": 33,
+      "actual_sources": {
+        "0": 32,
+        "1": 20
+      },
+      "baseline": {
+        "hits": 0,
+        "charged": 0,
+        "credit": 0.0,
+        "penalty": 0.0,
+        "map_score": 0.0,
+        "roi_hits": 0,
+        "roi_charged": 0,
+        "missed": 936
+      },
+      "candidate": {
+        "hits": 0,
+        "charged": 0,
+        "credit": 0.0,
+        "penalty": 0.0,
+        "map_score": 0.0,
+        "roi_hits": 0,
+        "roi_charged": 0,
+        "missed": 936
+      },
+      "delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      }
+    },
+    {
+      "step": 36,
+      "actual_sources": {
+        "0": 36,
+        "1": 20
+      },
+      "baseline": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "candidate": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      }
+    },
+    {
+      "step": 44,
+      "actual_sources": {
+        "0": 44,
+        "1": 40
+      },
+      "baseline": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "candidate": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      }
+    },
+    {
+      "step": 48,
+      "actual_sources": {
+        "0": 48,
+        "1": 40
+      },
+      "baseline": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "candidate": {
+        "hits": 936,
+        "charged": 0,
+        "credit": 100.0,
+        "penalty": 0.0,
+        "map_score": 100.0,
+        "roi_hits": 936,
+        "roi_charged": 0,
+        "missed": 0
+      },
+      "delta": {
+        "hits": 0,
+        "missed": 0,
+        "charged": 0,
+        "map_score": 0.0
+      }
+    }
+  ],
+  "final": {
+    "step": 48,
+    "actual_sources": {
+      "0": 48,
+      "1": 40
+    },
+    "baseline": {
+      "hits": 936,
+      "charged": 0,
+      "credit": 100.0,
+      "penalty": 0.0,
+      "map_score": 100.0,
+      "roi_hits": 936,
+      "roi_charged": 0,
+      "missed": 0
+    },
+    "candidate": {
+      "hits": 936,
+      "charged": 0,
+      "credit": 100.0,
+      "penalty": 0.0,
+      "map_score": 100.0,
+      "roi_hits": 936,
+      "roi_charged": 0,
+      "missed": 0
+    },
+    "delta": {
+      "hits": 0,
+      "missed": 0,
+      "charged": 0,
+      "map_score": 0.0
+    }
+  },
+  "wall_seconds": 0.12205599999970218,
+  "blue_difficulty": null,
+  "full_competition_score": null,
+  "limitations": [
+    "Recorded matcher decisions are replayed, not re-optimized; timing budgets cannot change the control arm.",
+    "No actual candidate packets were transmitted. Payload length, navigation, source/version and accepted schedule are held fixed.",
+    "All saved masks, every recorded pose and baseline submission must match; original full intermediate payload bytes are unavailable.",
+    "Local intermediate metrics are not team scores. Truth is used only for scoring after evidence construction.",
+    "Later-event candidate deltas include accumulated effects of earlier recoveries under the same single-factor policy."
+  ]
+}

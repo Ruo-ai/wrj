@@ -1,0 +1,116 @@
+{
+  "source": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001",
+  "map": "Map08",
+  "round": 1,
+  "seed": 200806601,
+  "scope": "partial_real_tape_smoke_no_final_submission",
+  "valid_full_replay": false,
+  "checks": [
+    {
+      "owner": 0,
+      "steps": 854,
+      "pose_max_abs": 0.0,
+      "saved_publications_matched": 2
+    }
+  ],
+  "event_count": 1,
+  "expected_events": 50,
+  "events": [
+    {
+      "owner": 0,
+      "step": 850,
+      "frame_weights": {
+        "0.45": 122,
+        "0.2": 3
+      },
+      "pending_count": 125,
+      "scores": {
+        "baseline_before": {
+          "hits": 4585,
+          "charged": 6506,
+          "credit": 4.743823200761494,
+          "penalty": 1.0159127591772545,
+          "map_score": 3.7279104415842403,
+          "roi_hits": 4585,
+          "roi_charged": 6506,
+          "missed": 92067
+        },
+        "candidate_before": {
+          "hits": 4585,
+          "charged": 6506,
+          "credit": 4.743823200761494,
+          "penalty": 1.0159127591772545,
+          "map_score": 3.7279104415842403,
+          "roi_hits": 4585,
+          "roi_charged": 6506,
+          "missed": 92067
+        },
+        "baseline_after": {
+          "hits": 8578,
+          "charged": 14044,
+          "credit": 8.87513967636469,
+          "penalty": 1.5015520404388942,
+          "map_score": 7.373587635925795,
+          "roi_hits": 8578,
+          "roi_charged": 14044,
+          "missed": 88074
+        },
+        "candidate_after": {
+          "hits": 5614,
+          "charged": 5759,
+          "credit": 5.8084674916194174,
+          "penalty": 0.5683896462954724,
+          "map_score": 5.240077845323945,
+          "roi_hits": 5614,
+          "roi_charged": 5759,
+          "missed": 91038
+        },
+        "baseline_unanchored_promoted": {
+          "hits": 4840,
+          "charged": 9695,
+          "credit": 5.007656334064479,
+          "penalty": 1.504842174599336,
+          "map_score": 3.502814159465143,
+          "roi_hits": 4840,
+          "roi_charged": 9695,
+          "missed": 91812
+        },
+        "baseline_anchored": {
+          "hits": 8578,
+          "charged": 14044,
+          "credit": 8.87513967636469,
+          "penalty": 1.5015520404388942,
+          "map_score": 7.373587635925795,
+          "roi_hits": 8578,
+          "roi_charged": 14044,
+          "missed": 88074
+        }
+      },
+      "weight_delta": {
+        "hits": -2964,
+        "missed": 2964,
+        "charged": -8285,
+        "map_score": -2.13350979060185
+      },
+      "baseline_projection_delta": {
+        "hits": 3738,
+        "missed": -3738,
+        "charged": 4349,
+        "map_score": 3.870773476460652
+      }
+    }
+  ],
+  "per_drone_final": [],
+  "holder_timeline": [],
+  "final": null,
+  "wall_seconds": 1.1942471000002115,
+  "blue_difficulty": null,
+  "full_competition_score": null,
+  "limitations": [
+    "Recorded matcher decisions are replayed, not re-optimized; timing budgets cannot change the control arm.",
+    "No actual candidate packets were transmitted. Payload length, navigation, source/version and accepted schedule are held fixed.",
+    "All saved masks, every recorded pose and baseline submission must match; original full intermediate payload bytes are unavailable.",
+    "Local intermediate metrics are not team scores. Truth is used only for scoring after evidence construction.",
+    "Later-event candidate deltas include accumulated effects of earlier recoveries under the same single-factor policy."
+  ]
+}

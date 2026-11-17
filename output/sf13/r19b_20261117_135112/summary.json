@@ -1,0 +1,96 @@
+{
+  "full": true,
+  "planned_events": 64,
+  "completed_events": 64,
+  "new_flights": 0,
+  "resources": {
+    "wall_seconds": 51.54292869999972,
+    "cpu_seconds": 47.609375,
+    "affinity": [
+      0
+    ],
+    "peak_rss_bytes": 971567104
+  },
+  "results": [
+    {
+      "map": "Map08",
+      "events": 50,
+      "final": {
+        "step": 4535,
+        "actual_sources": {
+          "0": 4535,
+          "1": 4530,
+          "2": 4360,
+          "3": 3900,
+          "4": 3930
+        },
+        "baseline": {
+          "hits": 72136,
+          "charged": 116289,
+          "credit": 74.6347721723296,
+          "penalty": 10.88991384684228,
+          "map_score": 63.74485832548732,
+          "roi_hits": 72136,
+          "roi_charged": 116289,
+          "missed": 24516
+        },
+        "candidate": {
+          "hits": 69698,
+          "charged": 90186,
+          "credit": 72.11232049000537,
+          "penalty": 7.69753374218847,
+          "map_score": 64.4147867478169,
+          "roi_hits": 69698,
+          "roi_charged": 90186,
+          "missed": 26954
+        },
+        "delta": {
+          "hits": -2438,
+          "missed": 2438,
+          "charged": -26103,
+          "map_score": 0.6699284223295834
+        }
+      }
+    },
+    {
+      "map": "Map09",
+      "events": 14,
+      "final": {
+        "step": 4450,
+        "actual_sources": {
+          "0": 4450,
+          "1": 4440,
+          "2": 4380,
+          "3": 4380,
+          "4": 4410
+        },
+        "baseline": {
+          "hits": 94668,
+          "charged": 117454,
+          "credit": 84.89870591083968,
+          "penalty": 10.476688122718754,
+          "map_score": 74.42201778812093,
+          "roi_hits": 94668,
+          "roi_charged": 117454,
+          "missed": 16839
+        },
+        "candidate": {
+          "hits": 92336,
+          "charged": 101966,
+          "credit": 82.80735738563499,
+          "penalty": 8.6708639928435,
+          "map_score": 74.13649339279148,
+          "roi_hits": 92336,
+          "roi_charged": 101966,
+          "missed": 19171
+        },
+        "delta": {
+          "hits": -2332,
+          "missed": 2332,
+          "charged": -15488,
+          "map_score": -0.2855243953294462
+        }
+      }
+    }
+  ]
+}

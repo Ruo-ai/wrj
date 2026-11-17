@@ -1,0 +1,267 @@
+{
+  "maps": [
+    {
+      "name": "yh_map_fs_24",
+      "group": "8edb98965adb4957095aef27c7d7a3b5deabbdb7e1686b2b8ca61a6d3a811f00",
+      "reason": "训练集中墙占比最低；88px名义通道，相对开阔混合分区。",
+      "seeds": [
+        2026111701,
+        2026111702
+      ],
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "zones": [
+        {
+          "rect": [
+            707,
+            165,
+            1584,
+            847
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            168,
+            490,
+            760,
+            1075
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "passage_width": 88,
+      "wall_count": 39,
+      "wall_fraction": 0.04342,
+      "route_metrics_recomputed": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2024.0,
+        "detour_p90": 2.5793704734983316
+      },
+      "metadata_metrics": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2024.0,
+        "detour_p90": 2.5793704734983316
+      }
+    },
+    {
+      "name": "yh_map_fs_37",
+      "group": "82d314068462d7bcfbc19f8286ac7226f7c828af783e7fcda33f7922e5fcaf08",
+      "reason": "37段/块墙，72px名义通道；少分区但通道较窄。",
+      "seeds": [
+        2026111701,
+        2026111702
+      ],
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "zones": [
+        {
+          "rect": [
+            452,
+            70,
+            1047,
+            823
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            204,
+            70,
+            1084,
+            545
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "passage_width": 72,
+      "wall_count": 37,
+      "wall_fraction": 0.050618,
+      "route_metrics_recomputed": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2000.0,
+        "detour_p90": 1.7783135402084862
+      },
+      "metadata_metrics": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2000.0,
+        "detour_p90": 1.7783135402084862
+      }
+    },
+    {
+      "name": "yh_map_fs_27",
+      "group": "8e5e9437e5ee8ee079985e7b45cfdcae6a421a824661c0c574d6fde8176b6763",
+      "reason": "56px名义通道、50段/块墙；较密集窄口。",
+      "seeds": [
+        2026111701,
+        2026111702
+      ],
+      "map_sha256": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+      "zones": [
+        {
+          "rect": [
+            215,
+            600,
+            824,
+            998
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            101,
+            252,
+            862,
+            856
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "passage_width": 56,
+      "wall_count": 50,
+      "wall_fraction": 0.05991,
+      "route_metrics_recomputed": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2520.0,
+        "detour_p90": 4.10168370474645
+      },
+      "metadata_metrics": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2520.0,
+        "detour_p90": 4.10168370474645
+      }
+    },
+    {
+      "name": "yh_map_fs_72",
+      "group": "8f193c1ae87aa4c9ca88ed498ff640047a7ca2ec7f6b04171bac76effa8407a6",
+      "reason": "56px名义通道、较低墙占比；窄口与较开阔房间共存。",
+      "seeds": [
+        2026111701,
+        2026111702
+      ],
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "zones": [
+        {
+          "rect": [
+            647,
+            365,
+            1604,
+            1094
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            899,
+            244,
+            1523,
+            933
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "passage_width": 56,
+      "wall_count": 43,
+      "wall_fraction": 0.046132,
+      "route_metrics_recomputed": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2728.0,
+        "detour_p90": 2.9321460489949773
+      },
+      "metadata_metrics": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2728.0,
+        "detour_p90": 2.9321460489949773
+      }
+    },
+    {
+      "name": "yh_map_fs_55",
+      "group": "7d2b3db415eec0fa22cd9db162da78bca9bf16f88f2697000a0841890f6bb65d",
+      "reason": "训练集最多65段/块墙、56px名义通道；密集曲折分区。",
+      "seeds": [
+        2026111701,
+        2026111702
+      ],
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "zones": [
+        {
+          "rect": [
+            868,
+            179,
+            1667,
+            693
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            331,
+            272,
+            1001,
+            1007
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "passage_width": 56,
+      "wall_count": 65,
+      "wall_fraction": 0.061691,
+      "route_metrics_recomputed": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2368.0,
+        "detour_p90": 2.3775621735992387
+      },
+      "metadata_metrics": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 2368.0,
+        "detour_p90": 2.3775621735992387
+      }
+    },
+    {
+      "name": "yh_map_fs_90",
+      "group": "b13a3aca6d0f4350c97d2ae725c7fef9f17947f7b1881c5a9d78ed318c9400f0",
+      "reason": "63段/块墙、64px名义通道；第二个密集分区样本。",
+      "seeds": [
+        2026111701,
+        2026111702
+      ],
+      "map_sha256": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+      "zones": [
+        {
+          "rect": [
+            871,
+            199,
+            1480,
+            728
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            187,
+            344,
+            1167,
+            800
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "passage_width": 64,
+      "wall_count": 63,
+      "wall_fraction": 0.06925,
+      "route_metrics_recomputed": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 3776.0,
+        "detour_p90": 4.393059192881989
+      },
+      "metadata_metrics": {
+        "route_reachable_fraction": 1.0,
+        "route_p90_px": 3776.0,
+        "detour_p90": 4.393059192881989
+      }
+    }
+  ],
+  "independent_dataset_groups": 6,
+  "all_100_zone_counts": {
+    "('NO_COM_ZONE', 'NO_GPS_ZONE')": 100
+  },
+  "validation_or_test_selected": false
+}

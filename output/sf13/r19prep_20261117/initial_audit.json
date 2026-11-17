@@ -1,0 +1,239 @@
+{
+  "head": "fa28f914286d2549a780a8490d1ce03ddf7b7fca",
+  "status": "",
+  "protected_count": 1787,
+  "dataset": {
+    "indexed_count": 100,
+    "unique_count": 100,
+    "excluded_duplicate_count": 0,
+    "independent_groups": 63,
+    "split_counts": {
+      "train": 70,
+      "validation": 15,
+      "test": 15,
+      "extrapolation": 0,
+      "hard": 15
+    },
+    "achieved_ordinary_ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "requested_ratios": [
+      70,
+      15,
+      15
+    ],
+    "target_counts": {
+      "train": 70.0,
+      "validation": 15.0,
+      "test": 15.0
+    },
+    "distributions": {
+      "train": {
+        "count": 70,
+        "families": {
+          "semifinal": 70
+        },
+        "difficulties": {
+          "hard": 70
+        },
+        "calibration_sources": {
+          "None": 70
+        },
+        "algorithms": {
+          "semifinal-partition-mix-v5": 70
+        },
+        "sizes": {
+          "1660x1122": 38,
+          "1700x1100": 32
+        },
+        "wall_fraction_range": [
+          0.04342,
+          0.076356
+        ],
+        "room_count_range": [
+          0,
+          0
+        ]
+      },
+      "validation": {
+        "count": 15,
+        "families": {
+          "semifinal": 15
+        },
+        "difficulties": {
+          "hard": 15
+        },
+        "calibration_sources": {
+          "None": 15
+        },
+        "algorithms": {
+          "semifinal-partition-mix-v5": 15
+        },
+        "sizes": {
+          "1660x1122": 7,
+          "1700x1100": 8
+        },
+        "wall_fraction_range": [
+          0.047029,
+          0.070891
+        ],
+        "room_count_range": [
+          0,
+          0
+        ]
+      },
+      "test": {
+        "count": 15,
+        "families": {
+          "semifinal": 15
+        },
+        "difficulties": {
+          "hard": 15
+        },
+        "calibration_sources": {
+          "None": 15
+        },
+        "algorithms": {
+          "semifinal-partition-mix-v5": 15
+        },
+        "sizes": {
+          "1660x1122": 5,
+          "1700x1100": 10
+        },
+        "wall_fraction_range": [
+          0.049056,
+          0.077286
+        ],
+        "room_count_range": [
+          0,
+          0
+        ]
+      },
+      "extrapolation": {
+        "count": 0,
+        "families": {},
+        "difficulties": {},
+        "calibration_sources": {},
+        "algorithms": {},
+        "sizes": {},
+        "wall_fraction_range": [
+          0,
+          0
+        ],
+        "room_count_range": [
+          0,
+          0
+        ]
+      },
+      "hard": {
+        "count": 15,
+        "families": {
+          "semifinal": 15
+        },
+        "difficulties": {
+          "hard": 15
+        },
+        "calibration_sources": {
+          "None": 15
+        },
+        "algorithms": {
+          "semifinal-partition-mix-v5": 15
+        },
+        "sizes": {
+          "1660x1122": 5,
+          "1700x1100": 10
+        },
+        "wall_fraction_range": [
+          0.049056,
+          0.077286
+        ],
+        "room_count_range": [
+          0,
+          0
+        ]
+      }
+    },
+    "overall_distribution": {
+      "count": 100,
+      "families": {
+        "semifinal": 100
+      },
+      "difficulties": {
+        "hard": 100
+      },
+      "calibration_sources": {
+        "None": 100
+      },
+      "algorithms": {
+        "semifinal-partition-mix-v5": 100
+      },
+      "sizes": {
+        "1660x1122": 50,
+        "1700x1100": 50
+      },
+      "wall_fraction_range": [
+        0.04342,
+        0.077286
+      ],
+      "room_count_range": [
+        0,
+        0
+      ]
+    },
+    "warnings": [
+      "No structure-extrapolation holdout: select unseen families after generating diverse structures.",
+      "Only one structure family is present; ordinary test measures within-family generalization.",
+      "Hard labels are generator presets, not measured adversarial difficulty."
+    ],
+    "extrapolation_ready": false,
+    "hard_definition": "difficulty=hard AND primary split is test or extrapolation"
+  },
+  "historical_runs": [
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl11_lines\\red\\attempt_001",
+      "valid": true
+    },
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001",
+      "valid": true
+    },
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001",
+      "valid": true
+    },
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl17_repair\\red\\attempt_001",
+      "valid": true
+    }
+  ],
+  "rl18": [
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl11_lines\\results.json",
+      "valid": true,
+      "inputs": true,
+      "code": true
+    },
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl17_repair\\results.json",
+      "valid": true,
+      "inputs": true,
+      "code": true
+    },
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl11_lines\\results.json",
+      "valid": true,
+      "inputs": true,
+      "code": true
+    },
+    {
+      "path": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl17_repair\\results.json",
+      "valid": true,
+      "inputs": true,
+      "code": true
+    }
+  ],
+  "rl18_new_code_hashes": true,
+  "historical_snapshot_hash": true
+}

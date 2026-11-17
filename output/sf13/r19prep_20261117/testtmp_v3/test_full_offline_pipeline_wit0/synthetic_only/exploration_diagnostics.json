@@ -1,0 +1,38 @@
+{
+  "drones": {
+    "0": {
+      "history": [
+        {
+          "step": 12,
+          "published_sequence": 12
+        },
+        {
+          "step": 40,
+          "published_sequence": 40
+        }
+      ]
+    },
+    "1": {
+      "history": [
+        {
+          "step": 12,
+          "published_sequence": 12
+        },
+        {
+          "step": 40,
+          "published_sequence": 40
+        }
+      ]
+    }
+  },
+  "submissions": [
+    {
+      "drone": 0,
+      "step": 48,
+      "sources": {
+        "0": 48,
+        "1": 40
+      }
+    }
+  ]
+}

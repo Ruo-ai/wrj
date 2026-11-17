@@ -1,0 +1,7 @@
+{
+  "flight_export_failure": "First two 16-step runs failed at native export due to long Windows sandbox TEMP paths; complete logs in r19smoke_20261117.",
+  "python_startup_failure": "Ordinary parent invocation with -X utf8 failed while reading a GBK .pth before any simulation. Final commands omit -X utf8; worker uses -S.",
+  "pytest_failure": "tests_v2: 13 passed / 1 failed, long default temporary path before synthetic PNG save; tests_v3/v4 passed with a new short --basetemp.",
+  "atlas_failure": "First short-run atlas lacked submitted exploration.json; figures_v2 explicitly marks no submitted map and renders other evidence.",
+  "replay_harness_failure": "Calling two generated-map replays in a single process triggered existing duplicate-registration guard; real command starts a fresh process, verified separately for both arms."
+}

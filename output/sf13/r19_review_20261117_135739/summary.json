@@ -1,0 +1,2454 @@
+{
+  "scope": "red stage only; difficulty/full score not evaluated",
+  "rows": [
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4265,
+      "wall_seconds": 128.08375191688538,
+      "process_seconds": 135.88999999999987,
+      "bombs": 10,
+      "map_score": 77.06896692024404,
+      "wall_score": 53.605849119308736,
+      "time_score": 30.02645502645503,
+      "wall_hits": 75508,
+      "wall_missed": 5138,
+      "charged_pixels": 120472,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 135.88999999999987,
+        "peak_job_commit_bytes": 734588928,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4265,
+      "wall_seconds": 127.0965325832367,
+      "process_seconds": 134.84400000000005,
+      "bombs": 10,
+      "map_score": 78.76556668185651,
+      "wall_score": 53.605849119308736,
+      "time_score": 30.02645502645503,
+      "wall_hits": 75411,
+      "wall_missed": 5235,
+      "charged_pixels": 113247,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 134.84400000000005,
+        "peak_job_commit_bytes": 737800192,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 128.46891117095947,
+      "process_seconds": 136.29700000000003,
+      "bombs": 10,
+      "map_score": 83.96947093625226,
+      "wall_score": 57.19754317295028,
+      "time_score": 22.857142857142858,
+      "wall_hits": 74937,
+      "wall_missed": 5709,
+      "charged_pixels": 77054,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 136.29700000000003,
+        "peak_job_commit_bytes": 749817856,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_24",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_24_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 129.12416458129883,
+      "process_seconds": 136.82900000000018,
+      "bombs": 10,
+      "map_score": 83.43516049308087,
+      "wall_score": 57.19754317295028,
+      "time_score": 22.857142857142858,
+      "wall_hits": 74958,
+      "wall_missed": 5688,
+      "charged_pixels": 80273,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 136.82900000000018,
+        "peak_job_commit_bytes": 749256704,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 131.68048620224,
+      "process_seconds": 139.31300000000056,
+      "bombs": 10,
+      "map_score": 57.36004525638716,
+      "wall_score": 51.25770171149144,
+      "time_score": 22.857142857142858,
+      "wall_hits": 62928,
+      "wall_missed": 25844,
+      "charged_pixels": 111240,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 139.31300000000056,
+        "peak_job_commit_bytes": 746541056,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 132.92382526397705,
+      "process_seconds": 140.6880000000001,
+      "bombs": 10,
+      "map_score": 57.17526007637544,
+      "wall_score": 51.25770171149144,
+      "time_score": 22.857142857142858,
+      "wall_hits": 62014,
+      "wall_missed": 26758,
+      "charged_pixels": 109159,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 140.6880000000001,
+        "peak_job_commit_bytes": 751329280,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 132.06783866882324,
+      "process_seconds": 139.75,
+      "bombs": 10,
+      "map_score": 59.83623425742351,
+      "wall_score": 59.20880195599022,
+      "time_score": 22.857142857142858,
+      "wall_hits": 65841,
+      "wall_missed": 22931,
+      "charged_pixels": 115739,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 139.75,
+        "peak_job_commit_bytes": 745472000,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_37",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_37_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 131.89593029022217,
+      "process_seconds": 139.53099999999995,
+      "bombs": 10,
+      "map_score": 59.71941550404407,
+      "wall_score": 59.20880195599022,
+      "time_score": 22.857142857142858,
+      "wall_hits": 65389,
+      "wall_missed": 23383,
+      "charged_pixels": 113762,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 139.53099999999995,
+        "peak_job_commit_bytes": 748285952,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_27",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3971,
+      "wall_seconds": 118.16083121299744,
+      "process_seconds": 125.57899999999972,
+      "bombs": 10,
+      "map_score": 25.130946018172097,
+      "wall_score": 34.46926148580455,
+      "time_score": 37.804232804232804,
+      "wall_hits": 28867,
+      "wall_missed": 70296,
+      "charged_pixels": 49005,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.57899999999972,
+        "peak_job_commit_bytes": 728477696,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_27",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3971,
+      "wall_seconds": 121.43153119087219,
+      "process_seconds": 128.84400000000005,
+      "bombs": 10,
+      "map_score": 25.109385478328612,
+      "wall_score": 34.46926148580455,
+      "time_score": 37.804232804232804,
+      "wall_hits": 28842,
+      "wall_missed": 70321,
+      "charged_pixels": 48612,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 128.84400000000005,
+        "peak_job_commit_bytes": 728403968,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_27",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3899,
+      "wall_seconds": 116.40303707122803,
+      "process_seconds": 123.8130000000001,
+      "bombs": 10,
+      "map_score": 18.678437742656033,
+      "wall_score": 30.602483654394664,
+      "time_score": 39.70899470899471,
+      "wall_hits": 23763,
+      "wall_missed": 75400,
+      "charged_pixels": 55889,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 123.8130000000001,
+        "peak_job_commit_bytes": 729739264,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_27",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_27_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3899,
+      "wall_seconds": 115.94625115394592,
+      "process_seconds": 123.28200000000015,
+      "bombs": 10,
+      "map_score": 18.6497586360336,
+      "wall_score": 30.602483654394664,
+      "time_score": 39.70899470899471,
+      "wall_hits": 23772,
+      "wall_missed": 75391,
+      "charged_pixels": 56291,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 123.28200000000015,
+        "peak_job_commit_bytes": 724647936,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 118.27630352973938,
+      "process_seconds": 125.9369999999999,
+      "bombs": 10,
+      "map_score": 9.683584535115083,
+      "wall_score": 29.988587801087803,
+      "time_score": 22.857142857142858,
+      "wall_hits": 13016,
+      "wall_missed": 77700,
+      "charged_pixels": 35326,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.9369999999999,
+        "peak_job_commit_bytes": 751337472,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 123.964604139328,
+      "process_seconds": 131.64099999999962,
+      "bombs": 10,
+      "map_score": 9.683584535115083,
+      "wall_score": 29.988587801087803,
+      "time_score": 22.857142857142858,
+      "wall_hits": 13016,
+      "wall_missed": 77700,
+      "charged_pixels": 35326,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 131.64099999999962,
+        "peak_job_commit_bytes": 749178880,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3888,
+      "wall_seconds": 106.61371040344238,
+      "process_seconds": 113.96900000000005,
+      "bombs": 10,
+      "map_score": 10.66402848243419,
+      "wall_score": 24.814248251748253,
+      "time_score": 40.0,
+      "wall_hits": 13049,
+      "wall_missed": 77667,
+      "charged_pixels": 31527,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 113.96900000000005,
+        "peak_job_commit_bytes": 731791360,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_72",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 3888,
+      "wall_seconds": 109.37522745132446,
+      "process_seconds": 116.65700000000015,
+      "bombs": 10,
+      "map_score": 10.66402848243419,
+      "wall_score": 24.814248251748253,
+      "time_score": 40.0,
+      "wall_hits": 13049,
+      "wall_missed": 77667,
+      "charged_pixels": 31527,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 116.65700000000015,
+        "peak_job_commit_bytes": 730714112,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 126.72612452507019,
+      "process_seconds": 134.375,
+      "bombs": 10,
+      "map_score": 15.924838073016872,
+      "wall_score": 31.323326432022085,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24935,
+      "wall_missed": 83177,
+      "charged_pixels": 67246,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 134.375,
+        "peak_job_commit_bytes": 761708544,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 131.14340138435364,
+      "process_seconds": 138.875,
+      "bombs": 10,
+      "map_score": 16.42137754134601,
+      "wall_score": 31.323326432022085,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24777,
+      "wall_missed": 83335,
+      "charged_pixels": 62979,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 138.875,
+        "peak_job_commit_bytes": 761815040,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 124.00155138969421,
+      "process_seconds": 131.51599999999962,
+      "bombs": 10,
+      "map_score": 16.8154137173718,
+      "wall_score": 39.84989648033127,
+      "time_score": 22.857142857142858,
+      "wall_hits": 22572,
+      "wall_missed": 85540,
+      "charged_pixels": 42598,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 131.51599999999962,
+        "peak_job_commit_bytes": 746450944,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_55",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_55_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 124.92310380935669,
+      "process_seconds": 132.48399999999947,
+      "bombs": 10,
+      "map_score": 16.8154137173718,
+      "wall_score": 39.84989648033127,
+      "time_score": 22.857142857142858,
+      "wall_hits": 22572,
+      "wall_missed": 85540,
+      "charged_pixels": 42598,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 132.48399999999947,
+        "peak_job_commit_bytes": 746418176,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_90",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 120.86736035346985,
+      "process_seconds": 128.45299999999952,
+      "bombs": 10,
+      "map_score": 26.782573261932008,
+      "wall_score": 39.78521496354795,
+      "time_score": 22.857142857142858,
+      "wall_hits": 31319,
+      "wall_missed": 79224,
+      "charged_pixels": 29676,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 128.45299999999952,
+        "peak_job_commit_bytes": 743448576,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    {
+      "map": "yh_map_fs_90",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 120.9494469165802,
+      "process_seconds": 128.45299999999952,
+      "bombs": 10,
+      "map_score": 26.782573261932008,
+      "wall_score": 39.78521496354795,
+      "time_score": 22.857142857142858,
+      "wall_hits": 31319,
+      "wall_missed": 79224,
+      "charged_pixels": 29676,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 128.45299999999952,
+        "peak_job_commit_bytes": 743792640,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_90",
+      "controller": "rl17_repair",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r02\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 120.049889087677,
+      "process_seconds": 127.42199999999957,
+      "bombs": 10,
+      "map_score": 20.312692762940664,
+      "wall_score": 35.36669832270595,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24344,
+      "wall_missed": 86199,
+      "charged_pixels": 26368,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 127.42199999999957,
+        "peak_job_commit_bytes": 739643392,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    },
+    {
+      "map": "yh_map_fs_90",
+      "controller": "rl11_lines",
+      "round": 2,
+      "seed": 2026111702,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_90_r02\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 120.05238318443298,
+      "process_seconds": 127.42200000000048,
+      "bombs": 10,
+      "map_score": 20.312692762940664,
+      "wall_score": 35.36669832270595,
+      "time_score": 22.857142857142858,
+      "wall_hits": 24344,
+      "wall_missed": 86199,
+      "charged_pixels": 26368,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 127.42200000000048,
+        "peak_job_commit_bytes": 741244928,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    }
+  ],
+  "pairs": [
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 1.6965997616124753,
+        "wall_hits": -97,
+        "wall_missed": 97,
+        "charged_pixels": -7225,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.9872193336486816
+      },
+      "delta": {
+        "map_score": 1.6965997616124753,
+        "wall_hits": -97,
+        "wall_missed": 97,
+        "charged_pixels": -7225,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.9872193336486816
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.5343104431713925,
+        "wall_hits": -21,
+        "wall_missed": 21,
+        "charged_pixels": -3219,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.6552534103393555
+      },
+      "delta": {
+        "map_score": 0.5343104431713925,
+        "wall_hits": -21,
+        "wall_missed": 21,
+        "charged_pixels": -3219,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.6552534103393555
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": -0.18478518001172262,
+        "wall_hits": -914,
+        "wall_missed": 914,
+        "charged_pixels": -2081,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.2433390617370605
+      },
+      "delta": {
+        "map_score": -0.18478518001172262,
+        "wall_hits": -914,
+        "wall_missed": 914,
+        "charged_pixels": -2081,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.2433390617370605
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.11681875337944092,
+        "wall_hits": 452,
+        "wall_missed": -452,
+        "charged_pixels": 1977,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.17190837860107422
+      },
+      "delta": {
+        "map_score": 0.11681875337944092,
+        "wall_hits": 452,
+        "wall_missed": -452,
+        "charged_pixels": 1977,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.17190837860107422
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_27",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": -0.021560539843484605,
+        "wall_hits": -25,
+        "wall_missed": 25,
+        "charged_pixels": -393,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 3.270699977874756
+      },
+      "delta": {
+        "map_score": -0.021560539843484605,
+        "wall_hits": -25,
+        "wall_missed": 25,
+        "charged_pixels": -393,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 3.270699977874756
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_27",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.028679106622433892,
+        "wall_hits": -9,
+        "wall_missed": 9,
+        "charged_pixels": -402,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.4567859172821045
+      },
+      "delta": {
+        "map_score": 0.028679106622433892,
+        "wall_hits": -9,
+        "wall_missed": 9,
+        "charged_pixels": -402,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.4567859172821045
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 5.688300609588623
+      },
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 5.688300609588623
+      },
+      "regression": false,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -2.76151704788208
+      },
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -2.76151704788208
+      },
+      "regression": false,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.4965394683291393,
+        "wall_hits": -158,
+        "wall_missed": 158,
+        "charged_pixels": -4267,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 4.417276859283447
+      },
+      "delta": {
+        "map_score": 0.4965394683291393,
+        "wall_hits": -158,
+        "wall_missed": 158,
+        "charged_pixels": -4267,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 4.417276859283447
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.9215524196624756
+      },
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.9215524196624756
+      },
+      "regression": false,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_90",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.08208656311035156
+      },
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.08208656311035156
+      },
+      "regression": false,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_90",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.0024940967559814453
+      },
+      "delta": {
+        "map_score": 0.0,
+        "wall_hits": 0,
+        "wall_missed": 0,
+        "charged_pixels": 0,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.0024940967559814453
+      },
+      "regression": false,
+      "reasons": []
+    }
+  ],
+  "expected_count": 24,
+  "valid_count": 24,
+  "invalid_count": 0,
+  "all_execution_checks_pass": true,
+  "paired_aggregate": {
+    "map_score": {
+      "n": 12,
+      "mean": 0.22221681777163957,
+      "median": 0.0,
+      "min": -0.18478518001172262,
+      "max": 1.6965997616124753
+    },
+    "wall_hits": {
+      "n": 12,
+      "mean": -64.33333333333333,
+      "median": -4.5,
+      "min": -914,
+      "max": 452
+    },
+    "wall_missed": {
+      "n": 12,
+      "mean": 64.33333333333333,
+      "median": 4.5,
+      "min": -452,
+      "max": 914
+    },
+    "charged_pixels": {
+      "n": 12,
+      "mean": -1300.8333333333333,
+      "median": -196.5,
+      "min": -7225,
+      "max": 1977
+    },
+    "wall_score": {
+      "n": 12,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "time_score": {
+      "n": 12,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "bombs": {
+      "n": 12,
+      "mean": 0,
+      "median": 0.0,
+      "min": 0,
+      "max": 0
+    },
+    "wall_seconds": {
+      "n": 12,
+      "mean": 0.8335300882657369,
+      "median": 0.1269974708557129,
+      "min": -2.76151704788208,
+      "max": 5.688300609588623
+    }
+  },
+  "unpaired_valid_aggregate": {
+    "rl11_lines": {
+      "map_score": {
+        "n": 12,
+        "mean": 35.12895197173104,
+        "median": 22.72181939055638,
+        "min": 9.683584535115083,
+        "max": 83.43516049308087
+      },
+      "wall_hits": {
+        "n": 12,
+        "mean": 38388.083333333336,
+        "median": 26901.0,
+        "min": 13016,
+        "max": 75508
+      },
+      "wall_missed": {
+        "n": 12,
+        "mean": 57937.25,
+        "median": 76529.0,
+        "min": 5138,
+        "max": 86199
+      },
+      "charged_pixels": {
+        "n": 12,
+        "mean": 63648.666666666664,
+        "median": 52648.0,
+        "min": 26368,
+        "max": 120472
+      },
+      "wall_score": {
+        "n": 12,
+        "mean": 40.62246777928193,
+        "median": 37.57595664312695,
+        "min": 24.814248251748253,
+        "max": 59.20880195599022
+      },
+      "time_score": {
+        "n": 12,
+        "mean": 27.533068783068785,
+        "median": 22.857142857142858,
+        "min": 22.857142857142858,
+        "max": 40.0
+      },
+      "bombs": {
+        "n": 12,
+        "mean": 10,
+        "median": 10.0,
+        "min": 10,
+        "max": 10
+      },
+      "wall_seconds": {
+        "n": 12,
+        "mean": 122.92599318424861,
+        "median": 122.89523208141327,
+        "min": 109.37522745132446,
+        "max": 131.89593029022217
+      }
+    },
+    "rl17_repair": {
+      "map_score": {
+        "n": 12,
+        "mean": 35.35116878950268,
+        "median": 22.711039120634638,
+        "min": 9.683584535115083,
+        "max": 83.96947093625226
+      },
+      "wall_hits": {
+        "n": 12,
+        "mean": 38323.75,
+        "median": 26809.5,
+        "min": 13016,
+        "max": 75411
+      },
+      "wall_missed": {
+        "n": 12,
+        "mean": 58001.583333333336,
+        "median": 76533.5,
+        "min": 5235,
+        "max": 86199
+      },
+      "charged_pixels": {
+        "n": 12,
+        "mean": 62347.833333333336,
+        "median": 52250.5,
+        "min": 26368,
+        "max": 115739
+      },
+      "wall_score": {
+        "n": 12,
+        "mean": 40.62246777928193,
+        "median": 37.57595664312695,
+        "min": 24.814248251748253,
+        "max": 59.20880195599022
+      },
+      "time_score": {
+        "n": 12,
+        "mean": 27.533068783068785,
+        "median": 22.857142857142858,
+        "min": 22.857142857142858,
+        "max": 40.0
+      },
+      "bombs": {
+        "n": 12,
+        "mean": 10,
+        "median": 10.0,
+        "min": 10,
+        "max": 10
+      },
+      "wall_seconds": {
+        "n": 12,
+        "mean": 123.75952327251434,
+        "median": 123.98307776451111,
+        "min": 106.61371040344238,
+        "max": 132.92382526397705
+      }
+    }
+  },
+  "per_map_paired_aggregate": {
+    "yh_map_fs_24": {
+      "map_score": {
+        "n": 2,
+        "mean": 1.115455102391934,
+        "median": 1.115455102391934,
+        "min": 0.5343104431713925,
+        "max": 1.6965997616124753
+      },
+      "wall_hits": {
+        "n": 2,
+        "mean": -59,
+        "median": -59.0,
+        "min": -97,
+        "max": -21
+      },
+      "wall_missed": {
+        "n": 2,
+        "mean": 59,
+        "median": 59.0,
+        "min": 21,
+        "max": 97
+      },
+      "charged_pixels": {
+        "n": 2,
+        "mean": -5222,
+        "median": -5222.0,
+        "min": -7225,
+        "max": -3219
+      },
+      "wall_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 2,
+        "mean": -0.8212363719940186,
+        "median": -0.8212363719940186,
+        "min": -0.9872193336486816,
+        "max": -0.6552534103393555
+      }
+    },
+    "yh_map_fs_27": {
+      "map_score": {
+        "n": 2,
+        "mean": 0.0035592833894746434,
+        "median": 0.0035592833894746434,
+        "min": -0.021560539843484605,
+        "max": 0.028679106622433892
+      },
+      "wall_hits": {
+        "n": 2,
+        "mean": -17,
+        "median": -17.0,
+        "min": -25,
+        "max": -9
+      },
+      "wall_missed": {
+        "n": 2,
+        "mean": 17,
+        "median": 17.0,
+        "min": 9,
+        "max": 25
+      },
+      "charged_pixels": {
+        "n": 2,
+        "mean": -397.5,
+        "median": -397.5,
+        "min": -402,
+        "max": -393
+      },
+      "wall_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 2,
+        "mean": 1.8637429475784302,
+        "median": 1.8637429475784302,
+        "min": 0.4567859172821045,
+        "max": 3.270699977874756
+      }
+    },
+    "yh_map_fs_37": {
+      "map_score": {
+        "n": 2,
+        "mean": -0.03398321331614085,
+        "median": -0.03398321331614085,
+        "min": -0.18478518001172262,
+        "max": 0.11681875337944092
+      },
+      "wall_hits": {
+        "n": 2,
+        "mean": -231,
+        "median": -231.0,
+        "min": -914,
+        "max": 452
+      },
+      "wall_missed": {
+        "n": 2,
+        "mean": 231,
+        "median": 231.0,
+        "min": -452,
+        "max": 914
+      },
+      "charged_pixels": {
+        "n": 2,
+        "mean": -52,
+        "median": -52.0,
+        "min": -2081,
+        "max": 1977
+      },
+      "wall_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 2,
+        "mean": 0.7076237201690674,
+        "median": 0.7076237201690674,
+        "min": 0.17190837860107422,
+        "max": 1.2433390617370605
+      }
+    },
+    "yh_map_fs_55": {
+      "map_score": {
+        "n": 2,
+        "mean": 0.24826973416456966,
+        "median": 0.24826973416456966,
+        "min": 0.0,
+        "max": 0.4965394683291393
+      },
+      "wall_hits": {
+        "n": 2,
+        "mean": -79,
+        "median": -79.0,
+        "min": -158,
+        "max": 0
+      },
+      "wall_missed": {
+        "n": 2,
+        "mean": 79,
+        "median": 79.0,
+        "min": 0,
+        "max": 158
+      },
+      "charged_pixels": {
+        "n": 2,
+        "mean": -2133.5,
+        "median": -2133.5,
+        "min": -4267,
+        "max": 0
+      },
+      "wall_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 2,
+        "mean": 1.7478622198104858,
+        "median": 1.7478622198104858,
+        "min": -0.9215524196624756,
+        "max": 4.417276859283447
+      }
+    },
+    "yh_map_fs_72": {
+      "map_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "wall_hits": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_missed": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "charged_pixels": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 2,
+        "mean": 1.4633917808532715,
+        "median": 1.4633917808532715,
+        "min": -2.76151704788208,
+        "max": 5.688300609588623
+      }
+    },
+    "yh_map_fs_90": {
+      "map_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "wall_hits": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_missed": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "charged_pixels": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "time_score": {
+        "n": 2,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "bombs": {
+        "n": 2,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "wall_seconds": {
+        "n": 2,
+        "mean": 0.03979623317718506,
+        "median": 0.03979623317718506,
+        "min": -0.0024940967559814453,
+        "max": 0.08208656311035156
+      }
+    }
+  },
+  "worst_map_score_by_version": {
+    "rl11_lines": {
+      "map": "yh_map_fs_72",
+      "controller": "rl11_lines",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r01\\rl11_lines\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 118.27630352973938,
+      "process_seconds": 125.9369999999999,
+      "bombs": 10,
+      "map_score": 9.683584535115083,
+      "wall_score": 29.988587801087803,
+      "time_score": 22.857142857142858,
+      "wall_hits": 13016,
+      "wall_missed": 77700,
+      "charged_pixels": 35326,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 125.9369999999999,
+        "peak_job_commit_bytes": 751337472,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_lines11.MyDroneRedLines11",
+      "controller_source_sha256": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6"
+    },
+    "rl17_repair": {
+      "map": "yh_map_fs_72",
+      "controller": "rl17_repair",
+      "round": 1,
+      "seed": 2026111701,
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\r19a_20261117_123636\\runs\\yh_map_fs_72_r01\\rl17_repair\\red\\attempt_001",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "difficulty_score": null,
+      "full_score": null,
+      "valid": true,
+      "execution_ok": true,
+      "status": "ok",
+      "reasons": [],
+      "actual_zones": [
+        "NO_COM_ZONE",
+        "NO_GPS_ZONE"
+      ],
+      "steps": 4536,
+      "wall_seconds": 123.964604139328,
+      "process_seconds": 131.64099999999962,
+      "bombs": 10,
+      "map_score": 9.683584535115083,
+      "wall_score": 29.988587801087803,
+      "time_score": 22.857142857142858,
+      "wall_hits": 13016,
+      "wall_missed": 77700,
+      "charged_pixels": 35326,
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 131.64099999999962,
+        "peak_job_commit_bytes": 749178880,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "actual_conditions": {
+        "drones": 5,
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "max_steps": 5400,
+        "max_walltime": 180,
+        "instantiated_zone_types": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ]
+      },
+      "exit_code": 0,
+      "loaded_controller": "swarm_rescue.solutions.my_drone_red_repair17.MyDroneRedRepair17",
+      "controller_source_sha256": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573"
+    }
+  },
+  "regressions": [
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 1.6965997616124753,
+        "wall_hits": -97,
+        "wall_missed": 97,
+        "charged_pixels": -7225,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.9872193336486816
+      },
+      "delta": {
+        "map_score": 1.6965997616124753,
+        "wall_hits": -97,
+        "wall_missed": 97,
+        "charged_pixels": -7225,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.9872193336486816
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.5343104431713925,
+        "wall_hits": -21,
+        "wall_missed": 21,
+        "charged_pixels": -3219,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.6552534103393555
+      },
+      "delta": {
+        "map_score": 0.5343104431713925,
+        "wall_hits": -21,
+        "wall_missed": 21,
+        "charged_pixels": -3219,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": -0.6552534103393555
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": -0.18478518001172262,
+        "wall_hits": -914,
+        "wall_missed": 914,
+        "charged_pixels": -2081,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.2433390617370605
+      },
+      "delta": {
+        "map_score": -0.18478518001172262,
+        "wall_hits": -914,
+        "wall_missed": 914,
+        "charged_pixels": -2081,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 1.2433390617370605
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.11681875337944092,
+        "wall_hits": 452,
+        "wall_missed": -452,
+        "charged_pixels": 1977,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.17190837860107422
+      },
+      "delta": {
+        "map_score": 0.11681875337944092,
+        "wall_hits": 452,
+        "wall_missed": -452,
+        "charged_pixels": 1977,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.17190837860107422
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_27",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": -0.021560539843484605,
+        "wall_hits": -25,
+        "wall_missed": 25,
+        "charged_pixels": -393,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 3.270699977874756
+      },
+      "delta": {
+        "map_score": -0.021560539843484605,
+        "wall_hits": -25,
+        "wall_missed": 25,
+        "charged_pixels": -393,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 3.270699977874756
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_27",
+      "round": 2,
+      "seed": 2026111702,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.028679106622433892,
+        "wall_hits": -9,
+        "wall_missed": 9,
+        "charged_pixels": -402,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.4567859172821045
+      },
+      "delta": {
+        "map_score": 0.028679106622433892,
+        "wall_hits": -9,
+        "wall_missed": 9,
+        "charged_pixels": -402,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 0.4567859172821045
+      },
+      "regression": true,
+      "reasons": []
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 1,
+      "seed": 2026111701,
+      "valid": true,
+      "raw_delta": {
+        "map_score": 0.4965394683291393,
+        "wall_hits": -158,
+        "wall_missed": 158,
+        "charged_pixels": -4267,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 4.417276859283447
+      },
+      "delta": {
+        "map_score": 0.4965394683291393,
+        "wall_hits": -158,
+        "wall_missed": 158,
+        "charged_pixels": -4267,
+        "wall_score": 0.0,
+        "time_score": 0.0,
+        "bombs": 0,
+        "wall_seconds": 4.417276859283447
+      },
+      "regression": true,
+      "reasons": []
+    }
+  ],
+  "limitations": [
+    "12 paired training cases, six correlated maps; no significance or universal superiority claim."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "npz": [
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\delivery_v1\\failure_windows.npz",
+      "sha256": "491566e6a08778c3e173be2e0271cba109fabd840c00b56f8539c52275605916",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl11_lines\\maps_poses.npz",
+      "sha256": "b691c8a31e47b59023f8b82f4fc648bffbf6b72c9faa65344268aebf9e649270",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl11_lines\\recovery_d3_t1755.npz",
+      "sha256": "91c897a096205854886a2e3f4029feb12d9af330cb5346ef729c6cc884fb6b8a",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl11_lines\\recovery_d4_t3276.npz",
+      "sha256": "6fe0bdd5bb4eb64459f49596d91e8f9f811d719159e77364c3df5c3b5a12b47e",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl17_repair\\maps_poses.npz",
+      "sha256": "8818ed787dc8a0b8e2c927a826f903b7888466f31bb57ca84a4f2fd4cb83990b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl17_repair\\recovery_d3_t1755.npz",
+      "sha256": "a19e92be762f48686a2241c04138ab2a6b06941d792adce8982ba5762ccc1539",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map08_rl17_repair\\recovery_d4_t3276.npz",
+      "sha256": "93959289786b147ee8d66ac902d680cd9f736783f61fb762b6c087fb9976ed3a",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl11_lines\\maps_poses.npz",
+      "sha256": "291ab71e82394c85ce0ff3ca28024f11ba2482ed7891e4652e68299e4d2c180b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl11_lines\\recovery_d0_t1377.npz",
+      "sha256": "48d7c83f93247da3813e835fd4e8be26715da046ed62bd60689953497977a513",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl11_lines\\recovery_d3_t2793.npz",
+      "sha256": "db76daad39f8eae094c5f439296b64eba471688a667b9b3bd2464fb34ba89b5a",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl17_repair\\maps_poses.npz",
+      "sha256": "d0a4dbeeb64cd79165f5c30c0d941fc8f5da029514f4bf2be172fa5d73fc99a7",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl17_repair\\recovery_d0_t1377.npz",
+      "sha256": "48d7c83f93247da3813e835fd4e8be26715da046ed62bd60689953497977a513",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_a_v2\\Map09_rl17_repair\\recovery_d3_t2793.npz",
+      "sha256": "cd7e8a2234737c04931265f3314795f398a0dcd2f9312c2c03412ec29e0a5c9b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_b_v1\\Map08\\traces.npz",
+      "sha256": "ce4ddac2ea9b9c2644d6edc9740ac4adbef7f65763ac1be67a87b2d99f4dab34",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\stage_b_v1\\Map09\\traces.npz",
+      "sha256": "aff54a9b14c7fdbd2fa4be5334ad0b5cc4fb2b93882c6d53c9099cba96441ae4",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl18_audit_20261116\\synthetic_cases_v1\\cases.npz",
+      "sha256": "642e3a2df1f782ed0fcf0bc93b5181b0f03ed83088294f71ef613870c222b553",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl11_lines\\red\\attempt_001\\exploration_stages.npz",
+      "sha256": "316dc4b944232052e562adac9833b0eba60b20d8aa0bd41af6a5061a1c8c331a",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl11_lines\\red\\attempt_001\\local13_diagnostics.npz",
+      "sha256": "a2b7bf98ee97a4c6a83b0b03d877f67a950087c6ec551a991b92786deee9c29b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl11_lines\\red\\attempt_001\\mapper_legal_inputs.npz",
+      "sha256": "440c6886a4452cb93b3fe4e971a6439ba0df7dfa32092b8ef68b29bf287887fa",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl11_lines\\red\\attempt_001\\p2l17_diagnostics.npz",
+      "sha256": "f480c41b6cf617045f76566dc919d5372d5459a1779cfd3167c4bbfb8ac39d05",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl11_lines\\red\\attempt_001\\artifacts\\recordings\\team742_Map08_no_gps_zone_rd1.npz",
+      "sha256": "63e05c3ef5b5232912fdd8ffa6e32c1d7cceb589105e1041e0df1cfca3fed8a6",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001\\exploration_stages.npz",
+      "sha256": "33d00fb098fd62ccd57f4269600ba2204fc25d2f2708a27cf155161d53c32e51",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001\\local13_diagnostics.npz",
+      "sha256": "a2b7bf98ee97a4c6a83b0b03d877f67a950087c6ec551a991b92786deee9c29b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001\\mapper_legal_inputs.npz",
+      "sha256": "440c6886a4452cb93b3fe4e971a6439ba0df7dfa32092b8ef68b29bf287887fa",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001\\p2l17_diagnostics.npz",
+      "sha256": "17478b69dd7036e7f0c0a6bf9a20efd257fe4add05dc57640edde4116087a61d",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map08_r01\\rl17_repair\\red\\attempt_001\\artifacts\\recordings\\team742_Map08_no_gps_zone_rd1.npz",
+      "sha256": "5b7296708584d864207ec18ca1d808fd10f2fac6efbdfcc0db2179fd82ff9a46",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001\\exploration_stages.npz",
+      "sha256": "832b00c1cabed8f89fd6c30315c01a89ef8d9b5f9f1dccb30015d2b6082ed197",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001\\local13_diagnostics.npz",
+      "sha256": "0397e659a9a341cd41ce7e4a2fc17564077f8d62f34c5636b4d8f6712b85bdd6",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001\\mapper_legal_inputs.npz",
+      "sha256": "16909b02f62f99d33afa8565acb09734f390d440e58a16a0de7bc1556f04657b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001\\p2l17_diagnostics.npz",
+      "sha256": "19a37be534fa080c49be98ea728a048cde039962967e6ad22951435d1aaeb2cd",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl11_lines\\red\\attempt_001\\artifacts\\recordings\\team742_Map09_no_com_zone__no_gps_zone_rd1.npz",
+      "sha256": "a4abd3ec20c57bfa6ebc69b45bbe2c8d1bdf47519dfe4cfa6e8eb8f5c39e0597",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl17_repair\\red\\attempt_001\\exploration_stages.npz",
+      "sha256": "e2963a0a82dd68d84fbe40b547400a2b178d9f45cd5d2d883bc41a3bb9a3fa35",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl17_repair\\red\\attempt_001\\local13_diagnostics.npz",
+      "sha256": "0397e659a9a341cd41ce7e4a2fc17564077f8d62f34c5636b4d8f6712b85bdd6",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl17_repair\\red\\attempt_001\\mapper_legal_inputs.npz",
+      "sha256": "16909b02f62f99d33afa8565acb09734f390d440e58a16a0de7bc1556f04657b",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl17_repair\\red\\attempt_001\\p2l17_diagnostics.npz",
+      "sha256": "976bf93017c07ebe897926db6b4e38c27d7604482eb49dd1bb5a769793ddc37f",
+      "crc_ok": true
+    },
+    {
+      "path": "output\\sf13\\rl17_m89_once_20261116\\runs\\Map09_r01\\rl17_repair\\red\\attempt_001\\artifacts\\recordings\\team742_Map09_no_com_zone__no_gps_zone_rd1.npz",
+      "sha256": "92023a11eb2d087a8485c2188043449be766f48b77750e0fd0c6d2c8425a6750",
+      "crc_ok": true
+    }
+  ],
+  "verified_npz": 36,
+  "history_images_verified": 5
+}

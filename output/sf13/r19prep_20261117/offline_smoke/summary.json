@@ -1,0 +1,13 @@
+{
+  "full": false,
+  "planned_events": 64,
+  "completed_events": 1,
+  "new_flights": 0,
+  "results": [
+    {
+      "map": "Map08",
+      "events": 1,
+      "final": null
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "radio": [
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 1,
+      "version": 1,
+      "sha256": "0:1"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 1,
+      "version": 1,
+      "sha256": "1:1"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 4,
+      "version": 4,
+      "sha256": "0:4"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 4,
+      "version": 4,
+      "sha256": "1:4"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 8,
+      "version": 8,
+      "sha256": "0:8"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 8,
+      "version": 8,
+      "sha256": "1:8"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 12,
+      "version": 12,
+      "sha256": "0:12"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 12,
+      "version": 12,
+      "sha256": "1:12"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 16,
+      "version": 16,
+      "sha256": "0:16"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 16,
+      "version": 16,
+      "sha256": "1:16"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 20,
+      "version": 20,
+      "sha256": "0:20"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 20,
+      "version": 20,
+      "sha256": "1:20"
+    },
+    {
+      "event": "received",
+      "holder": 0,
+      "source": 1,
+      "step": 22,
+      "version": 20,
+      "sha256": "1:20"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 24,
+      "version": 24,
+      "sha256": "0:24"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 24,
+      "version": 24,
+      "sha256": "1:24"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 28,
+      "version": 28,
+      "sha256": "0:28"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 28,
+      "version": 28,
+      "sha256": "1:28"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 32,
+      "version": 32,
+      "sha256": "0:32"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 32,
+      "version": 32,
+      "sha256": "1:32"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 36,
+      "version": 36,
+      "sha256": "0:36"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 36,
+      "version": 36,
+      "sha256": "1:36"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 40,
+      "version": 40,
+      "sha256": "0:40"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 40,
+      "version": 40,
+      "sha256": "1:40"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 44,
+      "version": 44,
+      "sha256": "0:44"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 44,
+      "version": 44,
+      "sha256": "1:44"
+    },
+    {
+      "event": "received",
+      "holder": 0,
+      "source": 1,
+      "step": 44,
+      "version": 40,
+      "sha256": "1:40"
+    },
+    {
+      "event": "local_publish",
+      "holder": 0,
+      "source": 0,
+      "step": 48,
+      "version": 48,
+      "sha256": "0:48"
+    },
+    {
+      "event": "local_publish",
+      "holder": 1,
+      "source": 1,
+      "step": 48,
+      "version": 48,
+      "sha256": "1:48"
+    }
+  ],
+  "matches": [
+    {
+      "drone": 0,
+      "step": 16,
+      "decision": {
+        "accepted": false,
+        "offset": null,
+        "info": {
+          "reason": "synthetic_fixed_rejection"
+        }
+      }
+    },
+    {
+      "drone": 0,
+      "step": 24,
+      "decision": {
+        "accepted": false,
+        "offset": null,
+        "info": {
+          "reason": "synthetic_fixed_rejection"
+        }
+      }
+    },
+    {
+      "drone": 0,
+      "step": 32,
+      "decision": {
+        "accepted": false,
+        "offset": null,
+        "info": {
+          "reason": "synthetic_fixed_rejection"
+        }
+      }
+    },
+    {
+      "drone": 1,
+      "step": 16,
+      "decision": {
+        "accepted": false,
+        "offset": null,
+        "info": {
+          "reason": "synthetic_fixed_rejection"
+        }
+      }
+    },
+    {
+      "drone": 1,
+      "step": 24,
+      "decision": {
+        "accepted": false,
+        "offset": null,
+        "info": {
+          "reason": "synthetic_fixed_rejection"
+        }
+      }
+    },
+    {
+      "drone": 1,
+      "step": 32,
+      "decision": {
+        "accepted": false,
+        "offset": null,
+        "info": {
+          "reason": "synthetic_fixed_rejection"
+        }
+      }
+    }
+  ]
+}

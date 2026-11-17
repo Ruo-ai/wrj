@@ -1,0 +1,1975 @@
+{
+  "schema": "paired-red19-v1",
+  "created_utc": "2026-11-17T04:23:12.865357+00:00",
+  "head": "fa28f914286d2549a780a8490d1ce03ddf7b7fca",
+  "git_status": "?? src/swarm_rescue/solutions/devtools/red_pair19_batch.py\n?? src/swarm_rescue/solutions/devtools/red_pair19_report.py\n?? src/swarm_rescue/solutions/devtools/red_recovery19_weights.py\n?? src/swarm_rescue/solutions/devtools/test_red_pair19.py\n",
+  "configuration": {
+    "smoke": false,
+    "diagnostic_steps": null,
+    "timeout": 240,
+    "memory_bytes": 4000000000,
+    "cpu_affinity_count": 1,
+    "simultaneous_simulations": 1,
+    "engine_profile": {
+      "lidar": 230,
+      "semantic": 130,
+      "communication": 180,
+      "health": 25,
+      "red_time_ratio": 0.3,
+      "blue_time_ratio": 0.3
+    },
+    "controllers": [
+      "rl11_lines",
+      "rl17_repair"
+    ],
+    "controller_identities": {
+      "rl11_lines": {
+        "controller_selector": "rl11_lines",
+        "controller_class": "MyDroneRedLines11",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_lines11"
+      },
+      "rl17_repair": {
+        "controller_selector": "rl17_repair",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      }
+    },
+    "environment": {
+      "python": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+      "executable": "E:\\桌面\\gitee\\swarm-eod\\.venv\\Scripts\\python.exe",
+      "executable_sha256": "35be23083b6d788412dcd72865675c78895be0220ebd18842fe9d9ce98aab3d5",
+      "distributions": {
+        "arcade": {
+          "version": "2.6.17",
+          "record_sha256": "0d329f1955ebe86ae559c10c031170d6ed35c2c056c417b26e44a4375614cadf"
+        },
+        "attrs": {
+          "version": "26.1.0",
+          "record_sha256": "0b25854cfe92c3e6c888a4e3308cde0edbc6822c74b1f01c3cddc39febc84e04"
+        },
+        "Cerberus": {
+          "version": "1.3.8",
+          "record_sha256": "1d3def6b6d2164b1e68f80475d9aa4e827505a54713424b0af202b852e224beb"
+        },
+        "cffi": {
+          "version": "2.1.1",
+          "record_sha256": "f6b0c93437dff53a05aa4f7e90b9d04f70e2d6d9c6be3b9da9c9b544c668a6af"
+        },
+        "colorama": {
+          "version": "0.4.6",
+          "record_sha256": "9c58ee85f502c66295e83e4e7e1c3e1ca97fec16a77dde8a01d9f31b7876061a"
+        },
+        "contourpy": {
+          "version": "1.3.2",
+          "record_sha256": "6beae99f292d13cc620f7b5386bc91a82e36af8177f8a474ef4b0b0cfda178a6"
+        },
+        "coverage": {
+          "version": "7.16.2",
+          "record_sha256": "d842aacfc9051927c42e3f3f7b98ddae370585db6ac8001959568ac4957f0faf"
+        },
+        "cycler": {
+          "version": "0.12.1",
+          "record_sha256": "6f4099f138836a377258343980c2538c2e21173b2200a9bbbf2bbc414bb394f9"
+        },
+        "exceptiongroup": {
+          "version": "1.3.1",
+          "record_sha256": "480456262e0820fb661fba0cb7c7e8cda625d2ff4628d6f02df45c5c1d2881f8"
+        },
+        "fonttools": {
+          "version": "4.65.0",
+          "record_sha256": "201a274e15d1c32abd3b98d4b7e7d6376773b57b20bff4541f750d10fdd94d18"
+        },
+        "fpdf": {
+          "version": "1.7.2",
+          "record_sha256": null
+        },
+        "gprof2dot": {
+          "version": "2025.4.14",
+          "record_sha256": "d49e8a381f49eea0ec093b658ecb621fea7b90a740c5f6e159c4db73962e3bf0"
+        },
+        "ImageIO": {
+          "version": "2.38.0",
+          "record_sha256": "eee1c0ba8bd23c9463d2d43c94b83837509ea2cdb190cbcb5f37090e1ebf77fa"
+        },
+        "iniconfig": {
+          "version": "2.3.1",
+          "record_sha256": "ab4de54e9f69cba9f71fcdfc30ab367fbce2fd6306f7033a2c4a4c5e3acfc270"
+        },
+        "kiwisolver": {
+          "version": "1.5.1",
+          "record_sha256": "af07f3d976198ae6ab971c5e905e16355857cba3a4f3ffa565dc41e2df0f55f4"
+        },
+        "lazy-loader": {
+          "version": "0.6",
+          "record_sha256": "d191c494cc545bfb8f899258e4ee9d211ec8c0e001e008f35a336839df370474"
+        },
+        "matplotlib": {
+          "version": "3.10.9",
+          "record_sha256": "ee01c731e2218c259461802244f4a80e9a2ce1c598246551ed6630d5819ecf1d"
+        },
+        "networkx": {
+          "version": "3.4.2",
+          "record_sha256": "9d6c67d2f60ca6514aebe68f012ecf5341045f492038874c1469000bd48f5422"
+        },
+        "numpy": {
+          "version": "2.2.6",
+          "record_sha256": "7fc2c51be3265fd17fe4fa3bef6f64281fad524727f9f9f6584f14f360b7169d"
+        },
+        "opencv-contrib-python": {
+          "version": "5.0.0.93",
+          "record_sha256": "37c37eafc32ad92d821f81b6d3ca8c7c8dee0a4afd28a71ce979fa510863149b"
+        },
+        "packaging": {
+          "version": "26.3",
+          "record_sha256": "e8a8595656ad95af2129f4a8ae81d732f1fa6259ad0d0c7b18b84618075df4b7"
+        },
+        "pandas": {
+          "version": "2.3.3",
+          "record_sha256": "f01dfde2c8a82c1f8bf69692d64a906a6ece5ae5e1f791a01ed3d32043acf19a"
+        },
+        "pathlib2": {
+          "version": "2.3.7.post1",
+          "record_sha256": "9b36e41f5d4117797138511d120755ecd2eb286555ba2ae442e861fdcca80a16"
+        },
+        "Pillow": {
+          "version": "9.3.0",
+          "record_sha256": "919e21f89ebe341e7c5c5ae2c5e1ffd16d1346071ac0e80964aa68ea16665dc5"
+        },
+        "pip": {
+          "version": "22.2.2",
+          "record_sha256": "b96abc93ae266c43f08170aca9a78822c0904fa1ec461c22f774306bb28a7e95"
+        },
+        "pluggy": {
+          "version": "1.6.0",
+          "record_sha256": "69e35145ccadb5f33e68778fb5fbf187c55a442323cbc0bd1881ae7eb08ab03a"
+        },
+        "pycparser": {
+          "version": "3.11",
+          "record_sha256": "d5bc2be9b6e2a45a2b093ac4c0fd227e867e52566351416f4dbdc69dcc9b0eab"
+        },
+        "pyglet": {
+          "version": "2.0.dev23",
+          "record_sha256": "70ebe9502b122e72727c8973caf873f3cbfae441726d9f757cb2c86abddce6ee"
+        },
+        "Pygments": {
+          "version": "2.21.0",
+          "record_sha256": "d662d9f261695763dd185cad90a3901c8241d45a29a0727d13fe964be5a5eba6"
+        },
+        "pymunk": {
+          "version": "6.4.0",
+          "record_sha256": "3bac107b5cd0e07bfb0333697900ec282e5428cae4d988fa6c41bece3d635113"
+        },
+        "pyparsing": {
+          "version": "3.3.3",
+          "record_sha256": "c3ae94beb4faa53df82770a388050639a6fd3a3a9d7649fde69667cfd2a7caa1"
+        },
+        "pyqtgraph": {
+          "version": "0.14.0",
+          "record_sha256": "199cfd65e5e6820832a8f0de3eaa31d948f5497dede6d6a1c73c396023cfce48"
+        },
+        "PySide6": {
+          "version": "6.12.0",
+          "record_sha256": "37b6c328272a9f35590b61a9c5dc901d9375e95b5d8e0acc26721d13f9e8f876"
+        },
+        "PySide6_Addons": {
+          "version": "6.12.0",
+          "record_sha256": "b4522db8ecd348b47e0a715a3ffa97b709893d7f133a076acfcb14f9f52b68e5"
+        },
+        "PySide6_Essentials": {
+          "version": "6.12.0",
+          "record_sha256": "74c8f6903c58f8651703f2843062068320477226ddd6acb043c69c765b20769b"
+        },
+        "PySide6_Pdf": {
+          "version": "6.12.0.140",
+          "record_sha256": "3722034699a54b75d441fc83124403caf4b6c364c87b5d9b0f5f44d825b06b7a"
+        },
+        "PySide6_WebEngine": {
+          "version": "6.12.0.140",
+          "record_sha256": "fb9666c100b50d960bb5eead08482e7afce3ffdfe359338cf38430a1f3316a6e"
+        },
+        "pytest": {
+          "version": "9.1.1",
+          "record_sha256": "4f0cb05c52bb2303cc62d013ecf94e4efd1f5d394bff4e1d10ac1d8938668d65"
+        },
+        "pytest-cov": {
+          "version": "7.1.0",
+          "record_sha256": "f9c1c819833903f3da0c214d2fda0c3bddc5332765e970966541288f80321af5"
+        },
+        "python-dateutil": {
+          "version": "2.9.0.post0",
+          "record_sha256": "6069a25c2ff50c9b655311d29c64c28895d673e254c7d2ede6be9c5f8ef0893e"
+        },
+        "pytiled-parser": {
+          "version": "2.2.0",
+          "record_sha256": "4f9bdfd18318b0ea4f7757ba0a498c634b01bf01a6c17aa0c9b29ee7add7f61c"
+        },
+        "pytz": {
+          "version": "2026.5",
+          "record_sha256": "b88a168bac8a98f87b957e40a5eeda93a765fb26b95f4b06840d8ee6ef312a07"
+        },
+        "PyYAML": {
+          "version": "6.0.3",
+          "record_sha256": "eb111db130a7fd4ef1fd968a1b8992e4393215244b16fe46312cbc0a3051861f"
+        },
+        "scikit-image": {
+          "version": "0.24.0",
+          "record_sha256": "3fb858aee74cb1d011b8982bf7a48d145594aa6ce6537086b8d6318e81bbffed"
+        },
+        "scipy": {
+          "version": "1.15.3",
+          "record_sha256": "e74e4ae369123bac82f239248008ce8e949f38ce7edc7617d2f297737a489fa5"
+        },
+        "setuptools": {
+          "version": "63.2.0",
+          "record_sha256": "6130b1891bafff5cd9eb5031377ae5cb947ef4df64561598800521c544a7245a"
+        },
+        "shiboken6": {
+          "version": "6.12.0",
+          "record_sha256": "06aa81aa4b7ef7482b2a2102055d3070ac0e7ba16b215e465376d4d3d44f7934"
+        },
+        "six": {
+          "version": "1.17.0",
+          "record_sha256": "f3d0e6939dc1dedddb9577e703a8fe490416bfafe5400bb2909b3ea0b4eedeee"
+        },
+        "swarm-rescue": {
+          "version": "5.1.3",
+          "record_sha256": null
+        },
+        "tifffile": {
+          "version": "2025.5.10",
+          "record_sha256": "0cbf814bbe63014c5385290c37dcba5e90b13fe4d1ec281135dc32ca8b2930df"
+        },
+        "tomli": {
+          "version": "2.5.0",
+          "record_sha256": "a1b90d6187052d434b3c79f868519355b60d25fca2a8770343a3eb9172db6715"
+        },
+        "typing_extensions": {
+          "version": "4.16.0",
+          "record_sha256": "23896ad1264f08dfc96b3f7c68fc41ca62049e90d3c996751f52a2e56b27c725"
+        },
+        "tzdata": {
+          "version": "2026.5",
+          "record_sha256": "eded2549816b516d155a4780504bf61ca074b96163ea1e7073c265a658436000"
+        }
+      }
+    },
+    "blue_evaluated": false,
+    "full_score": null
+  },
+  "selection": [
+    {
+      "name": "yh_map_fs_24",
+      "reason": "训练集中墙占比最低；88px名义通道，相对开阔混合分区。",
+      "dataset_group": "8edb98965adb4957095aef27c7d7a3b5deabbdb7e1686b2b8ca61a6d3a811f00",
+      "map_sha256": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+      "content_sha256": "0fa63977d715064045c4fa1d19df9db4e52250f99d13e5be7bd4e2701f07cc7a",
+      "passage_width": 88,
+      "wall_count": 39,
+      "wall_fraction": 0.04342,
+      "zones": [
+        {
+          "rect": [
+            707,
+            165,
+            1584,
+            847
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            168,
+            490,
+            760,
+            1075
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "rules": {
+        "blue_drones": 10,
+        "bombs_per_drone": 2,
+        "communication_range": 180,
+        "initial_health": 25,
+        "lidar_range": 230,
+        "red_drones": 5,
+        "semantic_range": 130,
+        "stage": "semifinal",
+        "time_best_ratio": 0.3,
+        "timestep_limit": 5400,
+        "version": 1,
+        "walltime_limit": 180
+      }
+    },
+    {
+      "name": "yh_map_fs_37",
+      "reason": "37段/块墙，72px名义通道；少分区但通道较窄。",
+      "dataset_group": "82d314068462d7bcfbc19f8286ac7226f7c828af783e7fcda33f7922e5fcaf08",
+      "map_sha256": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+      "content_sha256": "fda626e6773edffcd72aea905c29640ee53a37faaaae9b566599bd799c7903ce",
+      "passage_width": 72,
+      "wall_count": 37,
+      "wall_fraction": 0.050618,
+      "zones": [
+        {
+          "rect": [
+            452,
+            70,
+            1047,
+            823
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            204,
+            70,
+            1084,
+            545
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "rules": {
+        "blue_drones": 10,
+        "bombs_per_drone": 2,
+        "communication_range": 180,
+        "initial_health": 25,
+        "lidar_range": 230,
+        "red_drones": 5,
+        "semantic_range": 130,
+        "stage": "semifinal",
+        "time_best_ratio": 0.3,
+        "timestep_limit": 5400,
+        "version": 1,
+        "walltime_limit": 180
+      }
+    },
+    {
+      "name": "yh_map_fs_27",
+      "reason": "56px名义通道、50段/块墙；较密集窄口。",
+      "dataset_group": "8e5e9437e5ee8ee079985e7b45cfdcae6a421a824661c0c574d6fde8176b6763",
+      "map_sha256": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+      "content_sha256": "42de32bcca0c5e386ef0bc7ab645f880b9653383708d1d48897ca6a544252158",
+      "passage_width": 56,
+      "wall_count": 50,
+      "wall_fraction": 0.05991,
+      "zones": [
+        {
+          "rect": [
+            215,
+            600,
+            824,
+            998
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            101,
+            252,
+            862,
+            856
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "rules": {
+        "blue_drones": 10,
+        "bombs_per_drone": 2,
+        "communication_range": 180,
+        "initial_health": 25,
+        "lidar_range": 230,
+        "red_drones": 5,
+        "semantic_range": 130,
+        "stage": "semifinal",
+        "time_best_ratio": 0.3,
+        "timestep_limit": 5400,
+        "version": 1,
+        "walltime_limit": 180
+      }
+    },
+    {
+      "name": "yh_map_fs_72",
+      "reason": "56px名义通道、较低墙占比；窄口与较开阔房间共存。",
+      "dataset_group": "8f193c1ae87aa4c9ca88ed498ff640047a7ca2ec7f6b04171bac76effa8407a6",
+      "map_sha256": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+      "content_sha256": "78918ddb166ad6494d427bbfa589d997c96bac0748a043deae22c4b7f97c5b9b",
+      "passage_width": 56,
+      "wall_count": 43,
+      "wall_fraction": 0.046132,
+      "zones": [
+        {
+          "rect": [
+            647,
+            365,
+            1604,
+            1094
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            899,
+            244,
+            1523,
+            933
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "rules": {
+        "blue_drones": 10,
+        "bombs_per_drone": 2,
+        "communication_range": 180,
+        "initial_health": 25,
+        "lidar_range": 230,
+        "red_drones": 5,
+        "semantic_range": 130,
+        "stage": "semifinal",
+        "time_best_ratio": 0.3,
+        "timestep_limit": 5400,
+        "version": 1,
+        "walltime_limit": 180
+      }
+    },
+    {
+      "name": "yh_map_fs_55",
+      "reason": "训练集最多65段/块墙、56px名义通道；密集曲折分区。",
+      "dataset_group": "7d2b3db415eec0fa22cd9db162da78bca9bf16f88f2697000a0841890f6bb65d",
+      "map_sha256": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+      "content_sha256": "716df66ef7b59f5bddddf7603ac4853383ce997aadbe4278b3e2439aea4ea3b9",
+      "passage_width": 56,
+      "wall_count": 65,
+      "wall_fraction": 0.061691,
+      "zones": [
+        {
+          "rect": [
+            868,
+            179,
+            1667,
+            693
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            331,
+            272,
+            1001,
+            1007
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "rules": {
+        "blue_drones": 10,
+        "bombs_per_drone": 2,
+        "communication_range": 180,
+        "initial_health": 25,
+        "lidar_range": 230,
+        "red_drones": 5,
+        "semantic_range": 130,
+        "stage": "semifinal",
+        "time_best_ratio": 0.3,
+        "timestep_limit": 5400,
+        "version": 1,
+        "walltime_limit": 180
+      }
+    },
+    {
+      "name": "yh_map_fs_90",
+      "reason": "63段/块墙、64px名义通道；第二个密集分区样本。",
+      "dataset_group": "b13a3aca6d0f4350c97d2ae725c7fef9f17947f7b1881c5a9d78ed318c9400f0",
+      "map_sha256": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+      "content_sha256": "c9fa9f91cdf84edd90446c866f3f186f031e6968c049f03f18bd7e3b1a0c5c3f",
+      "passage_width": 64,
+      "wall_count": 63,
+      "wall_fraction": 0.06925,
+      "zones": [
+        {
+          "rect": [
+            871,
+            199,
+            1480,
+            728
+          ],
+          "type": "NO_COM_ZONE"
+        },
+        {
+          "rect": [
+            187,
+            344,
+            1167,
+            800
+          ],
+          "type": "NO_GPS_ZONE"
+        }
+      ],
+      "rules": {
+        "blue_drones": 10,
+        "bombs_per_drone": 2,
+        "communication_range": 180,
+        "initial_health": 25,
+        "lidar_range": 230,
+        "red_drones": 5,
+        "semantic_range": 130,
+        "stage": "semifinal",
+        "time_best_ratio": 0.3,
+        "timestep_limit": 5400,
+        "version": 1,
+        "walltime_limit": 180
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "map_id": "c472d0da73fd1b8145432ddfc73ae7034ec3995288d3d9c7df1645878f88d2a6",
+      "name": "yh_map_fs_24",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_24.json",
+      "map": "R1952143ec7cae8",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          612,
+          396
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "c472d0da73fd1b8145432ddfc73ae7034ec3995288d3d9c7df1645878f88d2a6",
+      "name": "yh_map_fs_24",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_24.json",
+      "map": "R1952143ec7cae8",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          612,
+          396
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "c472d0da73fd1b8145432ddfc73ae7034ec3995288d3d9c7df1645878f88d2a6",
+      "name": "yh_map_fs_24",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_24.json",
+      "map": "R1952143ec7cae8",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          612,
+          396
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "c472d0da73fd1b8145432ddfc73ae7034ec3995288d3d9c7df1645878f88d2a6",
+      "name": "yh_map_fs_24",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_24.json",
+      "map": "R1952143ec7cae8",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          612,
+          396
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "7327c591cfccd4e785738e7cc42adce50f69a35ad77f7455482ee33009073080",
+      "name": "yh_map_fs_37",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_37.json",
+      "map": "R1984feb11bb2ff",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1428,
+          120
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "7327c591cfccd4e785738e7cc42adce50f69a35ad77f7455482ee33009073080",
+      "name": "yh_map_fs_37",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_37.json",
+      "map": "R1984feb11bb2ff",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1428,
+          120
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "7327c591cfccd4e785738e7cc42adce50f69a35ad77f7455482ee33009073080",
+      "name": "yh_map_fs_37",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_37.json",
+      "map": "R1984feb11bb2ff",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1428,
+          120
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "7327c591cfccd4e785738e7cc42adce50f69a35ad77f7455482ee33009073080",
+      "name": "yh_map_fs_37",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_37.json",
+      "map": "R1984feb11bb2ff",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1428,
+          120
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "a18d96fb67043b73f55c20efcdb48e3579030f5008723bbd86b23dcd4d0fedd0",
+      "name": "yh_map_fs_27",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_27.json",
+      "map": "R1965c9d4fff29c",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          948,
+          744
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "a18d96fb67043b73f55c20efcdb48e3579030f5008723bbd86b23dcd4d0fedd0",
+      "name": "yh_map_fs_27",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_27.json",
+      "map": "R1965c9d4fff29c",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          948,
+          744
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "a18d96fb67043b73f55c20efcdb48e3579030f5008723bbd86b23dcd4d0fedd0",
+      "name": "yh_map_fs_27",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_27.json",
+      "map": "R1965c9d4fff29c",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          948,
+          744
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "a18d96fb67043b73f55c20efcdb48e3579030f5008723bbd86b23dcd4d0fedd0",
+      "name": "yh_map_fs_27",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_27.json",
+      "map": "R1965c9d4fff29c",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          948,
+          744
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "a77fa6bc8d1a996e59cd54d26acb1445b114e0c5942416f9e0522beca805373b",
+      "name": "yh_map_fs_72",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_72.json",
+      "map": "R19f3afb15afb2f",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          264,
+          204
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "a77fa6bc8d1a996e59cd54d26acb1445b114e0c5942416f9e0522beca805373b",
+      "name": "yh_map_fs_72",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_72.json",
+      "map": "R19f3afb15afb2f",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          264,
+          204
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "a77fa6bc8d1a996e59cd54d26acb1445b114e0c5942416f9e0522beca805373b",
+      "name": "yh_map_fs_72",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_72.json",
+      "map": "R19f3afb15afb2f",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          264,
+          204
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "a77fa6bc8d1a996e59cd54d26acb1445b114e0c5942416f9e0522beca805373b",
+      "name": "yh_map_fs_72",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_72.json",
+      "map": "R19f3afb15afb2f",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          264,
+          204
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "2c0e0edcd0ed882fea1f6fcc2cd548b12620ff1e7b3bea09940284652fdee9e2",
+      "name": "yh_map_fs_55",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_55.json",
+      "map": "R1978f498ef36d5",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          144,
+          528
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "2c0e0edcd0ed882fea1f6fcc2cd548b12620ff1e7b3bea09940284652fdee9e2",
+      "name": "yh_map_fs_55",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_55.json",
+      "map": "R1978f498ef36d5",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          144,
+          528
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "2c0e0edcd0ed882fea1f6fcc2cd548b12620ff1e7b3bea09940284652fdee9e2",
+      "name": "yh_map_fs_55",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_55.json",
+      "map": "R1978f498ef36d5",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          144,
+          528
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "2c0e0edcd0ed882fea1f6fcc2cd548b12620ff1e7b3bea09940284652fdee9e2",
+      "name": "yh_map_fs_55",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_55.json",
+      "map": "R1978f498ef36d5",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          144,
+          528
+        ],
+        "size": [
+          1700,
+          1100
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "91e5b0e1097ea93e55565f85c4c793444d4bf4ab7e549adac7aaf2cb8266041f",
+      "name": "yh_map_fs_90",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_90.json",
+      "map": "R1967271ecd89e0",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1284,
+          1020
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl11_lines"
+    },
+    {
+      "map_id": "91e5b0e1097ea93e55565f85c4c793444d4bf4ab7e549adac7aaf2cb8266041f",
+      "name": "yh_map_fs_90",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_90.json",
+      "map": "R1967271ecd89e0",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1284,
+          1020
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 1,
+      "seed": 2026111701,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "91e5b0e1097ea93e55565f85c4c793444d4bf4ab7e549adac7aaf2cb8266041f",
+      "name": "yh_map_fs_90",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_90.json",
+      "map": "R1967271ecd89e0",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1284,
+          1020
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl17_repair"
+    },
+    {
+      "map_id": "91e5b0e1097ea93e55565f85c4c793444d4bf4ab7e549adac7aaf2cb8266041f",
+      "name": "yh_map_fs_90",
+      "family": "semifinal",
+      "map_file": "map_data/yh_map_fs_90.json",
+      "map": "R1967271ecd89e0",
+      "official_map": null,
+      "scenario": {
+        "stage": "semifinal",
+        "zones": [
+          "NO_COM_ZONE",
+          "NO_GPS_ZONE"
+        ],
+        "spawn": [
+          1284,
+          1020
+        ],
+        "size": [
+          1660,
+          1122
+        ]
+      },
+      "round": 2,
+      "seed": 2026111702,
+      "controller": "rl11_lines"
+    }
+  ],
+  "map_rows": [
+    {
+      "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+      "calibration_source": null,
+      "clearance_px": 18,
+      "connected_components": 1,
+      "content_sha256": "0fa63977d715064045c4fa1d19df9db4e52250f99d13e5be7bd4e2701f07cc7a",
+      "difficulty": "hard",
+      "door_count": 0,
+      "export_format": "official-editor-native-v1",
+      "family": "semifinal",
+      "files": {
+        "map_data/.yh_records/yh_map_fs_24/generation.json": "2c2b4ad7ddefb32332947f185a5c3aec3a2449a2460aeb065d42bbfcc87f8c14",
+        "map_data/.yh_records/yh_map_fs_24/metadata.json": "2e9c481221982f6e94233e6a420f630d0bf2594153c32f5fa1fe322b350456c7",
+        "map_data/yh_map_fs_24.json": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+        "map_data/yh_map_fs_24.png": "f0de631f053ed5b5210e9f936dd933c7f10c8f5db4a0073b2f8f80ed3f1b560c",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b/map_generated.py": "980d399d02e5b06ca95bded9dfe594350e123085c2c05291210f0ca60546645b",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b/walls_generated.py": "6d429116c6f0360cec9a47af643501bd70fa6464ee7b0a1415303a593f32f5e2"
+      },
+      "generator_version": 2,
+      "geometry_sha256": "52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b",
+      "id": "c472d0da73fd1b8145432ddfc73ae7034ec3995288d3d9c7df1645878f88d2a6",
+      "layout_algorithm": "semifinal-partition-mix-v5",
+      "map_path": "map_data/yh_map_fs_24.json",
+      "name": "yh_map_fs_24",
+      "narrow_door_count": 0,
+      "official_editor_sha256": "7f8e9d06e35e021cce2ad359f4271fc2baa90dc382a29fa3732db015abcbb41f",
+      "parameters": {
+        "difficulty": "hard",
+        "height": 1122,
+        "passage": null,
+        "seed": 1023,
+        "thickness": null,
+        "type": "semifinal",
+        "width": 1660
+      },
+      "passage_width": 88,
+      "preview_path": "map_data/yh_map_fs_24.png",
+      "room_count": null,
+      "seed": 1023,
+      "signature_version": "interior-64-dilate1-dihedral-v1",
+      "signatures": [
+        "0000000000000000000000001f800000000000001f8000001c0000001f8000001c0000001f8000001c0000000f8000001c000000000000001c00000000001c001c00000000001c001c0000001c001c001c0000001c001c00000000001c01ff1f000000001c01ff1f000000000001ff1f0000000000000000ffffffcfffff8380ffffffcfffff8380ffffffcfffff83800000000e007803800000000e0079ff3f0000000e0079ff3f0000000e0079ff3f00000000007800000000000e007800000000000ffc7f80000000000ffc7f80000000000ffc7f80000000700ffc7f80000000700e000000000000700e000000000000700e00000000f8fe700e00000000f8fe700e00000000f8fff1fe000000000007f1fe000000000007f1fe3800000000001c0e380000001f801c0e380000001f801c0e380000001f801c0e000000001f801c0e00000000ffffffffffff3fffffffffffffff3fffffffffffffff3fff00380380000f000000380380000f000000380380000f000000380380000f00000f3803f8ffff00000fb803f8ffff00000fb803f8ffff00000fb80380700f00000fb80380700f00000fb80380700f00000fb80380700f00000001e380700000000039e000700e00000039e380700f00000039e3b8000f00000039e3b8700f00000039e3b8700f00000039e3b8700f0000003803b8700f000000380380700f0000",
+        "0000000000000000000001f800000000000001f800000000000001f800000038000001f800000038000001f00000003800000000000000380038000000000038003800000000003800380038000000380038003800000038f8ff803800000000f8ff803800000000f8ff800000000000000000000000000001c1fffff3ffffff01c1fffff3ffffff01c1fffff3ffffff01c01e0070000000fcff9e0070000000fcff9e0070000000fcff9e007000000000001e000000000000001e00700000000001fe3ff00000000001fe3ff00000000001fe3ff00000000001fe3ff00e000000000000700e000000000000700e000000000000700e000000000000700e7f1f00000000700e7f1f000000007f8fff1f000000007f8fe0000000001c7f8fe0000000001c703800000000001c703801f80000001c703801f800000000703801f800000000703801f8fffcfffffffffffffffcfffffffffffffffcffffffffffff0000f00001c01c000000f00001c01c000000f00001c01c000000f00001c01c000000ffff1fc01cf00000ffff1fc01df00000ffff1fc01df00000f00e01c01df00000f00e01c01df00000f00e01c01df00000f00e01c01df00000000e01c780000000700e00079c000000f00e01c79c000000f0001dc79c000000f00e1dc79c000000f00e1dc79c000000f00e1dc79c000000f00e1dc01c000000f00e01c01c00",
+        "00000e000038380000000e000038380000000e000038380000000e000038380000000e000038380000000e000038000000000e000000000000000e000007800000000e00003fb80000000e00003fb80000000e0000383f8000000e0000383f8000000e0000383f8000000e00003838000000000000383800000000000f3bb800fe7ffe000f3bb800ff7ffe000f038000ff7ffe000f038000ff7ffe000fff800000070e000fff800000070e000fff800000070e000fff800000070e000003803e00070e000003803e00070e000003803e00070e000f039e3e00070e780f039e3efbff0e780f039e1efbff0e780f038000fbff0e000f03800000070e000f03800000000e000f03800000000fffffbf800000000fffffbf80007c070fffffbf80007c070e0e000000007c070e0e0000000000070e0e00038000fefffe0e00038000fefffe0e00038000fefffe000003800000000ff00003800000000ff00003800000000ffff80380003f800e0ff80380003f800e0ff80380003f800e0e000380003f800e0e0003800000000e0f8003800000000e0f80038000ff7ffe0380038000ff7ffe0380038000ff7ffe038003800000000e0380038000007e0fe380038000007f0fe000038000007f0fe000038000007f0fe0000387f8007f0fe3800387f800000fe3800387f800000e038003800000000e038003800000000e0380038000",
+        "00000e038003800000000e038003800000000e038003800000000fe3800387f8007f0fe3800387f8007f0fe0000387f8007f0fe000038000007f0fe000038000007e0fe38003800000000e0380038000ff7ffe0380038000ff7ffe0380038000ff7ffe038003800000000e0f8003800000000e0f800380003f800e0e000380003f800e0e000380003f800e0ff80380003f800e0ff803800000000ffff803800000000ff00003800000000ff000038000fefffe0000038000fefffe0e00038000fefffe0e0003800000070e0e000380007c070e0e000000007c070e0e000000007c070fffffbf800000000fffffbf800000000fffffbf800000000e000f03800000070e000f038000fbff0e000f038000fbff0e780f038000fbff0e780f039e1e00070e780f039e3e00070e000f039e3e00070e000003803e00070e000003803e00070e000003803e00070e000fff800000070e000fff800000070e000fff8000ff7ffe000fff8000ff7ffe000f038000ff7ffe000f038000fe7ffe000f3bb800000000000f3bb800000000000038380000000e000038380000000e0000383f8000000e0000383f8000000e0000383f8000000e00003fb80000000e00003fb80000000e000007800000000e000000000000000e000038000000000e000038380000000e000038380000000e000038380000000e000038380000000e0000383800",
+        "0000f00e01c01c000000f00e1dc01c000000f00e1dc79c000000f00e1dc79c000000f00e1dc79c000000f0001dc79c000000f00e01c79c000000700e00079c000000000e01c780000000f00e01c01df00000f00e01c01df00000f00e01c01df00000f00e01c01df00000ffff1fc01df00000ffff1fc01df00000ffff1fc01cf00000f00001c01c000000f00001c01c000000f00001c01c000000f00001c01c00fffcfffffffffffffffcfffffffffffffffcffffffffffff00000000703801f800000000703801f80000001c703801f80000001c703801f80000001c703800000000001c7f8fe000000000007f8fe000000000007f8fff1f00000000700e7f1f00000000700e7f1f00000000700e000000000000700e000000000000700e00000001fe3ff00e00000001fe3ff00000000001fe3ff00000000001fe3ff000000000001e007000000000001e0000000000fcff9e0070000000fcff9e0070000000fcff9e007000000001c01e007000000001c1fffff3ffffff01c1fffff3ffffff01c1fffff3ffffff0000000000000000f8ff800000000000f8ff803800000000f8ff80380000000000380038000000380038003800000038003800000000003800380000000000380000000000000038000001f000000038000001f800000038000001f800000038000001f800000000000001f8000000000000000000000000",
+        "0001c001c07000000001c001c07000000001c001c07000001fe1c001c7f000001fe1c001c7f0fe001fe1c00007f0fe000001c00007f0fe000001c00007f0fe000001c001c7f07e000001c001c07000000001c001c07ffeff0001c001c07ffeff0001c001c07ffeff0001c001f07000000001c001f07000000001c000707001fc0001c000707001fc0001c01ff07001fc0001c01ff07001fc0001c01ffff000000001c0000ff000000001c0000ff000000001c000007fff7f0001c000707fff7f0001c000707fff7f0001c0007070e000000000007070e03e000000007070e03e0001fdfffff0e03e0001fdfffff000000001fdfffff000000001c0f0007000000001c0f00070e0000001c0f00070ffdf0001c0f01e70ffdf7879c0f01e70ffdf7c79c0f01e70e0007c79c0f00070e0007c01c0000070e0007c01c0000070e0007c01c0000070e0000001fff00070e0000001fff00070e0000001fff00070e0000001fff0007ffeff0001c0f0007ffeff0001c0f0007ffeff001ddcf0007ffe7f001ddcf000000000001c1c0000000000001c1c000070000001fc1c000070000001fc1c000070000001fc1c0000700000001dfc0000700000001dfc00007000000001e00000700000000000000070000000001c0000700000001c1c0000700000001c1c0000700000001c1c0000700000001c1c0000700000001c1c0000700000",
+        "001c1c0000700000001c1c0000700000001c1c0000700000001c1c0000700000001c1c000070000000001c000070000000000000007000000001e00000700000001dfc0000700000001dfc000070000001fc1c000070000001fc1c000070000001fc1c0000700000001c1c0000700000001c1c0000000000001ddcf000000000001ddcf0007ffe7f0001c0f0007ffeff0001c0f0007ffeff0001fff0007ffeff0001fff00070e0000001fff00070e0000001fff00070e0007c01c0000070e0007c01c0000070e0007c01c0000070e0007c79c0f00070e0007c79c0f01e70e0007879c0f01e70ffdf0001c0f01e70ffdf0001c0f00070ffdf0001c0f00070e0000001c0f0007000000001fdfffff000000001fdfffff000000001fdfffff0e03e000000007070e03e000000007070e03e0001c0007070e0000001c000707fff7f0001c000707fff7f0001c000007fff7f0001c0000ff000000001c0000ff000000001c01ffff000000001c01ff07001fc0001c01ff07001fc0001c000707001fc0001c000707001fc0001c001f07000000001c001f07000000001c001c07ffeff0001c001c07ffeff0001c001c07ffeff0001c001c07000000001c001c7f07e000001c00007f0fe000001c00007f0fe001fe1c00007f0fe001fe1c001c7f0fe001fe1c001c7f000000001c001c07000000001c001c07000000001c001c0700000",
+        "00380380700f0000003803b8700f00000039e3b8700f00000039e3b8700f00000039e3b8700f00000039e3b8000f00000039e380700f00000039e000700e00000001e380700000000fb80380700f00000fb80380700f00000fb80380700f00000fb80380700f00000fb803f8ffff00000fb803f8ffff00000f3803f8ffff000000380380000f000000380380000f000000380380000f000000380380000f0000ffffffffffff3fffffffffffffff3fffffffffffffff3fff1f801c0e000000001f801c0e000000001f801c0e380000001f801c0e3800000000001c0e380000000007f1fe380000000007f1fe00000000f8fff1fe00000000f8fe700e00000000f8fe700e000000000000700e000000000000700e000000000000700e000000000000700ffc7f80000000000ffc7f80000000000ffc7f80000000000ffc7f80000000000e0078000000000000007800000000000e0079ff3f0000000e0079ff3f0000000e0079ff3f0000000e00780380ffffffcfffff8380ffffffcfffff8380ffffffcfffff83800000000000000000000000000001ff1f000000001c01ff1f000000001c01ff1f1c0000001c001c001c0000001c001c001c00000000001c001c00000000001c001c000000000000001c0000000f8000001c0000001f8000001c0000001f800000000000001f800000000000001f8000000000000000000000"
+      ],
+      "size": [
+        1660,
+        1122
+      ],
+      "structure_sha256": "36dff006e6547dc00c6a629f4910d54d55dd9e57f33508e1d366f46606d7d8c2",
+      "topology_dead_ends": null,
+      "wall_area_px": 80870,
+      "wall_count": 39,
+      "wall_fraction": 0.04342,
+      "wall_thickness": 6
+    },
+    {
+      "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+      "calibration_source": null,
+      "clearance_px": 18,
+      "connected_components": 1,
+      "content_sha256": "fda626e6773edffcd72aea905c29640ee53a37faaaae9b566599bd799c7903ce",
+      "difficulty": "hard",
+      "door_count": 0,
+      "export_format": "official-editor-native-v1",
+      "family": "semifinal",
+      "files": {
+        "map_data/.yh_records/yh_map_fs_37/generation.json": "260863ace489a60874c09348ee2743255061ea6861b1a7c1cda2480bbdf3e818",
+        "map_data/.yh_records/yh_map_fs_37/metadata.json": "e55fc93c04b046138ebd4915bfff5f395f717bd4c96c47f103f288486599754b",
+        "map_data/yh_map_fs_37.json": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+        "map_data/yh_map_fs_37.png": "5ee6a3a41afc2d5756697897a3eeb00a7d29a85191c928e23ba43f98c10eb81f",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947/map_generated.py": "2ff27c8c0892010269dca7575c72cdd45b8f7c97a34d238377aafa2be6d3b459",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947/walls_generated.py": "174373778aad8264c81c5ccaa2ef52bd27d31152c01bfa0da978a22a55dfc0d1"
+      },
+      "generator_version": 2,
+      "geometry_sha256": "84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947",
+      "id": "7327c591cfccd4e785738e7cc42adce50f69a35ad77f7455482ee33009073080",
+      "layout_algorithm": "semifinal-partition-mix-v5",
+      "map_path": "map_data/yh_map_fs_37.json",
+      "name": "yh_map_fs_37",
+      "narrow_door_count": 0,
+      "official_editor_sha256": "76cfd80ac80671d8b5ffab9c87b4d0593dd74194653ac2890e5e5f4e7b5298ca",
+      "parameters": {
+        "difficulty": "hard",
+        "height": 1100,
+        "passage": null,
+        "seed": 1036,
+        "thickness": null,
+        "type": "semifinal",
+        "width": 1700
+      },
+      "passage_width": 72,
+      "preview_path": "map_data/yh_map_fs_37.png",
+      "room_count": null,
+      "seed": 1036,
+      "signature_version": "interior-64-dilate1-dihedral-v1",
+      "signatures": [
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003ffffff3ffffff003ffffff3ffffff003ffffff3ffffff000781e000f00000000781e000f00000000781e000f00000000701e000f00000000001e000f00000000001e000f00000000001e000f00000000001e000f00000000079e000fff9ff0000780000fff9ff000079e000fff9ff000079ffcff00000000001ffcff00000000001ffcff00000000001e000000000003fcfe000f00000003fcfe000f00000003fcfe000f003800001fde000f003800001fde000f003800001fde000f003800001fde000f000000000fde000f00000003f3fffffffffff003f3fffffffffff003f3fffffffffff0000000038e01e000000000038e01e000000000038e01e000000000038e01e00003fcffff8e01e00003fcffff8e01e00003fcffff8e01e00000003df80e01e00000003dfb8e01e00000003dfb8001c00000003dfb8001e00000003cf380f9e0000000000380f9e00000003c0380f9e00000003c0380f9e00000003c0380f9e00000003c0380f9e00fffff3fffffffffffffff3fffffffffffffff3ffffffffff0007c0003800f0000007c03fb800f0000007c03fb800f0000007c03fb800f0000007c03fb80070000007c03fb80070000007c03fb800f0000003c0003800f000000000003800f000",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffcffffffc00ffffffcffffffc00ffffffcffffffc0000000f000781e00000000f000781e00000000f000781e00000000f000780e00000000f000780000000000f000780000000000f000780000000000f0007800000ff9fff00079e0000ff9fff00001e0000ff9fff00079e000000000ff3ff9e000000000ff3ff80000000000ff3ff800000000000000780000000000f0007f3fc0000000f0007f3fc0001c00f0007f3fc0001c00f0007bf800001c00f0007bf800001c00f0007bf800000000f0007bf800000000f0007bf0000fffffffffffcfc00fffffffffffcfc00fffffffffffcfc000078071c000000000078071c000000000078071c000000000078071c000000000078071ffff3fc000078071ffff3fc000078071ffff3fc0000780701fbc000000078071dfbc000000038001dfbc000000078001dfbc000000079f01cf3c000000079f01c000000000079f01c03c000000079f01c03c000000079f01c03c000000079f01c03c00000ffffffffffcfffffffffffffffcfffffffffffffffcfffff000f001c0003e000000f001dfc03e000000f001dfc03e000000f001dfc03e000000e001dfc03e000000e001dfc03e000000f001dfc03e000000f001c0003c000000f001c00000000",
+        "0000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e00038000e0e1c00e00038000e0e1c00e00038000e0e1c00e0003f800e0e1c00ffc03f800e0e1c00ffe03f800fee1c00ffe03f000ff01c00ffe038078ff01c00ffe0380781fe0000e000380781fe0000e00038078ffe1c00000038000ffe1c00000038000e0e1fefe0003ffdfffe1fefe0003ffdfffe1fefe0003ffdfffe1fefe0003ffdfffe1c00efc03800e00e1fc0efc03800e00e1fe0efc03800e00e1fe0efc03800e00e1fe0efc03800e00e1fe0efc03800e00e1fc0efc03800e00e1c00e0003800000ffdfffff03800000ffdfffff00000e00ffdfffff00000e00e0000e0003800e00e0000e0003800e00e0000e0003fffefffff00e0003fffefffff00e0003fffefffff00e0003fffeffe0000e0003807000e003fe0003807000e003fe0003807000e003fe0003807000e003fe0003807000e003ffe703807000e0000fff03807000e0000fff03807000ffffffff03807000fffffe0003800000fffffe000380003cfff7fe000380703ce0000e000380703ce0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e00",
+        "000000003800f0000003c0003800f0000007c03fb800f0000007c03fb80070000007c03fb80070000007c03fb800f0000007c03fb800f0000007c03fb800f0000007c0003800f000fffff3fffffffffffffff3fffffffffffffff3ffffffffff000003c0380f9e00000003c0380f9e00000003c0380f9e00000003c0380f9e0000000000380f9e00000003cf380f9e00000003dfb8001e00000003dfb8001c00000003dfb8e01e00000003df80e01e00003fcffff8e01e00003fcffff8e01e00003fcffff8e01e000000000038e01e000000000038e01e000000000038e01e000000000038e01e00003f3fffffffffff003f3fffffffffff003f3fffffffffff0000fde000f000000001fde000f000000001fde000f003800001fde000f003800001fde000f00380003fcfe000f00380003fcfe000f00000003fcfe000f00000000001e000000000000001ffcff00000000001ffcff00000000079ffcff00000000079e000fff9ff0000780000fff9ff000079e000fff9ff000001e000f00000000001e000f00000000001e000f00000000001e000f00000000701e000f00000000781e000f00000000781e000f00000000781e000f00000003ffffff3ffffff003ffffff3ffffff003ffffff3ffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "000f001c00000000000f001c0003c000000f001dfc03e000000e001dfc03e000000e001dfc03e000000f001dfc03e000000f001dfc03e000000f001dfc03e000000f001c0003e000ffffffffffcfffffffffffffffcfffffffffffffffcfffff0079f01c03c000000079f01c03c000000079f01c03c000000079f01c03c000000079f01c000000000079f01cf3c000000078001dfbc000000038001dfbc000000078071dfbc0000000780701fbc000000078071ffff3fc000078071ffff3fc000078071ffff3fc000078071c000000000078071c000000000078071c000000000078071c00000000fffffffffffcfc00fffffffffffcfc00fffffffffffcfc0000000f0007bf000000000f0007bf800001c00f0007bf800001c00f0007bf800001c00f0007bf800001c00f0007f3fc0000000f0007f3fc0000000f0007f3fc00000000000780000000000ff3ff80000000000ff3ff80000000000ff3ff9e0000ff9fff00079e0000ff9fff00001e0000ff9fff00079e000000000f000780000000000f000780000000000f000780000000000f000780000000000f000780e00000000f000781e00000000f000781e00000000f000781e000ffffffcffffffc00ffffffcffffffc00ffffffcffffffc00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "007000000000000000700000000000000070000000000000007000000000000000700000000000000070000000000000007000000000000000700000000000000070000000000000007000000000000000700387070001c000700387070001c000700387070001c03ff0038707001fc07ff0038707001fc07ff003877f001fc07ff00380ff000fc07ff00380ff1e01c000700007f81e01c000700007f81e01c000000387ff1e01c000000387ff0001c0007f7f87070001c0007f7f87fffbffc0007f7f87fffbffc0007f7f87fffbffc03f700387fffbffc03f703f87007001c03f707f87007001c03f707f87007001c03f707f87007001c03f707f87007001c03f703f87007001c000700387007001c0fffffbff000001c0fffffbff000001c0fffffbff00700000007000070070000000700007007001c000700007007001c000700fffff7fffc000700fffff7fffc000700fffff7fffc000700007ff7fffc0007fc007000e01c0007fc007000e01c0007fc007000e01c0007fc007000e01c0e7ffc007000e01c0fff00007000e01c0fff00007000e01c0ffffffff000e01c0007fffff000e01c0007fffff000001c0007fefff3c0001c0007000073c0e01c0007000073c0e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c0",
+        "00700007000e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c000700007000e01c0007000073c0e01c0007000073c0e01c0007fefff3c0001c0007fffff000001c0007fffff000e01c0ffffffff000e01c0fff00007000e01c0fff00007000e01c0e7ffc007000e01c0007fc007000e01c0007fc007000e01c0007fc007000e01c0007fc007000e01c000700007ff7fffc000700fffff7fffc000700fffff7fffc000700fffff7fffc000700007007001c000700007007001c00070000700700000fffffbff00700000fffffbff000001c0fffffbff000001c000700387007001c03f703f87007001c03f707f87007001c03f707f87007001c03f707f87007001c03f707f87007001c03f703f87007001c03f700387fffbffc0007f7f87fffbffc0007f7f87fffbffc0007f7f87fffbffc0007f7f87070001c000000387ff0001c000000387ff1e01c000700007f81e01c000700007f81e01c07ff00380ff1e01c07ff00380ff000fc07ff003877f001fc07ff0038707001fc03ff0038707001fc000700387070001c000700387070001c000700387070001c00070000000000000007000000000000000700000000000000070000000000000007000000000000000700000000000000070000000000000007000000000000000700000000000000070000000000000",
+        "03807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e0003807000e0000e000380703ce0000e000380703ce0000e000380003cfff7fe0003800000fffffe0003807000fffffe0003807000ffffffff03807000e0000fff03807000e0000fff03807000e003ffe703807000e003fe0003807000e003fe0003807000e003fe0003807000e003fe0003fffeffe0000e0003fffefffff00e0003fffefffff00e0003fffefffff00e0003800e00e0000e0003800e00e0000e0000000e00e0000e0000000e00ffdfffff03800000ffdfffff03800000ffdfffff03800e00e1c00e0003800e00e1fc0efc03800e00e1fe0efc03800e00e1fe0efc03800e00e1fe0efc03800e00e1fe0efc03800e00e1fc0efc03ffdfffe1c00efc03ffdfffe1fefe0003ffdfffe1fefe0003ffdfffe1fefe00038000e0e1fefe00038000ffe1c00000038078ffe1c000000380781fe0000e000380781fe0000e00038078ff01c00ffe03f000ff01c00ffe03f800fee1c00ffe03f800e0e1c00ffe03f800e0e1c00ffc038000e0e1c00e00038000e0e1c00e00038000e0e1c00e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e000000000000000e00"
+      ],
+      "size": [
+        1700,
+        1100
+      ],
+      "structure_sha256": "d7c06b9f735d52f93db3501e9ed1f094c423f8518833b50496041ed3211daed2",
+      "topology_dead_ends": null,
+      "wall_area_px": 94655,
+      "wall_count": 37,
+      "wall_fraction": 0.050618,
+      "wall_thickness": 6
+    },
+    {
+      "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+      "calibration_source": null,
+      "clearance_px": 18,
+      "connected_components": 1,
+      "content_sha256": "42de32bcca0c5e386ef0bc7ab645f880b9653383708d1d48897ca6a544252158",
+      "difficulty": "hard",
+      "door_count": 0,
+      "export_format": "official-editor-native-v1",
+      "family": "semifinal",
+      "files": {
+        "map_data/.yh_records/yh_map_fs_27/generation.json": "a5822b4975a576200042c53946b10938ac5f80c43ad29b0a8193ffbfa167d3bb",
+        "map_data/.yh_records/yh_map_fs_27/metadata.json": "f7a406bec6385a1e35c28c03959d8ce1f9d7c4b17e91c6ef173ba77c29bc18b3",
+        "map_data/yh_map_fs_27.json": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+        "map_data/yh_map_fs_27.png": "f9ecd71b10c9141edfb079b357c8f80c05954be47152c969e7c81d5a4263b16d",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf/map_generated.py": "e6072efdac4366580eb9bc116a0aca2b9ed136b1ea9706ef2eccad7618b8a5e0",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf/walls_generated.py": "7682204357ee7c348d745c67ea6d72904e51705310e3d8552b5319fec4da6295"
+      },
+      "generator_version": 2,
+      "geometry_sha256": "65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf",
+      "id": "a18d96fb67043b73f55c20efcdb48e3579030f5008723bbd86b23dcd4d0fedd0",
+      "layout_algorithm": "semifinal-partition-mix-v5",
+      "map_path": "map_data/yh_map_fs_27.json",
+      "name": "yh_map_fs_27",
+      "narrow_door_count": 0,
+      "official_editor_sha256": "44392bbc60874fea916d1dd51d35b329e99fdda78400c9e36a928b9f4897d715",
+      "parameters": {
+        "difficulty": "hard",
+        "height": 1100,
+        "passage": null,
+        "seed": 1026,
+        "thickness": null,
+        "type": "semifinal",
+        "width": 1700
+      },
+      "passage_width": 56,
+      "preview_path": "map_data/yh_map_fs_27.png",
+      "room_count": null,
+      "seed": 1026,
+      "signature_version": "interior-64-dilate1-dihedral-v1",
+      "signatures": [
+        "0000000001c01c000000000001c01c000000000001c01c000000000001c01c000000000001de1c0000000001f1fe1ff000000001f1fe1ff000000001f1fe1ff000000000e1fe1ff0fffffff801fe1ff0fffffff801de1c00fffffff801c01c00fffffff801c01c00000e000001c01c00000e000001c01c00000e000001ce1c00000e000001cf1c003fce000001cf1fff3fce000001cf1fff3fce000001cf1fff1f8e000001cf0000000e000001cf1fc00000000001cf1fc0000e000001cf1fc0000e000001c01fc0000e000001c01fc0000e000001c01c00000e000001c01c00ffffffffffc01c00ffffffffffc01c00ffffffffffc01c000070038381c01c000070038381ffffff0070038381ffffff0070038381ffffff3e70000381c0e0003e7703839fc0e3f03e7783fb9fcfe3f8007783f81fcfe3f8007783fb9fcf03f8007003fb81cfe3f8007003fb81c0e3f00000038381c0e000007fff8381ffffff007fff8381ffffff007fff83e1ffffff1e700383e1c01c001e700380e1c01c001e7003fee1c01c001e7003fee1c01c00007003fee1c01c00fff003fee1c01c00fff003fee1c00000fff003fee1c01c00007003feffc01cfc007e03feffc01cfc007e03fe1fc01cfc007e03fcfe001c0007700380fe001c0007700380ffc01c0007700380e1c01c0000700380e1c01c0000700380e1c01c0000700380e1c01c00",
+        "00003807000e000000003807000e000001c03807000e000001c039e7000e000001c03bf7000e03e001c03bf7000e03e001c03bf703ee03e001c03bf703ee03e000003bf703ee03e000003bf703ee03e0ffeff807ffefffffffeff807ffefffffffeff807ffefffff00003f7f0000000000003f7f0000000000003f7f00000000000039e700ff0000000039e700ff87f0000039e700ff87f0000039e700ff87f000003807000007f000003807000003e0f9fffffffffffffff9fffffffffffffff9ffffffffffffff0fc000f0700000000fc000f0700000000fc000f0700000000fc000f0700000e0feffe000700001e0feffe000700001e0feffffbff00001e000007fbff00000e001ff7fbff000000003ff00007000000003ff03e070001e0003ff03e070001e0003ff03e070001e0003ff03e070001e00fffffff7f0001e00fffffff7f0001e00fffffff7f0001e000000380070001e000000380070001e000000380070001e000000380070001e000000380070001e00000038e070001e00000038f070001e00038038f07fbffe00038038f07fbffe00038038007fbffe00fffffbfff0001e00fffffbfff0001e00fffffbfff00e1e0000380000701e1e001c380000701e1e001c3bc038701e1e001c3bc038701e1e00003bc038701e1e00003bc038701e1e0000380038700e1e000038000070001e000038000070001e00",
+        "00007000e01c000000007000e01c000000007000e01c038000007000e79c038007c07000efdc038007c07000efdc038007c077c0efdc038007c077c0efdc038007c077c0efdc000007c077c0efdc0000fffff7ffe01ff7fffffff7ffe01ff7fffffff7ffe01ff7ff00000000fefc000000000000fefc000000000000fefc00000000ff00e79c00000fe1ff00e79c00000fe1ff00e79c00000fe1ff00e79c00000fe00000e01c000007c00000e01c0000ffffffffffffff9fffffffffffffff9fffffffffffffff9f0000000e0f0003f00000000e0f0003f00000000e0f0003f00700000e0f0003f00780000e0007ff7f0780000e0007ff7f0780000ffdffff7f0700000ffdfe00000000000ffdfeff800000000e0000ffc00078000e07c0ffc00078000e07c0ffc00078000e07c0ffc00078000e07c0ffc00078000fefffffff0078000fefffffff0078000fefffffff0078000e001c00000078000e001c00000078000e001c00000078000e001c00000078000e001c00000078000e071c00000078000e0f1c0000007ffdfe0f1c01c0007ffdfe0f1c01c0007ffdfe001c01c00078000fffdfffff0078000fffdfffff0078700fffdfffff0078780e00001c000078780e00001c380078780e1c03dc380078780e1c03dc380078780e1c03dc000078780e1c03dc000078700e1c001c000078000e00001c000078000e00001c00",
+        "0038000070001e000038000070001e0000380038700e1e00003bc038701e1e00003bc038701e1e001c3bc038701e1e001c3bc038701e1e001c380000701e1e0000380000701e1e00fffffbfff00e1e00fffffbfff0001e00fffffbfff0001e00038038007fbffe00038038f07fbffe00038038f07fbffe00000038f070001e00000038e070001e000000380070001e000000380070001e000000380070001e000000380070001e000000380070001e00fffffff7f0001e00fffffff7f0001e00fffffff7f0001e0003ff03e070001e0003ff03e070001e0003ff03e070001e0003ff03e070001e0003ff00007000000001ff7fbff000000000007fbff00000e0feffffbff00001e0feffe000700001e0feffe000700001e00fc000f0700000e00fc000f0700000000fc000f0700000000fc000f070000000f9fffffffffffffff9fffffffffffffff9ffffffffffffff00003807000003e000003807000007f0000039e700ff87f0000039e700ff87f0000039e700ff87f0000039e700ff000000003f7f0000000000003f7f0000000000003f7f00000000ffeff807ffefffffffeff807ffefffffffeff807ffefffff00003bf703ee03e000003bf703ee03e001c03bf703ee03e001c03bf703ee03e001c03bf7000e03e001c03bf7000e03e001c039e7000e000001c03807000e000000003807000e000000003807000e0000",
+        "003803800000000000380380000000000038038000000000003803800000000000387b80000000000ff87f8f800000000ff87f8f800000000ff87f8f800000000ff87f87000000000ff87f801fffffff00387b801fffffff003803801fffffff003803801fffffff0038038000007000003803800000700000387380000070000038f38000007000fff8f380000073fcfff8f380000073fcfff8f380000073fc0000f380000071f803f8f3800000700003f8f3800000000003f8f3800000700003f803800000700003f803800000700000380380000070000038038000007000003803ffffffffff003803ffffffffff003803ffffffffff00380381c1c00e00ffffff81c1c00e00ffffff81c1c00e00ffffff81c1c00e0000070381c0000e7c0fc703f9c1c0ee7c1fc7f3f9dfc1ee7c1fc7f3f81fc1ee001fc0f3f9dfc1ee001fc7f381dfc00e000fc70381dfc00e0000070381c1c00000ffffff81c1fffe00ffffff81c1fffe00ffffff87c1fffe0000380387c1c00e780038038701c00e78003803877fc00e78003803877fc00e78003803877fc00e00003803877fc00fff000003877fc00fff003803877fc00fff3f3803ff7fc00e003f3803ff7fc07e003f3803f87fc07e000038007f3fc07e000038007f01c00ee0003803ff01c00ee00038038701c00ee00038038701c00e000038038701c00e000038038701c00e00",
+        "0038038701c00e000038038701c00e000038038701c00e000038038701c00ee0003803ff01c00ee00038007f01c00ee00038007f3fc07e003f3803f87fc07e003f3803ff7fc07e003f3803ff7fc00e00003803877fc00fff000003877fc00fff003803877fc00fff003803877fc00e00003803877fc00e78003803877fc00e780038038701c00e7800380387c1c00e78ffffff87c1fffe00ffffff81c1fffe00ffffff81c1fffe0000070381c1c000000fc70381dfc00e001fc7f381dfc00e001fc0f3f9dfc1ee001fc7f3f81fc1ee001fc7f3f9dfc1ee7c0fc703f9c1c0ee7c00070381c0000e7cffffff81c1c00e00ffffff81c1c00e00ffffff81c1c00e0000380381c1c00e00003803ffffffffff003803ffffffffff003803ffffffffff0038038000007000003803800000700003f803800000700003f803800000700003f8f3800000700003f8f3800000000003f8f380000070000000f380000071f8fff8f380000073fcfff8f380000073fcfff8f380000073fc0038f38000007000003873800000700000380380000070000038038000007000003803801fffffff003803801fffffff00387b801fffffff0ff87f801fffffff0ff87f87000000000ff87f8f800000000ff87f8f800000000ff87f8f8000000000387b80000000000038038000000000003803800000000000380380000000000038038000000000",
+        "00700380e1c01c0000700380e1c01c0000700380e1c01c0007700380e1c01c0007700380ffc01c0007700380fe001c00007e03fcfe001c00007e03fe1fc01cfc007e03feffc01cfc007003feffc01cfcfff003fee1c01c00fff003fee1c00000fff003fee1c01c00007003fee1c01c001e7003fee1c01c001e7003fee1c01c001e700380e1c01c001e700383e1c01c00007fff83e1ffffff007fff8381ffffff007fff8381ffffff0000038381c0e000007003fb81c0e3f0007003fb81cfe3f8007783fb9fcf03f8007783f81fcfe3f83e7783fb9fcfe3f83e7703839fc0e3f03e70000381c0e0000070038381ffffff0070038381ffffff0070038381ffffff0070038381c01c00ffffffffffc01c00ffffffffffc01c00ffffffffffc01c00000e000001c01c00000e000001c01c00000e000001c01fc0000e000001c01fc0000e000001cf1fc00000000001cf1fc0000e000001cf1fc01f8e000001cf00003fce000001cf1fff3fce000001cf1fff3fce000001cf1fff000e000001cf1c00000e000001ce1c00000e000001c01c00000e000001c01c00fffffff801c01c00fffffff801c01c00fffffff801de1c00fffffff801fe1ff000000000e1fe1ff000000001f1fe1ff000000001f1fe1ff000000001f1fe1ff00000000001de1c000000000001c01c000000000001c01c000000000001c01c000000000001c01c00",
+        "0078000e00001c000078000e00001c000078700e1c001c000078780e1c03dc000078780e1c03dc000078780e1c03dc380078780e1c03dc380078780e00001c380078780e00001c000078700fffdfffff0078000fffdfffff0078000fffdfffff007ffdfe001c01c0007ffdfe0f1c01c0007ffdfe0f1c01c00078000e0f1c00000078000e071c00000078000e001c00000078000e001c00000078000e001c00000078000e001c00000078000e001c00000078000fefffffff0078000fefffffff0078000fefffffff0078000e07c0ffc00078000e07c0ffc00078000e07c0ffc00078000e07c0ffc00000000e0000ffc00000000ffdfeff800700000ffdfe00000780000ffdffff7f0780000e0007ff7f0780000e0007ff7f0700000e0f0003f00000000e0f0003f00000000e0f0003f00000000e0f0003f0ffffffffffffff9fffffffffffffff9fffffffffffffff9f07c00000e01c00000fe00000e01c00000fe1ff00e79c00000fe1ff00e79c00000fe1ff00e79c00000000ff00e79c000000000000fefc000000000000fefc000000000000fefc0000fffff7ffe01ff7fffffff7ffe01ff7fffffff7ffe01ff7ff07c077c0efdc000007c077c0efdc000007c077c0efdc038007c077c0efdc038007c07000efdc038007c07000efdc038000007000e79c038000007000e01c038000007000e01c000000007000e01c0000"
+      ],
+      "size": [
+        1700,
+        1100
+      ],
+      "structure_sha256": "91eec423a46266c418da4b4adb030983847c9b0dd913bff87c44f16996ce884d",
+      "topology_dead_ends": null,
+      "wall_area_px": 112032,
+      "wall_count": 50,
+      "wall_fraction": 0.05991,
+      "wall_thickness": 6
+    },
+    {
+      "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+      "calibration_source": null,
+      "clearance_px": 18,
+      "connected_components": 1,
+      "content_sha256": "78918ddb166ad6494d427bbfa589d997c96bac0748a043deae22c4b7f97c5b9b",
+      "difficulty": "hard",
+      "door_count": 0,
+      "export_format": "official-editor-native-v1",
+      "family": "semifinal",
+      "files": {
+        "map_data/.yh_records/yh_map_fs_72/generation.json": "3d1092e87cf8b5a3f305f277488dd29d5749aefc622e3a027211674cb492a3ab",
+        "map_data/.yh_records/yh_map_fs_72/metadata.json": "783909e342cb160ad14d3075edf44d94cc48b3da0f9b4edf071b1f37e0b9887a",
+        "map_data/yh_map_fs_72.json": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+        "map_data/yh_map_fs_72.png": "988db7d1a43539a0546af760fbf5138d1cab8fac94fc3a9d6ab46eef6a740ace",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6/map_generated.py": "b691735f5f8fe89c199e160bfecff2b87b0234224dfd2a925cfd21b32a773de8",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6/walls_generated.py": "a9434677e7dfea50add807fce02b3dd2697cfa7d057671fdc68c91c76310bd87"
+      },
+      "generator_version": 2,
+      "geometry_sha256": "f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6",
+      "id": "a77fa6bc8d1a996e59cd54d26acb1445b114e0c5942416f9e0522beca805373b",
+      "layout_algorithm": "semifinal-partition-mix-v5",
+      "map_path": "map_data/yh_map_fs_72.json",
+      "name": "yh_map_fs_72",
+      "narrow_door_count": 0,
+      "official_editor_sha256": "20fe635f9e95dd788c1d1f8d0cb1ed892e07777835345b5bc0f05601e44721d6",
+      "parameters": {
+        "difficulty": "hard",
+        "height": 1122,
+        "passage": null,
+        "seed": 1071,
+        "thickness": null,
+        "type": "semifinal",
+        "width": 1660
+      },
+      "passage_width": 56,
+      "preview_path": "map_data/yh_map_fs_72.png",
+      "room_count": null,
+      "seed": 1071,
+      "signature_version": "interior-64-dilate1-dihedral-v1",
+      "signatures": [
+        "00000070001c070000000070001c070000000070001c070000000073c01c070000000073c01c070000000073c1fc077800000073c1fc077800000073c1fc07780000007001fc000000000070001c07000000007ffffc07000000007ffffc07000000007ffffc070000000070381c070000000000381c070000000070381fffff00000070001fffff00000070381fffff00000070381c000000000070381c000000000070381c0000fffffff0381c0000fffffff0381c3e00fffffff0381c3e0000038070001c3e0000038070001c3e0000038070001c3e0000038070001c000000038070001c000000038070001c000000038073f01c000003ff8073f01c000003ff8073f01c000003ff8070001c000000000070001c0000000380700000000000038070001c0000ffff8070001c0000ffff807fffffffffffff807fffffffff0003807fffffffff0003807ffffc000000038070001c000000038070001c000000038070001c00000003807781dc00000003807f81dc00000003807f81dc00000003807f81dc000000038070001c0000fffffffffffc0000fffffffffffc0000fffffffffffc000000701c00701c000000701c00701dc0000073dc00701fc0000073dc00701fc0003c03c0007f1fc0003c73dfe07f1c00003c73dfe07f1c00000073dfe0701c000000701c00701c000000701c00701c000000701c00701c0000",
+        "000001c000038000000001c000038000000001c000038000000001c0000380e0000001c0000380e0000001c0000380e0000001c0000380e0000001c000038000000001c00003feff000001c007c3feff000001c007c3feff000001c007c38000000001c007c38000000001c007c3800003c001c00003800003c001c00003800003c001c000038000038001c000038000fffffff7fffffffffffffff7fffffffffffffff7ffffffff001c03c000001de0001de3c000001de0001de3c000001de00e1de3c000001de00e1c03c000001c000e1c03c000001c000e1c03c000fefc00fffc03c1c0fefc00fffc03c1c0fefc00fffc03c1c0001cf8001de3c1c0001cf8001de3c1c0001cf8001de3c1c0001cf8001de3c000001c00001dc3c000001c00001fffffffffbfff1c1fffffffffbfff1c1fffffffffbfff1c1c000000e000001c1c000000e000001c1c000000e00000fdfc000000e00000fdfc000000e00000fdfc000000e00000001c000000e000001f9c000000e000001f9ffffbffe000001f9ffffbffe000001f9ffffbffe00000001c00e380e00000001c00e380e00000fdfc00e380e00000fdfc00e380e00000fdfc00e380e00000001c00e380e00000001c00e380e00000001c00e380e000000e1c00e000e000000e1c00e000e000000e1c00e000e000000e1c00e000e00000001c00e000e00000001c00e000e00000",
+        "00000700070038000000070007003800000007000700387000000700070038700000070007003870000007000700387000000701c700380000000701c700380000000701c700380000000701c7003fbf00000701c7003fbf00000701c7003fbf00000701c700380000000701c7003800000007ffdffff9f8000007ffdffff9f8000007ffdffff9f800000700000039f800000700000038000000070000003fbf0000070000003fbf0000070000003fbf000007000000383800000700000038380000070000003838fffdfffffffff838fffdfffffffff838fffdfffffffff8000038000003c3b8000038000003c7b8001f38000383c7b8001f38000383c7b8001f38000383c7b8001f38000383c03fff003f7f0383c03fff003f7f0383c03fff003f7f0003c038700038000003c038700038000003c0387007b8000003c7b87007b8000003c7b80007b8000003c7b80007b8000003c03800ffffffffefffffffffffffffefffffffffffffffefffffff0001c000038001c00001c000038003c00001c000038003c00001c000038003c00001c3e0038000000001c3e0038000000001c3e003800000ff7fc3e003800000ff7fc3e003800000ff7fc000038000000001c000038000000701c000038000000701c000038000000701c000038000000701c000038000000001c000038000000001c000038000000001c00003800000",
+        "0000380e00380e000000380e00380e000000380e00380e000000380e07fbce00000038fe07fbce3c000038fe07fbce3c0003f8fe0003c03c0003f80e003bce000003f80e003bce000003b80e00380e000000380e00380e0000003fffffffffff00003fffffffffff00003fffffffffff000038000e01c00000003b81fe01c00000003b81fe01c00000003b81fe01c00000003b81ee01c000000038000e01c000000038000e01c000000038000e01c00000003ffffe01c000fffffffffe01c000fffffffffe01fffffffffffffe01ffff000038000e01ffff000038000e01c000000000000e01c000000038000e000000000038000e01ffc00000380fce01ffc00000380fce01ffc00000380fce01c000000038000e01c000000038000e01c000000038000e01c000007c38000e01c000007c38000e01c000007c38000e01c000007c381c0fffffff007c381c0fffffff0000381c0fffffff0000381c0e0000000000381c0e0000000000381c0e000000fffff81c0e000000fffff8000e000000fffff81c0e00000000e0381c0000000000e0381c0e00000000e03ffffe00000000e03ffffe00000000e03ffffe00000000e038000e00000000003f800e0000001ee03f83ce0000001ee03f83ce0000001ee03f83ce00000000e03803ce00000000e03803ce00000000e038000e00000000e038000e00000000e038000e000000",
+        "0001c000038000000001c000038000000001c000038000000701c000038000000701c000038000000701c000038000000701c000038000000001c00003800000ff7fc00003800000ff7fc3e003800000ff7fc3e0038000000001c3e0038000000001c3e0038000000001c3e0038000000001c000038003c00001c000038003c00001c000038003c00001c000038001c0ffffffffefffffffffffffffefffffffffffffffefffffff07b8000003c0380007b8000003c7b80007b8000003c7b80007b8000003c7b8700038000003c038700038000003c03870003f7f0003c03870003f7f0383c03fff003f7f0383c03fff1f38000383c03fff1f38000383c7b8001f38000383c7b8001f38000383c7b8000038000003c7b8000038000003c3b800fffdfffffffff800fffdfffffffff838fffdfffffffff8380000070000003838000007000000383800000700000038380000070000003fbf0000070000003fbf0000070000003fbf000007000000380000000700000039f8000007ffdffff9f8000007ffdffff9f8000007ffdffff9f800000701c700380000000701c700380000000701c7003fbf00000701c7003fbf00000701c7003fbf00000701c700380000000701c700380000000701c7003800000007000700387000000700070038700000070007003870000007000700387000000700070038000000070007003800",
+        "001c00e000e00000001c00e000e000000e1c00e000e000000e1c00e000e000000e1c00e000e000000e1c00e000e00000001c00e380e00000001c00e380e00000001c00e380e00000fdfc00e380e00000fdfc00e380e00000fdfc00e380e00000001c00e380e00000001c00e380e000001f9ffffbffe000001f9ffffbffe000001f9ffffbffe000001f9c000000e00000001c000000e00000fdfc000000e00000fdfc000000e00000fdfc000000e000001c1c000000e000001c1c000000e000001c1c000000e000001c1fffffffffbfff1c1fffffffffbfff001fffffffffbfff001dc3c000001c00001de3c000001c00001de3c1c0001cf8001de3c1c0001cf8001de3c1c0001cf8fffc03c1c0001cf8fffc03c1c0fefc00fffc03c1c0fefc000e1c03c000fefc000e1c03c000001c000e1c03c000001c000e1de3c000001de0001de3c000001de0001de3c000001de0001c03c000001de0fffffff7fffffffffffffff7fffffffffffffff7ffffffff038001c00003800003c001c00003800003c001c00003800003c001c000038000000001c007c38000000001c007c38000000001c007c38000000001c007c3feff000001c007c3feff000001c00003feff000001c000038000000001c0000380e0000001c0000380e0000001c0000380e0000001c0000380e0000001c000038000000001c000038000000001c000038000",
+        "00701c00701c000000701c00701c000000701c00701c00000073dfe0701c00003c73dfe07f1c00003c73dfe07f1c00003c03c0007f1fc0000073dc00701fc0000073dc00701fc00000701c00701dc00000701c00701c0000fffffffffffc0000fffffffffffc0000fffffffffffc000000038070001c00000003807f81dc00000003807f81dc00000003807f81dc00000003807781dc000000038070001c000000038070001c000000038070001c00000003807ffffc00000003807fffffffffffff807fffffffffffff807fffffffffffff8070001c000000038070001c0000000380700000000000000070001c000003ff8070001c000003ff8073f01c000003ff8073f01c000000038073f01c000000038070001c000000038070001c000000038070001c000000038070001c3e0000038070001c3e0000038070001c3e00fffffff0381c3e00fffffff0381c3e00fffffff0381c000000000070381c000000000070381c000000000070381c000000000070381fffff00000070001fffff00000070381fffff00000000381c070000000070381c07000000007ffffc07000000007ffffc07000000007ffffc070000000070001c07000000007001fc000000000073c1fc077800000073c1fc077800000073c1fc077800000073c01c070000000073c01c070000000070001c070000000070001c070000000070001c0700",
+        "00e038000e00000000e038000e00000000e038000e00000000e03803ce00000000e03803ce0000001ee03f83ce0000001ee03f83ce0000001ee03f83ce00000000003f800e00000000e038000e00000000e03ffffe00000000e03ffffe00000000e03ffffe00000000e0381c0e00000000e0381c00000000fffff81c0e000000fffff8000e000000fffff81c0e0000000000381c0e0000000000381c0e0000000000381c0e0000000000381c0fffffff007c381c0fffffff007c381c0fffffff007c38000e01c000007c38000e01c000007c38000e01c000000038000e01c000000038000e01c000000038000e01c0000000380fce01c0000000380fce01ffc00000380fce01ffc0000038000e01ffc0000038000e000000000000000e01c000000038000e01c000000038000e01fffffffffffffe01fffffffffffffe01fffffffffffffe01c00000003ffffe01c000000038000e01c000000038000e01c000000038000e01c00000003b81ee01c00000003b81fe01c00000003b81fe01c00000003b81fe01c000000038000e01c00000003fffffffffff00003fffffffffff00003fffffffffff0000380e00380e000003b80e00380e000003f80e003bce000003f80e003bce000003f8fe0003c03c000038fe07fbce3c000038fe07fbce3c0000380e07fbce000000380e00380e000000380e00380e000000380e00380e00"
+      ],
+      "size": [
+        1660,
+        1122
+      ],
+      "structure_sha256": "9637dd7ad17640b3c018957a27c221f3c2029ab47b05ae645070a0ae8c927da2",
+      "topology_dead_ends": null,
+      "wall_area_px": 85922,
+      "wall_count": 43,
+      "wall_fraction": 0.046132,
+      "wall_thickness": 6
+    },
+    {
+      "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+      "calibration_source": null,
+      "clearance_px": 18,
+      "connected_components": 1,
+      "content_sha256": "716df66ef7b59f5bddddf7603ac4853383ce997aadbe4278b3e2439aea4ea3b9",
+      "difficulty": "hard",
+      "door_count": 0,
+      "export_format": "official-editor-native-v1",
+      "family": "semifinal",
+      "files": {
+        "map_data/.yh_records/yh_map_fs_55/generation.json": "290dc8842df875e04e9863f9d255aeef89575b208ad2ed36661cc6173cf8ece9",
+        "map_data/.yh_records/yh_map_fs_55/metadata.json": "376699b2fcf3e3946227aee9be014bdf012b9f0243563f2fcc525c86c957297e",
+        "map_data/yh_map_fs_55.json": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+        "map_data/yh_map_fs_55.png": "6c69ec2a053d9edb1a4844c98746fffeb3215198a4a69fbef76ec36a8a5d6e24",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9/map_generated.py": "d7c63ea37bcdbc389a843a98f5774a4117a3000dd851b51d82c8fc87f3411a0b",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9/walls_generated.py": "a58dfbaa95c29ba83874729aa0dd4a8d6c362b8528752ca37bccf226a92d7f23"
+      },
+      "generator_version": 2,
+      "geometry_sha256": "78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9",
+      "id": "2c0e0edcd0ed882fea1f6fcc2cd548b12620ff1e7b3bea09940284652fdee9e2",
+      "layout_algorithm": "semifinal-partition-mix-v5",
+      "map_path": "map_data/yh_map_fs_55.json",
+      "name": "yh_map_fs_55",
+      "narrow_door_count": 0,
+      "official_editor_sha256": "5e1ddffcb01e1161ef2d08000a941544c5efb43bf5d76a4610b88b4580c9e982",
+      "parameters": {
+        "difficulty": "hard",
+        "height": 1100,
+        "passage": null,
+        "seed": 1054,
+        "thickness": null,
+        "type": "semifinal",
+        "width": 1700
+      },
+      "passage_width": 56,
+      "preview_path": "map_data/yh_map_fs_55.png",
+      "room_count": null,
+      "seed": 1054,
+      "signature_version": "interior-64-dilate1-dihedral-v1",
+      "signatures": [
+        "000038000001c000000038000001c000003fb8000001c000003fb80000f9c700003fb80000f9c700003fb80000f9c7000000380000f9c7000000380000f9c0000000380000f9feff0000380000f9feff00003ff7ffdffeff00003ff7ffdfc00000003ff7ffdfc0000000380001f9c0000000380001f9c0000000380001f9c0000000380001f9c000000038000001c000fffffffffffdfffffffffffffffdfffffffffffffffdffff001c000380000380001c000380000380001cfe03800003801c1cfe03800003801c1cfe03800003801c1cfe03ffffbfff1c1cfe03ffffbffffbfcfe03ffffbffffbfcfe0380700000fbfc7e039c700000001c00039c7000000f9ff7ff9c7000000f9ff7ff9c7000000f9ff7ff807000000f9c0003807000000f9c0003fffdffff079c0003fffdffff001c0003fffdffffffffffff800001c0ffffffff800001c0ffffffff800001c0000038e3800001c0001c38e3800001c0001c38e3fffff7ff001c38e3fffff7ff001c3ffffffff7ff00003fbf8003c00000003fbf8003c000000038038003c000000038038003c0000e0039c38383c0e00e0039c38381c0e00e0039c38383c0e00e0039c38383c0e0ffffffffffefffffffffffffffefffffffffffffffffffff0703c03bf03fbb800703dc3bf03fbb800703dc3bf03fbb800703dc3bf03fbb800703dc38000038000003c03800003800",
+        "0000380e01c001c00000380e01c001c00000380e01c001c0000038fe01c001c0000038fef9c01fc0000038f0fdc01ffe0000380efdc01ffe0000380efdc001fe0000380efdc001c00000380e01c001c03c00380e01c001c03c003fffffde01c03c003fffffde01c03c003fffffde01c03c003800e1c001ff3c003800e1c001ff3c0039fce1c001ff000039fee1c001fffffff9fee1ffffc0fffff9fee1ffffdefffff9fe01ffffde003839fee1c381de003839fee1c381c000383800e1c39fc000383800e1ff9fc000383800e1fe1fc000383800e1ff81ff00383800e1c381ff00003800e1c381ff00383800e1c381c000383ffffffffffc00383ffffffffffc00383ffffffffffc003838380e0e01fc003838380e0e01fc0038383bce0e01fc0038383bce0e01c00038383bce0e01c0003838380e0e1fc0003fb8380e0e1fc01fffb8380e0e1fc01fffb83ffe0e01c01fc7b83ffe0e01fc1fffb83ffe0e007c1fffb8380e0e01fc003838380e0e01fc00380038000ff7fcfffff8380e0ffffcfffff8380e0ffffcfffff8000e0fffc000e038380e0e01ff00e038380e0e01ff00e038380e0001ff1ee038380e0e01c01ee03ff80e0e01fc1e003ff80ffe01fc00e03ff80ffe1ffc00e038380ffe1fc000e038380e0e1fc000e038380e0e01c000e038380e0e01c000e038380e0e01c000e038380e0e01c000e038380e0e01c0",
+        "00038000001c000000038000001c000000038000001dfc0000e39f00001dfc0000e39f00001dfc0000e39f00001dfc0000e39f00001c000000039f00001c0000ff7f9f00001c0000ff7f9f00001c0000ff7ffbffeffc00000003fbffeffc00000003fbffeffc000000039f80001c000000039f80001c000000039f80001c000000039f80001c000000038000001c0000ffffbfffffffffffffffbfffffffffffffffbfffffffffff01c00001c000380001c00001c000380001c00001c07f380001c00001c07f383801c00001c07f3838fffdffffc07f3838fffdffffc07f3838fffdffffc07f3fdf00000e01c07f3fdf00000e39c07e3fdf00000e39c000380000000e39ffeff9f000000e39ffeff9f000000e01ffeff9f000000e01c00039f0ffffbfffc00039f0ffffbfffc00039e0ffffbfffc000380003800001ffffffff03800001ffffffff03800001ffffffff03800001c71c000003800001c71c3800ffefffffc71c3800ffefffffc71c3800ffeffffffffc38000003c001fdfc00000003c001fdfc00000003c001c01c00000003c001c01c00000703c1c1c39c0070070381c1c39c00700703c1c1c39c00700703c1c1c39c0070fffff7fffffffffffffff7ffffffffffffffffffffffffff01ddfc0fdc03c0e001ddfc0fdc3bc0e001ddfc0fdc3bc0e001ddfc0fdc3bc0e0001c00001c3bc0e0001c00001c03c000",
+        "0003c038000038000703dc38000038000703dc3bf03fbb800703dc3bf03fbb800703dc3bf03fbb800703c03bf03fbb80ffffffffffffffffffffffffffefffffffffffffffefffff0e0039c38383c0e00e0039c38383c0e00e0039c38381c0e00e0039c38383c0e0000038038003c000000038038003c00000003fbf8003c00000003fbf8003c000001c3ffffffff7ff001c38e3fffff7ff001c38e3fffff7ff001c38e3800001c0000038e3800001c0ffffffff800001c0ffffffff800001c0ffffffff800001c0001c0003fffdffff079c0003fffdffff0f9c0003fffdffff0f9c0003807000000f9ff7ff807000000f9ff7ff9c7000000f9ff7ff9c700000001c00039c700000fbfc7e039c700000fbfcfe0380700000fbfcfe03ffffbfff1c1cfe03ffffbfff1c1cfe03ffffbfff1c1cfe03800003801c1cfe0380000380001cfe0380000380001c000380000380001c000380000380fffffffffffdfffffffffffffffdfffffffffffffffdffff000038000001c0000000380001f9c0000000380001f9c0000000380001f9c0000000380001f9c00000003ff7ffdfc00000003ff7ffdfc00000003ff7ffdffeff0000380000f9feff0000380000f9feff0000380000f9c0000000380000f9c700003fb80000f9c700003fb80000f9c700003fb80000f9c700003fb8000001c000000038000001c000000038000001c000",
+        "001c00001c03c000001c00001c3bc0e001ddfc0fdc3bc0e001ddfc0fdc3bc0e001ddfc0fdc3bc0e001ddfc0fdc03c0e0fffffffffffffffffffff7fffffffffffffff7ffffffffff0703c1c1c39c00700703c1c1c39c0070070381c1c39c00700703c1c1c39c00700003c001c01c00000003c001c01c00000003c001fdfc00000003c001fdfc0000ffeffffffffc3800ffefffffc71c3800ffefffffc71c380003800001c71c380003800001c71c000003800001ffffffff03800001ffffffff03800001ffffffffffffbfffc0003800ffffbfffc00039e0ffffbfffc00039f000000e01c00039f000000e01ffeff9f000000e39ffeff9f000000e39ffeff9f000000e39c000380000000e39c07e3fdf00000e01c07f3fdffffdffffc07f3fdffffdffffc07f3838fffdffffc07f383801c00001c07f383801c00001c07f383801c00001c07f380001c00001c000380001c00001c0003800ffffbfffffffffffffffbfffffffffffffffbfffffffffff00038000001c000000039f80001c000000039f80001c000000039f80001c000000039f80001c00000003fbffeffc00000003fbffeffc0000ff7ffbffeffc0000ff7f9f00001c0000ff7f9f00001c000000039f00001c000000e39f00001c000000e39f00001dfc0000e39f00001dfc0000e39f00001dfc0000038000001dfc0000038000001c000000038000001c0000",
+        "00e038380e0e01c000e038380e0e01c000e038380e0e01c000e038380e0e01c000e038380e0e01c000e038380e0e1fc000e038380ffe1fc000e03ff80ffe1ffc1e003ff80ffe01fc1ee03ff80e0e01fc1ee038380e0e01c000e038380e0001ff00e038380e0e01ff00e038380e0e01fffffff8000e0fffc0fffff8380e0ffffcfffff8380e0ffffc00380038000ff7fc003838380e0e01fc1fffb8380e0e01fc1fffb83ffe0e007c1fc7b83ffe0e01fc1fffb83ffe0e01c01fffb8380e0e1fc0003fb8380e0e1fc0003838380e0e1fc00038383bce0e01c00038383bce0e01c00038383bce0e01fc003838380e0e01fc003838380e0e01fc00383ffffffffffc00383ffffffffffc00383ffffffffffc00383800e1c381c000003800e1c381ff00383800e1c381ff00383800e1ff81ff00383800e1fe1fc000383800e1ff9fc000383800e1c39fc0003839fee1c381c0003839fee1c381defffff9fe01ffffdefffff9fee1ffffdefffff9fee1ffffc0000039fee1c001ff3c0039fce1c001ff3c003800e1c001ff3c003800e1c001ff3c003fffffde01c03c003fffffde01c03c003fffffde01c03c00380e01c001c00000380e01c001c00000380efdc001c00000380efdc001fe0000380efdc01ffe000038f0fdc01ffe000038fef9c01fc0000038fe01c001c00000380e01c001c00000380e01c001c00000380e01c001c0",
+        "03800380701c000003800380701c000003800380701c0000038003807f1c000003f8039f7f1c00007ff803bf0f1c00007ff803bf701c00007f8003bf701c0000038003bf701c000003800380701c000003800380701c003c03807bfffffc003c03807bfffffc003c03807bfffffc003cff800387001c003cff800387001c003cff8003873f9c003cff8003877f9c000003ffff877f9fffff7bffff877f9fffff7bffff807f9fffff7b81c3877f9c1c000381c3877f9c1c0003f9c387001c1c0003f9ff87001c1c0003f87f87001c1c00ff81ff87001c1c00ff81c387001c1c00ff81c387001c00000381c387001c1c003ffffffffffc1c003ffffffffffc1c003ffffffffffc1c003f8070701c1c1c003f8070701c1c1c003f807073dc1c1c0003807073dc1c1c0003807073dc1c1c0003f870701c1c1c0003f870701c1dfc0003f870701c1dfff80380707ffc1dfff83f80707ffc1de3f83e00707ffc1dfff83f8070701c1dfff83f8070701c1c1c003feff0001c001c003ffff0701c1fffff3ffff0701c1fffff03fff070001fffffff8070701c1c0700ff8070701c1c0700ff8000701c1c0700038070701c1c07783f8070701ffc07783f807ff01ffc00783ff87ff01ffc070003f87ff01c1c070003f870701c1c0700038070701c1c0700038070701c1c0700038070701c1c0700038070701c1c0700038070701c1c0700",
+        "038070701c1c0700038070701c1c0700038070701c1c0700038070701c1c0700038070701c1c070003f870701c1c070003f87ff01c1c07003ff87ff01ffc07003f807ff01ffc00783f8070701ffc0778038070701c1c0778ff8000701c1c0700ff8070701c1c0700ff8070701c1c070003fff070001fffff3ffff0701c1fffff3ffff0701c1fffff3feff0001c001c003f8070701c1c1c003f8070701c1dfff83e00707ffc1dfff83f80707ffc1de3f80380707ffc1dfff803f870701c1dfff803f870701c1dfc0003f870701c1c1c0003807073dc1c1c0003807073dc1c1c003f807073dc1c1c003f8070701c1c1c003f8070701c1c1c003ffffffffffc1c003ffffffffffc1c003ffffffffffc1c000381c387001c1c00ff81c387001c0000ff81c387001c1c00ff81ff87001c1c0003f87f87001c1c0003f9ff87001c1c0003f9c387001c1c000381c3877f9c1c007b81c3877f9c1c007bffff807f9fffff7bffff877f9fffff03ffff877f9fffffff8003877f9c0000ff8003873f9c003cff800387001c003cff800387001c003c03807bfffffc003c03807bfffffc003c03807bfffffc003c03800380701c003c03800380701c0000038003bf701c00007f8003bf701c00007ff803bf701c00007ff803bf0f1c000003f8039f7f1c0000038003807f1c000003800380701c000003800380701c000003800380701c0000"
+      ],
+      "size": [
+        1700,
+        1100
+      ],
+      "structure_sha256": "e9582f4abf7597008a54d23f3ad58ebecaddf0827ae259b02078954b9893e092",
+      "topology_dead_ends": null,
+      "wall_area_px": 115362,
+      "wall_count": 65,
+      "wall_fraction": 0.061691,
+      "wall_thickness": 6
+    },
+    {
+      "calibration_sha256": "2c006be0505440e6bec2d33a460490a794fc326756b5de8c200eb1902292eab2",
+      "calibration_source": null,
+      "clearance_px": 18,
+      "connected_components": 1,
+      "content_sha256": "c9fa9f91cdf84edd90446c866f3f186f031e6968c049f03f18bd7e3b1a0c5c3f",
+      "difficulty": "hard",
+      "door_count": 0,
+      "export_format": "official-editor-native-v1",
+      "family": "semifinal",
+      "files": {
+        "map_data/.yh_records/yh_map_fs_90/generation.json": "fbdd4f2fb2e8235440631844fcb654dcba89c2e1ebf2ca5c05ca73b9eae5da47",
+        "map_data/.yh_records/yh_map_fs_90/metadata.json": "8d72146cef46746f6776353e99ea775d013dcb2010a252e9ef835adede0daf2a",
+        "map_data/yh_map_fs_90.json": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+        "map_data/yh_map_fs_90.png": "0ce82c8b9eedaf1cc82a95ed9be48dd43da02a5283e49a7c110fa0ce56896eb1",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0/map_generated.py": "7077df9c0042e59bb1f047d8d12e99850487f073808af215326236e1c0748b48",
+        "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0/walls_generated.py": "f6af035b20f4d7b4193845f0159ed9307d95eeba501444e310425302ed820962"
+      },
+      "generator_version": 2,
+      "geometry_sha256": "67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0",
+      "id": "91e5b0e1097ea93e55565f85c4c793444d4bf4ab7e549adac7aaf2cb8266041f",
+      "layout_algorithm": "semifinal-partition-mix-v5",
+      "map_path": "map_data/yh_map_fs_90.json",
+      "name": "yh_map_fs_90",
+      "narrow_door_count": 0,
+      "official_editor_sha256": "600ba0478021974d74d4c4399979f3e8005448abf0cd02d50d63d88f37ef5d9a",
+      "parameters": {
+        "difficulty": "hard",
+        "height": 1122,
+        "passage": null,
+        "seed": 1089,
+        "thickness": null,
+        "type": "semifinal",
+        "width": 1660
+      },
+      "passage_width": 64,
+      "preview_path": "map_data/yh_map_fs_90.png",
+      "room_count": null,
+      "seed": 1089,
+      "signature_version": "interior-64-dilate1-dihedral-v1",
+      "signatures": [
+        "000000000000e000000000000000e000001f80f80000e000001f80f80000e000001f80f80000e3f0001f80f80000e3f0ffff9fffffffe3f0ffff9fffffffe3f0ffff9fffffffe00000001ffbdff0ff7f00001ffbdff0ff7f00001ffbdff0ff7f3e001ffbdff0e0003e001ffbc000e7003e001ffbc000e7003e001ffbfcffe70000001ffbfcffe700ff9ffffffcffe000ff9fffffc0fce000ff9fffffc0fcfcff00007003c0fcfcff00007003c0fcfcff00007003ffcffc7f0e007003ffcfe0000e007003ffcfe0000e007003c000e0000e0077c3ce00e0000e0077e3ce00ffbf0e0077e3ce00ffbf0e0077e3ce00ffbf0e0077e3ff7fe3800e0077e3ff7fe380000077c3ff7fe380feffffffc000e380feffffffc000e000feffffffc000e00000070001c000feff1f870003c000feff1f870003c000feff1f870003c000e1c01f870003c000e1c00007ff7fc000e1c00007ff7fc000e1c00007ff7fffefffbf00070003ffefffbf00071c03ffefffbf00071c03c000e00000071c03c000e00003e71c03c000e00003e70003c1fce00003e70003c1fce00003e70003c1fce00000070003c1fce000ffffffffffffff3fffffffffffffff3fffffffffffffff3f0000e71e003870000000e71e003873800e00e71e003873800e00e71c003873800e00e01e003873800e00e01e000073800e00e01e000070000000e01e00007000",
+        "0000e01e000070000e00e01e000070000e00e01e000073800e00e01e003873800e00e71c003873800e00e71e003873800000e71e003873800000e71e00387000ffffffffffffff3fffffffffffffff3fffffffffffffff3f00070003c1fce00003e70003c1fce00003e70003c1fce00003e70003c1fce00003e71c03c000e00000071c03c000e00000071c03c000e00000071c03ffefffbf00070003ffefffbf0007ff7fffefffbf0007ff7fc000e1c00007ff7fc000e1c01f870003c000e1c01f870003c000e1c01f870003c000feff1f870003c000feff00070001c000fefffeffffffc000e000feffffffc000e000feffffffc000e380000077c3ff7fe3800e0077e3ff7fe3800e0077e3ff7fe3800e0077e3ce00ffbf0e0077e3ce00ffbf0e0077e3ce00ffbf0e0077c3ce00e0000e007003c000e0000e007003ffcfe0000e007003ffcfe00000007003ffcffc7f00007003c0fcfcff00007003c0fcfcffff9fffffc0fcfcffff9fffffc0fce000ff9ffffffcffe00000001ffbfcffe7003e001ffbfcffe7003e001ffbc000e7003e001ffbc000e7003e001ffbdff0e00000001ffbdff0ff7f00001ffbdff0ff7f00001ffbdff0ff7fffff9fffffffe000ffff9fffffffe3f0ffff9fffffffe3f0001f80f80000e3f0001f80f80000e3f0001f80f80000e000001f80f80000e000000000000000e000000000000000e000",
+        "00070000000000000007000000000000000700001f01f800000700001f01f8000fc700001f01f8000fc700001f01f8000fc7fffffff9ffff0fc7fffffff9ffff0007fffffff9fffffeff0ffbdff80000feff0ffbdff80000feff0ffbdff8000000070ffbdff8007c00e70003dff8007c00e70003dff8007c00e7ff3fdff8007c00e7ff3fdff800000007ff3ffffff9ff00073f03fffff9ffff3f3f03fffff9ffff3f3f03c00e0000ff3f3f03c00e0000fe3ff3ffc00e00000007f3ffc00e00700007f3ffc00e007000070003c00e007000070073c3ee0070fdff0073c7ee0070fdff0073c7ee0070fdff0073c7ee007001c7feffc7ee007001c7feffc7ee007001c7feffc3ee000001c70003ffffff7f00070003ffffff7f00070003ffffff7fff7f00038000e000ff7f0003c000e1f8ff7f0003c000e1f803870003c000e1f803870003c000e1f803870003feffe00003870003feffe000fdfff7fffeffe000fdfff7ffc000e000fdfff7ffc038e00000070003c038e00000070003c038e00000070003c038e7c000073f83c000e7c000073f83c000e7c000073f83c000e7c000073f83c000e000fcfffffffffffffffcfffffffffffffffcffffffffffffff000e1c0078e7000001ce1c0078e7000001ce1c0078e7007001ce1c0038e7007001ce1c007807007001ce000078070070000e000078070070000e000078070000",
+        "000e000078070000000e00007807007001ce00007807007001ce1c007807007001ce1c0038e7007001ce1c0078e7007001ce1c0078e70000000e1c0078e70000fcfffffffffffffffcfffffffffffffffcffffffffffffff00073f83c000e00000073f83c000e7c000073f83c000e7c000073f83c000e7c000070003c038e7c000070003c038e00000070003c038e000fdfff7ffc038e000fdfff7ffc000e000fdfff7fffeffe00003870003feffe00003870003feffe00003870003c000e1f803870003c000e1f8ff7f0003c000e1f8ff7f0003c000e1f8ff7f00038000e00000070003ffffff7f00070003ffffff7f01c70003ffffff7f01c7feffc3ee000001c7feffc7ee007001c7feffc7ee0070fdff0073c7ee0070fdff0073c7ee0070fdff0073c7ee007000070073c3ee007000070003c00e00700007f3ffc00e00700007f3ffc00e0070fe3ff3ffc00e0000ff3f3f03c00e0000ff3f3f03c00e0000ff3f3f03fffff9ff00073f03fffff9ff0007ff3ffffff9ff00e7ff3fdff8000000e7ff3fdff8007c00e70003dff8007c00e70003dff8007c00070ffbdff8007cfeff0ffbdff80000feff0ffbdff80000feff0ffbdff800000007fffffff9ffff0fc7fffffff9ffff0fc7fffffff9ffff0fc700001f01f8000fc700001f01f800000700001f01f800000700001f01f80000070000000000000007000000000000",
+        "00701e1c0e1c070000701e1c0e1c070000701e1c0e1c070000701e1c0e1c07000f701e1c0e1c07000f701e1c0e1c07000f701e000fe000000f001c1fcffc007c0f77801fc1fc077c0f77801fce1c077c00779e1c0e1c070000701e1c0e1c070000701e1c0e1c07ffffffffffffffffffffffffffffffffffffffffffffffff000381c383801c07000381c383801c07000381ff83801c7f000381ff83801c7ff803f9fc0380007ff803f9fc03801c7ff803f9ff83801c7f0003f9ff80001c7f0003f80383801c7f0003f803bf801c070003f9c3bf801c070003f9c3bf801c070003f9c383801c07000381c383801c070003ffffffffffff0003ffffffffffff0003ffffffffffff0003fffffff7ffffef03807000707007ff3ffff000707007ff3ffff000707007ff3ffff01f707007003ffff03ff07007003ffff03ff000070003fff03ff07007f003fff03ff07007f003fff03ff07787f003fff0007077870003fffffff077870000007ffff07007ff00007ffff07007ff3f807000707007ff3f8070007fffff003f8070007fffff003f8070007fffff003f807000700007003f80700070000700038000007000f700038000007000f700038070007780f700038070000780f700038f71ff7780f73e038f71ff7780073e038f71ff7780073e038f700077800700038f70007000070003807000700007000380700070000700",
+        "00e0000e000e01c000e0000e000e01c000e0000e000ef1c000e001ee000ef1c07ce001eeff8ef1c07ce001eeff8ef1c07cef01eeff8ef1c000ef01e0000e01c000ef01ee000e01c000ef000e000001c000ef000e000001c000e0000e000e01fc00e0000e000e01fc00fffffe000e01fc00fffffe000e01fc00fffffe000e01fcffe00e0e000e01fcffe00e0ffffe0000ffe00e0ffffe000000e1ee0fffffffc000e1ee0e000fffc00fe1ee0ffc0fffc00fe00e0ffc0fffc00fe00e0ffc0fffc000e0000ffc0ffffc00e00e0ffc0ffffc00e00e0ef80ffffcffe00e0e000ffffcffe00e0e000ffffcffe00e0e000e01c0f7ffffefffffffc000ffffffffffffc000ffffffffffffc000ffffffffffffc000e03801c1c381c000e03801c1c39fc000e03801fdc39fc000e03801fdc39fc000e03801fdc01fc000fe3801c1c01fc000fe380001ff9fc000fe3801c1ff9fc01ffe3801c03f9fc01ffe0001c03f9fc01ffe3801c1ff81c000fe3801c1ff81c000e03801c1c381c000e03801c1c381c000ffffffffffffffffffffffffffffffffffffffffffffffffe0387038780e0000e0387038780e0000e038703879ee003ee03873f801eef03ee03f83f801eef03e003ff3f83800f0000007f000780ef000e0387038780ef000e0387038780ef000e0387038780e0000e0387038780e0000e0387038780e0000e0387038780e00",
+        "00e0387038780e0000e0387038780e0000e0387038780e0000e0387038780e0000e0387038780ef000e0387038780ef0000007f000780ef03e003ff3f83800f03ee03f83f801eef03ee03873f801eef000e038703879ee0000e0387038780e00ffe0387038780e00ffffffffffffffffffffffffffffffff00ffffffffffffff00e03801c1c381c000e03801c1c381c000fe3801c1ff81c01ffe3801c1ff81c01ffe0001c03f9fc01ffe3801c03f9fc000fe3801c1ff9fc000fe380001ff9fc000fe3801c1c01fc000e03801fdc01fc000e03801fdc39fc000e03801fdc39fc000e03801c1c39fc000e03801c1c381c000ffffffffffffc000ffffffffffffc000ffffffffffffc0f7ffffefffffffc0ffe00e0e000e01c0ffe00e0e000ffffcffe00e0e000ffffc00e00e0ef80ffffc00e00e0ffc0ffffc00e0000ffc0ffffc0fe00e0ffc0fffc00fe00e0ffc0fffc00fe1ee0ffc0fffc000e1ee0e000fffc000e1ee0fffffffc0ffe00e0ffffe0000ffe00e0ffffe0000ffe00e0e000e01fc00fffffe000e01fc00fffffe000e01fc00fffffe000e01fc00e0000e000e01fc00e0000e000e01fc00ef000e000001c000ef000e000001c000ef01ee000e01c000ef01e0000e01c07cef01eeff8ef1c07ce001eeff8ef1c07ce001eeff8ef1c000e001ee000ef1c000e0000e000ef1c000e0000e000e01c000e0000e000e01c0",
+        "03807000700007000380700070000700038f700070000700038f700077800700038f71ff7780073e038f71ff7780073e038f71ff7780f73e038070000780f700038070007780f700038000007000f700038000007000f7003f807000700007003f807000700007003f8070007fffff003f8070007fffff003f8070007fffff003f807000707007ff00007ffff07007ff00007ffff07007ff03fffffff077870003fff0007077870003fff03ff07787f003fff03ff07007f003fff03ff07007f03ffff03ff00007003ffff03ff07007003ffff01f707007003ffff000707007ff3ffff000707007ff03807000707007ff03fffffff7ffffef03ffffffffffff0003ffffffffffff0003ffffffffffff000381c383801c070003f9c383801c070003f9c3bf801c070003f9c3bf801c070003f803bf801c070003f80383801c7f0003f9ff80001c7f0003f9ff83801c7f0003f9fc03801c7ff803f9fc0380007ff80381ff83801c7ff80381ff83801c7f000381c383801c07000381c383801c0700ffffffffffffff00ffffffffffffffffffffffffffffffff00701e1c0e1c07ff00701e1c0e1c070000779e1c0e1c07000f77801fce1c077c0f77801fc1fc077c0f001c1fcffc007c0f701e000fe000000f701e1c0e1c07000f701e1c0e1c070000701e1c0e1c070000701e1c0e1c070000701e1c0e1c070000701e1c0e1c0700"
+      ],
+      "size": [
+        1660,
+        1122
+      ],
+      "structure_sha256": "3009d27412dc3f50f422538b77107b3300851e153fd4f554658ae629f54be754",
+      "topology_dead_ends": null,
+      "wall_area_px": 128979,
+      "wall_count": 63,
+      "wall_fraction": 0.06925,
+      "wall_thickness": 6
+    }
+  ],
+  "source_sha256": {
+    "config/competition_place_eval_plan.yml": "cecd4c89a1af9d0f90c6e774ebd0c43ada24e1f0a1acd10272a918a9edbcc068",
+    "config/competition_rescue_eval_plan.yml": "c29c510ad0fe5bcd13b4fb618f9d83b3bf9bd4eedd51a186d06adb0c276c2c78",
+    "map_data/.yh_records/yh_map_fs_24/generation.json": "2c2b4ad7ddefb32332947f185a5c3aec3a2449a2460aeb065d42bbfcc87f8c14",
+    "map_data/.yh_records/yh_map_fs_24/metadata.json": "2e9c481221982f6e94233e6a420f630d0bf2594153c32f5fa1fe322b350456c7",
+    "map_data/.yh_records/yh_map_fs_27/generation.json": "a5822b4975a576200042c53946b10938ac5f80c43ad29b0a8193ffbfa167d3bb",
+    "map_data/.yh_records/yh_map_fs_27/metadata.json": "f7a406bec6385a1e35c28c03959d8ce1f9d7c4b17e91c6ef173ba77c29bc18b3",
+    "map_data/.yh_records/yh_map_fs_37/generation.json": "260863ace489a60874c09348ee2743255061ea6861b1a7c1cda2480bbdf3e818",
+    "map_data/.yh_records/yh_map_fs_37/metadata.json": "e55fc93c04b046138ebd4915bfff5f395f717bd4c96c47f103f288486599754b",
+    "map_data/.yh_records/yh_map_fs_55/generation.json": "290dc8842df875e04e9863f9d255aeef89575b208ad2ed36661cc6173cf8ece9",
+    "map_data/.yh_records/yh_map_fs_55/metadata.json": "376699b2fcf3e3946227aee9be014bdf012b9f0243563f2fcc525c86c957297e",
+    "map_data/.yh_records/yh_map_fs_72/generation.json": "3d1092e87cf8b5a3f305f277488dd29d5749aefc622e3a027211674cb492a3ab",
+    "map_data/.yh_records/yh_map_fs_72/metadata.json": "783909e342cb160ad14d3075edf44d94cc48b3da0f9b4edf071b1f37e0b9887a",
+    "map_data/.yh_records/yh_map_fs_90/generation.json": "fbdd4f2fb2e8235440631844fcb654dcba89c2e1ebf2ca5c05ca73b9eae5da47",
+    "map_data/.yh_records/yh_map_fs_90/metadata.json": "8d72146cef46746f6776353e99ea775d013dcb2010a252e9ef835adede0daf2a",
+    "map_data/yh_map_fs_24.json": "74268028a848381258210f9e0851558a07dcf39bdf8ef88aeb4ada30260be38e",
+    "map_data/yh_map_fs_24.png": "f0de631f053ed5b5210e9f936dd933c7f10c8f5db4a0073b2f8f80ed3f1b560c",
+    "map_data/yh_map_fs_27.json": "9b6be433c5e1ce96946cd6b20f6a0f3e95517f7157f92e25b67a0922f79e40b0",
+    "map_data/yh_map_fs_27.png": "f9ecd71b10c9141edfb079b357c8f80c05954be47152c969e7c81d5a4263b16d",
+    "map_data/yh_map_fs_37.json": "fc2c012d9ef26a94d0234056c2d1ceedf862414cec5314ec91edd6e366c8bfc8",
+    "map_data/yh_map_fs_37.png": "5ee6a3a41afc2d5756697897a3eeb00a7d29a85191c928e23ba43f98c10eb81f",
+    "map_data/yh_map_fs_55.json": "42fdc0d5f124c59dc65c06ff808f5dbfe34776c0b29fe86d6fee16580bfdd1f3",
+    "map_data/yh_map_fs_55.png": "6c69ec2a053d9edb1a4844c98746fffeb3215198a4a69fbef76ec36a8a5d6e24",
+    "map_data/yh_map_fs_72.json": "07eef23002a7e5c5f77ade2eb4be2a333897f867a36a6a685ae8fb6ddd24f40d",
+    "map_data/yh_map_fs_72.png": "988db7d1a43539a0546af760fbf5138d1cab8fac94fc3a9d6ab46eef6a740ace",
+    "map_data/yh_map_fs_90.json": "cef43feeed0c8d004553b7289470437014d0af1a63fff7ce6846f0cc4a398f60",
+    "map_data/yh_map_fs_90.png": "0ce82c8b9eedaf1cc82a95ed9be48dd43da02a5283e49a7c110fa0ce56896eb1",
+    "src/swarm_rescue/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/entry_point.py": "9630b11b88c12527e6d544f97dd5f0feb79a84564c6ef40a644354381743f49b",
+    "src/swarm_rescue/launcher.py": "dd8f1080e23fcee6a1eb0eac0c3669c03559a66dddaabad53c3f7c862f0a35c9",
+    "src/swarm_rescue/maps/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/maps/map_01.py": "141f47e05db0d11b90a1bbd092e1cac8ce85f9d811fa877e8c50250c82617470",
+    "src/swarm_rescue/maps/map_02.py": "d3c514cee913cbd3209ae1fb478a5573bee2a7c1f09b763964c49fec0d752546",
+    "src/swarm_rescue/maps/map_03.py": "e4dbc878f9dca5f2f14918bfa601517969c5c1119771f5fa50fe4e78acd21219",
+    "src/swarm_rescue/maps/map_04.py": "a23fc9780b5519c6afc601ea9a862e983e1a04ce27250f8cf5a954b0d545e4cb",
+    "src/swarm_rescue/maps/map_05.py": "24220c2e93d246af9fc6074289f79d3d4a7c24cae9e86b6ec55262965d898d56",
+    "src/swarm_rescue/maps/map_06.py": "a5a82a281d12bfc659d969a6ef8a4b21e9d8f6a5df329d5d20a3210e07b7b849",
+    "src/swarm_rescue/maps/map_07.py": "a1a44c3c6fe3a27de0017c09db975020a6c60d72b66a0d78e9877f611a34bb86",
+    "src/swarm_rescue/maps/map_07t4.py": "cb5b8399f91a110a6451daf8f381810dd2ebcf9df497132c9761b9242a993d96",
+    "src/swarm_rescue/maps/map_08.py": "727dfc1df8bf8645ec1d462b041ed635bbcb84917034caedea6e8fa4e524c542",
+    "src/swarm_rescue/maps/map_09.py": "5b3d91c709c6bdae53e158e75721349bdf69c704ba75048bb60f53905dc6fbad",
+    "src/swarm_rescue/maps/walls_01.py": "47cd990f16948104fba59a8199b38bb2b902fdf8e73f3d9496fa98f140c69ba5",
+    "src/swarm_rescue/maps/walls_02.py": "42c32d94c0e4dc289d9f4d7259f93a0e1953c683a68b69da03cdba6bf77ae860",
+    "src/swarm_rescue/maps/walls_03.py": "8ba699f61a792a210b384cb5b883d11833824fceafa58627f659e274cab00342",
+    "src/swarm_rescue/maps/walls_04.py": "67e63895c18d7eac54cc6943dfc0015ea5acd01b81f70b72187ed55fc6a92c4b",
+    "src/swarm_rescue/maps/walls_05.py": "cc078f8c9ae0f1b4e67210ba1a4bf3a4c5a528d7680915660927ee2bf93dc528",
+    "src/swarm_rescue/maps/walls_06.py": "f48bb21051a513860073f4947aed4c4affb989c7b7de9ce4a31347eb08891f07",
+    "src/swarm_rescue/maps/walls_07.py": "4c923fb2e7e5de1845be2e5ffb87432fde1899cc37fbe66ccbe317c5bdfcc1db",
+    "src/swarm_rescue/maps/walls_07t4.py": "712c6d4631562656df82cdddcb1e4c39a7be4cf09b7f8018b73db24ce9bde058",
+    "src/swarm_rescue/maps/walls_08.py": "39fe8e6d1b9e82f29cb168b633d3d4e61792acb84b5857c86d1070b1fbca61d3",
+    "src/swarm_rescue/maps/walls_09.py": "02e07e012c7bbf4410f1c367cfb91c130ef85ee65f2a182f8bdbd55276637da1",
+    "src/swarm_rescue/resources/__init__.py": "8dfa140d604069589865c7491c0f74219a837cca42b68d7e5744ab54d2eda38e",
+    "src/swarm_rescue/resources/bomb.png": "d960946755d4de5b4f8241cf2cde510a2f241290f6a09e866fffd5e67f7b7815",
+    "src/swarm_rescue/resources/character.png": "353e49ddba2c132ccd96f22b7de9469d25ee704b6ab40cf466470cae4b8f77f5",
+    "src/swarm_rescue/resources/character_v2.png": "8afd1a68ae6b40f8ad7bb28d13417e9eab48ccbd1c1d004718c745a0db29c7a4",
+    "src/swarm_rescue/resources/disposal_center.png": "5f9c5fd06020605bf62c35c530b0ee808c232287dd1e2c28e402ba4afdb38ad2",
+    "src/swarm_rescue/resources/drone.png": "c56a3c872393398a2c0059b5ae28bf860f96edcde22bc198adf094c38715c570",
+    "src/swarm_rescue/resources/drone_v2.png": "5abe6886e22d64a4abdb157bb9dea37105f347441369845e6dfe7104cc3c4926",
+    "src/swarm_rescue/resources/drone_v2_dead.png": "575d3e1dfd39f1143919e610e4f7c331d83129ecb5b3d99cdfd17b3730762080",
+    "src/swarm_rescue/resources/rescue_center.png": "b883ac529eef5004652ab7095715686b974c277b42991b42bebe70604fc7c098",
+    "src/swarm_rescue/resources/stone_texture_g_04.png": "1b516259fa4b76ab14ef454a0dd5594dacba69448e248ea34df52be7677c9d35",
+    "src/swarm_rescue/simulation/__init__.py": "f652779727c40877db5497bc2859b3d5717dcc9f203dd3e094f0c964d3b5f7ad",
+    "src/swarm_rescue/simulation/drone/__init__.py": "880679715a68791dc646d61b31d9b5221b45b66c91ec4e4645a3758c4828865c",
+    "src/swarm_rescue/simulation/drone/agent.py": "8967eb303d70588edfb9cf2d72a5cf11d5ba77494964f493fd61c3cce7ded20c",
+    "src/swarm_rescue/simulation/drone/bomb_deployer.py": "9eece044b7e69ec087022bd0ed5509f32bcfbb13c7b6f172f39dd9e2cca5e575",
+    "src/swarm_rescue/simulation/drone/communicator.py": "f640be0633b575d2d4691040aad031519c356181f425b463d892a69ab5de9f8e",
+    "src/swarm_rescue/simulation/drone/controller.py": "e8d25bb92eca39c499706ceab71a436098f14ae46f97f0655758558212ca832d",
+    "src/swarm_rescue/simulation/drone/device.py": "6d1e70c8384c7447db9587fbcd3c69d6b3a7bb45c0ba035677c66085753e182e",
+    "src/swarm_rescue/simulation/drone/drone_abstract.py": "856532d18293caff9884f3a5b27f5c9637afc0061b8affc86b64a5f0a9ae3eea",
+    "src/swarm_rescue/simulation/drone/drone_base.py": "58a8af9d0fa0c98ba3d5da735c0fc3b6ceac80bf2ce06b167b25a4fa3ef26332",
+    "src/swarm_rescue/simulation/drone/drone_motionless.py": "789ad79a0c5e9765ff210a32161ceaaef1ab96ca0f4119294f28f7e6dc077363",
+    "src/swarm_rescue/simulation/drone/drone_part.py": "08986cc2491724fa99ec20186d4c380c4d9187cb77d77ef8699f54803fd4950f",
+    "src/swarm_rescue/simulation/drone/drone_sensors.py": "9b70c339e6e6b25e682bfb18a09410770680aa6006ede5e635835bcc894ac5a3",
+    "src/swarm_rescue/simulation/drone/grasper.py": "47f75861640b56eb1a7c9c3942d381b44608426ebc01994d8a960b62d172e6eb",
+    "src/swarm_rescue/simulation/drone/ground_truth_guard.py": "c66b55c3cf2204b6721662915c45904242bb05e307461fb0109d2331e38b1a36",
+    "src/swarm_rescue/simulation/drone/interactive_anchored.py": "625b59d37c697105c9ebba3337f1d05b3981d860610cc2932101850a7bd7efe6",
+    "src/swarm_rescue/simulation/drone/pocket_device.py": "74ff4f65b540befba0692b671f89a157267c2e36eec830e8114b132b53cb6d6f",
+    "src/swarm_rescue/simulation/drone/sensor.py": "85da18b62e5a5562f0f940c2a5939e2fdcb6f3ee827b5d95916990f809fe645d",
+    "src/swarm_rescue/simulation/elements/__init__.py": "f51b5b5a4a4041eccad982f5daec81457bb1374ff64dffb40969c089e3ceb6fa",
+    "src/swarm_rescue/simulation/elements/bomb.py": "a8038116099024a7bcec86b9f0003e4c260030296b520c344c0bcdcbc39aabd0",
+    "src/swarm_rescue/simulation/elements/disappearing_wall.py": "625b4401a2f3d0d7500bd892239f351f00cc86e4004d3a8f12d3e89aab4a6f81",
+    "src/swarm_rescue/simulation/elements/disposal_center.py": "4b40978724b82a1289de03332e981cd689cb8fb8f756f447da34f65088e84246",
+    "src/swarm_rescue/simulation/elements/embodied.py": "b9fe369b95e1d6f2b11c722a1fda7304882a18a66738b96360149f915ff6f223",
+    "src/swarm_rescue/simulation/elements/entity.py": "46286290f918bd3f6b1b4e967478ae724b2df033434e9d04633b180c7a88cd2e",
+    "src/swarm_rescue/simulation/elements/interactive_zone.py": "66e250cadad346e715655f6b7d9ee339e482b070ea876d467f962a2b5c1d79db",
+    "src/swarm_rescue/simulation/elements/normal_wall.py": "fe5e4ee59a3d1d77104a9558222dddf9b84e23a9a0f0b4e8356f6e8ffbb36ddf",
+    "src/swarm_rescue/simulation/elements/physical_element.py": "ebe54ccc1b2c2f18ce634688b3b76fa763ea4a534876972f2fd1b3503aebd841",
+    "src/swarm_rescue/simulation/elements/physical_entity.py": "dbc9fceda31e3f225643515c7fc8404ed6a9c0510f1370800e4c6db1dcc535d1",
+    "src/swarm_rescue/simulation/elements/return_area.py": "0cc158bc9662045640c68f945e6096df98787a915198bd57f0d6f83fbcdf3324",
+    "src/swarm_rescue/simulation/elements/scene_element.py": "f423bd2c1b6f0fca6a36e48ac28d9ea736e48b733bce6cef2a75b07c8cfe8636",
+    "src/swarm_rescue/simulation/elements/sensor_disablers.py": "1cd5ee8606d11259f798c3216719cb384ced707c2d8c21663d32581c6aedfa6f",
+    "src/swarm_rescue/simulation/gui_map/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/simulation/gui_map/closed_playground.py": "cfa53ab008a5df95c8b4983567e95734df69766ae97a8ef9f104a1d7c9dac573",
+    "src/swarm_rescue/simulation/gui_map/collision_handlers.py": "4a83c35f148ffdc4b4d069aa3f848252070d1f20dd29320d78e75c582b7742d9",
+    "src/swarm_rescue/simulation/gui_map/gui_sr.py": "b42cd1472944728825e606e2ea96b653016432c9fa8af9e4f06b578a11701749",
+    "src/swarm_rescue/simulation/gui_map/keyboard_controller.py": "3ee4fe34bf88abbe387a841a31b971da95f295964f388a7cc47772ea17c6d4b1",
+    "src/swarm_rescue/simulation/gui_map/map_abstract.py": "a49bdc910254c01b35d1168e6c1949c7d938d7f249a075cd94d43884bb2d0116",
+    "src/swarm_rescue/simulation/gui_map/playground.py": "d6b6d3fe2d1ad5a62d8fa7e3adc50724afcf539533db3ae99ce8639da2e4823d",
+    "src/swarm_rescue/simulation/gui_map/replay_view.py": "68c21c92ee6f89962f53566cbae89f03092b45ff6e5bc36e5a69f57b8a68531f",
+    "src/swarm_rescue/simulation/gui_map/top_down_view.py": "75c5ce669cfd4ea8fc6f2eb4229daf54a4ae3495cd33178ac69b791c07195b6e",
+    "src/swarm_rescue/simulation/ray_sensors/__init__.py": "32158abbcb879645621f980dfd814f22a20c6b2108719bb9058dec3487aea5a6",
+    "src/swarm_rescue/simulation/ray_sensors/distance_sensor.py": "c2e5617db4671b4e59de8fea947a6ca04d310bf8aa6e60ccd8f1bf179cccffaf",
+    "src/swarm_rescue/simulation/ray_sensors/drone_lidar.py": "a839e9c3f9306a748e2fde80c81f1020293a6627b8ca1233fd95e5b62f239683",
+    "src/swarm_rescue/simulation/ray_sensors/drone_semantic_sensor.py": "00c304ad8dfda48735f38a58eae101c5f0c8ff35087d53081cc2ca0fe34194cc",
+    "src/swarm_rescue/simulation/ray_sensors/external_sensor.py": "5a8cbe1049a26d3859314639973930f0e64f37451908ab7718260ac7818562fe",
+    "src/swarm_rescue/simulation/ray_sensors/ray_compute.py": "066186797ab18bbcbf0d8a8bcd4c8908b63774aa580a48d117d0ab71cb5b4e21",
+    "src/swarm_rescue/simulation/ray_sensors/ray_sensor.py": "3a6ed2189af4160299ca8fd26d77ea114fd3f509c2afab219c37ff73c863c16e",
+    "src/swarm_rescue/simulation/ray_sensors/semantic_sensor.py": "33cdec3757a63f26ad9eab89b48bd12c4ba2e348c0f75db81878cfb287f23b80",
+    "src/swarm_rescue/simulation/reporting/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/simulation/reporting/bombs_io.py": "bd5689047893f5b0d4cc70b97351f25f2aae7e65666b9d3f1f36b1e2cec6cddd",
+    "src/swarm_rescue/simulation/reporting/data_saver.py": "37ec7a70730cfe1ab79f5171bea6430b67e13388237ea2b289e40976accf7361",
+    "src/swarm_rescue/simulation/reporting/evaluation.py": "dfbcd39c9039ddd53dee628823d5ae529b6f872b80f7db9fe497cffbaa94d7df",
+    "src/swarm_rescue/simulation/reporting/evaluation_pdf_report.py": "3668df1b8ee460cbb957c3e33c1c9755f7d7c2ba760a47642802693cbb69074d",
+    "src/swarm_rescue/simulation/reporting/explored_map.py": "92a6871b3cedf667e7935e9147d2a5235446d33aa08763fff77f918e2f95a4a8",
+    "src/swarm_rescue/simulation/reporting/place_score_manager.py": "4df1b5642176f79f70cf5311891222e54bcb1b1917de4c950e005c0e1bffd9f3",
+    "src/swarm_rescue/simulation/reporting/result_path_creator.py": "6a2fcf5eaef6063bf6b44702ddb3925703741c74162e0ae44ed170ce44a5ee03",
+    "src/swarm_rescue/simulation/reporting/score_manager.py": "ee0d835847a92c42cb58d98a5792e413ba4501da0844395074272483ce19af3c",
+    "src/swarm_rescue/simulation/reporting/screen_recorder.py": "2699c59ddf815b8c014324f6c1f3f8d1bf78c00cceee8955c0eb3ca96b8d56e7",
+    "src/swarm_rescue/simulation/reporting/state_recorder.py": "9fccefb44460b4d6b438b3515350b86cfb411f0e2af0923e2d1ea70186008e9f",
+    "src/swarm_rescue/simulation/reporting/state_replayer.py": "85b5eb40d534e7b799b7e5aaf59f1e75700956997526bc4c9916589078ec8a64",
+    "src/swarm_rescue/simulation/reporting/stats_computation.py": "624f27927001eb313afc5e08b6f68c5e47ca108117967fb4f788811fee1638f4",
+    "src/swarm_rescue/simulation/reporting/team_info.py": "f686c62ee525c662133d5581182c28d1fec45fda0301eb250775d48f15b9d060",
+    "src/swarm_rescue/simulation/reporting/team_mode.py": "4adf5dd71a6c8f1fba506859b5fbd501a62114a2cd556dbddc46135256783ae1",
+    "src/swarm_rescue/simulation/reporting/time_score.py": "f226b84cebe850c333eaef72cc5212332bfade1deedeb21edb3feb83171af01c",
+    "src/swarm_rescue/simulation/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/simulation/utils/constants.py": "ffb92a72c2648cf462995e66bc7da5e4f6b70fbad96440c74eba1ae77ef40cb1",
+    "src/swarm_rescue/simulation/utils/definitions.py": "a6326e714c24d730f9af4a5c16545237f6be3e2e96ec0156326c143afee6e432",
+    "src/swarm_rescue/simulation/utils/fps_display.py": "643aa1530e1710b501f75c69dcc3341fbc5b9094627433d2284f69e65a05c7d8",
+    "src/swarm_rescue/simulation/utils/grid.py": "90124a64dc2476481a34a86900ecab941bd6f7e58b44e36892754fd7d83716d3",
+    "src/swarm_rescue/simulation/utils/misc_data.py": "40af47b2d651befb727638a68825e82715bd93abcc3d14d342cb623e0d1be40e",
+    "src/swarm_rescue/simulation/utils/mouse_measure.py": "a2c97ab7fd0289a1a6c995c69177add84b404c4d14607a7f8b56030b4f7ce05b",
+    "src/swarm_rescue/simulation/utils/path.py": "db9d97187ebc238d8856e31d7ef547e140c5b836790c93fd9131686922d7ae64",
+    "src/swarm_rescue/simulation/utils/pose.py": "9120c638235d32cb59eac26a986d4c683849bbcb61d4e5d5a7cfb84e3531062f",
+    "src/swarm_rescue/simulation/utils/position.py": "de8b75c07ae78ab78b67aa9e703ff5e888c7d366219f283636ffa3e56eb2d12f",
+    "src/swarm_rescue/simulation/utils/sprite.py": "2f3807e24f95f7d7d0cabc942528751fda09faff9dbbaa2ed401e996480a0cfc",
+    "src/swarm_rescue/simulation/utils/timer.py": "677fcdd44eecbfb0ac318e8434b197bc707b1cb71421e72565cf2efa5fd719c3",
+    "src/swarm_rescue/simulation/utils/timer_spg.py": "a80d8f91419189d38bb1d1f66e5ec0c5e9b39b2d41cccec7f85c40a446d06198",
+    "src/swarm_rescue/simulation/utils/uid.py": "cd4a324f5cff3f7c43381cfdca907a4d6f75e3876471dd62fdb30e0661e3cc2a",
+    "src/swarm_rescue/simulation/utils/utils.py": "fb867d71c8f7de389900a7d7714f34330cab815eb8e69c0f89f9073694492a22",
+    "src/swarm_rescue/simulation/utils/utils_noise.py": "b87739ecace6290c63837ff9cafe19553fcaeaa7d89dca7bc9c17276ee51db38",
+    "src/swarm_rescue/simulation/utils/visu_noises.py": "224f4068991ab834855b7446ea5645492208aee225f2b82c157c976aa719388d",
+    "src/swarm_rescue/simulation/utils/window_utils.py": "9d5b4a9f22e5f377b02f0d2f4cfe3c7a2763a4a349e07b52a6620ac3370accaf",
+    "src/swarm_rescue/solutions/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/solutions/blue_nav_b8.py": "c29b186b515ff2bce4e7f238f4755255dd5a80ee6aa95383cfbd179f3c59f1f4",
+    "src/swarm_rescue/solutions/blue_relay_b7_protocol.py": "9ad8049c0668b6f733c0b94f80945633c0687ef8fa7a7db276ae0f1535752176",
+    "src/swarm_rescue/solutions/devtools/__init__.py": "a2d8abe97d2b92457246e7a77a6cce2a8411335ee9ce4bcd244b47899912974b",
+    "src/swarm_rescue/solutions/devtools/adapt_semifinal_strategies.py": "fae81b511e31d26e00edabb4d3706005190c2ce01f39ad9ba34f6ff10ba5ec91",
+    "src/swarm_rescue/solutions/devtools/advanced6_tail_metrics.py": "1c2a222042a9f3fc0413d4cc8562806c0f00c485bd9989e70db1a632756f8611",
+    "src/swarm_rescue/solutions/devtools/audit_blue_bombs.py": "0e37a3f309ffd3ae6dfd368f55f8d4d96c9b6931731878571321ed64caea3f0d",
+    "src/swarm_rescue/solutions/devtools/audit_issue_layout.py": "3f49bdbf7a34c2842d2f5616519a04d79fad6eedb3a53c307688c2c5b4ed0afc",
+    "src/swarm_rescue/solutions/devtools/audit_platform_geometry.py": "dd44714226cd3ae99ce13a0956e8ceafc61951c2eb6c06edf59658edfb6c4599",
+    "src/swarm_rescue/solutions/devtools/audit_wall_margins.py": "d35899091776e98591c5fc69bb45397405d873b710998ee03bad0e16d1f5e49a",
+    "src/swarm_rescue/solutions/devtools/blind_layout_attribution.py": "ccddd1b319aaed86987569828a27453672b93d9519709a3dccf7b3ab402b4ce7",
+    "src/swarm_rescue/solutions/devtools/blue_b6_audit_20261113.py": "cdd07767111a8c24c4e046d5fc83995b9a99cafe9aefd65b34f80d1fe2c7aec3",
+    "src/swarm_rescue/solutions/devtools/blue_b6_diagnostics_20261113.py": "dc9e0ea3070c5683272fbc47489393ad47470601d79faf595a5616a5ee195e2f",
+    "src/swarm_rescue/solutions/devtools/blue_b6_fixtures_20261113.py": "ab435dc86743b879b52f751af393afac4657cd3d8c5c5c5b90a19fe01af281c2",
+    "src/swarm_rescue/solutions/devtools/blue_b6_run_20261113.py": "03e5bbd3323aa0fe251c49fd9ecfbc96f779b32e8209554bcff656cb4c593310",
+    "src/swarm_rescue/solutions/devtools/blue_lifecycle.py": "5b9f14884dab9ebc271a8efea099b2a5d2dea24e867d4db2ce16292431e7e8b8",
+    "src/swarm_rescue/solutions/devtools/blue_lifecycle_report.py": "a1af722bb8dec284c94336bf402393ae6cfcfc8e204a29e05db58570672d2e5f",
+    "src/swarm_rescue/solutions/devtools/blue_maze_audit.py": "2a97313a652d5f0fd205736db5f1e752b78589d471456328be2a7cb6490e1054",
+    "src/swarm_rescue/solutions/devtools/blue_narrow_bench.py": "cb91d15e8f92183bbaec053a8e1141a3e1669d079f0282468b5ec76e8fd9cb3f",
+    "src/swarm_rescue/solutions/devtools/blue_narrow_report.py": "80e1770b05908159fafb045007367fcd7f3f52adcb0b1fef43bc0437ba8dde9a",
+    "src/swarm_rescue/solutions/devtools/blue_nav_b8_diagnostics.py": "85749b0821311eb45ab5b5cc1b8211f9d9c5b8a457f0093109588e56b487e082",
+    "src/swarm_rescue/solutions/devtools/blue_nav_b8_native.py": "e2307169fb6bcc44af6424dc8f856aa78f19bd883e31ec40bbd049c1bd1a48f2",
+    "src/swarm_rescue/solutions/devtools/blue_nav_b8_report.py": "ddef86062e9c27781f617ddf34ff82159b6aa888a42bd92e0524d59fb7206434",
+    "src/swarm_rescue/solutions/devtools/blue_nav_b8_run.py": "8ef658530ca05fb53d46825a4420d3985dcae160d6761a0bc762995e5607813c",
+    "src/swarm_rescue/solutions/devtools/blue_relay_b7_diagnostics.py": "3958dbc4b311de068386218a53ee8976cb1a7ccf42139906003bcdf899b04811",
+    "src/swarm_rescue/solutions/devtools/blue_relay_b7_report.py": "629a88ad54007c899a564f77d2ff3ea432f8cce57f23ad5605a6744954513f02",
+    "src/swarm_rescue/solutions/devtools/blue_relay_b7_run.py": "3ded4afbbf7ffdf9d7541d473f2fc19f7af74079a6044af01a4a08a35b089612",
+    "src/swarm_rescue/solutions/devtools/blue_transport_audit.py": "b07df97c788439c93dba89873d0e0e87d0c7eb079d45726b9c49e42a1c0f4ed1",
+    "src/swarm_rescue/solutions/devtools/calibrate_platform_layouts.py": "754de3fb51f6e6d9852ab974abaab778794fc81e341003885d98430a6fd6e8c9",
+    "src/swarm_rescue/solutions/devtools/compare_blind_submissions.py": "69f213ec423834b3e37ff6b1598880c4d9d5040b402161f7267ea1bc7eabf40d",
+    "src/swarm_rescue/solutions/devtools/evaluate_provided_blue.py": "df47bdc05a33a0fdd13cbe5be71d15d9850062e19074c0d8409e27a308ccbb94",
+    "src/swarm_rescue/solutions/devtools/evaluate_red.py": "5b650157b3ac477ad32673865a8591f38d1f2a97741e27319aab7254712086ee",
+    "src/swarm_rescue/solutions/devtools/evaluate_retained.py": "acbd929a1140f2e928b302f49ac1e21a86f738931dfc47d117e537d12d7da58d",
+    "src/swarm_rescue/solutions/devtools/evaluate_verified_revision.py": "ed77c447d08d3c1d4415660d48b3cb8aa940cfaa44bf3874c630e4131428d880",
+    "src/swarm_rescue/solutions/devtools/migrate_r0.py": "54128e33d83769f69b83ad753ddb16c602048b91ec47d62edc0fe9ad3780c075",
+    "src/swarm_rescue/solutions/devtools/optimization/__init__.py": "c0850a2559128985083d8edbb2429d20280fd7422baf0bbbda5bdc006441a28a",
+    "src/swarm_rescue/solutions/devtools/optimization/dataset_manager/__init__.py": "bc52d742d23b4d2e53dd3cef5776d3abe89a39f4ebf07633c350bb6d05fd4dae",
+    "src/swarm_rescue/solutions/devtools/optimization/dataset_manager/__main__.py": "3590ad0986cba71328e93690d24ee3b7c66c4cd76c9a9e2736eff6b7516a8d96",
+    "src/swarm_rescue/solutions/devtools/optimization/dataset_manager/artifacts.py": "e50134bfb8bb16ef4d0a6123e2746f867eb853c2b43428f613253ebbb9522580",
+    "src/swarm_rescue/solutions/devtools/optimization/dataset_manager/index.py": "0561c504dbf8a5287783b92b8a7cba29f9a3de44437e7c7cde91d1a64dcc905b",
+    "src/swarm_rescue/solutions/devtools/optimization/dataset_manager/split.py": "a1e67a573f14ea865e8a1c4841a1bd4b8190ba202b649a77bbd7bc6b4f9333e6",
+    "src/swarm_rescue/solutions/devtools/optimization/dataset_manager/test_dataset.py": "4c513a77ab859adfae106e36b8109e58fc33ec6455665445a0613dbbc5cabf3c",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/__init__.py": "c406cb16df935a73fad850c7e86d0bc4195275b4cca949df12bd4f8430924d22",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/__main__.py": "b7ddfd3941c513585d62639c015f311b818a178ae0fbc292418a80c857b716f2",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/atlas.py": "a6c736098a6a643022365690253897d58a309c6217c7dc2e383a844c237d7b2a",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/blue_transport_batch.py": "45e17d5345e2de9a276118f92c6c145c7f4adce5d498d8ae983ba377e1aaa550",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/fixed_blue.py": "7226e508854733903ac07dfa7893bc141f830b9ce07e6881937ce0a630e048b0",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/fs0.py": "402c8a22e71d5df6aa5cbfaed30fdfe48f5526f1ed974a212040c499f183b162",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/fs1_review.py": "76c6e54709c6d06485e0665d3bc569daebcb8eb0eb64c51e8567fa07676e5b90",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/identities.py": "07960ad11c5186bcbc6fb745d04d407aa87ce0450cdbaf101697b4c1833d67f2",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/joint_batch.py": "c60238768721692d740938319d611a8f066eb186ff029681cf76b72a0d03724e",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/mapping_audit.py": "805144e2e9fe3a999592fbd324bd9dc136f4ca2fe7fde5ec7314a69702daa624",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/oracle_layouts.py": "626b69154c4f4e65214623cc0b4cf6d7f41f571ea786f997d96db1b8f02397ef",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/placement_audit.py": "7b456f99881383e6db4286c1d85d128c357689cbcad2157a5d66ac634c9a9a81",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/red_mapping_batch.py": "688e77ed8f5b5d9f5c2a39f65af27af75c5e13d3a5d3fd7ad6984fb5ffa02a99",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/replay.py": "c43120b378bd93a8c2af162ee69b1730be90c5410239658fe76e0e441faf3b28",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/report.py": "bef2b5eea0054364c9ec39e86c02f6eb1f90d2269006b5579f26d8d577edb0f6",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/resources.py": "86a15939cf128b8c9cc993340840fea6ab96d07dad9d3cc3c1c44cb26391e7b1",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/runner.py": "317114491aa291937e96212ac091f1f8bd7ce03c892c8b497e54f4919f1673b8",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/scenarios.py": "7f901159bb3b57395315269359803e5dd88f4e40985218f42dc596d32fb45b51",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/test_evaluation.py": "d94310954121074f9b332661d5a56d49d5d17c76d626f9c784e4660d73338a3d",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/test_fs0.py": "8ee9eacab8635903bde55f95c598712daa0247d4461038fcffeb3a3832b08ce4",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/test_fs1_review.py": "ef42ba5e62e65f4fb6cd5f89f6d7dd1469767e4918528deb4f0061b32d73d1df",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/test_joint_batch.py": "320cd858d0006b2ef24da37a1971efb0b947a84fc417ef15475bfaa31c11b809",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/test_semifinal_r0.py": "a33ab535af413fd6db5618d7621e60c1249fe8d55015b1bcdd253db30f909f71",
+    "src/swarm_rescue/solutions/devtools/optimization/evaluation/worker.py": "d4226a7c7672153968b51a86e61edbc674ebcfe12409a028e5714e31baff1723",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b/map_generated.py": "980d399d02e5b06ca95bded9dfe594350e123085c2c05291210f0ca60546645b",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b/walls_generated.py": "6d429116c6f0360cec9a47af643501bd70fa6464ee7b0a1415303a593f32f5e2",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf/map_generated.py": "e6072efdac4366580eb9bc116a0aca2b9ed136b1ea9706ef2eccad7618b8a5e0",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_65c9d4fff29c2ddc4839daaf446093965afb446f7d259e304d57b2de1294dbbf/walls_generated.py": "7682204357ee7c348d745c67ea6d72904e51705310e3d8552b5319fec4da6295",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0/map_generated.py": "7077df9c0042e59bb1f047d8d12e99850487f073808af215326236e1c0748b48",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_67271ecd89e099d3bd56ee6c209a3186abf95503079a02d4edf46cb20cb4d7d0/walls_generated.py": "f6af035b20f4d7b4193845f0159ed9307d95eeba501444e310425302ed820962",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9/map_generated.py": "d7c63ea37bcdbc389a843a98f5774a4117a3000dd851b51d82c8fc87f3411a0b",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_78f498ef36d57fd7d642a94fe71ffbd86e042451a0d2f39cbf194e27fe3b01c9/walls_generated.py": "a58dfbaa95c29ba83874729aa0dd4a8d6c362b8528752ca37bccf226a92d7f23",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947/map_generated.py": "2ff27c8c0892010269dca7575c72cdd45b8f7c97a34d238377aafa2be6d3b459",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_84feb11bb2ff036e3a33624e26077a1ceba7a673d8f3491bc23923dd5916b947/walls_generated.py": "174373778aad8264c81c5ccaa2ef52bd27d31152c01bfa0da978a22a55dfc0d1",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6/__init__.py": "f906da9b0743387e15a89dedae0d3b55c4a77edba2ac6d79a17b1a2172cd9a01",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6/map_generated.py": "b691735f5f8fe89c199e160bfecff2b87b0234224dfd2a925cfd21b32a773de8",
+    "src/swarm_rescue/solutions/devtools/optimization/generated_maps/g_f3afb15afb2fa937eb42c66a0ba45fe23c000a0801caf849b3d88625ecd875f6/walls_generated.py": "a9434677e7dfea50add807fce02b3dd2697cfa7d057671fdc68c91c76310bd87",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/__init__.py": "a853ed8532131b7de11bbdae9a804e02bc6ef975df5076666678b1e150cb16db",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/append_maps.py": "14ab9990e10bbeb42977a6ad496e79fbd8d7727b1677130b3c98d978d4d251a1",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/challenge.py": "a3fbd5e591f1919c39bd9a590bcc8c9d1f184dbbdc487f7599a6afe5d0b3ebe5",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/errors.py": "4fdc896e07c0d4290228dae6ce0e4b152cef827c70aeca7b111116bf88510d16",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/generate.py": "d7dc89d381e6a71e7f0ae41e137e9f734e7f1bb23575aeb976dd90d41cf0dbc0",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/mixed_semifinal.py": "7f8d1943a2bd2c44226721c650e7a2fc50e5279510250f61b00e19e880e13cb6",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/naming.py": "ec565f0e155cd4ae9e976d0bb48a00b0973f1eacba61f448adf3aefb791d2f4e",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/native_map.py": "cd77268d008bcce4de3443d1fd3b971d24f8c8491558e29bc3b410b70bcf1af7",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/official_format.py": "7bc0fb3e01355e457c1fa3d749174f7a3b31a7de59839a482613d15f1415672a",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/official_layout.py": "b93a41bbbd597cd3eb0c346e37c8149a627420fba2be73e98d5858def5d523d2",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/official_profile.py": "65b8ae11c8cd25f0d6120379b479b1a741bb162f19f643cee403e9a090db9bcd",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/randomized_semifinal.py": "d39531c381b353e2cb7153859665267859e2c4a7a03048cd8df141aaf9a81d6d",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/semifinal.py": "87201a9b02a4ff6aaf1777673575e878f106d6bbb7f803c59fe398624d50da86",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/structures.py": "f50402a50476740d6a09260442dd0756f38fc72d359e74141a96b040360ca000",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/test_append.py": "e93448db56ea0a8835bb9763257e8efd04b4dede79404aa32d50275f3e8cac55",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/test_generator.py": "4bfbfe2afe563cb60e067e69f3a7f3f8d9239c27edc867c81264419108571073",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/test_numbered.py": "65b4ce907385ac35696a21fae5a954fc68175122f02391af9342643dd230bd2f",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/test_semifinal.py": "7f6297b5f01861348409c473563a330e23c9e5ec3acc97b85d08895b71035336",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/validate.py": "f8d18c0625a17d366560352f09e8bb634fb7a25910bf58194af0be8271a9cc6c",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/verify.py": "c04be5150d7b5161ecb3deaffd7858483f51c373223267e2c275dfdbee62776c",
+    "src/swarm_rescue/solutions/devtools/optimization/map_generator/wall_spacing.py": "9ec1c4c707861a4ab379ba163e98b3abc9fe629f8660224eb74144305c9ad8b9",
+    "src/swarm_rescue/solutions/devtools/recheck_blue_threads.py": "91f3f24b501c9e0816feba9b5e71365371e61dc862e8efff07118e3a12917f4d",
+    "src/swarm_rescue/solutions/devtools/red_anchor_event_batch.py": "1c646a04436480ac7acea2f8a26e2565433f731c2091d4f2544e1912a10dafd7",
+    "src/swarm_rescue/solutions/devtools/red_anchor_fixture.py": "5805a7307c9028b2636fb5eb2fa1d13e510e6fe21303b98cd89e049c2fc9e948",
+    "src/swarm_rescue/solutions/devtools/red_clearance15_batch.py": "cb5bd5445dbc4574479e62fd3d2b0b612fff1854a61731ee068624a654d8d20c",
+    "src/swarm_rescue/solutions/devtools/red_clearance15_diagnostics.py": "75e5608540a72c55949a04b91b77f2e8c2c1a314686fc87581f62ccb08ba60e3",
+    "src/swarm_rescue/solutions/devtools/red_clearance15_finalize.py": "f1976da1a67f788dd5e54583027ffeb1ce793efc681860fca536cc189a3e0bb0",
+    "src/swarm_rescue/solutions/devtools/red_clearance15_native.py": "4a3f81ec41beef01794926a81609808128a76859420a27121cae213465ee3603",
+    "src/swarm_rescue/solutions/devtools/red_clearance15_review.py": "43a041257f5e2e0f0c7e6627ff90d62eafccbeae0884713d2922d2f9580e763b",
+    "src/swarm_rescue/solutions/devtools/red_consistent12_batch.py": "908e595dc4526fd6dd2f6663c8db5abf25148eba2ec1fd6d1f3d1a46ba803b27",
+    "src/swarm_rescue/solutions/devtools/red_consistent12_delivery.py": "6b4083f773999243f02d06342555f9652840aad0c889f9daf32f5f7881a580fb",
+    "src/swarm_rescue/solutions/devtools/red_consistent12_diagnostics.py": "da65f760d1898cf3913c2870ec336cc5e419e41d2a2d0acd54de2e0853274626",
+    "src/swarm_rescue/solutions/devtools/red_consistent12_figures_v2.py": "6ee9b13104a0c6b604e9b9ceefbdf422054eaea63fa5e35e0b14a75bc87917da",
+    "src/swarm_rescue/solutions/devtools/red_consistent12_replay.py": "1158edc46c9fc85b20f0050a55f856fc5918c7212466e9d5d0bd313ec62affb9",
+    "src/swarm_rescue/solutions/devtools/red_consistent12_review.py": "7a32f0a57ec989ba2e738cc015325e8d8d3177c8de1680efb376581fc35bcddd",
+    "src/swarm_rescue/solutions/devtools/red_lines11_batch.py": "94ed3c1710c508a1fcc2aa25b31aa1583520680b684f54d88fa0ab1c8102bf91",
+    "src/swarm_rescue/solutions/devtools/red_lines11_diagnostics.py": "6ee20af46d98234ba75571733ef0699e93f5489aaeedf561e7de97478940f675",
+    "src/swarm_rescue/solutions/devtools/red_lines11_fixture.py": "9e0c0d174553816d29002011edb9ec3f3f3881b580d5064c406d0bf721e739e7",
+    "src/swarm_rescue/solutions/devtools/red_lines11_replay.py": "aed338e7ab949e4eb3b258b8983b177272bf2362b9e3a7deb8ed4694c7b313ff",
+    "src/swarm_rescue/solutions/devtools/red_lines11_review.py": "3f933de8693bb3c8a979ba645456dc2d342948f5f3976ace96ff9b35732995fa",
+    "src/swarm_rescue/solutions/devtools/red_link14_batch.py": "4c814c690d8d0a61d37443a6916068729614259fcde4ac1d8b9737c3ca8652ec",
+    "src/swarm_rescue/solutions/devtools/red_link14_diagnostics.py": "5e8cfad77ec26f7be6387f824cb12417ef895ec27291271d6773f9bcce117b1b",
+    "src/swarm_rescue/solutions/devtools/red_link14_finalize.py": "ccfd5e2d2374610b36857c6011e53138cb5e302b129e55c661aa2d3f537c1923",
+    "src/swarm_rescue/solutions/devtools/red_link14_review.py": "9dac38f87eb98ef0539e6e608b13e8e7d9d8218c29ab12d34f2009168f0d7fab",
+    "src/swarm_rescue/solutions/devtools/red_local13_batch.py": "73aca660ed3a293339173065a24e62eef03d7200d009638bbe38291a6c1e175e",
+    "src/swarm_rescue/solutions/devtools/red_local13_diagnostics.py": "eb282247e20ed7b710806906f86dc5bb6663c2e3b3a36400dc7fc2c47d5ca01e",
+    "src/swarm_rescue/solutions/devtools/red_local13_figures_v2.py": "123380d5e3696b8865d48b94e8a510b9274e83d8d06d221f6ea208f5a184b948",
+    "src/swarm_rescue/solutions/devtools/red_local13_finalize.py": "c321fb9671c8f1344c298ff0e55808865692dd14e959a5761b351d0767a1f68c",
+    "src/swarm_rescue/solutions/devtools/red_local13_replay.py": "aff96aa238ff50af7aaf3a68e2966dbea6fb97cb1c546076047adf000507fafb",
+    "src/swarm_rescue/solutions/devtools/red_local13_review.py": "174161a4bae201f990566aab5fce931269afe3d6893a1a66ddc3c10c4327e678",
+    "src/swarm_rescue/solutions/devtools/red_mapping_anchor_batch.py": "14b4407f2c0ec877187ea537e66b74ad80fe18e27978b5eb5d7895ee97792ec4",
+    "src/swarm_rescue/solutions/devtools/red_mapping_cells_batch.py": "2f9f13ee9e6fc5b1f9caa02bec312ee15fc1e4d44402b66c3489a587beaa20a7",
+    "src/swarm_rescue/solutions/devtools/red_mapping_delta_audit.py": "710a8ad3801f21a9b6c0613454de8e804117a947d16b9028b5d6aff2617e7f7e",
+    "src/swarm_rescue/solutions/devtools/red_p2l17_batch.py": "842ae55b53a88a307f79a5087ca561e0d7916a67753cd985f25a708f7aa79233",
+    "src/swarm_rescue/solutions/devtools/red_p2l17_diagnostics.py": "7c08942454b98d65b63fa4291d8d394c1022ec778f1da07b43e1f7842cf054eb",
+    "src/swarm_rescue/solutions/devtools/red_p2l17_finalize.py": "315e871526a21c6e433dec2ae7f98924c40efab60880b24b2f1a0a318a38e2f2",
+    "src/swarm_rescue/solutions/devtools/red_p2l17_replay.py": "a71206e15f370474d4d09ae08f53f3375e97df87fea857596bff429a7e6ef3e7",
+    "src/swarm_rescue/solutions/devtools/red_p2l17_review.py": "9edfc7e9e9c37d66bb70b15cc3f613466047ea9f8db68831389687a2a98c48a5",
+    "src/swarm_rescue/solutions/devtools/red_pair19_batch.py": "289f04f90ecbac4359416510b336d3f608c3da823a81a6242609eac3537897dc",
+    "src/swarm_rescue/solutions/devtools/red_pair19_report.py": "6b111a51a6e5dab87eb0b8813e2980097c10a1d8f71d2cc3635f6b5adacdfd5f",
+    "src/swarm_rescue/solutions/devtools/red_r8_batch.py": "0dcd3f1e97bbeae46067782e001016c75d5bb86e71126d57d3364895acc8f31e",
+    "src/swarm_rescue/solutions/devtools/red_r8_native.py": "5e5a3568746e91ed2b3ec6bf179082f2be5d576fd3c852b5afb9a1b2a5b6a600",
+    "src/swarm_rescue/solutions/devtools/red_r8_review.py": "d3d015ef5bc191c78c78cc3f0b0b107fa8039cc3367b51fc527de38d57feb72f",
+    "src/swarm_rescue/solutions/devtools/red_r8r9_delivery.py": "26dcd519d198ed7f5a169594abdfa013b92a2dbb44cde5920bc2d0d48ef82ef9",
+    "src/swarm_rescue/solutions/devtools/red_r9_batch.py": "0bf936bb997fa0a755376619234fb70398bda4b558151e772dc6677c06019d56",
+    "src/swarm_rescue/solutions/devtools/red_r9_review.py": "92c34a787625f95f6b2eac805ddfb03b2bca0126ca393377e7dc4ed4f39257c8",
+    "src/swarm_rescue/solutions/devtools/red_recovery18_audit.py": "5e88a1b37ab11c484617e60d76d13b329565ecc441f3084b94d6921dff8bf261",
+    "src/swarm_rescue/solutions/devtools/red_recovery18_figures.py": "8e60f785f802b26223d1884aa464481f99954875f237372e726cf1ee3fd7c843",
+    "src/swarm_rescue/solutions/devtools/red_recovery19_weights.py": "a01b48a40d545e53abe67b669957111a4580938db2535b7e3373e7da89fd1de7",
+    "src/swarm_rescue/solutions/devtools/red_rn7_batch.py": "b352cf61580446a375f33a51caa3d538b1b8ee94a2b28d34d28ebf27525023ed",
+    "src/swarm_rescue/solutions/devtools/red_rn7_delivery.py": "cabaf8f3058f48c12e28da3247147d328f8c8ec2b9c4009e0e5bc752c7c0641c",
+    "src/swarm_rescue/solutions/devtools/red_rn7_native.py": "8ed5e0031162d649e00cdda8d6ea709a79354cf7ef5e525c176378d094113272",
+    "src/swarm_rescue/solutions/devtools/red_rn7_review.py": "1219d145049027d3c3071031b58f58afec8e5a78d9bf928a285462780e16289a",
+    "src/swarm_rescue/solutions/devtools/red_rx10_batch.py": "e90c82f0812a257d934c6e986e326430391362771a343657d94220795ab1600a",
+    "src/swarm_rescue/solutions/devtools/red_rx10_diagnostics.py": "330363154fa48a00de65b562ef88a8d88700a7573e6003692e63d93b8dc417e1",
+    "src/swarm_rescue/solutions/devtools/red_rx10_review.py": "ca387711a876df73611c11b70076dcd2833a223cc66cca3c19880f8f29618b6a",
+    "src/swarm_rescue/solutions/devtools/red_scan18_cases.py": "0d171718685700912f2d79c537640c56f3466c87aa6b7f4e009e97e68192a9a2",
+    "src/swarm_rescue/solutions/devtools/red_scan18_finalize.py": "0df0dd1d7da86add368f9495e782dcea8a8eb117c3ff08f1bbf255211d9c6149",
+    "src/swarm_rescue/solutions/devtools/red_scan18_replay.py": "d7c9848e054e37fe0a3d5b3c6e636b852e96b7bad7e5f7cdfe33f80c17b8dad3",
+    "src/swarm_rescue/solutions/devtools/red_scan18_shadow.py": "f349d64aabcd512443bf129b6076b2f754f0e9567be1d6c609f843a97053c291",
+    "src/swarm_rescue/solutions/devtools/red_single_result_view.py": "588b5a9466ed2acb2b4544084339fb55dc419491fc2a3dc3f52fdcb36a92b692",
+    "src/swarm_rescue/solutions/devtools/red_stopturn_analysis.py": "a990b4f4eda6844cf566eaa1eefb8e20eb2478e4aeeb10c3f29053dace9cb2ee",
+    "src/swarm_rescue/solutions/devtools/red_stopturn_batch.py": "6a8a43665937ed65d15ef1b60bf79f4d9130e4dd72dd46d3009bc94be0b6b3c9",
+    "src/swarm_rescue/solutions/devtools/red_stopturn_diagnostics.py": "29c6cf1c640e02e376451484be1074a9a71687e61bc6398595e1812f0b7d30cd",
+    "src/swarm_rescue/solutions/devtools/red_stopturn_match_report.py": "85f2a3900d72609b621edad1578a22dc7997347eefaeda40afacdfc272b3f954",
+    "src/swarm_rescue/solutions/devtools/red_stopturn_native.py": "a8038daa0aafb2a34f9c1723b9bb883240e4c4789763418d39e59757d8ca6aa5",
+    "src/swarm_rescue/solutions/devtools/red_wall_staged16_batch.py": "1e882422d9aa052c15f2134ed175f16cc0d0161cce0a492f2cabe952ad8776f5",
+    "src/swarm_rescue/solutions/devtools/red_wall_staged16_diagnostics.py": "5c049c3386fbfe489c066498b78cd647ec7c8d36dd32d9c04d809614ab97b36d",
+    "src/swarm_rescue/solutions/devtools/red_wall_staged16_finalize.py": "96754fcea8e38a47f53dd9e8891f5ca35f4d2528bc968d07ab1444f01e48f4dc",
+    "src/swarm_rescue/solutions/devtools/red_wall_staged16_native.py": "4398fda7b848905059d5ea8014c0b55288ee608aacd784b8c0c38a577db8e2c7",
+    "src/swarm_rescue/solutions/devtools/red_wall_staged16_review.py": "84878bc02bbee8a53d8ba2ae35793de05e797441043b3b0e85e33a277ddd010c",
+    "src/swarm_rescue/solutions/devtools/replay_advanced6_choices.py": "535526dad693f47d527ade997f8e65cdc08a3822884682f45dc533b350880ba6",
+    "src/swarm_rescue/solutions/devtools/replay_window.py": "2208c60890eab07f697370e5f85beebb1977c71f94dc77d666758f30782b3316",
+    "src/swarm_rescue/solutions/devtools/report_advanced5.py": "b9663dc409a9b3636b54a724ec578b69cbbf7f7615cf8efcfdcc32b62d2a2013",
+    "src/swarm_rescue/solutions/devtools/report_advanced5_cooperative.py": "f41fd51cb01c950ab866847a33c2a91d54d6f38a15a909011e02155fcd930473",
+    "src/swarm_rescue/solutions/devtools/report_advanced5_narrow.py": "e8d4212e8b64b6ee93fe1357481fc603d180b044c6e40d328b29ae4d803fb6a6",
+    "src/swarm_rescue/solutions/devtools/report_advanced5_progress.py": "1bfd4d5d8d7f5e90283801bb0abd64ce52d5a2cc1f81db927a9f7d6898fc87dd",
+    "src/swarm_rescue/solutions/devtools/report_placement_pilot.py": "d893d0c3c485c0bcbb869e5edbcfcfff52f11d5dd672ed64dd272526d9628f60",
+    "src/swarm_rescue/solutions/devtools/report_reference_blue.py": "88411036db9baad20411b4dc6fdb7bf6667c89897ede3c485912d2dba87f181b",
+    "src/swarm_rescue/solutions/devtools/test_advanced2_retained.py": "161ee537ed2dfd603d7a434196aeda5751cecfdb06bcf1f107eeee5300b9cd3a",
+    "src/swarm_rescue/solutions/devtools/test_advanced5.py": "7402b863d9673ddc2567c67aa5e1d54410ab8d881b9eb48bafa1735bdaa0a568",
+    "src/swarm_rescue/solutions/devtools/test_advanced5_cooperative.py": "c5576c324fb62a095e012e87a471b6fb235e05ccbd9e323ec2a5f76b00cca6fb",
+    "src/swarm_rescue/solutions/devtools/test_advanced5_narrow.py": "6fb3199a4eb56499420d4b06bcf8cf758ce5a71309ed4c64bf59911fe234469d",
+    "src/swarm_rescue/solutions/devtools/test_advanced5_progress.py": "72b22b2607a40529d825ab4590673684bd1999dd59ffbd794fc78b1f2525cc2d",
+    "src/swarm_rescue/solutions/devtools/test_blue_b6_20261113.py": "63857de0d854dddeb61ea7e23aeb968d18a64562cbfe098037d7e99d8490d6e5",
+    "src/swarm_rescue/solutions/devtools/test_blue_contact.py": "050ac43f3b91bf57de845112bfdc0d9e93aca646ae895b49b1d82bf9aae99e0b",
+    "src/swarm_rescue/solutions/devtools/test_blue_frontier.py": "84056c3fe652e6d143d92a1b6998a4e896d38e35b5459f100ee42790c32bd6ea",
+    "src/swarm_rescue/solutions/devtools/test_blue_lifecycle.py": "af94027602839d2ae4a5db1190af8be6fef557f9092c1216a0551df33c6c674a",
+    "src/swarm_rescue/solutions/devtools/test_blue_narrow.py": "c35a6ab170897f119a43c6d29dae4b002cdd615b66740293dbc46bd2337ed64b",
+    "src/swarm_rescue/solutions/devtools/test_blue_nav_b8.py": "d1213d37a28efdf2e743d91e7c63a4b8fa4717552430069de758f9c8a81145a9",
+    "src/swarm_rescue/solutions/devtools/test_blue_recovery.py": "c72e35d451cad61faa554e8f94c5af304472b66b7d6ee7f05830ffe92ad99f8f",
+    "src/swarm_rescue/solutions/devtools/test_blue_relay_b7.py": "5c7bac5f45c5c06960f43ff4789b0194576fbed14e597653c6b9d2cbe312e69e",
+    "src/swarm_rescue/solutions/devtools/test_blue_search.py": "47f14f013f33e56b44a50240db8d2e8d3cb3ca08705fcb407e4b7d2b5ddeb177",
+    "src/swarm_rescue/solutions/devtools/test_blue_transport.py": "95ff9d1e3e506b16373ce33471934dd17e03add2636daddbc4cc50bdb4f6728c",
+    "src/swarm_rescue/solutions/devtools/test_fs1_red.py": "15d63a8ae447873a62326a62d241de3abff295e5b9f7aecffd493ca71ac5700e",
+    "src/swarm_rescue/solutions/devtools/test_red_anchor_event_batch.py": "3c58be4080158ed1c49221ff61d6c321793cba716e445db3e3754d6cc2fc4f43",
+    "src/swarm_rescue/solutions/devtools/test_red_clearance15.py": "b3a6ccc56b9839f3029706ff2881bf822a09eaec724cba9b984e349253b4cc3d",
+    "src/swarm_rescue/solutions/devtools/test_red_consistent12.py": "9a75ccf03e4e6e836645e52a45b4c6c415a46ac84c4a1b79f583d4383974452b",
+    "src/swarm_rescue/solutions/devtools/test_red_lines11.py": "1275e989789057648d16529617facc3adffb88e8f50472d65882e98730989156",
+    "src/swarm_rescue/solutions/devtools/test_red_link14.py": "aee866a59388d0920862a86d8c0f0b9e1033805a9987e83d40fba6fcd49c60cb",
+    "src/swarm_rescue/solutions/devtools/test_red_local13.py": "8f0bcd419225f0aa7d152af0dfb7e32f816a44ccf0044e08ec0d938a06308b51",
+    "src/swarm_rescue/solutions/devtools/test_red_mapping.py": "73690e45f08d496b7d8eb56b5a1e21121b8cfe324bc274d69302c20595d9774a",
+    "src/swarm_rescue/solutions/devtools/test_red_mapping_anchor.py": "92dc50179795e69beee74a41b9a798ed9b2f96565e230473ce23b381cf5c4114",
+    "src/swarm_rescue/solutions/devtools/test_red_mapping_cells.py": "c1863238d91a1d23b1bd1c6e5cf2bd6d3a64cf1c8f9c47264d47277d99bf4db3",
+    "src/swarm_rescue/solutions/devtools/test_red_p2l17.py": "f4292174bbf0afbcb35f37f12c37948f297bae77071243bd313aeeccf43396d3",
+    "src/swarm_rescue/solutions/devtools/test_red_p2l17_review.py": "df6f6b2beb0f60545750d4ecd1aaef39e2d041d5345314123c1a54872c4219e1",
+    "src/swarm_rescue/solutions/devtools/test_red_pair19.py": "3a94f45e5b3628af6830c5bf7eb0ecb3ae9c51fb395185ff44a5289f8ef9c7bf",
+    "src/swarm_rescue/solutions/devtools/test_red_r8.py": "c95db5e40feeba9971efd4ac46921edb4fe4ea9b28ac422d453ff88d57d56979",
+    "src/swarm_rescue/solutions/devtools/test_red_r9.py": "411dbcae5795e52fdced6040651b5aceb329cd2c8a98c6a40163bd87e1a3cb72",
+    "src/swarm_rescue/solutions/devtools/test_red_rn7.py": "a30d7930df7b3114324cf3f008e1aba93790e5e5163ddd3e34162abf30950f5d",
+    "src/swarm_rescue/solutions/devtools/test_red_rx10.py": "4250b522677589cbfd241d09e2c5f79b009a7166533786bf95018d2e311829c1",
+    "src/swarm_rescue/solutions/devtools/test_red_scan18.py": "5c230665b4080c4329994f1d8a778fdea8de5b666369edb8d31744b003ed0ae6",
+    "src/swarm_rescue/solutions/devtools/test_red_stopturn.py": "7e3bcc12476686a2f19ef508b1f26b4c3e5a235712497a0eb484073096325c64",
+    "src/swarm_rescue/solutions/devtools/test_red_wall_staged16.py": "0f373649129d4ac67668b37b4975ad5b1df503d713ea843a9ce120d72026d1a6",
+    "src/swarm_rescue/solutions/devtools/test_reference_blue.py": "13e146e4d67b27dee08689fc934fb4480afc7bb688b2de2c17ad901f7b10913a",
+    "src/swarm_rescue/solutions/devtools/test_semifinal_adaptation.py": "00b8493106f74675132bfedef829e9ed7ff762f929a252b8ea4f356567271e0c",
+    "src/swarm_rescue/solutions/devtools/test_semifinal_joint.py": "7e6ccb721c7b1d962f510dd99a30fe27dcce8ee194c9e5a87a386d697e8034a6",
+    "src/swarm_rescue/solutions/devtools/test_semifinal_logging.py": "b387721fbe1cd2d7855a40c4e6177d2f60dd4e0d78f49fdafafc1d1476340bc2",
+    "src/swarm_rescue/solutions/devtools/test_strategies.py": "dec225a50a66f69653f0be93a443a66011a6334e56bb7d546766eb6fb19e0650",
+    "src/swarm_rescue/solutions/devtools/test_updated_entry.py": "04ce4238d55af555efbe78dbaf548c3f6bd051a3ba5abc74214aa2ba183d5773",
+    "src/swarm_rescue/solutions/devtools/test_wall_margin.py": "cc88be8b44fc4f9858a857e8839102ac1573e0aa9bf159dd170b44d387f55423",
+    "src/swarm_rescue/solutions/devtools/windows_pressure.py": "e095ae166183279dcb262011c6129e4fbad13a41abafa44212b3aa24459ed25e",
+    "src/swarm_rescue/solutions/my_drone_blue_b6_local_20261113.py": "2325fb3fc87eab8d53f0629795428ac74e5c44ebd8d4f5f4d59db924eb2772b9",
+    "src/swarm_rescue/solutions/my_drone_blue_contact.py": "354904c3258a5c7ffc55b637a905a168e4a032e1d3a15230cf338503245e0174",
+    "src/swarm_rescue/solutions/my_drone_blue_frontier.py": "e22e9b4aa04dcba1ed8794a96759955ba553b6885510bbb4c2a7c8c1613f7272",
+    "src/swarm_rescue/solutions/my_drone_blue_narrow.py": "5e3e5a510c2215c5791457fa51dabb7a2f5bcb4bd1c119bf31bf9da1d93f677c",
+    "src/swarm_rescue/solutions/my_drone_blue_nav_b8.py": "2e0c699257049ffe696a1d903e90577ef83de55d6cf2757a2c77ec0d7c4c9b81",
+    "src/swarm_rescue/solutions/my_drone_blue_recovery.py": "ca87045ac9d9096698b871fd7e8e6225bc851924f39be2b05008b6ab8b4897dc",
+    "src/swarm_rescue/solutions/my_drone_blue_relay_b7.py": "ae3e9f393db344cd7342475e4ffc1e66c337255a3342c50e6a8b4208af59b350",
+    "src/swarm_rescue/solutions/my_drone_blue_search.py": "622b9efc80bc3bd3fcba982663be6ccc1838b7c9ee0e930bf443d7a3162eea40",
+    "src/swarm_rescue/solutions/my_drone_blue_semifinal.py": "1cd5e1c1d6e76e13bd133c4814b1f3affc525cf0c0ab720166643cc49729518b",
+    "src/swarm_rescue/solutions/my_drone_blue_sweep.py": "b871746c122969edd104846e6a02af57390e45e99516e1e423d93a45346ad94d",
+    "src/swarm_rescue/solutions/my_drone_blue_transport.py": "4bea1300dce030153b91623c0829a3d56dedb4802dd273212196f9592819b8a1",
+    "src/swarm_rescue/solutions/my_drone_eval.py": "041930618d4ad2b08751e33c541d3e67588e383f47e5d5f58dc61372530d7e77",
+    "src/swarm_rescue/solutions/my_drone_eval_blue.py": "a9e448b640b79fc2ffbc11059bcbb09559cfd79c50411857d5f53d8ffdbf0082",
+    "src/swarm_rescue/solutions/my_drone_place_example.py": "9e99aaa165549d1818e7180a1cf06d7453cfb2f6229bacbde3d9df4477b8f3e1",
+    "src/swarm_rescue/solutions/my_drone_red_advanced2.py": "6e6e209a7c669fa4fb1b46a164f8f355643d07c87a94e1e8acbb31de77643c8f",
+    "src/swarm_rescue/solutions/my_drone_red_advanced5_narrow.py": "9ee893bc716e0dfbd3e684dd6f441770f30445c777518db9d910a3b769973475",
+    "src/swarm_rescue/solutions/my_drone_red_branches10.py": "7d3f7819007ad043d3128c0af365cc1a79927ee4178651ed2b06cf62851826a9",
+    "src/swarm_rescue/solutions/my_drone_red_clearance15.py": "3fff5baf4217284682f64496b190fd16e0ebb9eaa960a5ce29818af914d56e99",
+    "src/swarm_rescue/solutions/my_drone_red_consistent12.py": "e0ed4b8813c57fb5ad292c08787a498d13dd2fbae2af192a5980ce5d90ab9b61",
+    "src/swarm_rescue/solutions/my_drone_red_entrance9.py": "c302ebc2d06b396dc5e41283c50376be82306ee2269a8c3be7ab724980b924c9",
+    "src/swarm_rescue/solutions/my_drone_red_entry13.py": "4c9c371c58f1d12afebd160d15899c4a626a3e388c5d91b5767a34979f4ba618",
+    "src/swarm_rescue/solutions/my_drone_red_fs1.py": "7344bc204972d1b2113e6e4c264e5ffcf80cdf5341bfc1ac320c0e6c03a4dd20",
+    "src/swarm_rescue/solutions/my_drone_red_lines11.py": "56474b5b14af1ce653060f8a082b4e24fdf44a5ded6a4dde7aa5e0415083bbf6",
+    "src/swarm_rescue/solutions/my_drone_red_link14.py": "169282e490cb8de389420cfe4c43604c96934e4580c093b1f5ac9db525842593",
+    "src/swarm_rescue/solutions/my_drone_red_local13.py": "92c4f08702f003cd2b90c8af47963341f78d1b21d4617a3f9c4d364f4c2b9b7c",
+    "src/swarm_rescue/solutions/my_drone_red_mapping.py": "fb9cd301dd10105189eef626a2a91cd66a5de73b8ed792d77800a989deead965",
+    "src/swarm_rescue/solutions/my_drone_red_mapping_anchor.py": "5ed57488222fa1f3fa698470837d2e0f75b00d52ee08c68a35a6df23f1d9481e",
+    "src/swarm_rescue/solutions/my_drone_red_mapping_cells.py": "dbfa8244d263335b929ddfee0ce73205d31ed9331937e3d7b306a8748fa38875",
+    "src/swarm_rescue/solutions/my_drone_red_navlines12.py": "ea07a56e5d517beaa53105f1e9cdbe3e43f584ea10a587bd5ff170ae8829c7b7",
+    "src/swarm_rescue/solutions/my_drone_red_p2l17.py": "d4e7c107de6277cb8bc0b1c2bf7d59118fea6420091441597900fd9792ba4c70",
+    "src/swarm_rescue/solutions/my_drone_red_r8.py": "3ede3d8a34b4473cb28dfed00488551aeabc5af14d311aaacf87c87d951c0124",
+    "src/swarm_rescue/solutions/my_drone_red_repair17.py": "1785348ed19b2e9d68cbdbf59384746717cd2d38cdd3d5a57b35dfc31a730573",
+    "src/swarm_rescue/solutions/my_drone_red_rn7.py": "5f69845db141d0432d17e09e5c1ef2a5a995f5f8b261121de5f82373042e9be7",
+    "src/swarm_rescue/solutions/my_drone_red_semifinal.py": "15f79210f90609e3d23bb93f15e0c7aa7f5697fa51a48066c5a2a06968df2fbc",
+    "src/swarm_rescue/solutions/my_drone_red_staged16.py": "78ee37599dfd26a42d9fc80efbce2ec532e883ecc7f34aef59140345cb5a3785",
+    "src/swarm_rescue/solutions/my_drone_red_stopturn.py": "e92c4a5a99683a7d276d7ecb69a68c9421dfbe32ebd9d050b6ba40cb466fbb12",
+    "src/swarm_rescue/solutions/my_drone_red_wall16.py": "59f77f07e53454fcfaf3b71a73b78b5f8b4b04a7e24941f86e540a082cf64fe9",
+    "src/swarm_rescue/solutions/my_drone_rescue_example.py": "38623b8efc122488469d8f75535279eb91ec1f35f147a3631ad5fb2b46e7b038",
+    "src/swarm_rescue/solutions/red_footprint8.py": "ed276123e0e66d261949617060efb43dc26ff05eabf87aea4af0a6f663cd2341",
+    "src/swarm_rescue/solutions/red_pixel_faces.py": "9b6af608acebbb0377fef16fe2bada4825b30aba92c750951e01d9791adc89f9",
+    "src/swarm_rescue/solutions/red_pixel_faces_incremental.py": "1da6d239f0f91e7117e584e37479be56d03f09c9bdc07b19e721dba6855f14f3",
+    "src/swarm_rescue/solutions/semifinal_localization.py": "f6b7f733a4121fc457e831c5c494bd13dd81c4884425fc81f82733d7aa21fe19",
+    "src/swarm_rescue/solutions/team_info.yml": "9543a8b045404f93676940bb10e1ac65881d6b0adc0e8bf6941e23a2ab7131c1",
+    "src/swarm_rescue/submission_check.py": "179bbe3d8f46958c80bcd5876d71613a1eaf0c4fb5489e0cfde0cc6a1bad31ea",
+    "src/swarm_rescue/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/swarm_rescue/tools/bomb_editor.py": "f29ed0aa022d6d34bdee001859a839948ef54e12efdbfe443a0c611e5aa1db00",
+    "src/swarm_rescue/tools/check_map.py": "2ba9a812337acc8d4a7433027bc6c9cfc2a67ebfb6b809800cb663fd22a153fa",
+    "src/swarm_rescue/tools/generate_mock_map_prediction.py": "286ba4eb3eb7296cf76959a1a3cad372ad077de7dd71914ed819fef6739800e3",
+    "src/swarm_rescue/tools/generate_resource_sprites.py": "527ab7f4fe921d19da01266349f9de0bee3aaa7aeb979c2094b2d6bdb6baef43",
+    "src/swarm_rescue/tools/image_cleaning.py": "61dd9cd604b77ffe1c57897389c1611a84a8cc8c4665eabe65c4cdaf5d953051",
+    "src/swarm_rescue/tools/image_to_map.py": "b43e6b49882d4bddd7abf858dfd1fb8e66b790c6a927b8ba961029e03e666406",
+    "src/swarm_rescue/tools/json_to_map.py": "9f483b8c143e1ee8b70bcb63c6d9ae6ea0ae6aa30e972e80e9e3ea240c35de75",
+    "src/swarm_rescue/tools/manual_pdf_generation.py": "d50759df6adc567fd2ab89a7eaff24b432022a72ff510ee77807d93ebf713dbc",
+    "src/swarm_rescue/tools/map_exploration_scoring.py": "943d8342026d3cbd3008817a1e60f4b82fe63d708da865f5f0ea761fcd29cb2f",
+    "src/swarm_rescue/tools/map_wall_editor.py": "f0505fb9b8978f60b07f42e24358274eea20cb7803c088da00b3c27a24b70ee2",
+    "src/swarm_rescue/tools/opengl_info.py": "3dc0cbca25c461b9ec4d1419b815bf19fc2283d7c42cfdd623bd2cd0319c4955",
+    "src/swarm_rescue/tools/png_to_json.py": "4ade91d4adf4956b70baadb1e660c50ce777f3b1ca9ae03d059d07adc740264c",
+    "src/swarm_rescue/tools/progress_bar.py": "78f8b59121cd5137fd64b18881f66f526f8d1bcd22f9cffdf1734299ed585f19",
+    "src/swarm_rescue/tools/visu_images.py": "07dfc81637a963b45b7992a52c787abf5b0245863a4fdfb6962b737d02e3db2f",
+    "src/swarm_rescue/tools/walls_to_json.py": "b36cc09722c1db2bcbe5013e5d121faab7af66d8cb69a62be99c3c12a1256452",
+    "pyproject.toml": "65dca27782b102499db078580b59293bac29184931143cd0f2da762019cd52be",
+    "doc/复赛调整说明.md": "1d297020f618d2e127bac40be3d32cb81cbede94cbcc1665868f359b9cec54c4",
+    "output/optimization/datasets/dataset_001/dataset.json": "0b23f190d0014fc27f4c26445f53360f54f163dbc2022401e4aa57f7d965dc02",
+    "output/optimization/datasets/dataset_001/duplicates.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "output/optimization/datasets/dataset_001/extrapolation.json": "7e862e01ddf80b4d77e1366e345282c339d47b4eec3e8216e1141e135ef41754",
+    "output/optimization/datasets/dataset_001/groups.json": "f568e308325cb6580a6e30ebc10c2ab99fe9fa91a821100a2aeaad97d740f59e",
+    "output/optimization/datasets/dataset_001/hard.json": "41e4075cb804beec9f453f8ed2475660eb2bf5f1818a02055f5d283b1553c421",
+    "output/optimization/datasets/dataset_001/index.json": "03d48751c675ff716e66d50e9ec2ac154bb5fce3e193ec4d3cb054b962f0be1c",
+    "output/optimization/datasets/dataset_001/summary.json": "0ca775709ec9a5b7253a3b371bb7abcb7690d44c472ca9313069c495f3cbce0a",
+    "output/optimization/datasets/dataset_001/test.json": "20ac8bb5967a17ea457212704b48a8f164db3bc75e8e78fbae2c6d0694f1233a",
+    "output/optimization/datasets/dataset_001/train.json": "7046422bebb125fec28d8e0d2503f19c2d69ef4d1e2185135e10da9721ad2ef2",
+    "output/optimization/datasets/dataset_001/validation.json": "c7c9eb09e79bf8b9e05bb6f22e41d6ead1be8028e92914109676ea75651df24f"
+  },
+  "scope": "training development screen, red only; no independent holdout inference",
+  "limitations": [
+    "All 100 maps have both static zone types; no zone-free stratum exists.",
+    "One mixed-partition family; nominal passages are not measured minimum navigable width.",
+    "Runtime seed changes noise/initial headings, not frozen wall or zone geometry.",
+    "Same seeds do not guarantee equal trajectories under wall-clock budgets.",
+    "Local CPU/commit constraints do not establish equivalence to remote platform hardware."
+  ],
+  "source_bytes_sha256": "59170d77d0850cd6846a25fe60133980fd3324ff7f7873f3f96099f8e9372568"
+}

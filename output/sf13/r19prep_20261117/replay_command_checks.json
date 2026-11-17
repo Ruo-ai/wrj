@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "controller": "rl11_lines",
+      "exit": 0,
+      "stdout": "{\"map_class\": \"Generated52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b\", \"zones\": [\"NO_COM_ZONE\", \"NO_GPS_ZONE\"], \"gui_opened\": false}\n",
+      "stderr": ""
+    },
+    {
+      "controller": "rl17_repair",
+      "exit": 0,
+      "stdout": "{\"map_class\": \"Generated52143ec7cae8cd229a1017c1335ebcc1e5844a3d975c430e40042ff4e02ce26b\", \"zones\": [\"NO_COM_ZONE\", \"NO_GPS_ZONE\"], \"gui_opened\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "all replay preflight checks, GUI display stubbed; separate process per command"
+}

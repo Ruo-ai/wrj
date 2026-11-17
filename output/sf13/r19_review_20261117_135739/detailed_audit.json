@@ -1,0 +1,518 @@
+{
+  "valid": true,
+  "failures": [],
+  "log_warnings": [],
+  "checked_npz_crc": 122,
+  "pair_checks": [
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "seed": 2026111701,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "seed": 2026111702,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "seed": 2026111701,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "seed": 2026111702,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_27",
+      "round": 1,
+      "seed": 2026111701,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_27",
+      "round": 2,
+      "seed": 2026111702,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 1,
+      "seed": 2026111701,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 2,
+      "seed": 2026111702,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 1,
+      "seed": 2026111701,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_55",
+      "round": 2,
+      "seed": 2026111702,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_90",
+      "round": 1,
+      "seed": 2026111701,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    },
+    {
+      "map": "yh_map_fs_90",
+      "round": 2,
+      "seed": 2026111702,
+      "legal_inputs": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 11
+      },
+      "recording": {
+        "equal": false,
+        "mismatched": [
+          "timestamps"
+        ],
+        "arrays": 3
+      },
+      "coverage": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 5
+      },
+      "bombs_equal": true,
+      "conditions_equal": true
+    }
+  ],
+  "offline_reproduction": [
+    {
+      "map": "Map08",
+      "json_equal_except_duration": true,
+      "maps": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 312
+      },
+      "all_events_once": true,
+      "full": true,
+      "checks": [
+        {
+          "owner": 0,
+          "steps": 4535,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 15
+        },
+        {
+          "owner": 1,
+          "steps": 4535,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 15
+        },
+        {
+          "owner": 2,
+          "steps": 4535,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 15
+        },
+        {
+          "owner": 3,
+          "steps": 4535,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 15
+        },
+        {
+          "owner": 4,
+          "steps": 4535,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 15
+        }
+      ]
+    },
+    {
+      "map": "Map09",
+      "json_equal_except_duration": true,
+      "maps": {
+        "equal": true,
+        "mismatched": [],
+        "arrays": 96
+      },
+      "all_events_once": true,
+      "full": true,
+      "checks": [
+        {
+          "owner": 0,
+          "steps": 4450,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 14
+        },
+        {
+          "owner": 1,
+          "steps": 4450,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 14
+        },
+        {
+          "owner": 2,
+          "steps": 4450,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 14
+        },
+        {
+          "owner": 3,
+          "steps": 4450,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 14
+        },
+        {
+          "owner": 4,
+          "steps": 4450,
+          "pose_max_abs": 0.0,
+          "saved_publications_matched": 14
+        }
+      ]
+    }
+  ],
+  "observed_file_intervals_serial": true,
+  "intervals": [
+    {
+      "index": 1,
+      "request_mtime": 1794890197.252424,
+      "receipt_mtime": 1794890333.3375678
+    },
+    {
+      "index": 2,
+      "request_mtime": 1794890333.54041,
+      "receipt_mtime": 1794890468.6196926
+    },
+    {
+      "index": 3,
+      "request_mtime": 1794890468.8435287,
+      "receipt_mtime": 1794890605.325469
+    },
+    {
+      "index": 4,
+      "request_mtime": 1794890605.5262368,
+      "receipt_mtime": 1794890742.5741673
+    },
+    {
+      "index": 5,
+      "request_mtime": 1794890742.775244,
+      "receipt_mtime": 1794890882.3227055
+    },
+    {
+      "index": 6,
+      "request_mtime": 1794890882.5242064,
+      "receipt_mtime": 1794891023.4486477
+    },
+    {
+      "index": 7,
+      "request_mtime": 1794891023.651742,
+      "receipt_mtime": 1794891163.6366816
+    },
+    {
+      "index": 8,
+      "request_mtime": 1794891163.8333733,
+      "receipt_mtime": 1794891303.5715294
+    },
+    {
+      "index": 9,
+      "request_mtime": 1794891303.779924,
+      "receipt_mtime": 1794891429.547093
+    },
+    {
+      "index": 10,
+      "request_mtime": 1794891429.7440138,
+      "receipt_mtime": 1794891558.7904313
+    },
+    {
+      "index": 11,
+      "request_mtime": 1794891558.9869862,
+      "receipt_mtime": 1794891682.9996185
+    },
+    {
+      "index": 12,
+      "request_mtime": 1794891683.202145,
+      "receipt_mtime": 1794891806.7213771
+    },
+    {
+      "index": 13,
+      "request_mtime": 1794891806.9321003,
+      "receipt_mtime": 1794891933.1048343
+    },
+    {
+      "index": 14,
+      "request_mtime": 1794891933.3296587,
+      "receipt_mtime": 1794892065.1650968
+    },
+    {
+      "index": 15,
+      "request_mtime": 1794892065.3665264,
+      "receipt_mtime": 1794892179.5791447
+    },
+    {
+      "index": 16,
+      "request_mtime": 1794892179.7770076,
+      "receipt_mtime": 1794892296.6262748
+    },
+    {
+      "index": 17,
+      "request_mtime": 1794892296.833564,
+      "receipt_mtime": 1794892431.40443
+    },
+    {
+      "index": 18,
+      "request_mtime": 1794892431.6102934,
+      "receipt_mtime": 1794892570.7018733
+    },
+    {
+      "index": 19,
+      "request_mtime": 1794892570.90233,
+      "receipt_mtime": 1794892702.624408
+    },
+    {
+      "index": 20,
+      "request_mtime": 1794892702.8294945,
+      "receipt_mtime": 1794892835.5140443
+    },
+    {
+      "index": 21,
+      "request_mtime": 1794892835.715326,
+      "receipt_mtime": 1794892964.3815713
+    },
+    {
+      "index": 22,
+      "request_mtime": 1794892964.5798802,
+      "receipt_mtime": 1794893093.2264278
+    },
+    {
+      "index": 23,
+      "request_mtime": 1794893093.425232,
+      "receipt_mtime": 1794893221.0602267
+    },
+    {
+      "index": 24,
+      "request_mtime": 1794893221.2567239,
+      "receipt_mtime": 1794893348.8801284
+    }
+  ],
+  "other_windows_cpu_contention": "not retrospectively measurable; CIM unavailable",
+  "resources": {
+    "total_engine_seconds": 2960.2261974811554,
+    "total_process_seconds": 3141.8639999999987,
+    "max_engine_seconds": 132.92382526397705,
+    "max_process_seconds": 140.6880000000001,
+    "min_peak_commit": 724647936,
+    "max_peak_commit": 761815040
+  },
+  "b_output_receipt_limitation": "No original completion receipt; current hashes and independent deterministic rerun verified.",
+  "reviewed_utc": "2026-11-17T06:01:35.380512+00:00"
+}

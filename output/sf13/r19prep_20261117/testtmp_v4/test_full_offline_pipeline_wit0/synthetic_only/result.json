@@ -1,0 +1,9 @@
+{
+  "expected_shape": [
+    120,
+    120
+  ],
+  "phase1": {
+    "score_map": 100.0
+  }
+}
