@@ -1,0 +1,116 @@
+{
+  "frozen": 434,
+  "plan_sha256": "fa1e3103d4f854dcd7abb5d8acd2fbe728c6bb48c34b910eec34bf5176d4a2e7",
+  "source_bundle_sha256": "4141801ea83ad14195ac0896ea84d68ea196d8618da621e5feacee2525570d16",
+  "live_changed": [],
+  "runs": [
+    {
+      "map": "yh_map_fs_72",
+      "round": 1,
+      "files": 27,
+      "diag_seconds": 1.8315282000088473,
+      "trajectory_frames": 4535,
+      "old_frames": 4535,
+      "identical_prefix_frames": 3284,
+      "loaded_source_count": 162,
+      "diagnostic": {
+        "probes": 91,
+        "calls": 22675,
+        "truth_rows": 22675,
+        "rank_mismatches": [],
+        "errors": [],
+        "unattributed_contacts": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_72",
+      "round": 2,
+      "files": 27,
+      "diag_seconds": 1.7538059000075918,
+      "trajectory_frames": 3930,
+      "old_frames": 3887,
+      "identical_prefix_frames": 626,
+      "loaded_source_count": 162,
+      "diagnostic": {
+        "probes": 100,
+        "calls": 19650,
+        "truth_rows": 19650,
+        "rank_mismatches": [],
+        "errors": [],
+        "unattributed_contacts": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 1,
+      "files": 27,
+      "diag_seconds": 2.4894485000090754,
+      "trajectory_frames": 4036,
+      "old_frames": 4535,
+      "identical_prefix_frames": 888,
+      "loaded_source_count": 162,
+      "diagnostic": {
+        "probes": 140,
+        "calls": 20180,
+        "truth_rows": 20180,
+        "rank_mismatches": [],
+        "errors": [],
+        "unattributed_contacts": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_37",
+      "round": 2,
+      "files": 27,
+      "diag_seconds": 2.1616325999890478,
+      "trajectory_frames": 4298,
+      "old_frames": 4535,
+      "identical_prefix_frames": 573,
+      "loaded_source_count": 162,
+      "diagnostic": {
+        "probes": 146,
+        "calls": 21490,
+        "truth_rows": 21490,
+        "rank_mismatches": [],
+        "errors": [],
+        "unattributed_contacts": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 1,
+      "files": 27,
+      "diag_seconds": 2.146823199991104,
+      "trajectory_frames": 4535,
+      "old_frames": 4264,
+      "identical_prefix_frames": 2378,
+      "loaded_source_count": 162,
+      "diagnostic": {
+        "probes": 105,
+        "calls": 22675,
+        "truth_rows": 22675,
+        "rank_mismatches": [],
+        "errors": [],
+        "unattributed_contacts": 0
+      }
+    },
+    {
+      "map": "yh_map_fs_24",
+      "round": 2,
+      "files": 27,
+      "diag_seconds": 1.9973729999978787,
+      "trajectory_frames": 4535,
+      "old_frames": 4535,
+      "identical_prefix_frames": 4535,
+      "loaded_source_count": 162,
+      "diagnostic": {
+        "probes": 87,
+        "calls": 22675,
+        "truth_rows": 22675,
+        "rank_mismatches": [],
+        "errors": [],
+        "unattributed_contacts": 0
+      }
+    }
+  ]
+}

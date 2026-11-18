@@ -1,0 +1,2361 @@
+{
+  "stats": {
+    "initial": 83,
+    "repair": 22,
+    "replayed": 32,
+    "exits": {
+      "completed": 36,
+      "inertial_risk": 1,
+      "fresh_scan_obstructed": 3
+    },
+    "pos_p95": {
+      "0": 13.928392350660319,
+      "1": 24.914820090393828,
+      "2": 84.02547677950645,
+      "3": 42.77511372396428,
+      "4": 120.0570897087539
+    },
+    "contacts": [
+      {
+        "tick": 2403,
+        "kind": "drone",
+        "owners": [
+          0,
+          4
+        ],
+        "points": [
+          [
+            635.2585889017862,
+            -213.68009862225733
+          ]
+        ]
+      },
+      {
+        "tick": 3308,
+        "kind": "drone",
+        "owners": [
+          3,
+          4
+        ],
+        "points": [
+          [
+            -516.4530474208206,
+            -144.7440241220767
+          ]
+        ]
+      }
+    ]
+  },
+  "cases": [
+    {
+      "owner": 0,
+      "tick": 75,
+      "gate": "G03",
+      "raw_access": 73,
+      "inflated_access": 40,
+      "free": 85,
+      "unknown": 3,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 47,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        93
+      ],
+      "task": {
+        "owner": 0,
+        "start": 75,
+        "end": 107,
+        "reason": "completed",
+        "duration": 33,
+        "new_cells": 2897,
+        "samples": 4,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -34.0,
+      "actual_signed_at_end": -51.078715194789524,
+      "nav_error": 6.904680983586365
+    },
+    {
+      "owner": 1,
+      "tick": 86,
+      "gate": "G05",
+      "raw_access": 89,
+      "inflated_access": 60,
+      "free": 86,
+      "unknown": 2,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 48,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        101
+      ],
+      "task": {
+        "owner": 1,
+        "start": 86,
+        "end": 115,
+        "reason": "completed",
+        "duration": 30,
+        "new_cells": 2891,
+        "samples": 4,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -73.0,
+      "actual_signed_at_end": -63.143376665399146,
+      "nav_error": 5.208702670071738
+    },
+    {
+      "owner": 3,
+      "tick": 108,
+      "gate": "G02",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 81,
+      "unknown": 8,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 41,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 108,
+        "end": 128,
+        "reason": "completed",
+        "duration": 21,
+        "new_cells": 257,
+        "samples": 3,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 62.0,
+      "actual_signed_at_end": -7.419587556327883,
+      "nav_error": 10.141665316647416
+    },
+    {
+      "owner": 4,
+      "tick": 119,
+      "gate": "G01",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 82,
+      "unknown": 6,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 38,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        143
+      ],
+      "task": {
+        "owner": 4,
+        "start": 119,
+        "end": 163,
+        "reason": "completed",
+        "duration": 45,
+        "new_cells": 714,
+        "samples": 6,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -91.0,
+      "actual_signed_at_end": -56.994759762570624,
+      "nav_error": 1.3949128975036031
+    },
+    {
+      "owner": 2,
+      "tick": 143,
+      "gate": "G01",
+      "raw_access": 73,
+      "inflated_access": 20,
+      "free": 58,
+      "unknown": 31,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 3,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 2,
+        "start": 143,
+        "end": 173,
+        "reason": "completed",
+        "duration": 31,
+        "new_cells": 2211,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 189.0,
+      "actual_signed_at_end": 38.18746812278876,
+      "nav_error": 5.960611397434042
+    },
+    {
+      "owner": 2,
+      "tick": 143,
+      "gate": "G02",
+      "raw_access": 89,
+      "inflated_access": 60,
+      "free": 85,
+      "unknown": 4,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 15,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 2,
+        "start": 143,
+        "end": 173,
+        "reason": "completed",
+        "duration": 31,
+        "new_cells": 2211,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -62.0,
+      "actual_signed_at_end": 11.67365467523814,
+      "nav_error": 5.960611397434042
+    },
+    {
+      "owner": 0,
+      "tick": 197,
+      "gate": "G03",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 80,
+      "unknown": 5,
+      "endpoints": 4,
+      "samples": 89,
+      "disc_clear": 40,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 197,
+        "end": 239,
+        "reason": "completed",
+        "duration": 43,
+        "new_cells": 1622,
+        "samples": 5,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 166.0,
+      "actual_signed_at_end": 155.30388641343262,
+      "nav_error": 4.9441065497428385
+    },
+    {
+      "owner": 0,
+      "tick": 329,
+      "gate": "G01",
+      "raw_access": 76,
+      "inflated_access": 40,
+      "free": 82,
+      "unknown": 7,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 46,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 3.3422809653764256
+    },
+    {
+      "owner": 0,
+      "tick": 369,
+      "gate": "G01",
+      "raw_access": 89,
+      "inflated_access": 60,
+      "free": 85,
+      "unknown": 2,
+      "endpoints": 2,
+      "samples": 89,
+      "disc_clear": 45,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [
+        376
+      ],
+      "task": {
+        "owner": 0,
+        "start": 369,
+        "end": 383,
+        "reason": "completed",
+        "duration": 15,
+        "new_cells": 117,
+        "samples": 1,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 111.0,
+      "actual_signed_at_end": 34.34334165793393,
+      "nav_error": 7.779877189077869
+    },
+    {
+      "owner": 4,
+      "tick": 408,
+      "gate": "G08",
+      "raw_access": 79,
+      "inflated_access": 40,
+      "free": 85,
+      "unknown": 4,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 46,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        439
+      ],
+      "task": {
+        "owner": 4,
+        "start": 408,
+        "end": 446,
+        "reason": "completed",
+        "duration": 39,
+        "new_cells": 3156,
+        "samples": 5,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -86.0,
+      "actual_signed_at_end": -35.20590436142788,
+      "nav_error": 4.532956759296516
+    },
+    {
+      "owner": 0,
+      "tick": 473,
+      "gate": "G04",
+      "raw_access": 89,
+      "inflated_access": 77,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 44,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 5.691297287261817
+    },
+    {
+      "owner": 0,
+      "tick": 513,
+      "gate": "G08",
+      "raw_access": 79,
+      "inflated_access": 59,
+      "free": 83,
+      "unknown": 6,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 43,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 5.202438071622465
+    },
+    {
+      "owner": 1,
+      "tick": 517,
+      "gate": "G05",
+      "raw_access": 76,
+      "inflated_access": 40,
+      "free": 83,
+      "unknown": 6,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 45,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        552
+      ],
+      "task": {
+        "owner": 1,
+        "start": 517,
+        "end": 563,
+        "reason": "completed",
+        "duration": 47,
+        "new_cells": 2,
+        "samples": 6,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -213.0,
+      "actual_signed_at_end": -53.26864841111186,
+      "nav_error": 2.9731639613263874
+    },
+    {
+      "owner": 0,
+      "tick": 553,
+      "gate": "G08",
+      "raw_access": 79,
+      "inflated_access": 40,
+      "free": 85,
+      "unknown": 4,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 46,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 553,
+        "end": 590,
+        "reason": "completed",
+        "duration": 38,
+        "new_cells": 334,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 266.0,
+      "actual_signed_at_end": 41.855700681494056,
+      "nav_error": 3.769255213526038
+    },
+    {
+      "owner": 4,
+      "tick": 616,
+      "gate": "G13",
+      "raw_access": 77,
+      "inflated_access": 40,
+      "free": 86,
+      "unknown": 2,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 48,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 4,
+        "start": 616,
+        "end": 649,
+        "reason": "completed",
+        "duration": 34,
+        "new_cells": 2095,
+        "samples": 5,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 64.0,
+      "actual_signed_at_end": -0.3629106805771869,
+      "nav_error": 5.043745271980523
+    },
+    {
+      "owner": 1,
+      "tick": 660,
+      "gate": "G05",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 85,
+      "unknown": 4,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 44,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 1,
+        "start": 660,
+        "end": 672,
+        "reason": "completed",
+        "duration": 13,
+        "new_cells": 4,
+        "samples": 2,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 13.0,
+      "actual_signed_at_end": -5.345098366513286,
+      "nav_error": 4.263385985149814
+    },
+    {
+      "owner": 3,
+      "tick": 707,
+      "gate": "G06",
+      "raw_access": 89,
+      "inflated_access": 45,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 46,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 707,
+        "end": 780,
+        "reason": "completed",
+        "duration": 74,
+        "new_cells": 3119,
+        "samples": 9,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -29.0,
+      "actual_signed_at_end": 0.9777321147640805,
+      "nav_error": 30.953815355300076
+    },
+    {
+      "owner": 3,
+      "tick": 707,
+      "gate": "G07",
+      "raw_access": 68,
+      "inflated_access": 48,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 46,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 707,
+        "end": 780,
+        "reason": "completed",
+        "duration": 74,
+        "new_cells": 3119,
+        "samples": 9,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 221.0,
+      "actual_signed_at_end": 191.02226788523592,
+      "nav_error": 30.953815355300076
+    },
+    {
+      "owner": 0,
+      "tick": 720,
+      "gate": "G13",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 31,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 720,
+        "end": 756,
+        "reason": "completed",
+        "duration": 37,
+        "new_cells": 2607,
+        "samples": 5,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -156.0,
+      "actual_signed_at_end": 22.783094008859962,
+      "nav_error": 5.008726392722162
+    },
+    {
+      "owner": 1,
+      "tick": 769,
+      "gate": "G03",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 80,
+      "unknown": 7,
+      "endpoints": 2,
+      "samples": 89,
+      "disc_clear": 30,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 1,
+        "start": 769,
+        "end": 797,
+        "reason": "completed",
+        "duration": 29,
+        "new_cells": 1,
+        "samples": 3,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -54.0,
+      "actual_signed_at_end": 41.95118752790769,
+      "nav_error": 2.272928799092962
+    },
+    {
+      "owner": 0,
+      "tick": 846,
+      "gate": "G09",
+      "raw_access": 0,
+      "inflated_access": 0,
+      "free": 0,
+      "unknown": 89,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 846,
+        "end": 909,
+        "reason": "completed",
+        "duration": 64,
+        "new_cells": 1,
+        "samples": 8,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 155.0,
+      "actual_signed_at_end": 50.34963935402334,
+      "nav_error": 12.518813486803985
+    },
+    {
+      "owner": 4,
+      "tick": 871,
+      "gate": "G06",
+      "raw_access": 85,
+      "inflated_access": 60,
+      "free": 83,
+      "unknown": 6,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 47,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 4,
+        "start": 871,
+        "end": 899,
+        "reason": "completed",
+        "duration": 29,
+        "new_cells": 1951,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -171.0,
+      "actual_signed_at_end": -9.952858256577542,
+      "nav_error": 4.988501358560134
+    },
+    {
+      "owner": 2,
+      "tick": 958,
+      "gate": "G02",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 44,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 2,
+        "start": 958,
+        "end": 980,
+        "reason": "completed",
+        "duration": 23,
+        "new_cells": 1,
+        "samples": 3,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 102.0,
+      "actual_signed_at_end": 17.085191046144303,
+      "nav_error": 2.2808481007351626
+    },
+    {
+      "owner": 0,
+      "tick": 999,
+      "gate": "G12",
+      "raw_access": 69,
+      "inflated_access": 40,
+      "free": 83,
+      "unknown": 4,
+      "endpoints": 2,
+      "samples": 89,
+      "disc_clear": 43,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        1033
+      ],
+      "task": {
+        "owner": 0,
+        "start": 999,
+        "end": 1041,
+        "reason": "completed",
+        "duration": 43,
+        "new_cells": 144,
+        "samples": 6,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 253.0,
+      "actual_signed_at_end": -30.96556013022851,
+      "nav_error": 7.171536273326069
+    },
+    {
+      "owner": 4,
+      "tick": 1017,
+      "gate": "G07",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 85,
+      "unknown": 4,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 47,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 14.517323221232418
+    },
+    {
+      "owner": 4,
+      "tick": 1069,
+      "gate": "G07",
+      "raw_access": 48,
+      "inflated_access": 20,
+      "free": 84,
+      "unknown": 2,
+      "endpoints": 3,
+      "samples": 89,
+      "disc_clear": 43,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 4,
+        "start": 1069,
+        "end": 1109,
+        "reason": "completed",
+        "duration": 41,
+        "new_cells": 485,
+        "samples": 5,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -1.0,
+      "actual_signed_at_end": 44.379123845610366,
+      "nav_error": 19.26910349533427
+    },
+    {
+      "owner": 0,
+      "tick": 1131,
+      "gate": "G12",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 83,
+      "unknown": 6,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 44,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 1131,
+        "end": 1185,
+        "reason": "completed",
+        "duration": 55,
+        "new_cells": 5,
+        "samples": 7,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 467.0,
+      "actual_signed_at_end": 185.57014837510644,
+      "nav_error": 1.032289366948672
+    },
+    {
+      "owner": 0,
+      "tick": 1131,
+      "gate": "G13",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 76,
+      "unknown": 13,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 27,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 1131,
+        "end": 1185,
+        "reason": "completed",
+        "duration": 55,
+        "new_cells": 5,
+        "samples": 7,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -264.0,
+      "actual_signed_at_end": 17.42985162489356,
+      "nav_error": 1.032289366948672
+    },
+    {
+      "owner": 4,
+      "tick": 1227,
+      "gate": "G07",
+      "raw_access": 48,
+      "inflated_access": 20,
+      "free": 81,
+      "unknown": 8,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 41,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 4,
+        "start": 1227,
+        "end": 1280,
+        "reason": "fresh_scan_obstructed",
+        "duration": 54,
+        "new_cells": 4,
+        "samples": 7,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 139.0,
+      "actual_signed_at_end": 71.43665624671348,
+      "nav_error": 14.974406129846916
+    },
+    {
+      "owner": 3,
+      "tick": 1299,
+      "gate": "G06",
+      "raw_access": 45,
+      "inflated_access": 20,
+      "free": 85,
+      "unknown": 3,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 45,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 8.495580131194469
+    },
+    {
+      "owner": 3,
+      "tick": 1348,
+      "gate": "G06",
+      "raw_access": 80,
+      "inflated_access": 40,
+      "free": 81,
+      "unknown": 8,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 42,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 7.979166394078938
+    },
+    {
+      "owner": 3,
+      "tick": 1397,
+      "gate": "G06",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 45,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        1423
+      ],
+      "task": {
+        "owner": 3,
+        "start": 1397,
+        "end": 1423,
+        "reason": "completed",
+        "duration": 27,
+        "new_cells": 16,
+        "samples": 3,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -471.0,
+      "actual_signed_at_end": -18.157102822806223,
+      "nav_error": 13.331550763791403
+    },
+    {
+      "owner": 4,
+      "tick": 1398,
+      "gate": "G07",
+      "raw_access": 48,
+      "inflated_access": 28,
+      "free": 84,
+      "unknown": 4,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 46,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        1416
+      ],
+      "task": {
+        "owner": 4,
+        "start": 1398,
+        "end": 1434,
+        "reason": "completed",
+        "duration": 37,
+        "new_cells": 0,
+        "samples": 5,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -19.0,
+      "actual_signed_at_end": -61.50033560460486,
+      "nav_error": 36.75016908700657
+    },
+    {
+      "owner": 3,
+      "tick": 1534,
+      "gate": "G07",
+      "raw_access": 28,
+      "inflated_access": 8,
+      "free": 83,
+      "unknown": 5,
+      "endpoints": 1,
+      "samples": 89,
+      "disc_clear": 47,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 1534,
+        "end": 1543,
+        "reason": "completed",
+        "duration": 10,
+        "new_cells": 0,
+        "samples": 1,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 119.0,
+      "actual_signed_at_end": 91.86922658964272,
+      "nav_error": 46.988504263961595
+    },
+    {
+      "owner": 2,
+      "tick": 1562,
+      "gate": "G02",
+      "raw_access": 60,
+      "inflated_access": 20,
+      "free": 84,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 89,
+      "disc_clear": 45,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [
+        1583
+      ],
+      "task": {
+        "owner": 2,
+        "start": 1562,
+        "end": 1598,
+        "reason": "completed",
+        "duration": 37,
+        "new_cells": 35,
+        "samples": 4,
+        "cross": 1,
+        "contacts": 0
+      },
+      "parent_signed_at_end": -358.0,
+      "actual_signed_at_end": -58.95058207734684,
+      "nav_error": 4.110251406101165
+    }
+  ],
+  "crosses": [
+    {
+      "owner": 0,
+      "gate": "G01",
+      "tick": 376,
+      "side": -1,
+      "task": 369,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G03",
+      "tick": 93,
+      "side": 1,
+      "task": 75,
+      "recross_in_200": 77
+    },
+    {
+      "owner": 0,
+      "gate": "G03",
+      "tick": 170,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G04",
+      "tick": 418,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 539,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 1313,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 1719,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 2109,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 183
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 2292,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 3180,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G08",
+      "tick": 3684,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G09",
+      "tick": 2572,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 104
+    },
+    {
+      "owner": 0,
+      "gate": "G09",
+      "tick": 2676,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G09",
+      "tick": 3973,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 79
+    },
+    {
+      "owner": 0,
+      "gate": "G09",
+      "tick": 4052,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 37
+    },
+    {
+      "owner": 0,
+      "gate": "G09",
+      "tick": 4089,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 72
+    },
+    {
+      "owner": 0,
+      "gate": "G09",
+      "tick": 4161,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G10",
+      "tick": 2714,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G10",
+      "tick": 3054,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G10",
+      "tick": 3862,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 75
+    },
+    {
+      "owner": 0,
+      "gate": "G10",
+      "tick": 3937,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G10",
+      "tick": 4197,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G11",
+      "tick": 2751,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 186
+    },
+    {
+      "owner": 0,
+      "gate": "G11",
+      "tick": 2937,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 959,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 74
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 1033,
+      "side": -1,
+      "task": 999,
+      "recross_in_200": 29
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 1062,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 37
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 1099,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 1883,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 56
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 1939,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 2505,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 3085,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G12",
+      "tick": 3827,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 816,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 1196,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 1851,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 148
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 1999,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 2352,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 3118,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 0,
+      "gate": "G13",
+      "tick": 3793,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G01",
+      "tick": 1373,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G01",
+      "tick": 1638,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G02",
+      "tick": 2710,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G02",
+      "tick": 3619,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G02",
+      "tick": 3824,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 182
+    },
+    {
+      "owner": 1,
+      "gate": "G02",
+      "tick": 4006,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 270,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 814,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 28
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 842,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 2105,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 154
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 2259,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 63
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 2322,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 51
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 2373,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G03",
+      "tick": 2534,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G04",
+      "tick": 1445,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 29
+    },
+    {
+      "owner": 1,
+      "gate": "G04",
+      "tick": 1474,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 101,
+      "side": 1,
+      "task": 86,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 552,
+      "side": 1,
+      "task": 517,
+      "recross_in_200": 129
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 681,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 1056,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 139
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 1195,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 1727,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 126
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 1853,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 1,
+      "gate": "G05",
+      "tick": 2467,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G01",
+      "tick": 1990,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 183,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 1583,
+      "side": 1,
+      "task": 1562,
+      "recross_in_200": 76
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 1659,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 1900,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 2783,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 107
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 2890,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 102
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 2992,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 3400,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G02",
+      "tick": 4057,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 2,
+      "gate": "G05",
+      "tick": 3129,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 137
+    },
+    {
+      "owner": 2,
+      "gate": "G05",
+      "tick": 3266,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G02",
+      "tick": 39,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G02",
+      "tick": 4177,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G06",
+      "tick": 787,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G06",
+      "tick": 1423,
+      "side": -1,
+      "task": 1397,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G06",
+      "tick": 3816,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 157
+    },
+    {
+      "owner": 3,
+      "gate": "G06",
+      "tick": 3973,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G07",
+      "tick": 632,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G07",
+      "tick": 1490,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 3,
+      "gate": "G07",
+      "tick": 3593,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 23
+    },
+    {
+      "owner": 3,
+      "gate": "G07",
+      "tick": 3616,
+      "side": -1,
+      "task": null,
+      "recross_in_200": 129
+    },
+    {
+      "owner": 3,
+      "gate": "G07",
+      "tick": 3745,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G01",
+      "tick": 143,
+      "side": -1,
+      "task": 119,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G01",
+      "tick": 1932,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G02",
+      "tick": 1872,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G02",
+      "tick": 3747,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G03",
+      "tick": 3845,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 111
+    },
+    {
+      "owner": 4,
+      "gate": "G03",
+      "tick": 3956,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G04",
+      "tick": 325,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G04",
+      "tick": 1979,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G06",
+      "tick": 902,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G06",
+      "tick": 2901,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G07",
+      "tick": 936,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G07",
+      "tick": 1346,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 70
+    },
+    {
+      "owner": 4,
+      "gate": "G07",
+      "tick": 1416,
+      "side": -1,
+      "task": 1398,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G07",
+      "tick": 3056,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G08",
+      "tick": 439,
+      "side": 1,
+      "task": 408,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G08",
+      "tick": 719,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G08",
+      "tick": 2340,
+      "side": 1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G08",
+      "tick": 2558,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G13",
+      "tick": 2402,
+      "side": 1,
+      "task": null,
+      "recross_in_200": 37
+    },
+    {
+      "owner": 4,
+      "gate": "G13",
+      "tick": 2439,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    }
+  ],
+  "tasks": [
+    {
+      "owner": 0,
+      "start": 75,
+      "end": 107,
+      "reason": "completed",
+      "duration": 33,
+      "new_cells": 2897,
+      "samples": 4,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 197,
+      "end": 239,
+      "reason": "completed",
+      "duration": 43,
+      "new_cells": 1622,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 369,
+      "end": 383,
+      "reason": "completed",
+      "duration": 15,
+      "new_cells": 117,
+      "samples": 1,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 553,
+      "end": 590,
+      "reason": "completed",
+      "duration": 38,
+      "new_cells": 334,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 720,
+      "end": 756,
+      "reason": "completed",
+      "duration": 37,
+      "new_cells": 2607,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 846,
+      "end": 909,
+      "reason": "completed",
+      "duration": 64,
+      "new_cells": 1,
+      "samples": 8,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 999,
+      "end": 1041,
+      "reason": "completed",
+      "duration": 43,
+      "new_cells": 144,
+      "samples": 6,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 1131,
+      "end": 1185,
+      "reason": "completed",
+      "duration": 55,
+      "new_cells": 5,
+      "samples": 7,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 86,
+      "end": 115,
+      "reason": "completed",
+      "duration": 30,
+      "new_cells": 2891,
+      "samples": 4,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 212,
+      "end": 247,
+      "reason": "completed",
+      "duration": 36,
+      "new_cells": 4,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 387,
+      "end": 420,
+      "reason": "completed",
+      "duration": 34,
+      "new_cells": 20,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 517,
+      "end": 563,
+      "reason": "completed",
+      "duration": 47,
+      "new_cells": 2,
+      "samples": 6,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 660,
+      "end": 672,
+      "reason": "completed",
+      "duration": 13,
+      "new_cells": 4,
+      "samples": 2,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 769,
+      "end": 797,
+      "reason": "completed",
+      "duration": 29,
+      "new_cells": 1,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 980,
+      "end": 1008,
+      "reason": "completed",
+      "duration": 29,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 1105,
+      "end": 1139,
+      "reason": "completed",
+      "duration": 35,
+      "new_cells": 3,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 143,
+      "end": 173,
+      "reason": "completed",
+      "duration": 31,
+      "new_cells": 2211,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 277,
+      "end": 283,
+      "reason": "inertial_risk",
+      "duration": 7,
+      "new_cells": 109,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 387,
+      "end": 417,
+      "reason": "completed",
+      "duration": 31,
+      "new_cells": 933,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 521,
+      "end": 539,
+      "reason": "completed",
+      "duration": 19,
+      "new_cells": 157,
+      "samples": 2,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 827,
+      "end": 854,
+      "reason": "completed",
+      "duration": 28,
+      "new_cells": 0,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 958,
+      "end": 980,
+      "reason": "completed",
+      "duration": 23,
+      "new_cells": 1,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 1222,
+      "end": 1228,
+      "reason": "completed",
+      "duration": 7,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 1562,
+      "end": 1598,
+      "reason": "completed",
+      "duration": 37,
+      "new_cells": 35,
+      "samples": 4,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 108,
+      "end": 128,
+      "reason": "completed",
+      "duration": 21,
+      "new_cells": 257,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 582,
+      "end": 596,
+      "reason": "completed",
+      "duration": 15,
+      "new_cells": 269,
+      "samples": 2,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 707,
+      "end": 780,
+      "reason": "completed",
+      "duration": 74,
+      "new_cells": 3119,
+      "samples": 9,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 891,
+      "end": 943,
+      "reason": "fresh_scan_obstructed",
+      "duration": 53,
+      "new_cells": 39,
+      "samples": 6,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 1397,
+      "end": 1423,
+      "reason": "completed",
+      "duration": 27,
+      "new_cells": 16,
+      "samples": 3,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 1534,
+      "end": 1543,
+      "reason": "completed",
+      "duration": 10,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 1899,
+      "end": 1950,
+      "reason": "completed",
+      "duration": 52,
+      "new_cells": 5,
+      "samples": 6,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 2061,
+      "end": 2108,
+      "reason": "fresh_scan_obstructed",
+      "duration": 48,
+      "new_cells": 6,
+      "samples": 6,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 119,
+      "end": 163,
+      "reason": "completed",
+      "duration": 45,
+      "new_cells": 714,
+      "samples": 6,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 281,
+      "end": 290,
+      "reason": "completed",
+      "duration": 10,
+      "new_cells": 117,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 408,
+      "end": 446,
+      "reason": "completed",
+      "duration": 39,
+      "new_cells": 3156,
+      "samples": 5,
+      "cross": 1,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 616,
+      "end": 649,
+      "reason": "completed",
+      "duration": 34,
+      "new_cells": 2095,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 871,
+      "end": 899,
+      "reason": "completed",
+      "duration": 29,
+      "new_cells": 1951,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 1069,
+      "end": 1109,
+      "reason": "completed",
+      "duration": 41,
+      "new_cells": 485,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 1227,
+      "end": 1280,
+      "reason": "fresh_scan_obstructed",
+      "duration": 54,
+      "new_cells": 4,
+      "samples": 7,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 1398,
+      "end": 1434,
+      "reason": "completed",
+      "duration": 37,
+      "new_cells": 0,
+      "samples": 5,
+      "cross": 1,
+      "contacts": 0
+    }
+  ]
+}

@@ -1,0 +1,1365 @@
+{
+  "stats": {
+    "initial": 73,
+    "repair": 18,
+    "replayed": 17,
+    "exits": {
+      "completed": 30,
+      "fresh_scan_obstructed": 2,
+      "peer_wait_budget": 2,
+      "mission_preempted": 4,
+      "inertial_risk": 2
+    },
+    "pos_p95": {
+      "0": 11.512442228754686,
+      "1": 11.007726350164099,
+      "2": 11.304096172645204,
+      "3": 11.526270917440026,
+      "4": 11.459236238140589
+    },
+    "contacts": [
+      {
+        "tick": 161,
+        "kind": "drone",
+        "owners": [
+          1,
+          3
+        ],
+        "points": [
+          [
+            -646.3443673345218,
+            484.9894999588696
+          ]
+        ]
+      },
+      {
+        "tick": 325,
+        "kind": "drone",
+        "owners": [
+          1,
+          3
+        ],
+        "points": [
+          [
+            -557.8705739120757,
+            249.02222275806517
+          ],
+          [
+            -558.5909639262429,
+            249.20576907490297
+          ]
+        ]
+      },
+      {
+        "tick": 479,
+        "kind": "drone",
+        "owners": [
+          1,
+          4
+        ],
+        "points": [
+          [
+            -543.1162961939841,
+            434.6346799559299
+          ]
+        ]
+      },
+      {
+        "tick": 586,
+        "kind": "drone",
+        "owners": [
+          1,
+          2
+        ],
+        "points": [
+          [
+            -655.6548112235216,
+            381.9436135230673
+          ]
+        ]
+      },
+      {
+        "tick": 614,
+        "kind": "drone",
+        "owners": [
+          1,
+          3
+        ],
+        "points": [
+          [
+            -517.0201758661393,
+            336.2370718870318
+          ]
+        ]
+      },
+      {
+        "tick": 970,
+        "kind": "drone",
+        "owners": [
+          3,
+          4
+        ],
+        "points": [
+          [
+            -583.6452566422031,
+            215.98381091152743
+          ]
+        ]
+      },
+      {
+        "tick": 1093,
+        "kind": "drone",
+        "owners": [
+          0,
+          1
+        ],
+        "points": [
+          [
+            -578.0857181226203,
+            335.2470982572814
+          ]
+        ]
+      },
+      {
+        "tick": 1144,
+        "kind": "drone",
+        "owners": [
+          1,
+          3
+        ],
+        "points": [
+          [
+            -487.55497849811707,
+            333.65118695104513
+          ]
+        ]
+      },
+      {
+        "tick": 1294,
+        "kind": "drone",
+        "owners": [
+          2,
+          4
+        ],
+        "points": [
+          [
+            -608.3147858874631,
+            344.82741356177604
+          ],
+          [
+            -611.3435351244714,
+            347.87995259825715
+          ]
+        ]
+      },
+      {
+        "tick": 1397,
+        "kind": "drone",
+        "owners": [
+          0,
+          2
+        ],
+        "points": [
+          [
+            -460.02704528061173,
+            477.54845661648153
+          ]
+        ]
+      },
+      {
+        "tick": 1635,
+        "kind": "drone",
+        "owners": [
+          1,
+          4
+        ],
+        "points": [
+          [
+            -400.42211861645393,
+            489.77083425405266
+          ]
+        ]
+      },
+      {
+        "tick": 1741,
+        "kind": "drone",
+        "owners": [
+          0,
+          4
+        ],
+        "points": [
+          [
+            -444.7238477003108,
+            472.1518358877181
+          ]
+        ]
+      },
+      {
+        "tick": 1811,
+        "kind": "drone",
+        "owners": [
+          0,
+          3
+        ],
+        "points": [
+          [
+            -503.731023333435,
+            421.50556959442855
+          ]
+        ]
+      },
+      {
+        "tick": 1938,
+        "kind": "drone",
+        "owners": [
+          0,
+          4
+        ],
+        "points": [
+          [
+            -484.5027954212541,
+            408.8270036515038
+          ]
+        ]
+      },
+      {
+        "tick": 1953,
+        "kind": "drone",
+        "owners": [
+          0,
+          1
+        ],
+        "points": [
+          [
+            -515.2539193337639,
+            378.1164815263021
+          ]
+        ]
+      },
+      {
+        "tick": 2152,
+        "kind": "drone",
+        "owners": [
+          0,
+          1
+        ],
+        "points": [
+          [
+            -532.5832284014899,
+            310.0157496663705
+          ]
+        ]
+      },
+      {
+        "tick": 2157,
+        "kind": "drone",
+        "owners": [
+          0,
+          4
+        ],
+        "points": [
+          [
+            -537.6856246448256,
+            343.43495649853264
+          ]
+        ]
+      },
+      {
+        "tick": 2309,
+        "kind": "drone",
+        "owners": [
+          3,
+          4
+        ],
+        "points": [
+          [
+            -476.4659665547004,
+            454.64319487715414
+          ]
+        ]
+      },
+      {
+        "tick": 2489,
+        "kind": "drone",
+        "owners": [
+          1,
+          3
+        ],
+        "points": [
+          [
+            -483.5409728650106,
+            403.9698071780672
+          ]
+        ]
+      },
+      {
+        "tick": 2501,
+        "kind": "drone",
+        "owners": [
+          2,
+          4
+        ],
+        "points": [
+          [
+            -523.360257420513,
+            335.142366165909
+          ],
+          [
+            -520.1356552376607,
+            332.4637757835605
+          ]
+        ]
+      },
+      {
+        "tick": 3027,
+        "kind": "drone",
+        "owners": [
+          1,
+          3
+        ],
+        "points": [
+          [
+            -665.5606110036365,
+            453.19490908038233
+          ]
+        ]
+      },
+      {
+        "tick": 3096,
+        "kind": "drone",
+        "owners": [
+          1,
+          2
+        ],
+        "points": [
+          [
+            -733.277949649792,
+            317.318725803558
+          ],
+          [
+            -733.1128414614399,
+            317.4262610999027
+          ]
+        ]
+      },
+      {
+        "tick": 3118,
+        "kind": "drone",
+        "owners": [
+          0,
+          3
+        ],
+        "points": [
+          [
+            -508.49980299039294,
+            300.21995646777117
+          ]
+        ]
+      },
+      {
+        "tick": 3167,
+        "kind": "drone",
+        "owners": [
+          0,
+          1
+        ],
+        "points": [
+          [
+            -612.9581131369953,
+            329.3475041901261
+          ],
+          [
+            -612.5992912097546,
+            329.5877353601235
+          ]
+        ]
+      },
+      {
+        "tick": 3343,
+        "kind": "drone",
+        "owners": [
+          0,
+          2
+        ],
+        "points": [
+          [
+            -463.54727227349474,
+            379.39238004203355
+          ],
+          [
+            -460.74626976638586,
+            379.78385781051463
+          ]
+        ]
+      },
+      {
+        "tick": 3533,
+        "kind": "drone",
+        "owners": [
+          2,
+          3
+        ],
+        "points": [
+          [
+            -476.788480214614,
+            382.2273485495647
+          ]
+        ]
+      },
+      {
+        "tick": 3557,
+        "kind": "drone",
+        "owners": [
+          0,
+          3
+        ],
+        "points": [
+          [
+            -590.7140191206682,
+            311.9322048540704
+          ]
+        ]
+      },
+      {
+        "tick": 3605,
+        "kind": "drone",
+        "owners": [
+          0,
+          1
+        ],
+        "points": [
+          [
+            -401.038014589643,
+            319.1771586100144
+          ]
+        ]
+      },
+      {
+        "tick": 3819,
+        "kind": "drone",
+        "owners": [
+          0,
+          3
+        ],
+        "points": [
+          [
+            -484.79041316391795,
+            350.89226279974764
+          ]
+        ]
+      }
+    ]
+  },
+  "cases": [
+    {
+      "owner": 2,
+      "tick": 143,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 49,
+      "unknown": 8,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 2,
+        "start": 143,
+        "end": 202,
+        "reason": "completed",
+        "duration": 60,
+        "new_cells": 2846,
+        "samples": 8,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 353.0,
+      "actual_signed_at_end": 16.950231609925794,
+      "nav_error": 0.6722083943089644
+    },
+    {
+      "owner": 4,
+      "tick": 189,
+      "gate": "G01",
+      "raw_access": 49,
+      "inflated_access": 20,
+      "free": 22,
+      "unknown": 35,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 3.8155680711057163
+    },
+    {
+      "owner": 1,
+      "tick": 349,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 51,
+      "unknown": 6,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 5,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 1,
+        "start": 349,
+        "end": 376,
+        "reason": "completed",
+        "duration": 28,
+        "new_cells": 108,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 93.0,
+      "actual_signed_at_end": 47.97829694613577,
+      "nav_error": 6.177641254182352
+    },
+    {
+      "owner": 3,
+      "tick": 364,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 45,
+      "unknown": 12,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 4.635556836536944
+    },
+    {
+      "owner": 2,
+      "tick": 459,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 54,
+      "unknown": 3,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 9,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 2,
+        "start": 459,
+        "end": 488,
+        "reason": "completed",
+        "duration": 30,
+        "new_cells": 53,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 373.0,
+      "actual_signed_at_end": 55.06608434640654,
+      "nav_error": 6.920291369111913
+    },
+    {
+      "owner": 0,
+      "tick": 490,
+      "gate": "G01",
+      "raw_access": 48,
+      "inflated_access": 0,
+      "free": 54,
+      "unknown": 2,
+      "endpoints": 1,
+      "samples": 57,
+      "disc_clear": 18,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 490,
+        "end": 524,
+        "reason": "fresh_scan_obstructed",
+        "duration": 35,
+        "new_cells": 2019,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 53.0,
+      "actual_signed_at_end": 9.08073951648646,
+      "nav_error": 9.89551062192785
+    },
+    {
+      "owner": 3,
+      "tick": 553,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 52,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 2,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 553,
+        "end": 582,
+        "reason": "peer_wait_budget",
+        "duration": 30,
+        "new_cells": 6,
+        "samples": 3,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 213.0,
+      "actual_signed_at_end": 75.2467444270483,
+      "nav_error": 1.4293189245849767
+    },
+    {
+      "owner": 1,
+      "tick": 746,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 53,
+      "unknown": 2,
+      "endpoints": 2,
+      "samples": 57,
+      "disc_clear": 12,
+      "candidate": true,
+      "pick": true,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 1,
+        "start": 746,
+        "end": 758,
+        "reason": "fresh_scan_obstructed",
+        "duration": 13,
+        "new_cells": 288,
+        "samples": 1,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 53.0,
+      "actual_signed_at_end": 35.396367346916946,
+      "nav_error": 12.407221919936708
+    },
+    {
+      "owner": 0,
+      "tick": 826,
+      "gate": "G01",
+      "raw_access": 20,
+      "inflated_access": 0,
+      "free": 49,
+      "unknown": 8,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 10,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 6.789169003765576
+    },
+    {
+      "owner": 1,
+      "tick": 855,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 37,
+      "unknown": 20,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 1.4013982994700596
+    },
+    {
+      "owner": 0,
+      "tick": 866,
+      "gate": "G01",
+      "raw_access": 28,
+      "inflated_access": 0,
+      "free": 54,
+      "unknown": 3,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 16,
+      "candidate": true,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 0,
+        "start": 866,
+        "end": 897,
+        "reason": "completed",
+        "duration": 32,
+        "new_cells": 1,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 273.0,
+      "actual_signed_at_end": 17.33258093360911,
+      "nav_error": 6.693137581322009
+    },
+    {
+      "owner": 2,
+      "tick": 872,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 53,
+      "unknown": 4,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 14,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 4.12564092770154
+    },
+    {
+      "owner": 3,
+      "tick": 969,
+      "gate": "G01",
+      "raw_access": 20,
+      "inflated_access": 0,
+      "free": 52,
+      "unknown": 4,
+      "endpoints": 1,
+      "samples": 57,
+      "disc_clear": 8,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 969,
+        "end": 969,
+        "reason": "inertial_risk",
+        "duration": 1,
+        "new_cells": 0,
+        "samples": 0,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 53.0,
+      "actual_signed_at_end": 71.22841310828517,
+      "nav_error": 7.1354851562772295
+    },
+    {
+      "owner": 4,
+      "tick": 1016,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 47,
+      "unknown": 10,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 4,
+        "start": 1016,
+        "end": 1039,
+        "reason": "completed",
+        "duration": 24,
+        "new_cells": 2,
+        "samples": 3,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 73.0,
+      "actual_signed_at_end": 36.19809032057634,
+      "nav_error": 5.237165714143443
+    },
+    {
+      "owner": 3,
+      "tick": 1080,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 52,
+      "unknown": 5,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 8,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 3,
+        "start": 1080,
+        "end": 1093,
+        "reason": "completed",
+        "duration": 14,
+        "new_cells": 9,
+        "samples": 2,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 13.0,
+      "actual_signed_at_end": 42.41801326545112,
+      "nav_error": 6.829383538051885
+    },
+    {
+      "owner": 4,
+      "tick": 1209,
+      "gate": "G01",
+      "raw_access": 40,
+      "inflated_access": 0,
+      "free": 54,
+      "unknown": 2,
+      "endpoints": 1,
+      "samples": 57,
+      "disc_clear": 14,
+      "candidate": false,
+      "pick": false,
+      "reason": "passable",
+      "cross_ticks": [],
+      "task": {
+        "owner": 4,
+        "start": 1209,
+        "end": 1247,
+        "reason": "completed",
+        "duration": 39,
+        "new_cells": 276,
+        "samples": 4,
+        "cross": 0,
+        "contacts": 0
+      },
+      "parent_signed_at_end": 153.0,
+      "actual_signed_at_end": 16.586404009391856,
+      "nav_error": 4.342916201688275
+    },
+    {
+      "owner": 4,
+      "tick": 1365,
+      "gate": "G01",
+      "raw_access": 20,
+      "inflated_access": 0,
+      "free": 43,
+      "unknown": 14,
+      "endpoints": 0,
+      "samples": 57,
+      "disc_clear": 0,
+      "candidate": false,
+      "pick": false,
+      "reason": "no_observed_narrow_route",
+      "cross_ticks": [],
+      "task": null,
+      "parent_signed_at_end": null,
+      "actual_signed_at_end": null,
+      "nav_error": 10.609718202285453
+    }
+  ],
+  "crosses": [
+    {
+      "owner": 4,
+      "gate": "G01",
+      "tick": 2679,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    },
+    {
+      "owner": 4,
+      "gate": "G05",
+      "tick": 2751,
+      "side": -1,
+      "task": null,
+      "recross_in_200": null
+    }
+  ],
+  "tasks": [
+    {
+      "owner": 0,
+      "start": 75,
+      "end": 77,
+      "reason": "completed",
+      "duration": 3,
+      "new_cells": 0,
+      "samples": 0,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 167,
+      "end": 201,
+      "reason": "completed",
+      "duration": 35,
+      "new_cells": 12,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 291,
+      "end": 320,
+      "reason": "completed",
+      "duration": 30,
+      "new_cells": 35,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 490,
+      "end": 524,
+      "reason": "fresh_scan_obstructed",
+      "duration": 35,
+      "new_cells": 2019,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 614,
+      "end": 622,
+      "reason": "peer_wait_budget",
+      "duration": 9,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 712,
+      "end": 736,
+      "reason": "completed",
+      "duration": 25,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 866,
+      "end": 897,
+      "reason": "completed",
+      "duration": 32,
+      "new_cells": 1,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 0,
+      "start": 987,
+      "end": 1016,
+      "reason": "completed",
+      "duration": 30,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 86,
+      "end": 115,
+      "reason": "completed",
+      "duration": 30,
+      "new_cells": 4,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 212,
+      "end": 252,
+      "reason": "completed",
+      "duration": 41,
+      "new_cells": 164,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 349,
+      "end": 376,
+      "reason": "completed",
+      "duration": 28,
+      "new_cells": 108,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 645,
+      "end": 649,
+      "reason": "completed",
+      "duration": 5,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 746,
+      "end": 758,
+      "reason": "fresh_scan_obstructed",
+      "duration": 13,
+      "new_cells": 288,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 898,
+      "end": 925,
+      "reason": "completed",
+      "duration": 28,
+      "new_cells": 0,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 1212,
+      "end": 1237,
+      "reason": "completed",
+      "duration": 26,
+      "new_cells": 0,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 1,
+      "start": 1377,
+      "end": 1400,
+      "reason": "completed",
+      "duration": 24,
+      "new_cells": 0,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 143,
+      "end": 202,
+      "reason": "completed",
+      "duration": 60,
+      "new_cells": 2846,
+      "samples": 8,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 352,
+      "end": 355,
+      "reason": "mission_preempted",
+      "duration": 4,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 459,
+      "end": 488,
+      "reason": "completed",
+      "duration": 30,
+      "new_cells": 53,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 748,
+      "end": 768,
+      "reason": "completed",
+      "duration": 21,
+      "new_cells": 0,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 918,
+      "end": 948,
+      "reason": "completed",
+      "duration": 31,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 1052,
+      "end": 1063,
+      "reason": "mission_preempted",
+      "duration": 12,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 1213,
+      "end": 1232,
+      "reason": "completed",
+      "duration": 20,
+      "new_cells": 0,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 2,
+      "start": 1382,
+      "end": 1391,
+      "reason": "mission_preempted",
+      "duration": 10,
+      "new_cells": 0,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 243,
+      "end": 253,
+      "reason": "completed",
+      "duration": 11,
+      "new_cells": 13,
+      "samples": 1,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 413,
+      "end": 442,
+      "reason": "completed",
+      "duration": 30,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 553,
+      "end": 582,
+      "reason": "peer_wait_budget",
+      "duration": 30,
+      "new_cells": 6,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 693,
+      "end": 711,
+      "reason": "completed",
+      "duration": 19,
+      "new_cells": 0,
+      "samples": 2,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 969,
+      "end": 969,
+      "reason": "inertial_risk",
+      "duration": 1,
+      "new_cells": 0,
+      "samples": 0,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 1080,
+      "end": 1093,
+      "reason": "completed",
+      "duration": 14,
+      "new_cells": 9,
+      "samples": 2,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 1211,
+      "end": 1215,
+      "reason": "completed",
+      "duration": 5,
+      "new_cells": 0,
+      "samples": 0,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 3,
+      "start": 1375,
+      "end": 1409,
+      "reason": "completed",
+      "duration": 35,
+      "new_cells": 10,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 241,
+      "end": 283,
+      "reason": "completed",
+      "duration": 43,
+      "new_cells": 374,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 401,
+      "end": 432,
+      "reason": "completed",
+      "duration": 32,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 550,
+      "end": 585,
+      "reason": "mission_preempted",
+      "duration": 36,
+      "new_cells": 0,
+      "samples": 5,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 703,
+      "end": 747,
+      "reason": "completed",
+      "duration": 45,
+      "new_cells": 1,
+      "samples": 6,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 865,
+      "end": 898,
+      "reason": "completed",
+      "duration": 34,
+      "new_cells": 0,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 1016,
+      "end": 1039,
+      "reason": "completed",
+      "duration": 24,
+      "new_cells": 2,
+      "samples": 3,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 1209,
+      "end": 1247,
+      "reason": "completed",
+      "duration": 39,
+      "new_cells": 276,
+      "samples": 4,
+      "cross": 0,
+      "contacts": 0
+    },
+    {
+      "owner": 4,
+      "start": 1521,
+      "end": 1521,
+      "reason": "inertial_risk",
+      "duration": 1,
+      "new_cells": 0,
+      "samples": 0,
+      "cross": 0,
+      "contacts": 0
+    }
+  ]
+}

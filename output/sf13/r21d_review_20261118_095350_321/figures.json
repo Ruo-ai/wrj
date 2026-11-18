@@ -1,0 +1,17 @@
+{
+  "map72_mapping.png": "523815dfc3903a252e6dcf292a2f439e1041d69e7498c88edcd992864fe02ba1",
+  "map72_exploration.png": "708861fa4f17c8edc6928ef314b4ee9864955bdb5d081deb5fd3cc3993e8e2af",
+  "map72_trajectories.png": "f9fb571e757228f4570ab224fa2bc44ecaaf374474da8330ab530c37d5e4b11d",
+  "map72_walls.png": "d2c9951aacc8846698891e8a1b4d189d17922d30c5cec5fed0c32590ec733368",
+  "map72_bombs.png": "6eadbca9d59333a98e290e6397f2827bd8ef49befa53512b08823c8d71f83cec",
+  "map37_mapping.png": "aa6ef7c871b629ea4ccac6884fd136393a8144dc201d9a37a8afeb208d9bbb66",
+  "map37_exploration.png": "4b71340523d45040262ce8185bd001fd0cc8a2cdd452bc6436578c8e761fc112",
+  "map37_trajectories.png": "fd2931e920a1df5a577ddf41a3877603fc97a5f70f7096aad7a12f9ea1b15409",
+  "map37_walls.png": "d6cc04b87b4a243c7b220df360c395881f5471ca56acda8f0f1d8973f73c3930",
+  "map37_bombs.png": "2d595a7c6afde73efbe0f44c23da8086ef1ec2dfb8f5adc72bcd9409fe24bc38",
+  "map24_mapping.png": "04d1144cf375dcd026c7b0f9b16630385108c92bb7834e80cd414c648a9d9447",
+  "map24_exploration.png": "95fd788707dc53725021be4297bcb0c35ea731140e106a1fe9237fe7261f5ed4",
+  "map24_trajectories.png": "b9ad33b07220f2cfc2fbbc09edb03230a713673b70f7f476020bb20921bc855d",
+  "map24_walls.png": "7fee5881b186ee079767d43f59cf927d3f52d355de69495074cdc9d6d8671553",
+  "map24_bombs.png": "6509eaf4a272ce714cbabb75188404b07c5eb077118fee6cd0128927def9a37f"
+}

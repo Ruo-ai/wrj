@@ -1,0 +1,2509 @@
+[
+  {
+    "map": "yh_map_fs_72",
+    "round": 1,
+    "seed": 2026111701,
+    "controller": "rl17_repair",
+    "submission": {
+      "drone": 0,
+      "step": 4535,
+      "sources": {
+        "0": 4535,
+        "1": 4530,
+        "2": 4500,
+        "3": 4500,
+        "4": 2670
+      }
+    },
+    "radio_publications": 1141,
+    "radio_events": 25382,
+    "received_union_matches_submission": true,
+    "actual_submission_metric": {
+      "hits": 13025,
+      "charged": 36931,
+      "credit": 14.357996384320296,
+      "penalty": 4.912804366787557,
+      "map_score": 9.445192017532738,
+      "roi_hits": 13025,
+      "roi_charged": 36931,
+      "missed": 77691
+    },
+    "drones": [
+      {
+        "owner": 0,
+        "roles": {
+          "explore": 3819,
+          "placement": 68,
+          "merge": 15,
+          "hold": 633
+        },
+        "repeat_samples": 12,
+        "sampled_visible_free_percent": 14.640210876206494,
+        "local": {
+          "hits": 12917,
+          "charged": 16902,
+          "credit": 14.238943516028044,
+          "penalty": 1.8287180252105473,
+          "map_score": 12.410225490817496,
+          "roi_hits": 12917,
+          "roi_charged": 16902,
+          "missed": 77799
+        },
+        "received": {
+          "hits": 12917,
+          "charged": 16902,
+          "credit": 14.238943516028044,
+          "penalty": 1.8287180252105473,
+          "map_score": 12.410225490817496,
+          "roi_hits": 12917,
+          "roi_charged": 16902,
+          "missed": 77799
+        },
+        "leave_one_source_out_delta": {
+          "hits": 69,
+          "missed": -69,
+          "charged": 3975,
+          "map_score": -0.47107395952753706
+        },
+        "source_version": 4535,
+        "source_age": 0,
+        "final_local_published_version": 4535,
+        "missing_local_cells": 0,
+        "outdated_received_cells": 0,
+        "outage_steps": 0,
+        "distance": 18197.880374593053,
+        "navigation_error_p95": 11.47234608317495,
+        "navigation_error_max": 15.096071025456146,
+        "renewals": [],
+        "placement_engine_steps": [
+          2997,
+          3056
+        ],
+        "rn7": {
+          "probes": 11,
+          "entered": 8,
+          "active_ticks": 169,
+          "local_replan": 1,
+          "completed": 6,
+          "reject_no_observed_narrow_route": 3,
+          "fresh_scan_obstructed": 1,
+          "peer_brake_ticks": 8,
+          "peer_wait_budget": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 17
+        },
+        "recovery_reasons": {
+          "disconnected": 2,
+          "no_progress": 1,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 188
+      },
+      {
+        "owner": 1,
+        "roles": {
+          "explore": 3774,
+          "placement": 113,
+          "merge": 80,
+          "hold": 568
+        },
+        "repeat_samples": 15,
+        "sampled_visible_free_percent": 13.942575305852607,
+        "local": {
+          "hits": 12678,
+          "charged": 17604,
+          "credit": 13.975483927862781,
+          "penalty": 2.440605760698223,
+          "map_score": 11.534878167164559,
+          "roi_hits": 12678,
+          "roi_charged": 17604,
+          "missed": 78038
+        },
+        "received": {
+          "hits": 12678,
+          "charged": 17559,
+          "credit": 13.975483927862781,
+          "penalty": 2.432007713289276,
+          "map_score": 11.543476214573504,
+          "roi_hits": 12678,
+          "roi_charged": 17559,
+          "missed": 78038
+        },
+        "leave_one_source_out_delta": {
+          "hits": 3,
+          "missed": -3,
+          "charged": 6320,
+          "map_score": -1.177520624118129
+        },
+        "source_version": 4530,
+        "source_age": 5,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 11,
+        "outdated_received_cells": 3,
+        "outage_steps": 0,
+        "distance": 18272.585865323766,
+        "navigation_error_p95": 10.942827700608417,
+        "navigation_error_max": 13.959238305526787,
+        "renewals": [],
+        "placement_engine_steps": [
+          2053,
+          3083
+        ],
+        "rn7": {
+          "probes": 18,
+          "entered": 8,
+          "active_ticks": 165,
+          "peer_brake_ticks": 8,
+          "local_replan": 3,
+          "completed": 7,
+          "reject_no_observed_narrow_route": 8,
+          "reject_no_two_sided_passage": 2,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 234,
+        "route_releases": {
+          "new_wall": 22
+        },
+        "recovery_reasons": {
+          "local_loop": 5,
+          "no_progress": 2,
+          "disconnected": 5
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 188
+      },
+      {
+        "owner": 2,
+        "roles": {
+          "explore": 3497,
+          "placement": 390,
+          "hold": 648
+        },
+        "repeat_samples": 7,
+        "sampled_visible_free_percent": 14.307021939845919,
+        "local": {
+          "hits": 12840,
+          "charged": 17042,
+          "credit": 14.154063230301158,
+          "penalty": 1.9511000936301204,
+          "map_score": 12.202963136671038,
+          "roi_hits": 12840,
+          "roi_charged": 17042,
+          "missed": 77876
+        },
+        "received": {
+          "hits": 12840,
+          "charged": 16868,
+          "credit": 14.154063230301158,
+          "penalty": 1.9304643492465499,
+          "map_score": 12.22359888105461,
+          "roi_hits": 12840,
+          "roi_charged": 16868,
+          "missed": 77876
+        },
+        "leave_one_source_out_delta": {
+          "hits": 39,
+          "missed": -39,
+          "charged": 3500,
+          "map_score": -0.4692882526235742
+        },
+        "source_version": 4500,
+        "source_age": 35,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 42,
+        "outdated_received_cells": 9,
+        "outage_steps": 0,
+        "distance": 18351.3856609852,
+        "navigation_error_p95": 11.588296972542107,
+        "navigation_error_max": 14.775816926379708,
+        "renewals": [],
+        "placement_engine_steps": [
+          3243,
+          3607
+        ],
+        "rn7": {
+          "probes": 15,
+          "reject_no_observed_narrow_route": 6,
+          "entered": 8,
+          "active_ticks": 175,
+          "completed": 5,
+          "mission_preempted": 3,
+          "local_replan": 1,
+          "peer_brake_ticks": 1,
+          "reject_start_clearance": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 700,
+        "route_releases": {
+          "new_wall": 22
+        },
+        "recovery_reasons": {
+          "disconnected": 2,
+          "no_progress": 1,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 188
+      },
+      {
+        "owner": 3,
+        "roles": {
+          "explore": 3782,
+          "placement": 105,
+          "merge": 35,
+          "hold": 613
+        },
+        "repeat_samples": 11,
+        "sampled_visible_free_percent": 14.010073812334898,
+        "local": {
+          "hits": 12804,
+          "charged": 14092,
+          "credit": 14.11437894087041,
+          "penalty": 1.8053045743377687,
+          "map_score": 12.309074366532641,
+          "roi_hits": 12804,
+          "roi_charged": 14092,
+          "missed": 77912
+        },
+        "received": {
+          "hits": 12804,
+          "charged": 14128,
+          "credit": 14.11437894087041,
+          "penalty": 1.80900850594162,
+          "map_score": 12.30537043492879,
+          "roi_hits": 12804,
+          "roi_charged": 14128,
+          "missed": 77912
+        },
+        "leave_one_source_out_delta": {
+          "hits": 36,
+          "missed": -36,
+          "charged": 2640,
+          "map_score": -0.3761847586147997
+        },
+        "source_version": 4500,
+        "source_age": 35,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 6,
+        "outdated_received_cells": 10,
+        "outage_steps": 0,
+        "distance": 17682.462579479143,
+        "navigation_error_p95": 11.102446688544502,
+        "navigation_error_max": 19.708847939196506,
+        "renewals": [],
+        "placement_engine_steps": [
+          2701,
+          3179
+        ],
+        "rn7": {
+          "probes": 15,
+          "reject_no_observed_narrow_route": 7,
+          "entered": 8,
+          "active_ticks": 117,
+          "local_replan": 3,
+          "completed": 6,
+          "peer_brake_ticks": 17,
+          "peer_wait_budget": 1,
+          "inertial_risk": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 792,
+        "route_releases": {
+          "new_wall": 16
+        },
+        "recovery_reasons": {
+          "local_loop": 4,
+          "no_progress": 2
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 188
+      },
+      {
+        "owner": 4,
+        "roles": {
+          "explore": 3807,
+          "placement": 80,
+          "merge": 648
+        },
+        "repeat_samples": 5,
+        "sampled_visible_free_percent": 26.369548660364163,
+        "local": {
+          "hits": 21272,
+          "charged": 17149,
+          "credit": 23.449005688081485,
+          "penalty": 1.313285375168107,
+          "map_score": 22.135720312913378,
+          "roi_hits": 21272,
+          "roi_charged": 17149,
+          "missed": 69444
+        },
+        "received": {
+          "hits": 12754,
+          "charged": 9733,
+          "credit": 14.059261872216588,
+          "penalty": 0.6997883719864744,
+          "map_score": 13.359473500230115,
+          "roi_hits": 12754,
+          "roi_charged": 9733,
+          "missed": 77962
+        },
+        "leave_one_source_out_delta": {
+          "hits": 0,
+          "missed": 0,
+          "charged": 1674,
+          "map_score": -0.2121567929031265
+        },
+        "source_version": 2670,
+        "source_age": 1865,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 3943,
+        "outdated_received_cells": 12,
+        "outage_steps": 0,
+        "distance": 19974.670780995562,
+        "navigation_error_p95": 11.72875037243436,
+        "navigation_error_max": 22.17011054124643,
+        "renewals": [],
+        "placement_engine_steps": [
+          1726,
+          2993
+        ],
+        "rn7": {
+          "probes": 14,
+          "reject_no_observed_narrow_route": 6,
+          "entered": 8,
+          "active_ticks": 229,
+          "completed": 6,
+          "peer_brake_ticks": 14,
+          "local_replan": 2,
+          "mission_preempted": 1,
+          "inertial_risk": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 180,
+        "yield_steps": 558,
+        "route_releases": {
+          "new_wall": 30
+        },
+        "recovery_reasons": {
+          "local_loop": 6,
+          "no_progress": 4,
+          "disconnected": 8
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 188
+      }
+    ],
+    "first_bomb_step": 1726,
+    "last_bomb_step": 3607,
+    "max_source_age": 1865,
+    "mean_source_age": 388,
+    "sum_outage_steps": 0,
+    "sum_local_active_ticks": 855,
+    "renewals": 0,
+    "collision_contacts": {
+      "drone": 29
+    },
+    "saved_plan_count": 541,
+    "score_checks": [
+      "map_from_pixels",
+      "time_curve",
+      "wall_breakdown_formula",
+      "bomb_count"
+    ],
+    "official_trajectory_exploration": 25.806719578663035,
+    "mean_health": 18.8
+  },
+  {
+    "map": "yh_map_fs_72",
+    "round": 2,
+    "seed": 2026111702,
+    "controller": "rl17_repair",
+    "submission": {
+      "drone": 0,
+      "step": 3930,
+      "sources": {
+        "0": 3930,
+        "1": 3920,
+        "2": 3900,
+        "3": 3870,
+        "4": 3900
+      }
+    },
+    "radio_publications": 990,
+    "radio_events": 22201,
+    "received_union_matches_submission": true,
+    "actual_submission_metric": {
+      "hits": 15744,
+      "charged": 29832,
+      "credit": 17.355262577715067,
+      "penalty": 3.530909436800014,
+      "map_score": 13.824353140915052,
+      "roi_hits": 15744,
+      "roi_charged": 29832,
+      "missed": 74972
+    },
+    "drones": [
+      {
+        "owner": 0,
+        "roles": {
+          "explore": 3838,
+          "placement": 49,
+          "merge": 43
+        },
+        "repeat_samples": 10,
+        "sampled_visible_free_percent": 21.92478333375803,
+        "local": {
+          "hits": 15670,
+          "charged": 13358,
+          "credit": 17.27368931610741,
+          "penalty": 1.4915780042591715,
+          "map_score": 15.78211131184824,
+          "roi_hits": 15670,
+          "roi_charged": 13358,
+          "missed": 75046
+        },
+        "received": {
+          "hits": 15670,
+          "charged": 13358,
+          "credit": 17.27368931610741,
+          "penalty": 1.4915780042591715,
+          "map_score": 15.78211131184824,
+          "roi_hits": 15670,
+          "roi_charged": 13358,
+          "missed": 75046
+        },
+        "leave_one_source_out_delta": {
+          "hits": 2764,
+          "missed": -2764,
+          "charged": 3959,
+          "map_score": 2.453106354929119
+        },
+        "source_version": 3930,
+        "source_age": 0,
+        "final_local_published_version": 3930,
+        "missing_local_cells": 0,
+        "outdated_received_cells": 0,
+        "outage_steps": 0,
+        "distance": 17840.74616512007,
+        "navigation_error_p95": 12.493273939275428,
+        "navigation_error_max": 19.6089965358433,
+        "renewals": [],
+        "placement_engine_steps": [
+          3009,
+          3045
+        ],
+        "rn7": {
+          "probes": 12,
+          "entered": 8,
+          "active_ticks": 168,
+          "peer_brake_ticks": 11,
+          "peer_wait_budget": 1,
+          "reject_no_two_sided_passage": 2,
+          "local_replan": 4,
+          "completed": 6,
+          "reject_no_observed_narrow_route": 2,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 28
+        },
+        "recovery_reasons": {
+          "local_loop": 1,
+          "disconnected": 1
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 163
+      },
+      {
+        "owner": 1,
+        "roles": {
+          "explore": 3760,
+          "placement": 127,
+          "merge": 15,
+          "hold": 28
+        },
+        "repeat_samples": 10,
+        "sampled_visible_free_percent": 14.485507923429966,
+        "local": {
+          "hits": 12912,
+          "charged": 13310,
+          "credit": 14.233431809162662,
+          "penalty": 1.3189293845283632,
+          "map_score": 12.914502424634296,
+          "roi_hits": 12912,
+          "roi_charged": 13310,
+          "missed": 77804
+        },
+        "received": {
+          "hits": 12912,
+          "charged": 13094,
+          "credit": 14.233431809162662,
+          "penalty": 1.2903566746081179,
+          "map_score": 12.943075134554544,
+          "roi_hits": 12912,
+          "roi_charged": 13094,
+          "missed": 77804
+        },
+        "leave_one_source_out_delta": {
+          "hits": 33,
+          "missed": -33,
+          "charged": 2985,
+          "map_score": -0.3936019676104543
+        },
+        "source_version": 3920,
+        "source_age": 10,
+        "final_local_published_version": 3930,
+        "missing_local_cells": 25,
+        "outdated_received_cells": 2,
+        "outage_steps": 0,
+        "distance": 18437.20216615824,
+        "navigation_error_p95": 13.444941970950175,
+        "navigation_error_max": 17.57710589572846,
+        "renewals": [],
+        "placement_engine_steps": [
+          2087,
+          2489
+        ],
+        "rn7": {
+          "probes": 17,
+          "entered": 8,
+          "active_ticks": 177,
+          "peer_brake_ticks": 11,
+          "peer_wait_budget": 1,
+          "reject_no_observed_narrow_route": 9,
+          "completed": 7,
+          "local_replan": 2
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 0,
+        "yield_steps": 414,
+        "route_releases": {
+          "new_wall": 13
+        },
+        "recovery_reasons": {
+          "disconnected": 2,
+          "local_loop": 3
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 163
+      },
+      {
+        "owner": 2,
+        "roles": {
+          "explore": 3599,
+          "placement": 288,
+          "hold": 43
+        },
+        "repeat_samples": 11,
+        "sampled_visible_free_percent": 14.259002868120263,
+        "local": {
+          "hits": 12795,
+          "charged": 12118,
+          "credit": 14.104457868512721,
+          "penalty": 1.2284933628714891,
+          "map_score": 12.875964505641232,
+          "roi_hits": 12795,
+          "roi_charged": 12118,
+          "missed": 77921
+        },
+        "received": {
+          "hits": 12795,
+          "charged": 11674,
+          "credit": 14.104457868512721,
+          "penalty": 1.1601481977407515,
+          "map_score": 12.94430967077197,
+          "roi_hits": 12795,
+          "roi_charged": 11674,
+          "missed": 77921
+        },
+        "leave_one_source_out_delta": {
+          "hits": 3,
+          "missed": -3,
+          "charged": 1854,
+          "map_score": -0.28854861945522536
+        },
+        "source_version": 3900,
+        "source_age": 30,
+        "final_local_published_version": 3930,
+        "missing_local_cells": 51,
+        "outdated_received_cells": 6,
+        "outage_steps": 0,
+        "distance": 17279.47970910299,
+        "navigation_error_p95": 11.26240066380188,
+        "navigation_error_max": 18.181100050190242,
+        "renewals": [],
+        "placement_engine_steps": [
+          3415,
+          3534
+        ],
+        "rn7": {
+          "probes": 26,
+          "reject_no_observed_narrow_route": 15,
+          "entered": 8,
+          "active_ticks": 245,
+          "completed": 8,
+          "local_replan": 2,
+          "reject_no_two_sided_passage": 2,
+          "reject_start_clearance": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 0,
+        "yield_steps": 522,
+        "route_releases": {
+          "new_wall": 16
+        },
+        "recovery_reasons": {
+          "local_loop": 6,
+          "disconnected": 2
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 163
+      },
+      {
+        "owner": 3,
+        "roles": {
+          "explore": 3497,
+          "placement": 390,
+          "merge": 43
+        },
+        "repeat_samples": 8,
+        "sampled_visible_free_percent": 14.12332633998975,
+        "local": {
+          "hits": 12830,
+          "charged": 11802,
+          "credit": 14.143039816570397,
+          "penalty": 1.1470082670435755,
+          "map_score": 12.99603154952682,
+          "roi_hits": 12830,
+          "roi_charged": 11802,
+          "missed": 77886
+        },
+        "received": {
+          "hits": 12827,
+          "charged": 11031,
+          "credit": 14.139732792451165,
+          "penalty": 1.0690726243165483,
+          "map_score": 13.070660168134618,
+          "roi_hits": 12827,
+          "roi_charged": 11031,
+          "missed": 77889
+        },
+        "leave_one_source_out_delta": {
+          "hits": 0,
+          "missed": 0,
+          "charged": 1969,
+          "map_score": -0.2767977034784401
+        },
+        "source_version": 3870,
+        "source_age": 60,
+        "final_local_published_version": 3930,
+        "missing_local_cells": 127,
+        "outdated_received_cells": 28,
+        "outage_steps": 0,
+        "distance": 17924.590766747067,
+        "navigation_error_p95": 11.204491689037102,
+        "navigation_error_max": 16.197272957993317,
+        "renewals": [],
+        "placement_engine_steps": [
+          1404,
+          3673
+        ],
+        "rn7": {
+          "probes": 18,
+          "reject_no_observed_narrow_route": 7,
+          "entered": 8,
+          "active_ticks": 196,
+          "completed": 6,
+          "local_replan": 1,
+          "mission_preempted": 2,
+          "reject_start_clearance": 3
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 954,
+        "route_releases": {
+          "new_wall": 22
+        },
+        "recovery_reasons": {
+          "local_loop": 3,
+          "no_progress": 1,
+          "disconnected": 6
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 163
+      },
+      {
+        "owner": 4,
+        "roles": {
+          "explore": 3611,
+          "placement": 276,
+          "merge": 42,
+          "hold": 1
+        },
+        "repeat_samples": 4,
+        "sampled_visible_free_percent": 14.23114274631717,
+        "local": {
+          "hits": 12788,
+          "charged": 14705,
+          "credit": 14.096741478901187,
+          "penalty": 1.4749988545984172,
+          "map_score": 12.62174262430277,
+          "roi_hits": 12788,
+          "roi_charged": 14705,
+          "missed": 77928
+        },
+        "received": {
+          "hits": 12788,
+          "charged": 14649,
+          "credit": 14.096741478901187,
+          "penalty": 1.4667093335933021,
+          "map_score": 12.630032145307885,
+          "roi_hits": 12788,
+          "roi_charged": 14649,
+          "missed": 77928
+        },
+        "leave_one_source_out_delta": {
+          "hits": 9,
+          "missed": -9,
+          "charged": 3376,
+          "map_score": -0.41897777989825435
+        },
+        "source_version": 3900,
+        "source_age": 30,
+        "final_local_published_version": 3930,
+        "missing_local_cells": 25,
+        "outdated_received_cells": 14,
+        "outage_steps": 0,
+        "distance": 17148.816319435155,
+        "navigation_error_p95": 12.974108257400507,
+        "navigation_error_max": 18.75117880057859,
+        "renewals": [],
+        "placement_engine_steps": [
+          3323,
+          3673
+        ],
+        "rn7": {
+          "probes": 13,
+          "entered": 8,
+          "active_ticks": 246,
+          "completed": 7,
+          "reject_no_observed_narrow_route": 5,
+          "mission_preempted": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 1022,
+        "route_releases": {
+          "new_wall": 17
+        },
+        "recovery_reasons": {
+          "local_loop": 6,
+          "no_progress": 3,
+          "disconnected": 2
+        },
+        "communication_disabled_samples": 0,
+        "sample_count": 163
+      }
+    ],
+    "first_bomb_step": 1404,
+    "last_bomb_step": 3673,
+    "max_source_age": 60,
+    "mean_source_age": 26,
+    "sum_outage_steps": 0,
+    "sum_local_active_ticks": 1032,
+    "renewals": 0,
+    "collision_contacts": {
+      "drone": 20
+    },
+    "saved_plan_count": 463,
+    "score_checks": [
+      "map_from_pixels",
+      "time_curve",
+      "wall_breakdown_formula",
+      "bomb_count"
+    ],
+    "official_trajectory_exploration": 22.200547579827138,
+    "mean_health": 20.0
+  },
+  {
+    "map": "yh_map_fs_37",
+    "round": 1,
+    "seed": 2026111701,
+    "controller": "rl17_repair",
+    "submission": {
+      "drone": 0,
+      "step": 4036,
+      "sources": {
+        "0": 4036,
+        "1": 4000,
+        "2": 4020,
+        "3": 4020,
+        "4": 4020
+      }
+    },
+    "radio_publications": 1011,
+    "radio_events": 21484,
+    "received_union_matches_submission": true,
+    "actual_submission_metric": {
+      "hits": 64583,
+      "charged": 114189,
+      "credit": 72.75154327941242,
+      "penalty": 13.844702756781418,
+      "map_score": 58.906840522631,
+      "roi_hits": 64583,
+      "roi_charged": 114189,
+      "missed": 24189
+    },
+    "drones": [
+      {
+        "owner": 0,
+        "roles": {
+          "explore": 3331,
+          "placement": 311,
+          "merge": 2,
+          "hold": 392
+        },
+        "repeat_samples": 3,
+        "sampled_visible_free_percent": 54.40946599397753,
+        "local": {
+          "hits": 33498,
+          "charged": 27527,
+          "credit": 37.73487135583292,
+          "penalty": 2.795363622890664,
+          "map_score": 34.93950773294226,
+          "roi_hits": 33498,
+          "roi_charged": 27527,
+          "missed": 55274
+        },
+        "received": {
+          "hits": 33498,
+          "charged": 27527,
+          "credit": 37.73487135583292,
+          "penalty": 2.795363622890664,
+          "map_score": 34.93950773294226,
+          "roi_hits": 33498,
+          "roi_charged": 27527,
+          "missed": 55274
+        },
+        "leave_one_source_out_delta": {
+          "hits": 1980,
+          "missed": -1980,
+          "charged": 18581,
+          "map_score": 0.003942684630274584
+        },
+        "source_version": 4036,
+        "source_age": 0,
+        "final_local_published_version": 4036,
+        "missing_local_cells": 0,
+        "outdated_received_cells": 0,
+        "outage_steps": 887,
+        "distance": 15652.790452028441,
+        "navigation_error_p95": 34.347030350472174,
+        "navigation_error_max": 75.21108287162475,
+        "renewals": [],
+        "placement_engine_steps": [
+          2474,
+          3001
+        ],
+        "rn7": {
+          "probes": 14,
+          "reject_no_observed_narrow_route": 4,
+          "reject_no_two_sided_passage": 2,
+          "entered": 8,
+          "active_ticks": 175,
+          "completed": 7,
+          "local_replan": 2,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 32
+        },
+        "recovery_reasons": {
+          "disconnected": 3,
+          "no_progress": 2,
+          "local_loop": 2
+        },
+        "communication_disabled_samples": 39,
+        "sample_count": 168
+      },
+      {
+        "owner": 1,
+        "roles": {
+          "explore": 3447,
+          "placement": 195,
+          "merge": 84,
+          "hold": 310
+        },
+        "repeat_samples": 7,
+        "sampled_visible_free_percent": 46.77706926979612,
+        "local": {
+          "hits": 25927,
+          "charged": 26439,
+          "credit": 29.20628125985671,
+          "penalty": 2.9424592020147124,
+          "map_score": 26.263822057841995,
+          "roi_hits": 25927,
+          "roi_charged": 26439,
+          "missed": 62845
+        },
+        "received": {
+          "hits": 25927,
+          "charged": 26543,
+          "credit": 29.20628125985671,
+          "penalty": 2.9564955553271304,
+          "map_score": 26.249785704529575,
+          "roi_hits": 25927,
+          "roi_charged": 26543,
+          "missed": 62845
+        },
+        "leave_one_source_out_delta": {
+          "hits": 546,
+          "missed": -546,
+          "charged": 16676,
+          "map_score": -1.7864172050308724
+        },
+        "source_version": 4000,
+        "source_age": 36,
+        "final_local_published_version": 4020,
+        "missing_local_cells": 3,
+        "outdated_received_cells": 8,
+        "outage_steps": 1617,
+        "distance": 15123.37286011614,
+        "navigation_error_p95": 128.8461554627533,
+        "navigation_error_max": 147.44673112946097,
+        "renewals": [],
+        "placement_engine_steps": [
+          1772,
+          3029
+        ],
+        "rn7": {
+          "probes": 42,
+          "reject_no_observed_narrow_route": 14,
+          "reject_no_two_sided_passage": 20,
+          "entered": 8,
+          "active_ticks": 209,
+          "peer_brake_ticks": 7,
+          "completed": 7,
+          "mission_preempted": 1,
+          "local_replan": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 36,
+        "route_releases": {
+          "new_wall": 30
+        },
+        "recovery_reasons": {
+          "no_progress": 2,
+          "disconnected": 1,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 58,
+        "sample_count": 168
+      },
+      {
+        "owner": 2,
+        "roles": {
+          "explore": 3399,
+          "placement": 243,
+          "merge": 69,
+          "hold": 325
+        },
+        "repeat_samples": 11,
+        "sampled_visible_free_percent": 44.294767018591486,
+        "local": {
+          "hits": 25734,
+          "charged": 34200,
+          "credit": 28.988870364529358,
+          "penalty": 4.336795561945208,
+          "map_score": 24.65207480258415,
+          "roi_hits": 25734,
+          "roi_charged": 34200,
+          "missed": 63038
+        },
+        "received": {
+          "hits": 25734,
+          "charged": 34178,
+          "credit": 28.988870364529358,
+          "penalty": 4.334542599299329,
+          "map_score": 24.65432776523003,
+          "roi_hits": 25734,
+          "roi_charged": 34178,
+          "missed": 63038
+        },
+        "leave_one_source_out_delta": {
+          "hits": 1288,
+          "missed": -1288,
+          "charged": 22785,
+          "map_score": -2.103185513168569
+        },
+        "source_version": 4020,
+        "source_age": 16,
+        "final_local_published_version": 4020,
+        "missing_local_cells": 13,
+        "outdated_received_cells": 9,
+        "outage_steps": 2949,
+        "distance": 9893.892699861395,
+        "navigation_error_p95": 141.1652333328062,
+        "navigation_error_max": 183.87046539858372,
+        "renewals": [],
+        "placement_engine_steps": [
+          2158,
+          3030
+        ],
+        "rn7": {
+          "probes": 19,
+          "entered": 8,
+          "active_ticks": 257,
+          "local_replan": 3,
+          "completed": 7,
+          "reject_no_observed_narrow_route": 7,
+          "reject_no_two_sided_passage": 4,
+          "peer_brake_ticks": 16,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 300,
+        "yield_steps": 36,
+        "route_releases": {
+          "new_wall": 39
+        },
+        "recovery_reasons": {
+          "no_progress": 5,
+          "disconnected": 1
+        },
+        "communication_disabled_samples": 91,
+        "sample_count": 168
+      },
+      {
+        "owner": 3,
+        "roles": {
+          "explore": 2959,
+          "placement": 683,
+          "hold": 326,
+          "merge": 68
+        },
+        "repeat_samples": 4,
+        "sampled_visible_free_percent": 44.766027120967905,
+        "local": {
+          "hits": 27411,
+          "charged": 31042,
+          "credit": 30.877979543099176,
+          "penalty": 4.103906989253368,
+          "map_score": 26.774072553845805,
+          "roi_hits": 27411,
+          "roi_charged": 31042,
+          "missed": 61361
+        },
+        "received": {
+          "hits": 27213,
+          "charged": 30997,
+          "credit": 30.65493624115712,
+          "penalty": 4.093767777283378,
+          "map_score": 26.56116846387374,
+          "roi_hits": 27213,
+          "roi_charged": 30997,
+          "missed": 61559
+        },
+        "leave_one_source_out_delta": {
+          "hits": 5768,
+          "missed": -5768,
+          "charged": 21791,
+          "map_score": 3.1514212674041246
+        },
+        "source_version": 4020,
+        "source_age": 16,
+        "final_local_published_version": 4020,
+        "missing_local_cells": 57,
+        "outdated_received_cells": 0,
+        "outage_steps": 3017,
+        "distance": 10882.565195149013,
+        "navigation_error_p95": 106.96637067489772,
+        "navigation_error_max": 154.03635331616834,
+        "renewals": [],
+        "placement_engine_steps": [
+          1471,
+          2947
+        ],
+        "rn7": {
+          "probes": 23,
+          "reject_no_observed_narrow_route": 12,
+          "entered": 8,
+          "active_ticks": 205,
+          "local_replan": 2,
+          "completed": 8,
+          "reject_start_clearance": 2,
+          "reject_no_two_sided_passage": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 199,
+        "route_releases": {
+          "new_wall": 31
+        },
+        "recovery_reasons": {
+          "local_loop": 2,
+          "no_progress": 1,
+          "disconnected": 2
+        },
+        "communication_disabled_samples": 67,
+        "sample_count": 168
+      },
+      {
+        "owner": 4,
+        "roles": {
+          "explore": 3589,
+          "placement": 53,
+          "merge": 394
+        },
+        "repeat_samples": 8,
+        "sampled_visible_free_percent": 49.90683009877879,
+        "local": {
+          "hits": 34224,
+          "charged": 19087,
+          "credit": 38.552696796287115,
+          "penalty": 1.2511829153970284,
+          "map_score": 37.301513880890084,
+          "roi_hits": 34224,
+          "roi_charged": 19087,
+          "missed": 54548
+        },
+        "received": {
+          "hits": 33891,
+          "charged": 18643,
+          "credit": 38.17757851574821,
+          "penalty": 1.212048910234928,
+          "map_score": 36.96552960551328,
+          "roi_hits": 33891,
+          "roi_charged": 18643,
+          "missed": 54881
+        },
+        "leave_one_source_out_delta": {
+          "hits": 8467,
+          "missed": -8467,
+          "charged": 13271,
+          "map_score": 8.687671260363615
+        },
+        "source_version": 4020,
+        "source_age": 16,
+        "final_local_published_version": 4020,
+        "missing_local_cells": 170,
+        "outdated_received_cells": 4,
+        "outage_steps": 364,
+        "distance": 18967.87754741535,
+        "navigation_error_p95": 12.54107495951008,
+        "navigation_error_max": 17.73008448724783,
+        "renewals": [],
+        "placement_engine_steps": [
+          1588,
+          1847
+        ],
+        "rn7": {
+          "probes": 14,
+          "entered": 8,
+          "active_ticks": 211,
+          "completed": 6,
+          "local_replan": 2,
+          "reject_no_observed_narrow_route": 5,
+          "reject_no_two_sided_passage": 1,
+          "inertial_risk": 1,
+          "no_progress": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 55,
+        "route_releases": {
+          "new_wall": 35
+        },
+        "recovery_reasons": {
+          "no_progress": 1,
+          "disconnected": 2
+        },
+        "communication_disabled_samples": 21,
+        "sample_count": 168
+      }
+    ],
+    "first_bomb_step": 1471,
+    "last_bomb_step": 3030,
+    "max_source_age": 36,
+    "mean_source_age": 16.8,
+    "sum_outage_steps": 8834,
+    "sum_local_active_ticks": 1057,
+    "renewals": 0,
+    "collision_contacts": {
+      "drone": 2
+    },
+    "saved_plan_count": 393,
+    "score_checks": [
+      "map_from_pixels",
+      "time_curve",
+      "wall_breakdown_formula",
+      "bomb_count"
+    ],
+    "official_trajectory_exploration": 81.44848989341489,
+    "mean_health": 24.6
+  },
+  {
+    "map": "yh_map_fs_37",
+    "round": 2,
+    "seed": 2026111702,
+    "controller": "rl17_repair",
+    "submission": {
+      "drone": 0,
+      "step": 4298,
+      "sources": {
+        "0": 4298,
+        "1": 4290,
+        "2": 4290,
+        "3": 4260,
+        "4": 4260
+      }
+    },
+    "radio_publications": 1081,
+    "radio_events": 22852,
+    "received_union_matches_submission": true,
+    "actual_submission_metric": {
+      "hits": 68238,
+      "charged": 136122,
+      "credit": 76.8688325147569,
+      "penalty": 17.719596973144686,
+      "map_score": 59.14923554161222,
+      "roi_hits": 68238,
+      "roi_charged": 136122,
+      "missed": 20534
+    },
+    "drones": [
+      {
+        "owner": 0,
+        "roles": {
+          "explore": 3470,
+          "placement": 417,
+          "merge": 400,
+          "hold": 11
+        },
+        "repeat_samples": 4,
+        "sampled_visible_free_percent": 62.69759299285291,
+        "local": {
+          "hits": 44455,
+          "charged": 20440,
+          "credit": 50.07772721128284,
+          "penalty": 1.9239174514486552,
+          "map_score": 48.15380975983419,
+          "roi_hits": 44455,
+          "roi_charged": 20440,
+          "missed": 44317
+        },
+        "received": {
+          "hits": 44455,
+          "charged": 20440,
+          "credit": 50.07772721128284,
+          "penalty": 1.9239174514486552,
+          "map_score": 48.15380975983419,
+          "roi_hits": 44455,
+          "roi_charged": 20440,
+          "missed": 44317
+        },
+        "leave_one_source_out_delta": {
+          "hits": 10316,
+          "missed": -10316,
+          "charged": 9407,
+          "map_score": 10.872007431960526
+        },
+        "source_version": 4298,
+        "source_age": 0,
+        "final_local_published_version": 4298,
+        "missing_local_cells": 0,
+        "outdated_received_cells": 0,
+        "outage_steps": 1474,
+        "distance": 17363.060341835117,
+        "navigation_error_p95": 96.31970641085574,
+        "navigation_error_max": 102.88277369771279,
+        "renewals": [],
+        "placement_engine_steps": [
+          1978,
+          3097
+        ],
+        "rn7": {
+          "probes": 25,
+          "entered": 8,
+          "active_ticks": 214,
+          "local_replan": 2,
+          "completed": 8,
+          "reject_no_observed_narrow_route": 6,
+          "reject_no_two_sided_passage": 11
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 36
+        },
+        "recovery_reasons": {
+          "disconnected": 5,
+          "no_progress": 1,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 56,
+        "sample_count": 179
+      },
+      {
+        "owner": 1,
+        "roles": {
+          "explore": 3558,
+          "placement": 329,
+          "merge": 231,
+          "hold": 180
+        },
+        "repeat_samples": 2,
+        "sampled_visible_free_percent": 61.61128123486237,
+        "local": {
+          "hits": 39518,
+          "charged": 31643,
+          "credit": 44.51628891992971,
+          "penalty": 3.525841437545059,
+          "map_score": 40.99044748238465,
+          "roi_hits": 39518,
+          "roi_charged": 31643,
+          "missed": 49254
+        },
+        "received": {
+          "hits": 39518,
+          "charged": 31598,
+          "credit": 44.51628891992971,
+          "penalty": 3.514013383654193,
+          "map_score": 41.00227553627552,
+          "roi_hits": 39518,
+          "roi_charged": 31598,
+          "missed": 49254
+        },
+        "leave_one_source_out_delta": {
+          "hits": 342,
+          "missed": -342,
+          "charged": 11683,
+          "map_score": -1.158339622854058
+        },
+        "source_version": 4290,
+        "source_age": 8,
+        "final_local_published_version": 4290,
+        "missing_local_cells": 4,
+        "outdated_received_cells": 2,
+        "outage_steps": 1898,
+        "distance": 15895.313771212628,
+        "navigation_error_p95": 103.22296744135477,
+        "navigation_error_max": 302.60967190355916,
+        "renewals": [],
+        "placement_engine_steps": [
+          2070,
+          3007
+        ],
+        "rn7": {
+          "probes": 54,
+          "reject_no_two_sided_passage": 20,
+          "reject_no_observed_narrow_route": 26,
+          "entered": 8,
+          "active_ticks": 232,
+          "completed": 8,
+          "local_replan": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 54,
+        "route_releases": {
+          "new_wall": 41
+        },
+        "recovery_reasons": {
+          "disconnected": 2,
+          "no_progress": 2,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 51,
+        "sample_count": 179
+      },
+      {
+        "owner": 2,
+        "roles": {
+          "explore": 3854,
+          "placement": 33,
+          "merge": 148,
+          "hold": 263
+        },
+        "repeat_samples": 20,
+        "sampled_visible_free_percent": 46.055901940732724,
+        "local": {
+          "hits": 21720,
+          "charged": 42006,
+          "credit": 24.46717433424954,
+          "penalty": 5.212544143986843,
+          "map_score": 19.254630190262695,
+          "roi_hits": 21720,
+          "roi_charged": 42006,
+          "missed": 67052
+        },
+        "received": {
+          "hits": 21720,
+          "charged": 41925,
+          "credit": 24.46717433424954,
+          "penalty": 5.198621538886136,
+          "map_score": 19.2685527953634,
+          "roi_hits": 21720,
+          "roi_charged": 41925,
+          "missed": 67052
+        },
+        "leave_one_source_out_delta": {
+          "hits": 1807,
+          "missed": -1807,
+          "charged": 26171,
+          "map_score": -1.7229540634997633
+        },
+        "source_version": 4290,
+        "source_age": 8,
+        "final_local_published_version": 4290,
+        "missing_local_cells": 9,
+        "outdated_received_cells": 0,
+        "outage_steps": 2472,
+        "distance": 13214.623176844148,
+        "navigation_error_p95": 251.6134173378569,
+        "navigation_error_max": 348.8340414713562,
+        "renewals": [],
+        "placement_engine_steps": [
+          1956,
+          2612
+        ],
+        "rn7": {
+          "probes": 11,
+          "reject_no_observed_narrow_route": 2,
+          "reject_no_two_sided_passage": 1,
+          "entered": 8,
+          "active_ticks": 242,
+          "local_replan": 3,
+          "completed": 6,
+          "peer_brake_ticks": 34,
+          "peer_wait_budget": 1,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 36,
+        "route_releases": {
+          "new_wall": 39
+        },
+        "recovery_reasons": {
+          "no_progress": 1,
+          "local_loop": 3,
+          "disconnected": 7
+        },
+        "communication_disabled_samples": 28,
+        "sample_count": 179
+      },
+      {
+        "owner": 3,
+        "roles": {
+          "explore": 3507,
+          "placement": 380,
+          "merge": 179,
+          "hold": 232
+        },
+        "repeat_samples": 9,
+        "sampled_visible_free_percent": 47.31104696454218,
+        "local": {
+          "hits": 31678,
+          "charged": 33149,
+          "credit": 35.68467534808273,
+          "penalty": 3.7878612132767087,
+          "map_score": 31.896814134806018,
+          "roi_hits": 31678,
+          "roi_charged": 33149,
+          "missed": 57094
+        },
+        "received": {
+          "hits": 31678,
+          "charged": 33112,
+          "credit": 35.68467534808273,
+          "penalty": 3.7799982856362364,
+          "map_score": 31.904677062446492,
+          "roi_hits": 31678,
+          "roi_charged": 33112,
+          "missed": 57094
+        },
+        "leave_one_source_out_delta": {
+          "hits": 3763,
+          "missed": -3763,
+          "charged": 16819,
+          "map_score": 1.9354515641193188
+        },
+        "source_version": 4260,
+        "source_age": 38,
+        "final_local_published_version": 4290,
+        "missing_local_cells": 30,
+        "outdated_received_cells": 5,
+        "outage_steps": 2904,
+        "distance": 12939.186942062159,
+        "navigation_error_p95": 112.15000060550025,
+        "navigation_error_max": 178.75071765517927,
+        "renewals": [],
+        "placement_engine_steps": [
+          2597,
+          3112
+        ],
+        "rn7": {
+          "probes": 19,
+          "entered": 8,
+          "active_ticks": 314,
+          "completed": 7,
+          "reject_no_observed_narrow_route": 8,
+          "reject_no_two_sided_passage": 2,
+          "reject_start_clearance": 1,
+          "local_replan": 1,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 180,
+        "yield_steps": 162,
+        "route_releases": {
+          "new_wall": 36
+        },
+        "recovery_reasons": {
+          "no_progress": 4,
+          "disconnected": 5,
+          "local_loop": 2
+        },
+        "communication_disabled_samples": 55,
+        "sample_count": 179
+      },
+      {
+        "owner": 4,
+        "roles": {
+          "explore": 3761,
+          "placement": 126,
+          "merge": 84,
+          "hold": 327
+        },
+        "repeat_samples": 3,
+        "sampled_visible_free_percent": 53.7924313973219,
+        "local": {
+          "hits": 29601,
+          "charged": 55678,
+          "credit": 33.344973640337045,
+          "penalty": 7.920132650216286,
+          "map_score": 25.424840990120757,
+          "roi_hits": 29601,
+          "roi_charged": 55678,
+          "missed": 59171
+        },
+        "received": {
+          "hits": 29601,
+          "charged": 55615,
+          "credit": 33.344973640337045,
+          "penalty": 7.900328580520885,
+          "map_score": 25.44464505981616,
+          "roi_hits": 29601,
+          "roi_charged": 55615,
+          "missed": 59171
+        },
+        "leave_one_source_out_delta": {
+          "hits": 905,
+          "missed": -905,
+          "charged": 36950,
+          "map_score": -4.764069927736216
+        },
+        "source_version": 4260,
+        "source_age": 38,
+        "final_local_published_version": 4290,
+        "missing_local_cells": 13,
+        "outdated_received_cells": 7,
+        "outage_steps": 1928,
+        "distance": 14686.038194395373,
+        "navigation_error_p95": 293.9211916100254,
+        "navigation_error_max": 318.41233012614947,
+        "renewals": [],
+        "placement_engine_steps": [
+          1461,
+          2844
+        ],
+        "rn7": {
+          "probes": 15,
+          "entered": 8,
+          "active_ticks": 200,
+          "completed": 7,
+          "mission_preempted": 1,
+          "reject_no_observed_narrow_route": 2,
+          "reject_no_two_sided_passage": 5,
+          "local_replan": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 126,
+        "route_releases": {
+          "new_wall": 43,
+          "waypoint_stall": 1
+        },
+        "recovery_reasons": {
+          "disconnected": 3,
+          "local_loop": 1,
+          "no_progress": 1,
+          "waypoint_stall": 1
+        },
+        "communication_disabled_samples": 72,
+        "sample_count": 179
+      }
+    ],
+    "first_bomb_step": 1461,
+    "last_bomb_step": 3112,
+    "max_source_age": 38,
+    "mean_source_age": 18.4,
+    "sum_outage_steps": 10676,
+    "sum_local_active_ticks": 1202,
+    "renewals": 0,
+    "collision_contacts": {
+      "drone": 1
+    },
+    "saved_plan_count": 418,
+    "score_checks": [
+      "map_from_pixels",
+      "time_curve",
+      "wall_breakdown_formula",
+      "bomb_count"
+    ],
+    "official_trajectory_exploration": 82.79414958107888,
+    "mean_health": 24.8
+  },
+  {
+    "map": "yh_map_fs_24",
+    "round": 1,
+    "seed": 2026111701,
+    "controller": "rl17_repair",
+    "submission": {
+      "drone": 0,
+      "step": 4535,
+      "sources": {
+        "0": 4535,
+        "1": 330,
+        "2": 570,
+        "3": 1380,
+        "4": 30
+      }
+    },
+    "radio_publications": 1141,
+    "radio_events": 24099,
+    "received_union_matches_submission": true,
+    "actual_submission_metric": {
+      "hits": 59641,
+      "charged": 38091,
+      "credit": 73.95407087766287,
+      "penalty": 4.0011407396988075,
+      "map_score": 69.95293013796406,
+      "roi_hits": 59641,
+      "roi_charged": 38091,
+      "missed": 21005
+    },
+    "drones": [
+      {
+        "owner": 0,
+        "roles": {
+          "explore": 3678,
+          "placement": 209,
+          "merge": 648
+        },
+        "repeat_samples": 2,
+        "sampled_visible_free_percent": 72.31615946199068,
+        "local": {
+          "hits": 43114,
+          "charged": 21516,
+          "credit": 53.460804007638316,
+          "penalty": 1.714356643347159,
+          "map_score": 51.74644736429116,
+          "roi_hits": 43114,
+          "roi_charged": 21516,
+          "missed": 37532
+        },
+        "received": {
+          "hits": 43114,
+          "charged": 21516,
+          "credit": 53.460804007638316,
+          "penalty": 1.714356643347159,
+          "map_score": 51.74644736429116,
+          "roi_hits": 43114,
+          "roi_charged": 21516,
+          "missed": 37532
+        },
+        "leave_one_source_out_delta": {
+          "hits": 33021,
+          "missed": -33021,
+          "charged": 20934,
+          "map_score": 39.317040048096
+        },
+        "source_version": 4535,
+        "source_age": 0,
+        "final_local_published_version": 4535,
+        "missing_local_cells": 0,
+        "outdated_received_cells": 0,
+        "outage_steps": 411,
+        "distance": 22197.719082552427,
+        "navigation_error_p95": 13.934585221222555,
+        "navigation_error_max": 47.97863076441626,
+        "renewals": [],
+        "placement_engine_steps": [
+          1970,
+          2230
+        ],
+        "rn7": {
+          "probes": 12,
+          "entered": 8,
+          "active_ticks": 310,
+          "completed": 8,
+          "reject_no_observed_narrow_route": 4,
+          "local_replan": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 35
+        },
+        "recovery_reasons": {
+          "disconnected": 4,
+          "no_progress": 3,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 123,
+        "sample_count": 188
+      },
+      {
+        "owner": 1,
+        "roles": {
+          "explore": 3812,
+          "placement": 75,
+          "merge": 165,
+          "hold": 483
+        },
+        "repeat_samples": 9,
+        "sampled_visible_free_percent": 53.25931191677104,
+        "local": {
+          "hits": 30656,
+          "charged": 25197,
+          "credit": 38.013044664335496,
+          "penalty": 3.176078265661037,
+          "map_score": 34.836966398674456,
+          "roi_hits": 30656,
+          "roi_charged": 25197,
+          "missed": 49990
+        },
+        "received": {
+          "hits": 7301,
+          "charged": 1824,
+          "credit": 9.053145847283188,
+          "penalty": 0.25464376381423137,
+          "map_score": 8.798502083468957,
+          "roi_hits": 7301,
+          "roi_charged": 1824,
+          "missed": 73345
+        },
+        "leave_one_source_out_delta": {
+          "hits": 2779,
+          "missed": -2779,
+          "charged": 1505,
+          "map_score": 3.265183932712091
+        },
+        "source_version": 330,
+        "source_age": 4205,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 10393,
+        "outdated_received_cells": 56,
+        "outage_steps": 544,
+        "distance": 19041.865325387967,
+        "navigation_error_p95": 23.057720468367883,
+        "navigation_error_max": 55.11578587529673,
+        "renewals": [],
+        "placement_engine_steps": [
+          1402,
+          2344
+        ],
+        "rn7": {
+          "probes": 11,
+          "entered": 8,
+          "active_ticks": 240,
+          "completed": 8,
+          "local_replan": 3,
+          "reject_no_observed_narrow_route": 2,
+          "reject_no_two_sided_passage": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 0,
+        "yield_steps": 18,
+        "route_releases": {
+          "new_wall": 30
+        },
+        "recovery_reasons": {
+          "local_loop": 2,
+          "disconnected": 3
+        },
+        "communication_disabled_samples": 47,
+        "sample_count": 188
+      },
+      {
+        "owner": 2,
+        "roles": {
+          "explore": 3376,
+          "placement": 511,
+          "merge": 319,
+          "hold": 329
+        },
+        "repeat_samples": 3,
+        "sampled_visible_free_percent": 50.702018663326676,
+        "local": {
+          "hits": 28787,
+          "charged": 21347,
+          "credit": 35.695508766708826,
+          "penalty": 2.4696573702508493,
+          "map_score": 33.225851396457976,
+          "roi_hits": 28787,
+          "roi_charged": 21347,
+          "missed": 51859
+        },
+        "received": {
+          "hits": 11356,
+          "charged": 2140,
+          "credit": 14.081293554547033,
+          "penalty": 0.24058229188947686,
+          "map_score": 13.840711262657557,
+          "roi_hits": 11356,
+          "roi_charged": 2140,
+          "missed": 69290
+        },
+        "leave_one_source_out_delta": {
+          "hits": 7737,
+          "missed": -7737,
+          "charged": 2008,
+          "map_score": 9.374302749438897
+        },
+        "source_version": 570,
+        "source_age": 3965,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 9084,
+        "outdated_received_cells": 98,
+        "outage_steps": 1685,
+        "distance": 16859.20814324446,
+        "navigation_error_p95": 85.30994670088027,
+        "navigation_error_max": 271.39995356005096,
+        "renewals": [],
+        "placement_engine_steps": [
+          2079,
+          3049
+        ],
+        "rn7": {
+          "probes": 21,
+          "reject_no_observed_narrow_route": 13,
+          "entered": 8,
+          "active_ticks": 174,
+          "completed": 7,
+          "inertial_risk": 1,
+          "local_replan": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 200,
+        "route_releases": {
+          "new_wall": 33,
+          "waypoint_stall": 1
+        },
+        "recovery_reasons": {
+          "disconnected": 5,
+          "no_progress": 2,
+          "local_loop": 1,
+          "waypoint_stall": 1
+        },
+        "communication_disabled_samples": 6,
+        "sample_count": 188
+      },
+      {
+        "owner": 3,
+        "roles": {
+          "explore": 3120,
+          "placement": 767,
+          "merge": 299,
+          "hold": 349
+        },
+        "repeat_samples": 12,
+        "sampled_visible_free_percent": 52.177707818512125,
+        "local": {
+          "hits": 27327,
+          "charged": 31518,
+          "credit": 33.885127594673015,
+          "penalty": 3.951342906033778,
+          "map_score": 29.933784688639236,
+          "roi_hits": 27327,
+          "roi_charged": 31518,
+          "missed": 53319
+        },
+        "received": {
+          "hits": 10172,
+          "charged": 13165,
+          "credit": 12.613148823252237,
+          "penalty": 1.8686110391014434,
+          "map_score": 10.744537784150793,
+          "roi_hits": 10172,
+          "roi_charged": 13165,
+          "missed": 70474
+        },
+        "leave_one_source_out_delta": {
+          "hits": 4740,
+          "missed": -4740,
+          "charged": 12931,
+          "map_score": 4.014309548055692
+        },
+        "source_version": 1380,
+        "source_age": 3155,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 7707,
+        "outdated_received_cells": 612,
+        "outage_steps": 2951,
+        "distance": 13416.127641065552,
+        "navigation_error_p95": 42.57474138990732,
+        "navigation_error_max": 83.20202340997066,
+        "renewals": [],
+        "placement_engine_steps": [
+          1607,
+          3673
+        ],
+        "rn7": {
+          "probes": 27,
+          "entered": 8,
+          "active_ticks": 219,
+          "completed": 6,
+          "reject_no_observed_narrow_route": 18,
+          "local_replan": 2,
+          "fresh_scan_obstructed": 2,
+          "reject_no_two_sided_passage": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 72,
+        "route_releases": {
+          "new_wall": 36
+        },
+        "recovery_reasons": {
+          "no_progress": 3,
+          "disconnected": 2
+        },
+        "communication_disabled_samples": 6,
+        "sample_count": 188
+      },
+      {
+        "owner": 4,
+        "roles": {
+          "explore": 3431,
+          "placement": 456,
+          "merge": 92,
+          "hold": 556
+        },
+        "repeat_samples": 2,
+        "sampled_visible_free_percent": 73.72758764654773,
+        "local": {
+          "hits": 31215,
+          "charged": 29067,
+          "credit": 38.706197455546466,
+          "penalty": 3.372541628692062,
+          "map_score": 35.333655826854404,
+          "roi_hits": 31215,
+          "roi_charged": 29067,
+          "missed": 49431
+        },
+        "received": {
+          "hits": 96,
+          "charged": 99,
+          "credit": 0.11903876199687523,
+          "penalty": 0.018525408471005807,
+          "map_score": 0.10051335352586942,
+          "roi_hits": 96,
+          "roi_charged": 99,
+          "missed": 80550
+        },
+        "leave_one_source_out_delta": {
+          "hits": 3,
+          "missed": -3,
+          "charged": 27,
+          "map_score": -0.002975969049927585
+        },
+        "source_version": 30,
+        "source_age": 4505,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 13553,
+        "outdated_received_cells": 1,
+        "outage_steps": 2468,
+        "distance": 14203.007933387882,
+        "navigation_error_p95": 118.54638842294182,
+        "navigation_error_max": 256.3499573396739,
+        "renewals": [],
+        "placement_engine_steps": [
+          1808,
+          2224
+        ],
+        "rn7": {
+          "probes": 12,
+          "entered": 8,
+          "active_ticks": 268,
+          "completed": 7,
+          "local_replan": 1,
+          "reject_no_observed_narrow_route": 2,
+          "reject_no_two_sided_passage": 2,
+          "fresh_scan_obstructed": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 126,
+        "route_releases": {
+          "new_wall": 43
+        },
+        "recovery_reasons": {
+          "no_progress": 3,
+          "disconnected": 2,
+          "local_loop": 1
+        },
+        "communication_disabled_samples": 57,
+        "sample_count": 188
+      }
+    ],
+    "first_bomb_step": 1402,
+    "last_bomb_step": 3673,
+    "max_source_age": 4505,
+    "mean_source_age": 3166,
+    "sum_outage_steps": 8059,
+    "sum_local_active_ticks": 1211,
+    "renewals": 0,
+    "collision_contacts": {
+      "drone": 2
+    },
+    "saved_plan_count": 396,
+    "score_checks": [
+      "map_from_pixels",
+      "time_curve",
+      "wall_breakdown_formula",
+      "bomb_count"
+    ],
+    "official_trajectory_exploration": 99.80965335836729,
+    "mean_health": 24.6
+  },
+  {
+    "map": "yh_map_fs_24",
+    "round": 2,
+    "seed": 2026111702,
+    "controller": "rl17_repair",
+    "submission": {
+      "drone": 0,
+      "step": 4535,
+      "sources": {
+        "0": 4535,
+        "1": 4530,
+        "2": 3690,
+        "3": 4500,
+        "4": 4500
+      }
+    },
+    "radio_publications": 1141,
+    "radio_events": 24227,
+    "received_union_matches_submission": true,
+    "actual_submission_metric": {
+      "hits": 74937,
+      "charged": 77054,
+      "credit": 92.92091362249832,
+      "penalty": 8.951442686246063,
+      "map_score": 83.96947093625226,
+      "roi_hits": 74937,
+      "roi_charged": 77054,
+      "missed": 5709
+    },
+    "drones": [
+      {
+        "owner": 0,
+        "roles": {
+          "explore": 3710,
+          "placement": 177,
+          "merge": 33,
+          "hold": 615
+        },
+        "repeat_samples": 2,
+        "sampled_visible_free_percent": 73.45406948534804,
+        "local": {
+          "hits": 48932,
+          "charged": 21302,
+          "credit": 60.67504897949061,
+          "penalty": 2.110358755393944,
+          "map_score": 58.56469022409666,
+          "roi_hits": 48932,
+          "roi_charged": 21302,
+          "missed": 31714
+        },
+        "received": {
+          "hits": 48932,
+          "charged": 21302,
+          "credit": 60.67504897949061,
+          "penalty": 2.110358755393944,
+          "map_score": 58.56469022409666,
+          "roi_hits": 48932,
+          "roi_charged": 21302,
+          "missed": 31714
+        },
+        "leave_one_source_out_delta": {
+          "hits": 25307,
+          "missed": -25307,
+          "charged": 15710,
+          "map_score": 29.927212272617375
+        },
+        "source_version": 4535,
+        "source_age": 0,
+        "final_local_published_version": 4535,
+        "missing_local_cells": 0,
+        "outdated_received_cells": 0,
+        "outage_steps": 1033,
+        "distance": 16966.439403736455,
+        "navigation_error_p95": 83.53166209403231,
+        "navigation_error_max": 102.515635915536,
+        "renewals": [],
+        "placement_engine_steps": [
+          1596,
+          2885
+        ],
+        "rn7": {
+          "probes": 17,
+          "entered": 8,
+          "active_ticks": 237,
+          "completed": 8,
+          "local_replan": 2,
+          "reject_no_observed_narrow_route": 9
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 60,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 41
+        },
+        "recovery_reasons": {
+          "disconnected": 1,
+          "no_progress": 1
+        },
+        "communication_disabled_samples": 77,
+        "sample_count": 188
+      },
+      {
+        "owner": 1,
+        "roles": {
+          "explore": 3748,
+          "placement": 139,
+          "merge": 34,
+          "hold": 614
+        },
+        "repeat_samples": 4,
+        "sampled_visible_free_percent": 67.76728388792976,
+        "local": {
+          "hits": 39459,
+          "charged": 21479,
+          "credit": 48.92865114202812,
+          "penalty": 2.833122535525631,
+          "map_score": 46.0955286065025,
+          "roi_hits": 39459,
+          "roi_charged": 21479,
+          "missed": 41187
+        },
+        "received": {
+          "hits": 39459,
+          "charged": 21542,
+          "credit": 48.92865114202812,
+          "penalty": 2.8452000583568933,
+          "map_score": 46.08345108367123,
+          "roi_hits": 39459,
+          "roi_charged": 21542,
+          "missed": 41187
+        },
+        "leave_one_source_out_delta": {
+          "hits": 2613,
+          "missed": -2613,
+          "charged": 11492,
+          "map_score": 1.5555875562644133
+        },
+        "source_version": 4530,
+        "source_age": 5,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 1,
+        "outdated_received_cells": 6,
+        "outage_steps": 1227,
+        "distance": 16310.663807110866,
+        "navigation_error_p95": 39.77209937224729,
+        "navigation_error_max": 77.95811043549425,
+        "renewals": [],
+        "placement_engine_steps": [
+          1414,
+          2037
+        ],
+        "rn7": {
+          "probes": 9,
+          "entered": 8,
+          "active_ticks": 236,
+          "completed": 8,
+          "local_replan": 2,
+          "reject_no_observed_narrow_route": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 0,
+        "yield_steps": 0,
+        "route_releases": {
+          "new_wall": 46
+        },
+        "recovery_reasons": {
+          "disconnected": 2
+        },
+        "communication_disabled_samples": 39,
+        "sample_count": 188
+      },
+      {
+        "owner": 2,
+        "roles": {
+          "explore": 3695,
+          "placement": 192,
+          "merge": 59,
+          "hold": 589
+        },
+        "repeat_samples": 11,
+        "sampled_visible_free_percent": 45.92143123117024,
+        "local": {
+          "hits": 26500,
+          "charged": 17506,
+          "credit": 32.8596582595541,
+          "penalty": 2.0176574890183643,
+          "map_score": 30.842000770535737,
+          "roi_hits": 26500,
+          "roi_charged": 17506,
+          "missed": 54146
+        },
+        "received": {
+          "hits": 22274,
+          "charged": 12509,
+          "credit": 27.619472757483322,
+          "penalty": 1.1300249508655111,
+          "map_score": 26.48944780661781,
+          "roi_hits": 22274,
+          "roi_charged": 12509,
+          "missed": 58372
+        },
+        "leave_one_source_out_delta": {
+          "hits": 938,
+          "missed": -938,
+          "charged": 4168,
+          "map_score": 0.7251677082558388
+        },
+        "source_version": 3690,
+        "source_age": 845,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 2211,
+        "outdated_received_cells": 27,
+        "outage_steps": 1585,
+        "distance": 15460.445296632144,
+        "navigation_error_p95": 31.931410377638805,
+        "navigation_error_max": 41.897390657592354,
+        "renewals": [],
+        "placement_engine_steps": [
+          1445,
+          2286
+        ],
+        "rn7": {
+          "probes": 13,
+          "entered": 8,
+          "active_ticks": 315,
+          "completed": 8,
+          "local_replan": 1,
+          "reject_no_observed_narrow_route": 4,
+          "reject_no_two_sided_passage": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 240,
+        "yield_steps": 36,
+        "route_releases": {
+          "new_wall": 26
+        },
+        "recovery_reasons": {
+          "no_progress": 4,
+          "disconnected": 6
+        },
+        "communication_disabled_samples": 31,
+        "sample_count": 188
+      },
+      {
+        "owner": 3,
+        "roles": {
+          "explore": 3517,
+          "placement": 370,
+          "merge": 135,
+          "hold": 513
+        },
+        "repeat_samples": 7,
+        "sampled_visible_free_percent": 56.16910959908827,
+        "local": {
+          "hits": 23713,
+          "charged": 25309,
+          "credit": 29.403814200332317,
+          "penalty": 3.124643745892543,
+          "map_score": 26.279170454439775,
+          "roi_hits": 23713,
+          "roi_charged": 25309,
+          "missed": 56933
+        },
+        "received": {
+          "hits": 23713,
+          "charged": 25192,
+          "credit": 29.403814200332317,
+          "penalty": 3.109887899353347,
+          "map_score": 26.29392630097897,
+          "roi_hits": 23713,
+          "roi_charged": 25192,
+          "missed": 56933
+        },
+        "leave_one_source_out_delta": {
+          "hits": 57,
+          "missed": -57,
+          "charged": 15192,
+          "map_score": -2.0413423325397275
+        },
+        "source_version": 4500,
+        "source_age": 35,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 27,
+        "outdated_received_cells": 9,
+        "outage_steps": 2384,
+        "distance": 14466.588922418785,
+        "navigation_error_p95": 55.3398061544841,
+        "navigation_error_max": 140.3937721299494,
+        "renewals": [],
+        "placement_engine_steps": [
+          1395,
+          2689
+        ],
+        "rn7": {
+          "probes": 12,
+          "entered": 8,
+          "active_ticks": 226,
+          "completed": 7,
+          "reject_no_observed_narrow_route": 3,
+          "reject_no_two_sided_passage": 1,
+          "local_replan": 1,
+          "mission_preempted": 1
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 120,
+        "yield_steps": 90,
+        "route_releases": {
+          "new_wall": 43
+        },
+        "recovery_reasons": {
+          "disconnected": 1,
+          "no_progress": 2
+        },
+        "communication_disabled_samples": 8,
+        "sample_count": 188
+      },
+      {
+        "owner": 4,
+        "roles": {
+          "explore": 3405,
+          "placement": 482,
+          "merge": 199,
+          "hold": 449
+        },
+        "repeat_samples": 11,
+        "sampled_visible_free_percent": 59.71880888708349,
+        "local": {
+          "hits": 25391,
+          "charged": 19631,
+          "credit": 31.484512561069366,
+          "penalty": 2.1654638307386604,
+          "map_score": 29.319048730330703,
+          "roi_hits": 25391,
+          "roi_charged": 19631,
+          "missed": 55255
+        },
+        "received": {
+          "hits": 25391,
+          "charged": 19374,
+          "credit": 31.484512561069366,
+          "penalty": 2.1223372245678647,
+          "map_score": 29.3621753365015,
+          "roi_hits": 25391,
+          "roi_charged": 19374,
+          "missed": 55255
+        },
+        "leave_one_source_out_delta": {
+          "hits": 1201,
+          "missed": -1201,
+          "charged": 12846,
+          "map_score": 0.032065291520964934
+        },
+        "source_version": 4500,
+        "source_age": 35,
+        "final_local_published_version": 4530,
+        "missing_local_cells": 50,
+        "outdated_received_cells": 5,
+        "outage_steps": 3075,
+        "distance": 14258.170554127406,
+        "navigation_error_p95": 62.058630700891904,
+        "navigation_error_max": 105.43115011581214,
+        "renewals": [],
+        "placement_engine_steps": [
+          2463,
+          3452
+        ],
+        "rn7": {
+          "probes": 18,
+          "entered": 8,
+          "active_ticks": 223,
+          "local_replan": 2,
+          "completed": 8,
+          "reject_no_two_sided_passage": 2,
+          "reject_no_observed_narrow_route": 8
+        },
+        "passage_episodes": 8,
+        "stalled_steps": 180,
+        "yield_steps": 108,
+        "route_releases": {
+          "new_wall": 42
+        },
+        "recovery_reasons": {
+          "local_loop": 2,
+          "disconnected": 2,
+          "no_progress": 3
+        },
+        "communication_disabled_samples": 28,
+        "sample_count": 188
+      }
+    ],
+    "first_bomb_step": 1395,
+    "last_bomb_step": 3452,
+    "max_source_age": 845,
+    "mean_source_age": 184,
+    "sum_outage_steps": 9304,
+    "sum_local_active_ticks": 1237,
+    "renewals": 0,
+    "collision_contacts": {},
+    "saved_plan_count": 400,
+    "score_checks": [
+      "map_from_pixels",
+      "time_curve",
+      "wall_breakdown_formula",
+      "bomb_count"
+    ],
+    "official_trajectory_exploration": 99.96450018228875,
+    "mean_health": 25.0
+  }
+]
