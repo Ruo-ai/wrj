@@ -1,5 +1,7 @@
 # Table of Content
 
+> 红队当前入口：[红队新对话交接](红队_新对话交接.md)；历史结论与恢复：[阶段总览](红队_阶段优化与版本评测总览.md)。
+
 - [Welcome to *Swarm-Rescue*](#welcome-to-swarm-rescue)
 - [The Competition](#the-competition)
 - [Simulation Environment](#simulation-environment)
