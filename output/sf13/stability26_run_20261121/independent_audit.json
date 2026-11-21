@@ -1,0 +1,4079 @@
+{
+  "schema": "stability26-independent-postflight-audit-v1",
+  "created_utc": "2026-11-21T13:19:35.832989+00:00",
+  "passed": true,
+  "plan_sha256": "22b08b4e53900d2eb33dafef5c89eff0904ba89c86eb8263d51365e44ef26b2b",
+  "script_sha256": "520f3e324012fd1e0c035125783742af9fc422564880bba33c41efbd05ac975d",
+  "shared_report_reader_sha256": "243bdd32cdd8ab885da82e173d6f5589f31654bbae8edf057645e3b9fb560dc7",
+  "scope": "Independent execution of read-only checks; reuses named report readers for integrity, identity, pixel scoring and prefix comparison; separate assertions for native validity, legal tape, ledger and aggregation. No simulation.",
+  "frozen_sources_verified": 457,
+  "source_snapshot_members_verified": 457,
+  "bound_component_evidence_verified": 11,
+  "completed_attempts": 18,
+  "native_valid_attempts": 18,
+  "valid_pairs": 9,
+  "new_seeds": [
+    3225263973,
+    1739765566,
+    778294343
+  ],
+  "actual_ten_bomb_layouts": 18,
+  "actual_bombs": 180,
+  "actual_runtime_identities_verified": 18,
+  "legal_mapper_tapes_verified": 18,
+  "actual_received_maps_rebuilt": 18,
+  "native_map_scores_recomputed": 18,
+  "candidate_drones_verified": 45,
+  "candidate_anomaly_events": 0,
+  "max_job_commit_bytes": 728588288,
+  "blue_stages": 0,
+  "blue_score": null,
+  "total_score": null,
+  "full_scores_measured": false,
+  "final_summaries_sha256": {
+    "plan.json": "22b08b4e53900d2eb33dafef5c89eff0904ba89c86eb8263d51365e44ef26b2b",
+    "frozen.json": "9eae7aefd7a36d03478528f3b08f469564adb82f93e8446d387ce07955f3f09b",
+    "pairs.json": "64520337e5f7647c7b205c043689023f41b91648cbad34d1b27625f0ff4cbb3d",
+    "results.json": "eb2191913f03ec942fe1f0791910feb5442026f9a5f8c6c39f5f06fe8be3e038",
+    "paired_checks.json": "51797f3f61ea7e27cab87f6ae9cfd4080659bdac3b78b4b77413b99f6236158f",
+    "progress.json": "c15d837b9e868112b3595768c47e458c40e23e0708ce7bf0f8bcab222968d95e",
+    "seeds.json": "5eb64aac4b6e0b5d092aaae923fb29311b8bd79eb339105845ded7181d2298d6",
+    "experiment.json": "f853696e1beffa5d1901566d53c1c0ca7d84d98f455fc73f9ceb33a0c6a6974d"
+  },
+  "summaries": [
+    {
+      "map": "Map06",
+      "arms": {
+        "baseline": {
+          "n": 3,
+          "scores": [
+            88.1353194596926,
+            86.02511534138436,
+            88.4851109956608
+          ],
+          "mean": 87.54851526557925,
+          "minimum": 86.02511534138436,
+          "maximum": 88.4851109956608,
+          "range": 2.4599956542764403
+        },
+        "candidate": {
+          "n": 3,
+          "scores": [
+            87.46451291954203,
+            89.74427132345252,
+            87.0920954392775
+          ],
+          "mean": 88.10029322742402,
+          "minimum": 87.0920954392775,
+          "maximum": 89.74427132345252,
+          "range": 2.6521758841750227
+        }
+      },
+      "paired_deltas": [
+        -0.670806540150565,
+        3.719155982068159,
+        -1.393015556383304
+      ],
+      "paired_mean_delta": 0.5517779618447634
+    },
+    {
+      "map": "Map08",
+      "arms": {
+        "baseline": {
+          "n": 3,
+          "scores": [
+            50.369202299228164,
+            65.2968583487667,
+            53.545918928216686
+          ],
+          "mean": 56.403993192070516,
+          "minimum": 50.369202299228164,
+          "maximum": 65.2968583487667,
+          "range": 14.927656049538541
+        },
+        "candidate": {
+          "n": 3,
+          "scores": [
+            62.82531013326159,
+            54.55208344110831,
+            58.464820955593254
+          ],
+          "mean": 58.61407150998772,
+          "minimum": 54.55208344110831,
+          "maximum": 62.82531013326159,
+          "range": 8.27322669215328
+        }
+      },
+      "paired_deltas": [
+        12.456107834033425,
+        -10.744774907658396,
+        4.918902027376568
+      ],
+      "paired_mean_delta": 2.210078317917199
+    },
+    {
+      "map": "Map09",
+      "arms": {
+        "baseline": {
+          "n": 3,
+          "scores": [
+            55.20397822558225,
+            36.24109641098765,
+            42.866582927529215
+          ],
+          "mean": 44.77055252136637,
+          "minimum": 36.24109641098765,
+          "maximum": 55.20397822558225,
+          "range": 18.962881814594596
+        },
+        "candidate": {
+          "n": 3,
+          "scores": [
+            42.28532667792156,
+            32.00970146493046,
+            39.56102952056821
+          ],
+          "mean": 37.95201922114008,
+          "minimum": 32.00970146493046,
+          "maximum": 42.28532667792156,
+          "range": 10.275625212991102
+        }
+      },
+      "paired_deltas": [
+        -12.918651547660687,
+        -4.231394946057193,
+        -3.3055534069610033
+      ],
+      "paired_mean_delta": -6.818533300226295
+    }
+  ],
+  "comparisons": [
+    {
+      "map": "Map06",
+      "round": 1,
+      "pair_id": "Map06_r01_s3225263973",
+      "seed": 3225263973,
+      "execution_order": [
+        {
+          "arm": "baseline",
+          "index": 1
+        },
+        {
+          "arm": "candidate",
+          "index": 2
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 88.1353194596926,
+      "candidate_map_score": 87.46451291954203,
+      "same_original_mapper": true,
+      "map_score_delta": -0.670806540150565,
+      "credit_delta": -1.031994981179409,
+      "penalty_delta": -0.36118844102885905,
+      "wall_hits_delta": -987,
+      "wall_misses_delta": 987,
+      "charged_pixels_delta": -5072,
+      "wall_score_delta": -0.026179347687289578,
+      "time_score_delta": 2.962962962962969,
+      "north_hits_delta": 164,
+      "northwest_visit_frames_delta": -205,
+      "visit_percent_delta": 0.0,
+      "step_delta": -112,
+      "wall_seconds_delta": -7.930349349975586,
+      "first_different_recording_frame": 667,
+      "maps_equal": false,
+      "score_clamp_delta": -1.509903313490213e-14
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "pair_id": "Map06_r02_s1739765566",
+      "seed": 1739765566,
+      "execution_order": [
+        {
+          "arm": "candidate",
+          "index": 3
+        },
+        {
+          "arm": "baseline",
+          "index": 4
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 86.02511534138436,
+      "candidate_map_score": 89.74427132345252,
+      "same_original_mapper": true,
+      "map_score_delta": 3.719155982068159,
+      "credit_delta": 3.5926390631534986,
+      "penalty_delta": -0.12651691891467998,
+      "wall_hits_delta": 3436,
+      "wall_misses_delta": -3436,
+      "charged_pixels_delta": -71,
+      "wall_score_delta": 23.541618777616023,
+      "time_score_delta": -6.137566137566136,
+      "north_hits_delta": 2645,
+      "northwest_visit_frames_delta": 909,
+      "visit_percent_delta": 0.9966777408637881,
+      "step_delta": 232,
+      "wall_seconds_delta": 9.773041009902954,
+      "first_different_recording_frame": 347,
+      "maps_equal": false,
+      "score_clamp_delta": -1.9539925233402755e-14
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "pair_id": "Map06_r03_s778294343",
+      "seed": 778294343,
+      "execution_order": [
+        {
+          "arm": "baseline",
+          "index": 5
+        },
+        {
+          "arm": "candidate",
+          "index": 6
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 88.4851109956608,
+      "candidate_map_score": 87.0920954392775,
+      "same_original_mapper": true,
+      "map_score_delta": -1.393015556383304,
+      "credit_delta": -1.4481388540359745,
+      "penalty_delta": -0.05512329765265456,
+      "wall_hits_delta": -1385,
+      "wall_misses_delta": 1385,
+      "charged_pixels_delta": -3112,
+      "wall_score_delta": 12.16573442648074,
+      "time_score_delta": 4.867724867724874,
+      "north_hits_delta": -2277,
+      "northwest_visit_frames_delta": -1049,
+      "visit_percent_delta": -2.5747508305647813,
+      "step_delta": -184,
+      "wall_seconds_delta": 0.958672285079956,
+      "first_different_recording_frame": 497,
+      "maps_equal": false,
+      "score_clamp_delta": 1.5987211554602254e-14
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "pair_id": "Map08_r01_s3225263973",
+      "seed": 3225263973,
+      "execution_order": [
+        {
+          "arm": "candidate",
+          "index": 7
+        },
+        {
+          "arm": "baseline",
+          "index": 8
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 50.369202299228164,
+      "candidate_map_score": 62.82531013326159,
+      "same_original_mapper": true,
+      "map_score_delta": 12.456107834033425,
+      "credit_delta": 15.685138434797004,
+      "penalty_delta": 3.229030600763565,
+      "wall_hits_delta": 15160,
+      "wall_misses_delta": -15160,
+      "charged_pixels_delta": 30331,
+      "wall_score_delta": -13.977398835126095,
+      "time_score_delta": 6.269841269841272,
+      "north_hits_delta": 1319,
+      "northwest_visit_frames_delta": -725,
+      "visit_percent_delta": 7.635467980295566,
+      "step_delta": -237,
+      "wall_seconds_delta": -4.8115222454071045,
+      "first_different_recording_frame": 360,
+      "maps_equal": false,
+      "score_clamp_delta": -1.4210854715202004e-14
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "pair_id": "Map08_r02_s1739765566",
+      "seed": 1739765566,
+      "execution_order": [
+        {
+          "arm": "baseline",
+          "index": 9
+        },
+        {
+          "arm": "candidate",
+          "index": 10
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 65.2968583487667,
+      "candidate_map_score": 54.55208344110831,
+      "same_original_mapper": true,
+      "map_score_delta": -10.744774907658396,
+      "credit_delta": -9.902536936638668,
+      "penalty_delta": 0.8422379710197401,
+      "wall_hits_delta": -9571,
+      "wall_misses_delta": 9571,
+      "charged_pixels_delta": -13400,
+      "wall_score_delta": -7.47267333483234,
+      "time_score_delta": -3.0952380952380985,
+      "north_hits_delta": 432,
+      "northwest_visit_frames_delta": 747,
+      "visit_percent_delta": -4.844006568144501,
+      "step_delta": 117,
+      "wall_seconds_delta": 3.278384208679199,
+      "first_different_recording_frame": 460,
+      "maps_equal": false,
+      "score_clamp_delta": 1.2434497875801753e-14
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "pair_id": "Map08_r03_s778294343",
+      "seed": 778294343,
+      "execution_order": [
+        {
+          "arm": "candidate",
+          "index": 11
+        },
+        {
+          "arm": "baseline",
+          "index": 12
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 53.545918928216686,
+      "candidate_map_score": 58.464820955593254,
+      "same_original_mapper": true,
+      "map_score_delta": 4.918902027376568,
+      "credit_delta": 4.765550635268795,
+      "penalty_delta": -0.15335139210777093,
+      "wall_hits_delta": 4606,
+      "wall_misses_delta": -4606,
+      "charged_pixels_delta": 6618,
+      "wall_score_delta": -5.182818472608055,
+      "time_score_delta": 0.07936507936507908,
+      "north_hits_delta": -530,
+      "northwest_visit_frames_delta": -11,
+      "visit_percent_delta": -0.8210180623973713,
+      "step_delta": -3,
+      "wall_seconds_delta": 0.4175400733947754,
+      "first_different_recording_frame": 308,
+      "maps_equal": false,
+      "score_clamp_delta": 1.7763568394002505e-15
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "pair_id": "Map09_r01_s3225263973",
+      "seed": 3225263973,
+      "execution_order": [
+        {
+          "arm": "baseline",
+          "index": 13
+        },
+        {
+          "arm": "candidate",
+          "index": 14
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 55.20397822558225,
+      "candidate_map_score": 42.28532667792156,
+      "same_original_mapper": true,
+      "map_score_delta": -12.918651547660687,
+      "credit_delta": -18.18540540055782,
+      "penalty_delta": -5.2667538528971285,
+      "wall_hits_delta": -20278,
+      "wall_misses_delta": 20278,
+      "charged_pixels_delta": -38379,
+      "wall_score_delta": -12.554207608277977,
+      "time_score_delta": 0.0,
+      "north_hits_delta": -30782,
+      "northwest_visit_frames_delta": -924,
+      "visit_percent_delta": 2.1594684385382052,
+      "step_delta": 0,
+      "wall_seconds_delta": 1.907400131225586,
+      "first_different_recording_frame": 424,
+      "maps_equal": false,
+      "score_clamp_delta": 3.552713678800501e-15
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "pair_id": "Map09_r02_s1739765566",
+      "seed": 1739765566,
+      "execution_order": [
+        {
+          "arm": "candidate",
+          "index": 15
+        },
+        {
+          "arm": "baseline",
+          "index": 16
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 36.24109641098765,
+      "candidate_map_score": 32.00970146493046,
+      "same_original_mapper": true,
+      "map_score_delta": -4.231394946057193,
+      "credit_delta": 3.12177710816362,
+      "penalty_delta": 7.353172054220812,
+      "wall_hits_delta": 3481,
+      "wall_misses_delta": -3481,
+      "charged_pixels_delta": 51805,
+      "wall_score_delta": 0.7794916835922407,
+      "time_score_delta": 0.0,
+      "north_hits_delta": -335,
+      "northwest_visit_frames_delta": -1847,
+      "visit_percent_delta": -0.581395348837205,
+      "step_delta": 0,
+      "wall_seconds_delta": 8.12144136428833,
+      "first_different_recording_frame": 299,
+      "maps_equal": false,
+      "score_clamp_delta": -1.7763568394002505e-15
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "pair_id": "Map09_r03_s778294343",
+      "seed": 778294343,
+      "execution_order": [
+        {
+          "arm": "baseline",
+          "index": 17
+        },
+        {
+          "arm": "candidate",
+          "index": 18
+        }
+      ],
+      "requests_equal_except_controller_and_bookkeeping": true,
+      "native_conditions_equal": true,
+      "both_valid": true,
+      "baseline_map_score": 42.866582927529215,
+      "candidate_map_score": 39.56102952056821,
+      "same_original_mapper": true,
+      "map_score_delta": -3.3055534069610033,
+      "credit_delta": 2.0420242675347637,
+      "penalty_delta": 5.347577674495771,
+      "wall_hits_delta": 2277,
+      "wall_misses_delta": -2277,
+      "charged_pixels_delta": 22991,
+      "wall_score_delta": 6.138954456460077,
+      "time_score_delta": -9.23280423280423,
+      "north_hits_delta": 7334,
+      "northwest_visit_frames_delta": 996,
+      "visit_percent_delta": 15.033222591362126,
+      "step_delta": 349,
+      "wall_seconds_delta": 17.952536582946777,
+      "first_different_recording_frame": 323,
+      "maps_equal": false,
+      "score_clamp_delta": 3.552713678800501e-15
+    }
+  ],
+  "runs": [
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 1,
+      "valid_red": true,
+      "map_score": 88.1353194596926,
+      "credit": 93.3647009619406,
+      "penalty": 5.229381502248014,
+      "wall_hits": 89294,
+      "wall_misses": 6346,
+      "charged_pixels": 69468,
+      "wall_score": 77.28781957959801,
+      "time_score": 33.57142857142857,
+      "steps": 4131,
+      "seconds": 124.89739680290222,
+      "placed_count": 10,
+      "submitted_sha256": "df3ebb55b99f38955c0c6eb22a680c28a4f37de38088722d86b97c1248169a50",
+      "red_states_sha256": "4ef807cefbbb6d32011dd35d289db3716e8dea5d1e49b79f3d1ede863cbd0661",
+      "legal_input_sha256": "5e9873feadb5aa1dd286619cf395df1bc18ee5e9efd95752daa6208d48bf8570",
+      "result_sha256": "9bd8eac45a033bf731d71a9b9e108403159024a9992675d93e35978283a7f3c7",
+      "request_sha256": "447ce4210ec5a8bb6f105ab8123da1c55f1d88da050879d1e72b1b773b2c1f5c",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4130,
+        "sources": {
+          "0": 4130,
+          "1": 4120,
+          "2": 4080,
+          "3": 4050,
+          "4": 4110
+        }
+      },
+      "visit_percent": 65.9468438538206,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map06_r01\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "8275a47d0695045f56ac7c2345640c1cc57c4a2d3b988f2e062e2aa86a2afdb4",
+      "integrity_sha256": "0c2af7b39ca9f05e12696cb70bb64505e330c57f302fa7ffda6c450fd4d1a2ba",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 136.85899999999674,
+        "peak_job_commit_bytes": 693686272,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4130,
+          "first_step": 1,
+          "last_step": 4130,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4130,
+          "first_step": 1,
+          "last_step": 4130,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4130,
+          "first_step": 1,
+          "last_step": 4130,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4130,
+          "first_step": 1,
+          "last_step": 4130,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4130,
+          "first_step": 1,
+          "last_step": 4130,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 2,
+      "valid_red": true,
+      "map_score": 87.46451291954203,
+      "credit": 92.33270598076119,
+      "penalty": 4.868193061219155,
+      "wall_hits": 88307,
+      "wall_misses": 7333,
+      "charged_pixels": 64396,
+      "wall_score": 77.26164023191072,
+      "time_score": 36.53439153439154,
+      "steps": 4019,
+      "seconds": 116.96704745292664,
+      "placed_count": 10,
+      "submitted_sha256": "f270fa59f8f9782eff84f52f28129d1deb53664c65f4281910f2ac7adc63b1c7",
+      "red_states_sha256": "965e0bc5daf933d2cda182b95c934ac4cd25f73a351702d848376862f2d6fa9e",
+      "legal_input_sha256": "48b7873d1ce377370d5bd968fb7758085b6fcbfa0aba61fe6040bcdc24728702",
+      "result_sha256": "c9e22153935bb42d0cbe2a9fee701cbcd64611e69d47abb94a4a1727a035b60e",
+      "request_sha256": "0d340b0f63d361a2d0a1b903d1597a7f5e2cb8a12ae8d9f964846800d878a136",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4018,
+        "sources": {
+          "0": 4018,
+          "1": 4000,
+          "2": 4000,
+          "3": 3990,
+          "4": 3930
+        }
+      },
+      "visit_percent": 65.9468438538206,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 11,
+          "failure_events": 252,
+          "failure_cells": 11588,
+          "expired_events": 241,
+          "expired_cells": 11049
+        },
+        "firsts": {
+          "first_failure_step": 24,
+          "first_expiry_step": 264
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map06_r01\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "2ec404d79deb2620a9cff7f927ead245e89808e219575651f302e3aff9594052",
+      "integrity_sha256": "6a81ac5f59ca440923150c3bf34d213b1c9eba1178f7dde886ea70254a08186a",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 124.48399999999674,
+        "peak_job_commit_bytes": 657526784,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4018,
+          "first_step": 1,
+          "last_step": 4018,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4018,
+          "first_step": 1,
+          "last_step": 4018,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4018,
+          "first_step": 1,
+          "last_step": 4018,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4018,
+          "first_step": 1,
+          "last_step": 4018,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4018,
+          "first_step": 1,
+          "last_step": 4018,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 3,
+      "valid_red": true,
+      "map_score": 89.74427132345252,
+      "credit": 95.0784190715182,
+      "penalty": 5.334147748065663,
+      "wall_hits": 90933,
+      "wall_misses": 4707,
+      "charged_pixels": 68630,
+      "wall_score": 86.91160319771156,
+      "time_score": 30.978835978835978,
+      "steps": 4229,
+      "seconds": 124.6353406906128,
+      "placed_count": 10,
+      "submitted_sha256": "4be14b714695291f8fcfefb469e5e1b887fb218f14142f616d3930493c24d81b",
+      "red_states_sha256": "579cd8ea0ea4cf651aaaba63f2aed7ba926f07ce1e984f711b99f58998f6fe1f",
+      "legal_input_sha256": "73a7e550395d422250b05afceda9bb5a47d78ad32a007c9258a5c53f6707ab8f",
+      "result_sha256": "4e1075a26e86fc1c048f2e52b36f7bf58f78e9d5d935fb370e3085cb33f7c436",
+      "request_sha256": "aadcf5def81348fd9a3f429ab2a4b1894e37ecd1e1f63ef7cf09551596c08b36",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4228,
+        "sources": {
+          "0": 4228,
+          "1": 4200,
+          "2": 4200,
+          "3": 4200,
+          "4": 4170
+        }
+      },
+      "visit_percent": 67.35880398671097,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 7,
+          "failure_events": 201,
+          "failure_cells": 9391,
+          "expired_events": 194,
+          "expired_cells": 9048
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map06_r02\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "3aff2effba7c2f07b5f8a6fef5373970968d7fc66752e3f8f8eee5b3329d29d0",
+      "integrity_sha256": "3b0c83cbae8863cf17a5df7611d98892d481e21e83608195d8c80885e7aad451",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 132.03199999999924,
+        "peak_job_commit_bytes": 706134016,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4228,
+          "first_step": 1,
+          "last_step": 4228,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4228,
+          "first_step": 1,
+          "last_step": 4228,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4228,
+          "first_step": 1,
+          "last_step": 4228,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4228,
+          "first_step": 1,
+          "last_step": 4228,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4228,
+          "first_step": 1,
+          "last_step": 4228,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 4,
+      "valid_red": true,
+      "map_score": 86.02511534138436,
+      "credit": 91.4857800083647,
+      "penalty": 5.460664666980343,
+      "wall_hits": 87497,
+      "wall_misses": 8143,
+      "charged_pixels": 68701,
+      "wall_score": 63.369984420095534,
+      "time_score": 37.116402116402114,
+      "steps": 3997,
+      "seconds": 114.86229968070984,
+      "placed_count": 10,
+      "submitted_sha256": "14bdfa507eb9b959cf1e3b243995ee5da794addd7defff0cc675f0f03ea2ec27",
+      "red_states_sha256": "4d20b12efb6e63b3d5b0ee910bc6cc5cc0563b80abe91307c9583605569ce4af",
+      "legal_input_sha256": "2472ce5361d2a0dae19f5d85deaaa4a9e14089b6a5fbc53031847aa8df2d7098",
+      "result_sha256": "62d7ea9b273354a27677276a73154fbb651f4ebfd81a2c37e808eee84e0f9ba1",
+      "request_sha256": "94819f8c73f57a6939604f54515a6eafb3f8e13df6029b6276146e62d9cef87d",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 3996,
+        "sources": {
+          "0": 3996,
+          "1": 3960,
+          "2": 3960,
+          "3": 3990,
+          "4": 3990
+        }
+      },
+      "visit_percent": 66.36212624584718,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map06_r02\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "be17ec81d0ee082bfb1cd3ec39178302216ddd0a52742914582cf5221a57074c",
+      "integrity_sha256": "effd8bb52c97f19f7de6dd9577df3434d1e771b44348a0edb50ecdbfadd5aeb9",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 122.73399999999674,
+        "peak_job_commit_bytes": 655683584,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 3996,
+          "first_step": 1,
+          "last_step": 3996,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 3996,
+          "first_step": 1,
+          "last_step": 3996,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 3996,
+          "first_step": 1,
+          "last_step": 3996,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 3996,
+          "first_step": 1,
+          "last_step": 3996,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 3996,
+          "first_step": 1,
+          "last_step": 3996,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 5,
+      "valid_red": true,
+      "map_score": 88.4851109956608,
+      "credit": 94.02342116269344,
+      "penalty": 5.5383101670326225,
+      "wall_hits": 89924,
+      "wall_misses": 5716,
+      "charged_pixels": 70500,
+      "wall_score": 64.51485199090747,
+      "time_score": 29.338624338624335,
+      "steps": 4291,
+      "seconds": 127.16107058525085,
+      "placed_count": 10,
+      "submitted_sha256": "0017f602940e87e75c194668581e24ccfa6c4debf833cf0ec1d42bb82885ffd5",
+      "red_states_sha256": "820b0da7d98ac25c0abdc1008541f74267c7958c300ceb5853369bde820b6278",
+      "legal_input_sha256": "7e1d3ac6cdbac7f557e3fb1f053eb98e15ab4283299a93fb13a5e8ec8c138d0f",
+      "result_sha256": "74a6a231295a960559c6ed16943519fb7da5018388dd8fbdefd1885e8838aba2",
+      "request_sha256": "557573cf5dd0ca273ab7b5e71f8685079d12d4c09f8ef4c14669ca729b873c1b",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4290,
+        "sources": {
+          "0": 4290,
+          "1": 4280,
+          "2": 4260,
+          "3": 4260,
+          "4": 4260
+        }
+      },
+      "visit_percent": 68.02325581395348,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map06_r03\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "8582cc5bfaa5d6fc52f23368a7d471d3a5ac60ab8ee6e9767f819cef88c8da99",
+      "integrity_sha256": "e9d4c8ad61889b3f3d17ee73b120009cd17838920b3e0720db52e274ff503d49",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 135.5,
+        "peak_job_commit_bytes": 678072320,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4290,
+          "first_step": 1,
+          "last_step": 4290,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4290,
+          "first_step": 1,
+          "last_step": 4290,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4290,
+          "first_step": 1,
+          "last_step": 4290,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4290,
+          "first_step": 1,
+          "last_step": 4290,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4290,
+          "first_step": 1,
+          "last_step": 4290,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 6,
+      "valid_red": true,
+      "map_score": 87.0920954392775,
+      "credit": 92.57528230865746,
+      "penalty": 5.483186869379968,
+      "wall_hits": 88539,
+      "wall_misses": 7101,
+      "charged_pixels": 67388,
+      "wall_score": 76.68058641738821,
+      "time_score": 34.20634920634921,
+      "steps": 4107,
+      "seconds": 128.1197428703308,
+      "placed_count": 10,
+      "submitted_sha256": "f044708f4e46ec68a9b700f1f8f087f12deca2cef40106b9385e25c1d5af63b7",
+      "red_states_sha256": "dcd0dce2615f3a14b33e6366fda7d73c9a576794004dfab5b026af58e201c2c7",
+      "legal_input_sha256": "e24fb8ae59eaead4d527186adef87cbf377bce041b1988f68fe72a578d87930e",
+      "result_sha256": "17a8e9c10e5b3160fd00f4511d184decc5ca699bfcc99667704d6f6c2b623f81",
+      "request_sha256": "04caceacc0bab3b3dc41e884b285107bbab0684ec5eeded451ac679133dbdbcf",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4106,
+        "sources": {
+          "0": 4106,
+          "1": 4080,
+          "2": 4080,
+          "3": 4080,
+          "4": 4050
+        }
+      },
+      "visit_percent": 65.4485049833887,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 6,
+          "failure_events": 205,
+          "failure_cells": 9630,
+          "expired_events": 199,
+          "expired_cells": 9336
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map06_r03\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "3f4b1a9b515412a5acddb3701f21080c106bc009edcf674fa97c04495841a092",
+      "integrity_sha256": "2346da434816bb6786bf2dbd8ae4d8a60bb5f1b3d78bf61d4d9c4c82ad0e3ca4",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 136.14100000000326,
+        "peak_job_commit_bytes": 705941504,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4106,
+          "first_step": 1,
+          "last_step": 4106,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4106,
+          "first_step": 1,
+          "last_step": 4106,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4106,
+          "first_step": 1,
+          "last_step": 4106,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4106,
+          "first_step": 1,
+          "last_step": 4106,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4106,
+          "first_step": 1,
+          "last_step": 4106,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 7,
+      "valid_red": true,
+      "map_score": 62.82531013326159,
+      "credit": 77.3972602739726,
+      "penalty": 14.571950140711007,
+      "wall_hits": 74806,
+      "wall_misses": 21846,
+      "charged_pixels": 137066,
+      "wall_score": 22.993929019576555,
+      "time_score": 29.12698412698413,
+      "steps": 4299,
+      "seconds": 128.76621675491333,
+      "placed_count": 10,
+      "submitted_sha256": "594e72423121088d7489d98f2a41890c5b118c2d55fb2cc7eb55f840b7b38d29",
+      "red_states_sha256": "7e059c3f7b8973faa4f27a59200a9e3f34ea2570fbc90f351809b8632d8bb01e",
+      "legal_input_sha256": "503de109573ac48a4c233dbb219bae24708c0529c15d4c797f17f0a45526ba59",
+      "result_sha256": "e1db91a55ae0e04c720f8e002377a55b0f1886ca4b33e609d97eecd15420feec",
+      "request_sha256": "e87145457dd221eafad20fd466e8b83e8c78c1cb815909962fc086456426893a",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4298,
+        "sources": {
+          "0": 4298,
+          "1": 4240,
+          "2": 4290,
+          "3": 4260,
+          "4": 4260
+        }
+      },
+      "visit_percent": 54.35139573070607,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 11,
+          "failure_events": 249,
+          "failure_cells": 11700,
+          "expired_events": 238,
+          "expired_cells": 11161
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map08_r01\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "595992c00c8ec8dc3f6a2bc406f82d3aa9ff85ca2a9e24f3a7571df41fbab997",
+      "integrity_sha256": "ca7eb44e8a59a9c9d3ebbcf26cde44c0c87f228d796a7c0f83c11a6c62304b48",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 136.8289999999979,
+        "peak_job_commit_bytes": 708550656,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4298,
+          "first_step": 1,
+          "last_step": 4298,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4298,
+          "first_step": 1,
+          "last_step": 4298,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4298,
+          "first_step": 1,
+          "last_step": 4298,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4298,
+          "first_step": 1,
+          "last_step": 4298,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4298,
+          "first_step": 1,
+          "last_step": 4298,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 8,
+      "valid_red": true,
+      "map_score": 50.369202299228164,
+      "credit": 61.7121218391756,
+      "penalty": 11.342919539947442,
+      "wall_hits": 59646,
+      "wall_misses": 37006,
+      "charged_pixels": 106735,
+      "wall_score": 36.97132785470265,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 133.57773900032043,
+      "placed_count": 10,
+      "submitted_sha256": "900e64a627a91d8a03ce48d52b3147a79f6ea8fa3b428fc1a55567e6767f1a61",
+      "red_states_sha256": "f03015bc2386b4115dca175f1a8af558c59a5f65318ef19ea55e078b5e790607",
+      "legal_input_sha256": "2d53887913e453995a216cf7ab773e2de0af9f08f31aba7007b78641f81f8b8c",
+      "result_sha256": "b24a04a3e2225a027d2d1f22adc5c26138f4b7f35d4529cba72d03b240feb48d",
+      "request_sha256": "dd64f2595eaab7a43c6a8c68b2a405962eb43b8094bd145704f14f339bbb0d12",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4530,
+          "2": 4200,
+          "3": 3780,
+          "4": 4500
+        }
+      },
+      "visit_percent": 46.71592775041051,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map08_r01\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "79792b716d12c2cbb1657d6179dd2e1a71929ef2977b53073e9c0ecf536bb0b0",
+      "integrity_sha256": "1aae08879d65ae3048601cf0a50a0f4d59a77f30a99996292e83167cb7a09c0c",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 142.06299999999464,
+        "peak_job_commit_bytes": 718069760,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 9,
+      "valid_red": true,
+      "map_score": 65.2968583487667,
+      "credit": 75.62285312254274,
+      "penalty": 10.325994773776022,
+      "wall_hits": 73091,
+      "wall_misses": 23561,
+      "charged_pixels": 113806,
+      "wall_score": 36.778391081388854,
+      "time_score": 25.952380952380956,
+      "steps": 4419,
+      "seconds": 125.16468667984009,
+      "placed_count": 10,
+      "submitted_sha256": "a19e94f34fa9b2ab6c5dd6aab37bc245f22d5e4206376b906d6c3f8ca73425d7",
+      "red_states_sha256": "d105ce75595a44f78ce86648cdde29cf276cdfe9b171cd0ca9aa54f58d0df505",
+      "legal_input_sha256": "227de77a06b0d28bf678a76db7af53602b7e1f04b43dce79f5aae7c8ffb8437a",
+      "result_sha256": "b8bad64165952be777ca2e0163e554abd4b2ae31e652ec8c9f890e01f7e22125",
+      "request_sha256": "eb8cf65e744e0e7366ba1c4eaf5dd29c18ee2adb80fb7b621794f0a8453efc4a",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4418,
+        "sources": {
+          "0": 4418,
+          "1": 4360,
+          "2": 4410,
+          "3": 4380,
+          "4": 4380
+        }
+      },
+      "visit_percent": 53.28407224958949,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map08_r02\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "2769a62cfd03b5e6fd4ee7b0b99785bce4ec0ed0d20b8edc17de59544a61e9c6",
+      "integrity_sha256": "4be1c03205bd81d14e045d6892d20ed781b09248f9110066515b58c77f7b2dcf",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 133.53100000000268,
+        "peak_job_commit_bytes": 713236480,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4418,
+          "first_step": 1,
+          "last_step": 4418,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4418,
+          "first_step": 1,
+          "last_step": 4418,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4418,
+          "first_step": 1,
+          "last_step": 4418,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4418,
+          "first_step": 1,
+          "last_step": 4418,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4418,
+          "first_step": 1,
+          "last_step": 4418,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 10,
+      "valid_red": true,
+      "map_score": 54.55208344110831,
+      "credit": 65.72031618590407,
+      "penalty": 11.168232744795763,
+      "wall_hits": 63520,
+      "wall_misses": 33132,
+      "charged_pixels": 100406,
+      "wall_score": 29.305717746556514,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 128.4430708885193,
+      "placed_count": 10,
+      "submitted_sha256": "0f47edb67633750a3fbe975e94bd4940dd2493ddda1763f3a92ec0627baefe40",
+      "red_states_sha256": "7e6c542e403b9e6e1a91c6059b006485982a5be5855aa7fbdd49cc43b136aa0a",
+      "legal_input_sha256": "dc5d5091f6164a561faa61444174858a52c9a0d9e02c2e75a642921d3806ffda",
+      "result_sha256": "2bc43995e1307535a0b42f8ffb528e996e7b9066613926126d56ba30e76a6b37",
+      "request_sha256": "4d643b6eb92954f61eca43f377f02cf6e79b8753e015c748916c294dcdb35851",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4170,
+          "2": 3690,
+          "3": 3930,
+          "4": 3660
+        }
+      },
+      "visit_percent": 48.44006568144499,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 7,
+          "failure_events": 187,
+          "failure_cells": 8748,
+          "expired_events": 180,
+          "expired_cells": 8405
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map08_r02\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "813c47d8760ba786973bfa3e89ec66c73ca101e4d65297fc324e497800d9c113",
+      "integrity_sha256": "7799cd41ee0f20bb56d18ad65b763ce0fb406fe367aa192c7cb35338e901c919",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 136.51599999999598,
+        "peak_job_commit_bytes": 716009472,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 11,
+      "valid_red": true,
+      "map_score": 58.464820955593254,
+      "credit": 73.90328187725034,
+      "penalty": 15.438460921657079,
+      "wall_hits": 71429,
+      "wall_misses": 25223,
+      "charged_pixels": 145783,
+      "wall_score": 28.128150635748426,
+      "time_score": 22.936507936507937,
+      "steps": 4533,
+      "seconds": 134.5918664932251,
+      "placed_count": 10,
+      "submitted_sha256": "c3733c28175e4871d2f8ed57c8c0d3a927264a7fad062dd09088b62e20d4df43",
+      "red_states_sha256": "f0db23d80adf00c8a4354dfdbd335095ccecdb97e1d4787cebc2b369756bd1f7",
+      "legal_input_sha256": "5ce1d74ae24ae46c50b50531542788df4bff554b80fb0c49d77f4fc908cf7cf9",
+      "result_sha256": "18c33ef313509336ebf718317eafd4cedfc390fe70a8b9e60f7338e196805460",
+      "request_sha256": "16850c4fff050cd222a349339def12ace3fa74f5177bcde857f5b2ce9c2be168",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4532,
+        "sources": {
+          "0": 4532,
+          "1": 4520,
+          "2": 4500,
+          "3": 4500,
+          "4": 4500
+        }
+      },
+      "visit_percent": 53.28407224958949,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 4,
+          "failure_events": 241,
+          "failure_cells": 11210,
+          "expired_events": 237,
+          "expired_cells": 11014
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map08_r03\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "435ad82fbb4ce0f1683ec0e06fdbf4819966e6ee2a589e3d3a1a1fa8f2c1843d",
+      "integrity_sha256": "633286751fbe61bb6b9cc6f137ebf9adeeda2ebc57a780052fb422f726c566da",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 142.59300000000076,
+        "peak_job_commit_bytes": 715907072,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4532,
+          "first_step": 1,
+          "last_step": 4532,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4532,
+          "first_step": 1,
+          "last_step": 4532,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4532,
+          "first_step": 1,
+          "last_step": 4532,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4532,
+          "first_step": 1,
+          "last_step": 4532,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4532,
+          "first_step": 1,
+          "last_step": 4532,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 12,
+      "valid_red": true,
+      "map_score": 53.545918928216686,
+      "credit": 69.13773124198154,
+      "penalty": 15.59181231376485,
+      "wall_hits": 66823,
+      "wall_misses": 29829,
+      "charged_pixels": 139165,
+      "wall_score": 33.31096910835648,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 134.17432641983032,
+      "placed_count": 10,
+      "submitted_sha256": "f15d525de883c2ba16d56da4e12c45e84de7dff471cc82feeea6961967030cc7",
+      "red_states_sha256": "764524f80fbb7e8854b9917a67ac940b99ca4d72680dbf8649f9c683e62ccb64",
+      "legal_input_sha256": "86a6ffefe8e4682d793778edffb6d599cbe05bdd053a3aa3fd70e477aa2b13dc",
+      "result_sha256": "c02f57760cdbb3eb1c4a3f33034b20f80bc1031a8e9dfc90bf1b8bf286e3a7b3",
+      "request_sha256": "dbaf9a9c6af6d0e6e041543108ef91419b8a06c1a02f894b1e4961f8b5a353de",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4480,
+          "2": 4500,
+          "3": 4140,
+          "4": 4170
+        }
+      },
+      "visit_percent": 54.105090311986864,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map08_r03\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "e01c5a83ffd755e3b9f5b247353cf7bffef7a5239f8d6cb7a54c27d1cd2dc77a",
+      "integrity_sha256": "a234f8241b3456289bcdd4b736c64919bf9daed085b154aff8a916938a4f1fab",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 142.8440000000046,
+        "peak_job_commit_bytes": 712536064,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 13,
+      "valid_red": true,
+      "map_score": 55.20397822558225,
+      "credit": 69.15350605791565,
+      "penalty": 13.949527832333397,
+      "wall_hits": 77111,
+      "wall_misses": 34396,
+      "charged_pixels": 131261,
+      "wall_score": 78.8658944941538,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 131.12363648414612,
+      "placed_count": 10,
+      "submitted_sha256": "66d8e1993fcd3773676b9b28074ca911743fb085cbba7cabf02b49fe34179885",
+      "red_states_sha256": "af62855d2108ba6bfcc9d643f4cd630e9316770b858f137edffbb26ca7e189b7",
+      "legal_input_sha256": "7c1471ae099c60c471edcc8bc98c3c48178688d40fc4d3d93d1015fc6ba173af",
+      "result_sha256": "8ab452d29d6ba561a243b9b63dc74169dc8b7b893aebb82970ee7e219ef98ab1",
+      "request_sha256": "489e4bb1ca81345b0cb3e6391e88e1f711ec2144835b462273e6adadb5ae50c5",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4240,
+          "2": 4440,
+          "3": 3750,
+          "4": 3660
+        }
+      },
+      "visit_percent": 43.68770764119601,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map09_r01\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "c52082b6c27c80a621044bf90e27b46ff211afa3296d5a79cc0a22f56a51177c",
+      "integrity_sha256": "6394197e1d8c1d3e8429b63c1bb8f8a495207cb0e5640af846fb21c6aed64bce",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 139.45300000000134,
+        "peak_job_commit_bytes": 721850368,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 14,
+      "valid_red": true,
+      "map_score": 42.28532667792156,
+      "credit": 50.96810065735783,
+      "penalty": 8.682773979436268,
+      "wall_hits": 56833,
+      "wall_misses": 54674,
+      "charged_pixels": 92882,
+      "wall_score": 66.31168688587583,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 133.0310366153717,
+      "placed_count": 10,
+      "submitted_sha256": "ff83235b22d98f120da424998818b3b848f0f21e78ea92ac834f4ca7a0b56109",
+      "red_states_sha256": "8e987e656bd345b4d978034bf35ef70571cb20a6bf7680ef2029a64085d19abd",
+      "legal_input_sha256": "310871291a137a76f11e6e870b9d49a1cbb70990f4e7f07b451f525720bfcdf1",
+      "result_sha256": "6f11c78af6a753109b7e95c53f4c0b2e8ec905045c75dfae283a72c1e2a4ea60",
+      "request_sha256": "7a88c297633706ea8c7f2eff9606f6e9c6aaffbb6fabfb88292d633618d17059",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4530,
+          "2": 1620,
+          "3": 4500,
+          "4": 4500
+        }
+      },
+      "visit_percent": 45.84717607973422,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 5,
+          "failure_events": 195,
+          "failure_cells": 9230,
+          "expired_events": 190,
+          "expired_cells": 8985
+        },
+        "firsts": {
+          "first_failure_step": 12,
+          "first_expiry_step": 252
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map09_r01\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "5eb0e8652fc73a7bc7c58a64f877cf1b60ef5426a192896e6cb9fbc4171534e8",
+      "integrity_sha256": "de7b8ee4e31ecaa7c29e5b0994ed42ec644a2be438f4f934914f773ca212aef3",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 141.17199999999866,
+        "peak_job_commit_bytes": 727076864,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 15,
+      "valid_red": true,
+      "map_score": 32.00970146493046,
+      "credit": 51.650569022572576,
+      "penalty": 19.64086755764212,
+      "wall_hits": 57594,
+      "wall_misses": 53913,
+      "charged_pixels": 164569,
+      "wall_score": 75.8815026257525,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 137.2008879184723,
+      "placed_count": 10,
+      "submitted_sha256": "4fe5f80b919288ac723d34a45658df71f7ceea15e8c0d7392a85446eae11e012",
+      "red_states_sha256": "6b9c4c53fe2cefd64959c7a9efe76862aa9da8720a5e27fbb370cf871b7bc090",
+      "legal_input_sha256": "c64fa3a46224382123d4d20b4e8b70c837cc95d4c0871a914782bf25373abb48",
+      "result_sha256": "387ae04c75abefb62ffacf3743529adbe646e991a47440e99c69e2236179492c",
+      "request_sha256": "3e9bd0b54a36a7f16807666ddd4bfd30a1e3058c98c18c85fbcbdd0ab2acacdf",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4530,
+          "2": 3690,
+          "3": 4500,
+          "4": 4500
+        }
+      },
+      "visit_percent": 45.93023255813954,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 3,
+          "failure_events": 161,
+          "failure_cells": 7602,
+          "expired_events": 158,
+          "expired_cells": 7455
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map09_r02\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "eff5a2d6aacf3db8f38f1a6b1675bb20b7f88b40fb06e35672fb31aa22cda653",
+      "integrity_sha256": "d4e27e2eeb025c82a25c9b3282643afef0f73b30ad77459e1cadbe9e263bccb1",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 145.51599999999598,
+        "peak_job_commit_bytes": 728588288,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 16,
+      "valid_red": true,
+      "map_score": 36.24109641098765,
+      "credit": 48.528791914408956,
+      "penalty": 12.28769550342131,
+      "wall_hits": 54113,
+      "wall_misses": 57394,
+      "charged_pixels": 112764,
+      "wall_score": 75.10201094216026,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 129.07944655418396,
+      "placed_count": 10,
+      "submitted_sha256": "a5c252f7c5bc4fb3c8ae7bcfdf08a7919defd8c60aa01f80f64c92bf52c87104",
+      "red_states_sha256": "033a642ec7b88fecce6a5e33306bb88aa001354d41ad64fb13f8077ac47f6890",
+      "legal_input_sha256": "4c03018ca9d55f4adc7482113afaf2095e4ad51eb1c5a7a5e259b82a9f792a53",
+      "result_sha256": "36bd4c3b141a1434fbcee6458e9bb5d5c37df8f76cd7ad0646af4880bfc697ce",
+      "request_sha256": "9369dedc5f16b0ad3636e01b6779de135b443a67cf94f994db45a38174538058",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 4530,
+          "2": 930,
+          "3": 4500,
+          "4": 4500
+        }
+      },
+      "visit_percent": 46.51162790697674,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map09_r02\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "38f61991fa4292a1db71669d4ade202247ab830a6c7dbf2fb07fbaf4bf05c2fa",
+      "integrity_sha256": "a97b34bf62a2926c4b7a76609961dae295e9263c50b18bd210bbc18281867ebf",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 138.125,
+        "peak_job_commit_bytes": 716427264,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "arm": "baseline",
+      "version": "RL17-R",
+      "execution_index": 17,
+      "valid_red": true,
+      "map_score": 42.866582927529215,
+      "credit": 51.81378747522577,
+      "penalty": 8.947204547696558,
+      "wall_hits": 57776,
+      "wall_misses": 53731,
+      "charged_pixels": 98926,
+      "wall_score": 63.471848639549144,
+      "time_score": 32.08994708994709,
+      "steps": 4187,
+      "seconds": 119.19420051574707,
+      "placed_count": 10,
+      "submitted_sha256": "b052b1133ad5d8af0aad1a73c81d49160c90c70d46c7857ba0a8542c3bfe8d1a",
+      "red_states_sha256": "bd88ae7d4c4a267858e2e6e4d68348d4c1abf79649dfa07b74727c85ef560776",
+      "legal_input_sha256": "d9a8bf021d4cfd0ab0bdbc655f74f4908afebc0e92227755a92b488ca3b8a47c",
+      "result_sha256": "eba96abc00414c72b005f97290f5945061e2ea0b2389055de9313cee87fa85da",
+      "request_sha256": "ccb0ef67c019dbddd68b6ec1cf591759fd49b0149a2c660ef107cb43761d3c44",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4186,
+        "sources": {
+          "0": 4186,
+          "1": 4170,
+          "2": 4170,
+          "3": 4170,
+          "4": 4140
+        }
+      },
+      "visit_percent": 39.8671096345515,
+      "failure_memory": {
+        "drones": 0,
+        "totals": {},
+        "firsts": {},
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map09_r03\\archived_rl17r\\red\\attempt_001",
+      "done_sha256": "f741f7d2beefa707fc83e9d146f3afa2964f47f7e267ee91ff97bf07ccc9e404",
+      "integrity_sha256": "4ddfd6fe1aebd150ae1fbe4d270cc629b50b1f5b87ddd9c16e849a9efdb0ea8e",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 127.57800000000134,
+        "peak_job_commit_bytes": 707784704,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "67675aa8671698794f08bce7a24d574f2de57f62684555deb6c05fb4e593eb87",
+      "actual_controller_identity": {
+        "controller_selector": "archived_rl17r",
+        "controller_class": "MyDroneRedRepair17",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_repair17"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4186,
+          "first_step": 1,
+          "last_step": 4186,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4186,
+          "first_step": 1,
+          "last_step": 4186,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4186,
+          "first_step": 1,
+          "last_step": 4186,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4186,
+          "first_step": 1,
+          "last_step": 4186,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4186,
+          "first_step": 1,
+          "last_step": 4186,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "arm": "candidate",
+      "version": "Stability26",
+      "execution_index": 18,
+      "valid_red": true,
+      "map_score": 39.56102952056821,
+      "credit": 53.85581174276054,
+      "penalty": 14.294782222192328,
+      "wall_hits": 60053,
+      "wall_misses": 51454,
+      "charged_pixels": 121917,
+      "wall_score": 69.61080309600922,
+      "time_score": 22.857142857142858,
+      "steps": 4536,
+      "seconds": 137.14673709869385,
+      "placed_count": 10,
+      "submitted_sha256": "e537a42b62f94e47112871cd10a3217568335ac822234268035484ea415dea9d",
+      "red_states_sha256": "cad7cbec92cbf4388dbd38174774ab07efcb70a40a8a57d68b1752d91390e9a8",
+      "legal_input_sha256": "f1d2a8c34fa299448cc3bd4d494d3e0cfd4bda449052e0673a548dc999783375",
+      "result_sha256": "0d2203bc2d474f530f0d92b2be701a0e4c1cbc9bb9f9ef0957cb2d35137cd857",
+      "request_sha256": "6f247609a91fb5a3204e52b5ec660f15270eb25194d244b172a84a60e83cd269",
+      "received_sources_reproduce_submission": true,
+      "map_score_recomputed": true,
+      "submission": {
+        "drone": 0,
+        "step": 4535,
+        "sources": {
+          "0": 4535,
+          "1": 760,
+          "2": 3090,
+          "3": 2820,
+          "4": 3450
+        }
+      },
+      "visit_percent": 54.90033222591362,
+      "failure_memory": {
+        "drones": 5,
+        "totals": {
+          "pending_events": 6,
+          "failure_events": 167,
+          "failure_cells": 7886,
+          "expired_events": 161,
+          "expired_cells": 7592
+        },
+        "firsts": {
+          "first_failure_step": 6,
+          "first_expiry_step": 246
+        },
+        "anomaly_events": 0,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        }
+      },
+      "attempt": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_run_20261121\\runs\\Map09_r03\\candidate_stability26\\red\\attempt_001",
+      "done_sha256": "346cba9abc31d4b7d8fb8b562aec2b70780afd0306e928b507a935234ed69cef",
+      "integrity_sha256": "91480acc23ce087ee3da81b4da0ffcb3d6afbbc6e5ce17aa38900a6f7fad7618",
+      "resources": {
+        "exit_code": 0,
+        "status": "exited",
+        "process_seconds": 145.03199999999924,
+        "peak_job_commit_bytes": 720707584,
+        "memory_limit_bytes": 4000000000,
+        "memory_limit_kind": "Windows job commit",
+        "cpu_count": 1
+      },
+      "identity_sha256": "1b3cbc85c039936c16523acf49cc6a35d7addb76ab3c3d6773c0e040c2214cfd",
+      "actual_controller_identity": {
+        "controller_selector": "candidate_stability26",
+        "controller_class": "MyDroneRedStability26",
+        "controller_module": "swarm_rescue.solutions.my_drone_red_stability26"
+      },
+      "legal_mapper_tape": {
+        "0": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "1": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "2": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "3": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        },
+        "4": {
+          "rows": 4535,
+          "first_step": 1,
+          "last_step": 4535,
+          "lidar_rays": 181
+        }
+      },
+      "full_controller_sensor_replay": false,
+      "score_scope": "native complete red stage; blue/full score not evaluated",
+      "blue_score": null,
+      "total_score": null
+    }
+  ],
+  "candidate_drone_counters": [
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 0,
+      "counters": {
+        "pending_events": 4,
+        "first_failure_step": 24,
+        "failure_events": 66,
+        "failure_cells": 3013,
+        "first_expiry_step": 264,
+        "expired_events": 62,
+        "expired_cells": 2817
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 1,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 54,
+        "failure_events": 46,
+        "failure_cells": 2106,
+        "first_expiry_step": 294,
+        "expired_events": 45,
+        "expired_cells": 2057
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 2,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 186,
+        "failure_events": 49,
+        "failure_cells": 2346,
+        "first_expiry_step": 426,
+        "expired_events": 48,
+        "expired_cells": 2297
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 3,
+      "counters": {
+        "pending_events": 5,
+        "first_failure_step": 72,
+        "failure_events": 54,
+        "failure_cells": 2400,
+        "first_expiry_step": 312,
+        "expired_events": 49,
+        "expired_cells": 2155
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 132,
+        "failure_events": 37,
+        "failure_cells": 1723,
+        "first_expiry_step": 372,
+        "expired_events": 37,
+        "expired_cells": 1723
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 0,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 6,
+        "failure_events": 40,
+        "failure_cells": 1871,
+        "first_expiry_step": 246,
+        "expired_events": 39,
+        "expired_cells": 1822
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 1,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 54,
+        "failure_events": 33,
+        "failure_cells": 1547,
+        "first_expiry_step": 294,
+        "expired_events": 33,
+        "expired_cells": 1547
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 2,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 156,
+        "failure_events": 38,
+        "failure_cells": 1800,
+        "first_expiry_step": 396,
+        "expired_events": 36,
+        "expired_cells": 1702
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 3,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 72,
+        "failure_events": 42,
+        "failure_cells": 1946,
+        "first_expiry_step": 312,
+        "expired_events": 40,
+        "expired_cells": 1848
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 4,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 186,
+        "failure_events": 48,
+        "failure_cells": 2227,
+        "first_expiry_step": 426,
+        "expired_events": 46,
+        "expired_cells": 2129
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 0,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 6,
+        "failure_events": 32,
+        "failure_cells": 1465,
+        "first_expiry_step": 246,
+        "expired_events": 31,
+        "expired_cells": 1416
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 1,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 54,
+        "failure_events": 45,
+        "failure_cells": 2060,
+        "first_expiry_step": 294,
+        "expired_events": 45,
+        "expired_cells": 2060
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 2,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 186,
+        "failure_events": 32,
+        "failure_cells": 1529,
+        "first_expiry_step": 426,
+        "expired_events": 30,
+        "expired_cells": 1431
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 3,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 102,
+        "failure_events": 46,
+        "failure_cells": 2197,
+        "first_expiry_step": 342,
+        "expired_events": 44,
+        "expired_cells": 2099
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map06",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 4,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 84,
+        "failure_events": 50,
+        "failure_cells": 2379,
+        "first_expiry_step": 324,
+        "expired_events": 49,
+        "expired_cells": 2330
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 0,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 24,
+        "failure_events": 51,
+        "failure_cells": 2347,
+        "first_expiry_step": 264,
+        "expired_events": 51,
+        "expired_cells": 2347
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 1,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 6,
+        "failure_events": 56,
+        "failure_cells": 2660,
+        "first_expiry_step": 246,
+        "expired_events": 54,
+        "expired_cells": 2562
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 2,
+      "counters": {
+        "pending_events": 9,
+        "first_failure_step": 6,
+        "failure_events": 42,
+        "failure_cells": 1927,
+        "first_expiry_step": 246,
+        "expired_events": 33,
+        "expired_cells": 1486
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 3,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 6,
+        "failure_events": 50,
+        "failure_cells": 2355,
+        "first_expiry_step": 246,
+        "expired_events": 50,
+        "expired_cells": 2355
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 48,
+        "failure_events": 50,
+        "failure_cells": 2411,
+        "first_expiry_step": 288,
+        "expired_events": 50,
+        "expired_cells": 2411
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 0,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 24,
+        "failure_events": 35,
+        "failure_cells": 1645,
+        "first_expiry_step": 264,
+        "expired_events": 35,
+        "expired_cells": 1645
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 1,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 12,
+        "failure_events": 31,
+        "failure_cells": 1329,
+        "first_expiry_step": 252,
+        "expired_events": 30,
+        "expired_cells": 1280
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 2,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 6,
+        "failure_events": 44,
+        "failure_cells": 2071,
+        "first_expiry_step": 246,
+        "expired_events": 42,
+        "expired_cells": 1973
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 3,
+      "counters": {
+        "pending_events": 4,
+        "first_failure_step": 6,
+        "failure_events": 35,
+        "failure_cells": 1664,
+        "first_expiry_step": 246,
+        "expired_events": 31,
+        "expired_cells": 1468
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 12,
+        "failure_events": 42,
+        "failure_cells": 2039,
+        "first_expiry_step": 252,
+        "expired_events": 42,
+        "expired_cells": 2039
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 0,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 12,
+        "failure_events": 51,
+        "failure_cells": 2362,
+        "first_expiry_step": 252,
+        "expired_events": 51,
+        "expired_cells": 2362
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 1,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 6,
+        "failure_events": 50,
+        "failure_cells": 2224,
+        "first_expiry_step": 246,
+        "expired_events": 48,
+        "expired_cells": 2126
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 2,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 6,
+        "failure_events": 50,
+        "failure_cells": 2357,
+        "first_expiry_step": 246,
+        "expired_events": 50,
+        "expired_cells": 2357
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 3,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 6,
+        "failure_events": 40,
+        "failure_cells": 1901,
+        "first_expiry_step": 246,
+        "expired_events": 38,
+        "expired_cells": 1803
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map08",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 102,
+        "failure_events": 50,
+        "failure_cells": 2366,
+        "first_expiry_step": 342,
+        "expired_events": 50,
+        "expired_cells": 2366
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 0,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 186,
+        "failure_events": 44,
+        "failure_cells": 2108,
+        "first_expiry_step": 426,
+        "expired_events": 44,
+        "expired_cells": 2108
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 1,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 12,
+        "failure_events": 23,
+        "failure_cells": 1058,
+        "first_expiry_step": 252,
+        "expired_events": 23,
+        "expired_cells": 1058
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 2,
+      "counters": {
+        "pending_events": 3,
+        "first_failure_step": 72,
+        "failure_events": 40,
+        "failure_cells": 1960,
+        "first_expiry_step": 312,
+        "expired_events": 37,
+        "expired_cells": 1813
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 3,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 48,
+        "failure_events": 50,
+        "failure_cells": 2293,
+        "first_expiry_step": 288,
+        "expired_events": 48,
+        "expired_cells": 2195
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 1,
+      "seed": 3225263973,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 12,
+        "failure_events": 38,
+        "failure_cells": 1811,
+        "first_expiry_step": 252,
+        "expired_events": 38,
+        "expired_cells": 1811
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 0,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 30,
+        "failure_events": 41,
+        "failure_cells": 1919,
+        "first_expiry_step": 270,
+        "expired_events": 39,
+        "expired_cells": 1821
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 1,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 6,
+        "failure_events": 34,
+        "failure_cells": 1627,
+        "first_expiry_step": 246,
+        "expired_events": 34,
+        "expired_cells": 1627
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 2,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 132,
+        "failure_events": 27,
+        "failure_cells": 1258,
+        "first_expiry_step": 372,
+        "expired_events": 26,
+        "expired_cells": 1209
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 3,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 150,
+        "failure_events": 28,
+        "failure_cells": 1308,
+        "first_expiry_step": 390,
+        "expired_events": 28,
+        "expired_cells": 1308
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 2,
+      "seed": 1739765566,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 54,
+        "failure_events": 31,
+        "failure_cells": 1490,
+        "first_expiry_step": 294,
+        "expired_events": 31,
+        "expired_cells": 1490
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 0,
+      "counters": {
+        "pending_events": 1,
+        "first_failure_step": 78,
+        "failure_events": 31,
+        "failure_cells": 1480,
+        "first_expiry_step": 318,
+        "expired_events": 30,
+        "expired_cells": 1431
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 1,
+      "counters": {
+        "pending_events": 2,
+        "first_failure_step": 6,
+        "failure_events": 36,
+        "failure_cells": 1712,
+        "first_expiry_step": 246,
+        "expired_events": 34,
+        "expired_cells": 1614
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 2,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 114,
+        "failure_events": 42,
+        "failure_cells": 1991,
+        "first_expiry_step": 354,
+        "expired_events": 42,
+        "expired_cells": 1991
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 3,
+      "counters": {
+        "pending_events": 3,
+        "first_failure_step": 66,
+        "failure_events": 29,
+        "failure_cells": 1316,
+        "first_expiry_step": 306,
+        "expired_events": 26,
+        "expired_cells": 1169
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    },
+    {
+      "map": "Map09",
+      "round": 3,
+      "seed": 778294343,
+      "drone": 4,
+      "counters": {
+        "pending_events": 0,
+        "first_failure_step": 12,
+        "failure_events": 29,
+        "failure_cells": 1387,
+        "first_expiry_step": 252,
+        "expired_events": 29,
+        "expired_cells": 1387
+      },
+      "events_balance": true,
+      "first_expiry_not_early": true
+    }
+  ],
+  "prefix_audit": {
+    "scope": "Actual paired observations before the first recorded expiry; not a trajectory invariance guarantee",
+    "rule": "physical frame index < first_expiry_step - 2; recorded legal control step < first_expiry_step - 2",
+    "physical_fields": [
+      "x",
+      "y",
+      "angle",
+      "health",
+      "active"
+    ],
+    "rows": [
+      {
+        "map": "Map06",
+        "round": 1,
+        "seed": 3225263973,
+        "compared": true,
+        "first_expiry_step": 264,
+        "boundary_exclusive": 262,
+        "physical_frames_compared": 262,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "8fdff22f5bf4036f97edae07f9161f48ebcb474b04e3ae5263133dad20cd78d7",
+        "candidate_physical_prefix_sha256": "8fdff22f5bf4036f97edae07f9161f48ebcb474b04e3ae5263133dad20cd78d7",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 261,
+            "candidate_rows": 261,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 261,
+            "candidate_rows": 261,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 261,
+            "candidate_rows": 261,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 261,
+            "candidate_rows": 261,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 261,
+            "candidate_rows": 261,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 3910,
+            "candidate_rows": 3910,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map06",
+        "round": 2,
+        "seed": 1739765566,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "66f85e3b2c91507cdb446f602675d843e10372c5a74ba6fdd8b3e7465d3fa22e",
+        "candidate_physical_prefix_sha256": "66f85e3b2c91507cdb446f602675d843e10372c5a74ba6fdd8b3e7465d3fa22e",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 3305,
+            "candidate_rows": 3305,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map06",
+        "round": 3,
+        "seed": 778294343,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "66932a840e249afa3e6baeca51c1db0a1a5c84d904d7d21ca2e14851a980fbac",
+        "candidate_physical_prefix_sha256": "66932a840e249afa3e6baeca51c1db0a1a5c84d904d7d21ca2e14851a980fbac",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 4112,
+            "candidate_rows": 4112,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map08",
+        "round": 1,
+        "seed": 3225263973,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "ca9a1077e5186c87ebbf9f050bf71301c3b4f2ab90d231e5315794cce259b82b",
+        "candidate_physical_prefix_sha256": "ca9a1077e5186c87ebbf9f050bf71301c3b4f2ab90d231e5315794cce259b82b",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 6961,
+            "candidate_rows": 6961,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map08",
+        "round": 2,
+        "seed": 1739765566,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "ee37a144946bf43e331946a200931c113a14a47b2a2867798c65eecbeb111ef6",
+        "candidate_physical_prefix_sha256": "ee37a144946bf43e331946a200931c113a14a47b2a2867798c65eecbeb111ef6",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 6097,
+            "candidate_rows": 6097,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map08",
+        "round": 3,
+        "seed": 778294343,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "43ea82bc80bdd8c31386e581bd663da57de51cb3e18a47347eea3edb0c566a09",
+        "candidate_physical_prefix_sha256": "43ea82bc80bdd8c31386e581bd663da57de51cb3e18a47347eea3edb0c566a09",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 7762,
+            "candidate_rows": 7762,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map09",
+        "round": 1,
+        "seed": 3225263973,
+        "compared": true,
+        "first_expiry_step": 252,
+        "boundary_exclusive": 250,
+        "physical_frames_compared": 250,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "58c7c4422b2b5b7b661241ff7582cbfcdb8c492cac443e5d19a3ac11ad24d508",
+        "candidate_physical_prefix_sha256": "58c7c4422b2b5b7b661241ff7582cbfcdb8c492cac443e5d19a3ac11ad24d508",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 249,
+            "candidate_rows": 249,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 249,
+            "candidate_rows": 249,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 249,
+            "candidate_rows": 249,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 249,
+            "candidate_rows": 249,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 249,
+            "candidate_rows": 249,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 4652,
+            "candidate_rows": 4652,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map09",
+        "round": 2,
+        "seed": 1739765566,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "eb78ae3cb1e1070c245edbdafeab000fc96abe97f0a256ed70d380b1bc14e727",
+        "candidate_physical_prefix_sha256": "eb78ae3cb1e1070c245edbdafeab000fc96abe97f0a256ed70d380b1bc14e727",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 3956,
+            "candidate_rows": 3956,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      },
+      {
+        "map": "Map09",
+        "round": 3,
+        "seed": 778294343,
+        "compared": true,
+        "first_expiry_step": 246,
+        "boundary_exclusive": 244,
+        "physical_frames_compared": 244,
+        "physical_prefix_complete": true,
+        "physical_prefix_equal": true,
+        "first_different_physical_prefix_frame": null,
+        "baseline_physical_prefix_sha256": "b405f813cb8127782b591e4b5e728234903b70abde34453c78e7020bb66c0c0a",
+        "candidate_physical_prefix_sha256": "b405f813cb8127782b591e4b5e728234903b70abde34453c78e7020bb66c0c0a",
+        "legal_arrays": {
+          "drone_0": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_0": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_1": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_1": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_2": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_2": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_3": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_3": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "drone_4": {
+            "baseline_rows": 243,
+            "candidate_rows": 243,
+            "equal": true
+          },
+          "angles_4": {
+            "baseline_rows": 181,
+            "candidate_rows": 181,
+            "equal": true
+          },
+          "semantic": {
+            "baseline_rows": 4302,
+            "candidate_rows": 4302,
+            "equal": true
+          }
+        },
+        "semantic_codebook_equal": true,
+        "legal_prefix_equal": true
+      }
+    ],
+    "compared_pairs": 9,
+    "identical_physical_prefixes": 9,
+    "identical_legal_prefixes": 9
+  },
+  "adoption": {
+    "adopt_candidate": false,
+    "decision": "不采用候选，保留原 RL17-R 包",
+    "criteria_source": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\stability26_acceptance_20261121.json",
+    "criteria_sha256": "b93fd6dd47c3308d3f33d30d90a51c6938cc0eb84cdb5500c63504aadb151815",
+    "numerical_tolerance": 1e-07,
+    "checks": [
+      {
+        "key": "component_regression",
+        "acceptance_gate": 1,
+        "label": "最终源码的合法状态机制证据与回归回执通过",
+        "passed": true
+      },
+      {
+        "key": "all_fresh_valid",
+        "acceptance_gate": 2,
+        "label": "18 个新完整红阶段、9 个同 seed 配对全部有效",
+        "passed": true
+      },
+      {
+        "key": "candidate_ledger_no_anomalies",
+        "acceptance_gate": 2,
+        "label": "候选 45 机实际账本异常均为零",
+        "passed": true,
+        "observed_drones": 45,
+        "expected_drones": 45,
+        "anomaly_fields": {
+          "array_replacements": 0,
+          "discarded_events": 0,
+          "clock_regressions": 0,
+          "unexpected_delta": 0,
+          "ledger_guard_resets": 0,
+          "underflow_guard_events": 0
+        },
+        "changes_native_validity": false
+      },
+      {
+        "key": "fresh_random_design",
+        "acceptance_gate": 2,
+        "label": "候选完成后新抽三个随机 seed，冻结后无替换",
+        "passed": true
+      },
+      {
+        "key": "Map06_minimum",
+        "acceptance_gate": 3,
+        "label": "Map06 三 seed 最低分不退步",
+        "passed": true,
+        "delta": 1.0669800978931363
+      },
+      {
+        "key": "Map06_mean",
+        "acceptance_gate": 3,
+        "label": "Map06 三 seed 均分不退步",
+        "passed": true,
+        "delta": 0.5517779618447491
+      },
+      {
+        "key": "Map08_minimum",
+        "acceptance_gate": 3,
+        "label": "Map08 三 seed 最低分不退步",
+        "passed": true,
+        "delta": 4.182881141880145
+      },
+      {
+        "key": "Map08_mean",
+        "acceptance_gate": 3,
+        "label": "Map08 三 seed 均分不退步",
+        "passed": true,
+        "delta": 2.210078317917201
+      },
+      {
+        "key": "Map09_minimum",
+        "acceptance_gate": 3,
+        "label": "Map09 三 seed 最低分不退步",
+        "passed": false,
+        "delta": -4.231394946057193
+      },
+      {
+        "key": "Map09_mean",
+        "acceptance_gate": 3,
+        "label": "Map09 三 seed 均分不退步",
+        "passed": false,
+        "delta": -6.818533300226292
+      },
+      {
+        "key": "one_minimum_improves",
+        "acceptance_gate": 4,
+        "label": "至少一图三 seed 最低分改善",
+        "passed": true
+      },
+      {
+        "key": "pooled_mean_improves",
+        "acceptance_gate": 4,
+        "label": "九对地图分平均值改善",
+        "passed": false,
+        "delta": -1.3522256734881108
+      },
+      {
+        "key": "policy_review",
+        "acceptance_gate": 5,
+        "label": "无真值/地图/seed 策略，无引擎、评分、时钟或安全放宽",
+        "passed": true
+      }
+    ],
+    "map_changes": [
+      {
+        "map": "Map06",
+        "minimum_delta": 1.0669800978931363,
+        "mean_delta": 0.5517779618447491
+      },
+      {
+        "map": "Map08",
+        "minimum_delta": 4.182881141880145,
+        "mean_delta": 2.210078317917201
+      },
+      {
+        "map": "Map09",
+        "minimum_delta": -4.231394946057193,
+        "mean_delta": -6.818533300226292
+      }
+    ],
+    "pooled_mean_delta": -1.3522256734881108,
+    "failed_checks": [
+      "Map09 三 seed 最低分不退步",
+      "Map09 三 seed 均分不退步",
+      "九对地图分平均值改善"
+    ],
+    "scope": "Prespecified new-three-seed map-score gate only; not universal stability or full-score improvement"
+  },
+  "limitations": [
+    "No blue stage or full total was measured.",
+    "Legal mapper input tapes are complete; the full controller-sensor replay flag remains false.",
+    "Three seeds are descriptive evidence, not proof of universal heading invariance.",
+    "Counters verify bounded failed-route memory and arithmetic, not that revisiting improves strategy.",
+    "True map pixels are used only for offline verification; candidate policy legality was frozen separately."
+  ]
+}
