@@ -1,0 +1,28 @@
+{
+  "official_map": "Map09",
+  "stage": "semifinal",
+  "zones": [
+    "NO_COM_ZONE",
+    "NO_GPS_ZONE"
+  ],
+  "map": "Map09",
+  "map_file": "E:\\桌面\\gitee\\swarm-eod\\map_data\\map_09.json",
+  "round": 1,
+  "seed": 3048583633,
+  "phase": "red",
+  "run_dir": "E:\\桌面\\gitee\\swarm-eod\\output\\sf13\\startup44_refined_random3_20261123\\runs\\Map09_r01\\baseline_linked_passage43\\red\\attempt_001",
+  "drones": 5,
+  "bombs": 2,
+  "recording": true,
+  "ray_backend": "cpu",
+  "visual": false,
+  "smoke": false,
+  "diagnostic_steps": null,
+  "diagnostic_profile": false,
+  "lifecycle_diagnostics": false,
+  "plan_sha256": "ee1d3f75a13b445e72161a25e4a18ba6fceaf02d0684f358eff563098a290350",
+  "controller_selector": "baseline_linked_passage43",
+  "controller_class": "MyDroneRedLinkedPassage43",
+  "controller_module": "swarm_rescue.solutions.my_drone_red_linked_passage43",
+  "engine_dir": "C:\\Users\\fzhuj\\AppData\\Local\\Packages\\OPENAI~1.COD\\AC\\#!sandbox.{39b66745-d915-43f3-b540-641c9d50d37b}\\Temp\\g3-engine-ldyurc3r\\artifacts"
+}
